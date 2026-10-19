@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "report_id": "AGRI-INTEL-2026-10-19-0600",
+    "timestamp": "2026-10-19T06:00:00-03:00",
+    "analyst": "Agri Market Intel AI",
+    "target_user": "Luan Barbosa Andrade",
+    "context": "Abertura de Mercado e Atualização Semanal"
+  },
+  "market_indicators": {
+    "cambio": {
+      "dolar_comercial": 5.0728,
+      "dolar_futuro_nov26": 5080.00,
+      "variacao_diaria_pct": 0.00
+    },
+    "energia": {
+      "petroleo_wti_nov26": 101.77,
+      "variacao_diaria_pct": 0.36
+    },
+    "soja": {
+      "cbot_nov26": 12.6403,
+      "cbot_var_pct": 0.22,
+      "paranaguap_spot": 154.61,
+      "cepea_pr": 148.77,
+      "triangulo_mg": 148.03,
+      "campo_grande_ms": 143.00,
+      "rondonopolis_mt": 142.00
+    },
+    "farelo_oleo_soja": {
+      "farelo_cbot_dez26": 357.10,
+      "farelo_cbot_mar27": 352.70,
+      "oleo_cbot": 67.13,
+      "farelo_mt_imea": 1964.98
+    },
+    "milho_sorgo": {
+      "cbot_dez26": 4.7305,
+      "cbot_var_pct": -0.25,
+      "cepea_esalq": 64.85,
+      "b3_nov26": 66.57,
+      "b3_mar27": 75.96,
+      "soriso_mt": 46.20,
+      "rio_verde_go": 53.00
+    },
+    "algodao_coprodutos": {
+      "ice_ny_dez26": 80.48,
+      "cepea_pluma": 407.41,
+      "caroco_mt_imea": 705.19,
+      "caroco_ba_aiba": 976.67,
+      "farelo_algodao": 796.90
+    },
+    "pecuaria": {
+      "boi_cepea_sp": 380.70,
+      "boi_b3_nov26": 397.95,
+      "bezerro_ms": 3489.71
+    }
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Soja CBOT (Nov/26)",
+      "current_base": 12.6403,
+      "short_term_projection": {
+        "target_range": "12.48 - 12.68",
+        "bias": "Leve Baixa",
+        "probability_pct": 65
+      },
+      "medium_term_scenarios": {
+        "base_case": "12.40 - 12.60",
+        "bull_case": "12.85+",
+        "bear_case": "12.20"
+      },
+      "audit_trigger": "Colheita EUA (>65%) e Plantio MT (>65%): Chuvas regulares no Cerrado reduzem prêmio climático; rompimento de US$ 12.80 exige compras massivas da China nos EUA."
+    },
+    {
+      "commodity": "Soja Físico BR (Paranaguá / MG)",
+      "current_base": 154.61,
+      "short_term_projection": {
+        "target_range": "153.50 - 156.50",
+        "bias": "Estável / Firme",
+        "probability_pct": 70
+      },
+      "medium_term_scenarios": {
+        "base_case": "152.00 - 155.00",
+        "bull_case": "158.00",
+        "bear_case": "149.00"
+      },
+      "audit_trigger": "Disputa de Esmagadoras (+13% capacidade) vs. Safra Velha (32.3 mi t): Esmagadoras de MG/MS sustentam basis regional, mas porto enfraquece na virada para novembro."
+    },
+    {
+      "commodity": "Farelo de Soja (CBOT Dez/26)",
+      "current_base": 357.10,
+      "short_term_projection": {
+        "target_range": "351.00 - 358.00",
+        "bias": "Baixista",
+        "probability_pct": 70
+      },
+      "medium_term_scenarios": {
+        "base_case": "345.00 - 355.00",
+        "bull_case": "365.00",
+        "bear_case": "338.00"
+      },
+      "audit_trigger": "Moagem EUA + Biodiesel BR: Expansão de moagem doméstica e exportação de 27.1 mi t de farelo mantêm pressão vendedora em dólar."
+    },
+    {
+      "commodity": "Óleo de Soja (CBOT Dez/26)",
+      "current_base": 67.13,
+      "short_term_projection": {
+        "target_range": "67.00 - 68.80",
+        "bias": "Altista",
+        "probability_pct": 65
+      },
+      "medium_term_scenarios": {
+        "base_case": "68.00 - 70.00",
+        "bull_case": "71.50",
+        "bear_case": "65.00"
+      },
+      "audit_trigger": "Estoques NOPA (Mínima desde 2014) + Petróleo WTI (>US$ 100): Manutenção do WTI acima de US$ 98 garante ganho de Oil Share."
+    },
+    {
+      "commodity": "Milho CBOT (Dez/26)",
+      "current_base": 4.7305,
+      "short_term_projection": {
+        "target_range": "4.65 - 4.78",
+        "bias": "Baixista",
+        "probability_pct": 65
+      },
+      "medium_term_scenarios": {
+        "base_case": "4.60 - 4.75",
+        "bull_case": "4.90",
+        "bear_case": "4.50"
+      },
+      "audit_trigger": "Pressão de Colheita EUA (+17.5 mi t): Pico da safra americana trava repiques acima de US$ 4.80/bu."
+    },
+    {
+      "commodity": "Milho B3 (Nov/26 vs. Mar/27)",
+      "current_base": 66.57,
+      "short_term_projection": {
+        "target_range": "65.80 - 67.20 (Nov) / 75.50 - 77.00 (Mar)",
+        "bias": "Carrego Forte (Spread > R$ 9.39)",
+        "probability_pct": 75
+      },
+      "medium_term_scenarios": {
+        "base_case": "76.00 - 78.00 (Mar)",
+        "bull_case": "80.00+",
+        "bear_case": "73.00"
+      },
+      "audit_trigger": "70 Mi t no Campo vs. Usinas de Etanol (+6.6% consumo): Estoques locais seguram Nov/26, mas demanda de usinas flex/full sustenta Mar/27 acima de R$ 75.50."
+    },
+    {
+      "commodity": "DDG / DDGS (Mato Grosso)",
+      "current_base": 937.95,
+      "short_term_projection": {
+        "target_range": "935.00 - 955.00",
+        "bias": "Firme / Alta",
+        "probability_pct": 70
+      },
+      "medium_term_scenarios": {
+        "base_case": "945.00 - 970.00",
+        "bull_case": "990.00",
+        "bear_case": "910.00"
+      },
+      "audit_trigger": "Demanda China (88% do MT em set) + Dólar > R$ 5.05: Exportação aquecida dá poder de preço às usinas em reais."
+    },
+    {
+      "commodity": "Algodão Pluma (ICE Dez/26 e Cepea)",
+      "current_base": 80.48,
+      "short_term_projection": {
+        "target_range": "80.00 - 81.80 (ICE) / 405 - 409 (Cepea)",
+        "bias": "Lateral / Firme",
+        "probability_pct": 60
+      },
+      "medium_term_scenarios": {
+        "base_case": "80.50 - 82.50",
+        "bull_case": "84.00",
+        "bear_case": "78.50"
+      },
+      "audit_trigger": "Arbitragem Poliéster (WTI > US$ 100) vs. Demanda Têxtil: Petróleo alto defende piso de 80 c/lb em NY."
+    },
+    {
+      "commodity": "Caroço de Algodão (Mato Grosso)",
+      "current_base": 705.19,
+      "short_term_projection": {
+        "target_range": "700.00 - 720.00",
+        "bias": "Piso Sazonal",
+        "probability_pct": 75
+      },
+      "medium_term_scenarios": {
+        "base_case": "715.00 - 745.00",
+        "bull_case": "760.00",
+        "bear_case": "690.00"
+      },
+      "audit_trigger": "Fim da Colheita no MT (100%): Término do beneficiamento estanca quedas e inicia formação de estoques para entressafra."
+    },
+    {
+      "commodity": "Boi Gordo (Cepea SP e B3 Nov/26)",
+      "current_base": 380.70,
+      "short_term_projection": {
+        "target_range": "382.00 - 386.00 (Cepea) / 394.00 - 402.00 (B3 Nov)",
+        "bias": "Teste dos R$ 400/@",
+        "probability_pct": 70
+      },
+      "medium_term_scenarios": {
+        "base_case": "385.00 - 392.00",
+        "bull_case": "400.00+",
+        "bear_case": "375.00"
+      },
+      "audit_trigger": "Cota Chinesa de Jan/27 (Sial Paris) + NDVI Pastagens: Abates em novembro para embarcar para a reabertura da cota de 1.1 mi t em jan/27."
+    },
+    {
+      "commodity": "Dólar (USD/BRL Spot e Fut Nov/26)",
+      "current_base": 5.0728,
+      "short_term_projection": {
+        "target_range": "5.03 - 5.12",
+        "bias": "Volátil com piso em R$ 5.02",
+        "probability_pct": 65
+      },
+      "medium_term_scenarios": {
+        "base_case": "5.02 - 5.12",
+        "bull_case": "5.18+",
+        "bear_case": "4.95"
+      },
+      "audit_trigger": "Geopolítica (Ormuz/WTI > US$ 100) + Risco Doméstico: Suporte em R$ 5.02 e resistência em R$ 5.10 com venda de hedge pelas tradings."
+    }
+  ]
+}
