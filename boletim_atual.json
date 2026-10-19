@@ -1,223 +1,81 @@
 {
   "metadata": {
-    "report_id": "AGRI-INTEL-2026-10-19-0600",
-    "timestamp": "2026-10-19T06:00:00-03:00",
-    "analyst": "Agri Market Intel AI",
-    "target_user": "Luan Barbosa Andrade",
-    "context": "Abertura de Mercado e Atualização Semanal"
+    "titulo_edicao": "Edição Meio-Dia / Intraday",
+    "data_hora": "19/10/2026 - 12h00",
+    "resumo_falado": "Olá! Chegamos ao nosso giro de mercado agrícola do meio-dia desta segunda-feira, dezassete/dezanove de outubro de dois mil e vinte e seis. Na sessão regular desta manhã em Chicago, a soja tenta sustentar o repique técnico na casa de doze dólares e sessenta e quatro cêntimos por bushel, limitada pelo avanço do plantio em Mato Grosso para 51,86% da área (IMEA). No mercado interno, o salto de 13% na capacidade das esmagadoras brasileiras (86,4 mi t/ano segundo a Abiove) sustenta o físico no Triângulo Mineiro a R$ 148,03/sc e em MS a R$ 143,00/sc, enquanto a Conab projeta exportação recorde de 27,1 mi t de farelo. No milho, sorgo e DDGS, a China absorveu 95,6% de todo o sorgo exportado pelo Brasil no ano (755,6 mil t) e 88% do DDG de MT em setembro (130,65 mil t). Na B3, o carrego segue excelente entre Nov/26 (R$ 66,57/sc) e Mar/27 (R$ 75,96/sc). No algodão, a pluma recupera os 80 c/lb em NY com o petróleo WTI acima de US$ 101, e o caroço de algodão no MT abre na mínima de R$ 705,19/t (-4,18%). No giro macro e pecuária, a Serasa Experian apontou queda de 20,7% nos pedidos de recuperação judicial do agro no 2º trimestre (448 pedidos), embora com alta em produtores Pessoa Física, e a reabertura da cota chinesa de 1,1 mi t de carne bovina em jan/27 mantém o Boi Cepea no recorde de R$ 380,70/@ e o Nov/26 na B3 a R$ 397,95/@!"
   },
-  "market_indicators": {
-    "cambio": {
-      "dolar_comercial": 5.0728,
-      "dolar_futuro_nov26": 5080.00,
-      "variacao_diaria_pct": 0.00
+  "panorama_geral": [
+    {
+      "ativo": "Soja Grão (CBOT - 19/10 / Físico BR)",
+      "cotacao": "US$ 12,628 a US$ 12,640/bu (+0,13% a +0,22%)",
+      "destaque": "Repique técnico limitado pelo plantio em 51,86% no MT (+18,58 p.p.); Paranaguá a R$ 154,61/sc e Triângulo-MG a R$ 148,03/sc."
     },
-    "energia": {
-      "petroleo_wti_nov26": 101.77,
-      "variacao_diaria_pct": 0.36
+    {
+      "ativo": "Farelo e Óleo de Soja (CBOT / Abiove)",
+      "cotacao": "Farelo CBOT: US$ 357,10/tc / Óleo: 67,13 c/lb / MT: R$ 1.964,98/t",
+      "destaque": "Capacidade de moagem no BR cresce 13% (86,4 mi t/ano - Abiove); exportação de farelo vai a recorde de 27,1 mi t (+3,06%)."
     },
-    "soja": {
-      "cbot_nov26": 12.6403,
-      "cbot_var_pct": 0.22,
-      "paranaguap_spot": 154.61,
-      "cepea_pr": 148.77,
-      "triangulo_mg": 148.03,
-      "campo_grande_ms": 143.00,
-      "rondonopolis_mt": 142.00
+    {
+      "ativo": "Milho (CBOT 19/10 / B3 Curto vs. Longo)",
+      "cotacao": "CBOT: US$ 4,7305/bu (-0,25%) / B3 Nov: R$ 66,57 / Mar/27: R$ 75,96",
+      "destaque": "CBOT pressionada por +17,5 mi t nos EUA; no BR, consumo interno sobe 6,6% com etanol e sustenta carrego de +R$ 9,39/sc na B3."
     },
-    "farelo_oleo_soja": {
-      "farelo_cbot_dez26": 357.10,
-      "farelo_cbot_mar27": 352.70,
-      "oleo_cbot": 67.13,
-      "farelo_mt_imea": 1964.98
+    {
+      "ativo": "DDG/DDGS e Sorgo (Demanda China)",
+      "cotacao": "DDG MT Set: 130,65 mil t (+100%) / Sorgo Exp: 790 mil t",
+      "destaque": "China absorveu 95,6% do sorgo exportado pelo BR (755,6 mil t) e 88% do DDG de MT em set; UNEM vê 15 mi t de DDG até 2030."
     },
-    "milho_sorgo": {
-      "cbot_dez26": 4.7305,
-      "cbot_var_pct": -0.25,
-      "cepea_esalq": 64.85,
-      "b3_nov26": 66.57,
-      "b3_mar27": 75.96,
-      "soriso_mt": 46.20,
-      "rio_verde_go": 53.00
+    {
+      "ativo": "Algodão e Caroço (ICE NY / Cepea / IMEA)",
+      "cotacao": "ICE NY: 80,28 a 80,68 c/lb / Caroço MT: R$ 705,19/t (-4,18%)",
+      "destaque": "Pluma recupera os 80 c/lb com WTI >US$ 101; Caroço no MT opera na mínima de R$ 705,19/t após fim da colheita; Farelo a R$ 796,90/t."
     },
-    "algodao_coprodutos": {
-      "ice_ny_dez26": 80.48,
-      "cepea_pluma": 407.41,
-      "caroco_mt_imea": 705.19,
-      "caroco_ba_aiba": 976.67,
-      "farelo_algodao": 796.90
-    },
-    "pecuaria": {
-      "boi_cepea_sp": 380.70,
-      "boi_b3_nov26": 397.95,
-      "bezerro_ms": 3489.71
+    {
+      "ativo": "Boi Gordo (Sial Paris / B3) e Crédito (Serasa)",
+      "cotacao": "Boi Cepea: R$ 380,70/@ / B3 Nov/26: R$ 397,95/@ / RJs Agro: -20,7%",
+      "destaque": "Reabertura da cota chinesa (1,1 mi t) em jan/27 puxa Boi China (R$ 385 SP / R$ 370 MG); RJs caem 20,7% no geral, mas sobem em PF."
     }
-  },
-  "audit_panel_projections": [
-    {
-      "commodity": "Soja CBOT (Nov/26)",
-      "current_base": 12.6403,
-      "short_term_projection": {
-        "target_range": "12.48 - 12.68",
-        "bias": "Leve Baixa",
-        "probability_pct": 65
+  ],
+  "blocos_culturas": {
+    "Complexo Soja e Derivados": {
+      "vies_mercado": "CBOT Grão: Leve repique técnico, mas teto curto em US$ 12,70-12,75/bu pelo plantio acelerado no BR | Basis Físico Interno (Esmagadoras MG/MS): Firme | Farelo de Soja: Baixista | Óleo de Soja: Estruturalmente Altista.",
+      "resumo_executivo": "O mercado de soja equilibra dois vetores opostos: na CBOT, o grão tenta sustentar leve repique técnico (+0,13% a +0,22%), amparado por relatos de problemas de qualidade na colheita dos EUA. Porém, a alta é travada pelo salto de 18,58 p.p. no plantio de Mato Grosso (51,86% da área). No mercado doméstico, a capacidade instalada das esmagadoras cresceu 13% para 86,4 mi t/ano (Abiove), mantendo firme a disputa pelo grão no interior (Triângulo Mineiro a R$ 148,03/sc e MS a R$ 143,00/sc), mas projetando oferta recorde de farelo (27,1 mi t exportadas).",
+      "noticias_detalhadas": [
+        {
+          "titulo": "IMEA Confirma Plantio da Soja em 51,86% no MT (+18,58 p.p.) e Custeio de R$ 4.326,01/ha; Abiove Aponta Salto de 13% na Moagem",
+          "resumo_noticia": "A semeadura em MT alcançou 51,86% dos 13,05 mi ha, com custeio operacional em R$ 4.326,01/ha (R$ 3.817,12/ha em insumos). No elo industrial, a Abiove revelou expansão de 13% na capacidade de moagem para 86,4 mi t/ano (R$ 7,65 bi em investimentos), levando a Conab a projetar recorde de 27,1 mi t de farelo exportado em 2026/27. No Nordeste, a soja tornou-se a principal cultura (+23,4% nas exportações).",
+          "links": [
+            {"titulo_link": "Safra 26/27: Semeadura da soja ultrapassa 50% da área em MT (51,86%) - Pauta MT", "url": "https://www.google.com/search?q=Pauta+MT+Semeadura+soja+51,86%"},
+            {"titulo_link": "Capacidade da indústria de soja do Brasil cresce 13% (86,4 mi t) - Notícias Agrícolas / Abiove", "url": "https://www.noticiasagricolas.com.br/"},
+            {"titulo_link": "Conab projeta 27,1 mi t de exportação de farelo de soja (+3,06%) - R7 Fonte Agro", "url": "https://www.r7.com/"},
+            {"titulo_link": "Soja virou a principal cultura do agro nordestino (+23,4% exp.) - Globo Rural", "url": "https://globorural.globo.com/"}
+          ]
+        }
+      ],
+      "consultoria": {
+        "Produtores Rurais": "Venda a safra velha (32,3 mi t retidas) diretamente para as esmagadoras regionais nesta semana! Com 51,86% plantado no MT, haverá muita soja precoce em janeiro/27 (Santos já indica R$ 140/sc para Fev/Mar contra R$ 154,61-157/sc hoje em Paranaguá e R$ 148,03/sc no Triângulo Mineiro).",
+        "Cooperativas e Revendas": "Diante da queda de 21% no crédito rural oficial em estados do Cerrado e aumento de RJs em Produtores PF (Serasa), concentre o fornecimento de fungicidas e foliares em operações de Barter casadas com a originação da safra velha.",
+        "Indústrias e Confinamentos": "A expansão de 13% no esmagamento para biodiesel vai gerar enxurrada de farelo de soja. Não trave compras longas de farelo a preços cheios agora: compre para o giro curto e priorize caroço de algodão (R$ 705,19/t no MT) e farelo de algodão (R$ 796,90/t).",
+        "Tradings e Exportadores": "Monitorar o prêmio qualitativo da soja brasileira em novembro diante do excesso de umidade na colheita dos EUA e ampliar originação no Arco Norte/Nordeste (+23,4% nos embarques)."
       },
-      "medium_term_scenarios": {
-        "base_case": "12.40 - 12.60",
-        "bull_case": "12.85+",
-        "bear_case": "12.20"
-      },
-      "audit_trigger": "Colheita EUA (>65%) e Plantio MT (>65%): Chuvas regulares no Cerrado reduzem prêmio climático; rompimento de US$ 12.80 exige compras massivas da China nos EUA."
+      "visao_trader": {
+        "Direcional e Spreads": "SHORT em Farelo de Soja (Dez/26 a US$ 357,10/tc e Mar/27 a US$ 352,70/tc) e Venda de Repiques na Soja Nov/26 perto de US$ 12,70/bu. Operação Estrutural: LONG Oil Share (Comprar Óleo de Soja a 67,13 c/lb vs. Vender Farelo Mar/27 a US$ 352,70/tc), apoiado por WTI > US$ 100 e estoques NOPA na mínima desde 2014.",
+        "Cross-Hedge e Trading do Dólar": "Com Chicago pressionada em US$ 12,63/bu e o Dólar Futuro pagando prêmio de carrego (Forward Points da Selic vs. Cupom Cambial levando o NDF Março/27 a ~R$ 5,2060), trave apenas a perna do Dólar via NDF nos picos de R$ 5,08-5,11 Spot e deixe Chicago aberto para ralis climáticos."
+      }
     },
-    {
-      "commodity": "Soja Físico BR (Paranaguá / MG)",
-      "current_base": 154.61,
-      "short_term_projection": {
-        "target_range": "153.50 - 156.50",
-        "bias": "Estável / Firme",
-        "probability_pct": 70
-      },
-      "medium_term_scenarios": {
-        "base_case": "152.00 - 155.00",
-        "bull_case": "158.00",
-        "bear_case": "149.00"
-      },
-      "audit_trigger": "Disputa de Esmagadoras (+13% capacidade) vs. Safra Velha (32.3 mi t): Esmagadoras de MG/MS sustentam basis regional, mas porto enfraquece na virada para novembro."
-    },
-    {
-      "commodity": "Farelo de Soja (CBOT Dez/26)",
-      "current_base": 357.10,
-      "short_term_projection": {
-        "target_range": "351.00 - 358.00",
-        "bias": "Baixista",
-        "probability_pct": 70
-      },
-      "medium_term_scenarios": {
-        "base_case": "345.00 - 355.00",
-        "bull_case": "365.00",
-        "bear_case": "338.00"
-      },
-      "audit_trigger": "Moagem EUA + Biodiesel BR: Expansão de moagem doméstica e exportação de 27.1 mi t de farelo mantêm pressão vendedora em dólar."
-    },
-    {
-      "commodity": "Óleo de Soja (CBOT Dez/26)",
-      "current_base": 67.13,
-      "short_term_projection": {
-        "target_range": "67.00 - 68.80",
-        "bias": "Altista",
-        "probability_pct": 65
-      },
-      "medium_term_scenarios": {
-        "base_case": "68.00 - 70.00",
-        "bull_case": "71.50",
-        "bear_case": "65.00"
-      },
-      "audit_trigger": "Estoques NOPA (Mínima desde 2014) + Petróleo WTI (>US$ 100): Manutenção do WTI acima de US$ 98 garante ganho de Oil Share."
-    },
-    {
-      "commodity": "Milho CBOT (Dez/26)",
-      "current_base": 4.7305,
-      "short_term_projection": {
-        "target_range": "4.65 - 4.78",
-        "bias": "Baixista",
-        "probability_pct": 65
-      },
-      "medium_term_scenarios": {
-        "base_case": "4.60 - 4.75",
-        "bull_case": "4.90",
-        "bear_case": "4.50"
-      },
-      "audit_trigger": "Pressão de Colheita EUA (+17.5 mi t): Pico da safra americana trava repiques acima de US$ 4.80/bu."
-    },
-    {
-      "commodity": "Milho B3 (Nov/26 vs. Mar/27)",
-      "current_base": 66.57,
-      "short_term_projection": {
-        "target_range": "65.80 - 67.20 (Nov) / 75.50 - 77.00 (Mar)",
-        "bias": "Carrego Forte (Spread > R$ 9.39)",
-        "probability_pct": 75
-      },
-      "medium_term_scenarios": {
-        "base_case": "76.00 - 78.00 (Mar)",
-        "bull_case": "80.00+",
-        "bear_case": "73.00"
-      },
-      "audit_trigger": "70 Mi t no Campo vs. Usinas de Etanol (+6.6% consumo): Estoques locais seguram Nov/26, mas demanda de usinas flex/full sustenta Mar/27 acima de R$ 75.50."
-    },
-    {
-      "commodity": "DDG / DDGS (Mato Grosso)",
-      "current_base": 937.95,
-      "short_term_projection": {
-        "target_range": "935.00 - 955.00",
-        "bias": "Firme / Alta",
-        "probability_pct": 70
-      },
-      "medium_term_scenarios": {
-        "base_case": "945.00 - 970.00",
-        "bull_case": "990.00",
-        "bear_case": "910.00"
-      },
-      "audit_trigger": "Demanda China (88% do MT em set) + Dólar > R$ 5.05: Exportação aquecida dá poder de preço às usinas em reais."
-    },
-    {
-      "commodity": "Algodão Pluma (ICE Dez/26 e Cepea)",
-      "current_base": 80.48,
-      "short_term_projection": {
-        "target_range": "80.00 - 81.80 (ICE) / 405 - 409 (Cepea)",
-        "bias": "Lateral / Firme",
-        "probability_pct": 60
-      },
-      "medium_term_scenarios": {
-        "base_case": "80.50 - 82.50",
-        "bull_case": "84.00",
-        "bear_case": "78.50"
-      },
-      "audit_trigger": "Arbitragem Poliéster (WTI > US$ 100) vs. Demanda Têxtil: Petróleo alto defende piso de 80 c/lb em NY."
-    },
-    {
-      "commodity": "Caroço de Algodão (Mato Grosso)",
-      "current_base": 705.19,
-      "short_term_projection": {
-        "target_range": "700.00 - 720.00",
-        "bias": "Piso Sazonal",
-        "probability_pct": 75
-      },
-      "medium_term_scenarios": {
-        "base_case": "715.00 - 745.00",
-        "bull_case": "760.00",
-        "bear_case": "690.00"
-      },
-      "audit_trigger": "Fim da Colheita no MT (100%): Término do beneficiamento estanca quedas e inicia formação de estoques para entressafra."
-    },
-    {
-      "commodity": "Boi Gordo (Cepea SP e B3 Nov/26)",
-      "current_base": 380.70,
-      "short_term_projection": {
-        "target_range": "382.00 - 386.00 (Cepea) / 394.00 - 402.00 (B3 Nov)",
-        "bias": "Teste dos R$ 400/@",
-        "probability_pct": 70
-      },
-      "medium_term_scenarios": {
-        "base_case": "385.00 - 392.00",
-        "bull_case": "400.00+",
-        "bear_case": "375.00"
-      },
-      "audit_trigger": "Cota Chinesa de Jan/27 (Sial Paris) + NDVI Pastagens: Abates em novembro para embarcar para a reabertura da cota de 1.1 mi t em jan/27."
-    },
-    {
-      "commodity": "Dólar (USD/BRL Spot e Fut Nov/26)",
-      "current_base": 5.0728,
-      "short_term_projection": {
-        "target_range": "5.03 - 5.12",
-        "bias": "Volátil com piso em R$ 5.02",
-        "probability_pct": 65
-      },
-      "medium_term_scenarios": {
-        "base_case": "5.02 - 5.12",
-        "bull_case": "5.18+",
-        "bear_case": "4.95"
-      },
-      "audit_trigger": "Geopolítica (Ormuz/WTI > US$ 100) + Risco Doméstico: Suporte em R$ 5.02 e resistência em R$ 5.10 com venda de hedge pelas tradings."
-    }
-  ]
-}
+    "Complexo Milho, Sorgo e Derivados": {
+      "vies_mercado": "CBOT Milho: Baixista (US$ 4,73/bu) | Milho Spot BR: Piso técnico (Cepea R$ 64,85/sc) | Milho B3 Março/27 (R$ 75,96/sc), Sorgo e DDG: Fortemente Altistas.",
+      "resumo_executivo": "Enquanto a CBOT recua refletindo a surpresa de +17,5 milhões de toneladas na safra dos EUA, no Brasil o balanço da Conab projeta crescimento de 6,6% no consumo interno de milho em 2026/27 (puxado pelo etanol de milho, reduzindo estoques finais de 16,0 para 14,9 mi t), sustentando um prêmio de carrego de +R$ 9,39/saca entre Novembro/26 (R$ 66,57/sc) e Março/27 (R$ 75,96/sc) na B3. Além disso, a China absorveu 95,6% do sorgo exportado pelo Brasil (755,6 mil t) e 88% do DDG de MT em setembro (130,65 mil t).",
+      "noticias_detalhadas": [
+        {
+          "titulo": "China Compra 95,6% do Sorgo Exportado pelo Brasil e Dobram Embarques Mensais de DDG em MT (130,65 Mil t); Consumo Interno Sobe 6,6%",
+          "resumo_noticia": "Das 790 mil t de sorgo exportadas pelo Brasil de jan a set/2026, a China comprou 755,6 mil t (95,64%). No DDG, os embarques de MT atingiram 130,65 mil t em setembro (dobro de agosto e 2º maior da história). A expansão das usinas flex (CAPEX de R$ 1,54/L vs R$ 2,66/L nas full) levará o Brasil a superar 15 mi t de DDG até 2030.",
+          "links": [
+            {"titulo_link": "Antes desprezado, sorgo vira 'negócio da China' com exportações (755,6 mil t) - Globo Rural", "url": "https://globorural.globo.com/"},
+            {"titulo_link": "Imea: Exportações de DDG de MT crescem 35% e setembro atinge 130,65 mil t - Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/"},
+            {"titulo_link": "Etanol de milho: Brasil deve superar 15 milhões de toneladas de DDG até 2030 - CompreRural / UNEM", "url": "https://www.comprerural.com/"},
+            {"titulo_link": "Etanol de milho amplia interesse por usinas flex (R$ 1,54/litro vs R$ 2,66/litro) - Visão Agro", "url": "https://visaoagro.com.br/"}
+          ]
+        }
+      ],
+      "consultoria":
