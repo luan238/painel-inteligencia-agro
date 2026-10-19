@@ -12,13 +12,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# 2. CSS IDÊNTICO AO NUTRE COMPARE PRO DA GERMINARE (PRETO + LARANJA + TOQUE VERDE)
+# 2. CSS IDÊNTICO AO NUTRE COMPARE PRO DA GERMINARE
 st.markdown(
     """
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-    /* Esconde a barra padrão do Streamlit para colocar a Topbar da Germinare */
     header[data-testid="stHeader"] {
         background: transparent !important;
         height: 0px !important;
@@ -35,7 +34,7 @@ st.markdown(
         color: #e5e5e5 !important;
     }
 
-    /* TOPBAR FIXA GERMINARE (Preta com linha laranja embaixo) */
+    /* TOPBAR FIXA GERMINARE */
     .germinare-topbar {
         position: fixed;
         top: 0;
@@ -49,21 +48,6 @@ st.markdown(
         justify-content: space-between;
         padding: 0 28px;
         z-index: 999999;
-    }
-    .germinare-logo {
-        font-size: 24px;
-        font-weight: 400;
-        color: #ff7a00;
-        letter-spacing: -0.5px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-    }
-    .germinare-logo-leaf {
-        color: #4caf50;
-        font-size: 18px;
-        margin-right: -4px;
-        margin-top: -8px;
     }
     .germinare-top-right {
         font-size: 13px;
@@ -87,7 +71,6 @@ st.markdown(
         margin-bottom: 12px;
     }
 
-    /* Inputs da Sidebar e da Página (Fundo quase preto e borda fina cinza-escura) */
     div[data-baseweb="select"] > div,
     div[data-baseweb="input"] > div {
         background-color: #111111 !important;
@@ -96,7 +79,7 @@ st.markdown(
         color: #f5f5f5 !important;
     }
 
-    /* TÍTULO PRINCIPAL ("Market Intelligence Pro") */
+    /* TÍTULO PRINCIPAL */
     .main-title {
         font-size: 30px;
         font-weight: 700;
@@ -113,7 +96,7 @@ st.markdown(
         margin-bottom: 18px;
     }
 
-    /* CAIXA DE REFERÊNCIA / RESUMO (Idêntica à caixa "Valores de referência" da foto) */
+    /* CAIXA DE REFERÊNCIA / RESUMO */
     .ref-box {
         background-color: #161616;
         border: 1px solid #282828;
@@ -128,7 +111,7 @@ st.markdown(
         color: #ffffff;
     }
 
-    /* ABAS ESTILO NUTRE COMPARE PRO (Sem caixas, sublinhado laranja na ativa) */
+    /* ABAS ESTILO NUTRE COMPARE PRO */
     div[data-baseweb="tab-list"] {
         border-bottom: 1px solid #262626 !important;
         gap: 28px !important;
@@ -148,7 +131,7 @@ st.markdown(
         border-bottom: 2px solid #ff7a00 !important;
     }
 
-    /* PÍLULAS / CHIPS DE COMMODITIES (Borda laranja com ícone laranja) */
+    /* PÍLULAS DE COMMODITIES */
     .Filter-pills-row {
         display: flex;
         flex-wrap: wrap;
@@ -174,7 +157,6 @@ st.markdown(
         font-weight: 500;
     }
 
-    /* TÍTULO DE SEÇÃO COM LINHA DIVISÓRIA */
     .section-header {
         font-size: 18px;
         font-weight: 700;
@@ -185,7 +167,7 @@ st.markdown(
         margin-bottom: 16px;
     }
 
-    /* CARTÕES IDÊNTICOS AOS DE CUSTO-BENEFÍCIO DA FOTO */
+    /* CARTÕES NUTRE COMPARE PRO */
     .nutre-card {
         background-color: #141414;
         border: 1px solid #242424;
@@ -239,12 +221,25 @@ st.markdown(
     }
 </style>
 
-<!-- TOPBAR FIXA GERMINARE -->
+<!-- TOPBAR FIXA GERMINARE COM LOGO VETORIAL FIEL AO DA FOTO -->
 <div class="germinare-topbar">
-    <div class="germinare-logo">
-        <span>g</span><span class="germinare-logo-leaf">🌱</span><span>erminare</span>
+    <div style="display: flex; align-items: center;">
+        <svg width="165" height="38" viewBox="0 0 210 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="germGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ff7a00" />
+                    <stop offset="68%" stop-color="#e66a00" />
+                    <stop offset="100%" stop-color="#5c2804" />
+                </linearGradient>
+            </defs>
+            <!-- Folhinha verde saindo do topo direito da letra 'g' -->
+            <path d="M22 14 C23 8, 29 6, 32 9 C29 13, 25 15, 22 14 Z" fill="#4caf50"/>
+            <path d="M21 14 C19 10, 15 9, 13 11 C15 14, 18 15, 21 14 Z" fill="#388e3c"/>
+            <!-- Palavra germinare unida sem espaços -->
+            <text x="4" y="33" font-family="'Inter', 'Segoe UI', sans-serif" font-size="31" font-weight="300" letter-spacing="-0.8" fill="url(#germGrad)">germinare</text>
+        </svg>
     </div>
-    <div class="germinare-top-right">Inteligência em insumos & commodities</div>
+    <div class="germinare-top-right">Inteligência em insumos</div>
 </div>
 """,
     unsafe_allow_html=True,
@@ -289,7 +284,7 @@ dados = carregar_dados_boletim(url_padrao)
 if not dados:
   st.stop()
 
-# 4. SIDEBAR IDÊNTICA À FOTO ("CONFIGURAÇÕES DA ANÁLISE" E "COTAÇÕES DO DIA")
+# 4. SIDEBAR IDÊNTICA À FOTO
 st.sidebar.markdown(
     '<div class="sidebar-section-title">CONFIGURAÇÕES DA ANÁLISE</div>',
     unsafe_allow_html=True,
@@ -360,9 +355,7 @@ aba_panorama, aba_culturas, aba_noticias, aba_cambio, aba_projecoes = st.tabs([
     "Base de Projeções & Mentoria",
 ])
 
-# ==============================================================================
-# ABA 1: PANORAMA & COTAÇÕES (Estilo Cards 2 Colunas da Foto)
-# ==============================================================================
+# ABA 1: PANORAMA & COTAÇÕES
 with aba_panorama:
   st.markdown(
       '<div style="font-size:15px; font-weight:600; color:#ffffff;'
@@ -370,12 +363,10 @@ with aba_panorama:
       " monitorados neste boletim</div>",
       unsafe_allow_html=True,
   )
-  pills_html = "".join(
-      [
-          f'<span class="pill-active">☑ {c["ativo"].split("(")[0].strip()}</span>'
-          for c in dados["panorama_geral"]
-      ]
-  )
+  pills_html = "".join([
+      f'<span class="pill-active">☑ {c["ativo"].split("(")[0].strip()}</span>'
+      for c in dados["panorama_geral"]
+  ])
   st.markdown(
       f'<div class="Filter-pills-row">{pills_html}<span class="pill-green">🌱'
       f' Turno: {dados["metadata"]["data_hora"]}</span></div>',
@@ -405,9 +396,7 @@ with aba_panorama:
           unsafe_allow_html=True,
       )
 
-# ==============================================================================
 # ABA 2: ANÁLISE POR CULTURA & TRADING
-# ==============================================================================
 with aba_culturas:
   cultura_sel = st.selectbox(
       "Selecione o Complexo para detalhamento:",
@@ -461,7 +450,12 @@ with aba_culturas:
 
   st.markdown("**Indicações Estratégicas por Elo da Cadeia**")
   perfis_exibir = (
-      ["Produtores Rurais", "Cooperativas e Revendas", "Indústrias e Confinamentos", "Tradings e Exportadores"]
+      [
+          "Produtores Rurais",
+          "Cooperativas e Revendas",
+          "Indústrias e Confinamentos",
+          "Tradings e Exportadores",
+      ]
       if perfil_decisao == "Todos os Perfis (Completa)"
       else [perfil_decisao]
   )
@@ -480,9 +474,7 @@ with aba_culturas:
           unsafe_allow_html=True,
       )
 
-# ==============================================================================
-# ABA 3: CENTRAL DE NOTÍCIAS & LINKS (Resumo + Visão Trading + Links Laranjas)
-# ==============================================================================
+# ABA 3: CENTRAL DE NOTÍCIAS & LINKS
 with aba_noticias:
   st.markdown(
       '<div class="section-header">Central de Notícias, Fundamentos e Links'
@@ -492,13 +484,11 @@ with aba_noticias:
 
   for nome_cultura, bloco_c in dados["blocos_culturas"].items():
     for noticia in bloco_c["noticias_detalhadas"]:
-      links_html = " &nbsp;|&nbsp; ".join(
-          [
-              f'<a href="{l["url"]}" target="_blank" class="nutre-link">ⓘ Link'
-              f' {i}: {l["titulo_link"]}</a>'
-              for i, l in enumerate(noticia["links"], 1)
-          ]
-      )
+      links_html = " &nbsp;|&nbsp; ".join([
+          f'<a href="{l["url"]}" target="_blank" class="nutre-link">ⓘ Link'
+          f' {i}: {l["titulo_link"]}</a>'
+          for i, l in enumerate(noticia["links"], 1)
+      ])
       st.markdown(
           f"""
             <div class="nutre-card">
@@ -516,9 +506,7 @@ with aba_noticias:
           unsafe_allow_html=True,
       )
 
-# ==============================================================================
 # ABA 4: SIMULADOR NDF & MESA DE CÂMBIO
-# ==============================================================================
 with aba_cambio:
   cambio = dados["mesa_cambio"]
   st.markdown(
@@ -575,14 +563,14 @@ with aba_cambio:
         "Preço da Saca em US$", value=27.50, step=0.10
     )
   with cc2:
-    taxa_di = st.number_input("Taxa DI / Selic (% a.a.)", value=11.50, step=0.25)
+    taxa_di = st.number_input(
+        "Taxa DI / Selic (% a.a.)", value=11.50, step=0.25
+    )
     cupom_cambial = st.number_input(
         "Cupom Cambial (% a.a.)", value=4.80, step=0.10
     )
   with cc3:
-    dias_uteis = st.number_input(
-        "Dias Úteis (Base 252)", value=111, step=1
-    )
+    dias_uteis = st.number_input("Dias Úteis (Base 252)", value=111, step=1)
     dias_corridos = st.number_input(
         "Dias Corridos (Base 360)", value=163, step=1
     )
@@ -620,9 +608,7 @@ with aba_cambio:
         unsafe_allow_html=True,
     )
 
-# ==============================================================================
 # ABA 5: BASE DE PROJEÇÕES AUDITÁVEIS & MENTORIA
-# ==============================================================================
 with aba_projecoes:
   st.markdown(
       '<div class="section-header">Pílula de Inteligência de Mercado (Mentoria'
