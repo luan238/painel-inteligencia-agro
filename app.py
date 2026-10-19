@@ -13,34 +13,59 @@ st.set_page_config(
 )
 
 
+# Função auxiliar que limpa crases ```json caso tenham sido coladas sem querer
+def limpar_e_ler_json(texto_bruto):
+  texto = texto_bruto.strip()
+  if texto.startswith("```json"):
+    texto = texto[7:]
+  elif texto.startswith("```"):
+    texto = texto[3:]
+  if texto.endswith("```"):
+    texto = texto[:-3]
+  texto = texto.strip()
+  return json.loads(texto)
+
+
 # 2. FUNÇÃO PARA LER A "API" DO GITHUB (OU ARQUIVO LOCAL)
-@st.cache_data(ttl=60)  # Atualiza o cache a cada 60 segundos
+@st.cache_data(ttl=30)
 def carregar_dados_boletim(url_raw_github=None):
+  # Tenta primeiro pela URL Raw se fornecida
   if url_raw_github and url_raw_github.startswith("http"):
     try:
-      resposta = requests.get(url_raw_github)
-      if resposta.status_code == 200:
-        return resposta.json()
+      resposta = requests.get(url_raw_github, timeout=10)
+      if resposta.status_code == 200 and resposta.text.strip():
+        return limpar_e_ler_json(resposta.text)
     except Exception as e:
-      st.sidebar.warning(f"Erro ao ler API remota, usando arquivo local: {e}")
+      st.sidebar.warning(f"Aviso na URL remota: {e}")
 
-  # Fallback: Lê o arquivo boletim_atual.json da mesma pasta do repositório
+  # Tenta ler o arquivo boletim_atual.json direto do repositório
   if os.path.exists("boletim_atual.json"):
-    with open("boletim_atual.json", "r", encoding="utf-8") as f:
-      return json.load(f)
+    try:
+      with open("boletim_atual.json", "r", encoding="utf-8") as f:
+        conteudo = f.read()
+        if conteudo.strip():
+          return limpar_e_ler_json(conteudo)
+    except Exception as e:
+      st.error(f"⚠️ Erro de formatação no arquivo `boletim_atual.json`: {e}")
+      st.info(
+          "Dica: Verifique no GitHub se o arquivo `boletim_atual.json` começa"
+          " exatamente com `{` e termina com `}`."
+      )
+      return None
   return None
 
 
-# 3. BARRA LATERAL (CONEXÃO COM A API E FILTROS)
+# 3. BARRA LATERAL
 st.sidebar.title("🌾 Inteligência Agro")
 st.sidebar.caption("Painel Integrado ao Agente de Mercado")
 
+url_padrao = "[https://raw.githubusercontent.com/luan238/painel-inteligencia-agro/main/boletim_atual.json](https://raw.githubusercontent.com/luan238/painel-inteligencia-agro/main/boletim_atual.json)"
 url_api = st.sidebar.text_input(
-    "🔗 Link Raw JSON do GitHub (Opcional):",
-    placeholder="https://raw.githubusercontent.com/.../boletim_atual.json",
+    "🔗 Link Raw JSON do GitHub:",
+    value=url_padrao,
     help=(
-        "Se deixado em branco, o painel lerá o arquivo boletim_atual.json"
-        " direto do repositório."
+        "Link direto da sua API no GitHub para atualização instantânea sem"
+        " reiniciar o app."
     ),
 )
 
@@ -51,13 +76,9 @@ if st.sidebar.button("🔄 Forçar Atualização da API"):
 dados = carregar_dados_boletim(url_api)
 
 if not dados:
-  st.error(
-      "⚠️ Arquivo `boletim_atual.json` não encontrado! Crie o arquivo na mesma"
-      " pasta do `app.py` com o JSON do Passo 1."
-  )
   st.stop()
 
-# 4. CABEÇALHO E RESUMO FALADO (PODCAST EXECUTIVO)
+# 4. CABEÇALHO E RESUMO FALADO
 st.title("📊 Painel de Inteligência de Mercado Agrícola")
 st.markdown(
     f"**Turno:** `{dados['metadata']['titulo_edicao']}` | **Atualização:**"
@@ -70,7 +91,14 @@ with st.expander("🔊 Ouvir / Ler Resumo Falado do Turno (Boletim Executivo)"):
 st.markdown("---")
 
 # 5. ESTRUTURA DE ABAS PRINCIPAIS DO PAINEL
-aba_panorama, aba_culturas, aba_noticias, aba_cambio, aba_mentoria, aba_projecoes = st.tabs([
+(
+    aba_panorama,
+    aba_culturas,
+    aba_noticias,
+    aba_cambio,
+    aba_mentoria,
+    aba_projecoes,
+) = st.tabs([
     "📌 1. Panorama do Turno",
     "🌱 2. Análise por Cultura & Trading",
     "📰 3. Central de Notícias & Links",
@@ -79,9 +107,7 @@ aba_panorama, aba_culturas, aba_noticias, aba_cambio, aba_mentoria, aba_projecoe
     "🎯 6. Projeções Auditáveis (Backtesting)",
 ])
 
-# ==============================================================================
 # ABA 1: PANORAMA GERAL DO TURNO
-# ==============================================================================
 with aba_panorama:
   st.subheader("1. Panorama Consolidado do Turno")
   df_panorama = pd.DataFrame(dados["panorama_geral"])
@@ -92,40 +118,29 @@ with aba_panorama:
   ]
   st.dataframe(df_panorama, use_container_width=True, hide_index=True)
 
-# ==============================================================================
 # ABA 2: ANÁLISE POR CULTURA, PERFIS E VISÃO DO TRADER
-# ==============================================================================
 with aba_culturas:
   st.subheader("2. Análise Detalhada por Cultura / Commodity")
-
   culturas_disponiveis = list(dados["blocos_culturas"].keys())
   cultura_selecionada = st.selectbox(
       "Selecione o Complexo / Commodity:", culturas_disponiveis
   )
-
   bloco = dados["blocos_culturas"][cultura_selecionada]
 
-  # Viés de Mercado em Destaque
   st.warning(f"🧭 **Viés de Mercado:** {bloco['vies_mercado']}")
-
-  # A. Resumo Executivo
   st.markdown("#### A. Resumo Executivo (O que está movendo o mercado)")
   st.write(bloco["resumo_executivo"])
 
-  # B. Notícias e Links daquela Cultura específica
   st.markdown("#### B. Fatos Geradores, Dados de Campo e Links das Fontes")
   for idx, noticia in enumerate(bloco["noticias_detalhadas"], 1):
     with st.container(border=True):
       st.markdown(f"**{idx}. {noticia['titulo']}**")
       st.write(noticia["resumo_noticia"])
       st.markdown("**🔗 Links diretos das matérias para aprofundamento:**")
-      cols_links = st.columns(len(noticia["links"]))
-      for i, link_obj in enumerate(noticia["links"]):
+      for link_obj in noticia["links"]:
         st.markdown(f"- 🌐 [{link_obj['titulo_link']}]({link_obj['url']})")
 
   st.markdown("---")
-
-  # C. Visão de Consultoria por Perfil e Visão do Trader
   st.markdown("#### C. Indicações Estratégicas por Elo da Cadeia")
   col_cons1, col_cons2 = st.columns(2)
 
@@ -144,9 +159,9 @@ with aba_culturas:
         "**🐄 Para Indústrias e Confinamentos/Nutrição:**\n\n"
         + bloco["consultoria"].get("Indústrias e Confinamentos", "")
     )
-    st.secondary_text = st.markdown(
-        f"**🚢 Para Tradings e Exportadores:**\n\n"
-        f" {bloco['consultoria'].get('Tradings e Exportadores', '')}"
+    st.info(
+        "**🚢 Para Tradings e Exportadores:**\n\n"
+        + bloco["consultoria"].get("Tradings e Exportadores", "")
     )
 
   st.markdown("#### 📈 Visão do Trader (Long / Short, Derivativos e Câmbio)")
@@ -162,17 +177,14 @@ with aba_culturas:
         + bloco["visao_trader"].get("Cross-Hedge e Trading do Dólar", "")
     )
 
-# ==============================================================================
-# ABA 3: CENTRAL DE NOTÍCIAS E LINKS (HUB DE FONTES)
-# ==============================================================================
+# ABA 3: CENTRAL DE NOTÍCIAS E LINKS
 with aba_noticias:
   st.subheader(
       "📰 Hub de Notícias do Boletim (Resumo + Impacto no Trading + Links)"
   )
   st.markdown(
       "Acesse rapidamente o resumo de cada notícia que compôs a análise do"
-      " turno e clique nos links abaixo para ler a matéria completa nos portais"
-      " de origem."
+      " turno e clique nos links abaixo para ler a matéria completa."
   )
 
   filtro_cultura_not = st.multiselect(
@@ -199,9 +211,7 @@ with aba_noticias:
               f"**Link {i}:** [{link_obj['titulo_link']}]({link_obj['url']})"
           )
 
-# ==============================================================================
 # ABA 4: MESA DE CÂMBIO E CALCULADORA DE DÓLAR FUTURO (NDF)
-# ==============================================================================
 with aba_cambio:
   st.subheader("💵 Visão da Mesa de Câmbio (FX Desk) & Hedge Cambial")
   cambio = dados["mesa_cambio"]
@@ -219,11 +229,6 @@ with aba_cambio:
       "🧮 Simulador de Dólar Futuro / NDF e Impacto na Saca (Selic vs. Cupom"
       " Cambial)"
   )
-  st.caption(
-      "Calcule em tempo real o ganho de carrego cambial (Forward Points) para"
-      " travar a exportação ou barter da safra."
-  )
-
   col_calc1, col_calc2, col_calc3 = st.columns(3)
   with col_calc1:
     dolar_spot_in = st.number_input(
@@ -247,7 +252,6 @@ with aba_cambio:
         "Dias Corridos até o Vencimento (dc - Base 360):", value=163, step=1
     )
 
-  # Fórmula Oficial da Mesa de Câmbio
   fator_real = (1 + (taxa_di / 100)) ** (dias_uteis / 252)
   fator_dolar = 1 + ((cupom_cambial / 100) * (dias_corridos / 360))
   fator_cambial = fator_real / fator_dolar
@@ -273,23 +277,14 @@ with aba_cambio:
       f"+R$ {ganho_por_saca:.2f}/sc de ganho no câmbio!",
   )
 
-# ==============================================================================
 # ABA 5: PÍLULA DE MENTORIA
-# ==============================================================================
 with aba_mentoria:
   st.subheader("🧠 3. Pílula de Inteligência de Mercado (Mentoria do Turno)")
   st.markdown(f"### {dados['pilula_mentoria']['titulo']}")
   st.success(dados["pilula_mentoria"]["conteudo"])
 
-# ==============================================================================
-# ABA 6: MATRIZ DE PROJEÇÕES AUDITÁVEIS (BACKTESTING)
-# ==============================================================================
+# ABA 6: MATRIZ DE PROJEÇÕES AUDITÁVEIS
 with aba_projecoes:
   st.subheader("🎯 Matriz de Projeções Auditáveis e Track Record")
-  st.markdown(
-      "Acompanhamento das projeções de curto prazo (toda sexta-feira) e"
-      " fechamento mensal (última sexta do mês) para calibragem do modelo."
-  )
-
   df_proj = pd.DataFrame(dados["matriz_projecoes"])
   st.dataframe(df_proj, use_container_width=True, hide_index=True)
