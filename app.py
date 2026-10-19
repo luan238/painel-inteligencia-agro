@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# 2. CSS IDÊNTICO AO NUTRE COMPARE PRO DA GERMINARE
+# 2. CSS IDÊNTICO AO NUTRE COMPARE PRO DA GERMINARE (PRETO + LARANJA + VERDE)
 st.markdown(
     """
 <style>
@@ -55,7 +55,7 @@ st.markdown(
         font-weight: 400;
     }
 
-    /* SIDEBAR IDÊNTICA À FOTO */
+    /* SIDEBAR */
     section[data-testid="stSidebar"] {
         background-color: #0a0a0a !important;
         border-right: 1px solid #1f1f1f !important;
@@ -221,23 +221,10 @@ st.markdown(
     }
 </style>
 
-<!-- TOPBAR FIXA GERMINARE COM LOGO VETORIAL FIEL AO DA FOTO -->
+<!-- TOPBAR FIXA GERMINARE COM LOGÓTIPO OFICIAL -->
 <div class="germinare-topbar">
     <div style="display: flex; align-items: center;">
-        <svg width="165" height="38" viewBox="0 0 210 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="germGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#ff7a00" />
-                    <stop offset="68%" stop-color="#e66a00" />
-                    <stop offset="100%" stop-color="#5c2804" />
-                </linearGradient>
-            </defs>
-            <!-- Folhinha verde saindo do topo direito da letra 'g' -->
-            <path d="M22 14 C23 8, 29 6, 32 9 C29 13, 25 15, 22 14 Z" fill="#4caf50"/>
-            <path d="M21 14 C19 10, 15 9, 13 11 C15 14, 18 15, 21 14 Z" fill="#388e3c"/>
-            <!-- Palavra germinare unida sem espaços -->
-            <text x="4" y="33" font-family="'Inter', 'Segoe UI', sans-serif" font-size="31" font-weight="300" letter-spacing="-0.8" fill="url(#germGrad)">germinare</text>
-        </svg>
+        <img src="https://raw.githubusercontent.com/luan238/painel-inteligencia-agro/main/logo-germinare.png" style="height: 30px; object-fit: contain;" alt="Germinare">
     </div>
     <div class="germinare-top-right">Inteligência em insumos</div>
 </div>
