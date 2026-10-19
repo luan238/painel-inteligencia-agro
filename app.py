@@ -6,152 +6,252 @@ import streamlit as st
 
 # 1. CONFIGURAÇÃO DA PÁGINA
 st.set_page_config(
-    page_title="Germinare Agro | Inteligência de Mercado",
+    page_title="Germinare | Market Intelligence Pro",
     page_icon="🌱",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# 2. INJEÇÃO DE CSS CUSTOMIZADO (DESIGN DARK PREMIUM GERMINARE)
+# 2. CSS IDÊNTICO AO NUTRE COMPARE PRO DA GERMINARE (PRETO + LARANJA + TOQUE VERDE)
 st.markdown(
     """
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-    html, body, [class*="css"] {
+    /* Esconde a barra padrão do Streamlit para colocar a Topbar da Germinare */
+    header[data-testid="stHeader"] {
+        background: transparent !important;
+        height: 0px !important;
+    }
+    .block-container {
+        padding-top: 3.8rem !important;
+        padding-bottom: 3rem !important;
+        max-width: 96% !important;
+    }
+
+    html, body, [class*="css"], .stApp {
         font-family: 'Inter', sans-serif !important;
-        background-color: #0a0c10 !important;
-        color: #f0f4f8 !important;
+        background-color: #0d0d0d !important;
+        color: #e5e5e5 !important;
     }
 
-    /* Fundo principal e Sidebar */
-    .stApp {
-        background: radial-gradient(circle at top right, #112218 0%, #0a0c10 45%);
-    }
-    section[data-testid="stSidebar"] {
-        background-color: #0d1017 !important;
-        border-right: 1px solid #1e2633 !important;
-    }
-
-    /* Cabeçalho Germinare */
-    .germinare-header {
-        background: linear-gradient(135deg, #121722 0%, #0d1512 100%);
-        border: 1px solid #1f2d24;
-        border-left: 5px solid #00e676;
-        border-radius: 14px;
-        padding: 24px 28px;
-        margin-bottom: 24px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    /* TOPBAR FIXA GERMINARE (Preta com linha laranja embaixo) */
+    .germinare-topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 54px;
+        background-color: #050505;
+        border-bottom: 1.5px solid #ff7a00;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 28px;
+        z-index: 999999;
     }
-    .germinare-brand {
-        font-size: 12px;
+    .germinare-logo {
+        font-size: 24px;
+        font-weight: 400;
+        color: #ff7a00;
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .germinare-logo-leaf {
+        color: #4caf50;
+        font-size: 18px;
+        margin-right: -4px;
+        margin-top: -8px;
+    }
+    .germinare-top-right {
+        font-size: 13px;
+        color: #a3a3a3;
+        font-weight: 400;
+    }
+
+    /* SIDEBAR IDÊNTICA À FOTO */
+    section[data-testid="stSidebar"] {
+        background-color: #0a0a0a !important;
+        border-right: 1px solid #1f1f1f !important;
+        padding-top: 1.5rem !important;
+    }
+    .sidebar-section-title {
+        font-size: 11.5px;
         font-weight: 700;
-        letter-spacing: 2px;
+        color: #8c8c8c;
         text-transform: uppercase;
-        color: #00e676;
-        margin-bottom: 4px;
+        letter-spacing: 0.8px;
+        margin-top: 16px;
+        margin-bottom: 12px;
     }
-    .germinare-title {
-        font-size: 28px;
-        font-weight: 800;
+
+    /* Inputs da Sidebar e da Página (Fundo quase preto e borda fina cinza-escura) */
+    div[data-baseweb="select"] > div,
+    div[data-baseweb="input"] > div {
+        background-color: #111111 !important;
+        border: 1px solid #262626 !important;
+        border-radius: 6px !important;
+        color: #f5f5f5 !important;
+    }
+
+    /* TÍTULO PRINCIPAL ("Market Intelligence Pro") */
+    .main-title {
+        font-size: 30px;
+        font-weight: 700;
         color: #ffffff;
-        margin: 0;
+        margin-bottom: 2px;
         letter-spacing: -0.5px;
     }
-    .germinare-badge {
-        background: rgba(0, 230, 118, 0.12);
-        border: 1px solid rgba(0, 230, 118, 0.35);
-        color: #00e676;
-        padding: 6px 14px;
-        border-radius: 999px;
-        font-size: 13px;
-        font-weight: 600;
+    .main-title span {
+        color: #ff7a00;
+    }
+    .main-subtitle {
+        font-size: 14px;
+        color: #8c8c8c;
+        margin-bottom: 18px;
     }
 
-    /* Cartões Customizados (Estilo App Web Dark) */
-    .dark-card {
-        background-color: #12161f;
-        border: 1px solid #1e2633;
-        border-radius: 12px;
-        padding: 20px;
-        margin-bottom: 16px;
-        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
-        transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-    .dark-card:hover {
-        border-color: #00e676;
-    }
-    .card-tag {
-        display: inline-block;
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding: 4px 10px;
-        border-radius: 6px;
-        margin-bottom: 10px;
-    }
-    .tag-green { background: rgba(0, 230, 118, 0.15); color: #00e676; border: 1px solid rgba(0, 230, 118, 0.3); }
-    .tag-blue  { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
-    .tag-amber { background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
-    .tag-red   { background: rgba(248, 113, 113, 0.15); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.3); }
-
-    /* Botões de Link para Notícias */
-    .news-link-btn {
-        display: inline-block;
-        background-color: #18202c;
-        color: #00e676 !important;
-        border: 1px solid #263345;
-        padding: 7px 14px;
+    /* CAIXA DE REFERÊNCIA / RESUMO (Idêntica à caixa "Valores de referência" da foto) */
+    .ref-box {
+        background-color: #161616;
+        border: 1px solid #282828;
         border-radius: 8px;
-        text-decoration: none !important;
-        font-size: 13px;
-        font-weight: 500;
-        margin-right: 8px;
-        margin-top: 8px;
-        transition: all 0.2s ease;
+        padding: 14px 18px;
+        font-size: 13.5px;
+        color: #d4d4d4;
+        line-height: 1.55;
+        margin-bottom: 22px;
     }
-    .news-link-btn:hover {
-        background-color: #00e676;
-        color: #0a0c10 !important;
-        border-color: #00e676;
-        font-weight: 600;
+    .ref-box b {
+        color: #ffffff;
     }
 
-    /* Estilização de Métricas e Abas do Streamlit */
-    div[data-testid="stMetric"] {
-        background-color: #12161f;
-        border: 1px solid #1e2633;
-        border-top: 3px solid #00e676;
-        border-radius: 12px;
-        padding: 16px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    /* ABAS ESTILO NUTRE COMPARE PRO (Sem caixas, sublinhado laranja na ativa) */
+    div[data-baseweb="tab-list"] {
+        border-bottom: 1px solid #262626 !important;
+        gap: 28px !important;
+        background-color: transparent !important;
     }
     button[data-baseweb="tab"] {
-        background-color: #12161f !important;
-        border-radius: 8px 8px 0 0 !important;
-        margin-right: 6px !important;
-        padding: 10px 18px !important;
-        border: 1px solid #1e2633 !important;
-        color: #94a3b8 !important;
-        font-weight: 600 !important;
+        background-color: transparent !important;
+        border: none !important;
+        padding: 10px 4px !important;
+        color: #8c8c8c !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
     }
     button[data-baseweb="tab"][aria-selected="true"] {
-        background-color: #16241d !important;
-        color: #00e676 !important;
-        border-bottom: 2px solid #00e676 !important;
+        color: #ff7a00 !important;
+        font-weight: 600 !important;
+        border-bottom: 2px solid #ff7a00 !important;
+    }
+
+    /* PÍLULAS / CHIPS DE COMMODITIES (Borda laranja com ícone laranja) */
+    .Filter-pills-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 12px 0 22px 0;
+    }
+    .pill-active {
+        background-color: rgba(255, 122, 0, 0.08);
+        border: 1px solid #ff7a00;
+        color: #ff7a00;
+        padding: 5px 14px;
+        border-radius: 999px;
+        font-size: 12.5px;
+        font-weight: 500;
+    }
+    .pill-green {
+        background-color: rgba(76, 175, 80, 0.1);
+        border: 1px solid #4caf50;
+        color: #66bb6a;
+        padding: 5px 14px;
+        border-radius: 999px;
+        font-size: 12.5px;
+        font-weight: 500;
+    }
+
+    /* TÍTULO DE SEÇÃO COM LINHA DIVISÓRIA */
+    .section-header {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #222222;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+
+    /* CARTÕES IDÊNTICOS AOS DE CUSTO-BENEFÍCIO DA FOTO */
+    .nutre-card {
+        background-color: #141414;
+        border: 1px solid #242424;
+        border-radius: 10px;
+        padding: 18px 20px;
+        margin-bottom: 16px;
+    }
+    .nutre-card:hover {
+        border-color: #383838;
+    }
+    .nutre-card-label {
+        font-size: 12.5px;
+        color: #9e9e9e;
+        margin-bottom: 6px;
+        font-weight: 400;
+    }
+    .nutre-card-value {
+        font-size: 24px;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 4px;
+        letter-spacing: -0.3px;
+    }
+    .nutre-card-unit {
+        font-size: 12.5px;
+        color: #8c8c8c;
+        margin-bottom: 14px;
+        line-height: 1.5;
+    }
+    .nutre-card-footer {
+        border-top: 1px solid #222222;
+        padding-top: 10px;
+        font-size: 12.5px;
+        color: #ff7a00;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .nutre-link {
+        color: #ff7a00 !important;
+        text-decoration: none !important;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .nutre-link:hover {
+        text-decoration: underline !important;
+        color: #ffa040 !important;
     }
 </style>
+
+<!-- TOPBAR FIXA GERMINARE -->
+<div class="germinare-topbar">
+    <div class="germinare-logo">
+        <span>g</span><span class="germinare-logo-leaf">🌱</span><span>erminare</span>
+    </div>
+    <div class="germinare-top-right">Inteligência em insumos & commodities</div>
+</div>
 """,
     unsafe_allow_html=True,
 )
 
 
-# 3. FUNÇÃO AUXILIAR PARA LIMPAR E LER O JSON DA API
+# 3. FUNÇÃO DE LEITURA DO JSON (API DO GITHUB)
 def limpar_e_ler_json(texto_bruto):
   texto = texto_bruto.strip()
   if texto.startswith("```json"):
@@ -170,9 +270,8 @@ def carregar_dados_boletim(url_raw_github=None):
       resposta = requests.get(url_raw_github, timeout=10)
       if resposta.status_code == 200 and resposta.text.strip():
         return limpar_e_ler_json(resposta.text)
-    except Exception as e:
-      st.sidebar.warning(f"Aviso na URL remota: {e}")
-
+    except Exception:
+      pass
   if os.path.exists("boletim_atual.json"):
     try:
       with open("boletim_atual.json", "r", encoding="utf-8") as f:
@@ -180,327 +279,372 @@ def carregar_dados_boletim(url_raw_github=None):
         if conteudo.strip():
           return limpar_e_ler_json(conteudo)
     except Exception as e:
-      st.error(f"⚠️ Erro de formatação no arquivo `boletim_atual.json`: {e}")
+      st.error(f"Erro no JSON: {e}")
       return None
   return None
 
 
-# 4. BARRA LATERAL (BRANDING GERMINARE)
-st.sidebar.markdown(
-    """
-<div style="text-align: left; padding-bottom: 12px; border-bottom: 1px solid #1e2633; margin-bottom: 16px;">
-    <div style="color: #00e676; font-weight: 800; font-size: 18px; letter-spacing: 0.5px;">🌱 GERMINARE AGRO</div>
-    <div style="color: #94a3b8; font-size: 12px;">Analytics & Market Intelligence</div>
-</div>
-""",
-    unsafe_allow_html=True,
-)
-
 url_padrao = "[https://raw.githubusercontent.com/luan238/painel-inteligencia-agro/main/boletim_atual.json](https://raw.githubusercontent.com/luan238/painel-inteligencia-agro/main/boletim_atual.json)"
-url_api = st.sidebar.text_input(
-    "🔗 Endpoint da API (GitHub Raw):", value=url_padrao
-)
-
-if st.sidebar.button("🔄 Sincronizar Dados Agora", use_container_width=True):
-  st.cache_data.clear()
-  st.rerun()
-
-dados = carregar_dados_boletim(url_api)
+dados = carregar_dados_boletim(url_padrao)
 if not dados:
   st.stop()
 
-st.sidebar.markdown("---")
-st.sidebar.caption(f"📅 **Última Sincronização:**\n{dados['metadata']['data_hora']}")
+# 4. SIDEBAR IDÊNTICA À FOTO ("CONFIGURAÇÕES DA ANÁLISE" E "COTAÇÕES DO DIA")
+st.sidebar.markdown(
+    '<div class="sidebar-section-title">CONFIGURAÇÕES DA ANÁLISE</div>',
+    unsafe_allow_html=True,
+)
 
-# 5. CABEÇALHO CORPORATIVO GERMINARE
+culturas_lista = list(dados["blocos_culturas"].keys())
+cultura_foco_sidebar = st.sidebar.selectbox(
+    "Filtro de Complexo / Cadeia", culturas_lista
+)
+praca_referencia = st.sidebar.text_input(
+    "Praça de Cotação / Foco", value="Triângulo Mineiro / MT / CBOT"
+)
+perfil_decisao = st.sidebar.selectbox(
+    "Formato de Visão Estratégica",
+    [
+        "Todos os Perfis (Completa)",
+        "Produtores Rurais",
+        "Indústrias e Confinamentos",
+        "Cooperativas e Revendas",
+        "Tradings e Exportadores",
+    ],
+)
+
+st.sidebar.markdown(
+    '<div class="sidebar-section-title">COTAÇÕES DO DIA — REFERÊNCIA'
+    " ATUAL</div>",
+    unsafe_allow_html=True,
+)
+for item_pan in dados["panorama_geral"]:
+  st.sidebar.text_input(item_pan["ativo"], value=item_pan["cotacao"])
+
+st.sidebar.markdown(
+    '<div class="sidebar-section-title">SINCRONIZAÇÃO API GITHUB</div>',
+    unsafe_allow_html=True,
+)
+url_api = st.sidebar.text_input("Endpoint JSON", value=url_padrao)
+if st.sidebar.button("🔄 Atualizar Boletim Agora", use_container_width=True):
+  st.cache_data.clear()
+  st.rerun()
+
+# 5. CABEÇALHO PRINCIPAL ("Market Intelligence Pro") E CAIXA DE REFERÊNCIA
+st.markdown(
+    '<div class="main-title">Market Intelligence <span>Pro</span></div>',
+    unsafe_allow_html=True,
+)
+st.markdown(
+    '<div class="main-subtitle">Monitoramento de grãos, coprodutos, pecuária,'
+    " trading cambial e projeções auditáveis —"
+    f" {dados['metadata']['titulo_edicao']} ({dados['metadata']['data_hora']})</div>",
+    unsafe_allow_html=True,
+)
+
 st.markdown(
     f"""
-<div class="germinare-header">
-    <div>
-        <div class="germinare-brand">Germinare Analytics Center • Market Intelligence</div>
-        <h1 class="germinare-title">Painel de Inteligência de Mercado Agro</h1>
-    </div>
-    <div style="margin-top: 8px;">
-        <span class="germinare-badge">⚡ {dados['metadata']['titulo_edicao']} | {dados['metadata']['data_hora']}</span>
-    </div>
+<div class="ref-box">
+    <b>Resumo Executivo do Turno (Versão Falada).</b> {dados['metadata']['resumo_falado']}
 </div>
 """,
     unsafe_allow_html=True,
 )
 
-with st.expander("🔊 Ouvir / Ler Resumo Falado do Turno (Podcast Executivo)"):
-  st.markdown(
-      f"<div style='color:#d1fae5; line-height:1.6; font-size:15px;'>{dados['metadata']['resumo_falado']}</div>",
-      unsafe_allow_html=True,
-  )
-
-# 6. NAVEGAÇÃO POR ABAS
-(
-    aba_panorama,
-    aba_culturas,
-    aba_noticias,
-    aba_cambio,
-    aba_mentoria,
-    aba_projecoes,
-) = st.tabs([
-    "📌 Panorama Geral",
-    "🌱 Culturas & Trading",
-    "📰 Central de Notícias & Links",
-    "💵 Mesa de Câmbio & NDF",
-    "🧠 Pílula de Mentoria",
-    "🎯 Projeções & Backtesting",
+# 6. ABAS NO ESTILO DO NUTRE COMPARE PRO
+aba_panorama, aba_culturas, aba_noticias, aba_cambio, aba_projecoes = st.tabs([
+    "Panorama & Cotações",
+    "Análise por Cultura & Trading",
+    "Central de Notícias & Links",
+    "Simulador NDF & Câmbio",
+    "Base de Projeções & Mentoria",
 ])
 
-# ABA 1: PANORAMA GERAL
+# ==============================================================================
+# ABA 1: PANORAMA & COTAÇÕES (Estilo Cards 2 Colunas da Foto)
+# ==============================================================================
 with aba_panorama:
-  st.markdown("### 📊 Panorama Consolidado do Turno")
-
-  # Exibe Cards executivos em vez de apenas tabela simples
-  cols_pan = st.columns(2)
-  for i, item in enumerate(dados["panorama_geral"]):
-    with cols_pan[i % 2]:
-      st.markdown(
-          f"""
-            <div class="dark-card">
-                <span class="card-tag tag-green">{item['ativo']}</span>
-                <div style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 6px;">{item['cotacao']}</div>
-                <div style="font-size: 13.5px; color: #94a3b8; line-height: 1.5;">{item['destaque']}</div>
-            </div>
-            """,
-          unsafe_allow_html=True,
-      )
-
-  st.markdown("#### 📋 Tabela Resumo de Indicadores")
-  df_panorama = pd.DataFrame(dados["panorama_geral"])
-  df_panorama.columns = [
-      "Indicador / Ativo",
-      "Cotação / Referência Atual",
-      "Destaque e Gatilhos de Mercado",
-  ]
-  st.dataframe(df_panorama, use_container_width=True, hide_index=True)
-
-# ABA 2: ANÁLISE POR CULTURA & TRADING
-with aba_culturas:
-  culturas_disponiveis = list(dados["blocos_culturas"].keys())
-  cultura_selecionada = st.selectbox(
-      "🔍 Selecione o Complexo / Commodity para Análise:", culturas_disponiveis
-  )
-  bloco = dados["blocos_culturas"][cultura_selecionada]
-
   st.markdown(
-      f"""
-    <div class="dark-card" style="border-left: 4px solid #fbbf24;">
-        <span class="card-tag tag-amber">🧭 Viés de Mercado do Turno</span>
-        <div style="font-size: 15px; font-weight: 600; color: #f8fafc;">{bloco['vies_mercado']}</div>
-    </div>
-    """,
+      '<div style="font-size:15px; font-weight:600; color:#ffffff;'
+      ' margin-top:6px;"><span style="color:#ff7a00;">▼</span> Ativos'
+      " monitorados neste boletim</div>",
+      unsafe_allow_html=True,
+  )
+  pills_html = "".join(
+      [
+          f'<span class="pill-active">☑ {c["ativo"].split("(")[0].strip()}</span>'
+          for c in dados["panorama_geral"]
+      ]
+  )
+  st.markdown(
+      f'<div class="Filter-pills-row">{pills_html}<span class="pill-green">🌱'
+      f' Turno: {dados["metadata"]["data_hora"]}</span></div>',
       unsafe_allow_html=True,
   )
 
   st.markdown(
-      f"""
-    <div class="dark-card">
-        <span class="card-tag tag-blue">A. Resumo Executivo (Drivers Atuais)</span>
-        <div style="font-size: 14.5px; color: #cbd5e1; line-height: 1.65;">{bloco['resumo_executivo']}</div>
-    </div>
-    """,
+      f'<div class="section-header">Fechamento e Drivers — Praça:'
+      f" {praca_referencia}</div>",
       unsafe_allow_html=True,
   )
 
-  st.markdown("#### 📰 B. Fatos Geradores, Impacto no Mercado e Links Diretos")
-  for idx, noticia in enumerate(bloco["noticias_detalhadas"], 1):
-    botoes_links = "".join([
-        f'<a href="{l["url"]}" target="_blank" class="news-link-btn">🔗'
-        f' {l["titulo_link"]}</a>'
-        for l in noticia["links"]
-    ])
-    st.markdown(
-        f"""
-        <div class="dark-card">
-            <div style="font-size: 16px; font-weight: 700; color: #00e676; margin-bottom: 8px;">{idx}. {noticia['titulo']}</div>
-            <div style="font-size: 14px; color: #cbd5e1; line-height: 1.6; margin-bottom: 12px;">{noticia['resumo_noticia']}</div>
-            <div style="font-size: 12px; color: #94a3b8; font-weight: 600; text-transform: uppercase;">Fontes Oficiais para Leitura Completa:</div>
-            <div>{botoes_links}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-  st.markdown("#### 🎯 C. Direcionamento Estratégico por Perfil")
-  c_col1, c_col2 = st.columns(2)
-  with c_col1:
-    st.markdown(
-        f"""
-        <div class="dark-card">
-            <span class="card-tag tag-green">🚜 Produtores Rurais</span>
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.6;">{bloco['consultoria'].get('Produtores Rurais', '')}</div>
-        </div>
-        <div class="dark-card">
-            <span class="card-tag tag-blue">🤝 Cooperativas e Revendas</span>
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.6;">{bloco['consultoria'].get('Cooperativas e Revendas', '')}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-  with c_col2:
-    st.markdown(
-        f"""
-        <div class="dark-card">
-            <span class="card-tag tag-amber">🐄 Indústrias e Confinamentos</span>
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.6;">{bloco['consultoria'].get('Indústrias e Confinamentos', '')}</div>
-        </div>
-        <div class="dark-card">
-            <span class="card-tag tag-blue">🚢 Tradings e Exportadores</span>
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.6;">{bloco['consultoria'].get('Tradings e Exportadores', '')}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-  st.markdown("#### 📈 Visão do Trader (Long / Short, Derivativos e Câmbio)")
-  t_col1, t_col2 = st.columns(2)
-  with t_col1:
-    st.markdown(
-        f"""
-        <div class="dark-card" style="border-left: 4px solid #f87171;">
-            <span class="card-tag tag-red">⚡ Posicionamento Direcional & Spreads</span>
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.6;">{bloco['visao_trader'].get('Direcional e Spreads', '')}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-  with t_col2:
-    st.markdown(
-        f"""
-        <div class="dark-card" style="border-left: 4px solid #00e676;">
-            <span class="card-tag tag-green">💵 Cross-Hedge & Trading do Dólar</span>
-            <div style="font-size: 14px; color: #e2e8f0; line-height: 1.6;">{bloco['visao_trader'].get('Cross-Hedge e Trading do Dólar', '')}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-# ABA 3: CENTRAL DE NOTÍCIAS E LINKS
-with aba_noticias:
-  st.markdown("### 📰 Central de Notícias, Fundamentos e Links Verificados")
-  filtro_cultura_not = st.multiselect(
-      "Filtrar por Complexo:",
-      options=list(dados["blocos_culturas"].keys()),
-      default=list(dados["blocos_culturas"].keys()),
-  )
-
-  for nome_cultura in filtro_cultura_not:
-    bloco_c = dados["blocos_culturas"][nome_cultura]
-    st.markdown(f"#### 🌱 {nome_cultura}")
-    for noticia in bloco_c["noticias_detalhadas"]:
-      botoes_links = "".join([
-          f'<a href="{l["url"]}" target="_blank" class="news-link-btn">🌐'
-          f' Link {i}: {l["titulo_link"]}</a>'
-          for i, l in enumerate(noticia["links"], 1)
-      ])
+  cols = st.columns(2)
+  for idx, item in enumerate(dados["panorama_geral"]):
+    with cols[idx % 2]:
       st.markdown(
           f"""
-            <div class="dark-card">
-                <span class="card-tag tag-green">Fato Gerador & Notícia</span>
-                <div style="font-size: 17px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">{noticia['titulo']}</div>
-                <div style="font-size: 14px; color: #cbd5e1; line-height: 1.6; margin-bottom: 10px;">{noticia['resumo_noticia']}</div>
-                <div style="background:#0d1017; padding:10px 14px; border-radius:8px; border-left:3px solid #38bdf8; font-size:13px; color:#94a3b8; margin-bottom:12px;">
-                    <b style="color:#38bdf8;">Impacto na Visão Trading:</b> {bloco_c['visao_trader'].get('Direcional e Spreads', '')}
+            <div class="nutre-card">
+                <div class="nutre-card-label">{item['ativo']}</div>
+                <div class="nutre-card-value">{item['cotacao']}</div>
+                <div class="nutre-card-unit">{item['destaque']}</div>
+                <div class="nutre-card-footer">
+                    <span>ⓘ Impacto analisado nos blocos de cultura e na mesa de trading</span>
                 </div>
-                <div>{botoes_links}</div>
             </div>
             """,
           unsafe_allow_html=True,
       )
 
-# ABA 4: MESA DE CÂMBIO E CALCULADORA NDF
-with aba_cambio:
-  st.markdown("### 💵 Mesa de Câmbio (FX Desk) & Simulador de NDF")
-  cambio = dados["mesa_cambio"]
+# ==============================================================================
+# ABA 2: ANÁLISE POR CULTURA & TRADING
+# ==============================================================================
+with aba_culturas:
+  cultura_sel = st.selectbox(
+      "Selecione o Complexo para detalhamento:",
+      culturas_lista,
+      index=culturas_lista.index(cultura_foco_sidebar),
+  )
+  bloco = dados["blocos_culturas"][cultura_sel]
 
-  c1, c2, c3 = st.columns(3)
-  c1.metric("Dólar Comercial (Spot)", cambio["spot"])
-  c2.metric("Dólar Futuro (Nov/26 B3)", cambio["futuro_nov"])
-  c3.metric("NDF Colheita Soja (Mar/27)", cambio["ndf_marco27_estimado"])
+  st.markdown(
+      f'<div class="section-header">{cultura_sel} — Análise Fundamentalista &'
+      " Trading</div>",
+      unsafe_allow_html=True,
+  )
 
   st.markdown(
       f"""
-    <div class="dark-card" style="margin-top: 16px; border-left: 4px solid #00e676;">
-        <span class="card-tag tag-green">🎯 Diretriz da Mesa de Câmbio</span>
-        <div style="font-size: 15px; font-weight: 600; color: #ffffff; margin-bottom: 8px;">{cambio['decisao_mesa']}</div>
-        <div style="font-size: 14px; color: #94a3b8;"><b>Racional Macro e Fluxo:</b> {cambio['racional']}</div>
+    <div class="ref-box">
+        <b>🧭 Viés de Mercado:</b> {bloco['vies_mercado']}<br><br>
+        <b>Resumo Executivo:</b> {bloco['resumo_executivo']}
     </div>
     """,
       unsafe_allow_html=True,
   )
 
-  st.markdown("#### 🧮 Calculadora de Arbitragem de Juros (Dólar Futuro / NDF)")
-  col_calc1, col_calc2, col_calc3 = st.columns(3)
-  with col_calc1:
+  st.markdown("**Posicionamento de Mesa (Commodities & Dólar)**")
+  col_t1, col_t2 = st.columns(2)
+  with col_t1:
+    st.markdown(
+        f"""
+        <div class="nutre-card">
+            <div class="nutre-card-label">Visão do Trader (Long / Short & Derivativos)</div>
+            <div class="nutre-card-value" style="font-size:18px; color:#ff7a00;">Estratégia Direcional e Spreads</div>
+            <div class="nutre-card-unit" style="color:#d4d4d4; font-size:13.5px;">{bloco['visao_trader'].get('Direcional e Spreads', '')}</div>
+            <div class="nutre-card-footer"><span>ⓘ Operação tática CBOT / B3 / ICE</span></div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+  with col_t2:
+    st.markdown(
+        f"""
+        <div class="nutre-card">
+            <div class="nutre-card-label">Mesa de Câmbio Aplicada à Cultura</div>
+            <div class="nutre-card-value" style="font-size:18px; color:#4caf50;">Cross-Hedge & Trava de NDF</div>
+            <div class="nutre-card-unit" style="color:#d4d4d4; font-size:13.5px;">{bloco['visao_trader'].get('Cross-Hedge e Trading do Dólar', '')}</div>
+            <div class="nutre-card-footer"><span style="color:#4caf50;">ⓘ Arbitragem Selic vs. Cupom Cambial</span></div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+  st.markdown("**Indicações Estratégicas por Elo da Cadeia**")
+  perfis_exibir = (
+      ["Produtores Rurais", "Cooperativas e Revendas", "Indústrias e Confinamentos", "Tradings e Exportadores"]
+      if perfil_decisao == "Todos os Perfis (Completa)"
+      else [perfil_decisao]
+  )
+  cols_p = st.columns(2)
+  for i, p_nome in enumerate(perfis_exibir):
+    with cols_p[i % 2]:
+      st.markdown(
+          f"""
+            <div class="nutre-card">
+                <div class="nutre-card-label">Recomendação Direcionada</div>
+                <div class="nutre-card-value" style="font-size:19px;">{p_nome}</div>
+                <div class="nutre-card-unit" style="color:#d4d4d4; font-size:13.5px;">{bloco['consultoria'].get(p_nome, '')}</div>
+                <div class="nutre-card-footer"><span>ⓘ Diretriz comercial atualizada</span></div>
+            </div>
+            """,
+          unsafe_allow_html=True,
+      )
+
+# ==============================================================================
+# ABA 3: CENTRAL DE NOTÍCIAS & LINKS (Resumo + Visão Trading + Links Laranjas)
+# ==============================================================================
+with aba_noticias:
+  st.markdown(
+      '<div class="section-header">Central de Notícias, Fundamentos e Links'
+      " Diretos</div>",
+      unsafe_allow_html=True,
+  )
+
+  for nome_cultura, bloco_c in dados["blocos_culturas"].items():
+    for noticia in bloco_c["noticias_detalhadas"]:
+      links_html = " &nbsp;|&nbsp; ".join(
+          [
+              f'<a href="{l["url"]}" target="_blank" class="nutre-link">ⓘ Link'
+              f' {i}: {l["titulo_link"]}</a>'
+              for i, l in enumerate(noticia["links"], 1)
+          ]
+      )
+      st.markdown(
+          f"""
+            <div class="nutre-card">
+                <div class="nutre-card-label">{nome_cultura}</div>
+                <div class="nutre-card-value" style="font-size:19px;">{noticia['titulo']}</div>
+                <div class="nutre-card-unit" style="color:#d4d4d4; font-size:13.8px;">
+                    {noticia['resumo_noticia']}<br><br>
+                    <b style="color:#ff7a00;">O que afeta na Visão Trading:</b> {bloco_c['visao_trader'].get('Direcional e Spreads', '')}
+                </div>
+                <div class="nutre-card-footer">
+                    {links_html}
+                </div>
+            </div>
+            """,
+          unsafe_allow_html=True,
+      )
+
+# ==============================================================================
+# ABA 4: SIMULADOR NDF & MESA DE CÂMBIO
+# ==============================================================================
+with aba_cambio:
+  cambio = dados["mesa_cambio"]
+  st.markdown(
+      '<div class="section-header">Mesa de Câmbio (FX Desk) & Simulador de'
+      " NDF</div>",
+      unsafe_allow_html=True,
+  )
+
+  col_c1, col_c2, col_c3 = st.columns(3)
+  with col_c1:
+    st.markdown(
+        f'<div class="nutre-card"><div class="nutre-card-label">Dólar Comercial'
+        f' (Spot)</div><div class="nutre-card-value">{cambio["spot"]}</div>'
+        '<div class="nutre-card-footer"><span>ⓘ Referência à'
+        " vista</span></div></div>",
+        unsafe_allow_html=True,
+    )
+  with col_c2:
+    st.markdown(
+        f'<div class="nutre-card"><div class="nutre-card-label">Dólar Futuro'
+        ' (Nov/26 B3)</div><div'
+        f' class="nutre-card-value">{cambio["futuro_nov"]}</div><div'
+        ' class="nutre-card-footer"><span>ⓘ Contrato'
+        " WDO/DOL</span></div></div>",
+        unsafe_allow_html=True,
+    )
+  with col_c3:
+    st.markdown(
+        f'<div class="nutre-card"><div class="nutre-card-label">NDF Colheita'
+        ' Soja (Mar/27)</div><div class="nutre-card-value"'
+        f' style="color:#4caf50;">{cambio["ndf_marco27_estimado"]}</div><div'
+        ' class="nutre-card-footer"><span style="color:#4caf50;">ⓘ Prêmio de'
+        " Carrego</span></div></div>",
+        unsafe_allow_html=True,
+    )
+
+  st.markdown(
+      f"""
+    <div class="ref-box">
+        <b>Diretriz da Mesa de Câmbio:</b> {cambio['decisao_mesa']}<br>
+        <b>Racional Macro e Fluxo:</b> {cambio['racional']}
+    </div>
+    """,
+      unsafe_allow_html=True,
+  )
+
+  st.markdown("**Simulador de Cálculo de NDF (Selic vs. Cupom Cambial)**")
+  cc1, cc2, cc3 = st.columns(3)
+  with cc1:
     dolar_spot_in = st.number_input(
-        "Dólar Spot Hoje (R$):", value=5.0700, step=0.0100, format="%.4f"
+        "Dólar Spot Hoje (R$)", value=5.0700, step=0.0100, format="%.4f"
     )
     preco_saca_usd = st.number_input(
-        "Preço da Commodity em US$/saca:", value=27.50, step=0.10
+        "Preço da Saca em US$", value=27.50, step=0.10
     )
-  with col_calc2:
-    taxa_di = st.number_input(
-        "Taxa DI / Selic Anual (% a.a.):", value=11.50, step=0.25
-    )
+  with cc2:
+    taxa_di = st.number_input("Taxa DI / Selic (% a.a.)", value=11.50, step=0.25)
     cupom_cambial = st.number_input(
-        "Cupom Cambial Limpo (% a.a.):", value=4.80, step=0.10
+        "Cupom Cambial (% a.a.)", value=4.80, step=0.10
     )
-  with col_calc3:
+  with cc3:
     dias_uteis = st.number_input(
-        "Dias Úteis até o Vencimento (du - Base 252):", value=111, step=1
+        "Dias Úteis (Base 252)", value=111, step=1
     )
     dias_corridos = st.number_input(
-        "Dias Corridos até o Vencimento (dc - Base 360):", value=163, step=1
+        "Dias Corridos (Base 360)", value=163, step=1
     )
 
   fator_real = (1 + (taxa_di / 100)) ** (dias_uteis / 252)
   fator_dolar = 1 + ((cupom_cambial / 100) * (dias_corridos / 360))
   dolar_futuro_calc = dolar_spot_in * (fator_real / fator_dolar)
   forward_points = dolar_futuro_calc - dolar_spot_in
+  saca_spot = preco_saca_usd * dolar_spot_in
+  saca_ndf = preco_saca_usd * dolar_futuro_calc
 
-  saca_reais_spot = preco_saca_usd * dolar_spot_in
-  saca_reais_ndf = preco_saca_usd * dolar_futuro_calc
-  ganho_por_saca = saca_reais_ndf - saca_reais_spot
+  rc1, rc2 = st.columns(2)
+  with rc1:
+    st.markdown(
+        f"""
+        <div class="nutre-card">
+            <div class="nutre-card-label">Dólar Futuro / NDF Calculado</div>
+            <div class="nutre-card-value">R$ {dolar_futuro_calc:.4f}</div>
+            <div class="nutre-card-unit">Forward Points (Ganho de Carrego): +R$ {forward_points:.4f} por dólar</div>
+            <div class="nutre-card-footer"><span>ⓘ Como essa conta é feita? Arbitragem DI (252 du) vs Cupom (360 dc)</span></div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+  with rc2:
+    st.markdown(
+        f"""
+        <div class="nutre-card">
+            <div class="nutre-card-label">Receita na Saca de Soja (Travando NDF vs Spot)</div>
+            <div class="nutre-card-value" style="color:#4caf50;">R$ {saca_ndf:.2f} <span style="font-size:14px; color:#8c8c8c;">(vs R$ {saca_spot:.2f} no Spot)</span></div>
+            <div class="nutre-card-unit">Ganho líquido pelo carrego cambial: <b>+R$ {(saca_ndf - saca_spot):.2f} por saca</b></div>
+            <div class="nutre-card-footer"><span style="color:#4caf50;">ⓘ Ganho financeiro puro sem depender de alta do Dólar Spot</span></div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
-  res1, res2, res3 = st.columns(3)
-  res1.metric(
-      "Dólar Futuro / NDF Calculado",
-      f"R$ {dolar_futuro_calc:.4f}",
-      f"+R$ {forward_points:.4f} (Forward Points)",
+# ==============================================================================
+# ABA 5: BASE DE PROJEÇÕES AUDITÁVEIS & MENTORIA
+# ==============================================================================
+with aba_projecoes:
+  st.markdown(
+      '<div class="section-header">Pílula de Inteligência de Mercado (Mentoria'
+      " do Turno)</div>",
+      unsafe_allow_html=True,
   )
-  res2.metric(
-      "Preço da Saca no Dólar Spot", f"R$ {saca_reais_spot:.2f}/sc", "Base Spot"
-  )
-  res3.metric(
-      "Preço da Saca Travando NDF",
-      f"R$ {saca_reais_ndf:.2f}/sc",
-      f"+R$ {ganho_por_saca:.2f}/sc de ganho!",
-  )
-
-# ABA 5: PÍLULA DE MENTORIA
-with aba_mentoria:
   st.markdown(
       f"""
-    <div class="dark-card" style="border-left: 4px solid #00e676;">
-        <span class="card-tag tag-green">🧠 Mentoria Executiva do Turno</span>
-        <h3 style="color: #ffffff; margin-top: 6px;">{dados['pilula_mentoria']['titulo']}</h3>
-        <div style="font-size: 15px; color: #cbd5e1; line-height: 1.75; white-space: pre-line;">{dados['pilula_mentoria']['conteudo']}</div>
+    <div class="nutre-card">
+        <div class="nutre-card-label">Conceito Técnico de Consultoria</div>
+        <div class="nutre-card-value" style="font-size:20px; color:#ff7a00;">{dados['pilula_mentoria']['titulo']}</div>
+        <div class="nutre-card-unit" style="color:#d4d4d4; font-size:14px; white-space:pre-line;">{dados['pilula_mentoria']['conteudo']}</div>
+        <div class="nutre-card-footer"><span>ⓘ Aplicação direta em reuniões comerciais e de inteligência</span></div>
     </div>
     """,
       unsafe_allow_html=True,
   )
 
-# ABA 6: MATRIZ DE PROJEÇÕES AUDITÁVEIS
-with aba_projecoes:
-  st.markdown("### 🎯 Matriz de Projeções Auditáveis e Track Record")
-  st.caption(
-      "Conferência sistemática toda sexta-feira (curto prazo) e na última"
-      " sexta-feira do mês (fechamento mensal)."
+  st.markdown(
+      '<div class="section-header">Matriz de Projeções Auditáveis (Backtesting'
+      " Semanal e Mensal)</div>",
+      unsafe_allow_html=True,
   )
   df_proj = pd.DataFrame(dados["matriz_projecoes"])
   st.dataframe(df_proj, use_container_width=True, hide_index=True)
