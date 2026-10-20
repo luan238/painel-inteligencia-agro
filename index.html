@@ -76,8 +76,10 @@
       padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between;
     }
     .card-top-label { font-size: 12.2px; color: #9e9e9e; margin-bottom: 6px; }
-    .card-big-value { font-size: 23px; font-weight: 800; color: var(--text-white); margin-bottom: 6px; }
+    .card-big-value { font-size: 20px; font-weight: 800; color: var(--text-white); margin-bottom: 6px; line-height: 1.3; }
     .card-desc { font-size: 13px; color: #b5b5b5; line-height: 1.55; margin-bottom: 14px; }
+    .card-footer { border-top: 1px solid #202020; padding-top: 10px; font-size: 12.2px; color: var(--orange-bright); display: flex; gap: 12px; align-items: center; }
+    .card-footer a { color: var(--orange-bright); text-decoration: none; }
 
     .table-wrapper { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px; background-color: var(--bg-card); }
     table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
@@ -115,10 +117,10 @@
         <label>Perfil de Comercialização</label>
         <select id="select-perfil" class="control-select" onchange="renderizarAnaliseCulturas()">
           <option value="TODOS">Todos os Elos (Completa)</option>
-          <option value="Produtores Rurais">Produtores Rurais</option>
-          <option value="Indústrias e Confinamentos">Indústrias e Confinamentos</option>
-          <option value="Cooperativas e Revendas">Cooperativas e Revendas</option>
-          <option value="Tradings e Exportadores">Tradings e Exportadores</option>
+          <option value="producer">Produtores Rurais</option>
+          <option value="industry_nutrition">Indústrias e Confinamentos</option>
+          <option value="cooperative">Cooperativas e Revendas</option>
+          <option value="trading_desk">Tradings e Exportadores</option>
         </select>
       </div>
 
@@ -155,7 +157,7 @@
       </section>
 
       <section id="aba-semanal" class="tab-panel">
-        <div class="section-divider-title">Visão Consolidada da Semana (Domingo a Sábado)</div>
+        <div class="section-divider-title">Visão Consolidada da Semana (WTD)</div>
         <div class="ref-box" id="texto-resumo-semanal">A aguardar dados...</div>
         <div class="cards-grid-2">
           <div class="nutre-card" style="grid-column: 1 / -1;">
@@ -166,11 +168,11 @@
       </section>
 
       <section id="aba-mensal" class="tab-panel">
-        <div class="section-divider-title">Acompanhamento e Progresso Mensal (YTD / MTD)</div>
+        <div class="section-divider-title">Acompanhamento e Progresso Mensal (MTD)</div>
         <div class="ref-box" id="texto-resumo-mensal">A aguardar dados...</div>
         <div class="cards-grid-2">
           <div class="nutre-card" style="grid-column: 1 / -1;">
-            <div class="card-top-label">Curva de Tendência de Preços no Mês Atual</div>
+            <div class="card-top-label">Curva de Tendência no Mês Atual</div>
             <div style="height: 380px; width: 100%; position: relative;"><canvas id="grafico-mensal"></canvas></div>
           </div>
         </div>
@@ -182,12 +184,9 @@
       </section>
 
       <section id="aba-ndf" class="tab-panel">
-        <div class="section-divider-title">Mesa de Câmbio (FX Desk) & Simulador de Dólar Futuro (NDF)</div>
-        <div class="cards-grid-3" id="grid-metricas-cambio"></div>
-        <div class="ref-box" id="box-racional-cambio"></div>
-        <div class="sub-group-title">Calculadora de Arbitragem de Juros</div>
+        <div class="section-divider-title">Calculadora de Arbitragem de Juros (NDF)</div>
         <div class="cards-grid-3" style="margin-bottom: 16px;">
-          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.07" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.50" step="0.10" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.01" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.50" step="0.10" oninput="calcularNDF()" /></div>
           <div class="nutre-card"><label class="card-top-label">Taxa DI / Selic (% a.a.)</label><input type="number" id="calc-di" class="control-input" value="11.50" step="0.25" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Cupom Cambial (% a.a.)</label><input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" /></div>
           <div class="nutre-card"><label class="card-top-label">Dias Úteis (252)</label><input type="number" id="calc-du" class="control-input" value="111" step="1" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Dias Corridos (360)</label><input type="number" id="calc-dc" class="control-input" value="163" step="1" oninput="calcularNDF()" /></div>
         </div>
@@ -200,7 +199,7 @@
         <div class="section-divider-title">Matriz de Projeções Auditáveis</div>
         <div class="table-wrapper">
           <table id="tabela-projecoes">
-            <thead><tr><th>Ativo</th><th>Base</th><th>Curto Prazo</th><th>Cenário Mês</th><th>Altista / Baixista</th><th>Gatilho</th><th>Status</th></tr></thead>
+            <thead><tr><th>Ativo</th><th>Base Atual</th><th>Alvo Curto Prazo</th><th>Cenário Mês</th><th>Altista / Baixista</th><th>Gatilho</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -233,44 +232,83 @@
     }
 
     function inicializarInterface() {
-      document.getElementById('subtitulo-turno').textContent = `Monitoramento de grãos, coprodutos, pecuária, câmbio e projeções — ${dadosBoletim.metadata.titulo_edicao} (${dadosBoletim.metadata.data_hora})`;
-      document.getElementById('caixa-resumo-falado').innerHTML = `<strong>Resumo Executivo do Turno.</strong> ${dadosBoletim.metadata.resumo_falado}`;
+      // Metadados
+      const meta = dadosBoletim.metadata;
+      document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions} | ${meta.timestamp} | ${meta.analyst}`;
+      
+      // Resumo Executivo Combinado
+      const exec = dadosBoletim.executive_summary;
+      let resumoHtml = `<strong>Câmbio & Macro:</strong> ${exec.cambio_e_macro}<br><br>`;
+      resumoHtml += `<strong>Complexo Soja:</strong> ${exec.complexo_soja}`;
+      document.getElementById('caixa-resumo-falado').innerHTML = resumoHtml;
 
+      // Sidebar Quotes (Cotações Rápidas)
       const sbContainer = document.getElementById('sidebar-quotes-container');
       sbContainer.innerHTML = '';
-      dadosBoletim.panorama_geral.forEach(item => {
-        sbContainer.innerHTML += `<div class="control-group"><label>${item.ativo.split('(')[0].trim()}</label><input type="text" class="control-input quote-readonly" value="${item.cotacao}" readonly /></div>`;
-      });
+      const indicadores = dadosBoletim.market_indicators;
+      
+      // Helper para preencher sidebar
+      const preencherSidebar = (grupo) => {
+        for (const [chave, valor] of Object.entries(grupo)) {
+           let tituloFomatado = chave.replace(/_/g, ' ').toUpperCase();
+           sbContainer.innerHTML += `<div class="control-group"><label>${tituloFomatado}</label><input type="text" class="control-input quote-readonly" value="${valor}" readonly /></div>`;
+        }
+      };
+      
+      if(indicadores.cambio_e_energia) preencherSidebar(indicadores.cambio_e_energia);
+      if(indicadores.complexo_soja) preencherSidebar(indicadores.complexo_soja);
+      if(indicadores.complexo_milho_e_ddgs) preencherSidebar(indicadores.complexo_milho_e_ddgs);
+      if(indicadores.complexo_algodao) preencherSidebar(indicadores.complexo_algodao);
 
       renderizarPanoramaCards();
       renderizarAnaliseCulturas();
       renderizarNoticiasGerais();
-      renderizarMesaCambio();
       calcularNDF();
       renderizarMentoriaEProjecoes();
       renderizarGraficosEvolucao();
     }
 
     function renderizarGraficosEvolucao() {
-      const dSemanal = dadosBoletim.evolucao_semanal || { resumo: "A aguardar dados.", grafico_variacao: { labels: [], dados: [] } };
-      const dMensal = dadosBoletim.evolucao_mensal || { resumo: "A aguardar dados.", grafico_tendencia: { labels: [], datasets: [] } };
+      const dSemanal = dadosBoletim.weekly_evolution_wtd;
+      const dMensal = dadosBoletim.monthly_evolution_mtd;
 
-      document.getElementById('texto-resumo-semanal').innerHTML = dSemanal.resumo;
-      document.getElementById('texto-resumo-mensal').innerHTML = dMensal.resumo;
+      // Semanal
+      let txtSemanal = `Período: ${dSemanal.period_start} a ${dSemanal.period_end}<br><br>`;
+      const labelsSemanais = [];
+      const dadosSemanais = [];
+      dSemanal.assets.forEach(a => {
+        labelsSemanais.push(a.asset);
+        dadosSemanais.push(a.weekly_change_pct);
+      });
+      document.getElementById('texto-resumo-semanal').innerHTML = txtSemanal;
 
       const ctxSemanal = document.getElementById('grafico-semanal').getContext('2d');
       if(chartSemanal) chartSemanal.destroy();
       chartSemanal = new Chart(ctxSemanal, {
         type: 'bar',
-        data: { labels: dSemanal.grafico_variacao.labels, datasets: [{ data: dSemanal.grafico_variacao.dados, backgroundColor: '#ff7a00', borderRadius: 4 }] },
+        data: { labels: labelsSemanais, datasets: [{ data: dadosSemanais, backgroundColor: '#ff7a00', borderRadius: 4 }] },
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }, x: { grid: { display: false }, ticks: { color: '#9e9e9e' } } } }
+      });
+
+      // Mensal
+      let txtMensal = `Período: ${dMensal.month_start} a ${dMensal.current_date}<br><br>`;
+      document.getElementById('texto-resumo-mensal').innerHTML = txtMensal;
+      
+      const labelsMensais = ['Início do Mês', 'Dia 10', 'Atual'];
+      const datasetsMensais = dMensal.assets.slice(0, 4).map((a, i) => {
+        const cores = ['#ff7a00', '#00e676', '#2196f3', '#e91e63'];
+        return {
+          label: a.asset,
+          data: [a.month_open_value, a.mid_month_10_oct, a.current_value],
+          borderColor: cores[i], borderWidth: 2, tension: 0.3, fill: false
+        }
       });
 
       const ctxMensal = document.getElementById('grafico-mensal').getContext('2d');
       if(chartMensal) chartMensal.destroy();
       chartMensal = new Chart(ctxMensal, {
         type: 'line',
-        data: { labels: dMensal.grafico_tendencia.labels, datasets: dMensal.grafico_tendencia.datasets.map(ds => ({ ...ds, borderColor: '#00e676', borderWidth: 2, tension: 0.3 })) },
+        data: { labels: labelsMensais, datasets: datasetsMensais },
         options: { responsive: true, maintainAspectRatio: false, scales: { y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }, x: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } } } }
       });
     }
@@ -278,8 +316,18 @@
     function renderizarPanoramaCards() {
       const grid = document.getElementById('grid-panorama-cards');
       grid.innerHTML = '';
-      dadosBoletim.panorama_geral.forEach(item => {
-        grid.innerHTML += `<div class="nutre-card"><div><div class="card-top-label">${item.ativo}</div><div class="card-big-value">${item.cotacao}</div><div class="card-desc">${item.destaque}</div></div></div>`;
+      
+      // Como o JSON novo não tem 'panorama_geral', vamos gerar cards a partir da weekly_evolution_wtd
+      dadosBoletim.weekly_evolution_wtd.assets.forEach(item => {
+        let cor = item.weekly_change_pct >= 0 ? 'var(--green)' : '#ff5252';
+        grid.innerHTML += `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">${item.asset}</div>
+              <div class="card-big-value">${item.current_value} <span style="font-size:14px; color:${cor};">(${item.weekly_change_pct}%)</span></div>
+              <div class="card-desc">${item.weekly_driver}</div>
+            </div>
+          </div>`;
       });
     }
 
@@ -292,60 +340,55 @@
       const container = document.getElementById('container-analise-culturas');
       container.innerHTML = '';
 
-      Object.entries(dadosBoletim.blocos_culturas).forEach(([nomeCultura, bloco]) => {
+      dadosBoletim.detailed_blocks_and_news.forEach(bloco => {
         let consultoriaHtml = '';
-        const perfis = perfilFiltro === 'TODOS' ? Object.keys(bloco.consultoria) : [perfilFiltro];
+        const estrat = bloco.consultoria_and_trader_strategy || bloco.consulting_and_trader_strategy;
+        
+        const perfis = perfilFiltro === 'TODOS' ? ['producer', 'cooperative', 'industry_nutrition', 'trading_desk'] : [perfilFiltro];
+        
+        const nomesBonitos = {
+          'producer': 'Produtores Rurais', 'cooperative': 'Cooperativas e Revendas',
+          'industry_nutrition': 'Indústrias e Confinamentos', 'trading_desk': 'Tradings e Exportadores'
+        };
+
         perfis.forEach(p => {
-          if (bloco.consultoria[p]) {
-            consultoriaHtml += `<div class="nutre-card" style="margin-top:10px;"><div class="card-top-label">Elo: ${p}</div><div class="card-desc" style="margin-top:4px;">${bloco.consultoria[p]}</div></div>`;
+          if (estrat[p]) {
+            consultoriaHtml += `<div class="nutre-card" style="margin-top:10px;"><div class="card-top-label">Elo: ${nomesBonitos[p]}</div><div class="card-desc" style="margin-top:4px;">${estrat[p]}</div></div>`;
           }
         });
 
         container.innerHTML += `
           <div style="margin-bottom: 28px;">
-            <div class="sub-group-title">${nomeCultura}</div>
-            <div class="ref-box"><strong>Viés de Mercado:</strong> ${bloco.vies_mercado}<br><br><strong>Resumo Executivo:</strong> ${bloco.resumo_executivo}</div>
+            <div class="sub-group-title">${bloco.title}</div>
+            <div class="ref-box"><strong>Viés de Mercado:</strong> ${bloco.market_bias}<br><br><strong>Resumo Executivo:</strong> ${bloco.executive_summary}</div>
             <div class="cards-grid-2">
-              <div class="nutre-card"><div><div class="card-top-label">Visão do Trader</div><div class="card-big-value" style="font-size:16px; color:var(--orange-bright);">Direcional & Spreads</div><div class="card-desc">${bloco.visao_trader['Direcional e Spreads'] || ''}</div></div></div>
-              <div class="nutre-card"><div><div class="card-top-label">Mesa de Câmbio</div><div class="card-big-value" style="font-size:16px; color:var(--green);">Cross-Hedge & NDF</div><div class="card-desc">${bloco.visao_trader['Cross-Hedge e Trading do Dólar'] || ''}</div></div></div>
+              <div class="nutre-card">
+                <div><div class="card-top-label">Visão da Mesa (Trader & Hedge FX)</div><div class="card-desc" style="margin-top:8px; color:#fff;">${estrat.trader_long_short_fx || ''}</div></div>
+              </div>
             </div>
             ${consultoriaHtml ? `<div style="margin-top:12px;"><div class="card-top-label" style="font-weight:700; color:#fff; margin-bottom:6px;">DIRECIONAMENTO ESTRATÉGICO</div>${consultoriaHtml}</div>` : ''}
           </div>
         `;
       });
-
-      const c = dadosBoletim.mesa_cambio;
-      container.innerHTML += `
-        <div style="margin-bottom: 28px;">
-          <div class="sub-group-title">Dólar & Mesa de Câmbio (FX Desk)</div>
-          <div class="ref-box"><strong>Decisão da Mesa:</strong> ${c.decisao_mesa}<br><br><strong>Racional:</strong> ${c.racional}</div>
-          <div class="cards-grid-3">
-            <div class="nutre-card"><div class="card-top-label">Dólar Spot</div><div class="card-big-value">${c.spot}</div></div>
-            <div class="nutre-card"><div class="card-top-label">Dólar Futuro</div><div class="card-big-value">${c.futuro_nov}</div></div>
-            <div class="nutre-card"><div class="card-top-label">NDF Mar/27</div><div class="card-big-value" style="color:var(--green);">${c.ndf_marco27_estimado}</div></div>
-          </div>
-        </div>
-      `;
     }
 
     function renderizarNoticiasGerais() {
       const gridNot = document.getElementById('grid-noticias-links');
       gridNot.innerHTML = '';
-      Object.entries(dadosBoletim.blocos_culturas).forEach(([cultura, bloco]) => {
-        (bloco.noticias_detalhadas || []).forEach(not => {
-          const links = (not.links || []).map(l => `<a href="${l.url}" target="_blank">🔗 ${l.titulo_link}</a>`).join(' | ');
-          gridNot.innerHTML += `<div class="nutre-card"><div><div class="card-top-label">${cultura}</div><div class="card-big-value" style="font-size:17px;">${not.titulo}</div><div class="card-desc">${not.resumo_noticia}</div></div><div class="card-footer" style="border-top:1px solid #202020; padding-top:10px; font-size:12.2px; color:var(--orange-bright);">${links}</div></div>`;
+      dadosBoletim.detailed_blocks_and_news.forEach(bloco => {
+        (bloco.news_sources || []).forEach(not => {
+          gridNot.innerHTML += `
+            <div class="nutre-card">
+              <div>
+                <div class="card-top-label">${bloco.title.split('(')[0]}</div>
+                <div class="card-big-value" style="font-size:16px;">${not.headline}</div>
+              </div>
+              <div class="card-footer" style="border-top:1px solid #202020; padding-top:10px; font-size:12.2px; color:var(--orange-bright);">
+                <a href="${not.url}" target="_blank">🔗 Ler na íntegra</a>
+              </div>
+            </div>`;
         });
       });
-    }
-
-    function renderizarMesaCambio() {
-      const c = dadosBoletim.mesa_cambio;
-      document.getElementById('grid-metricas-cambio').innerHTML = `
-        <div class="nutre-card"><div class="card-top-label">Dólar Spot</div><div class="card-big-value">${c.spot}</div></div>
-        <div class="nutre-card"><div class="card-top-label">Dólar Futuro</div><div class="card-big-value">${c.futuro_nov}</div></div>
-        <div class="nutre-card"><div class="card-top-label">NDF Mar/27</div><div class="card-big-value" style="color:var(--green);">${c.ndf_marco27_estimado}</div></div>`;
-      document.getElementById('box-racional-cambio').innerHTML = `<strong>Decisão da Mesa:</strong> ${c.decisao_mesa}<br><br><strong>Racional:</strong> ${c.racional}`;
     }
 
     function calcularNDF() {
@@ -366,13 +409,28 @@
     }
 
     function renderizarMentoriaEProjecoes() {
-      const m = dadosBoletim.pilula_mentoria;
-      document.getElementById('container-mentoria').innerHTML = `<div class="nutre-card"><div><div class="card-top-label">Mentoria Executiva</div><div class="card-big-value" style="font-size:18px; color:var(--orange-bright);">${m.titulo}</div><div class="card-desc" style="white-space:pre-line; margin-top:8px;">${m.conteudo}</div></div></div>`;
+      const p = dadosBoletim.market_intelligence_pill;
+      document.getElementById('container-mentoria').innerHTML = `
+        <div class="nutre-card">
+          <div>
+            <div class="card-top-label">Pílula Estratégica</div>
+            <div class="card-big-value" style="font-size:18px; color:var(--orange-bright);">${p.title}</div>
+            <div class="card-desc" style="white-space:pre-line; margin-top:8px;">${p.analysis}<br><br><strong>Ação Estratégica:</strong> ${p.strategic_takeaway}</div>
+          </div>
+        </div>`;
 
       const tbody = document.querySelector('#tabela-projecoes tbody');
       tbody.innerHTML = '';
-      (dadosBoletim.matriz_projecoes || []).forEach(p => {
-        tbody.innerHTML += `<tr><td><strong>${p.Ativo}</strong></td><td>${p.Base_19_10}</td><td>${p.Alvo_Curto_23_10}</td><td>${p.Cenario_Base_Mes}</td><td>📈 ${p.Cenario_Altista}<br>📉 ${p.Cenario_Baixista}</td><td>${p.Gatilho_Auditoria}</td><td>${p.Status}</td></tr>`;
+      (dadosBoletim.audit_panel_projections || []).forEach(proj => {
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${proj.commodity}</strong></td>
+            <td>${proj.current_base}</td>
+            <td>${proj.short_term_target_23_oct}</td>
+            <td>${proj.end_of_month_30_oct.base_case}</td>
+            <td>📈 ${proj.end_of_month_30_oct.bull_case}<br>📉 ${proj.end_of_month_30_oct.bear_case}</td>
+            <td>${proj.audit_trigger}</td>
+          </tr>`;
       });
     }
 
