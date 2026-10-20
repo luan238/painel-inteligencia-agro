@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Germinare | Market Intelligence Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-topbar: #050505;
+      --bg-sidebar: #0a0a0a;
+      --bg-main: #0d0d0d;
+      --bg-card: #141414;
+      --bg-ref: #161616;
+      --bg-input: #111111;
+      --border-color: #242424;
+      --border-subtle: #1f1f1f;
+      --orange: #f58220;
+      --orange-bright: #ff7a00;
+      --green: #2eb85c;
+      --text-white: #ffffff;
+      --text-light: #e5e5e5;
+      --text-muted: #8c8c8c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    /* TOPBAR FIXA GERMINARE */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 54px;
+      background-color: var(--bg-topbar);
+      border-bottom: 1.5px solid var(--orange-bright);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      z-index: 1000;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand-logo img {
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .topbar-right {
+      font-size: 13px;
+      color: #a3a3a3;
+      font-weight: 400;
+    }
+
+    /* LAYOUT PRINCIPAL (SIDEBAR + CONTEÚDO) */
+    .layout-wrapper {
+      display: flex;
+      margin-top: 54px;
+      min-height: calc(100vh - 54px);
+    }
+
+    /* SIDEBAR ESQUERDA IDÊNTICA AO NUTRE COMPARE PRO */
+    .sidebar {
+      width: 280px;
+      min-width: 280px;
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid var(--border-subtle);
+      padding: 22px 18px 40px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .sidebar-header {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .control-group label {
+      font-size: 12px;
+      color: #b0b0b0;
+      font-weight: 400;
+    }
+
+    .control-input, .control-select {
+      width: 100%;
+      background-color: var(--bg-input);
+      border: 1px solid #262626;
+      border-radius: 6px;
+      padding: 9px 12px;
+      color: var(--text-white);
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .control-input:focus, .control-select:focus {
+      border-color: var(--orange-bright);
+    }
+
+    .quote-readonly {
+      text-align: right;
+      font-weight: 500;
+      color: #f0f0f0;
+    }
+
+    /* CONTEÚDO PRINCIPAL DIREITO */
+    .main-content {
+      flex: 1;
+      padding: 28px 36px 60px 36px;
+      max-width: calc(100vw - 280px);
+    }
+
+    .page-title {
+      font-size: 29px;
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+
+    .page-title span {
+      color: var(--orange-bright);
+    }
+
+    .page-subtitle {
+      font-size: 13.8px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    /* CAIXA DE VALORES DE REFERÊNCIA / RESUMO FALADO */
+    .ref-box {
+      background-color: var(--bg-ref);
+      border: 1px solid #282828;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 13.2px;
+      color: #d4d4d4;
+      line-height: 1.55;
+      margin-bottom: 22px;
+    }
+
+    .ref-box strong {
+      color: var(--text-white);
+    }
+
+    /* NAVEGAÇÃO DE ABAS (ESTILO LINHA LARANJA) */
+    .tabs-bar {
+      display: flex;
+      gap: 28px;
+      border-bottom: 1px solid #242424;
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 13.8px;
+      font-weight: 500;
+      padding: 10px 2px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: #d4d4d4;
+    }
+
+    .tab-btn.active {
+      color: var(--orange-bright);
+      font-weight: 600;
+      border-bottom: 2px solid var(--orange-bright);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    /* SEÇÃO DE CHIPS / COMMODITIES SELECIONADAS */
+    .chips-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    .chips-count {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .chip-pill {
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #2c2c2c;
+      background-color: #121212;
+      color: #9e9e9e;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.18s;
+      user-select: none;
+    }
+
+    .chip-pill.selected {
+      border-color: var(--orange-bright);
+      background-color: rgba(255, 122, 0, 0.08);
+      color: var(--orange-bright);
+    }
+
+    /* TÍTULOS DE SEÇÃO E GRIDS DE CARTÕES */
+    .section-divider-title {
+      font-size: 17.5px;
+      font-weight: 700;
+      color: var(--text-white);
+      padding-bottom: 10px;
+      border-bottom: 1px solid #222222;
+      margin: 18px 0 14px 0;
+    }
+
+    .sub-group-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e0e0e0;
+      margin: 14px 0 12px 0;
+    }
+
+    .cards-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .cards-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    /* CARTÃO PADRÃO NUTRE COMPARE PRO */
+    .nutre-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s;
+    }
+
+    .nutre-card:hover {
+      border-color: #383838;
+    }
+
+    .card-top-label {
+      font-size: 12.2px;
+      color: #9e9e9e;
+      margin-bottom: 6px;
+    }
+
+    .card-big-value {
+      font-size: 23px;
+      font-weight: 800;
+      color: var(--text-white);
+      letter-spacing: -0.3px;
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: #b5b5b5;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    .card-footer {
+      border-top: 1px solid #202020;
+      padding-top: 10px;
+      font-size: 12.2px;
+      color: var(--orange-bright);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .card-footer a {
+      color: var(--orange-bright);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* TABELA DARK PARA MATRIZ DE PROJEÇÕES */
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background-color: var(--bg-card);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-weight: 600;
+      padding: 12px 14px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #1f1f1f;
+      color: #d4d4d4;
+      line-height: 1.45;
+    }
+
+    tr:hover td {
+      background-color: #191919;
+    }
+
+    .btn-sync {
+      background-color: #191919;
+      border: 1px solid var(--orange-bright);
+      color: var(--orange-bright);
+      padding: 9px 12px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 6px;
+    }
+
+    .btn-sync:hover {
+      background-color: var(--orange-bright);
+      color: #050505;
+    }
+
+    @media (max-width: 900px) {
+      .layout-wrapper { flex-direction: column; }
+      .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #222; }
+      .main-content { max-width: 100%; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR FIXA GERMINARE -->
+  <header class="topbar">
+    <a href="#" class="brand-logo">
+      <!-- Tenta carregar a sua imagem logo-germinare.png; se ainda não tiver subido, exibe o SVG idêntico com a folha verde embaixo do 'g' -->
+      <img src="logo-germinare.png" alt="germinare" onerror="this.style.display='none'; document.getElementById('svg-fallback').style.display='block';" />
+      <svg id="svg-fallback" style="display:none;" width="155" height="36" viewBox="0 0 210 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="2" y="32" font-family="'Inter', sans-serif" font-size="33" font-weight="400" letter-spacing="-0.5" fill="#f58220">germinare</text>
+        <!-- Folhinha verde curva embaixo/direita da haste do 'g' exatamente como na foto enviada -->
+        <path d="M23 32 C25 39, 32 43, 37 41 C35 36, 29 33, 23 32 Z" fill="#00a843"/>
+      </svg>
+    </a>
+    <div class="topbar-right">Inteligência em insumos</div>
+  </header>
+
+  <div class="layout-wrapper">
+    <!-- SIDEBAR ESQUERDA -->
+    <aside class="sidebar">
+      <div class="sidebar-header">CONFIGURAÇÕES DA ANÁLISE</div>
+
+      <div class="control-group">
+        <label>Filtro de Complexo / Cultura</label>
+        <select id="select-cultura" class="control-select" onchange="renderizarCulturaSelecionada()"></select>
+      </div>
+
+      <div class="control-group">
+        <label>Praça de Cotação</label>
+        <input type="text" id="input-praca" class="control-input" value="Triângulo Mineiro / MT / CBOT" oninput="atualizarTitulosPraca()" />
+      </div>
+
+      <div class="control-group">
+        <label>Formato de Comercialização / Perfil</label>
+        <select id="select-perfil" class="control-select" onchange="renderizarCulturaSelecionada()">
+          <option value="TODOS">Todos os Elos (Completa)</option>
+          <option value="Produtores Rurais">Produtores Rurais</option>
+          <option value="Indústrias e Confinamentos">Indústrias e Confinamentos</option>
+          <option value="Cooperativas e Revendas">Cooperativas e Revendas</option>
+          <option value="Tradings e Exportadores">Tradings e Exportadores</option>
+        </select>
+      </div>
+
+      <div class="sidebar-header" style="margin-top: 14px;">COTAÇÕES DO DIA — REFERÊNCIA</div>
+      <div id="sidebar-quotes-container" style="display:flex; flex-direction:column; gap:10px;"></div>
+
+      <button class="btn-sync" onclick="carregarBoletim(true)">↻ Sincronizar Relatório (API)</button>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL DIREITA -->
+    <main class="main-content">
+      <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
+      <div class="page-subtitle" id="subtitulo-turno">Carregando boletim atualizado...</div>
+
+      <!-- CAIXA DE VALORES DE REFERÊNCIA / RESUMO FALADO -->
+      <div class="ref-box" id="caixa-resumo-falado">
+        <strong>Resumo Executivo do Turno.</strong> Carregando dados do arquivo <code>boletim_atual.json</code>...
+      </div>
+
+      <!-- BARRA DE ABAS -->
+      <div class="tabs-bar">
+        <button class="tab-btn active" onclick="trocarAba('aba-panorama', this)">Panorama & Cotações</button>
+        <button class="tab-btn" onclick="trocarAba('aba-culturas', this)">Análise por Cultura & Trading</button>
+        <button class="tab-btn" onclick="trocarAba('aba-noticias', this)">Central de Notícias & Links</button>
+        <button class="tab-btn" onclick="trocarAba('aba-ndf', this)">Simulador de Câmbio (NDF)</button>
+        <button class="tab-btn" onclick="trocarAba('aba-base', this)">Base de Projeções & Mentoria</button>
+      </div>
+
+      <!-- ABA 1: PANORAMA & COTAÇÕES -->
+      <section id="aba-panorama" class="tab-panel active">
+        <div class="chips-header">
+          <div><span style="color:var(--orange-bright);">▾</span> Commodities selecionadas para análise</div>
+          <div class="chips-count" id="contador-chips"></div>
+        </div>
+        <div class="chips-row" id="container-chips"></div>
+
+        <div class="section-divider-title" id="titulo-praca-panorama">Análise Econômica e Fechamento — Praça: Triângulo Mineiro / MT / CBOT</div>
+        <div class="sub-group-title">Indicadores de Fechamento, Físico e Bolsas Internacionais</div>
+        <div class="cards-grid-2" id="grid-panorama-cards"></div>
+      </section>
+
+      <!-- ABA 2: ANÁLISE POR CULTURA & TRADING -->
+      <section id="aba-culturas" class="tab-panel">
+        <div class="section-divider-title" id="titulo-cultura-ativa">Análise Detalhada da Cultura</div>
+        <div class="ref-box" id="box-vies-cultura"></div>
+
+        <div class="sub-group-title">Posicionamento de Mesa (Visão do Trader & Hedge Cambial)</div>
+        <div class="cards-grid-2" id="grid-trader-cultura"></div>
+
+        <div class="sub-group-title">Direcionamento Estratégico por Elo da Cadeia</div>
+        <div class="cards-grid-2" id="grid-consultoria-cultura"></div>
+      </section>
+
+      <!-- ABA 3: CENTRAL DE NOTÍCIAS & LINKS -->
+      <section id="aba-noticias" class="tab-panel">
+        <div class="section-divider-title">Fatos Geradores, Impacto no Trading e Links Oficiais</div>
+        <div class="cards-grid-2" id="grid-noticias-links"></div>
+      </section>
+
+      <!-- ABA 4: SIMULADOR DE CÂMBIO E NDF -->
+      <section id="aba-ndf" class="tab-panel">
+        <div class="section-divider-title">Mesa de Câmbio (FX Desk) & Simulador de Dólar Futuro (NDF)</div>
+        <div class="cards-grid-3" id="grid-metricas-cambio"></div>
+        <div class="ref-box" id="box-racional-cambio"></div>
+
+        <div class="sub-group-title">Calculadora de Arbitragem de Juros (Taxa Selic/DI vs. Cupom Cambial)</div>
+        <div class="cards-grid-3" style="margin-bottom: 16px;">
+          <div class="nutre-card">
+            <label class="card-top-label">Dólar Spot Hoje (R$)</label>
+            <input type="number" id="calc-spot" class="control-input" value="5.0700" step="0.01" oninput="calcularNDF()" />
+            <label class="card-top-label" style="margin-top:10px;">Preço da Saca em US$</label>
+            <input type="number" id="calc-saca-usd" class="control-input" value="27.50" step="0.10" oninput="calcularNDF()" />
+          </div>
+          <div class="nutre-card">
+            <label class="card-top-label">Taxa DI / Selic (% a.a.)</label>
+            <input type="number" id="calc-di" class="control-input" value="11.50" step="0.25" oninput="calcularNDF()" />
+            <label class="card-top-label" style="margin-top:10px;">Cupom Cambial Limpo (% a.a.)</label>
+            <input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" />
+          </div>
+          <div class="nutre-card">
+            <label class="card-top-label">Dias Úteis até Vencimento (Base 252)</label>
+            <input type="number" id="calc-du" class="control-input" value="111" step="1" oninput="calcularNDF()" />
+            <label class="card-top-label" style="margin-top:10px;">Dias Corridos até Vencimento (Base 360)</label>
+            <input type="number" id="calc-dc" class="control-input" value="163" step="1" oninput="calcularNDF()" />
+          </div>
+        </div>
+        <div class="cards-grid-2" id="grid-resultado-ndf"></div>
+      </section>
+
+      <!-- ABA 5: BASE DE PROJEÇÕES & MENTORIA -->
+      <section id="aba-base" class="tab-panel">
+        <div class="section-divider-title">Pílula de Inteligência de Mercado (Mentoria do Turno)</div>
+        <div id="container-mentoria" style="margin-bottom: 24px;"></div>
+
+        <div class="section-divider-title">Matriz de Projeções Auditáveis (Backtesting Semanal e Mensal)</div>
+        <div class="table-wrapper">
+          <table id="tabela-projecoes">
+            <thead>
+              <tr>
+                <th>Ativo / Referência</th>
+                <th>Cotação Base</th>
+                <th>Projeção Curto Prazo (Sexta)</th>
+                <th>Cenário Base Mês</th>
+                <th>Altista / Baixista</th>
+                <th>Gatilho de Auditoria</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    let dadosBoletim = null;
+    let chipsSelecionados = new Set();
+
+    // Limpa eventuais blocos ```json caso tenham sido salvos no arquivo
+    function limparJSON(texto) {
+      let t = texto.trim();
+      if (t.startsWith("```json")) t = t.slice(7);
+      else if (t.startsWith("```")) t = t.slice(3);
+      if (t.endsWith("```")) t = t.slice(0, -3);
+      return JSON.parse(t.trim());
+    }
+
+    async function carregarBoletim() {
+      try {
+        const res = await fetch(`./boletim_atual.json?t=${new Date().getTime()}`);
+        const texto = await res.text();
+        dadosBoletim = limparJSON(texto);
+        inicializarInterface();
+      } catch (err) {
+        document.getElementById('caixa-resumo-falado').innerHTML =
+          `<strong>Aviso:</strong> Erro ao ler <code>boletim_atual.json</code> (${err.message}). Verifique se o arquivo está salvo corretamente no repositório.`;
+      }
+    }
+
+    function inicializarInterface() {
+      // 1. Subtítulo e Resumo Falado
+      document.getElementById('subtitulo-turno').textContent =
+        `Monitoramento de grãos, coprodutos, pecuária, câmbio e projeções — ${dadosBoletim.metadata.titulo_edicao} (${dadosBoletim.metadata.data_hora})`;
+
+      document.getElementById('caixa-resumo-falado').innerHTML =
+        `<strong>Resumo Executivo do Turno (Versão Falada).</strong> ${dadosBoletim.metadata.resumo_falado}`;
+
+      // 2. Cotações na Sidebar e Chips
+      const sbContainer = document.getElementById('sidebar-quotes-container');
+      sbContainer.innerHTML = '';
+      chipsSelecionados.clear();
+
+      dadosBoletim.panorama_geral.forEach((item, idx) => {
+        chipsSelecionados.add(idx);
+        const nomeCurto = item.ativo.split('(')[0].trim();
+        sbContainer.innerHTML += `
+          <div class="control-group">
+            <label>${nomeCurto}</label>
+            <input type="text" class="control-input quote-readonly" value="${item.cotacao}" readonly />
+          </div>
+        `;
+      });
+
+      renderizarChipsPanorama();
+
+      // 3. Popular Select de Culturas
+      const selCultura = document.getElementById('select-cultura');
+      selCultura.innerHTML = '';
+      Object.keys(dadosBoletim.blocos_culturas).forEach(nome => {
+        const opt = document.createElement('option');
+        opt.value = nome;
+        opt.textContent = nome;
+        selCultura.appendChild(opt);
+      });
+
+      renderizarCulturaSelecionada();
+      renderizarNoticiasGerais();
+      renderizarMesaCambio();
+      calcularNDF();
+      renderizarMentoriaEProjecoes();
+    }
+
+    function renderizarChipsPanorama() {
+      const chipsRow = document.getElementById('container-chips');
+      chipsRow.innerHTML = '';
+      const total = dadosBoletim.panorama_geral.length;
+
+      dadosBoletim.panorama_geral.forEach((item, idx) => {
+        const ativo = chipsSelecionados.has(idx);
+        const nomeCurto = item.ativo.split('(')[0].trim();
+        const span = document.createElement('span');
+        span.className = `chip-pill ${ativo ? 'selected' : ''}`;
+        span.innerHTML = `${ativo ? '☑' : '☐'} ${nomeCurto}`;
+        span.onclick = () => {
+          if (chipsSelecionados.has(idx) && chipsSelecionados.size > 1) chipsSelecionados.delete(idx);
+          else chipsSelecionados.add(idx);
+          renderizarChipsPanorama();
+        };
+        chipsRow.appendChild(span);
+      });
+
+      document.getElementById('contador-chips').textContent =
+        `${chipsSelecionados.size} de ${total} ativos selecionados`;
+
+      const grid = document.getElementById('grid-panorama-cards');
+      grid.innerHTML = '';
+      dadosBoletim.panorama_geral.forEach((item, idx) => {
+        if (!chipsSelecionados.has(idx)) return;
+        grid.innerHTML += `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">${item.ativo}</div>
+              <div class="card-big-value">${item.cotacao}</div>
+              <div class="card-desc">${item.destaque}</div>
+            </div>
+            <div class="card-footer">
+              <a href="#" onclick="irParaCultura(${idx}); return false;">ⓘ Como essa análise impacta o mercado?</a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function irParaCultura() {
+      const botoes = document.querySelectorAll('.tab-btn');
+      trocarAba('aba-culturas', botoes[1]);
+    }
+
+    function atualizarTitulosPraca() {
+      const praca = document.getElementById('input-praca').value;
+      document.getElementById('titulo-praca-panorama').textContent =
+        `Análise Econômica e Fechamento — Praça: ${praca}`;
+    }
+
+    function renderizarCulturaSelecionada() {
+      const nomeCultura = document.getElementById('select-cultura').value;
+      const perfilFiltro = document.getElementById('select-perfil').value;
+      const bloco = dadosBoletim.blocos_culturas[nomeCultura];
+      if (!bloco) return;
+
+      document.getElementById('titulo-cultura-ativa').textContent =
+        `${nomeCultura} — Fundamentos, Consultoria e Trading`;
+
+      document.getElementById('box-vies-cultura').innerHTML = `
+        <strong>Viés de Mercado:</strong> ${bloco.vies_mercado}<br><br>
+        <strong>Resumo Executivo:</strong> ${bloco.resumo_executivo}
+      `;
+
+      document.getElementById('grid-trader-cultura').innerHTML = `
+        <div class="nutre-card">
+          <div>
+            <div class="card-top-label">Posicionamento Direcional & Derivativos</div>
+            <div class="card-big-value" style="font-size:19px; color:var(--orange-bright);">Visão do Trader (Long / Short)</div>
+            <div class="card-desc">${bloco.visao_trader['Direcional e Spreads'] || ''}</div>
+          </div>
+          <div class="card-footer"><span>ⓘ Estratégia tática CBOT / B3 / ICE</span></div>
+        </div>
+        <div class="nutre-card">
+          <div>
+            <div class="card-top-label">Gestão de Risco Cambial na Cultura</div>
+            <div class="card-big-value" style="font-size:19px; color:var(--green);">Cross-Hedge & Trading do Dólar</div>
+            <div class="card-desc">${bloco.visao_trader['Cross-Hedge e Trading do Dólar'] || ''}</div>
+          </div>
+          <div class="card-footer"><span style="color:var(--green);">ⓘ Arbitragem de NDF e Forward Points</span></div>
+        </div>
+      `;
+
+      const perfis = perfilFiltro === 'TODOS'
+        ? Object.keys(bloco.consultoria)
+        : [perfilFiltro];
+
+      const gridCons = document.getElementById('grid-consultoria-cultura');
+      gridCons.innerHTML = '';
+      perfis.forEach(p => {
+        if (!bloco.consultoria[p]) return;
+        gridCons.innerHTML += `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">Indicação Estratégica</div>
+              <div class="card-big-value" style="font-size:19px;">${p}</div>
+              <div class="card-desc">${bloco.consultoria[p]}</div>
+            </div>
+            <div class="card-footer"><span>ⓘ Plano de ação atualizado para o turno</span></div>
+          </div>
+        `;
+      });
+    }
+
+    function renderizarNoticiasGerais() {
+      const gridNot = document.getElementById('grid-noticias-links');
+      gridNot.innerHTML = '';
+
+      Object.entries(dadosBoletim.blocos_culturas).forEach(([cultura, bloco]) => {
+        (bloco.noticias_detalhadas || []).forEach(not => {
+          const linksHTML = (not.links || []).map((l, i) =>
+            `<a href="${l.url}" target="_blank" rel="noopener">ⓘ Link ${i+1}: ${l.titulo_link}</a>`
+          ).join(' &nbsp;|&nbsp; ');
+
+          gridNot.innerHTML += `
+            <div class="nutre-card">
+              <div>
+                <div class="card-top-label">${cultura}</div>
+                <div class="card-big-value" style="font-size:18px;">${not.titulo}</div>
+                <div class="card-desc">
+                  ${not.resumo_noticia}<br><br>
+                  <strong style="color:var(--orange-bright);">Impacto na Visão Trading:</strong> ${bloco.visao_trader['Direcional e Spreads'] || ''}
+                </div>
+              </div>
+              <div class="card-footer">${linksHTML}</div>
+            </div>
+          `;
+        });
+      });
+    }
+
+    function renderizarMesaCambio() {
+      const c = dadosBoletim.mesa_cambio;
+      document.getElementById('grid-metricas-cambio').innerHTML = `
+        <div class="nutre-card">
+          <div class="card-top-label">Dólar Comercial (Spot)</div>
+          <div class="card-big-value">${c.spot}</div>
+          <div class="card-footer"><span>ⓘ Cotação de referência à vista</span></div>
+        </div>
+        <div class="nutre-card">
+          <div class="card-top-label">Dólar Futuro (B3 Nov/26)</div>
+          <div class="card-big-value">${c.futuro_nov}</div>
+          <div class="card-footer"><span>ⓘ Contrato Futuro WDO / DOL</span></div>
+        </div>
+        <div class="nutre-card">
+          <div class="card-top-label">NDF Colheita Soja (Março/27)</div>
+          <div class="card-big-value" style="color:var(--green);">${c.ndf_marco27_estimado}</div>
+          <div class="card-footer"><span style="color:var(--green);">ⓘ Inclui Forward Points (Selic vs Cupom)</span></div>
+        </div>
+      `;
+
+      document.getElementById('box-racional-cambio').innerHTML = `
+        <strong>Decisão da Mesa de Câmbio (FX Desk):</strong> ${c.decisao_mesa}<br><br>
+        <strong>Racional Macro e Fluxo:</strong> ${c.racional}
+      `;
+    }
+
+    function calcularNDF() {
+      const spot = parseFloat(document.getElementById('calc-spot').value) || 0;
+      const sacaUsd = parseFloat(document.getElementById('calc-saca-usd').value) || 0;
+      const di = parseFloat(document.getElementById('calc-di').value) || 0;
+      const cupom = parseFloat(document.getElementById('calc-cupom').value) || 0;
+      const du = parseFloat(document.getElementById('calc-du').value) || 0;
+      const dc = parseFloat(document.getElementById('calc-dc').value) || 0;
+
+      const fatorReal = Math.pow(1 + (di / 100), du / 252);
+      const fatorDolar = 1 + ((cupom / 100) * (dc / 360));
+      const ndf = spot * (fatorReal / fatorDolar);
+      const forwardPoints = ndf - spot;
+
+      const sacaSpot = sacaUsd * spot;
+      const sacaNdf = sacaUsd * ndf;
+      const ganhoSaca = sacaNdf - sacaSpot;
+
+      document.getElementById('grid-resultado-ndf').innerHTML = `
+        <div class="nutre-card">
+          <div class="card-top-label">Dólar Futuro / NDF Calculado</div>
+          <div class="card-big-value">R$ ${ndf.toFixed(4)}</div>
+          <div class="card-desc">Ganho de carrego cambial (Forward Points): <strong>+R$ ${forwardPoints.toFixed(4)} por dólar</strong></div>
+          <div class="card-footer"><span>ⓘ Fórmula oficial: Spot × [(1 + DI)^(du/252)] / [1 + Cupom × (dc/360)]</span></div>
+        </div>
+        <div class="nutre-card">
+          <div class="card-top-label">Valor da Saca Travando NDF vs. Spot</div>
+          <div class="card-big-value" style="color:var(--green);">R$ ${sacaNdf.toFixed(2)}/sc <span style="font-size:13px; color:#8c8c8c; font-weight:400;">(vs R$ ${sacaSpot.toFixed(2)} no Spot)</span></div>
+          <div class="card-desc">Receita adicional garantida apenas pelo diferencial de juros: <strong>+R$ ${ganhoSaca.toFixed(2)} por saca</strong></div>
+          <div class="card-footer"><span style="color:var(--green);">ⓘ Simulação em tempo real para consultoria</span></div>
+        </div>
+      `;
+    }
+
+    function renderizarMentoriaEProjecoes() {
+      const m = dadosBoletim.pilula_mentoria;
+      document.getElementById('container-mentoria').innerHTML = `
+        <div class="nutre-card">
+          <div class="card-top-label">Mentoria Executiva de Inteligência de Mercado</div>
+          <div class="card-big-value" style="font-size:19px; color:var(--orange-bright); margin-bottom:10px;">${m.titulo}</div>
+          <div class="card-desc" style="white-space:pre-line; color:#d8d8d8;">${m.conteudo}</div>
+          <div class="card-footer"><span>ⓘ Conceito técnico para aplicação comercial</span></div>
+        </div>
+      `;
+
+      const tbody = document.querySelector('#tabela-projecoes tbody');
+      tbody.innerHTML = '';
+      (dadosBoletim.matriz_projecoes || []).forEach(p => {
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${p.Ativo}</strong></td>
+            <td>${p.Base_19_10}</td>
+            <td style="color:var(--orange-bright); font-weight:500;">${p.Alvo_Curto_23_10}</td>
+            <td>${p.Cenario_Base_Mes}</td>
+            <td>📈 ${p.Cenario_Altista}<br>📉 ${p.Cenario_Baixista}</td>
+            <td>${p.Gatilho_Auditoria}</td>
+            <td>${p.Status}</td>
+          </tr>
+        `;
+      });
+    }
+
+    function trocarAba(idAba, btnClicado) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(idAba).classList.add('active');
+      btnClicado.classList.add('active');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => carregarBoletim());
+  </script>
+</body>
+</html>
