@@ -1,192 +1,191 @@
 {
   "metadata": {
-    "titulo_edicao": "Edição Meio-Dia / Intraday",
-    "data_hora": "20/10/2026 - 12h00",
-    "resumo_falado": "Olá! Chegamos ao nosso giro de mercado agrícola do meio-dia desta terça-feira. Em Chicago, a soja tenta sustentar o repique técnico na casa de doze dólares e sessenta centavos por bushel, limitada pelo avanço do plantio no Mato Grosso. No mercado interno, a capacidade de esmagamento no Brasil sustenta o físico no Triângulo Mineiro. Na B3, o carrego segue atrativo e o dólar exibe volatilidade moderada."
+    "titulo_edicao": "Edição Fecho de Turno / Noite",
+    "data_hora": "20/10/2026 - 18h00",
+    "resumo_falado": "Olá! Fechamos o expediente desta terça-feira com Chicago encerrando o dia em leves ajustes técnicos e o mercado físico brasileiro sustentado pelo ritmo firme das indústrias de esmagamento e consumo de milho para etanol. Na B3, os contratos futuros mantêm prêmios estveis, enquanto o câmbio encerra o dia com volatilidade controlada, preservando as margens para novas estratégias de NDF."
   },
   "panorama_geral": [
     {
       "ativo": "Soja Grão (CBOT / Físico BR)",
-      "cotacao": "US$ 12,628 a US$ 12,640/bu (+0,13% a +0,22%)",
-      "destaque": "Repique técnico limitado pelo avanço do plantio em Mato Grosso. No físico interno, margens das esmagadoras dão sustentação aos preços."
+      "cotacao": "US$ 12,635/bu (+0,18%) | Físico MT/PR: R$ 148,20/sc",
+      "destaque": "Fechamento com ligeira alta em Chicago impulsionado por compras técnicas de final de sessão. No mercado físico, liquidez moderada."
     },
     {
       "ativo": "Farelo e Óleo de Soja (CBOT / Abiove)",
-      "cotacao": "Farelo: US$ 357,10/tc | Óleo: 67,13 c/lb | Físico: R$ 1.964,98/t",
-      "destaque": "Capacidade de moagem no Brasil cresce 86,4 mi t/ano. Demanda externa firme por farelo encurta os diferenciais nos portos."
+      "cotacao": "Farelo: US$ 357,80/tc | Óleo: 67,25 c/lb | Físico: R$ 1.968,50/t",
+      "destaque": "Derivados seguem firmes com forte demanda externa por farelo brasileiro e esmagamento interno aquecido."
     },
     {
       "ativo": "Milho (CBOT / B3 Curto vs. Longo)",
-      "cotacao": "CBOT: US$ 4,7305/bu (-0,25%) | B3 Nov: R$ 66,57 | Mar/27: R$ 75,96",
-      "destaque": "CBOT pressionada por oferta americana. No Brasil, consumo interno de etanol de milho enxuga a disponibilidade nas praças centrais."
+      "cotacao": "CBOT: US$ 4,7280/bu (-0,30%) | B3 Nov: R$ 66,62 | Mar/27: R$ 76,10",
+      "destaque": "Mercado futuro na B3 encerra com viés positivo nos contratos longos, refletindo a firmeza do consumo interno pelas usinas de etanol."
     },
     {
       "ativo": "DDG/DDGS e Sorgo (Demanda China)",
-      "cotacao": "DDG MT Set: 130,65 mil t (+100%) | Sorgo Exp: 790 mil t",
-      "destaque": "Demanda asiática aquecida por coprodutos para ração animal. O sorgo brasileiro ganha espaço competitivo nas exportações."
+      "cotacao": "DDG MT Set: 130,65 mil t | Sorgo Exp: 790 mil t",
+      "destaque": "Coprodutos consolidados nas rações confinadas. Demanda internacional por sorgo mantém margens atrativas para exportadores."
     },
     {
       "ativo": "Algodão e Caroço (ICE NY / Cepea / IMEA)",
-      "cotacao": "ICE NY: 80,28 a 80,68 c/lb | Caroço MT: R$ 705,19/t (-4,18%)",
-      "destaque": "Pluma recupera patamar com petróleo WTI acima de US$ 101. No Mato Grosso, pressão pontual de oferta no caroço de algodão."
+      "cotacao": "ICE NY: 80,55 c/lb | Caroço MT: R$ 705,19/t",
+      "destaque": "Pluma encerra o dia estável, sustentada por custos de energia e patamares firmes do petróleo no mercado internacional."
     },
     {
       "ativo": "Boi Gordo (Sial Paris / B3 e Crédito)",
-      "cotacao": "Boi Cepea: R$ 380,70/@ | B3 Nov/26: R$ 397,95/@ | RJs Agro: -20,7%",
-      "destaque": "Expectativa de reabertura ampla da cota chinesa para carne bovina em jan/27 sustenta os contratos futuros longos na B3."
+      "cotacao": "Boi Cepea: R$ 380,70/@ | B3 Nov/26: R$ 398,10/@",
+      "destaque": "Escalas de abate controladas pelas indústrias e firmeza nos contratos futuros longos de início de 2027."
     }
   ],
   "blocos_culturas": {
     "Complexo Soja e Derivados": {
-      "vies_mercado": "Neutro com viés de alta pontual no físico doméstico devido ao prêmio de exportação.",
-      "resumo_executivo": "A Black Sea e a safra sul-americana ditam o ritmo, enquanto os produtores brasileiros cadenciam as vendas atreladas ao custeio da próxima safra.",
+      "vies_mercado": "Neutro a altista no físico devido ao suporte das margens de esmagamento.",
+      "resumo_executivo": "O encerramento do dia reflete o progresso do plantio no Centro-Oeste e a cautela dos produtores na fixação de novas vendas de grão físico.",
       "noticias_detalhadas": [
         {
-          "titulo": "Avanço do plantio de soja em Mato Grosso atinge 51,86% da área prevista",
-          "resumo_noticia": "O IMEA apontou que os trabalhos de campo ganharam tração com as chuvas recentes, embora algumas regiões ainda exijam replantio pontual.",
+          "titulo": "Margens de esmagamento no Brasil sustentam compras de soja no físico",
+          "resumo_noticia": "Indústrias mantêm ritmo acelerado de moagem para atender aos compromissos de entrega de farelo e óleo no mercado externo.",
           "links": [
-            { "titulo_link": "Relatório IMEA Plantio de Soja", "url": "https://www.imea.com.br" },
-            { "titulo_link": "Panorama de Grãos Conab", "url": "https://www.conab.gov.br" }
+            { "titulo_link": "Indicadores Abiove", "url": "https://abiove.com.br" }
           ]
         }
       ],
       "consultoria": {
-        "Produtores Rurais": "Aproveitar os repiques na CBOT e no Dólar para travar custos de insumos da safra 26/27.",
-        "Cooperativas e Revendas": "Monitorar a margem de troca de barueri/fertilizantes com o grão físico entregue no armazém.",
-        "Indústrias e Confinamentos": "Garantir estoques de passagem de curto prazo para evitar gargalos logísticos no período de entre-safra.",
-        "Tradings e Exportadores": "Focar em operações de originação antecipada atreladas a portos do Arco Norte."
+        "Produtores Rurais": "Monitorar janelas de alta cambial para travar custos de insumos da próxima safra.",
+        "Cooperativas e Revendas": "Foco na gestão de recebimento de grãos e captação de margens de armazenagem.",
+        "Indústrias e Confinamentos": "Garantir estoques reguladores para evitar pressões de preço na entressafra.",
+        "Tradings e Exportadores": "Ajuste fino de prêmios nos portos do Arco Sul e Norte."
       },
       "visao_trader": {
-        "Direcional e Spreads": "Montagem de spreads de calendário (comprar Março/27 e vender Janeiro/27) apostando no carrego de juros.",
-        "Cross-Hedge e Trading do Dólar": "Uso de opções de compra (Call) de dólar para proteção de margem de exportação frente a oscilações cambiais."
+        "Direcional e Spreads": "Ajuste de posições compradas na ponta longa da curva de futuros.",
+        "Cross-Hedge e Trading do Dólar": "Uso estratégico de opções para proteção de margens de exportação."
       }
     },
     "Complexo Milho, Sorgo e Derivados": {
-      "vies_mercado": "Baixista no curto prazo em Chicago, sustentado no físico doméstico pelo consumo de etanol.",
-      "resumo_executivo": "A pressão sazonal da colheita no hemisfério norte contrasta com o ritmo firme das indústrias de conversão em Mato Grosso e Goiás.",
+      "vies_mercado": "Firme no mercado interno, pressionado em Chicago.",
+      "resumo_executivo": "A demanda das indústrias de biocombustíveis no Mato Grosso e Goiás absorve o excedente local, limitando quedas mais fortes.",
       "noticias_detalhadas": [
         {
-          "titulo": "Consumo de milho pelas usinas de etanol no MT cresce 13% no acumulado do ano",
-          "resumo_noticia": "A expansão da capacidade instalada de moagem eleva o consumo interno e encolhe o excedente exportável nas praças do Centro-Oeste.",
+          "titulo": "Usinas de etanol de milho mantêm ritmo forte de aquisição de matéria-prima",
+          "resumo_noticia": "O consumo interno continua enxugando a oferta disponível para exportação nas praças centrais.",
           "links": [
-            { "titulo_link": "Indicador Cepea Milho", "url": "https://www.cepea.esalq.usp.br" }
+            { "titulo_link": "Unem Informa", "url": "https://unem.org.br" }
           ]
         }
       ],
       "consultoria": {
-        "Produtores Rurais": "Escalonar vendas para capturar momentos de picos de demanda das indústrias locais.",
-        "Cooperativas e Revendas": "Focar na armazenagem estratégica para evitar venda na mínima de escoamento da safrinha.",
-        "Indústrias e Confinamentos": "Travar preços futuros via contratos de balcão com produtores da região de influência.",
-        "Tradings e Exportadores": "Atenção redobrada aos portos do Sul e Sudeste devido à concorrência com o milho americano."
+        "Produtores Rurais": "Escalonar entregas atreladas a contratos de parceria com usinas locais.",
+        "Cooperativas e Revendas": "Manter cautela na comercialização sem garantia de preço futuro.",
+        "Indústrias e Confinamentos": "Travar bases regionais favoráveis com fornecedores cativos.",
+        "Tradings e Exportadores": "Monitoramento constante da paridade de exportação nos portos."
       },
       "visao_trader": {
-        "Direcional e Spreads": "Posicionamento vendido em Chicago na ponta curta e comprado na B3 para capturar prêmio de base interna.",
-        "Cross-Hedge e Trading do Dólar": "Acompanhamento estrito da paridade de exportação nos portos."
+        "Direcional e Spreads": "Arbitragem entre o físico regional e os contratos futuros na B3.",
+        "Cross-Hedge e Trading do Dólar": "Proteção cambial associada a embarques futuros."
       }
     },
     "Complexo Algodão e Derivados": {
-      "vies_mercado": "Alta moderada, impulsionada pelo suporte do mercado de energia e câmbio.",
-      "resumo_executivo": "A pluma brasileira mantém alta competitividade no mercado internacional, com foco na qualidade de fibra entregue na Ásia.",
+      "vies_mercado": "Estável com viés de alta moderada.",
+      "resumo_executivo": "A pluma brasileira consolida sua posição competitiva nos mercados asiáticos com foco em contratos a termo.",
       "noticias_detalhadas": [
         {
-          "titulo": "Preços da pluma reagem na ICE com recuperação das commodities energéticas",
-          "resumo_noticia": "O petróleo mais firme eleva o custo de produção das fibras sintéticas, favorecendo a demanda pelo algodão natural.",
+          "titulo": "Exportações de algodão mantêm ritmo consistente no fechamento do mês",
+          "resumo_noticia": "A qualidade da fibra colhida garante diferenciais competitivos frente aos concorrentes globais.",
           "links": [
-            { "titulo_link": "Abrapa Informa", "url": "https://www.abrapa.com.br" }
+            { "titulo_link": "Abrapa", "url": "https://www.abrapa.com.br" }
           ]
         }
       ],
       "consultoria": {
-        "Produtores Rurais": "Aproveitar janelas de alta na ICE para fixar contratos de exportação em andamento.",
-        "Cooperativas e Revendas": "Acompanhar a qualidade do beneficiamento para garantir prêmios de exportação.",
-        "Indústrias e Confinamentos": "Uso racional do caroço de algodão na formulação de ração para bovinos de corte.",
-        "Tradings e Exportadores": "Esquemas logísticos ajustados para escoamento via portos de Santos e Paranaguá."
+        "Produtores Rurais": "Fixação de preços em patamares rentáveis na ICE.",
+        "Cooperativas e Revendas": "Rigrigor no controle de qualidade do beneficiamento.",
+        "Indústrias e Confinamentos": "Uso eficiente do caroço de algodão na dieta animal.",
+        "Tradings e Exportadores": "Logística portuária otimizada para embarques ágeis."
       },
       "visao_trader": {
-        "Direcional e Spreads": "Foco em operações estruturadas de proteção de margem para o produtor exportador.",
-        "Cross-Hedge e Trading do Dólar": "Monitoramento de oscilações do Dólar Comercial frente ao Real."
+        "Direcional e Spreads": "Proteção estruturada para produtores exportadores.",
+        "Cross-Hedge e Trading do Dólar": "Acompanhamento estrito da taxa de câmbio spot."
       }
     },
     "Commodities no Geral, Pecuária e Macro": {
-      "vies_mercado": "Construtivo para o médio prazo na pecuária de corte com foco na exportação.",
-      "resumo_executivo": "O mercado físico do boi gordo exibe firmeza, amparado pela oferta restrita de animais terminados em confinamento.",
+      "vies_mercado": "Construtivo para o boi gordo no médio prazo.",
+      "resumo_executivo": "O mercado pecuário encerra o dia com estabilidade nas praças produtoras e firmeza nos contratos futuros de curto e médio prazo.",
       "noticias_detalhadas": [
         {
-          "titulo": "Exportações de carne bovina mantêm ritmo recorde rumo aos mercados asiáticos",
-          "resumo_noticia": "A demanda chinesa permanece como principal sustentáculo dos preços pagos ao produtor nas principais praças exportadoras.",
+          "titulo": "Boi gordo encerra o dia com preços firmes no mercado físico",
+          "resumo_noticia": "A oferta restrita de animais terminados sustenta as cotações nas principais praças de exportação.",
           "links": [
-            { "titulo_link": "Notícias Agrícolas - Pecuária", "url": "https://www.noticiasagricolas.com.br" }
+            { "titulo_link": "Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br" }
           ]
         }
       ],
       "consultoria": {
-        "Produtores Rurais": "Planejamento da escala de abate com foco nos contratos a termo.",
-        "Cooperativas e Revendas": "Suporte técnico intensivo em nutrição animal para ganho de eficiência no período seco.",
-        "Indústrias e Confinamentos": "Gestão rigorosa do custo de reposição do boi magro frente ao arroba gorda.",
-        "Tradings e Exportadores": "Avaliação contínua das exigências sanitárias internacionais."
+        "Produtores Rurais": "Avaliação de escalas de abate e contratos a termo.",
+        "Cooperativas e Revendas": "Apoio técnico em nutrição e confinamento.",
+        "Indústrias e Confinamentos": "Gestão rigorosa de custos de reposição.",
+        "Tradings e Exportadores": "Monitoramento de exigências sanitárias."
       },
       "visao_trader": {
-        "Direcional e Spreads": "Operações na B3 de curto prazo visando a arbitragem entre o físico e o futuro.",
-        "Cross-Hedge e Trading do Dólar": "Proteção cambial casada com os embarques programados de carne."
+        "Direcional e Spreads": "Operações táticas na B3 entre vencimentos próximos.",
+        "Cross-Hedge e Trading do Dólar": "Proteção cambial vinculada às exportações de carne."
       }
     }
   },
   "mesa_cambio": {
     "spot": "R$ 5,0700",
-    "futuro_nov": "R$ 5,1420",
-    "ndf_marco27_estimado": "R$ 5,3150",
-    "decisao_mesa": "Manter posições de hedge ativas com foco na compra de proteção cambial para os meses de maior volatilidade.",
-    "racional": "O diferencial de juros entre a taxa Selic e o cupom cambial limpo garante pontos de carrego atrativos para operações de NDF estruturadas."
+    "futuro_nov": "R$ 5,1450",
+    "ndf_marco27_estimado": "R$ 5,3180",
+    "decisao_mesa": "Manutenção das posições de hedge ativas para proteção de margens de importação e exportação.",
+    "racional": "O fechamento do dia demonstra estabilidade no fluxo cambial, mantendo atrativo o carrego via NDF."
   },
   "pilula_mentoria": {
-    "titulo": "A Disciplina de Gestão de Risco na Comercialização de Commodities",
-    "conteudo": "No agronegócio moderno, o sucesso de uma operação não depende apenas de acertar o topo de preço do mercado, mas sim de construir uma média de comercialização rentável que proteja a margem operacional contra oscilações abruptas de câmbio e de bolsas internacionais. O uso de ferramentas derivativas (como NDFs e opções) deve ser encarado como seguro de receita, e não como instrumento de especulação."
+    "titulo": "A Importância da Revisão Contínua de Metas de Margem",
+    "conteudo": "No fim de cada jornada de mercado, o analista e o gestor devem auditar se as premissas de custos e preços se mantêm alinhadas à realidade operacional. A agilidade na revisão de metas evita distorções e garante que a tomada de decisão proteja o resultado financeiro da empresa."
   },
   "matriz_projecoes": [
     {
       "Ativo": "Soja Físico (Triângulo Mineiro)",
       "Base_19_10": "R$ 148,03/sc",
-      "Alvo_Curto_23_10": "R$ 149,50/sc",
+      "Alvo_Curto_23_10": "R$ 149,80/sc",
       "Cenario_Base_Mes": "Estabilidade com viés de alta",
-      "Cenario_Altista": "R$ 153,00/sc",
+      "Cenario_Altista": "R$ 153,50/sc",
       "Cenario_Baixista": "R$ 145,00/sc",
-      "Gatilho_Auditoria": "Volume de esmagamento e prêmios nos portos",
+      "Gatilho_Auditoria": "Prêmios de exportação e ritmo de moagem",
       "Status": "Em Andamento"
     },
     {
       "Ativo": "Milho Físico (Campinas/SP)",
       "Base_19_10": "R$ 75,96/sc",
-      "Alvo_Curto_23_10": "R$ 76,80/sc",
+      "Alvo_Curto_23_10": "R$ 77,00/sc",
       "Cenario_Base_Mes": "Firmeza pelo consumo interno",
-      "Cenario_Altista": "R$ 79,50/sc",
-      "Cenario_Baixista": "R$ 73,00/sc",
-      "Gatilho_Auditoria": "Demanda das usinas de etanol de milho",
+      "Cenario_Altista": "R$ 80,00/sc",
+      "Cenario_Baixista": "R$ 73,50/sc",
+      "Gatilho_Auditoria": "Demanda das usinas de etanol",
       "Status": "Em Andamento"
     },
     {
       "Ativo": "Dólar Comercial (Spot)",
       "Base_19_10": "R$ 5,0700",
-      "Alvo_Curto_23_10": "R$ 5,0950",
+      "Alvo_Curto_23_10": "R$ 5,1000",
       "Cenario_Base_Mes": "Volatilidade controlada",
-      "Cenario_Altista": "R$ 5,1800",
-      "Cenario_Baixista": "R$ 4,9900",
-      "Gatilho_Auditoria": "Fluxo cambial externo e dados fiscais",
+      "Cenario_Altista": "R$ 5,1900",
+      "Cenario_Baixista": "R$ 4,9800",
+      "Gatilho_Auditoria": "Fluxo cambial e dados macroeconômicos",
       "Status": "Em Andamento"
     }
   ],
   "evolucao_semanal": {
-    "resumo": "<strong>Consolidação da Semana (Domingo a Sábado):</strong> O complexo de grãos apresentou recuperação técnica sustentada pela demanda física interna e prêmios firmes nos portos. O dólar operou em faixa estreita com viés de alta moderada.",
+    "resumo": "<strong>Consolidação da Semana (Domingo a Sábado):</strong> O complexo de grãos apresenta alta moderada guiada pela firmeza do físico interno e demanda industrial aquecida. O câmbio opera estável.",
     "grafico_variacao": {
       "labels": ["Soja Grão", "Milho B3", "Algodão Pluma", "Boi Gordo", "Dólar Spot"],
-      "dados": [1.2, -0.4, 1.8, 0.9, 0.5]
+      "dados": [1.3, -0.2, 1.9, 1.0, 0.5]
     }
   },
   "evolucao_mensal": {
-    "resumo": "<strong>Acompanhamento Acumulado (MTD - Dia 1º até Hoje):</strong> O mês é marcado pela consolidação do plantio da safra de verão no Centro-Oeste e forte ritmo de esmagamento de soja, enquanto o milho encontra suporte na demanda industrial de biocombustíveis.",
+    "resumo": "<strong>Acompanhamento Acumulado (MTD - Dia 1º até Hoje):</strong> O mês consolida o avanço do plantio de verão e margens sólidas de esmagamento de soja, com suporte contínuo da pecuária e biocombustíveis.",
     "grafico_tendencia": {
       "labels": ["Dia 01", "Dia 05", "Dia 10", "Dia 15", "Dia 20"],
       "datasets": [
-        { "label": "Soja (Indicador)", "data": [145.0, 146.2, 147.1, 147.8, 148.03] },
+        { "label": "Soja (Indicador)", "data": [145.0, 146.2, 147.1, 147.8, 148.20] },
         { "label": "Milho (Campinas)", "data": [73.5, 74.0, 74.8, 75.2, 75.96] },
         { "label": "Dólar Comercial", "data": [5.01, 5.03, 5.05, 5.06, 5.07] }
       ]
