@@ -1,234 +1,917 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agri Market Intel — Painel de Inteligência</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Germinare | Market Intelligence Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Biblioteca Chart.js para os gráficos dinâmicos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    .tab-active { border-bottom: 3px solid #10b981; color: #10b981; font-weight: 700; }
+    :root {
+      --bg-topbar: #050505;
+      --bg-sidebar: #0a0a0a;
+      --bg-main: #0d0d0d;
+      --bg-card: #141414;
+      --bg-ref: #161616;
+      --bg-input: #111111;
+      --border-color: #242424;
+      --border-subtle: #1f1f1f;
+      --orange: #f58220;
+      --orange-bright: #ff7a00;
+      --green: #2eb85c;
+      --text-white: #ffffff;
+      --text-light: #e5e5e5;
+      --text-muted: #8c8c8c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    /* TOPBAR FIXA GERMINARE */
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 54px;
+      background-color: var(--bg-topbar);
+      border-bottom: 1.5px solid var(--orange-bright);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      z-index: 1000;
+    }
+
+    .brand-logo { display: flex; align-items: center; text-decoration: none; }
+    .brand-logo img { height: 30px; object-fit: contain; }
+    .topbar-right { font-size: 13px; color: #a3a3a3; font-weight: 400; }
+
+    /* LAYOUT PRINCIPAL */
+    .layout-wrapper {
+      display: flex;
+      margin-top: 54px;
+      min-height: calc(100vh - 54px);
+    }
+
+    /* SIDEBAR ESQUERDA */
+    .sidebar {
+      width: 280px;
+      min-width: 280px;
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid var(--border-subtle);
+      padding: 22px 18px 40px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .sidebar-header {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+
+    .control-group { display: flex; flex-direction: column; gap: 6px; }
+    .control-group label { font-size: 12px; color: #b0b0b0; font-weight: 400; }
+
+    .control-input, .control-select {
+      width: 100%;
+      background-color: var(--bg-input);
+      border: 1px solid #262626;
+      border-radius: 6px;
+      padding: 9px 12px;
+      color: var(--text-white);
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .control-input:focus, .control-select:focus { border-color: var(--orange-bright); }
+    .quote-readonly { text-align: right; font-weight: 500; color: #f0f0f0; }
+
+    /* CONTEÚDO PRINCIPAL DIREITO */
+    .main-content {
+      flex: 1;
+      padding: 28px 36px 60px 36px;
+      max-width: calc(100vw - 280px);
+    }
+
+    .page-title { font-size: 29px; font-weight: 700; color: var(--text-white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .page-title span { color: var(--orange-bright); }
+    .page-subtitle { font-size: 13.8px; color: var(--text-muted); margin-bottom: 18px; }
+
+    .ref-box {
+      background-color: var(--bg-ref);
+      border: 1px solid #282828;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 13.2px;
+      color: #d4d4d4;
+      line-height: 1.55;
+      margin-bottom: 22px;
+    }
+    .ref-box strong { color: var(--text-white); }
+
+    /* BARRA DE ABAS - AGORA COM SCROLL HORIZONTAL CASO FALTE ESPAÇO */
+    .tabs-bar {
+      display: flex;
+      gap: 22px;
+      border-bottom: 1px solid #242424;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 4px;
+    }
+
+    .tabs-bar::-webkit-scrollbar { height: 4px; }
+    .tabs-bar::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 13.8px;
+      font-weight: 500;
+      padding: 10px 2px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { color: #d4d4d4; }
+    .tab-btn.active { color: var(--orange-bright); font-weight: 600; border-bottom: 2px solid var(--orange-bright); }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* CHIPS */
+    .chips-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--text-white); }
+    .chips-count { font-size: 12.5px; color: var(--text-muted); font-weight: 400; }
+    .chips-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+
+    .chip-pill {
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #2c2c2c;
+      background-color: #121212;
+      color: #9e9e9e;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.18s;
+      user-select: none;
+    }
+    .chip-pill.selected { border-color: var(--orange-bright); background-color: rgba(255, 122, 0, 0.08); color: var(--orange-bright); }
+
+    .section-divider-title { font-size: 17.5px; font-weight: 700; color: var(--text-white); padding-bottom: 10px; border-bottom: 1px solid #222222; margin: 18px 0 14px 0; }
+    .sub-group-title { font-size: 14px; font-weight: 600; color: #e0e0e0; margin: 14px 0 12px 0; }
+
+    .cards-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 18px; }
+    .cards-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 18px; }
+
+    .nutre-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s;
+    }
+    .nutre-card:hover { border-color: #383838; }
+
+    .card-top-label { font-size: 12.2px; color: #9e9e9e; margin-bottom: 6px; }
+    .card-big-value { font-size: 23px; font-weight: 800; color: var(--text-white); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .card-desc { font-size: 13px; color: #b5b5b5; line-height: 1.55; margin-bottom: 14px; }
+    .card-footer { border-top: 1px solid #202020; padding-top: 10px; font-size: 12.2px; color: var(--orange-bright); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .card-footer a { color: var(--orange-bright); text-decoration: none; font-weight: 500; }
+    .card-footer a:hover { text-decoration: underline; }
+
+    /* TABELA */
+    .table-wrapper { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px; background-color: var(--bg-card); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+    th { background-color: #1a1a1a; color: #ffffff; font-weight: 600; padding: 12px 14px; border-bottom: 1px solid #2a2a2a; }
+    td { padding: 12px 14px; border-bottom: 1px solid #1f1f1f; color: #d4d4d4; line-height: 1.45; }
+    tr:hover td { background-color: #191919; }
+
+    .btn-sync {
+      background-color: #191919;
+      border: 1px solid var(--orange-bright);
+      color: var(--orange-bright);
+      padding: 9px 12px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 4px;
+    }
+    .btn-sync:hover { background-color: var(--orange-bright); color: #050505; }
+
+    .btn-admin {
+      background-color: rgba(46, 184, 92, 0.12);
+      border: 1px solid var(--green);
+      color: #4cd964;
+      padding: 9px 12px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 4px;
+    }
+    .btn-admin:hover { background-color: var(--green); color: #050505; }
+
+    /* MODAL DE ATUALIZAÇÃO */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.82);
+      z-index: 9999; align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background-color: #141414; border: 1px solid var(--orange-bright); border-radius: 12px;
+      width: 100%; max-width: 680px; padding: 24px; display: flex; flex-direction: column; gap: 14px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    }
+    .modal-textarea {
+      width: 100%; height: 240px; background-color: #0b0b0b; border: 1px solid #2b2b2b;
+      border-radius: 8px; color: #00e676; font-family: monospace; font-size: 12.5px;
+      padding: 12px; resize: vertical; outline: none;
+    }
+
+    @media (max-width: 900px) {
+      .layout-wrapper { flex-direction: column; }
+      .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #222; }
+      .main-content { max-width: 100%; padding: 20px; }
+    }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen">
+<body>
 
-  <!-- Cabeçalho Executivo -->
-  <header class="bg-slate-900 border-b border-slate-800 px-6 py-4 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-      <div>
-        <span class="text-xs uppercase tracking-widest text-emerald-400 font-semibold">Terminal de Inteligência de Mercado Agro</span>
-        <h1 class="text-2xl font-bold text-white">Soja, Milho, Algodão, Coprodutos & Câmbio</h1>
-      </div>
-      <div class="text-xs text-slate-400 md:text-right">
-        <div id="meta-id" class="font-mono text-emerald-400">Carregando...</div>
-        <div id="meta-time">Atualizando dados da API GitHub...</div>
-      </div>
-    </div>
+  <!-- TOPBAR FIXA GERMINARE -->
+  <header class="topbar">
+    <a href="#" class="brand-logo">
+      <img src="logo-germinare.png" alt="germinare" onerror="this.style.display='none'; document.getElementById('svg-fallback').style.display='block';" />
+      <svg id="svg-fallback" style="display:none;" width="155" height="36" viewBox="0 0 210 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="2" y="32" font-family="'Inter', sans-serif" font-size="33" font-weight="400" letter-spacing="-0.5" fill="#f58220">germinare</text>
+        <path d="M23 32 C25 39, 32 43, 37 41 C35 36, 29 33, 23 32 Z" fill="#00a843"/>
+      </svg>
+    </a>
+    <div class="topbar-right">Inteligência em insumos</div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-6 py-6">
+  <div class="layout-wrapper">
+    <!-- SIDEBAR ESQUERDA -->
+    <aside class="sidebar">
+      <div class="sidebar-header">CONFIGURAÇÕES DA ANÁLISE</div>
 
-    <!-- Navegação por Abas -->
-    <div class="flex flex-wrap border-b border-slate-800 mb-6 gap-6 text-sm text-slate-400">
-      <button onclick="switchTab('tab-spot')" id="btn-tab-spot" class="pb-3 tab-active transition">
-        📊 1. Cotações do Turno (Spot & Bolsas)
-      </button>
-      <button onclick="switchTab('tab-wtd')" id="btn-tab-wtd" class="pb-3 hover:text-white transition">
-        📅 2. Evolução Semanal (Dom a Sáb — WTD)
-      </button>
-      <button onclick="switchTab('tab-mtd')" id="btn-tab-mtd" class="pb-3 hover:text-white transition">
-        🗓️ 3. Evolução Mensal (Dia 1º até Hoje — MTD)
-      </button>
-      <button onclick="switchTab('tab-audit')" id="btn-tab-audit" class="pb-3 hover:text-white transition">
-        🎯 4. Projeções Auditáveis (Backtesting)
-      </button>
+      <div class="control-group">
+        <label>Filtro de Complexo / Cultura</label>
+        <select id="select-cultura" class="control-select" onchange="renderizarCulturaSelecionada()"></select>
+      </div>
+
+      <div class="control-group">
+        <label>Praça de Cotação</label>
+        <input type="text" id="input-praca" class="control-input" value="Triângulo Mineiro / MT / CBOT" oninput="atualizarTitulosPraca()" />
+      </div>
+
+      <div class="control-group">
+        <label>Formato de Comercialização / Perfil</label>
+        <select id="select-perfil" class="control-select" onchange="renderizarCulturaSelecionada()">
+          <option value="TODOS">Todos os Elos (Completa)</option>
+          <option value="Produtores Rurais">Produtores Rurais</option>
+          <option value="Indústrias e Confinamentos">Indústrias e Confinamentos</option>
+          <option value="Cooperativas e Revendas">Cooperativas e Revendas</option>
+          <option value="Tradings e Exportadores">Tradings e Exportadores</option>
+        </select>
+      </div>
+
+      <div class="sidebar-header" style="margin-top: 14px;">COTAÇÕES DO DIA — REFERÊNCIA</div>
+      <div id="sidebar-quotes-container" style="display:flex; flex-direction:column; gap:10px;"></div>
+
+      <div class="sidebar-header" style="margin-top: 14px;">GESTÃO DO PAINEL (API)</div>
+      <button class="btn-admin" onclick="abrirModalPublicacao()">⚡ Publicar Novo Boletim</button>
+      <button class="btn-sync" onclick="carregarBoletim()">↻ Recarregar Dados</button>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL DIREITA -->
+    <main class="main-content">
+      <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
+      <div class="page-subtitle" id="subtitulo-turno">A carregar boletim atualizado...</div>
+
+      <div class="ref-box" id="caixa-resumo-falado">
+        <strong>Resumo Executivo do Turno.</strong> A carregar dados do ficheiro <code>boletim_atual.json</code>...
+      </div>
+
+      <!-- BARRA DE ABAS COM AS NOVAS FUNCIONALIDADES -->
+      <div class="tabs-bar">
+        <button class="tab-btn active" onclick="trocarAba('aba-panorama', this)">Panorama & Cotações</button>
+        <button class="tab-btn" onclick="trocarAba('aba-culturas', this)">Análise por Cultura & Trading</button>
+        <button class="tab-btn" onclick="trocarAba('aba-semanal', this)">📈 Evolução Semanal</button>
+        <button class="tab-btn" onclick="trocarAba('aba-mensal', this)">📅 Evolução Mensal</button>
+        <button class="tab-btn" onclick="trocarAba('aba-noticias', this)">Central de Notícias</button>
+        <button class="tab-btn" onclick="trocarAba('aba-ndf', this)">Câmbio (NDF)</button>
+        <button class="tab-btn" onclick="trocarAba('aba-base', this)">Projeções</button>
+      </div>
+
+      <!-- ABA 1: PANORAMA & COTAÇÕES -->
+      <section id="aba-panorama" class="tab-panel active">
+        <div class="chips-header">
+          <div><span style="color:var(--orange-bright);">▾</span> Commodities selecionadas para análise</div>
+          <div class="chips-count" id="contador-chips"></div>
+        </div>
+        <div class="chips-row" id="container-chips"></div>
+        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praça: Triângulo Mineiro / MT / CBOT</div>
+        <div class="cards-grid-2" id="grid-panorama-cards"></div>
+      </section>
+
+      <!-- ABA 2: ANÁLISE POR CULTURA & TRADING -->
+      <section id="aba-culturas" class="tab-panel">
+        <div class="section-divider-title" id="titulo-cultura-ativa">Análise Detalhada da Cultura</div>
+        <div class="ref-box" id="box-vies-cultura"></div>
+        <div class="sub-group-title">Posicionamento de Mesa (Visão do Trader & Hedge Cambial)</div>
+        <div class="cards-grid-2" id="grid-trader-cultura"></div>
+        <div class="sub-group-title">Direcionamento Estratégico por Elo da Cadeia</div>
+        <div class="cards-grid-2" id="grid-consultoria-cultura"></div>
+      </section>
+
+      <!-- ABA 3: NOVA ABA EVOLUÇÃO SEMANAL -->
+      <section id="aba-semanal" class="tab-panel">
+        <div class="section-divider-title">Visão Consolidada da Semana (Domingo a Sábado)</div>
+        <div class="ref-box" id="texto-resumo-semanal">A aguardar dados da semana...</div>
+        <div class="cards-grid-2">
+          <div class="nutre-card" style="grid-column: 1 / -1;">
+            <div class="card-top-label">Variação Percentual Acumulada na Semana (%)</div>
+            <div style="height: 320px; width: 100%; position: relative;">
+              <canvas id="grafico-semanal"></canvas>
+            </div>
+            <div class="card-footer" style="margin-top: 15px;"><span>ⓘ Gráfico dinâmico alimentado pelo Gemini Pro</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABA 4: NOVA ABA EVOLUÇÃO MENSAL -->
+      <section id="aba-mensal" class="tab-panel">
+        <div class="section-divider-title">Acompanhamento e Progresso Mensal (YTD / MTD)</div>
+        <div class="ref-box" id="texto-resumo-mensal">A aguardar dados do mês...</div>
+        <div class="cards-grid-2">
+          <div class="nutre-card" style="grid-column: 1 / -1;">
+            <div class="card-top-label">Curva de Tendência de Preços no Mês Atual</div>
+            <div style="height: 380px; width: 100%; position: relative;">
+              <canvas id="grafico-mensal"></canvas>
+            </div>
+            <div class="card-footer" style="margin-top: 15px;"><span>ⓘ Histórico gerado desde o dia 1º até à data de hoje</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABA 5: CENTRAL DE NOTÍCIAS & LINKS -->
+      <section id="aba-noticias" class="tab-panel">
+        <div class="section-divider-title">Fatos Geradores, Impacto no Trading e Links Oficiais</div>
+        <div class="cards-grid-2" id="grid-noticias-links"></div>
+      </section>
+
+      <!-- ABA 6: SIMULADOR DE CÂMBIO E NDF -->
+      <section id="aba-ndf" class="tab-panel">
+        <div class="section-divider-title">Mesa de Câmbio (FX Desk) & Simulador de Dólar Futuro (NDF)</div>
+        <div class="cards-grid-3" id="grid-metricas-cambio"></div>
+        <div class="ref-box" id="box-racional-cambio"></div>
+        <div class="sub-group-title">Calculadora de Arbitragem de Juros (Taxa Selic/DI vs. Cupom Cambial)</div>
+        <div class="cards-grid-3" style="margin-bottom: 16px;">
+          <div class="nutre-card">
+            <label class="card-top-label">Dólar Spot Hoje (R$)</label>
+            <input type="number" id="calc-spot" class="control-input" value="5.0700" step="0.01" oninput="calcularNDF()" />
+            <label class="card-top-label" style="margin-top:10px;">Preço da Saca em US$</label>
+            <input type="number" id="calc-saca-usd" class="control-input" value="27.50" step="0.10" oninput="calcularNDF()" />
+          </div>
+          <div class="nutre-card">
+            <label class="card-top-label">Taxa DI / Selic (% a.a.)</label>
+            <input type="number" id="calc-di" class="control-input" value="11.50" step="0.25" oninput="calcularNDF()" />
+            <label class="card-top-label" style="margin-top:10px;">Cupom Cambial Limpo (% a.a.)</label>
+            <input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" />
+          </div>
+          <div class="nutre-card">
+            <label class="card-top-label">Dias Úteis até Vencimento (Base 252)</label>
+            <input type="number" id="calc-du" class="control-input" value="111" step="1" oninput="calcularNDF()" />
+            <label class="card-top-label" style="margin-top:10px;">Dias Corridos (Base 360)</label>
+            <input type="number" id="calc-dc" class="control-input" value="163" step="1" oninput="calcularNDF()" />
+          </div>
+        </div>
+        <div class="cards-grid-2" id="grid-resultado-ndf"></div>
+      </section>
+
+      <!-- ABA 7: BASE DE PROJEÇÕES & MENTORIA -->
+      <section id="aba-base" class="tab-panel">
+        <div class="section-divider-title">Pílula de Inteligência de Mercado (Mentoria do Turno)</div>
+        <div id="container-mentoria" style="margin-bottom: 24px;"></div>
+        <div class="section-divider-title">Matriz de Projeções Auditáveis (Backtesting Semanal e Mensal)</div>
+        <div class="table-wrapper">
+          <table id="tabela-projecoes">
+            <thead>
+              <tr>
+                <th>Ativo / Referência</th>
+                <th>Cotação Base</th>
+                <th>Projeção Curto Prazo (Sexta)</th>
+                <th>Cenário Base Mês</th>
+                <th>Altista / Baixista</th>
+                <th>Gatilho de Auditoria</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- MODAL DE ATUALIZAÇÃO -->
+  <div class="modal-overlay" id="modal-publicacao">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="color:#ffffff; font-size:18px;">⚡ Publicar Novo Boletim do Gemini Pro</h3>
+        <button onclick="fecharModalPublicacao()" style="background:none; border:none; color:#8c8c8c; font-size:20px; cursor:pointer;">✕</button>
+      </div>
+      <div style="font-size:12.5px; color:#a3a3a3; line-height:1.5;">
+        Cole abaixo o código JSON gerado pelo seu Agente no Gemini Pro.
+      </div>
+      <div class="control-group">
+        <label>Token do GitHub (Salvo no seu navegador)</label>
+        <input type="password" id="gh-token-input" class="control-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+      </div>
+      <div class="control-group">
+        <label>JSON do Boletim</label>
+        <textarea id="json-novo-input" class="modal-textarea" placeholder='{"metadata": { ... }}'></textarea>
+      </div>
+      <div id="status-publicacao" style="font-size:13px; color:var(--orange-bright);"></div>
+      <div style="display:flex; justify-content:flex-end; gap:10px;">
+        <button class="btn-sync" onclick="fecharModalPublicacao()">Cancelar</button>
+        <button class="btn-admin" onclick="enviarParaGitHub()">🚀 Atualizar Site Agora</button>
+      </div>
     </div>
-
-    <!-- ABA 1: COTAÇÕES DO TURNO -->
-    <section id="tab-spot" class="space-y-6">
-      <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-    </section>
-
-    <!-- ABA 2: EVOLUÇÃO SEMANAL (DOMINGO A SÁBADO) -->
-    <section id="tab-wtd" class="hidden space-y-4">
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-        <h2 class="text-lg font-bold text-emerald-400 mb-1">Evolução Semanal (Domingo a Sábado)</h2>
-        <p id="wtd-period" class="text-xs text-slate-400 mb-4"></p>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-sm">
-            <thead>
-              <tr class="border-b border-slate-800 text-slate-400 text-xs uppercase">
-                <th class="py-3 px-3">Cultura / Ativo</th>
-                <th class="py-3 px-3">Abertura (Dom)</th>
-                <th class="py-3 px-3">Atual</th>
-                <th class="py-3 px-3">Variação Semanal</th>
-                <th class="py-3 px-3">Mín / Máx Semana</th>
-                <th class="py-3 px-3">Fundamento da Evolução na Semana</th>
-              </tr>
-            </thead>
-            <tbody id="table-wtd-body" class="divide-y divide-slate-800/60"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABA 3: EVOLUÇÃO MENSAL ACUMULADA (DIA 1º ATÉ HOJE) -->
-    <section id="tab-mtd" class="hidden space-y-4">
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-        <h2 class="text-lg font-bold text-amber-400 mb-1">Evolução Mensal Acumulada (Do 1º Dia do Mês até Hoje — MTD)</h2>
-        <p id="mtd-period" class="text-xs text-slate-400 mb-4"></p>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-sm">
-            <thead>
-              <tr class="border-b border-slate-800 text-slate-400 text-xs uppercase">
-                <th class="py-3 px-3">Cultura / Ativo</th>
-                <th class="py-3 px-3">Dia 1º do Mês</th>
-                <th class="py-3 px-3">Cotação Atual</th>
-                <th class="py-3 px-3">Acumulado Mês (%)</th>
-                <th class="py-3 px-3">Mín / Máx Mês</th>
-                <th class="py-3 px-3">Diagnóstico da Trajetória no Mês</th>
-              </tr>
-            </thead>
-            <tbody id="table-mtd-body" class="divide-y divide-slate-800/60"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABA 4: PROJEÇÕES AUDITÁVEIS -->
-    <section id="tab-audit" class="hidden space-y-4">
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-        <h2 class="text-lg font-bold text-sky-400 mb-1">Painel de Projeções Auditáveis & Cenários (Track Record)</h2>
-        <p class="text-xs text-slate-400 mb-4">Alvos quantitativos para conferência de acertos semanal e no fechamento do mês.</p>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-sm">
-            <thead>
-              <tr class="border-b border-slate-800 text-slate-400 text-xs uppercase">
-                <th class="py-3 px-3">Ativo / Commodity</th>
-                <th class="py-3 px-3">Base Atual</th>
-                <th class="py-3 px-3">Projeção Curto Prazo (Sexta)</th>
-                <th class="py-3 px-3">Cenários Fim do Mês (Base / Bull / Bear)</th>
-                <th class="py-3 px-3">Gatilho de Auditoria (Variável-Chave)</th>
-              </tr>
-            </thead>
-            <tbody id="table-audit-body" class="divide-y divide-slate-800/60"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-  </main>
+  </div>
 
   <script>
-    function switchTab(tabId) {
-      ['tab-spot', 'tab-wtd', 'tab-mtd', 'tab-audit'].forEach(id => {
-        document.getElementById(id).classList.add('hidden');
-        document.getElementById('btn-' + id).classList.remove('tab-active');
-      });
-      document.getElementById(tabId).classList.remove('hidden');
-      document.getElementById('btn-' + tabId).classList.add('tab-active');
+    const REPO_OWNER = "luan238";
+    const REPO_NAME = "painel-inteligencia-agro";
+    const FILE_PATH = "boletim_atual.json";
+
+    let dadosBoletim = null;
+    let chipsSelecionados = new Set();
+    let chartSemanal = null;
+    let chartMensal = null;
+
+    function limparJSON(texto) {
+      let t = texto.trim();
+      if (t.startsWith("```json")) t = t.slice(7);
+      else if (t.startsWith("```")) t = t.slice(3);
+      if (t.endsWith("```")) t = t.slice(0, -3);
+      return JSON.parse(t.trim());
     }
 
-    function formatBadge(pct) {
-      const color = pct > 0 ? 'bg-emerald-500/20 text-emerald-400' : (pct < 0 ? 'bg-rose-500/20 text-rose-400' : 'bg-slate-700 text-slate-300');
-      const sign = pct > 0 ? '+' : '';
-      return `<span class="px-2 py-1 rounded font-mono text-xs font-semibold ${color}">${sign}${pct.toFixed(2)}%</span>`;
-    }
-
-    async function loadDashboard() {
+    async function carregarBoletim() {
       try {
-        const res = await fetch('./dados.json?nocache=' + new Date().getTime());
-        const data = await res.json();
-
-        // Cabeçalho
-        document.getElementById('meta-id').textContent = `${data.metadata.report_id} | ${data.metadata.week_reference || ''}`;
-        document.getElementById('meta-time').textContent = `Atualizado em: ${data.metadata.timestamp}`;
-
-        // Aba 1: Cards de Indicadores
-        const cardsContainer = document.getElementById('cards-container');
-        cardsContainer.innerHTML = '';
-        const groups = {
-          '💵 Câmbio & Energia': data.market_indicators.cambio_e_energia,
-          '🌱 Complexo Soja & Derivados': data.market_indicators.complexo_soja,
-          '🌽 Milho, Sorgo & DDGS': data.market_indicators.complexo_milho_e_ddgs,
-          '☁️ Algodão, Caroço & Farelo': data.market_indicators.complexo_algodao,
-          '🐂 Pecuária de Corte (Boi & Reposição)': data.market_indicators.pecuaria
-        };
-
-        for (const [title, items] of Object.entries(groups)) {
-          if (!items) continue;
-          let rows = '';
-          for (const [k, v] of Object.entries(items)) {
-            const label = k.replace(/_/g, ' ').toUpperCase();
-            rows += `<div class="flex justify-between py-1.5 border-b border-slate-800/60 text-xs">
-                      <span class="text-slate-400">${label}</span>
-                      <span class="font-mono font-semibold text-white">${v}</span>
-                     </div>`;
-          }
-          cardsContainer.innerHTML += `
-            <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-              <h3 class="font-bold text-emerald-400 text-sm mb-3">${title}</h3>
-              <div>${rows}</div>
-            </div>`;
-        }
-
-        // Aba 2: Evolução Semanal (WTD)
-        if (data.weekly_evolution_wtd) {
-          document.getElementById('wtd-period').textContent = `Período: ${data.weekly_evolution_wtd.period_start} até ${data.weekly_evolution_wtd.period_current} (Fechamento Sábado: ${data.weekly_evolution_wtd.period_end})`;
-          const wtdBody = document.getElementById('table-wtd-body');
-          wtdBody.innerHTML = data.weekly_evolution_wtd.assets.map(item => `
-            <tr class="hover:bg-slate-800/40">
-              <td class="py-3 px-3 font-semibold text-white">${item.asset} <span class="text-xs text-slate-500">(${item.unit})</span></td>
-              <td class="py-3 px-3 font-mono text-slate-300">${item.sunday_open_ref}</td>
-              <td class="py-3 px-3 font-mono font-bold text-white">${item.current_value}</td>
-              <td class="py-3 px-3">${formatBadge(item.weekly_change_pct)}</td>
-              <td class="py-3 px-3 font-mono text-xs text-slate-400">${item.week_low} / ${item.week_high}</td>
-              <td class="py-3 px-3 text-xs text-slate-300 max-w-md">${item.weekly_driver}</td>
-            </tr>
-          `).join('');
-        }
-
-        // Aba 3: Evolução Mensal (MTD)
-        if (data.monthly_evolution_mtd) {
-          document.getElementById('mtd-period').textContent = `Acumulado desde ${data.monthly_evolution_mtd.month_start} até ${data.monthly_evolution_mtd.current_date} (${data.monthly_evolution_mtd.days_elapsed} dias corridos)`;
-          const mtdBody = document.getElementById('table-mtd-body');
-          mtdBody.innerHTML = data.monthly_evolution_mtd.assets.map(item => `
-            <tr class="hover:bg-slate-800/40">
-              <td class="py-3 px-3 font-semibold text-white">${item.asset} <span class="text-xs text-slate-500">(${item.unit})</span></td>
-              <td class="py-3 px-3 font-mono text-slate-300">${item.month_open_value}</td>
-              <td class="py-3 px-3 font-mono font-bold text-white">${item.current_value}</td>
-              <td class="py-3 px-3">${formatBadge(item.mtd_change_pct)}</td>
-              <td class="py-3 px-3 font-mono text-xs text-slate-400">${item.month_low} / ${item.month_high}</td>
-              <td class="py-3 px-3 text-xs text-slate-300 max-w-md">${item.monthly_narrative}</td>
-            </tr>
-          `).join('');
-        }
-
-        // Aba 4: Projeções Auditáveis
-        if (data.audit_panel_projections) {
-          const auditBody = document.getElementById('table-audit-body');
-          auditBody.innerHTML = data.audit_panel_projections.map(item => {
-            const shortTerm = item.short_term_target_23_oct || (item.short_term_projection && item.short_term_projection.target_range) || '-';
-            const scenarios = item.end_of_month_30_oct || item.medium_term_scenarios || {};
-            return `
-              <tr class="hover:bg-slate-800/40">
-                <td class="py-3 px-3 font-semibold text-white">${item.commodity}</td>
-                <td class="py-3 px-3 font-mono font-bold text-sky-400">${item.current_base}</td>
-                <td class="py-3 px-3 font-mono text-xs text-emerald-300">${shortTerm}</td>
-                <td class="py-3 px-3 text-xs font-mono">
-                  <div><span class="text-slate-400">Base:</span> ${scenarios.base_case || '-'}</div>
-                  <div><span class="text-emerald-400">Bull:</span> ${scenarios.bull_case || '-'}</div>
-                  <div><span class="text-rose-400">Bear:</span> ${scenarios.bear_case || '-'}</div>
-                </td>
-                <td class="py-3 px-3 text-xs text-slate-300 max-w-md">${item.audit_trigger}</td>
-              </tr>`;
-          }).join('');
-        }
+        const res = await fetch(`./boletim_atual.json?t=${new Date().getTime()}`);
+        const texto = await res.text();
+        dadosBoletim = limparJSON(texto);
+        inicializarInterface();
       } catch (err) {
-        console.error('Erro ao carregar dados.json:', err);
+        document.getElementById('caixa-resumo-falado').innerHTML =
+          `<strong>Aviso:</strong> Erro ao ler <code>boletim_atual.json</code> (${err.message}).`;
       }
     }
 
-    loadDashboard();
+    function inicializarInterface() {
+      document.getElementById('subtitulo-turno').textContent =
+        `Monitoramento de grãos, coprodutos, pecuária, câmbio e projeções — ${dadosBoletim.metadata.titulo_edicao} (${dadosBoletim.metadata.data_hora})`;
+
+      document.getElementById('caixa-resumo-falado').innerHTML =
+        `<strong>Resumo Executivo do Turno (Versão Falada).</strong> ${dadosBoletim.metadata.resumo_falado}`;
+
+      const sbContainer = document.getElementById('sidebar-quotes-container');
+      sbContainer.innerHTML = '';
+      chipsSelecionados.clear();
+
+      dadosBoletim.panorama_geral.forEach((item, idx) => {
+        chipsSelecionados.add(idx);
+        const nomeCurto = item.ativo.split('(')[0].trim();
+        sbContainer.innerHTML += `
+          <div class="control-group">
+            <label>${nomeCurto}</label>
+            <input type="text" class="control-input quote-readonly" value="${item.cotacao}" readonly />
+          </div>
+        `;
+      });
+
+      renderizarChipsPanorama();
+
+      const selCultura = document.getElementById('select-cultura');
+      selCultura.innerHTML = '';
+      Object.keys(dadosBoletim.blocos_culturas).forEach(nome => {
+        const opt = document.createElement('option');
+        opt.value = nome;
+        opt.textContent = nome;
+        selCultura.appendChild(opt);
+      });
+
+      renderizarCulturaSelecionada();
+      renderizarNoticiasGerais();
+      renderizarMesaCambio();
+      calcularNDF();
+      renderizarMentoriaEProjecoes();
+      renderizarGraficosEvolucao(); // Nova chamada para os gráficos
+    }
+
+    function renderizarGraficosEvolucao() {
+      // Fallback seguro caso o JSON antigo ainda não tenha estes dados
+      const dSemanal = dadosBoletim.evolucao_semanal || {
+        resumo: "<strong>Aviso:</strong> Os dados detalhados da evolução semanal começarão a aparecer após a próxima atualização de boletim gerada pelo agente.",
+        grafico_variacao: { labels: ["Soja", "Milho", "Algodão", "Boi", "Dólar"], dados: [0, 0, 0, 0, 0] }
+      };
+
+      const dMensal = dadosBoletim.evolucao_mensal || {
+        resumo: "<strong>Aviso:</strong> O acompanhamento mensal (dia 1 até hoje) será exibido na próxima sincronização.",
+        grafico_tendencia: { labels: ["Início", "Atual"], datasets: [{ label: "Demonstração", data: [0, 0] }] }
+      };
+
+      document.getElementById('texto-resumo-semanal').innerHTML = dSemanal.resumo;
+      document.getElementById('texto-resumo-mensal').innerHTML = dMensal.resumo;
+
+      // Gráfico Semanal (Barras)
+      const ctxSemanal = document.getElementById('grafico-semanal').getContext('2d');
+      if(chartSemanal) chartSemanal.destroy();
+      chartSemanal = new Chart(ctxSemanal, {
+        type: 'bar',
+        data: {
+          labels: dSemanal.grafico_variacao.labels,
+          datasets: [{
+            label: 'Variação (%)',
+            data: dSemanal.grafico_variacao.dados,
+            backgroundColor: dSemanal.grafico_variacao.dados.map(v => v >= 0 ? '#00e676' : '#ff5252'),
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } },
+            x: { grid: { display: false }, ticks: { color: '#9e9e9e' } }
+          }
+        }
+      });
+
+      // Gráfico Mensal (Linhas Múltiplas)
+      const ctxMensal = document.getElementById('grafico-mensal').getContext('2d');
+      if(chartMensal) chartMensal.destroy();
+      
+      const coresLinhas = ['#ff7a00', '#00e676', '#38bdf8', '#fbbf24', '#c084fc'];
+      const datasetsFormatados = dMensal.grafico_tendencia.datasets.map((ds, i) => ({
+        ...ds,
+        borderColor: coresLinhas[i % coresLinhas.length],
+        backgroundColor: coresLinhas[i % coresLinhas.length] + '33', // transparência
+        borderWidth: 2,
+        tension: 0.3,
+        pointRadius: 4,
+        fill: false
+      }));
+
+      chartMensal = new Chart(ctxMensal, {
+        type: 'line',
+        data: {
+          labels: dMensal.grafico_tendencia.labels,
+          datasets: datasetsFormatados
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { labels: { color: '#d4d4d4', font: { family: 'Inter' } } } },
+          scales: {
+            y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } },
+            x: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }
+          }
+        }
+      });
+    }
+
+    function renderizarChipsPanorama() {
+      const chipsRow = document.getElementById('container-chips');
+      chipsRow.innerHTML = '';
+      const total = dadosBoletim.panorama_geral.length;
+
+      dadosBoletim.panorama_geral.forEach((item, idx) => {
+        const ativo = chipsSelecionados.has(idx);
+        const nomeCurto = item.ativo.split('(')[0].trim();
+        const span = document.createElement('span');
+        span.className = `chip-pill ${ativo ? 'selected' : ''}`;
+        span.innerHTML = `${ativo ? '☑' : '☐'} ${nomeCurto}`;
+        span.onclick = () => {
+          if (chipsSelecionados.has(idx) && chipsSelecionados.size > 1) chipsSelecionados.delete(idx);
+          else chipsSelecionados.add(idx);
+          renderizarChipsPanorama();
+        };
+        chipsRow.appendChild(span);
+      });
+
+      document.getElementById('contador-chips').textContent =
+        `${chipsSelecionados.size} de ${total} ativos selecionados`;
+
+      const grid = document.getElementById('grid-panorama-cards');
+      grid.innerHTML = '';
+      dadosBoletim.panorama_geral.forEach((item, idx) => {
+        if (!chipsSelecionados.has(idx)) return;
+        grid.innerHTML += `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">${item.ativo}</div>
+              <div class="card-big-value">${item.cotacao}</div>
+              <div class="card-desc">${item.destaque}</div>
+            </div>
+            <div class="card-footer">
+              <a href="#" onclick="irParaCultura(); return false;">ⓘ Como essa análise impacta o mercado?</a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function irParaCultura() {
+      const botoes = document.querySelectorAll('.tab-btn');
+      trocarAba('aba-culturas', botoes[1]);
+    }
+
+    function atualizarTitulosPraca() {
+      const praca = document.getElementById('input-praca').value;
+      document.getElementById('titulo-praca-panorama').textContent =
+        `Análise Económica e Fecho — Praça: ${praca}`;
+    }
+
+    function renderizarCulturaSelecionada() {
+      const nomeCultura = document.getElementById('select-cultura').value;
+      const perfilFiltro = document.getElementById('select-perfil').value;
+      const bloco = dadosBoletim.blocos_culturas[nomeCultura];
+      if (!bloco) return;
+
+      document.getElementById('titulo-cultura-ativa').textContent =
+        `${nomeCultura} — Fundamentos, Consultoria e Trading`;
+
+      document.getElementById('box-vies-cultura').innerHTML = `
+        <strong>Viés de Mercado:</strong> ${bloco.vies_mercado}<br><br>
+        <strong>Resumo Executivo:</strong> ${bloco.resumo_executivo}
+      `;
+
+      document.getElementById('grid-trader-cultura').innerHTML = `
+        <div class="nutre-card">
+          <div>
+            <div class="card-top-label">Posicionamento Direcional & Derivativos</div>
+            <div class="card-big-value" style="font-size:19px; color:var(--orange-bright);">Visão do Trader (Long / Short)</div>
+            <div class="card-desc">${bloco.visao_trader['Direcional e Spreads'] || ''}</div>
+          </div>
+          <div class="card-footer"><span>ⓘ Estratégia tática CBOT / B3 / ICE</span></div>
+        </div>
+        <div class="nutre-card">
+          <div>
+            <div class="card-top-label">Gestão de Risco Cambial na Cultura</div>
+            <div class="card-big-value" style="font-size:19px; color:var(--green);">Cross-Hedge & Trading do Dólar</div>
+            <div class="card-desc">${bloco.visao_trader['Cross-Hedge e Trading do Dólar'] || ''}</div>
+          </div>
+          <div class="card-footer"><span style="color:var(--green);">ⓘ Arbitragem de NDF e Forward Points</span></div>
+        </div>
+      `;
+
+      const perfis = perfilFiltro === 'TODOS'
+        ? Object.keys(bloco.consultoria)
+        : [perfilFiltro];
+
+      const gridCons = document.getElementById('grid-consultoria-cultura');
+      gridCons.innerHTML = '';
+      perfis.forEach(p => {
+        if (!bloco.consultoria[p]) return;
+        gridCons.innerHTML += `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">Indicação Estratégica</div>
+              <div class="card-big-value" style="font-size:19px;">${p}</div>
+              <div class="card-desc">${bloco.consultoria[p]}</div>
+            </div>
+            <div class="card-footer"><span>ⓘ Plano de ação atualizado para o turno</span></div>
+          </div>
+        `;
+      });
+    }
+
+    function renderizarNoticiasGerais() {
+      const gridNot = document.getElementById('grid-noticias-links');
+      gridNot.innerHTML = '';
+
+      Object.entries(dadosBoletim.blocos_culturas).forEach(([cultura, bloco]) => {
+        (bloco.noticias_detalhadas || []).forEach(not => {
+          const linksHTML = (not.links || []).map((l, i) =>
+            `<a href="${l.url}" target="_blank" rel="noopener">ⓘ Link ${i+1}: ${l.titulo_link}</a>`
+          ).join(' &nbsp;|&nbsp; ');
+
+          gridNot.innerHTML += `
+            <div class="nutre-card">
+              <div>
+                <div class="card-top-label">${cultura}</div>
+                <div class="card-big-value" style="font-size:18px;">${not.titulo}</div>
+                <div class="card-desc">
+                  ${not.resumo_noticia}<br><br>
+                  <strong style="color:var(--orange-bright);">Impacto na Visão Trading:</strong> ${bloco.visao_trader['Direcional e Spreads'] || ''}
+                </div>
+              </div>
+              <div class="card-footer">${linksHTML}</div>
+            </div>
+          `;
+        });
+      });
+    }
+
+    function renderizarMesaCambio() {
+      const c = dadosBoletim.mesa_cambio;
+      document.getElementById('grid-metricas-cambio').innerHTML = `
+        <div class="nutre-card">
+          <div class="card-top-label">Dólar Comercial (Spot)</div>
+          <div class="card-big-value">${c.spot}</div>
+          <div class="card-footer"><span>ⓘ Cotação de referência à vista</span></div>
+        </div>
+        <div class="nutre-card">
+          <div class="card-top-label">Dólar Futuro (B3 Nov/26)</div>
+          <div class="card-big-value">${c.futuro_nov}</div>
+          <div class="card-footer"><span>ⓘ Contrato Futuro WDO / DOL</span></div>
+        </div>
+        <div class="nutre-card">
+          <div class="card-top-label">NDF Colheita Soja (Março/27)</div>
+          <div class="card-big-value" style="color:var(--green);">${c.ndf_marco27_estimado}</div>
+          <div class="card-footer"><span style="color:var(--green);">ⓘ Inclui Forward Points (Selic vs Cupom)</span></div>
+        </div>
+      `;
+
+      document.getElementById('box-racional-cambio').innerHTML = `
+        <strong>Decisão da Mesa de Câmbio (FX Desk):</strong> ${c.decisao_mesa}<br><br>
+        <strong>Racional Macro e Fluxo:</strong> ${c.racional}
+      `;
+    }
+
+    function calcularNDF() {
+      const spot = parseFloat(document.getElementById('calc-spot').value) || 0;
+      const sacaUsd = parseFloat(document.getElementById('calc-saca-usd').value) || 0;
+      const di = parseFloat(document.getElementById('calc-di').value) || 0;
+      const cupom = parseFloat(document.getElementById('calc-cupom').value) || 0;
+      const du = parseFloat(document.getElementById('calc-du').value) || 0;
+      const dc = parseFloat(document.getElementById('calc-dc').value) || 0;
+
+      const fatorReal = Math.pow(1 + (di / 100), du / 252);
+      const fatorDolar = 1 + ((cupom / 100) * (dc / 360));
+      const ndf = spot * (fatorReal / fatorDolar);
+      const forwardPoints = ndf - spot;
+
+      const sacaSpot = sacaUsd * spot;
+      const sacaNdf = sacaUsd * ndf;
+      const ganhoSaca = sacaNdf - sacaSpot;
+
+      document.getElementById('grid-resultado-ndf').innerHTML = `
+        <div class="nutre-card">
+          <div class="card-top-label">Dólar Futuro / NDF Calculado</div>
+          <div class="card-big-value">R$ ${ndf.toFixed(4)}</div>
+          <div class="card-desc">Ganho de carrego cambial (Forward Points): <strong>+R$ ${forwardPoints.toFixed(4)} por dólar</strong></div>
+          <div class="card-footer"><span>ⓘ Fórmula oficial: Spot × [(1 + DI)^(du/252)] / [1 + Cupom × (dc/360)]</span></div>
+        </div>
+        <div class="nutre-card">
+          <div class="card-top-label">Valor da Saca Travando NDF vs. Spot</div>
+          <div class="card-big-value" style="color:var(--green);">R$ ${sacaNdf.toFixed(2)}/sc <span style="font-size:13px; color:#8c8c8c; font-weight:400;">(vs R$ ${sacaSpot.toFixed(2)} no Spot)</span></div>
+          <div class="card-desc">Receita adicional garantida apenas pelo diferencial de juros: <strong>+R$ ${ganhoSaca.toFixed(2)} por saca</strong></div>
+          <div class="card-footer"><span style="color:var(--green);">ⓘ Simulação em tempo real para consultoria</span></div>
+        </div>
+      `;
+    }
+
+    function renderizarMentoriaEProjecoes() {
+      const m = dadosBoletim.pilula_mentoria;
+      document.getElementById('container-mentoria').innerHTML = `
+        <div class="nutre-card">
+          <div class="card-top-label">Mentoria Executiva de Inteligência de Mercado</div>
+          <div class="card-big-value" style="font-size:19px; color:var(--orange-bright); margin-bottom:10px;">${m.titulo}</div>
+          <div class="card-desc" style="white-space:pre-line; color:#d8d8d8;">${m.conteudo}</div>
+          <div class="card-footer"><span>ⓘ Conceito técnico para aplicação comercial</span></div>
+        </div>
+      `;
+
+      const tbody = document.querySelector('#tabela-projecoes tbody');
+      tbody.innerHTML = '';
+      (dadosBoletim.matriz_projecoes || []).forEach(p => {
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${p.Ativo}</strong></td>
+            <td>${p.Base_19_10}</td>
+            <td style="color:var(--orange-bright); font-weight:500;">${p.Alvo_Curto_23_10}</td>
+            <td>${p.Cenario_Base_Mes}</td>
+            <td>📈 ${p.Cenario_Altista}<br>📉 ${p.Cenario_Baixista}</td>
+            <td>${p.Gatilho_Auditoria}</td>
+            <td>${p.Status}</td>
+          </tr>
+        `;
+      });
+    }
+
+    function trocarAba(idAba, btnClicado) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(idAba).classList.add('active');
+      btnClicado.classList.add('active');
+    }
+
+    function abrirModalPublicacao() {
+      const tokenSalvo = localStorage.getItem('germinare_gh_token') || '';
+      document.getElementById('gh-token-input').value = tokenSalvo;
+      document.getElementById('status-publicacao').textContent = '';
+      document.getElementById('modal-publicacao').classList.add('open');
+    }
+
+    function fecharModalPublicacao() {
+      document.getElementById('modal-publicacao').classList.remove('open');
+    }
+
+    async function enviarParaGitHub() {
+      const statusEl = document.getElementById('status-publicacao');
+      const token = document.getElementById('gh-token-input').value.trim();
+      const textoBruto = document.getElementById('json-novo-input').value.trim();
+
+      if (!token) { statusEl.textContent = "⚠️ Insira o seu Token do GitHub (ghp_...)."; return; }
+      if (!textoBruto) { statusEl.textContent = "⚠️ Cole o código JSON gerado pelo Gemini."; return; }
+
+      let objetoValido;
+      try {
+        objetoValido = limparJSON(textoBruto);
+      } catch (e) {
+        statusEl.textContent = "❌ O texto colado não é um JSON válido: " + e.message; return;
+      }
+
+      localStorage.setItem('germinare_gh_token', token);
+      statusEl.textContent = "⏳ A sincronizar com o GitHub...";
+
+      try {
+        const apiUrl = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+        const getRes = await fetch(apiUrl, {
+          headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github+json" }
+        });
+
+        let shaAtual = null;
+        if (getRes.ok) {
+          const fileData = await getRes.json();
+          shaAtual = fileData.sha;
+        }
+
+        const jsonFormatado = JSON.stringify(objetoValido, null, 2);
+        const conteudoBase64 = btoa(unescape(encodeURIComponent(jsonFormatado)));
+
+        const putRes = await fetch(apiUrl, {
+          method: "PUT",
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            message: `Atualização de boletim (${objetoValido.metadata?.data_hora || 'Novo Turno'})`,
+            content: conteudoBase64,
+            sha: shaAtual
+          })
+        });
+
+        if (!putRes.ok) {
+          const erroTxt = await putRes.text();
+          throw new Error(erroTxt);
+        }
+
+        dadosBoletim = objetoValido;
+        inicializarInterface();
+        statusEl.style.color = "#4cd964";
+        statusEl.textContent = "✅ Painel atualizado com sucesso!";
+        setTimeout(() => fecharModalPublicacao(), 1200);
+      } catch (err) {
+        statusEl.style.color = "#ff5252";
+        statusEl.textContent = "❌ Erro ao gravar no GitHub: " + err.message;
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => carregarBoletim());
   </script>
 </body>
 </html>
