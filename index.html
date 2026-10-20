@@ -95,16 +95,6 @@
     th { background-color: #1a1a1a; color: #ffffff; font-weight: 600; padding: 12px 14px; border-bottom: 1px solid #2a2a2a; }
     td { padding: 12px 14px; border-bottom: 1px solid #1f1f1f; color: #d4d4d4; }
 
-    .btn-sync { background-color: #191919; border: 1px solid var(--orange-bright); color: var(--orange-bright); padding: 9px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 600; cursor: pointer; margin-top: 4px; width: 100%; }
-    .btn-sync:hover { background-color: var(--orange-bright); color: #050505; }
-    .btn-admin { background-color: rgba(46, 184, 92, 0.12); border: 1px solid var(--green); color: #4cd964; padding: 9px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 600; cursor: pointer; margin-top: 4px; width: 100%; }
-    .btn-admin:hover { background-color: var(--green); color: #050505; }
-
-    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.82); z-index: 9999; align-items: center; justify-content: center; padding: 20px; }
-    .modal-overlay.open { display: flex; }
-    .modal-box { background-color: #141414; border: 1px solid var(--orange-bright); border-radius: 12px; width: 100%; max-width: 680px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
-    .modal-textarea { width: 100%; height: 220px; background-color: #0b0b0b; border: 1px solid #2b2b2b; border-radius: 8px; color: #00e676; font-family: monospace; font-size: 12.5px; padding: 12px; outline: none; resize: vertical; }
-
     @media (max-width: 900px) {
       .layout-wrapper { flex-direction: column; }
       .sidebar { width: 100%; }
@@ -127,14 +117,6 @@
 
   <div class="layout-wrapper">
     <aside class="sidebar">
-      <div class="sidebar-header">HISTÓRICO DE EDIÇÕES</div>
-      <div class="control-group">
-        <label>Selecionar Boletim Anterior</label>
-        <select id="select-historico" class="control-select" onchange="carregarEdicaoHistorica(this.value)">
-          <option value="boletim_atual.json">Edição Atual (Mais Recente)</option>
-        </select>
-      </div>
-
       <div class="sidebar-header">CONFIGURAÇÕES DA ANÁLISE</div>
       <div class="control-group">
         <label>Complexo / Cultura</label>
@@ -157,10 +139,6 @@
 
       <div class="sidebar-header">COTAÇÕES DO DIA</div>
       <div id="sidebar-quotes-container" style="display:flex; flex-direction:column; gap:10px;"></div>
-
-      <div class="sidebar-header">GESTÃO DO PAINEL</div>
-      <button class="btn-admin" onclick="abrirModalPublicacao()">⚡ Publicar Novo Boletim</button>
-      <button class="btn-sync" onclick="carregarBoletim('boletim_atual.json')">↻ Recarregar Atual</button>
     </aside>
 
     <main class="main-content">
@@ -254,24 +232,7 @@
     </main>
   </div>
 
-  <div class="modal-overlay" id="modal-publicacao">
-    <div class="modal-box">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="color:#ffffff; font-size:18px;">⚡ Publicar Novo Boletim</h3>
-        <button onclick="fecharModalPublicacao()" style="background:none; border:none; color:#8c8c8c; font-size:20px; cursor:pointer;">✕</button>
-      </div>
-      <div class="control-group"><label>Token do GitHub (ghp_...)</label><input type="password" id="gh-token-input" class="control-input" /></div>
-      <div class="control-group"><label>JSON do Boletim</label><textarea id="json-novo-input" class="modal-textarea"></textarea></div>
-      <div id="status-publicacao" style="font-size:13px; color:var(--orange-bright);"></div>
-      <div style="display:flex; justify-content:flex-end; gap:10px;"><button class="btn-sync" onclick="fecharModalPublicacao()">Cancelar</button><button class="btn-admin" onclick="enviarParaGitHub()">🚀 Publicar</button></div>
-    </div>
-  </div>
-
   <script>
-    const REPO_OWNER = "luan238";
-    const REPO_NAME = "painel-inteligencia-agro";
-    const FILE_PATH = "boletim_atual.json";
-
     let dadosBoletim = null;
     let chipsSelecionados = new Set();
     let chartSemanal = null, chartMensal = null;
@@ -284,60 +245,16 @@
       return JSON.parse(t.trim());
     }
 
-    async function carregarListaHistorico() {
+    async function carregarBoletim() {
       try {
-        const url = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/contents/historico`;
-        const res = await fetch(url);
-        if (!res.ok) return; // Se a pasta historico ainda não existir, mantém apenas o atual
-        const items = await res.json();
-        
-        // Função recursiva simples para varrer anos e meses se necessário, ou listar ficheiros
-        // Para simplificar, vamos buscar os anos/meses dinamicamente ou listar a árvore do repositório
-        carregarArvoreGit();
-      } catch (e) {
-        console.log("Histórico em árvore via API em construção:", e);
-      }
-    }
-
-    async function carregarArvoreGit() {
-      try {
-        const url = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/git/trees/main?recursive=1`;
-        const res = await fetch(url);
-        if (!res.ok) return;
-        const data = await res.json();
-        
-        const select = document.getElementById('select-historico');
-        // Mantém a opção atual
-        select.innerHTML = `<option value="boletim_atual.json">Edição Atual (Mais Recente)</option>`;
-        
-        data.tree.forEach(file => {
-          if (file.path.startsWith("historico/") && file.path.endsWith(".json")) {
-            const nomeExibicao = file.path.replace("historico/", "").replace(".json", "");
-            const opt = document.createElement('option');
-            opt.value = file.path;
-            opt.textContent = `Edição: ${nomeExibicao}`;
-            select.appendChild(opt);
-          }
-        });
-      } catch (err) {
-        console.log("Erro ao carregar árvore do histórico:", err);
-      }
-    }
-
-    async function carregarBoletim(caminho = "boletim_atual.json") {
-      try {
-        const res = await fetch(`./${caminho}?t=${new Date().getTime()}`);
-        if (!res.ok) throw new Error("Ficheiro não encontrado.");
+        const res = await fetch(`./boletim_atual.json?t=${new Date().getTime()}`);
+        if (!res.ok) throw new Error("Ficheiro JSON não encontrado.");
         const texto = await res.text();
         dadosBoletim = limparJSON(texto);
         inicializarInterface();
       } catch (err) {
         document.getElementById('caixa-resumo-falado').innerHTML = `<strong>Aviso:</strong> ${err.message}`;
       }
-    }
-
-    function carregarEdicaoHistorica(caminho) {
-      carregarBoletim(caminho);
     }
 
     function inicializarInterface() {
@@ -500,62 +417,7 @@
       btn.classList.add('active');
     }
 
-    function abrirModalPublicacao() {
-      document.getElementById('gh-token-input').value = localStorage.getItem('germinare_gh_token') || '';
-      document.getElementById('modal-publicacao').classList.add('open');
-    }
-    function fecharModalPublicacao() { document.getElementById('modal-publicacao').classList.remove('open'); }
-
-    async function enviarParaGitHub() {
-      const token = document.getElementById('gh-token-input').value.trim();
-      const texto = document.getElementById('json-novo-input').value.trim();
-      const status = document.getElementById('status-publicacao');
-
-      if (!token || !texto) { status.textContent = "⚠️ Preencha o Token e o JSON."; return; }
-      try {
-        const obj = limparJSON(texto);
-        localStorage.setItem('germinare_gh_token', token);
-        status.textContent = "⏳ A publicar...";
-
-        // 1. Atualiza o boletim atual principal
-        const urlAtual = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
-        const resGet = await fetch(urlAtual, { headers: { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } });
-        let shaAtual = resGet.ok ? (await resGet.json()).sha : null;
-        const conteudoBase64 = btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2))));
-
-        await fetch(urlAtual, {
-          method: "PUT",
-          headers: { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json", "Content-Type": "application/json" },
-          body: JSON.stringify({ message: "Atualização boletim atual", content: conteudoBase64, sha: shaAtual })
-        });
-
-        // 2. Grava também uma cópia imutável na pasta de histórico (ex: historico/2026-10-20_12h00.json)
-        const dataTag = obj.metadata?.data_hora ? obj.metadata.data_hora.replace(/[\/:\s]/g, "-") : "arquivo";
-        const caminhoHistorico = `historico/${dataTag}.json`;
-        const urlHist = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/contents/${caminhoHistorico}`;
-        
-        const resHistGet = await fetch(urlHist, { headers: { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } });
-        let shaHist = resHistGet.ok ? (await resHistGet.json()).sha : null;
-
-        await fetch(urlHist, {
-          method: "PUT",
-          headers: { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json", "Content-Type": "application/json" },
-          body: JSON.stringify({ message: `Arquivando histórico ${dataTag}`, content: conteudoBase64, sha: shaHist })
-        });
-
-        status.style.color = "#4cd964";
-        status.textContent = "✅ Publicado e arquivado no histórico com sucesso!";
-        setTimeout(() => { fecharModalPublicacao(); carregarBoletim(); carregarListaHistorico(); }, 1200);
-      } catch (err) {
-        status.style.color = "#ff5252";
-        status.textContent = "❌ Erro: " + err.message;
-      }
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
-      carregarBoletim();
-      carregarListaHistorico();
-    });
+    window.addEventListener('DOMContentLoaded', () => carregarBoletim());
   </script>
 </body>
 </html>
