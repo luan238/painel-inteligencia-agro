@@ -282,7 +282,7 @@
         dadosBoletim = limparJSON(texto);
         inicializarInterface();
       } catch (err) {
-        document.getElementById('caixa-resumo-falado').innerHTML = `<strong>Erro ao carregar dados:</strong> ${err.message}. Certifique-se de que o <code>boletim_atual.json</code> está atualizado no GitHub.`;
+        document.getElementById('caixa-resumo-falado').innerHTML = `<strong>Erro ao carregar dados:</strong> ${err.message}.`;
       }
     }
 
@@ -464,19 +464,47 @@
         status.textContent = "⏳ A publicar...";
 
         const url = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
-        const resGet = await fetch(url, { headers: { "Authorization": `Bearer ${token}` } });
-        const sha = resGet.ok ? (await resGet.json()).sha : null;
+        
+        // Obter o SHA atual do ficheiro no GitHub
+        const resGet = await fetch(url, { 
+          headers: { 
+            "Authorization": `token ${token}`,
+            "Accept": "application/vnd.github.v3+json"
+          } 
+        });
+        
+        let sha = null;
+        if (resGet.ok) {
+          const fileData = await resGet.json();
+          sha = fileData.sha;
+        }
 
+        const jsonFormatado = JSON.stringify(obj, null, 2);
+        const conteudoBase64 = btoa(unescape(encodeURIComponent(jsonFormatado)));
+
+        // Enviar atualização via PUT com cabeçalho correto
         const resPut = await fetch(url, {
           method: "PUT",
-          headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" },
-          body: JSON.stringify({ message: "Atualização de boletim", content: btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2)))), sha })
+          headers: { 
+            "Authorization": `token ${token}`,
+            "Accept": "application/vnd.github.v3+json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ 
+            message: "Atualização automática via painel Germinare", 
+            content: conteudoBase64, 
+            sha: sha 
+          })
         });
 
-        if (!resPut.ok) throw new Error(await resPut.text());
+        if (!resPut.ok) {
+          const erroTxt = await resPut.text();
+          throw new Error(erroTxt);
+        }
+
         status.style.color = "#4cd964";
         status.textContent = "✅ Atualizado com sucesso!";
-        setTimeout(() => { fecharModalPublicacao(); carregarBoletim(); }, 1000);
+        setTimeout(() => { fecharModalPublicacao(); carregarBoletim(); }, 1200);
       } catch (err) {
         status.style.color = "#ff5252";
         status.textContent = "❌ Erro: " + err.message;
