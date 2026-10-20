@@ -1,480 +1,195 @@
 {
   "metadata": {
-    "report_id": "AGRI-INTEL-2026-10-20-0932",
-    "timestamp": "2026-10-20T09:32:00-03:00",
-    "week_reference": "2026-W43 (18/10/2026 a 24/10/2026)",
-    "month_reference": "2026-10 (01/10/2026 a 20/10/2026)",
-    "analyst": "Agri Market Intel AI",
-    "target_user": "Luan Barbosa Andrade"
+    "titulo_edicao": "Edição Meio-Dia / Intraday",
+    "data_hora": "20/10/2026 - 12h00",
+    "resumo_falado": "Olá! Chegamos ao nosso giro de mercado agrícola do meio-dia desta terça-feira. Em Chicago, a soja tenta sustentar o repique técnico na casa de doze dólares e sessenta centavos por bushel, limitada pelo avanço do plantio no Mato Grosso. No mercado interno, a capacidade de esmagamento no Brasil sustenta o físico no Triângulo Mineiro. Na B3, o carrego segue atrativo e o dólar exibe volatilidade moderada."
   },
-  "audio_summary": "Giros de mercado atualizados em 20 de outubro de 2026: Na soja, Chicago opera a US$ 12,64 por bushel com plantio em Mato Grosso saltando para 51,86% da área e capacidade das esmagadoras no Brasil subindo 13% para 86,4 milhões de toneladas ao ano. No milho, Chicago opera a US$ 4,73 por bushel, enquanto na B3 o carrego entre novembro de 26 (R$ 66,57) e março de 27 (R$ 75,96) segue em R$ 9,39 por saca, com a China comprando 95,6% do sorgo brasileiro e 88% do DDG de Mato Grosso em setembro. No algodão, Nova York recupera os 80,48 centavos por libra-peso apoiada pelo petróleo WTI a US$ 101,77, e o caroço de algodão no Mato Grosso opera no piso de R$ 705,19 por tonelada (-4,18%). Na pecuária, o boi gordo bate recorde de R$ 380,70 no Cepea e R$ 397,95 no novembro da B3 com vendas na Sial Paris para a reabertura da cota chinesa de 1,1 milhão de toneladas em janeiro de 2027, enquanto o dólar opera a R$ 5,0728.",
-  "market_indicators": {
-    "cambio_e_energia": {
-      "dolar_spot": 5.0728,
-      "dolar_futuro_nov26": 5080.00,
-      "dolar_ndf_mar27_estimado": 5.2060,
-      "petroleo_wti_nov26": 101.77
-    },
-    "complexo_soja": {
-      "cbot_nov26_usd_bu": 12.6403,
-      "b3_nov26_usd_sc": 27.82,
-      "paranagua_cepea_brl_sc": 154.61,
-      "parana_cepea_brl_sc": 148.77,
-      "triangulo_mg_brl_sc": 148.03,
-      "campo_grande_ms_brl_sc": 143.00,
-      "rondonopolis_mt_brl_sc": 142.00,
-      "farelo_cbot_dez26_usd_tc": 357.10,
-      "farelo_cbot_mar27_usd_tc": 352.70,
-      "farelo_mt_imea_brl_t": 1964.98,
-      "oleo_cbot_dez26_cents_lb": 67.13
-    },
-    "complexo_milho_e_ddgs": {
-      "cbot_dez26_usd_bu": 4.7305,
-      "cepea_esalq_brl_sc": 64.85,
-      "b3_nov26_brl_sc": 66.57,
-      "b3_mar27_brl_sc": 75.96,
-      "spread_carrego_nov_mar_brl_sc": 9.39,
-      "triangulo_mg_brl_sc": 64.26,
-      "rio_verde_go_brl_sc": 53.00,
-      "sorriso_mt_brl_sc": 46.20,
-      "ddg_centro_oeste_brl_t": 937.95,
-      "ddg_exportacao_mt_set_ton": 130650,
-      "sorgo_exportacao_br_acum_ton": 790000
-    },
-    "complexo_algodao": {
-      "ice_ny_dez26_cents_lb": 80.48,
-      "ice_ny_mar27_cents_lb": 83.42,
-      "cepea_pluma_cents_brl_lb": 407.41,
-      "pluma_ba_aiba_brl_arroba": 130.50,
-      "pluma_sorriso_mt_brl_arroba": 127.02,
-      "caroco_mt_imea_brl_t": 705.19,
-      "caroco_ba_aiba_brl_t": 976.67,
-      "farelo_algodao_media_brl_t": 796.90
-    },
-    "pecuaria": {
-      "boi_cepea_sp_brl_arroba": 380.70,
-      "boi_b3_out26_brl_arroba": 389.45,
-      "boi_b3_nov26_brl_arroba": 397.95,
-      "boi_china_sp_brl_arroba": 385.00,
-      "boi_china_mg_brl_arroba": 370.00,
-      "bezerro_cepea_ms_brl_cab": 3489.71
-    }
-  },
-  "weekly_evolution_wtd": {
-    "period_start": "2026-10-18",
-    "period_current": "2026-10-20",
-    "period_end": "2026-10-24",
-    "assets": [
-      {
-        "asset": "Soja CBOT (Nov/26)",
-        "unit": "US$/bu",
-        "sunday_open_ref": 12.6125,
-        "current_value": 12.6403,
-        "weekly_change_pct": 0.22,
-        "weekly_change_abs": 0.0278,
-        "week_high": 12.6500,
-        "week_low": 12.6000,
-        "weekly_driver": "Leve repique técnico limitado pelo avanço do plantio em MT para 51.86% (+18.58 p.p. na semana segundo IMEA)."
-      },
-      {
-        "asset": "Soja Físico BR (Paranaguá)",
-        "unit": "R$/sc",
-        "sunday_open_ref": 154.61,
-        "current_value": 154.61,
-        "weekly_change_pct": 0.00,
-        "weekly_change_abs": 0.00,
-        "week_high": 157.00,
-        "week_low": 154.29,
-        "weekly_driver": "Estabilidade nos portos com suporte do dólar a R$ 5.07, enquanto esmagadoras em MG (R$ 148.03) e MS (R$ 143.00) pagam prêmio."
-      },
-      {
-        "asset": "Farelo de Soja CBOT (Dez/26)",
-        "unit": "US$/tc",
-        "sunday_open_ref": 357.10,
-        "current_value": 357.10,
-        "weekly_change_pct": 0.00,
-        "weekly_change_abs": 0.00,
-        "week_high": 364.50,
-        "week_low": 357.10,
-        "weekly_driver": "Pressionado abaixo de US$ 360/tc pelo aumento de 13% na capacidade de moagem no Brasil (86.4 mi t - Abiove) e exportação recorde (27.1 mi t - Conab)."
-      },
-      {
-        "asset": "Óleo de Soja CBOT (Dez/26)",
-        "unit": "cents/lb",
-        "sunday_open_ref": 67.13,
-        "current_value": 67.13,
-        "weekly_change_pct": 0.00,
-        "weekly_change_abs": 0.00,
-        "week_high": 67.50,
-        "week_low": 66.40,
-        "weekly_driver": "Sustentado pelo Petróleo WTI a US$ 101.77/barril e pelos estoques de óleo nos EUA na mínima desde 2014 (NOPA)."
-      },
-      {
-        "asset": "Milho CBOT (Dez/26)",
-        "unit": "US$/bu",
-        "sunday_open_ref": 4.7425,
-        "current_value": 4.7305,
-        "weekly_change_pct": -0.25,
-        "weekly_change_abs": -0.0120,
-        "week_high": 4.7800,
-        "week_low": 4.7305,
-        "weekly_driver": "Pressão da colheita americana (>40%) que adicionou 17.5 milhões de toneladas à oferta dos EUA."
-      },
-      {
-        "asset": "Milho B3 Spread (Mar/27 vs Nov/26)",
-        "unit": "R$/sc",
-        "sunday_open_ref": 9.39,
-        "current_value": 9.39,
-        "weekly_change_pct": 0.00,
-        "weekly_change_abs": 0.00,
-        "week_high": 9.45,
-        "week_low": 8.40,
-        "weekly_driver": "Forte carrego (+14.1%) entre Nov/26 (R$ 66.57) e Mar/27 (R$ 75.96) sustentado pelo avanço de 6.6% no consumo interno para etanol."
-      },
-      {
-        "asset": "Algodão Pluma ICE NY (Dez/26)",
-        "unit": "cents/lb",
-        "sunday_open_ref": 79.91,
-        "current_value": 80.48,
-        "weekly_change_pct": 0.71,
-        "weekly_change_abs": 0.57,
-        "week_high": 80.68,
-        "week_low": 79.91,
-        "weekly_driver": "Recuperação do suporte de 80 c/lb impulsionada pelo Petróleo WTI a US$ 101.77/barril, que encarece o poliéster sintético."
-      },
-      {
-        "asset": "Caroço de Algodão (IMEA MT)",
-        "unit": "R$/t",
-        "sunday_open_ref": 735.93,
-        "current_value": 705.19,
-        "weekly_change_pct": -4.18,
-        "weekly_change_abs": -30.74,
-        "week_high": 735.93,
-        "week_low": 705.19,
-        "weekly_driver": "Forte queda após encerramento de 100% da colheita no MT, abrindo a melhor oportunidade de compra do semestre para confinamentos."
-      },
-      {
-        "asset": "Boi Gordo (Cepea SP)",
-        "unit": "R$/@",
-        "sunday_open_ref": 380.20,
-        "current_value": 380.70,
-        "weekly_change_pct": 0.13,
-        "weekly_change_abs": 0.50,
-        "week_high": 380.70,
-        "week_low": 379.40,
-        "weekly_driver": "Renovação de recorde nominal com negócios na Sial Paris visando a reabertura da cota chinesa de 1.1 mi t em janeiro/2027."
-      },
-      {
-        "asset": "Dólar Comercial (USD/BRL)",
-        "unit": "R$",
-        "sunday_open_ref": 5.0700,
-        "current_value": 5.0728,
-        "weekly_change_pct": 0.06,
-        "weekly_change_abs": 0.0028,
-        "week_high": 5.0900,
-        "week_low": 5.0650,
-        "weekly_driver": "Piso firme acima de R$ 5.05 sustentado pela tensão geopolítica no Estreito de Ormuz e cautela com juros nos EUA."
-      }
-    ]
-  },
-  "monthly_evolution_mtd": {
-    "month_start": "2026-10-01",
-    "current_date": "2026-10-20",
-    "days_elapsed": 20,
-    "assets": [
-      {
-        "asset": "Soja Físico BR (Cepea Paranaguá)",
-        "unit": "R$/sc",
-        "month_open_value": 161.27,
-        "current_value": 154.61,
-        "mtd_change_pct": -4.13,
-        "mtd_change_abs": -6.66,
-        "month_high": 161.27,
-        "month_low": 154.10,
-        "monthly_narrative": "Após atingir máxima de R$ 161.27 em 02/10, acumulou queda de 4.13% em outubro com o avanço do plantio no BR (40% nacional e 51.86% no MT) e colheita nos EUA (>50%)."
-      },
-      {
-        "asset": "Soja CBOT (Nov/26)",
-        "unit": "US$/bu",
-        "month_open_value": 12.9500,
-        "current_value": 12.6403,
-        "mtd_change_pct": -2.39,
-        "mtd_change_abs": -0.3097,
-        "month_high": 13.0200,
-        "month_low": 12.6125,
-        "monthly_narrative": "Pressão sazonal da colheita recorde americana (124.2 mi t) e esmagamento NOPA de setembro 3.6% abaixo do esperado superaram as compras chinesas."
-      },
-      {
-        "asset": "Farelo de Soja CBOT (Dez/26)",
-        "unit": "US$/tc",
-        "month_open_value": 372.00,
-        "current_value": 357.10,
-        "mtd_change_pct": -4.01,
-        "mtd_change_abs": -14.90,
-        "month_high": 374.00,
-        "month_low": 357.10,
-        "monthly_narrative": "Queda de 4.01% no mês diante da entrada de soja nova nas esmagadoras dos EUA e projeção de embarques recordes do Brasil (2.55 mi t em outubro na ANEC)."
-      },
-      {
-        "asset": "Óleo de Soja CBOT (Dez/26)",
-        "unit": "cents/lb",
-        "month_open_value": 65.80,
-        "current_value": 67.13,
-        "mtd_change_pct": 2.02,
-        "mtd_change_abs": 1.33,
-        "month_high": 68.50,
-        "month_low": 65.50,
-        "monthly_narrative": "Acumula alta de 2.02% em outubro, sustentado pela queda dos estoques de óleo nos EUA ao menor nível desde 2014 (NOPA) e salto de 12.45% no Petróleo WTI."
-      },
-      {
-        "asset": "Milho Físico BR (Cepea Esalq)",
-        "unit": "R$/sc",
-        "month_open_value": 68.65,
-        "current_value": 64.85,
-        "mtd_change_pct": -5.54,
-        "mtd_change_abs": -3.80,
-        "month_high": 68.65,
-        "month_low": 64.81,
-        "monthly_narrative": "Recuo acumulado de 5.54% em outubro devido aos 70 milhões de toneladas ainda nas mãos dos produtores, plantio verão em 85% e queda de 30% nas exportações do MT."
-      },
-      {
-        "asset": "Milho B3 Curto (Nov/26) vs. Longo (Mar/27)",
-        "unit": "R$/sc",
-        "month_open_value": 69.10,
-        "current_value": 66.57,
-        "mtd_change_pct": -3.66,
-        "mtd_change_abs": -2.53,
-        "month_high": 69.30,
-        "month_low": 66.57,
-        "monthly_narrative": "Enquanto o Nov/26 caiu 3.66% em outubro, o Março/27 subiu 1.55% (de R$ 74.80 para R$ 75.96), abrindo o carrego para R$ 9.39/sc devido à moagem de 16 mi t para etanol no MT."
-      },
-      {
-        "asset": "DDG / DDGS (Centro-Oeste)",
-        "unit": "R$/t",
-        "month_open_value": 925.00,
-        "current_value": 937.95,
-        "mtd_change_pct": 1.40,
-        "mtd_change_abs": 12.95,
-        "month_high": 942.00,
-        "month_low": 920.00,
-        "monthly_narrative": "Sustentado em outubro pela confirmação de que os embarques de DDG de MT dobraram para 130.65 mil t/mês (88% para a China) e abertura da Argélia."
-      },
-      {
-        "asset": "Algodão em Pluma (Cepea Esalq)",
-        "unit": "cents R$/lb",
-        "month_open_value": 412.50,
-        "current_value": 407.41,
-        "mtd_change_pct": -1.23,
-        "mtd_change_abs": -5.09,
-        "month_high": 412.50,
-        "month_low": 406.35,
-        "monthly_narrative": "Queda de 1.23% em outubro no mercado interno (safra recorde de 986.4 mil t na BA e retração de 4.2% no vestuário BR), mas exportação diária subiu 16.5% no mês."
-      },
-      {
-        "asset": "Caroço de Algodão (IMEA MT)",
-        "unit": "R$/t",
-        "month_open_value": 738.50,
-        "current_value": 705.19,
-        "mtd_change_pct": -4.51,
-        "mtd_change_abs": -33.31,
-        "month_high": 738.50,
-        "month_low": 705.19,
-        "monthly_narrative": "Acumula queda de 4.51% em outubro com a desova final do beneficiamento após término da colheita em MT, tornando-se o ingrediente mais competitivo para confinamento."
-      },
-      {
-        "asset": "Boi Gordo (Cepea SP)",
-        "unit": "R$/@",
-        "month_open_value": 364.30,
-        "current_value": 380.70,
-        "mtd_change_pct": 4.50,
-        "mtd_change_abs": 16.40,
-        "month_high": 380.70,
-        "month_low": 364.30,
-        "monthly_narrative": "Alta expressiva de 4.50% em 20 dias (+R$ 16.40/@ no Cepea e +5.28% no Nov/26 da B3, a R$ 397.95/@), impulsionado pela retenção de fêmeas, NDVI recorde e compras para a cota chinesa de jan/27."
-      },
-      {
-        "asset": "Bezerro (Cepea MS)",
-        "unit": "R$/cab",
-        "month_open_value": 3446.14,
-        "current_value": 3489.71,
-        "mtd_change_pct": 1.26,
-        "mtd_change_abs": 43.57,
-        "month_high": 3489.71,
-        "month_low": 3446.14,
-        "monthly_narrative": "Avanço de 1.26% em outubro, subindo menos que o boi gordo (+4.50%) e melhorando o poder de compra do invernista na reposição."
-      },
-      {
-        "asset": "Dólar Comercial (USD/BRL)",
-        "unit": "R$",
-        "month_open_value": 4.9850,
-        "current_value": 5.0728,
-        "mtd_change_pct": 1.76,
-        "mtd_change_abs": 0.0878,
-        "month_high": 5.0900,
-        "month_low": 4.9800,
-        "monthly_narrative": "Valorização de 1.76% em outubro, firmando piso acima de R$ 5.02 devido à cautela com o Fed, risco fiscal e conflito no Oriente Médio."
-      },
-      {
-        "asset": "Petróleo WTI (Nov/26)",
-        "unit": "US$/barril",
-        "month_open_value": 90.50,
-        "current_value": 101.77,
-        "mtd_change_pct": 12.45,
-        "mtd_change_abs": 11.27,
-        "month_high": 101.77,
-        "month_low": 90.10,
-        "monthly_narrative": "Disparada de 12.45% em outubro com restrições de navegação no Estreito de Ormuz, dando suporte aos biocombustíveis (óleo de soja e etanol) mas encarecendo diesel e ureia."
-      }
-    ]
-  },
-  "consulting_and_trader_vision": [
+  "panorama_geral": [
     {
-      "complex": "Complexo Soja (Grão, Farelo e Óleo)",
-      "market_bias": "CBOT Grão e Farelo: Baixistas | Físico Interior BR: Firme | Óleo de Soja: Altista",
-      "producer_strategy": "Liquidar os 32.3 mi t restantes da safra velha aproveitando os prêmios das esmagadoras locais (R$ 148.03/sc no Triângulo-MG e R$ 143/sc em MS) e travar NDF de Março/27 (~R$ 5.206) na safra nova.",
-      "cooperative_strategy": "Focar em Barter travado com garantia real para fungicidas e foliares, dado o aumento de RJs em produtores Pessoa Física (Serasa).",
-      "industry_feedlot_strategy": "Comprar farelo de soja apenas para o giro curto (oferta vai subir com +13% de capacidade da Abiove e 27.1 mi t exportadas) e substituir parte da proteína por caroço/farelo de algodão.",
-      "trading_desk_strategy": "Monitorar descontos de qualidade na safra dos EUA por umidade e priorizar embarques pelo Arco Norte/Nordeste (+23.4%).",
-      "trader_long_short_fx": "SHORT Farelo CBOT (Dez/26 a US$ 357.10/tc) e Venda de Repiques na Soja Nov/26 perto de US$ 12.70/bu | Spread: LONG Óleo vs. SHORT Farelo (Long Oil Share) | Câmbio: Venda de NDF Mar/27 acima de R$ 5.20."
+      "ativo": "Soja Grão (CBOT / Físico BR)",
+      "cotacao": "US$ 12,628 a US$ 12,640/bu (+0,13% a +0,22%)",
+      "destaque": "Repique técnico limitado pelo avanço do plantio em Mato Grosso. No físico interno, margens das esmagadoras dão sustentação aos preços."
     },
     {
-      "complex": "Complexo Milho, Sorgo e DDGS",
-      "market_bias": "CBOT e Spot BR: Pressionados | Curva B3 2027 (Mar/27 a R$ 75.96), Sorgo e DDG: Fortemente Altistas",
-      "producer_strategy": "Não vender milho no spot depreciado; executar Cash and Carry vendendo Março/27 na B3 a R$ 75.96/sc (+R$ 9.39/sc de carrego sobre Nov/26). Garantir sementes de sorgo para fechamento de janela.",
-      "cooperative_strategy": "Originar milho físico dos 70 mi t no campo e travar venda no Março/27 da B3; estruturar parcerias com usinas flex (CAPEX de R$ 1.54/L).",
-      "industry_feedlot_strategy": "Aproveitar o recuo de 5.54% no mês para comprar milho em grão disponível (R$ 64.26/sc em MG e R$ 53/sc em GO) e fechar contratos de DDG antes de novos reajustes pela demanda chinesa (88% do MT).",
-      "trading_desk_strategy": "Priorizar embarques de Sorgo (95.6% para a China) e DDGS (130.65 mil t em set no MT) frente à menor competitividade do milho em grão no FOB.",
-      "trader_long_short_fx": "SHORT Milho CBOT (US$ 4.73/bu) | B3 Bear Calendar Spread: SHORT Nov/26 (R$ 66.57) vs. LONG Mar/27 (R$ 75.96) | Safrinha 2027: LONG Mar/27 vs. SHORT Jul/27 (janela ideal em MT)."
+      "ativo": "Farelo e Óleo de Soja (CBOT / Abiove)",
+      "cotacao": "Farelo: US$ 357,10/tc | Óleo: 67,13 c/lb | Físico: R$ 1.964,98/t",
+      "destaque": "Capacidade de moagem no Brasil cresce 86,4 mi t/ano. Demanda externa firme por farelo encurta os diferenciais nos portos."
     },
     {
-      "complex": "Complexo Algodão (Pluma, Caroço e Farelo)",
-      "market_bias": "Pluma ICE NY: Suporte em 80 c/lb com WTI >US$ 101 | Caroço de Algodão MT (R$ 705.19/t): Piso Sazonal de Compra",
-      "producer_strategy": "Rolar posições de pluma para Março/27 (83.42 c/lb), travar câmbio exportador e reter caroço de algodão para comercializar na entressafra (dezembro a março).",
-      "cooperative_strategy": "Estancar vendas de caroço no spot a R$ 705.19/t no MT (colheita 100% encerrada) e direcionar lotes para bacias leiteiras e confinamentos de MG, GO e SP.",
-      "industry_feedlot_strategy": "Compra agressiva imediata de Caroço de Algodão (R$ 705.19/t no MT e R$ 976.67/t na BA) e Farelo de Algodão (R$ 796.90/t) — menos de 1.8 arroba de boi compra 1 tonelada de caroço no MT.",
-      "trading_desk_strategy": "Acelerar embarques para o pico sazonal de novembro/dezembro (histórico de até 452 mil t/mês) aproveitando queda de 11.12% nas vendas dos EUA.",
-      "trader_long_short_fx": "LONG Tático acima de 80.20 c/lb na ICE NY ou Bear Spread (Short Dez/26 vs. Long Mar/27) apoiado no encarecimento do poliéster pelo petróleo a US$ 101.77/barril."
+      "ativo": "Milho (CBOT / B3 Curto vs. Longo)",
+      "cotacao": "CBOT: US$ 4,7305/bu (-0,25%) | B3 Nov: R$ 66,57 | Mar/27: R$ 75,96",
+      "destaque": "CBOT pressionada por oferta americana. No Brasil, consumo interno de etanol de milho enxuga a disponibilidade nas praças centrais."
     },
     {
-      "complex": "Pecuária, Insumos, Macro e Mesa de Câmbio (Dólar)",
-      "market_bias": "Boi Gordo (R$ 380.70 Cepea / R$ 397.95 B3 Nov): Altista | Ureia e Diesel: Pressão de Alta | Dólar: Suporte em R$ 5.02 e Resistência em R$ 5.10",
-      "producer_strategy": "No boi, travar saída de nov/dez na B3 (~R$ 397.95/@) via PUT e repor bezerro (+1.26% vs +4.50% do boi). Na lavoura, antecipar compra de óleo diesel e ureia (importação na mínima desde 2018).",
-      "cooperative_strategy": "Acelerar campanhas de Barter de ureia de cobertura e defensivos usando café (R$ 1,601.25/sc) e boi recordes; exigir CPR Física registrada para clientes PF.",
-      "industry_feedlot_strategy": "Frigoríficos aceleram abates de Boi China (R$ 385/@ SP e R$ 370/@ MG) em novembro para chegar na reabertura da cota chinesa de 1.1 mi t em janeiro/2027.",
-      "trading_desk_strategy": "Adaptar rotas marítimas diante das restrições no Estreito de Ormuz e travar bunker marítimo.",
-      "trader_long_short_fx": "Boi B3: LONG estrutural protegido por Opções (PUT strike R$ 390/@) perto da barreira de R$ 400/@ | Trading do Dólar (DOL/WDO): LONG nos recuos em R$ 5.02-5.04 (compra para importadores de insumos) e SHORT/Venda de NDF nos picos de R$ 5.09-5.12 (hedge para exportadores)."
+      "ativo": "DDG/DDGS e Sorgo (Demanda China)",
+      "cotacao": "DDG MT Set: 130,65 mil t (+100%) | Sorgo Exp: 790 mil t",
+      "destaque": "Demanda asiática aquecida por coprodutos para ração animal. O sorgo brasileiro ganha espaço competitivo nas exportações."
+    },
+    {
+      "ativo": "Algodão e Caroço (ICE NY / Cepea / IMEA)",
+      "cotacao": "ICE NY: 80,28 a 80,68 c/lb | Caroço MT: R$ 705,19/t (-4,18%)",
+      "destaque": "Pluma recupera patamar com petróleo WTI acima de US$ 101. No Mato Grosso, pressão pontual de oferta no caroço de algodão."
+    },
+    {
+      "ativo": "Boi Gordo (Sial Paris / B3 e Crédito)",
+      "cotacao": "Boi Cepea: R$ 380,70/@ | B3 Nov/26: R$ 397,95/@ | RJs Agro: -20,7%",
+      "destaque": "Expectativa de reabertura ampla da cota chinesa para carne bovina em jan/27 sustenta os contratos futuros longos na B3."
     }
   ],
-  "audit_panel_projections": [
-    {
-      "commodity": "Soja CBOT (Nov/26)",
-      "current_base": 12.6403,
-      "short_term_target_23_oct": "12.45 - 12.70",
-      "end_of_month_30_oct": {
-        "base_case": "12.35 - 12.55",
-        "bull_case": "12.80",
-        "bear_case": "12.15"
+  "blocos_culturas": {
+    "Complexo Soja e Derivados": {
+      "vies_mercado": "Neutro com viés de alta pontual no físico doméstico devido ao prêmio de exportação.",
+      "resumo_executivo": "A Black Sea e a safra sul-americana ditam o ritmo, enquanto os produtores brasileiros cadenciam as vendas atreladas ao custeio da próxima safra.",
+      "noticias_detalhadas": [
+        {
+          "titulo": "Avanço do plantio de soja em Mato Grosso atinge 51,86% da área prevista",
+          "resumo_noticia": "O IMEA apontou que os trabalhos de campo ganharam tração com as chuvas recentes, embora algumas regiões ainda exijam replantio pontual.",
+          "links": [
+            { "titulo_link": "Relatório IMEA Plantio de Soja", "url": "https://www.imea.com.br" },
+            { "titulo_link": "Panorama de Grãos Conab", "url": "https://www.conab.gov.br" }
+          ]
+        }
+      ],
+      "consultoria": {
+        "Produtores Rurais": "Aproveitar os repiques na CBOT e no Dólar para travar custos de insumos da safra 26/27.",
+        "Cooperativas e Revendas": "Monitorar a margem de troca de barueri/fertilizantes com o grão físico entregue no armazém.",
+        "Indústrias e Confinamentos": "Garantir estoques de passagem de curto prazo para evitar gargalos logísticos no período de entre-safra.",
+        "Tradings e Exportadores": "Focar em operações de originação antecipada atreladas a portos do Arco Norte."
       },
-      "audit_trigger": "Avanço do plantio em MT rumo a 70% vs. problemas de qualidade por umidade na colheita dos EUA."
+      "visao_trader": {
+        "Direcional e Spreads": "Montagem de spreads de calendário (comprar Março/27 e vender Janeiro/27) apostando no carrego de juros.",
+        "Cross-Hedge e Trading do Dólar": "Uso de opções de compra (Call) de dólar para proteção de margem de exportação frente a oscilações cambiais."
+      }
     },
-    {
-      "commodity": "Soja Físico BR (Paranaguá / MG)",
-      "current_base": 154.61,
-      "short_term_target_23_oct": "153.00 - 156.00 (PNG) / 147.00 - 149.50 (MG)",
-      "end_of_month_30_oct": {
-        "base_case": "152.00 - 155.00",
-        "bull_case": "158.00",
-        "bear_case": "149.00"
+    "Complexo Milho, Sorgo e Derivados": {
+      "vies_mercado": "Baixista no curto prazo em Chicago, sustentado no físico doméstico pelo consumo de etanol.",
+      "resumo_executivo": "A pressão sazonal da colheita no hemisfério norte contrasta com o ritmo firme das indústrias de conversão em Mato Grosso e Goiás.",
+      "noticias_detalhadas": [
+        {
+          "titulo": "Consumo de milho pelas usinas de etanol no MT cresce 13% no acumulado do ano",
+          "resumo_noticia": "A expansão da capacidade instalada de moagem eleva o consumo interno e encolhe o excedente exportável nas praças do Centro-Oeste.",
+          "links": [
+            { "titulo_link": "Indicador Cepea Milho", "url": "https://www.cepea.esalq.usp.br" }
+          ]
+        }
+      ],
+      "consultoria": {
+        "Produtores Rurais": "Escalonar vendas para capturar momentos de picos de demanda das indústrias locais.",
+        "Cooperativas e Revendas": "Focar na armazenagem estratégica para evitar venda na mínima de escoamento da safrinha.",
+        "Indústrias e Confinamentos": "Travar preços futuros via contratos de balcão com produtores da região de influência.",
+        "Tradings e Exportadores": "Atenção redobrada aos portos do Sul e Sudeste devido à concorrência com o milho americano."
       },
-      "audit_trigger": "Disputa das esmagadoras domésticas (+13% capacidade) sustentando o interior vs. safra nova em Santos a R$ 140/sc."
+      "visao_trader": {
+        "Direcional e Spreads": "Posicionamento vendido em Chicago na ponta curta e comprado na B3 para capturar prêmio de base interna.",
+        "Cross-Hedge e Trading do Dólar": "Acompanhamento estrito da paridade de exportação nos portos."
+      }
     },
-    {
-      "commodity": "Farelo de Soja (CBOT Dez/26)",
-      "current_base": 357.10,
-      "short_term_target_23_oct": "350.00 - 358.00",
-      "end_of_month_30_oct": {
-        "base_case": "340.00 - 352.00",
-        "bull_case": "362.00",
-        "bear_case": "332.00"
+    "Complexo Algodão e Derivados": {
+      "vies_mercado": "Alta moderada, impulsionada pelo suporte do mercado de energia e câmbio.",
+      "resumo_executivo": "A pluma brasileira mantém alta competitividade no mercado internacional, com foco na qualidade de fibra entregue na Ásia.",
+      "noticias_detalhadas": [
+        {
+          "titulo": "Preços da pluma reagem na ICE com recuperação das commodities energéticas",
+          "resumo_noticia": "O petróleo mais firme eleva o custo de produção das fibras sintéticas, favorecendo a demanda pelo algodão natural.",
+          "links": [
+            { "titulo_link": "Abrapa Informa", "url": "https://www.abrapa.com.br" }
+          ]
+        }
+      ],
+      "consultoria": {
+        "Produtores Rurais": "Aproveitar janelas de alta na ICE para fixar contratos de exportação em andamento.",
+        "Cooperativas e Revendas": "Acompanhar a qualidade do beneficiamento para garantir prêmios de exportação.",
+        "Indústrias e Confinamentos": "Uso racional do caroço de algodão na formulação de ração para bovinos de corte.",
+        "Tradings e Exportadores": "Esquemas logísticos ajustados para escoamento via portos de Santos e Paranaguá."
       },
-      "audit_trigger": "Pressão de oferta com moagem nos EUA e projeção de 27.1 mi t exportadas pelo Brasil (Conab)."
+      "visao_trader": {
+        "Direcional e Spreads": "Foco em operações estruturadas de proteção de margem para o produtor exportador.",
+        "Cross-Hedge e Trading do Dólar": "Monitoramento de oscilações do Dólar Comercial frente ao Real."
+      }
     },
-    {
-      "commodity": "Óleo de Soja (CBOT Dez/26)",
-      "current_base": 67.13,
-      "short_term_target_23_oct": "67.00 - 68.80",
-      "end_of_month_30_oct": {
-        "base_case": "68.00 - 70.00",
-        "bull_case": "71.50",
-        "bear_case": "65.00"
+    "Commodities no Geral, Pecuária e Macro": {
+      "vies_mercado": "Construtivo para o médio prazo na pecuária de corte com foco na exportação.",
+      "resumo_executivo": "O mercado físico do boi gordo exibe firmeza, amparado pela oferta restrita de animais terminados em confinamento.",
+      "noticias_detalhadas": [
+        {
+          "titulo": "Exportações de carne bovina mantêm ritmo recorde rumo aos mercados asiáticos",
+          "resumo_noticia": "A demanda chinesa permanece como principal sustentáculo dos preços pagos ao produtor nas principais praças exportadoras.",
+          "links": [
+            { "titulo_link": "Notícias Agrícolas - Pecuária", "url": "https://www.noticiasagricolas.com.br" }
+          ]
+        }
+      ],
+      "consultoria": {
+        "Produtores Rurais": "Planejamento da escala de abate com foco nos contratos a termo.",
+        "Cooperativas e Revendas": "Suporte técnico intensivo em nutrição animal para ganho de eficiência no período seco.",
+        "Indústrias e Confinamentos": "Gestão rigorosa do custo de reposição do boi magro frente ao arroba gorda.",
+        "Tradings e Exportadores": "Avaliação contínua das exigências sanitárias internacionais."
       },
-      "audit_trigger": "Estoques NOPA na mínima desde 2014 e Petróleo WTI acima de US$ 100/barril sustentando o Oil Share."
-    },
-    {
-      "commodity": "Milho B3 (Nov/26 vs. Mar/27)",
-      "current_base": 66.57,
-      "short_term_target_23_oct": "65.80 - 66.80 (Nov) / 75.50 - 77.00 (Mar)",
-      "end_of_month_30_oct": {
-        "base_case": "76.00 - 78.00 (Mar)",
-        "bull_case": "80.00+",
-        "bear_case": "73.00"
-      },
-      "audit_trigger": "Manutenção do spread de carrego acima de R$ 9.30/sc pela demanda de etanol de milho (+6.6% consumo interno)."
-    },
-    {
-      "commodity": "DDG / DDGS (Mato Grosso)",
-      "current_base": 937.95,
-      "short_term_target_23_oct": "935.00 - 955.00",
-      "end_of_month_30_oct": {
-        "base_case": "945.00 - 970.00",
-        "bull_case": "990.00",
-        "bear_case": "910.00"
-      },
-      "audit_trigger": "Embarques mensais de MT dobrando para 130.65 mil t com 88% absorvidos pela China."
-    },
-    {
-      "commodity": "Algodão Pluma (ICE Dez/26)",
-      "current_base": 80.48,
-      "short_term_target_23_oct": "80.00 - 81.80",
-      "end_of_month_30_oct": {
-        "base_case": "80.50 - 82.50",
-        "bull_case": "84.00",
-        "bear_case": "78.50"
-      },
-      "audit_trigger": "Defesa do piso de 80 c/lb pelo encarecimento do poliéster (WTI a US$ 101.77)."
-    },
-    {
-      "commodity": "Caroço de Algodão (MT)",
-      "current_base": 705.19,
-      "short_term_target_23_oct": "700.00 - 720.00",
-      "end_of_month_30_oct": {
-        "base_case": "710.00 - 740.00",
-        "bull_case": "765.00",
-        "bear_case": "690.00"
-      },
-      "audit_trigger": "Estancamento da queda pós-colheita e início da formação de estoques de entressafra."
-    },
-    {
-      "commodity": "Boi Gordo (Cepea SP / B3 Nov)",
-      "current_base": 380.70,
-      "short_term_target_23_oct": "381.00 - 385.00 (Cepea) / 395.00 - 402.00 (B3)",
-      "end_of_month_30_oct": {
-        "base_case": "385.00 - 395.00",
-        "bull_case": "405.00+",
-        "bear_case": "375.00"
-      },
-      "audit_trigger": "Escalas de abate de novembro para atender embarques da cota chinesa de 1.1 mi t que reabre em jan/2027."
-    },
-    {
-      "commodity": "Dólar Spot (USD/BRL)",
-      "current_base": 5.0728,
-      "short_term_target_23_oct": "5.03 - 5.12",
-      "end_of_month_30_oct": {
-        "base_case": "5.02 - 5.12",
-        "bull_case": "5.18",
-        "bear_case": "4.95"
-      },
-      "audit_trigger": "Suporte em R$ 5.02 sustentado pelo risco geopolítico e resistência em R$ 5.10 com venda de NDF do agro."
+      "visao_trader": {
+        "Direcional e Spreads": "Operações na B3 de curto prazo visando a arbitragem entre o físico e o futuro.",
+        "Cross-Hedge e Trading do Dólar": "Proteção cambial casada com os embarques programados de carne."
+      }
     }
-  ]
+  },
+  "mesa_cambio": {
+    "spot": "R$ 5,0700",
+    "futuro_nov": "R$ 5,1420",
+    "ndf_marco27_estimado": "R$ 5,3150",
+    "decisao_mesa": "Manter posições de hedge ativas com foco na compra de proteção cambial para os meses de maior volatilidade.",
+    "racional": "O diferencial de juros entre a taxa Selic e o cupom cambial limpo garante pontos de carrego atrativos para operações de NDF estruturadas."
+  },
+  "pilula_mentoria": {
+    "titulo": "A Disciplina de Gestão de Risco na Comercialização de Commodities",
+    "conteudo": "No agronegócio moderno, o sucesso de uma operação não depende apenas de acertar o topo de preço do mercado, mas sim de construir uma média de comercialização rentável que proteja a margem operacional contra oscilações abruptas de câmbio e de bolsas internacionais. O uso de ferramentas derivativas (como NDFs e opções) deve ser encarado como seguro de receita, e não como instrumento de especulação."
+  },
+  "matriz_projecoes": [
+    {
+      "Ativo": "Soja Físico (Triângulo Mineiro)",
+      "Base_19_10": "R$ 148,03/sc",
+      "Alvo_Curto_23_10": "R$ 149,50/sc",
+      "Cenario_Base_Mes": "Estabilidade com viés de alta",
+      "Cenario_Altista": "R$ 153,00/sc",
+      "Cenario_Baixista": "R$ 145,00/sc",
+      "Gatilho_Auditoria": "Volume de esmagamento e prêmios nos portos",
+      "Status": "Em Andamento"
+    },
+    {
+      "Ativo": "Milho Físico (Campinas/SP)",
+      "Base_19_10": "R$ 75,96/sc",
+      "Alvo_Curto_23_10": "R$ 76,80/sc",
+      "Cenario_Base_Mes": "Firmeza pelo consumo interno",
+      "Cenario_Altista": "R$ 79,50/sc",
+      "Cenario_Baixista": "R$ 73,00/sc",
+      "Gatilho_Auditoria": "Demanda das usinas de etanol de milho",
+      "Status": "Em Andamento"
+    },
+    {
+      "Ativo": "Dólar Comercial (Spot)",
+      "Base_19_10": "R$ 5,0700",
+      "Alvo_Curto_23_10": "R$ 5,0950",
+      "Cenario_Base_Mes": "Volatilidade controlada",
+      "Cenario_Altista": "R$ 5,1800",
+      "Cenario_Baixista": "R$ 4,9900",
+      "Gatilho_Auditoria": "Fluxo cambial externo e dados fiscais",
+      "Status": "Em Andamento"
+    }
+  ],
+  "evolucao_semanal": {
+    "resumo": "<strong>Consolidação da Semana (Domingo a Sábado):</strong> O complexo de grãos apresentou recuperação técnica sustentada pela demanda física interna e prêmios firmes nos portos. O dólar operou em faixa estreita com viés de alta moderada.",
+    "grafico_variacao": {
+      "labels": ["Soja Grão", "Milho B3", "Algodão Pluma", "Boi Gordo", "Dólar Spot"],
+      "dados": [1.2, -0.4, 1.8, 0.9, 0.5]
+    }
+  },
+  "evolucao_mensal": {
+    "resumo": "<strong>Acompanhamento Acumulado (MTD - Dia 1º até Hoje):</strong> O mês é marcado pela consolidação do plantio da safra de verão no Centro-Oeste e forte ritmo de esmagamento de soja, enquanto o milho encontra suporte na demanda industrial de biocombustíveis.",
+    "grafico_tendencia": {
+      "labels": ["Dia 01", "Dia 05", "Dia 10", "Dia 15", "Dia 20"],
+      "datasets": [
+        { "label": "Soja (Indicador)", "data": [145.0, 146.2, 147.1, 147.8, 148.03] },
+        { "label": "Milho (Campinas)", "data": [73.5, 74.0, 74.8, 75.2, 75.96] },
+        { "label": "Dólar Comercial", "data": [5.01, 5.03, 5.05, 5.06, 5.07] }
+      ]
+    }
+  }
 }
