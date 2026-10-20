@@ -25,11 +25,7 @@
       --text-muted: #8c8c8c;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -41,9 +37,7 @@
     /* TOPBAR FIXA GERMINARE */
     .topbar {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       height: 54px;
       background-color: var(--bg-topbar);
       border-bottom: 1.5px solid var(--orange-bright);
@@ -54,31 +48,18 @@
       z-index: 1000;
     }
 
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
+    .brand-logo { display: flex; align-items: center; text-decoration: none; }
+    .brand-logo img { height: 30px; object-fit: contain; }
+    .topbar-right { font-size: 13px; color: #a3a3a3; font-weight: 400; }
 
-    .brand-logo img {
-      height: 30px;
-      object-fit: contain;
-    }
-
-    .topbar-right {
-      font-size: 13px;
-      color: #a3a3a3;
-      font-weight: 400;
-    }
-
-    /* LAYOUT PRINCIPAL (SIDEBAR + CONTEÚDO) */
+    /* LAYOUT PRINCIPAL */
     .layout-wrapper {
       display: flex;
       margin-top: 54px;
       min-height: calc(100vh - 54px);
     }
 
-    /* SIDEBAR ESQUERDA IDÊNTICA AO NUTRE COMPARE PRO */
+    /* SIDEBAR ESQUERDA */
     .sidebar {
       width: 280px;
       min-width: 280px;
@@ -100,17 +81,8 @@
       margin-bottom: 2px;
     }
 
-    .control-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .control-group label {
-      font-size: 12px;
-      color: #b0b0b0;
-      font-weight: 400;
-    }
+    .control-group { display: flex; flex-direction: column; gap: 6px; }
+    .control-group label { font-size: 12px; color: #b0b0b0; font-weight: 400; }
 
     .control-input, .control-select {
       width: 100%;
@@ -125,15 +97,8 @@
       transition: border-color 0.2s;
     }
 
-    .control-input:focus, .control-select:focus {
-      border-color: var(--orange-bright);
-    }
-
-    .quote-readonly {
-      text-align: right;
-      font-weight: 500;
-      color: #f0f0f0;
-    }
+    .control-input:focus, .control-select:focus { border-color: var(--orange-bright); }
+    .quote-readonly { text-align: right; font-weight: 500; color: #f0f0f0; }
 
     /* CONTEÚDO PRINCIPAL DIREITO */
     .main-content {
@@ -142,25 +107,10 @@
       max-width: calc(100vw - 280px);
     }
 
-    .page-title {
-      font-size: 29px;
-      font-weight: 700;
-      color: var(--text-white);
-      letter-spacing: -0.5px;
-      margin-bottom: 4px;
-    }
+    .page-title { font-size: 29px; font-weight: 700; color: var(--text-white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .page-title span { color: var(--orange-bright); }
+    .page-subtitle { font-size: 13.8px; color: var(--text-muted); margin-bottom: 18px; }
 
-    .page-title span {
-      color: var(--orange-bright);
-    }
-
-    .page-subtitle {
-      font-size: 13.8px;
-      color: var(--text-muted);
-      margin-bottom: 18px;
-    }
-
-    /* CAIXA DE VALORES DE REFERÊNCIA / RESUMO FALADO */
     .ref-box {
       background-color: var(--bg-ref);
       border: 1px solid #282828;
@@ -171,12 +121,9 @@
       line-height: 1.55;
       margin-bottom: 22px;
     }
+    .ref-box strong { color: var(--text-white); }
 
-    .ref-box strong {
-      color: var(--text-white);
-    }
-
-    /* NAVEGAÇÃO DE ABAS (ESTILO LINHA LARANJA) */
+    /* BARRA DE ABAS */
     .tabs-bar {
       display: flex;
       gap: 28px;
@@ -198,48 +145,16 @@
       white-space: nowrap;
       transition: all 0.2s;
     }
+    .tab-btn:hover { color: #d4d4d4; }
+    .tab-btn.active { color: var(--orange-bright); font-weight: 600; border-bottom: 2px solid var(--orange-bright); }
 
-    .tab-btn:hover {
-      color: #d4d4d4;
-    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
 
-    .tab-btn.active {
-      color: var(--orange-bright);
-      font-weight: 600;
-      border-bottom: 2px solid var(--orange-bright);
-    }
-
-    .tab-panel {
-      display: none;
-    }
-
-    .tab-panel.active {
-      display: block;
-    }
-
-    /* SEÇÃO DE CHIPS / COMMODITIES SELECIONADAS */
-    .chips-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text-white);
-    }
-
-    .chips-count {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      font-weight: 400;
-    }
-
-    .chips-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
+    /* CHIPS */
+    .chips-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--text-white); }
+    .chips-count { font-size: 12.5px; color: var(--text-muted); font-weight: 400; }
+    .chips-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
 
     .chip-pill {
       padding: 6px 14px;
@@ -256,45 +171,14 @@
       transition: all 0.18s;
       user-select: none;
     }
+    .chip-pill.selected { border-color: var(--orange-bright); background-color: rgba(255, 122, 0, 0.08); color: var(--orange-bright); }
 
-    .chip-pill.selected {
-      border-color: var(--orange-bright);
-      background-color: rgba(255, 122, 0, 0.08);
-      color: var(--orange-bright);
-    }
+    .section-divider-title { font-size: 17.5px; font-weight: 700; color: var(--text-white); padding-bottom: 10px; border-bottom: 1px solid #222222; margin: 18px 0 14px 0; }
+    .sub-group-title { font-size: 14px; font-weight: 600; color: #e0e0e0; margin: 14px 0 12px 0; }
 
-    /* TÍTULOS DE SEÇÃO E GRIDS DE CARTÕES */
-    .section-divider-title {
-      font-size: 17.5px;
-      font-weight: 700;
-      color: var(--text-white);
-      padding-bottom: 10px;
-      border-bottom: 1px solid #222222;
-      margin: 18px 0 14px 0;
-    }
+    .cards-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 18px; }
+    .cards-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 18px; }
 
-    .sub-group-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: #e0e0e0;
-      margin: 14px 0 12px 0;
-    }
-
-    .cards-grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 16px;
-      margin-bottom: 18px;
-    }
-
-    .cards-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin-bottom: 18px;
-    }
-
-    /* CARTÃO PADRÃO NUTRE COMPARE PRO */
     .nutre-card {
       background-color: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -305,86 +189,21 @@
       justify-content: space-between;
       transition: border-color 0.2s;
     }
+    .nutre-card:hover { border-color: #383838; }
 
-    .nutre-card:hover {
-      border-color: #383838;
-    }
+    .card-top-label { font-size: 12.2px; color: #9e9e9e; margin-bottom: 6px; }
+    .card-big-value { font-size: 23px; font-weight: 800; color: var(--text-white); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .card-desc { font-size: 13px; color: #b5b5b5; line-height: 1.55; margin-bottom: 14px; }
+    .card-footer { border-top: 1px solid #202020; padding-top: 10px; font-size: 12.2px; color: var(--orange-bright); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .card-footer a { color: var(--orange-bright); text-decoration: none; font-weight: 500; }
+    .card-footer a:hover { text-decoration: underline; }
 
-    .card-top-label {
-      font-size: 12.2px;
-      color: #9e9e9e;
-      margin-bottom: 6px;
-    }
-
-    .card-big-value {
-      font-size: 23px;
-      font-weight: 800;
-      color: var(--text-white);
-      letter-spacing: -0.3px;
-      margin-bottom: 6px;
-    }
-
-    .card-desc {
-      font-size: 13px;
-      color: #b5b5b5;
-      line-height: 1.55;
-      margin-bottom: 14px;
-    }
-
-    .card-footer {
-      border-top: 1px solid #202020;
-      padding-top: 10px;
-      font-size: 12.2px;
-      color: var(--orange-bright);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .card-footer a {
-      color: var(--orange-bright);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .card-footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* TABELA DARK PARA MATRIZ DE PROJEÇÕES */
-    .table-wrapper {
-      overflow-x: auto;
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      background-color: var(--bg-card);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #1a1a1a;
-      color: #ffffff;
-      font-weight: 600;
-      padding: 12px 14px;
-      border-bottom: 1px solid #2a2a2a;
-    }
-
-    td {
-      padding: 12px 14px;
-      border-bottom: 1px solid #1f1f1f;
-      color: #d4d4d4;
-      line-height: 1.45;
-    }
-
-    tr:hover td {
-      background-color: #191919;
-    }
+    /* TABELA */
+    .table-wrapper { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px; background-color: var(--bg-card); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+    th { background-color: #1a1a1a; color: #ffffff; font-weight: 600; padding: 12px 14px; border-bottom: 1px solid #2a2a2a; }
+    td { padding: 12px 14px; border-bottom: 1px solid #1f1f1f; color: #d4d4d4; line-height: 1.45; }
+    tr:hover td { background-color: #191919; }
 
     .btn-sync {
       background-color: #191919;
@@ -396,12 +215,60 @@
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s;
-      margin-top: 6px;
+      margin-top: 4px;
     }
+    .btn-sync:hover { background-color: var(--orange-bright); color: #050505; }
 
-    .btn-sync:hover {
-      background-color: var(--orange-bright);
-      color: #050505;
+    .btn-admin {
+      background-color: rgba(46, 184, 92, 0.12);
+      border: 1px solid var(--green);
+      color: #4cd964;
+      padding: 9px 12px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 4px;
+    }
+    .btn-admin:hover { background-color: var(--green); color: #050505; }
+
+    /* MODAL DE ATUALIZAÇÃO RÁPIDA (SOLUÇÃO HÍBRIDA) */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.82);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background-color: #141414;
+      border: 1px solid var(--orange-bright);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 680px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    }
+    .modal-textarea {
+      width: 100%;
+      height: 240px;
+      background-color: #0b0b0b;
+      border: 1px solid #2b2b2b;
+      border-radius: 8px;
+      color: #00e676;
+      font-family: monospace;
+      font-size: 12.5px;
+      padding: 12px;
+      resize: vertical;
+      outline: none;
     }
 
     @media (max-width: 900px) {
@@ -416,11 +283,9 @@
   <!-- TOPBAR FIXA GERMINARE -->
   <header class="topbar">
     <a href="#" class="brand-logo">
-      <!-- Tenta carregar a sua imagem logo-germinare.png; se ainda não tiver subido, exibe o SVG idêntico com a folha verde embaixo do 'g' -->
       <img src="logo-germinare.png" alt="germinare" onerror="this.style.display='none'; document.getElementById('svg-fallback').style.display='block';" />
       <svg id="svg-fallback" style="display:none;" width="155" height="36" viewBox="0 0 210 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text x="2" y="32" font-family="'Inter', sans-serif" font-size="33" font-weight="400" letter-spacing="-0.5" fill="#f58220">germinare</text>
-        <!-- Folhinha verde curva embaixo/direita da haste do 'g' exatamente como na foto enviada -->
         <path d="M23 32 C25 39, 32 43, 37 41 C35 36, 29 33, 23 32 Z" fill="#00a843"/>
       </svg>
     </a>
@@ -456,17 +321,18 @@
       <div class="sidebar-header" style="margin-top: 14px;">COTAÇÕES DO DIA — REFERÊNCIA</div>
       <div id="sidebar-quotes-container" style="display:flex; flex-direction:column; gap:10px;"></div>
 
-      <button class="btn-sync" onclick="carregarBoletim(true)">↻ Sincronizar Relatório (API)</button>
+      <div class="sidebar-header" style="margin-top: 14px;">GESTÃO DO PAINEL (API)</div>
+      <button class="btn-admin" onclick="abrirModalPublicacao()">⚡ Publicar Novo Boletim</button>
+      <button class="btn-sync" onclick="carregarBoletim()">↻ Recarregar Dados</button>
     </aside>
 
     <!-- ÁREA PRINCIPAL DIREITA -->
     <main class="main-content">
       <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
-      <div class="page-subtitle" id="subtitulo-turno">Carregando boletim atualizado...</div>
+      <div class="page-subtitle" id="subtitulo-turno">A carregar boletim atualizado...</div>
 
-      <!-- CAIXA DE VALORES DE REFERÊNCIA / RESUMO FALADO -->
       <div class="ref-box" id="caixa-resumo-falado">
-        <strong>Resumo Executivo do Turno.</strong> Carregando dados do arquivo <code>boletim_atual.json</code>...
+        <strong>Resumo Executivo do Turno.</strong> A carregar dados do ficheiro <code>boletim_atual.json</code>...
       </div>
 
       <!-- BARRA DE ABAS -->
@@ -486,8 +352,8 @@
         </div>
         <div class="chips-row" id="container-chips"></div>
 
-        <div class="section-divider-title" id="titulo-praca-panorama">Análise Econômica e Fechamento — Praça: Triângulo Mineiro / MT / CBOT</div>
-        <div class="sub-group-title">Indicadores de Fechamento, Físico e Bolsas Internacionais</div>
+        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praça: Triângulo Mineiro / MT / CBOT</div>
+        <div class="sub-group-title">Indicadores de Fecho, Físico e Bolsas Internacionais</div>
         <div class="cards-grid-2" id="grid-panorama-cards"></div>
       </section>
 
@@ -565,11 +431,40 @@
     </main>
   </div>
 
+  <!-- MODAL DE ATUALIZAÇÃO EM 1 CLIQUE (SOLUÇÃO HÍBRIDA) -->
+  <div class="modal-overlay" id="modal-publicacao">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="color:#ffffff; font-size:18px;">⚡ Publicar Novo Boletim do Gemini Pro</h3>
+        <button onclick="fecharModalPublicacao()" style="background:none; border:none; color:#8c8c8c; font-size:20px; cursor:pointer;">✕</button>
+      </div>
+      <div style="font-size:12.5px; color:#a3a3a3; line-height:1.5;">
+        Cole abaixo o código JSON gerado pelo seu Agente no Gemini Pro. O painel atualizará automaticamente o ficheiro <code>boletim_atual.json</code> no seu GitHub.
+      </div>
+      <div class="control-group">
+        <label>Token do GitHub (Salvo automaticamente no seu navegador)</label>
+        <input type="password" id="gh-token-input" class="control-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+      </div>
+      <div class="control-group">
+        <label>JSON do Boletim (Copiado do Gemini)</label>
+        <textarea id="json-novo-input" class="modal-textarea" placeholder='{"metadata": { ... }}'></textarea>
+      </div>
+      <div id="status-publicacao" style="font-size:13px; color:var(--orange-bright);"></div>
+      <div style="display:flex; justify-content:flex-end; gap:10px;">
+        <button class="btn-sync" onclick="fecharModalPublicacao()">Cancelar</button>
+        <button class="btn-admin" onclick="enviarParaGitHub()">🚀 Atualizar Site Agora</button>
+      </div>
+    </div>
+  </div>
+
   <script>
+    const REPO_OWNER = "luan238";
+    const REPO_NAME = "painel-inteligencia-agro";
+    const FILE_PATH = "boletim_atual.json";
+
     let dadosBoletim = null;
     let chipsSelecionados = new Set();
 
-    // Limpa eventuais blocos ```json caso tenham sido salvos no arquivo
     function limparJSON(texto) {
       let t = texto.trim();
       if (t.startsWith("```json")) t = t.slice(7);
@@ -586,19 +481,17 @@
         inicializarInterface();
       } catch (err) {
         document.getElementById('caixa-resumo-falado').innerHTML =
-          `<strong>Aviso:</strong> Erro ao ler <code>boletim_atual.json</code> (${err.message}). Verifique se o arquivo está salvo corretamente no repositório.`;
+          `<strong>Aviso:</strong> Erro ao ler <code>boletim_atual.json</code> (${err.message}).`;
       }
     }
 
     function inicializarInterface() {
-      // 1. Subtítulo e Resumo Falado
       document.getElementById('subtitulo-turno').textContent =
         `Monitoramento de grãos, coprodutos, pecuária, câmbio e projeções — ${dadosBoletim.metadata.titulo_edicao} (${dadosBoletim.metadata.data_hora})`;
 
       document.getElementById('caixa-resumo-falado').innerHTML =
         `<strong>Resumo Executivo do Turno (Versão Falada).</strong> ${dadosBoletim.metadata.resumo_falado}`;
 
-      // 2. Cotações na Sidebar e Chips
       const sbContainer = document.getElementById('sidebar-quotes-container');
       sbContainer.innerHTML = '';
       chipsSelecionados.clear();
@@ -616,7 +509,6 @@
 
       renderizarChipsPanorama();
 
-      // 3. Popular Select de Culturas
       const selCultura = document.getElementById('select-cultura');
       selCultura.innerHTML = '';
       Object.keys(dadosBoletim.blocos_culturas).forEach(nome => {
@@ -667,7 +559,7 @@
               <div class="card-desc">${item.destaque}</div>
             </div>
             <div class="card-footer">
-              <a href="#" onclick="irParaCultura(${idx}); return false;">ⓘ Como essa análise impacta o mercado?</a>
+              <a href="#" onclick="irParaCultura(); return false;">ⓘ Como essa análise impacta o mercado?</a>
             </div>
           </div>
         `;
@@ -682,7 +574,7 @@
     function atualizarTitulosPraca() {
       const praca = document.getElementById('input-praca').value;
       document.getElementById('titulo-praca-panorama').textContent =
-        `Análise Econômica e Fechamento — Praça: ${praca}`;
+        `Análise Económica e Fecho — Praça: ${praca}`;
     }
 
     function renderizarCulturaSelecionada() {
@@ -858,6 +750,88 @@
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById(idAba).classList.add('active');
       btnClicado.classList.add('active');
+    }
+
+    // FUNÇÕES DO MODAL DE PUBLICAÇÃO HÍBRIDA (DIRETO PARA API DO GITHUB)
+    function abrirModalPublicacao() {
+      const tokenSalvo = localStorage.getItem('germinare_gh_token') || '';
+      document.getElementById('gh-token-input').value = tokenSalvo;
+      document.getElementById('status-publicacao').textContent = '';
+      document.getElementById('modal-publicacao').classList.add('open');
+    }
+
+    function fecharModalPublicacao() {
+      document.getElementById('modal-publicacao').classList.remove('open');
+    }
+
+    async function enviarParaGitHub() {
+      const statusEl = document.getElementById('status-publicacao');
+      const token = document.getElementById('gh-token-input').value.trim();
+      const textoBruto = document.getElementById('json-novo-input').value.trim();
+
+      if (!token) {
+        statusEl.textContent = "⚠️ Insira o seu Token do GitHub (ghp_...).";
+        return;
+      }
+      if (!textoBruto) {
+        statusEl.textContent = "⚠️ Cole o código JSON gerado pelo Gemini.";
+        return;
+      }
+
+      let objetoValido;
+      try {
+        objetoValido = limparJSON(textoBruto);
+      } catch (e) {
+        statusEl.textContent = "❌ O texto colado não é um JSON válido: " + e.message;
+        return;
+      }
+
+      localStorage.setItem('germinare_gh_token', token);
+      statusEl.textContent = "⏳ A sincronizar com o GitHub...";
+
+      try {
+        const apiUrl = `[https://api.github.com/repos/$](https://api.github.com/repos/$){REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+        const getRes = await fetch(apiUrl, {
+          headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github+json" }
+        });
+
+        let shaAtual = null;
+        if (getRes.ok) {
+          const fileData = await getRes.json();
+          shaAtual = fileData.sha;
+        }
+
+        const jsonFormatado = JSON.stringify(objetoValido, null, 2);
+        const conteudoBase64 = btoa(unescape(encodeURIComponent(jsonFormatado)));
+
+        const putRes = await fetch(apiUrl, {
+          method: "PUT",
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            message: `Atualização de boletim (${objetoValido.metadata?.data_hora || 'Novo Turno'})`,
+            content: conteudoBase64,
+            sha: shaAtual
+          })
+        });
+
+        if (!putRes.ok) {
+          const erroTxt = await putRes.text();
+          throw new Error(erroTxt);
+        }
+
+        dadosBoletim = objetoValido;
+        inicializarInterface();
+        statusEl.style.color = "#4cd964";
+        statusEl.textContent = "✅ Painel atualizado com sucesso!";
+        setTimeout(() => fecharModalPublicacao(), 1200);
+      } catch (err) {
+        statusEl.style.color = "#ff5252";
+        statusEl.textContent = "❌ Erro ao gravar no GitHub: " + err.message;
+      }
     }
 
     window.addEventListener('DOMContentLoaded', () => carregarBoletim());
