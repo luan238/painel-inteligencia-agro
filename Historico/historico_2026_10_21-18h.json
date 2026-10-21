@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "report_id": "AGRI-INTEL-2026-10-21-1800",
+    "timestamp": "2026-10-21T17:52:00-03:00",
+    "week_reference": "2026-W43 (18/10/2026 a 24/10/2026)",
+    "month_reference": "2026-10 (01/10/2026 a 31/10/2026)",
+    "analyst": "Luan Barbosa Andrade",
+    "target_regions": "Triângulo Mineiro / MT / CBOT",
+    "scope": "Complexo Soja, Milho/Etanol/DDGS, Algodão/Coprodutos, Mesa de Câmbio e Logística FOB/CIF (Sem Pecuária)"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "O dólar comercial encerra a sessão de quarta-feira cotado a R$ 5,0230 (+0,14% no dia | +0,76% no mês), sustentando o piso psicológico e técnico de R$ 5,00–R$ 5,02 em meio a ajustes de fluxo comercial e financeiro. No setor de energia e logística, o Petróleo WTI permanece em US$ 101,77 por barril (+12,45% em outubro) devido às restrições de navegação no Estreito de Ormuz, pressionando o frete marítimo, o óleo diesel rodoviário (matriz FOB/CIF) e a ureia (cuja importação acumulada no Brasil segue no menor nível desde 2018). No crédito agrícola, os pedidos de Recuperação Judicial caíram 20,7% no 2º trimestre (448 pedidos segundo a Serasa Experian), mas com aumento entre produtores Pessoa Física (PF).",
+    "complexo_soja": "A semeadura nacional alcançou 30,1% da área no Brasil e 51,86% em Mato Grosso (+18,58 p.p. na semana segundo o IMEA), onde o custeio operacional soma R$ 4.326,01/ha (R$ 3.817,12/ha em insumos) e o custo total de produção na safra 2026/27 subiu 6,96% para R$ 8.210,31/ha. Em Chicago, o grão (US$ 12,6403/bu) e o farelo (US$ 357,10/tc) seguem travados pelo ritmo ágil de plantio e pela projeção de exportação recorde de 27,1 milhões de toneladas de farelo pelo Brasil (+3,06% segundo a Conab), enquanto o óleo de soja (67,13 c/lb) sustenta ganhos com os estoques da NOPA nos EUA na mínima desde 2014 (Oil Share em 48,45%). No mercado físico interno, a expansão de 13% na capacidade das esmagadoras (para 86,4 milhões de t/ano segundo a Abiove) garante prêmios firmes no Triângulo Mineiro (R$ 148,03/sc FOB) e em Rondonópolis-MT (R$ 142,00/sc FOB) — mantendo um diferencial logístico (spread MG–MT) de +R$ 6,03/sc — frente a Paranaguá (R$ 153,80/sc CIF).",
+    "complexo_milho_etanol_ddgs": "O milho encerrou cotado a US$ 4,7305/bu (-0,25%) em Chicago sob o peso do excedente de +17,5 milhões de toneladas na colheita dos EUA, e a R$ 64,85/sc no indicador Cepea (-5,54% no mês) diante dos 70 milhões de toneladas retidos com os produtores (R$ 64,26/sc FOB no Triângulo Mineiro e R$ 46,20/sc FOB em Sorriso-MT, evidenciando um pedágio de frete rodoviário interestadual de R$ 18,06/sc ou R$ 301/t). Na B3, porém, o crescimento de 6,6% no consumo interno para etanol (reduzindo os estoques finais para 14,9 milhões de t segundo a Conab, impulsionado por usinas flex com CAPEX de R$ 1,54/L instalado) e a perspectiva de alta de 15% a 25% no frete de verão (jan–mar/27) sustentam o contrato Março/27 a R$ 75,96/sc contra R$ 66,57/sc no Novembro/26 (carrego de +R$ 9,39/sc ou +14,1%). Nos coprodutos, a China absorveu 95,6% do sorgo exportado pelo Brasil no ano (755,6 mil t) e 88% do DDG embarcado por Mato Grosso em setembro (130,65 mil t, +100% mensal).",
+    "complexo_algodao": "A pluma sustentou o patamar de 80,48 c/lb na ICE NY (dentro da banda de 80,28 a 80,68 c/lb, com o Março/27 a 83,42 c/lb) e 407,41 c/r no Cepea, amparada pelo encarecimento do poliéster sintético (com o WTI a US$ 101,77/barril) e pelo avanço de 16,5% na média diária de embarques no início de outubro (acumulando expansão de 73% desde 2019/20, com média de 279 mil t/mês). Em Mato Grosso, após a produtividade recorde de 330,25 @/ha em 2025/26, o fim da colheita mantém o caroço de algodão no piso sazonal de R$ 705,19/t FOB (-4,18%), equivalendo a ~R$ 960 a R$ 990/t CIF no Triângulo Mineiro com frete de retorno (backhaul), enquanto o farelo de algodão opera a R$ 796,90/t."
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_spot_fecho_18h": "R$ 5,0230 (+0,14% no dia | +0,76% no mês)",
+      "dolar_futuro_nov26": "R$ 5.031,00",
+      "ndf_marco_27_estimado": "R$ 5,1580",
+      "petroleo_wti_nov26": "US$ 101,77 / barril (+12,45% no mês)",
+      "frete_referencia_mt_mg": "~R$ 260 a R$ 301 / tonelada (Backhaul / Granel)"
+    },
+    "complexo_soja": {
+      "cbot_nov26": "US$ 12,6403 / bu (+0,22% na semana)",
+      "fisico_triangulo_mg_fob": "R$ 148,03 / sc",
+      "fisico_rondonopolis_mt_fob": "R$ 142,00 / sc",
+      "porto_paranagua_cif": "R$ 153,80 / sc (Faixa R$ 153,00 a R$ 154,61)",
+      "spread_fisico_mg_mt": "+R$ 6,03 / sc (+R$ 100,50 / t)",
+      "farelo_cbot_dez26": "US$ 357,10 / tc",
+      "farelo_fisico_mt_fob": "R$ 1.964,98 / t",
+      "farelo_fisico_mg_cif_est": "~R$ 2.020,00 / t",
+      "oleo_cbot_dez26": "67,13 cents / lb (+2,02% no mês)",
+      "oil_share_cbot": "48,45% (US$ 7,384 óleo vs US$ 7,856 farelo por bushel)"
+    },
+    "complexo_milho_e_ddgs": {
+      "cbot_dez26": "US$ 4,7305 / bu (-0,25%)",
+      "fisico_cepea_esalq": "R$ 64,85 / sc (-5,54% no mês)",
+      "fisico_triangulo_mg_fob": "R$ 64,26 / sc (-5,22% no mês)",
+      "fisico_sorriso_mt_fob": "R$ 46,20 / sc",
+      "spread_logistico_mg_mt": "+R$ 18,06 / sc (~R$ 301,00 / t)",
+      "b3_novembro_26": "R$ 66,57 / sc",
+      "b3_marco_27": "R$ 75,96 / sc",
+      "spread_carrego_b3": "+R$ 9,39 / sc (+14,1%)",
+      "ddg_centro_oeste_fob": "R$ 937,95 / t (+1,40% no mês)",
+      "ddg_triangulo_mg_cif_est": "~R$ 1.150 a R$ 1.190 / t (Média ~R$ 1.170 / t)",
+      "exportacao_ddg_mt_set": "130,65 mil t (+100% mensal | 88% China)",
+      "exportacao_sorgo_br_acum": "790,00 mil t (755,6 mil t China | 95,6%)"
+    },
+    "complexo_algodao": {
+      "pluma_ice_ny_dez26": "80,48 cents / lb (Faixa 80,28 a 80,68 c/lb)",
+      "pluma_ice_ny_mar27": "83,42 cents / lb",
+      "pluma_cepea_esalq": "407,41 cents R$ / lb",
+      "caroco_algodao_mt_fob": "R$ 705,19 / t (-4,18% na semana | -4,51% no mês)",
+      "caroco_algodao_mg_cif_est": "~R$ 960 a R$ 990 / t (Média ~R$ 975 / t)",
+      "caroco_algodao_ba_aiba": "R$ 976,67 / t",
+      "farelo_algodao_mt_mg": "R$ 796,90 / t"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "block_id": "BLOCO_1_SOJA",
+      "title": "Complexo Soja e Derivados (Grão, Farelo de Soja e Óleo de Soja)",
+      "market_bias": "Grão e Farelo CBOT: Baixistas | Físico Interior (Triângulo-MG / MT): Firme | Óleo de Soja: Altista (Oil Share 48,45%)",
+      "executive_summary": "O avanço do plantio da soja no Brasil para 30,1% da área nacional — liderado pelo Mato Grosso, que atingiu 51,86% (+18,58 p.p. na semana segundo o IMEA) — mantém os contratos de grão (US$ 12,6403/bu) e farelo (US$ 357,10/tc) contidos na CBOT, enquanto o óleo de soja (67,13 c/lb) sustenta Oil Share de 48,45% amparado pelo Petróleo WTI a US$ 101,77/barril e pelos estoques norte-americanos da NOPA na mínima desde 2014. Na ponta de custos, o gasto total de produção da safra 2026/27 subiu 6,96% para R$ 8.210,31/ha (custeio operacional no MT em R$ 4.326,01/ha). Na logística física interna, a expansão de 13% na capacidade de moagem das esmagadoras brasileiras (86,4 milhões de t/ano segundo a Abiove) garante forte prêmio de localização no Triângulo Mineiro (R$ 148,03/sc FOB) frente a Rondonópolis-MT (R$ 142,00/sc FOB, spread de +R$ 6,03/sc), blindando o interior contra a retração portuária acumulada no mês em Paranaguá (R$ 153,80/sc CIF, -4,63% em outubro).",
+      "news_sources": [
+        {
+          "headline": "Safras & Mercado - Mercado brasileiro de soja deve manter ritmo lento apesar de recuperação em Chicago",
+          "url": "https://safras.com.br/mercado-brazileiro-de-soja-deve-manter-ritmo-lento-apesar-de-recuperacao-em-chicago/"
+        },
+        {
+          "headline": "Agrolink - Soja: custo de produção sobe 6,96% na safra 2026/27 (R$ 8.210,31/ha)",
+          "url": "https://www.agrolink.com.br/noticias/soja--custo-de-producao-sobe-6-96--na-safra-2026-27_519986.html"
+        },
+        {
+          "headline": "Notícias Agrícolas - Plantio da soja quase dobra em uma semana e chega a 30,1% no Brasil",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/429928-plantio-da-soja-quase-dobra-em-uma-semana-e-chega-a-30-1-no-brasil.html"
+        },
+        {
+          "headline": "Pauta MT / IMEA - Semeadura da soja ultrapassa 50% da área em Mato Grosso (51,86%) e custeio chega a R$ 4.326,01/ha",
+          "url": "https://www.pautamt.com.br/2026/10/18/33506/"
+        },
+        {
+          "headline": "R7 Fonte Agro / Conab - Exportação de farelo de soja deve atingir recorde de 27,1 milhões de t (+3,06%)",
+          "url": "https://noticias.r7.com/prisma/fonte-agro/soja-e-milho-devem-concentrar-quase-90-da-safra-de-graos-15102026/"
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Liquidar os lotes remanescentes da safra velha diretamente nas esmagadoras do Triângulo Mineiro (R$ 148,03/sc FOB) e de Mato Grosso (R$ 142,00/sc FOB), eliminando a exposição ao custo do frete rodoviário longo até Paranaguá. Para a safra nova, aguardar repiques do dólar à faixa de R$ 5,09–R$ 5,12 para travar NDFs.",
+        "cooperative": "Diante do aumento de 6,96% no custo de produção e da alta nos pedidos de Recuperação Judicial entre produtores Pessoa Física (Serasa), estruturar operações de Barter de fungicidas e adubos de cobertura exigindo CPR Física registrada com penhor.",
+        "industry_nutrition": "Manter compras de farelo de soja apenas para o giro curto, priorizando originar nas plantas esmagadoras locais do Triângulo Mineiro para zerar o frete interestadual e aguardando a pressão de baixa da moagem recorde (86,4 mi t).",
+        "trading_desk": "Priorizar originação nos corredores do Arco Norte e Nordeste (+23,4% nos embarques), monitorando o estreitamento do basis portuário frente à competição das indústrias domésticas.",
+        "trader_long_short_fx": "SHORT tático no Grão e no Farelo de Soja na CBOT (Dez/26 a US$ 357,10/tc); LONG em Óleo de Soja vs. SHORT Farelo (Long Oil Share em 48,45%) sustentado pelos estoques NOPA na mínima desde 2014 e pelo WTI a US$ 101,77/barril."
+      }
+    },
+    {
+      "block_id": "BLOCO_2_MILHO_DDGS",
+      "title": "Complexo Milho, Sorgo e Derivados (Etanol de Milho e DDG/DDGS)",
+      "market_bias": "CBOT e Spot BR: Pressionados | Curva B3 2027 (Março/27 a R$ 75,96/sc), Sorgo e DDG: Fortemente Altistas",
+      "executive_summary": "No curto prazo, o excedente de +17,5 milhões de toneladas na colheita dos EUA trava Chicago em US$ 4,7305/bu (-0,25%), enquanto os 70 milhões de toneladas retidos com produtores no Brasil mantêm o Cepea em R$ 64,85/sc (-5,54% em outubro). Na matriz logística interna, o diferencial entre o Triângulo Mineiro (R$ 64,26/sc FOB) e Sorriso-MT (R$ 46,20/sc FOB) atingiu R$ 18,06/saca (R$ 301,00/tonelada), refletindo exatamente o custo do frete rodoviário interestadual. Já na B3, o salto de 6,6% no consumo interno para etanol em 2026/27 (reduzindo estoques finais para 14,9 mi t segundo a Conab), a inflação sazonal de +15% a +25% no frete rodoviário prevista para jan–mar/27 e a demanda chinesa — que absorveu 95,6% do sorgo exportado pelo Brasil no ano (755,6 mil t) e 88% do DDG exportado por Mato Grosso em setembro (130,65 mil t, +100% mensal) — sustentam um carrego de +R$ 9,39/saca (+14,1%) entre o contrato Novembro/26 (R$ 66,57/sc) e o Março/27 (R$ 75,96/sc).",
+      "news_sources": [
+        {
+          "headline": "Feed&Food - Soja e milho caem em outubro com previsão de safra recorde",
+          "url": "https://feedfood.com.br/soja-e-milho-acumulam-quedas-de-ate-556-outubro-previsao-safra-recorde/"
+        },
+        {
+          "headline": "SCA Brasil - Milho pode atingir recorde de 146,5 milhões de toneladas, impulsionado pelo etanol",
+          "url": "https://scabrasil.com.br/milho-pode-atingir-recorde-de-1465-milhoes-de-toneladas-impulsionado-pelo-etanol/"
+        },
+        {
+          "headline": "Notícias Agrícolas / IMEA - Exportações de DDG de Mato Grosso crescem 35% em 2026 e setembro atinge 130,65 mil t",
+          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/429769-exportacoes-de-ddg-de-mato-grosso-crescem-35-em-2026-impulsionadas-pela-china.html"
+        },
+        {
+          "headline": "Mais Top News / Globo Rural - Sorgo vira 'negócio da China' com 755,6 mil t das 790 mil t exportadas em 2026",
+          "url": "https://maistopnews.com.br/antes-desprezado-sorgo-vira-negocio-da-china-com-exportacoes-e-custo-menor/"
+        },
+        {
+          "headline": "Visão Agro - Etanol de milho amplia interesse por usinas flex (investimento de R$ 1,54/L vs R$ 2,66/L)",
+          "url": "https://visaoagro.com.br/etanol-de-milho-deve-crescer-17-em-2026-27-e-amplia-interesse-por-usinas-flex-mas-conversao-exige-integracao-de-processos/"
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Evitar a venda do milho físico no mercado spot depreciado; executar operação de Cash and Carry retendo o grão no armazém e vendendo o contrato Março/2027 na B3 a R$ 75,96/sc, embolsando o prêmio de carrego de +R$ 9,39/saca (+14,1%) sobre o Novembro/26 (R$ 66,57/sc). Garantir sementes de sorgo para o fecho da janela de safrinha.",
+        "cooperative": "Originar milho físico disponível dos cooperados e travar a venda no Março/27 da B3 a R$ 75,96/sc; estruturar contratos de fornecimento para as usinas flex do Triângulo Mineiro, Goiás e Mato Grosso.",
+        "industry_nutrition": "Aproveitar a baixa acumulada de 5,54% no mês para recompor estoques físicos de milho em grão disponível (R$ 64,26/sc FOB no Triângulo Mineiro e R$ 46,20/sc FOB em Sorriso-MT) e fechar contratos de DDG (R$ 937,95/t FOB CO | ~R$ 1.168/t CIF MG, custo de R$ 36,50 por ponto de PB) casados com frete de retorno antes da virada logística de dezembro/janeiro.",
+        "trading_desk": "Direcionar capacidade portuária para embarques de sorgo e DDGS rumo à China, onde a margem supera a exportação do milho em grão.",
+        "trader_long_short_fx": "SHORT nos contratos curtos (CBOT Dez/26 a US$ 4,7305/bu e B3 Nov/26 a R$ 66,57/sc) e posição estrutural no BEAR CALENDAR SPREAD NA B3: Short Novembro/26 (R$ 66,57/sc) vs. Long Março/27 (R$ 75,96/sc). Como o plantio da soja em MT já passou de 51,86%, montar também Long Março/27 (R$ 75,96) vs. Short Julho/27."
+      }
+    },
+    {
+      "block_id": "BLOCO_3_ALGODAO",
+      "title": "Complexo Algodão e Derivados (Pluma, Caroço, Farelo e Óleo de Algodão)",
+      "market_bias": "Pluma ICE NY: Firme acima de 80,20 c/lb com WTI >US$ 101 | Caroço de Algodão MT (R$ 705,19/t FOB): Piso Sazonal de Compra",
+      "executive_summary": "O complexo algodão encerrou a quarta-feira sustentado no mercado internacional de pluma (80,48 c/lb na ICE NY e 407,41 c/r no Cepea) graças ao Petróleo WTI a US$ 101,77/barril (que encarece a fabricação do poliéster sintético concorrente) e ao forte ritmo de embarques do Brasil, cuja média diária cresceu 16,5% no início de outubro (+73% desde 2019/20, média de 279 mil t/mês), consolidando a liderança mundial brasileira destacada no evento da ICA em Istambul. Já no mercado interno de coprodutos, o fim da colheita recorde em Mato Grosso (330,25 @/ha em 2025/26) mantém o caroço de algodão no MT no piso sazonal de R$ 705,19/tonelada FOB (-4,18%), o que representa ~R$ 960 a R$ 990/t CIF posto no Triângulo Mineiro.",
+      "news_sources": [
+        {
+          "headline": "Portal do Agronegócio - Exportações de algodão: média diária cresce 16,5% no início de outubro",
+          "url": "https://www.portaldoagronegocio.com.br/agricultura/algodao/noticias/exportacoes-de-algodao-media-diaria-cresce-16-5-no-inicio-de-outubro"
+        },
+        {
+          "headline": "Badé Valor - Brasil lidera exportações mundiais de algodão e amplia protagonismo no mercado internacional",
+          "url": "https://badevalor.com.br/brasil-lidera-exportacoes-mundiais-de-algodao-e-amplia-protagonismo-no-mercado-internacional/"
+        },
+        {
+          "headline": "Canal Rural MT / IMEA - Imea estima área maior e produção de 6,65 mi t em 26/27 após recorde de 330,25 @/ha",
+          "url": "https://matogrosso.canalrural.com.br/agricultura/algodao/imea-estima-area-maior-e-producao-de-665-milhoes-de-toneladas-de-algodao-em-mt-na-safra-2026-27/"
+        },
+        {
+          "headline": "BrasilAgro - Exportações de algodão do Brasil cresceram 73% desde a safra 2019/20 (média de 279 mil t/mês)",
+          "url": "https://www.brasilagro.com.br/conteudo/exportacoes-de-algodao-do-brasil-cresceram-73-desde-a-safra-201920.html"
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Rolar fixações de pluma para o contrato Março/27 na ICE NY (83,42 c/lb) e reter o caroço de algodão em armazém para comercialização na entressafra (dezembro a março), evitando vender no piso de R$ 705,19/t FOB.",
+        "cooperative": "Suspender ofertas de caroço no mercado spot mato-grossense e travar contratos de fornecimento de caroço, farelo (R$ 796,90/t) e óleo de algodão casados com frete de retorno (backhaul) para indústrias de nutrição e usinas de biodiesel de MG, GO e SP.",
+        "industry_nutrition": "Compra física imediata e agressiva de Caroço de Algodão (R$ 705,19/t FOB MT | ~R$ 975,19/t CIF Triângulo-MG) e Farelo de Algodão (R$ 796,90/t) com embarque imediato antes da virada do frete de verão — garante custo de R$ 42,40/ponto de PB CIF MG mais 190 kg de óleo vegetal puro por tonelada.",
+        "trading_desk": "Acelerar o line-up portuário de pluma aproveitando a alta de 16,5% no ritmo diário de outubro rumo ao pico sazonal de novembro/dezembro.",
+        "trader_long_short_fx": "LONG Tático na ICE NY acima de 80,20 c/lb ou Bear Calendar Spread (Short Dez/26 a 80,48 c/lb vs. Long Mar/27 a 83,42 c/lb). No físico, posição comprada em caroço de algodão no MT para carrego de entressafra."
+      }
+    },
+    {
+      "block_id": "BLOCO_4_CAMBIO_MACRO",
+      "title": "Mesa de Câmbio (Dólar Comercial e Futuro), Petróleo, Frete, Insumos e Crédito Agro",
+      "market_bias": "Zona de Compra Tática (Suporte Forte) em R$ 5,00 – R$ 5,025 | Zona de Venda / Hedge Exportador (Resistência) em R$ 5,09 – R$ 5,12",
+      "executive_summary": "No fecho das 18h desta quarta-feira (21/10), o Dólar Comercial encerrou cotado a R$ 5,0230 (+0,14% na sessão | +0,76% no mês), confirmando a presença de defesa compradora na zona de suporte de R$ 5,00 a R$ 5,02. As restrições de navegação no Estreito de Ormuz mantêm o Petróleo WTI em US$ 101,77/barril (+12,45% no mês), pressionando o custo do frete marítimo, do óleo diesel rodoviário e dos fertilizantes nitrogenados (importação de ureia pelo Brasil segue no menor nível desde 2018). Os pedidos de Recuperação Judicial no agro caíram 20,7% no 2º trimestre (448 pedidos segundo a Serasa Experian) puxados por empresas/PJ, mas aumentaram entre produtores Pessoa Física (PF).",
+      "news_sources": [
+        {
+          "headline": "IstoÉ Dinheiro - Dólar hoje cai a R$ 5,019 com exterior e disputa eleitoral no radar",
+          "url": "https://istoedinheiro.com.br/dolar-cotacao-20-outubro-2026"
+        },
+        {
+          "headline": "UOL Economia - Dólar cai a R$ 5,02 e Bolsa sobe influenciados por eleição e petróleo",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/20/dolar-bolsa-abre-hoje-20-de-outubro-de-2026.ghtm"
+        },
+        {
+          "headline": "Exame Agro / Serasa Experian - Recuperação judicial no agro cai 20,7% (448 pedidos), mas pedidos de pessoas físicas aumentam",
+          "url": "https://exame.com/agro/recuperacao-judicial-no-agro-cai-21-mas-pedidos-de-pessoas-fisicas-aumentam-no-2o-tri/"
+        },
+        {
+          "headline": "Farmnews - Balanço de outubro de Soja, Milho e Importação de Ureia no menor nível desde 2018",
+          "url": "https://farmnews.com.br/mercado/preco-do-boi-gordo-bezerro-milho-e-soja-na-1a-metade-de-outubro-de-2026/"
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "importers_and_inputs": "A estabilidade do dólar a R$ 5,0230 mantém aberta a janela estratégica da semana para travar o câmbio de compra de insumos (especialmente ureia de cobertura para o milho e algodão, além de óleo diesel). Com o petróleo WTI a US$ 101,77/barril e os estoques de ureia na mínima desde 2018, travar tabelas em reais a R$ 5,023 blinda a margem operacional.",
+        "exporters_and_producers": "Não fixar vendas em reais com o dólar spot na faixa de R$ 5,02. Aguardar o retorno da cotação à banda de R$ 5,09 a R$ 5,12 para vender contratos NDF de Março/2027, capturando o prêmio de juros (Selic vs. Cupom Cambial).",
+        "fx_trader_b3": "LONG (Compra Tática de Dólar Futuro - DOL/WDO) na zona de R$ 5,010 a R$ 5,025 (com stop loss curto abaixo de R$ 4,985), visando realização de lucro no retorno ao centro da banda em R$ 5,070 – R$ 5,090."
+      }
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "2026-10-18",
+    "period_current": "2026-10-21 (18h)",
+    "period_end": "2026-10-24",
+    "assets": [
+      {
+        "asset": "Dólar Comercial (USD/BRL)",
+        "unit": "R$",
+        "sunday_open_ref": 5.0700,
+        "monday_close": 5.0465,
+        "tuesday_close": 5.0160,
+        "current_value": 5.0230,
+        "weekly_change_pct": -0.93,
+        "week_low": 5.0160,
+        "week_high": 5.0700,
+        "weekly_driver": "Abriu no domingo a R$ 5,07, tocou mínima de R$ 5,016 na 3ª feira e fechou esta 4ª feira com leve reação a R$ 5,0230 (+0,14% no dia). Defesa compradora atua no piso de R$ 5,00–5,02."
+      },
+      {
+        "asset": "Petróleo WTI (Nov/26)",
+        "unit": "US$/barril",
+        "sunday_open_ref": 98.22,
+        "monday_close": 101.77,
+        "tuesday_close": 101.77,
+        "current_value": 101.77,
+        "weekly_change_pct": 3.61,
+        "week_low": 98.22,
+        "week_high": 101.77,
+        "weekly_driver": "Sustentado acima de US$ 100/barril após restrições marítimas no Estreito de Ormuz, pressionando diesel/frete mas amparando óleo de soja, etanol e algodão."
+      },
+      {
+        "asset": "Soja CBOT (Nov/26)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 12.6125,
+        "monday_close": 12.6280,
+        "tuesday_close": 12.6403,
+        "current_value": 12.6403,
+        "weekly_change_pct": 0.22,
+        "week_low": 12.6000,
+        "week_high": 12.6500,
+        "weekly_driver": "Estabilizou com ganho semanal de +0,22% amparada pelo petróleo, mas travada pelo plantio em 51,86% no MT (30,1% no BR)."
+      },
+      {
+        "asset": "Soja Físico (Triângulo-MG FOB / MT FOB / PNG CIF)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 148.03,
+        "monday_close": 148.03,
+        "tuesday_close": 148.03,
+        "current_value": 148.03,
+        "weekly_change_pct": 0.00,
+        "week_low": 142.00,
+        "week_high": 154.61,
+        "weekly_driver": "O Triângulo Mineiro (R$ 148,03 FOB) sustenta spread de +R$ 6,03/sc sobre Rondonópolis-MT (R$ 142,00 FOB) graças à menor distância portuária e às esmagadoras locais (+13% capacidade). Paranaguá a R$ 153,80 (-0,52%)."
+      },
+      {
+        "asset": "Farelo de Soja CBOT (Dez/26)",
+        "unit": "US$/tc",
+        "sunday_open_ref": 357.10,
+        "monday_close": 357.10,
+        "tuesday_close": 357.10,
+        "current_value": 357.10,
+        "weekly_change_pct": 0.00,
+        "week_low": 357.10,
+        "week_high": 362.00,
+        "weekly_driver": "Farelo travado pela projeção de 27,1 mi t exportadas pelo BR (Conab)."
+      },
+      {
+        "asset": "Óleo de Soja CBOT (Dez/26)",
+        "unit": "cents/lb",
+        "sunday_open_ref": 67.13,
+        "monday_close": 67.13,
+        "tuesday_close": 67.13,
+        "current_value": 67.13,
+        "weekly_change_pct": 0.00,
+        "week_low": 66.80,
+        "week_high": 67.50,
+        "weekly_driver": "Óleo firme com estoques NOPA na mínima desde 2014 e WTI >US$ 101 (Oil Share em 48,45%)."
+      },
+      {
+        "asset": "Milho CBOT (Dez/26)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 4.7425,
+        "monday_close": 4.7420,
+        "tuesday_close": 4.7305,
+        "current_value": 4.7305,
+        "weekly_change_pct": -0.25,
+        "week_low": 4.7305,
+        "week_high": 4.7800,
+        "weekly_driver": "Opera com leve baixa semanal (-0,25%) digerindo o avanço da colheita americana e os +17,5 mi t de safra nos EUA."
+      },
+      {
+        "asset": "Milho Físico (MG vs. MT) e B3 Spread",
+        "unit": "R$/sc",
+        "sunday_open_ref": 64.26,
+        "monday_close": 64.26,
+        "tuesday_close": 64.26,
+        "current_value": 64.26,
+        "weekly_change_pct": 0.00,
+        "week_low": 46.20,
+        "week_high": 75.96,
+        "weekly_driver": "Diferencial físico MG (R$ 64,26 FOB) vs. MT (R$ 46,20 FOB) segue cravado em R$ 18,06/sc (~R$ 301/t de frete); na B3, o Março/27 (R$ 75,96) sustenta +R$ 9,39/sc (+14,1%) sobre o Nov/26 (R$ 66,57) pelo etanol (+6,6%)."
+      },
+      {
+        "asset": "DDG / DDGS (FOB CO / CIF MG)",
+        "unit": "R$/t",
+        "sunday_open_ref": 937.95,
+        "monday_close": 937.95,
+        "tuesday_close": 937.95,
+        "current_value": 937.95,
+        "weekly_change_pct": 0.00,
+        "week_low": 937.95,
+        "week_high": 1170.00,
+        "weekly_driver": "Semana consolida o domínio chinês comprando 88% do DDG de MT (130,65 mil t em set, +100%) e 95,6% do sorgo brasileiro, sustentando o FOB CO (R$ 937,95/t) e o CIF MG (~R$ 1.170/t)."
+      },
+      {
+        "asset": "Algodão Pluma (ICE NY) e Caroço (MT FOB / MG CIF)",
+        "unit": "cents/lb | R$/t",
+        "sunday_open_ref": 79.91,
+        "monday_close": 80.48,
+        "tuesday_close": 80.48,
+        "current_value": 80.48,
+        "weekly_change_pct": 0.71,
+        "week_low": 79.91,
+        "week_high": 80.68,
+        "weekly_driver": "Pluma firme (+0,71%) com embarques diários subindo 16,5% em outubro e WTI >US$ 101; caroço no piso sazonal de R$ 705,19/t FOB MT (-4,18% na semana | ~R$ 975/t CIF MG)."
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-10-01",
+    "current_date": "2026-10-21 (18h)",
+    "days_elapsed": 21,
+    "assets": [
+      {
+        "asset": "Dólar Comercial (USD/BRL)",
+        "unit": "R$",
+        "month_open_value": 4.9850,
+        "mid_month_10_oct": 5.0320,
+        "current_value": 5.0230,
+        "mtd_change_pct": 0.76,
+        "month_low": 4.9800,
+        "month_high": 5.0990,
+        "monthly_narrative": "Saiu de R$ 4,985 em 01/10, tocou máxima de R$ 5,099 em 15/10, testou R$ 5,016 ontem e fechou hoje a R$ 5,0230 (+0,76% no mês). Disputa da PTAX de fim de mês entre R$ 5,00 e R$ 5,10."
+      },
+      {
+        "asset": "Petróleo WTI (Nov/26)",
+        "unit": "US$/barril",
+        "month_open_value": 90.50,
+        "mid_month_10_oct": 94.80,
+        "current_value": 101.77,
+        "mtd_change_pct": 12.45,
+        "month_low": 90.10,
+        "month_high": 101.77,
+        "monthly_narrative": "Disparou 12,45% em 21 dias devido às restrições no Estreito de Ormuz, sustentando óleo de soja e etanol mas encarecendo diesel, frete e ureia."
+      },
+      {
+        "asset": "Soja Físico (Triângulo-MG FOB / MT FOB / PNG CIF)",
+        "unit": "R$/sc",
+        "month_open_value": 152.00,
+        "mid_month_10_oct": 149.10,
+        "current_value": 148.03,
+        "mtd_change_pct": -2.61,
+        "month_low": 142.00,
+        "month_high": 161.27,
+        "monthly_narrative": "O porto recuou 4,63% desde o pico de 02/10 (para R$ 153,80/sc) com o avanço do plantio (51,86% no MT), mas o Triângulo Mineiro caiu menos (-2,61%, a R$ 148,03 FOB) pela disputa das esmagadoras locais (+13% capacidade Abiove)."
+      },
+      {
+        "asset": "Soja CBOT (Nov/26)",
+        "unit": "US$/bu",
+        "month_open_value": 12.9500,
+        "mid_month_10_oct": 12.7800,
+        "current_value": 12.6403,
+        "mtd_change_pct": -2.39,
+        "month_low": 12.6125,
+        "month_high": 13.0200,
+        "monthly_narrative": "Acumula baixa de 2,39% em outubro devido ao avanço da colheita americana (>50%) e semeadura acelerada no Brasil (30,1% nacional)."
+      },
+      {
+        "asset": "Farelo de Soja CBOT (Dez/26)",
+        "unit": "US$/tc",
+        "month_open_value": 372.00,
+        "mid_month_10_oct": 365.20,
+        "current_value": 357.10,
+        "mtd_change_pct": -4.01,
+        "month_low": 357.10,
+        "month_high": 374.00,
+        "monthly_narrative": "Caiu 4,01% no mês com o aumento da moagem nos EUA e projeção de exportação recorde do Brasil (27,1 mi t na Conab)."
+      },
+      {
+        "asset": "Óleo de Soja CBOT (Dez/26)",
+        "unit": "cents/lb",
+        "month_open_value": 65.80,
+        "mid_month_10_oct": 66.50,
+        "current_value": 67.13,
+        "mtd_change_pct": 2.02,
+        "month_low": 65.50,
+        "month_high": 68.50,
+        "monthly_narrative": "Único integrante do complexo soja em alta no mês (+2,02%), impulsionado pelos estoques NOPA na mínima desde 2014 e WTI >US$ 101 (Oil Share em 48,45%)."
+      },
+      {
+        "asset": "Milho Físico BR (Cepea / Triângulo-MG / MT)",
+        "unit": "R$/sc",
+        "month_open_value": 68.65,
+        "mid_month_10_oct": 66.10,
+        "current_value": 64.85,
+        "mtd_change_pct": -5.54,
+        "month_low": 46.20,
+        "month_high": 68.65,
+        "monthly_narrative": "Acumula recuo de 5,54% em outubro no Cepea (-5,22% no Triângulo-MG, a R$ 64,26 FOB) pressionado pelos 70 milhões de t nas mãos dos produtores, mantendo spread de frete MG–MT em R$ 18,06/sc."
+      },
+      {
+        "asset": "Milho B3 Longa (Março/27)",
+        "unit": "R$/sc",
+        "month_open_value": 74.80,
+        "mid_month_10_oct": 75.30,
+        "current_value": 75.96,
+        "mtd_change_pct": 1.55,
+        "month_low": 74.50,
+        "month_high": 76.20,
+        "monthly_narrative": "Descolamento clássico em outubro: o vencimento curto (Nov/26 a R$ 66,57) caiu 3,66%, mas o Março/27 subiu 1,55% (abrindo o carrego para R$ 9,39/sc) com a expansão do etanol e risco de frete no verão."
+      },
+      {
+        "asset": "DDG / DDGS (FOB CO / CIF MG)",
+        "unit": "R$/t",
+        "month_open_value": 925.00,
+        "mid_month_10_oct": 932.00,
+        "current_value": 937.95,
+        "mtd_change_pct": 1.40,
+        "month_low": 920.00,
+        "month_high": 1170.00,
+        "monthly_narrative": "Sustentado ao longo de outubro (+1,40% FOB CO | ~R$ 1.170/t CIF MG) pela confirmação de 130,65 mil t de DDG exportadas por MT em setembro (88% China) e 95,6% do sorgo comprado pela China."
+      },
+      {
+        "asset": "Algodão Pluma (Cepea / ICE NY)",
+        "unit": "cents R$/lb",
+        "month_open_value": 412.50,
+        "mid_month_10_oct": 408.90,
+        "current_value": 407.41,
+        "mtd_change_pct": -1.23,
+        "month_low": 406.35,
+        "month_high": 412.50,
+        "monthly_narrative": "Após recuo na 1ª quinzena pela safra recorde, estabilizou acima de 80 c/lb na ICE NY (80,48 c/lb) com a alta de 16,5% na média diária de embarques em outubro e petróleo acima de US$ 101."
+      },
+      {
+        "asset": "Caroço de Algodão (FOB MT / CIF MG)",
+        "unit": "R$/t",
+        "month_open_value": 738.50,
+        "mid_month_10_oct": 735.93,
+        "current_value": 705.19,
+        "mtd_change_pct": -4.51,
+        "month_low": 705.19,
+        "month_high": 975.00,
+        "monthly_narrative": "Acumula queda de 4,51% em outubro após o fim do beneficiamento da safra recorde no MT (330,25 @/ha), atingindo o piso sazonal de compra (R$ 705,19/t FOB MT | ~R$ 975/t CIF MG)."
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar Spot (USD/BRL)",
+      "current_base": "R$ 5,0230",
+      "short_term_target_23_oct": "R$ 5,00 a R$ 5,08 (Suporte defendido em R$ 5,00)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,00 – R$ 5,10",
+        "bull_case": "R$ 5,15",
+        "bear_case": "R$ 4,95"
+      },
+      "audit_trigger": "Defesa compradora no piso de R$ 5,00–5,02 e tensão no Estreito de Ormuz (WTI >US$ 101) vs. fluxo estrangeiro na B3."
+    },
+    {
+      "commodity": "Soja CBOT (Nov/26)",
+      "current_base": "US$ 12,6403 / bu",
+      "short_term_target_23_oct": "US$ 12,45 a US$ 12,70 / bu (Viés: Neutro/Baixista)",
+      "end_of_month_30_oct": {
+        "base_case": "US$ 12,35 – US$ 12,55",
+        "bull_case": "US$ 12,80",
+        "bear_case": "US$ 12,15"
+      },
+      "audit_trigger": "Avanço do plantio em MT rumo a 70% da área vs. suporte indireto do petróleo no óleo de soja (Oil Share 48,45%)."
+    },
+    {
+      "commodity": "Soja Físico (Triângulo-MG vs. MT vs. PNG)",
+      "current_base": "PNG (CIF): R$ 153,80 | MG (FOB): R$ 148,03 | MT (FOB): R$ 142,00",
+      "short_term_target_23_oct": "MG: R$ 147,00 – 149,50 | MT: R$ 140,50 – 143,00 | PNG: R$ 152,00 – 155,00",
+      "end_of_month_30_oct": {
+        "base_case": "MG: R$ 146 – 149 | MT: R$ 139 – 142 (Spread MG–MT: +R$ 6 a 7/sc)",
+        "bull_case": "MG: R$ 152,00 | MT: R$ 145,00",
+        "bear_case": "MG: R$ 143,00 | MT: R$ 136,00"
+      },
+      "audit_trigger": "Impacto do Frete: Diferencial logístico MG vs. MT (+R$ 6,03/sc). Esmagadoras de MG (+13% capacidade Abiove) pagam prêmio para reter grão local."
+    },
+    {
+      "commodity": "Farelo de Soja (CBOT vs. MT / MG)",
+      "current_base": "CBOT: US$ 357,10/tc | FOB MT: R$ 1.964,98/t | CIF MG: ~R$ 2.020/t",
+      "short_term_target_23_oct": "CBOT: US$ 350 – 358/tc | FOB MT: R$ 1.940 – 1.980/t",
+      "end_of_month_30_oct": {
+        "base_case": "CBOT: US$ 340 – 352 | FOB MT: R$ 1.900 – 1.950/t",
+        "bull_case": "CBOT: US$ 362,00",
+        "bear_case": "CBOT: US$ 332,00"
+      },
+      "audit_trigger": "Impacto do Frete: Compradores do Triângulo-MG priorizam esmagadoras locais (Uberlândia/Araguari) para economizar o frete interestadual."
+    },
+    {
+      "commodity": "Milho Físico (Triângulo-MG vs. Sorriso-MT)",
+      "current_base": "Cepea: R$ 64,85/sc | MG (FOB): R$ 64,26/sc | MT (FOB): R$ 46,20/sc",
+      "short_term_target_23_oct": "MG: R$ 63,80 – 65,00 | MT: R$ 45,50 – 47,00 (Spread Frete: R$ 18,06/sc)",
+      "end_of_month_30_oct": {
+        "base_case": "MG: R$ 63,50 – 65,50 | MT: R$ 45,00 – 47,50",
+        "bull_case": "MG: R$ 67,50",
+        "bear_case": "MG: R$ 62,00"
+      },
+      "audit_trigger": "Impacto do Frete: Spread de R$ 18,06/sc (~R$ 301/t) reflete o frete rodoviário MT -> MG. Acima de R$ 310/t, o milho de MT perde paridade CIF em MG."
+    },
+    {
+      "commodity": "Milho B3 (Nov/26 vs. Mar/27)",
+      "current_base": "Nov: R$ 66,57/sc | Mar: R$ 75,96/sc",
+      "short_term_target_23_oct": "Nov: R$ 65,80 – 66,80 | Mar: R$ 75,50 – 77,00",
+      "end_of_month_30_oct": {
+        "base_case": "Mar: R$ 76,00 – R$ 78,00",
+        "bull_case": "R$ 80,00+",
+        "bear_case": "R$ 73,00"
+      },
+      "audit_trigger": "Impacto do Frete: Entrada da colheita da soja em jan–mar/27 eleva o frete rodoviário em +15% a +25%, sustentando o Março/27 além do etanol (+6,6%)."
+    },
+    {
+      "commodity": "DDG / DDGS (FOB CO vs. CIF MG)",
+      "current_base": "FOB CO: R$ 937,95/t | CIF MG: ~R$ 1.170/t",
+      "short_term_target_23_oct": "FOB: R$ 930 – 950/t | CIF MG: R$ 1.150 – 1.195/t",
+      "end_of_month_30_oct": {
+        "base_case": "FOB: R$ 935 – 965/t | CIF MG: R$ 1.160 – 1.210/t",
+        "bull_case": "FOB: R$ 990,00/t",
+        "bear_case": "FOB: R$ 910,00/t"
+      },
+      "audit_trigger": "Impacto do Frete: Arbitragem das usinas entre frete para exportação (88% dos 130,65 mil t de set foram para a China) e venda CIF mercado interno."
+    },
+    {
+      "commodity": "Algodão Pluma (ICE) e Caroço (MT vs. MG)",
+      "current_base": "ICE: 80,48 c/lb | FOB MT: R$ 705,19/t | CIF MG: ~R$ 975/t",
+      "short_term_target_23_oct": "ICE: 80,00 – 81,80 c/lb | FOB MT: R$ 700 – 720/t | CIF MG: R$ 955 – 995/t",
+      "end_of_month_30_oct": {
+        "base_case": "ICE: 80,50 – 82,50 | FOB MT: R$ 710 – 740/t | CIF MG: R$ 970 – 1.020/t",
+        "bull_case": "ICE: 84,00 c/lb | FOB MT: R$ 765,00/t",
+        "bear_case": "ICE: 78,50 c/lb | FOB MT: R$ 690,00/t"
+      },
+      "audit_trigger": "Impacto do Frete: Frete de retorno (backhaul) MT -> MG representa ~28% do custo CIF em MG; travar o frete agora blinda a margem nutricional."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "O Basis Logístico Regional (Triângulo Mineiro vs. Mato Grosso) e a 'Armadilha do Frete de Colheita' no 1º Trimestre de 2027",
+    "analysis": "Na Soja, a saca no Triângulo Mineiro fecha a R$ 148,03 FOB contra R$ 142,00 FOB em Rondonópolis-MT (+R$ 6,03/saca ou +R$ 100,50/t). No Milho, a saca no Triângulo Mineiro fecha a R$ 64,26 FOB contra R$ 46,20 FOB em Sorriso-MT (+R$ 18,06/saca ou +R$ 301,00/t). Com o plantio da soja em MT já em 51,86%, um volume gigantesco de soja precoce entrará em colheita entre 25 de dezembro e 10 de fevereiro com o Petróleo WTI acima de US$ 101,77/barril, sugando a frota de caminhões e elevando o frete rodoviário em 20% a 30%.",
+    "strategic_takeaway": "Para quem compra Milho, Caroço de Algodão (R$ 705,19/t FOB MT) e DDG (R$ 937,95/t FOB CO) em Minas Gerais, a recomendação é embarcar fisicamente o máximo possível agora em outubro/novembro aproveitando o frete de retorno (backhaul a ~R$ 260–280/t) para estocar na fazenda/cooperativa. Para o produtor do Triângulo Mineiro, a disparada do frete em jan/fev encarecerá o grão vindo do MT, forçando as esmagadoras e fábricas de ração mineiras a pagar um basis ainda mais alto pelo grão local."
+  }
+}
