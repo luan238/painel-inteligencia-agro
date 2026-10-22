@@ -351,14 +351,18 @@
 
         perfis.forEach(p => {
           if (estrat[p]) {
-            consultoriaHtml += `<div class="nutre-card" style="margin-top:10px;"><div class="card-top-label">Elo: ${nomesBonitos[p]}</div><div class="card-desc" style="margin-top:4px;">${estrat[p]}</div></div>`;
+            // Remove tags de citação indesejadas do texto
+            let textoLimpo = estrat[p].replace(/\/g, '');
+            consultoriaHtml += `<div class="nutre-card" style="margin-top:10px;"><div class="card-top-label">Elo: ${nomesBonitos[p]}</div><div class="card-desc" style="margin-top:4px;">${textoLimpo}</div></div>`;
           }
         });
+
+        let resumoExecutivoLimpo = (bloco.executive_summary || '').replace(/\/g, '');
 
         container.innerHTML += `
           <div style="margin-bottom: 28px;">
             <div class="sub-group-title">${bloco.title}</div>
-            <div class="ref-box"><strong>Viés de Mercado:</strong> ${bloco.market_bias}<br><br><strong>Resumo Executivo:</strong> ${bloco.executive_summary}</div>
+            <div class="ref-box"><strong>Viés de Mercado:</strong> ${bloco.market_bias}<br><br><strong>Resumo Executivo:</strong> ${resumoExecutivoLimpo}</div>
             <div class="cards-grid-2">
               <div class="nutre-card">
                 <div><div class="card-top-label">Visão da Mesa (Trader & Hedge FX)</div><div class="card-desc" style="margin-top:8px; color:#fff;">${estrat.trader_long_short_fx || ''}</div></div>
