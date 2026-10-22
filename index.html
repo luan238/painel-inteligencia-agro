@@ -117,16 +117,16 @@
       <div class="sidebar-header">CONFIGURAÇÕES DA ANÁLISE</div>
       <div class="control-group">
         <label>Praça de Cotação</label>
-        <input type="text" id="input-praca" class="control-input" value="Triângulo Mineiro / MT / CBOT" oninput="atualizarTitulosPraca()" />
+        <input type="text" id="input-praca" class="control-input" value="Triângulo Mineiro / MT / Santos / Paranaguá / CBOT" oninput="atualizarTitulosPraca()" />
       </div>
       <div class="control-group">
         <label>Perfil de Comercialização</label>
         <select id="select-perfil" class="control-select" onchange="renderizarAnaliseCulturas()">
           <option value="TODOS">Todos os Elos (Completa)</option>
-          <option value="producer">Produtores Rurais</option>
-          <option value="industry_nutrition">Indústrias e Confinamentos</option>
-          <option value="cooperative">Cooperativas e Revendas</option>
-          <option value="trading_desk">Tradings e Exportadores</option>
+          <option value="Produtores Rurais">Produtores Rurais</option>
+          <option value="Cooperativas e Revendas">Cooperativas e Revendas</option>
+          <option value="Indústrias e Confinamentos">Indústrias e Confinamentos</option>
+          <option value="Tradings e Exportadores">Tradings e Exportadores</option>
         </select>
       </div>
 
@@ -153,12 +153,12 @@
       </div>
 
       <section id="aba-panorama" class="tab-panel active">
-        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praça: Triângulo Mineiro / MT / CBOT</div>
+        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praça: Triângulo Mineiro / MT / Santos / Paranaguá</div>
         <div class="cards-grid-2" id="grid-panorama-cards"></div>
       </section>
 
       <section id="aba-culturas" class="tab-panel">
-        <div class="section-divider-title">Análise Contínua por Cultura, Ativos e Câmbio</div>
+        <div class="section-divider-title">Direcionamento Estratégico por Elo & Fontes de Base</div>
         <div id="container-analise-culturas"></div>
       </section>
 
@@ -185,14 +185,14 @@
       </section>
 
       <section id="aba-noticias" class="tab-panel">
-        <div class="section-divider-title">Fatos Geradores, Impacto no Trading e Links Oficiais</div>
+        <div class="section-divider-title">Central de Notícias e Fontes Oficiais</div>
         <div class="cards-grid-2" id="grid-noticias-links"></div>
       </section>
 
       <section id="aba-ndf" class="tab-panel">
         <div class="section-divider-title">Calculadora de Arbitragem de Juros (NDF)</div>
         <div class="cards-grid-3" style="margin-bottom: 16px;">
-          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.01" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.50" step="0.10" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.02" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.50" step="0.10" oninput="calcularNDF()" /></div>
           <div class="nutre-card"><label class="card-top-label">Taxa DI / Selic (% a.a.)</label><input type="number" id="calc-di" class="control-input" value="11.50" step="0.25" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Cupom Cambial (% a.a.)</label><input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" /></div>
           <div class="nutre-card"><label class="card-top-label">Dias Úteis (252)</label><input type="number" id="calc-du" class="control-input" value="111" step="1" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Dias Corridos (360)</label><input type="number" id="calc-dc" class="control-input" value="163" step="1" oninput="calcularNDF()" /></div>
         </div>
@@ -205,7 +205,7 @@
         <div class="section-divider-title">Matriz de Projeções Auditáveis</div>
         <div class="table-wrapper">
           <table id="tabela-projecoes">
-            <thead><tr><th>Ativo</th><th>Base Atual</th><th>Alvo Curto Prazo</th><th>Cenário Mês</th><th>Altista / Baixista</th><th>Gatilho</th></tr></thead>
+            <thead><tr><th>Ativo / Commodity</th><th>Base Atual</th><th>Alvo Curto Prazo</th><th>Cenário Mês</th><th>Altista / Baixista</th><th>Gatilho / Logística</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -242,7 +242,7 @@
       document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions} | ${meta.timestamp} | ${meta.analyst}`;
       
       const exec = dadosBoletim.executive_summary;
-      let resumoHtml = `<strong>Câmbio & Macro:</strong> ${exec.cambio_e_macro}<br><br>`;
+      let resumoHtml = `<strong>Câmbio, Energia & Logística:</strong> ${exec.cambio_energia_frete}<br><br>`;
       resumoHtml += `<strong>Complexo Soja:</strong> ${exec.complexo_soja}`;
       document.getElementById('caixa-resumo-falado').innerHTML = resumoHtml;
 
@@ -321,23 +321,12 @@
         let cor = item.weekly_change_pct >= 0 ? 'var(--green)' : '#ff5252';
         let sinal = item.weekly_change_pct >= 0 ? '+' : '';
 
-        let unidade = item.unit || '';
-        const nome = item.asset.toLowerCase();
-        if (!unidade || unidade === 'R$' || unidade === 'US$') {
-          if (nome.includes('dólar')) unidade = 'R$';
-          else if (nome.includes('petróleo')) unidade = 'US$/barril';
-          else if (nome.includes('cbot') || nome.includes('milho cbot')) unidade = 'US$/bu';
-          else if (nome.includes('físico') || nome.includes('spread') || nome.includes('caroço') || nome.includes('ddg')) unidade = 'R$/sc ou t';
-          else if (nome.includes('farelo')) unidade = 'US$/tc';
-          else if (nome.includes('óleo') || nome.includes('algodão')) unidade = 'cents/lb';
-        }
-
         grid.innerHTML += `
           <div class="nutre-card">
             <div>
               <div class="card-top-label">${item.asset}</div>
               <div class="card-big-value">
-                ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${unidade}</span>
+                ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${item.unit}</span>
                 <span style="font-size: 13px; font-weight: 600; color: ${cor}; margin-left: 6px;">(${sinal}${item.weekly_change_pct}%)</span>
               </div>
               <div class="card-desc">${item.weekly_driver}</div>
@@ -355,47 +344,28 @@
       const container = document.getElementById('container-analise-culturas');
       container.innerHTML = '';
 
-      dadosBoletim.detailed_blocks_and_news.forEach(bloco => {
-        let consultoriaHtml = '';
-        const estrat = bloco.consultoria_and_trader_strategy || bloco.consulting_and_trader_strategy;
-        
-        const perfis = perfilFiltro === 'TODOS' ? ['producer', 'cooperative', 'industry_nutrition', 'trading_desk'] : [perfilFiltro];
-        
-        const nomesBonitos = {
-          'producer': 'Produtores Rurais', 'cooperative': 'Cooperativas e Revendas',
-          'industry_nutrition': 'Indústrias e Confinamentos', 'trading_desk': 'Tradings e Exportadores'
-        };
+      dadosBoletim.strategic_directions_with_links.forEach(item => {
+        if (perfilFiltro !== 'TODOS' && item.elo !== `Elo: ${perfilFiltro}`) {
+          return;
+        }
 
-        perfis.forEach(p => {
-          if (estrat[p]) {
-            let textoLimpo = estrat[p].replace(/\/g, '');
-            consultoriaHtml += `<div class="nutre-card" style="margin-top:10px;"><div class="card-top-label">Elo: ${nomesBonitos[p]}</div><div class="card-desc" style="margin-top:4px;">${textoLimpo}</div></div>`;
-          }
-        });
-
-        let resumoExecutivoLimpo = (bloco.executive_summary || '').replace(/\/g, '');
-
-        // Criação da caixa com as fontes/notícias de base deste bloco específico
         let fontesHtml = '';
-        if (bloco.news_sources && bloco.news_sources.length > 0) {
-          let listaLinks = bloco.news_sources.map(n => `<a href="${n.url}" target="_blank">🔗 ${n.headline}</a>`).join('');
+        if (item.reference_links && item.reference_links.length > 0) {
+          let listaLinks = item.reference_links.map(l => `<a href="${l.url}" target="_blank">🔗 ${l.label}</a>`).join('');
           fontesHtml = `
             <details class="sources-box">
-              <summary>📚 Ver fontes e notícias de base deste bloco (${bloco.news_sources.length})</summary>
+              <summary>📚 Ver fontes e notícias de base (${item.reference_links.length})</summary>
               <div class="sources-list">${listaLinks}</div>
             </details>`;
         }
 
         container.innerHTML += `
           <div style="margin-bottom: 28px;">
-            <div class="sub-group-title">${bloco.title}</div>
-            <div class="ref-box"><strong>Viés de Mercado:</strong> ${bloco.market_bias}<br><br><strong>Resumo Executivo:</strong> ${resumoExecutivoLimpo}</div>
-            <div class="cards-grid-2">
-              <div class="nutre-card">
-                <div><div class="card-top-label">Visão da Mesa (Trader & Hedge FX)</div><div class="card-desc" style="margin-top:8px; color:#fff;">${estrat.trader_long_short_fx || ''}</div></div>
-              </div>
+            <div class="sub-group-title">${item.elo}</div>
+            <div class="nutre-card" style="margin-bottom: 12px;">
+              <div class="card-top-label">Direcionamento Estratégico</div>
+              <div class="card-desc" style="color: #fff; font-size: 14px; margin-top: 4px; line-height: 1.6;">${item.direction}</div>
             </div>
-            ${consultoriaHtml ? `<div style="margin-top:12px;"><div class="card-top-label" style="font-weight:700; color:#fff; margin-bottom:6px;">DIRECIONAMENTO ESTRATÉGICO</div>${consultoriaHtml}</div>` : ''}
             ${fontesHtml}
           </div>
         `;
@@ -405,16 +375,16 @@
     function renderizarNoticiasGerais() {
       const gridNot = document.getElementById('grid-noticias-links');
       gridNot.innerHTML = '';
-      dadosBoletim.detailed_blocks_and_news.forEach(bloco => {
-        (bloco.news_sources || []).forEach(not => {
+      dadosBoletim.strategic_directions_with_links.forEach(item => {
+        (item.reference_links || []).forEach(not => {
           gridNot.innerHTML += `
             <div class="nutre-card">
               <div>
-                <div class="card-top-label">${bloco.title.split('(')[0]}</div>
-                <div class="card-big-value" style="font-size:16px;">${not.headline}</div>
+                <div class="card-top-label">${item.elo}</div>
+                <div class="card-big-value" style="font-size:16px;">${not.label}</div>
               </div>
               <div class="card-footer" style="border-top:1px solid #202020; padding-top:10px; font-size:12.2px; color:var(--orange-bright);">
-                <a href="${not.url}" target="_blank">🔗 Ler na íntegra</a>
+                <a href="${not.url}" target="_blank">🔗 Aceder à fonte oficial</a>
               </div>
             </div>`;
         });
@@ -443,9 +413,9 @@
       document.getElementById('container-mentoria').innerHTML = `
         <div class="nutre-card">
           <div>
-            <div class="card-top-label">Pílula Estratégica</div>
+            <div class="card-top-label">Pílula Estratégica & Logística</div>
             <div class="card-big-value" style="font-size:18px; color:var(--orange-bright);">${p.title}</div>
-            <div class="card-desc" style="white-space:pre-line; margin-top:8px;">${p.analysis}<br><br><strong>Ação Estratégica:</strong> ${p.strategic_takeaway}</div>
+            <div class="card-desc" style="white-space:pre-line; margin-top:8px;"><strong>Fórmula:</strong> ${p.formula}<br><br>${p.analysis}<br><br><strong>Conclusão Estratégica:</strong> ${p.strategic_takeaway}</div>
           </div>
         </div>`;
 
