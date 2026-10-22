@@ -81,6 +81,12 @@
     .card-footer { border-top: 1px solid #202020; padding-top: 10px; font-size: 12.2px; color: var(--orange-bright); display: flex; gap: 12px; align-items: center; }
     .card-footer a { color: var(--orange-bright); text-decoration: none; }
 
+    .sources-box { background-color: #111111; border: 1px solid #222; border-radius: 6px; padding: 10px 14px; margin-top: 10px; font-size: 12.5px; }
+    .sources-box summary { color: var(--orange-bright); cursor: pointer; font-weight: 600; outline: none; }
+    .sources-list { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+    .sources-list a { color: #3399ff; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+    .sources-list a:hover { text-decoration: underline; }
+
     .table-wrapper { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px; background-color: var(--bg-card); }
     table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
     th { background-color: #1a1a1a; color: #ffffff; font-weight: 600; padding: 12px 14px; border-bottom: 1px solid #2a2a2a; }
@@ -315,12 +321,23 @@
         let cor = item.weekly_change_pct >= 0 ? 'var(--green)' : '#ff5252';
         let sinal = item.weekly_change_pct >= 0 ? '+' : '';
 
+        let unidade = item.unit || '';
+        const nome = item.asset.toLowerCase();
+        if (!unidade || unidade === 'R$' || unidade === 'US$') {
+          if (nome.includes('dólar')) unidade = 'R$';
+          else if (nome.includes('petróleo')) unidade = 'US$/barril';
+          else if (nome.includes('cbot') || nome.includes('milho cbot')) unidade = 'US$/bu';
+          else if (nome.includes('físico') || nome.includes('spread') || nome.includes('caroço') || nome.includes('ddg')) unidade = 'R$/sc ou t';
+          else if (nome.includes('farelo')) unidade = 'US$/tc';
+          else if (nome.includes('óleo') || nome.includes('algodão')) unidade = 'cents/lb';
+        }
+
         grid.innerHTML += `
           <div class="nutre-card">
             <div>
               <div class="card-top-label">${item.asset}</div>
               <div class="card-big-value">
-                ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${item.unit}</span>
+                ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${unidade}</span>
                 <span style="font-size: 13px; font-weight: 600; color: ${cor}; margin-left: 6px;">(${sinal}${item.weekly_change_pct}%)</span>
               </div>
               <div class="card-desc">${item.weekly_driver}</div>
@@ -351,13 +368,23 @@
 
         perfis.forEach(p => {
           if (estrat[p]) {
-            // Remove tags de citação indesejadas do texto
             let textoLimpo = estrat[p].replace(/\/g, '');
             consultoriaHtml += `<div class="nutre-card" style="margin-top:10px;"><div class="card-top-label">Elo: ${nomesBonitos[p]}</div><div class="card-desc" style="margin-top:4px;">${textoLimpo}</div></div>`;
           }
         });
 
         let resumoExecutivoLimpo = (bloco.executive_summary || '').replace(/\/g, '');
+
+        // Criação da caixa com as fontes/notícias de base deste bloco específico
+        let fontesHtml = '';
+        if (bloco.news_sources && bloco.news_sources.length > 0) {
+          let listaLinks = bloco.news_sources.map(n => `<a href="${n.url}" target="_blank">🔗 ${n.headline}</a>`).join('');
+          fontesHtml = `
+            <details class="sources-box">
+              <summary>📚 Ver fontes e notícias de base deste bloco (${bloco.news_sources.length})</summary>
+              <div class="sources-list">${listaLinks}</div>
+            </details>`;
+        }
 
         container.innerHTML += `
           <div style="margin-bottom: 28px;">
@@ -369,6 +396,7 @@
               </div>
             </div>
             ${consultoriaHtml ? `<div style="margin-top:12px;"><div class="card-top-label" style="font-weight:700; color:#fff; margin-bottom:6px;">DIRECIONAMENTO ESTRATÉGICO</div>${consultoriaHtml}</div>` : ''}
+            ${fontesHtml}
           </div>
         `;
       });
