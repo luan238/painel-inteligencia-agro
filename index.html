@@ -232,22 +232,18 @@
     }
 
     function inicializarInterface() {
-      // Metadados
       const meta = dadosBoletim.metadata;
       document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions} | ${meta.timestamp} | ${meta.analyst}`;
       
-      // Resumo Executivo Combinado
       const exec = dadosBoletim.executive_summary;
       let resumoHtml = `<strong>Câmbio & Macro:</strong> ${exec.cambio_e_macro}<br><br>`;
       resumoHtml += `<strong>Complexo Soja:</strong> ${exec.complexo_soja}`;
       document.getElementById('caixa-resumo-falado').innerHTML = resumoHtml;
 
-      // Sidebar Quotes (Cotações Rápidas)
       const sbContainer = document.getElementById('sidebar-quotes-container');
       sbContainer.innerHTML = '';
       const indicadores = dadosBoletim.market_indicators;
       
-      // Helper para preencher sidebar
       const preencherSidebar = (grupo) => {
         for (const [chave, valor] of Object.entries(grupo)) {
            let tituloFomatado = chave.replace(/_/g, ' ').toUpperCase();
@@ -272,7 +268,6 @@
       const dSemanal = dadosBoletim.weekly_evolution_wtd;
       const dMensal = dadosBoletim.monthly_evolution_mtd;
 
-      // Semanal
       let txtSemanal = `Período: ${dSemanal.period_start} a ${dSemanal.period_end}<br><br>`;
       const labelsSemanais = [];
       const dadosSemanais = [];
@@ -290,7 +285,6 @@
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }, x: { grid: { display: false }, ticks: { color: '#9e9e9e' } } } }
       });
 
-      // Mensal
       let txtMensal = `Período: ${dMensal.month_start} a ${dMensal.current_date}<br><br>`;
       document.getElementById('texto-resumo-mensal').innerHTML = txtMensal;
       
@@ -317,14 +311,18 @@
       const grid = document.getElementById('grid-panorama-cards');
       grid.innerHTML = '';
       
-      // Como o JSON novo não tem 'panorama_geral', vamos gerar cards a partir da weekly_evolution_wtd
       dadosBoletim.weekly_evolution_wtd.assets.forEach(item => {
         let cor = item.weekly_change_pct >= 0 ? 'var(--green)' : '#ff5252';
+        let sinal = item.weekly_change_pct >= 0 ? '+' : '';
+
         grid.innerHTML += `
           <div class="nutre-card">
             <div>
               <div class="card-top-label">${item.asset}</div>
-              <div class="card-big-value">${item.current_value} <span style="font-size:14px; color:${cor};">(${item.weekly_change_pct}%)</span></div>
+              <div class="card-big-value">
+                ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${item.unit}</span>
+                <span style="font-size: 13px; font-weight: 600; color: ${cor}; margin-left: 6px;">(${sinal}${item.weekly_change_pct}%)</span>
+              </div>
               <div class="card-desc">${item.weekly_driver}</div>
             </div>
           </div>`;
