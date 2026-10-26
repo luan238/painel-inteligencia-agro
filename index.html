@@ -11,7 +11,7 @@
   <style>
     :root {
       --bg-topbar: #050505;
-      --bg-sidebar: #0a0a0a;
+      --bg-panel: #0a0a0a;
       --bg-main: #0d0d0d;
       --bg-card: #141414;
       --bg-ref: #161616;
@@ -35,25 +35,87 @@
     .brand-logo img { height: 30px; object-fit: contain; }
     .topbar-right { font-size: 13px; color: #a3a3a3; }
 
-    .layout-wrapper { display: flex; margin-top: 54px; min-height: calc(100vh - 54px); }
-    
-    .sidebar {
-      width: 280px; min-width: 280px; background-color: var(--bg-sidebar);
-      border-right: 1px solid var(--border-subtle); padding: 22px 18px; display: flex; flex-direction: column; gap: 14px;
-    }
-    .sidebar-header { font-size: 11.5px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.7px; margin-top: 8px; }
-    .control-group { display: flex; flex-direction: column; gap: 6px; }
-    .control-group label { font-size: 12px; color: #b0b0b0; }
-    .control-input, .control-select {
-      width: 100%; background-color: var(--bg-input); border: 1px solid #262626;
-      border-radius: 6px; padding: 9px 12px; color: var(--text-white); font-family: 'Inter', sans-serif; font-size: 13.5px; outline: none;
-    }
-    .quote-readonly { text-align: right; font-weight: 500; color: #f0f0f0; }
+    .layout-wrapper { margin-top: 54px; min-height: calc(100vh - 54px); display: flex; justify-content: center; }
+    .main-content { width: 100%; max-width: 1440px; padding: 28px 36px 60px 36px; }
 
-    .main-content { flex: 1; padding: 28px 36px 60px 36px; max-width: calc(100vw - 280px); }
     .page-title { font-size: 29px; font-weight: 700; color: var(--text-white); margin-bottom: 4px; }
     .page-title span { color: var(--orange-bright); }
     .page-subtitle { font-size: 13.8px; color: var(--text-muted); margin-bottom: 18px; }
+
+    /* PAINEL DE CONFIGURAÇÕES DA ANÁLISE FIXO NO TOPO (NÃO EDITÁVEL) */
+    .config-top-banner {
+      background-color: var(--bg-panel);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--orange-bright);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .config-top-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-bottom: 1px solid #1c1c1c;
+      padding-bottom: 8px;
+    }
+    .config-top-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--orange-bright);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .config-lock-badge {
+      font-size: 11px;
+      color: var(--text-muted);
+      background-color: #141414;
+      border: 1px solid #262626;
+      padding: 3px 8px;
+      border-radius: 4px;
+      user-select: none;
+    }
+    .config-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 14px;
+    }
+    .config-item-box {
+      background-color: var(--bg-input);
+      border: 1px solid #222222;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .config-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .config-fixed-value {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-white);
+      line-height: 1.45;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .praca-pill {
+      background-color: #1b1611;
+      border: 1px solid #3d2814;
+      color: #ffb74d;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 5px;
+    }
 
     .ref-box { background-color: var(--bg-ref); border: 1px solid #282828; border-radius: 8px; padding: 14px 18px; font-size: 13.2px; color: #d4d4d4; line-height: 1.55; margin-bottom: 22px; }
     .ref-box strong { color: var(--text-white); }
@@ -69,7 +131,41 @@
     .section-divider-title { font-size: 17.5px; font-weight: 700; color: var(--text-white); padding-bottom: 10px; border-bottom: 1px solid #222222; margin: 18px 0 14px 0; }
     .sub-group-title { font-size: 15px; font-weight: 700; color: var(--text-white); margin: 18px 0 10px 0; border-left: 3px solid var(--orange-bright); padding-left: 10px; }
     .cards-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 18px; }
-    .cards-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 18px; }
+    .cards-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-bottom: 22px; }
+
+    .control-input {
+      width: 100%; background-color: var(--bg-input); border: 1px solid #262626;
+      border-radius: 6px; padding: 9px 12px; color: var(--text-white); font-family: 'Inter', sans-serif; font-size: 13.5px; outline: none;
+    }
+
+    /* ESTILO DOS CARDS FIXOS E NÃO EDITÁVEIS DA ABA COTAÇÕES DO DIA */
+    .quote-fixed-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 13px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .quote-fixed-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .quote-fixed-value {
+      background-color: var(--bg-input);
+      border: 1px solid #222222;
+      border-radius: 6px;
+      padding: 9px 12px;
+      font-size: 13.2px;
+      font-weight: 600;
+      color: #f5f5f5;
+      line-height: 1.45;
+      word-break: break-word;
+    }
 
     .nutre-card {
       background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px;
@@ -106,9 +202,8 @@
     td { padding: 12px 14px; border-bottom: 1px solid #1f1f1f; color: #d4d4d4; }
 
     @media (max-width: 900px) {
-      .layout-wrapper { flex-direction: column; }
-      .sidebar { width: 100%; }
       .main-content { max-width: 100%; padding: 20px; }
+      .config-grid { grid-template-columns: 1fr; }
       .cards-grid-2 { grid-template-columns: 1fr; }
     }
   </style>
@@ -127,37 +222,52 @@
   </header>
 
   <div class="layout-wrapper">
-    <aside class="sidebar">
-      <div class="sidebar-header">CONFIGURAÇÕES DA ANÁLISE</div>
-      <div class="control-group">
-        <label>Praça de Cotação</label>
-        <input type="text" id="input-praca" class="control-input" value="Triângulo Mineiro / MT / Santos / Paranaguá / CBOT" oninput="atualizarTitulosPraca()" />
-      </div>
-      <div class="control-group">
-        <label>Perfil de Comercialização</label>
-        <select id="select-perfil" class="control-select" onchange="renderizarAnaliseCulturas()">
-          <option value="TODOS">Todos os Elos (Completa)</option>
-          <option value="Produtores">Produtores Rurais</option>
-          <option value="Cooperativas">Cooperativas e Revendas</option>
-          <option value="Indústrias">Indústrias, Confinamentos e Torrefadoras</option>
-          <option value="Tradings">Tradings, Exportadores e Trader</option>
-        </select>
-      </div>
-
-      <div class="sidebar-header">COTAÇÕES DO DIA</div>
-      <div id="sidebar-quotes-container" style="display:flex; flex-direction:column; gap:10px;"></div>
-    </aside>
-
     <main class="main-content">
       <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
       <div class="page-subtitle" id="subtitulo-turno">A carregar boletim atualizado...</div>
+
+      <!-- CONFIGURAÇÕES DA ANÁLISE NO TOPO DA PÁGINA (FIXO E NÃO EDITÁVEL) -->
+      <div class="config-top-banner">
+        <div class="config-top-header">
+          <div class="config-top-title">⚙️ Configurações da Análise (Parâmetros Fixos de Extração)</div>
+          <span class="config-lock-badge">🔒 Parâmetros Fixos • Somente Leitura</span>
+        </div>
+        <div class="config-grid">
+          <div class="config-item-box">
+            <span class="config-label">Praças de Extração das Cotações</span>
+            <div class="config-fixed-value" id="top-config-pracas">
+              <span class="praca-pill">Triângulo Mineiro</span>
+              <span class="praca-pill">Matas de Minas</span>
+              <span class="praca-pill">Mato Grosso (IMEA)</span>
+              <span class="praca-pill">Porto de Santos (SP)</span>
+              <span class="praca-pill">Porto de Paranaguá (PR)</span>
+              <span class="praca-pill">CBOT (Chicago)</span>
+              <span class="praca-pill">ICE NY / Londres</span>
+              <span class="praca-pill">B3</span>
+            </div>
+          </div>
+          <div class="config-item-box">
+            <span class="config-label">Perfil de Comercialização</span>
+            <div class="config-fixed-value" id="top-config-perfil" style="font-size: 13px; color: #e5e5e5;">
+              Todos os Elos da Cadeia (Visão Completa: Produtores, Cooperativas, Indústrias/Confinamentos e Tradings)
+            </div>
+          </div>
+          <div class="config-item-box">
+            <span class="config-label">Escopo de Ativos & Janela</span>
+            <div class="config-fixed-value" id="top-config-escopo" style="font-size: 12.5px; color: #cccccc;">
+              Soja, Milho, DDGS, Algodão, Café e Câmbio (FOB / CIF)
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="ref-box" id="caixa-resumo-falado">
         <strong>Resumo Executivo do Turno.</strong> A carregar dados...
       </div>
 
       <div class="tabs-bar">
-        <button class="tab-btn active" onclick="trocarAba('aba-panorama', this)">Panorama & Cotações</button>
+        <button class="tab-btn active" onclick="trocarAba('aba-panorama', this)">Panorama Geral</button>
+        <button class="tab-btn" onclick="trocarAba('aba-cotacoes-dia', this)">📊 Cotações do Dia</button>
         <button class="tab-btn" onclick="trocarAba('aba-culturas', this)">Análise por Cultura & Trading</button>
         <button class="tab-btn" onclick="trocarAba('aba-semanal', this)">📈 Evolução Semanal</button>
         <button class="tab-btn" onclick="trocarAba('aba-mensal', this)">📅 Evolução Mensal</button>
@@ -167,8 +277,17 @@
       </div>
 
       <section id="aba-panorama" class="tab-panel active">
-        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praça: Triângulo Mineiro / MT / Santos / Paranaguá</div>
+        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praças: Triângulo Mineiro / MT / Santos / Paranaguá / CBOT / ICE</div>
         <div class="cards-grid-2" id="grid-panorama-cards"></div>
+      </section>
+
+      <!-- NOVA ABA EXCLUSIVA, FIXA E NÃO EDITÁVEL: COTAÇÕES DO DIA -->
+      <section id="aba-cotacoes-dia" class="tab-panel">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; border-bottom:1px solid #222; padding-bottom:10px; margin:18px 0 14px 0;">
+          <div class="section-divider-title" style="border:none; margin:0; padding:0;">Painel Oficial de Cotações do Dia (Por Complexo e Praça)</div>
+          <span class="config-lock-badge">🔒 Dados Oficiais Fixos • Não Editável</span>
+        </div>
+        <div id="tab-quotes-container"></div>
       </section>
 
       <section id="aba-culturas" class="tab-panel">
@@ -252,9 +371,19 @@
     }
 
     function inicializarInterface() {
-      const meta = dadosBoletim.metadata;
-      document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions} | ${meta.timestamp} | ${meta.analyst}`;
+      const meta = dadosBoletim.metadata || {};
+      document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions || ''} | ${meta.timestamp || ''} | ${meta.analyst || ''}`;
       
+      // Atualiza o painel fixo de Configurações da Análise no topo da página
+      if (meta.target_regions) {
+        const pracasArray = meta.target_regions.split('/').map(p => p.trim()).filter(Boolean);
+        document.getElementById('top-config-pracas').innerHTML = pracasArray.map(p => `<span class="praca-pill">📍 ${p}</span>`).join('');
+        document.getElementById('titulo-praca-panorama').textContent = `Análise Económica e Fecho — Praças: ${meta.target_regions}`;
+      }
+      if (meta.scope) {
+        document.getElementById('top-config-escopo').textContent = meta.scope;
+      }
+
       // Renderiza TODOS os blocos do Resumo Executivo no topo
       const exec = dadosBoletim.executive_summary || {};
       let resumoPartes = [];
@@ -265,24 +394,31 @@
       if (exec.complexo_cafe) resumoPartes.push(`<strong>☕ Complexo Café (Arábica & Robusta):</strong> ${exec.complexo_cafe}`);
       document.getElementById('caixa-resumo-falado').innerHTML = resumoPartes.join('<br><br>');
 
-      // Preenche a barra lateral com TODAS as culturas (incluindo Café)
-      const sbContainer = document.getElementById('sidebar-quotes-container');
-      sbContainer.innerHTML = '';
+      // Preenche a nova aba fixa e não editável "Cotações do Dia"
+      const quotesContainer = document.getElementById('tab-quotes-container');
+      quotesContainer.innerHTML = '';
       const indicadores = dadosBoletim.market_indicators || {};
       
-      const preencherSidebar = (tituloBloco, grupo) => {
-        sbContainer.innerHTML += `<div style="font-size:11px; font-weight:700; color:var(--orange-bright); margin-top:8px; border-bottom:1px solid #222; padding-bottom:4px;">${tituloBloco}</div>`;
+      const preencherAbaCotacoes = (tituloBloco, grupo) => {
+        let cardsHtml = '';
         for (const [chave, valor] of Object.entries(grupo)) {
-           let tituloFormatado = chave.replace(/_/g, ' ').toUpperCase();
-           sbContainer.innerHTML += `<div class="control-group"><label>${tituloFormatado}</label><input type="text" class="control-input quote-readonly" value="${valor}" readonly /></div>`;
+          let tituloFormatado = chave.replace(/_/g, ' ').toUpperCase();
+          cardsHtml += `
+            <div class="quote-fixed-card">
+              <div class="quote-fixed-label">${tituloFormatado}</div>
+              <div class="quote-fixed-value">${valor}</div>
+            </div>`;
         }
+        quotesContainer.innerHTML += `
+          <div class="sub-group-title">${tituloBloco}</div>
+          <div class="cards-grid-3">${cardsHtml}</div>`;
       };
       
-      if(indicadores.cambio_e_energia) preencherSidebar("💵 CÂMBIO & ENERGIA", indicadores.cambio_e_energia);
-      if(indicadores.complexo_soja) preencherSidebar("🌱 COMPLEXO SOJA", indicadores.complexo_soja);
-      if(indicadores.complexo_milho_e_ddgs) preencherSidebar("🌽 MILHO & DDGS", indicadores.complexo_milho_e_ddgs);
-      if(indicadores.complexo_algodao) preencherSidebar("☁️ ALGODÃO & CAROÇO", indicadores.complexo_algodao);
-      if(indicadores.complexo_cafe) preencherSidebar("☕ CAFÉ ARÁBICA & ROBUSTA", indicadores.complexo_cafe);
+      if(indicadores.cambio_e_energia) preencherAbaCotacoes("💵 CÂMBIO, ENERGIA & FRETE", indicadores.cambio_e_energia);
+      if(indicadores.complexo_soja) preencherAbaCotacoes("🌱 COMPLEXO SOJA (GRÃO, FARELO E ÓLEO)", indicadores.complexo_soja);
+      if(indicadores.complexo_milho_e_ddgs) preencherAbaCotacoes("🌽 COMPLEXO MILHO, ETANOL & DDGS", indicadores.complexo_milho_e_ddgs);
+      if(indicadores.complexo_algodao) preencherAbaCotacoes("☁️ COMPLEXO ALGODÃO & CAROÇO", indicadores.complexo_algodao);
+      if(indicadores.complexo_cafe) preencherAbaCotacoes("☕ COMPLEXO CAFÉ (ARÁBICA & ROBUSTA)", indicadores.complexo_cafe);
 
       renderizarPanoramaCards();
       renderizarAnaliseCulturas();
@@ -357,13 +493,8 @@
       });
     }
 
-    function atualizarTitulosPraca() {
-      document.getElementById('titulo-praca-panorama').textContent = `Análise Económica e Fecho — Praça: ${document.getElementById('input-praca').value}`;
-    }
-
-    // NOVA FUNÇÃO: Renderiza SEPARADO POR CULTURA (Soja, depois Milho/DDGS, depois Algodão, depois Café, depois Câmbio)
+    // Renderiza SEPARADO POR CULTURA (fixo para Todos os Elos)
     function renderizarAnaliseCulturas() {
-      const perfilFiltro = document.getElementById('select-perfil').value;
       const container = document.getElementById('container-analise-culturas');
       container.innerHTML = '';
 
@@ -371,10 +502,8 @@
 
       if (blocosCulturas.length > 0) {
         blocosCulturas.forEach(bloco => {
-          // Monta a lista de Elos dentro desta Cultura
           let elosLista = bloco.strategic_directions_by_elo || [];
 
-          // Fallback automático caso o JSON antigo tenha apenas consulting_and_trader_strategy
           if (elosLista.length === 0 && bloco.consulting_and_trader_strategy) {
             const strat = bloco.consulting_and_trader_strategy;
             const linksPadrao = (bloco.news_sources || []).map(n => ({ label: n.headline, url: n.url }));
@@ -393,16 +522,9 @@
             if (strat.fx_trader_b3) elosLista.push({ elo: "Elo: Tradings e Mesa de Câmbio (Trader B3)", direction: strat.fx_trader_b3, reference_links: linksPadrao });
           }
 
-          // Filtra pelo perfil selecionado no menu esquerdo
-          const elosFiltrados = elosLista.filter(item => {
-            if (perfilFiltro === 'TODOS') return true;
-            return item.elo.toLowerCase().includes(perfilFiltro.toLowerCase());
-          });
+          if (elosLista.length === 0) return;
 
-          if (elosFiltrados.length === 0) return;
-
-          // Renderiza cada Elo com sua gaveta de links
-          let elosHtml = elosFiltrados.map(item => {
+          let elosHtml = elosLista.map(item => {
             let fontesHtml = '';
             if (item.reference_links && item.reference_links.length > 0) {
               let listaLinks = item.reference_links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer">🔗 ${l.label}</a>`).join('');
@@ -425,7 +547,6 @@
             `;
           }).join('');
 
-          // Renderiza as notícias gerais do bloco daquela cultura
           let noticiasBlocoHtml = '';
           if (bloco.news_sources && bloco.news_sources.length > 0) {
             let linksBloco = bloco.news_sources.map(n => `<a href="${n.url}" target="_blank" rel="noopener noreferrer">📰 ${n.headline}</a>`).join('');
@@ -436,7 +557,6 @@
               </details>`;
           }
 
-          // Adiciona o Card Completo da Cultura na tela
           container.innerHTML += `
             <div class="culture-block-card">
               <div class="culture-block-title">${bloco.title}</div>
@@ -452,7 +572,6 @@
       }
     }
 
-    // Renderiza a aba Central de Notícias agrupada por Cultura
     function renderizarNoticiasGerais() {
       const gridNot = document.getElementById('grid-noticias-links');
       gridNot.innerHTML = '';
