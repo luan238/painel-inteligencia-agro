@@ -42,7 +42,7 @@
     .page-title span { color: var(--orange-bright); }
     .page-subtitle { font-size: 13.8px; color: var(--text-muted); margin-bottom: 18px; }
 
-    /* PAINEL DE CONFIGURAÇÕES DA ANÁLISE FIXO NO TOPO (NÃO EDITÁVEL) */
+    /* PAINEL DE CONFIGURAÇÕES DA ANÁLISE FIXO NO TOPO */
     .config-top-banner {
       background-color: var(--bg-panel);
       border: 1px solid var(--border-color);
@@ -69,15 +69,6 @@
       color: var(--orange-bright);
       text-transform: uppercase;
       letter-spacing: 0.8px;
-    }
-    .config-lock-badge {
-      font-size: 11px;
-      color: var(--text-muted);
-      background-color: #141414;
-      border: 1px solid #262626;
-      padding: 3px 8px;
-      border-radius: 4px;
-      user-select: none;
     }
     .config-grid {
       display: grid;
@@ -138,7 +129,7 @@
       border-radius: 6px; padding: 9px 12px; color: var(--text-white); font-family: 'Inter', sans-serif; font-size: 13.5px; outline: none;
     }
 
-    /* ESTILO DOS CARDS FIXOS E NÃO EDITÁVEIS DA ABA COTAÇÕES DO DIA */
+    /* ESTILO DOS CARDS FIXOS DA ABA COTAÇÕES DO DIA */
     .quote-fixed-card {
       background-color: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -226,11 +217,10 @@
       <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
       <div class="page-subtitle" id="subtitulo-turno">A carregar boletim atualizado...</div>
 
-      <!-- CONFIGURAÇÕES DA ANÁLISE NO TOPO DA PÁGINA (FIXO E NÃO EDITÁVEL) -->
+      <!-- CONFIGURAÇÕES DA ANÁLISE NO TOPO DA PÁGINA (LIMPO E SEM CADASTRO DE BLOQUEIO) -->
       <div class="config-top-banner">
         <div class="config-top-header">
-          <div class="config-top-title">⚙️ Configurações da Análise (Parâmetros Fixos de Extração)</div>
-          <span class="config-lock-badge">🔒 Parâmetros Fixos • Somente Leitura</span>
+          <div class="config-top-title">⚙️ Configurações da Análise</div>
         </div>
         <div class="config-grid">
           <div class="config-item-box">
@@ -281,12 +271,9 @@
         <div class="cards-grid-2" id="grid-panorama-cards"></div>
       </section>
 
-      <!-- NOVA ABA EXCLUSIVA, FIXA E NÃO EDITÁVEL: COTAÇÕES DO DIA -->
+      <!-- ABA EXCLUSIVA COTAÇÕES DO DIA (SEM AVISOS VISUAIS DE BLOQUEIO) -->
       <section id="aba-cotacoes-dia" class="tab-panel">
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; border-bottom:1px solid #222; padding-bottom:10px; margin:18px 0 14px 0;">
-          <div class="section-divider-title" style="border:none; margin:0; padding:0;">Painel Oficial de Cotações do Dia (Por Complexo e Praça)</div>
-          <span class="config-lock-badge">🔒 Dados Oficiais Fixos • Não Editável</span>
-        </div>
+        <div class="section-divider-title" style="margin:18px 0 14px 0;">Painel Oficial de Cotações do Dia (Por Complexo e Praça)</div>
         <div id="tab-quotes-container"></div>
       </section>
 
@@ -374,7 +361,6 @@
       const meta = dadosBoletim.metadata || {};
       document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions || ''} | ${meta.timestamp || ''} | ${meta.analyst || ''}`;
       
-      // Atualiza o painel fixo de Configurações da Análise no topo da página
       if (meta.target_regions) {
         const pracasArray = meta.target_regions.split('/').map(p => p.trim()).filter(Boolean);
         document.getElementById('top-config-pracas').innerHTML = pracasArray.map(p => `<span class="praca-pill">📍 ${p}</span>`).join('');
@@ -384,7 +370,6 @@
         document.getElementById('top-config-escopo').textContent = meta.scope;
       }
 
-      // Renderiza TODOS os blocos do Resumo Executivo no topo
       const exec = dadosBoletim.executive_summary || {};
       let resumoPartes = [];
       if (exec.cambio_energia_frete) resumoPartes.push(`<strong>💵 Câmbio, Energia & Portos:</strong> ${exec.cambio_energia_frete}`);
@@ -394,7 +379,6 @@
       if (exec.complexo_cafe) resumoPartes.push(`<strong>☕ Complexo Café (Arábica & Robusta):</strong> ${exec.complexo_cafe}`);
       document.getElementById('caixa-resumo-falado').innerHTML = resumoPartes.join('<br><br>');
 
-      // Preenche a nova aba fixa e não editável "Cotações do Dia"
       const quotesContainer = document.getElementById('tab-quotes-container');
       quotesContainer.innerHTML = '';
       const indicadores = dadosBoletim.market_indicators || {};
@@ -493,7 +477,6 @@
       });
     }
 
-    // Renderiza SEPARADO POR CULTURA (fixo para Todos os Elos)
     function renderizarAnaliseCulturas() {
       const container = document.getElementById('container-analise-culturas');
       container.innerHTML = '';
@@ -517,9 +500,6 @@
                 reference_links: linksPadrao
               });
             }
-            if (strat.importers_and_inputs) elosLista.push({ elo: "Elo: Importadores e Compradores de Insumos (Produtores/Cooperativas)", direction: strat.importers_and_inputs, reference_links: linksPadrao });
-            if (strat.exporters_and_producers) elosLista.push({ elo: "Elo: Exportadores e Produtores (Hedge Cambial)", direction: strat.exporters_and_producers, reference_links: linksPadrao });
-            if (strat.fx_trader_b3) elosLista.push({ elo: "Elo: Tradings e Mesa de Câmbio (Trader B3)", direction: strat.fx_trader_b3, reference_links: linksPadrao });
           }
 
           if (elosLista.length === 0) return;
