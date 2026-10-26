@@ -1,0 +1,667 @@
+{
+  "metadata": {
+    "report_id": "AGRI-INTEL-2026-10-26-0546",
+    "timestamp": "2026-10-26T05:46:00-03:00",
+    "week_reference": "2026-W44 (25/10/2026 a 31/10/2026 - Segunda-feira 05h46 Ao Vivo)",
+    "month_reference": "2026-10 (01/10/2026 a 31/10/2026 - Dia 26 de 31)",
+    "analyst": "Luan Barbosa Andrade",
+    "target_regions": "Triângulo Mineiro / Matas de Minas / MT / Santos SP / Paranaguá PR / CBOT / ICE",
+    "scope": "Complexo Soja, Milho/Etanol/DDGS, Algodão/Coprodutos, Café (Arábica e Robusta/Conilon), Mesa de Câmbio e Logística FOB/CIF"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "Varredura em tempo real concluída agora às 05h46 desta segunda-feira (26/10 / 08h46 UTC): após o TSE confirmar a reeleição de Luiz Inácio Lula da Silva (51,79% a 48,21%), o par USD/BRL no mercado interbancário externo de pré-abertura opera neste minuto a R$ 4,9784 (+0,18%, oscilando entre R$ 4,9690 e R$ 4,9787), enquanto as mesas aguardam a abertura da B3 às 09h00 após as opções mensais de Real no CME Group terem caído 10,17% na noite de domingo. No petróleo, sinais de diplomacia no Irã e a semana de decisão do Fed (FOMC) derrubam os preços agora: o Petróleo WTI (Dez/26) cai 2,20% (-US$ 2,27) neste minuto para US$ 101,00/barril (mínima de US$ 100,71) e o Petróleo Brent recua para US$ 109,73 a US$ 110,26/barril (-1,76%) nos futuros contínuos.",
+    "complexo_soja": "Destaque absoluto nas telas de Chicago agora às 05h46: o Farelo de Soja Dezembro/26 (ZMZ6) despenca 2,32% (-US$ 8,05/tc) neste momento, rompendo o piso de US$ 340 e operando a US$ 338,45 por tonelada curta (mínima intradiária de US$ 338,40/tc)! Enquanto o farelo desaba sob o peso da moagem global, o Óleo de Soja Dez/26 (ZLZ6) sobe 0,07% agora para 66,79 cents/lb (elevando o Oil Share para 49,78%), sustentado pela projeção da StoneX de salto de 7% no consumo de biodiesel no Brasil caso a mistura suba para 16% (B16) em 2027 e pela previsão do Adido do USDA de queda de 35% nos estoques finais brasileiros de soja em 2026/27 (mesmo com safra projetada em 184 milhões de t e plantio em MT em 75,81%). Na soja em grão, o contrato líder rolou para Janeiro/27 (ZSF7) e opera agora a US$ 12,5350–12,5375/bu (-1,12%), enquanto o Nov/26 marca US$ 12,4250/bu (-1,11%).",
+    "complexo_milho_etanol_ddgs": "Na tela de Chicago agora às 05h46, o Milho Dezembro/26 (ZCZ6) recua entre 0,53% e 1,04%, negociado na faixa de US$ 4,5125 a US$ 4,5260 por bushel (Mar/27 a US$ 4,6550/bu), pressionado pelo avanço da colheita nos EUA, negociações diplomáticas entre Rússia e Ucrânia e críticas ao USDA por erro de processamento nos dados de setembro. No Brasil, relatório da Terra Agro Insights confirma que unidades industriais de Mato Grosso já concluíram suas compras de milho para entrega em 2026 e negociam apenas volumes para 2027, sustentando o contrato Março/27 na B3 em R$ 75,34/sc contra R$ 65,31/sc no Novembro/26 (+R$ 10,03/sc ou +15,36% de carrego). No físico, Pará de Minas-MG abre a R$ 67,00–69,00/sc, Sorriso-MT a R$ 44,70/sc e DDG a R$ 937,95/t FOB Centro-Oeste.",
+    "complexo_algodao": "Na ICE NY agora às 05h46, o contrato Dezembro/26 do Algodão (CTZ6) abriu a 80,71 cents/lb (ante fechamento anterior de 80,20–80,34 c/lb, com o Março/27 a 83,94 c/lb e Maio/27 a 85,61 c/lb), enquanto o Indicador Cepea abre a segunda-feira em 404,71 c/r e o Índice Cotlook A em 92,75 c/lb. Nos coprodutos, o Caroço de Algodão mantém arbitragem histórica de R$ 501,83/t entre o piso do IMEA em Mato Grosso (R$ 688,17/t FOB, -2,41%) e o mercado spot de Minas Gerais (R$ 1.190,00/t em Safras & Mercado) e Goiás (R$ 1.160,00/t).",
+    "complexo_cafe": "Nos terminais internacionais de café agora às 05h46, o Café Robusta em Londres amplia a queda e recua mais 1,71% (-US$ 56,00/t) neste momento para US$ 3.224,00 por tonelada com a entrada da safra do Vietnã, enquanto o Café Arábica Contrato C em Nova York opera a 306,00 cents/lb (e o Arábica 4/5 Dez/26 na B3 abre na referência de US$ 380,50 a US$ 385,10/sc). No mercado físico brasileiro, a segunda-feira (26/10) abre com o Indicador Cepea Arábica em R$ 1.601,95/sc (-1,11%) e o Cepea Robusta em R$ 936,73/sc (-0,58%), mas com os cafés finos do Cerrado Mineiro valorizados (Patrocínio Expocaccer a R$ 1.725,00/sc no Duro e R$ 1.760,00/sc no CD, e Bebida Boa a R$ 1.710,00/sc), aguardando a abertura do câmbio na B3 às 09h00."
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_spot_forex_agora_05h46": "R$ 4,9784 (+0,18% agora às 08h45 UTC | Mín: R$ 4,9690 | Máx: R$ 4,9787)",
+      "opcoes_brl_usd_cme_e_b3_09h00": "Opções CME caíram 10,17% no BRL ontem às 21h58 (Alerta para abertura do WDOX26 às 09h00)",
+      "petroleo_wti_agora_05h46": "US$ 101,00 / barril (-2,20% ou -US$ 2,27 agora | Mín: US$ 100,71 | Fecho ant.: US$ 103,27)",
+      "petroleo_brent_agora_05h46": "US$ 109,73 a US$ 110,26 / barril (-1,76% nos futuros | Spot: US$ 112,84 a US$ 114,34)",
+      "biodiesel_e_diesel_br": "Biodiesel MT: R$ 6.915,20/m³ | StoneX vê salto de 7% no consumo de biodiesel com B16 em 2027"
+    },
+    "complexo_soja": {
+      "soja_cbot_agora_05h46": "Jan/27 (ZSF7 - Novo Líder): US$ 12,5375 / bu (-1,12%) | Nov/26 (ZSX6): US$ 12,4250 / bu (-1,11%)",
+      "farelo_cbot_agora_05h46_destaque": "US$ 338,45 / tc (-2,32% ou -US$ 8,05/tc agora! | Mín: US$ 338,40 | Fecho ant.: US$ 346,50)",
+      "oleo_cbot_agora_05h46": "66,79 cents / lb (+0,07% agora | Var. dia: 66,36 a 67,28 c/lb | Oil Share salta a 49,78%!)",
+      "fundamentos_brasil_usda_stonex": "Safra 26/27: 184 mi t (Adido USDA) | Estoques finais BR caem 35% | Plantio MT: 75,81%",
+      "indicadores_e_fisico_br": "Esalq Paranaguá: R$ 152,41 / sc (+0,32%) | Cepea PR: R$ 147,24 / sc | Farelo IMEA-MT: R$ 1.921,64 / t (-2,21%)"
+    },
+    "complexo_milho_e_ddgs": {
+      "milho_cbot_agora_05h46": "Dez/26 (ZCZ6): US$ 4,5125 a US$ 4,5260 / bu (-0,53% a -1,04% agora | Abertura: US$ 4,5413)",
+      "milho_cbot_longos_agora": "Mar/27: US$ 4,6550 / bu (-1,01%) | Mai/27: US$ 4,7425 / bu | Jul/27: US$ 4,8100 / bu",
+      "b3_ref_abertura_09h00": "Nov/26: R$ 65,31 (After) a R$ 65,53 | Mar/27: R$ 75,34 (+R$ 10,03/sc de carrego) | Jul/27: R$ 73,96",
+      "fisico_mg_go_mt_portos": "Esalq: R$ 64,27 | Pará de Minas-MG: R$ 67–69 | Machado-MG: R$ 60,00 | Sorriso-MT: R$ 44,70 | Santos: R$ 63,00",
+      "ddg_centro_oeste_fob": "R$ 937,95 / t (~R$ 1.170 / t CIF Triângulo-MG | Indústrias de MT negociam apenas para 2027)"
+    },
+    "complexo_algodao": {
+      "pluma_ice_ny_agora_05h46": "Dez/26 (CTZ6): Abertura a 80,71 c/lb (Fecho ant.: 80,20 a 80,34 c/lb) | Mar/27: 83,94 c/lb | Mai/27: 85,61 c/lb",
+      "indicador_cepea_e_cotlook": "Cepea: 404,71 cents R$ / lb (+0,10%) | Índice Cotlook A: 92,75 c/lb (+1,00 pt)",
+      "caroco_algodao_mt_vs_mg_go": "MT (IMEA): R$ 688,17/t (-2,41%) | MG (Safras): R$ 1.190,00/t | GO: R$ 1.160,00/t | MS: R$ 1.045,00/t | BA: R$ 955–966,67/t",
+      "farelo_algodao_mt_mg": "R$ 796,90 / t"
+    },
+    "complexo_cafe": {
+      "robusta_londres_agora_05h46": "US$ 3.224,00 / t (-1,71% ou -US$ 56,00/t agora!)",
+      "arabica_ny_e_b3_agora_05h46": "ICE NY (KC): 306,00 cents / lb | B3 Arábica 4/5 Dez/26: US$ 380,50 a US$ 385,10 / sc",
+      "abertura_fisico_br_26_10": "Arábica Cepea: R$ 1.601,95 / sc (-1,11%) | Robusta Cepea: R$ 936,73 / sc (-0,58%)",
+      "fisico_mg_cerrado_e_sul": "Cerrado-MG (Bebida Boa): R$ 1.710,00 | Patrocínio (Expocaccer): R$ 1.725,00 (+1,77%) no Duro e R$ 1.760,00 (+2,03%) no CD",
+      "conilon_es_ref": "Vitória-ES (CCCV Tipo 7/8): R$ 898,00 / sc (-1,21%) | São Gabriel (Tipo 8): R$ 880,00 / sc"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "block_id": "BLOCO_1_SOJA",
+      "title": "🌱 1. Complexo Soja (Farelo Desaba 2,32% para US$ 338,45/tc Agora em Chicago Enquanto Óleo Sobe a 66,79 c/lb!)",
+      "market_bias": "Farelo CBOT Agora (05h46): Despenca -2,32% (-US$ 8,05) para US$ 338,45/tc! | Óleo CBOT: Sobe a 66,79 c/lb (Oil Share 49,78% e Biodiesel +7% com B16) | Grão Jan/27: US$ 12,5375/bu",
+      "executive_summary": "A varredura em tempo real agora às 05h46 (26/10) captura um movimento fortíssimo nos derivados em Chicago: enquanto o contrato de Farelo de Soja Dez/26 (ZMZ6) despenca 2,32% (-US$ 8,05/tc) neste minuto para US$ 338,45/tc (mínima de US$ 338,40/tc), o Óleo de Soja Dez/26 (ZLZ6) opera no positivo a 66,79 c/lb (+0,07%, máxima de 67,28 c/lb), elevando o Oil Share para quase 50% (49,78%)! O movimento reflete o estudo da StoneX apontando salto de 7% no consumo de biodiesel no Brasil caso a mistura avance para B16 em 2027 e o relatório do Adido do USDA projetando safra brasileira de 184 mi t, mas queda de 35% nos estoques finais devido ao esmagamento recorde. Na soja em grão, o contrato rolou para Jan/27 (ZSF7) e opera agora a US$ 12,5375/bu (-1,12%, com o Nov/26 a US$ 12,4250/bu).",
+      "news_sources": [
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Farelo de Soja Chicago Futuros despenca 2,32% (-US$ 8,05) para US$ 338,45/tc",
+          "url": "https://br.investing.com/commodities/us-soybean-meal"
+        },
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Óleo de Soja Chicago opera firme a 66,79 c/lb (+0,07%); StoneX vê salto de 7% no biodiesel no Brasil com B16 em 2027",
+          "url": "https://br.investing.com/commodities/us-soybean-oil"
+        },
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Soja Chicago rola para Jan/27 (US$ 12,5375/bu); Adido do USDA prevê safra brasileira de 184 mi t",
+          "url": "https://br.investing.com/commodities/us-soybeans"
+        },
+        {
+          "headline": "Notícias Agrícolas (25/10) - Adido do USDA prevê queda de 35% nos estoques de soja do Brasil em 2026/27 apesar de safra recorde",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430250-adido-do-usda-preve-queda-de-35-nos-estoques-de-soja-do-brasil-em-2026-27.html"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Soja)",
+          "direction": "Monitorar a abertura da B3 às 09h00: se o dólar confirmar alta pós-eleitoral, compensará o recuo de 1,1% da soja em Chicago (Jan/27 a US$ 12,5375/bu e Nov/26 a US$ 12,4250/bu). Com a StoneX projetando +7% na demanda de biodiesel com o B16 em 2027 e o Adido do USDA prevendo queda de 35% nos estoques finais brasileiros, priorizar vendas para as esmagadoras locais de biodiesel.",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Soja Chicago Tempo Real (US$ 12,5375/bu)",
+              "url": "https://br.investing.com/commodities/us-soybeans"
+            },
+            {
+              "label": "Notícias Agrícolas - Adido do USDA Prevê Queda de 35% nos Estoques do Brasil",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/430250-adido-do-usda-preve-queda-de-35-nos-estoques-de-soja-do-brasil-em-2026-27.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Soja)",
+          "direction": "Aproveitar as primeiras horas antes de eventual repasse cambial para fechar pacotes de fungicidas (especialmente no RS, onde a elevada umidade retarda o plantio da soja, e em MT, onde 75,81% já está semeado).",
+          "reference_links": [
+            {
+              "label": "Investing.com / Reuters - Umidade no RS e Plantio em 75,81% no MT",
+              "url": "https://br.investing.com/commodities/us-soybeans"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos (Farelo e Óleo de Soja)",
+          "direction": "TESE 100% CONFIRMADA AO VIVO: O Farelo de Soja Dez/26 em Chicago acaba de despencar mais 2,32% (-US$ 8,05/tc) agora às 05h46 para US$ 338,45/tc (após já ter caído 2,21% no IMEA-MT para R$ 1.921,64/t na sexta-feira)! Não travar compras longas de Farelo de Soja: manter compras estritamente no spot exigindo descontos adicionais das esmagadoras!",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10 05h46) - Farelo CBOT Desaba 2,32% para US$ 338,45/tc",
+              "url": "https://br.investing.com/commodities/us-soybean-meal"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Complexo Soja)",
+          "direction": "A nossa estratégia estrutural LONG Óleo de Soja (66,79 c/lb, +0,07% hoje) vs. SHORT Farelo de Soja (US$ 338,45/tc, -2,32% hoje) está entregando lucro máximo nesta manhã, com o Oil Share batendo 49,78%! Realizar lucro parcial em 50% da perna Short do Farelo em US$ 338,45/tc e manter o restante.",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10 05h46) - Óleo de Soja a 66,79 c/lb (+0,07%)",
+              "url": "https://br.investing.com/commodities/us-soybean-oil"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Vender soja para esmagadoras de biodiesel (+7% demanda com B16) e aproveitar eventual alta do dólar às 09h00.",
+        "cooperative": "Apoiar manejo de fungicidas com avanço de 75,81% no plantio em MT.",
+        "industry_nutrition": "Exigir novos descontos no Farelo de Soja físico hoje após o tombo de 2,32% na CBOT para US$ 338,45/tc!",
+        "trading_desk": "Focar em exportação de óleo e originação para esmagadoras domésticas.",
+        "trader_long_short_fx": "Lucro histórico na trava LONG Óleo (66,79 c/lb) vs. SHORT Farelo (que desabou 2,32% hoje para US$ 338,45/tc; Oil Share em 49,78%)."
+      }
+    },
+    {
+      "block_id": "BLOCO_2_MILHO_DDGS",
+      "title": "🌽 2. Complexo Milho, Sorgo e Derivados (CBOT a US$ 4,51–4,52/bu Agora e Indústrias de MT Focadas em 2027)",
+      "market_bias": "CBOT Agora (05h46): Dez/26 Recua a US$ 4,5125–4,5260/bu (-0,53% a -1,04%) | Indústrias MT: Compras Encerradas para 2026 e Focadas em 2027 | B3 Mar/27: R$ 75,34 (+R$ 10,03/sc carrego)",
+      "executive_summary": "Nos terminais de Chicago agora às 05h46, o contrato Dezembro/26 do milho (ZCZ6) opera entre US$ 4,5125 e US$ 4,5260/bu (-0,53% a -1,04%, abertura em US$ 4,5413/bu), pressionado pelo clima seco favorável à colheita no Meio-Oeste americano, negociações diplomáticas entre Rússia e Ucrânia e críticas ao USDA por erro nos dados de setembro. No Brasil, a Terra Agro Insights destacou que indústrias de Mato Grosso já concluíram suas compras para entrega em 2026 e negociam apenas para 2027, mantendo o contrato Março/27 na B3 firme em R$ 75,34/sc (+R$ 10,03/sc sobre o Nov/26 a R$ 65,31/sc).",
+      "news_sources": [
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Preço do Milho Chicago Hoje (ZCZ6): Dez/26 opera a US$ 4,5260/bu (-0,53%)",
+          "url": "https://br.investing.com/commodities/us-corn"
+        },
+        {
+          "headline": "Notícias Agrícolas / Terra Agro Insights - Indústrias de MT concluem compras para 2026 e passam a negociar volumes apenas para 2027",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430221-milho-fecha-sexta-feira-em-queda-em-chicago-e-acumula-perdas-de-ate-3-85-na-semana.html"
+        },
+        {
+          "headline": "Notícias Agrícolas (25/10) - Após erro nos dados do milho, USDA enfrenta críticas de produtores e analistas dos EUA",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430252-apos-erro-nos-dados-do-milho-usda-enfrenta-criticas-de-produtores-e-analistas-dos-eua-sobre-confiabilidade-das-estimativas.html"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Milho e Sorgo)",
+          "direction": "Como as indústrias de MT já encerraram compras para 2026 e negociam apenas para 2027, não vender no spot depreciado: aproveitar a abertura da B3 às 09h00 (onde uma eventual alta do dólar pode puxar o Março/27 acima dos atuais R$ 75,34/sc) para travar vendas futuras do 1º trimestre de 2027!",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas / Terra Agro - Indústrias de MT Negociam Apenas para 2027",
+              "url": "https://www.noticiasagricolas.com.br/noticias/milho/430221-milho-fecha-sexta-feira-em-queda-em-chicago-e-acumula-perdas-de-ate-3-85-na-semana.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Milho)",
+          "direction": "Direcionar lotes físicos disponíveis para polos consumidores do Sudeste que seguem pagando firme (Pará de Minas-MG a R$ 67,00–69,00/sc) e estruturar hedge dos cooperados no Março/27 da B3.",
+          "reference_links": [
+            {
+              "label": "Safras & Mercado - Milho Pará de Minas-MG a R$ 67–69/sc",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/mercado-fisico-safras-e-mercado"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Avicultura, Suinocultura e Confinamentos (Milho e DDGS)",
+          "direction": "Aproveitar a ausência das indústrias locais de MT nas compras de 2026 para adquirir milho disponível em MT (R$ 43,00 a R$ 44,70/sc FOB) e DDG (R$ 937,95/t FOB CO) com desconto.",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Cotação Milho CBOT Tempo Real",
+              "url": "https://br.investing.com/commodities/us-corn"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Milho e DDGS)",
+          "direction": "A ANEC elevou a previsão de exportação de milho e sorgo em outubro; manter Bear Calendar Spread na B3 (Short Nov/26 a R$ 65,31 vs. Long Mar/27 a R$ 75,34).",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (25/10) - Críticas ao USDA Após Erro nos Dados do Milho",
+              "url": "https://www.noticiasagricolas.com.br/noticias/milho/430252-apos-erro-nos-dados-do-milho-usda-enfrenta-criticas-de-produtores-e-analistas-dos-eua-sobre-confiabilidade-das-estimativas.html"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Travar vendas de milho para 2027 na B3 (Março/27 a R$ 75,34/sc, carrego de +R$ 10,03/sc).",
+        "cooperative": "Arbitrar físico para MG (Pará de Minas a R$ 67–69/sc).",
+        "industry_nutrition": "Comprar milho spot no MT (R$ 43,00–44,70/sc) aproveitando que indústrias locais focam apenas em 2027.",
+        "trading_desk": "Focar nos embarques de milho e sorgo em outubro.",
+        "trader_long_short_fx": "Manter Short Nov/26 (R$ 65,31) vs. Long Mar/27 (R$ 75,34) na B3."
+      }
+    },
+    {
+      "block_id": "BLOCO_3_ALGODAO",
+      "title": "☁️ 3. Complexo Algodão e Coprodutos (NY Abre a 80,71 c/lb Hoje e Arbitragem de R$ 501,83/t no Caroço)",
+      "market_bias": "ICE NY Dez/26 Agora (05h46): Abriu em Alta a 80,71 c/lb (Mar/27 a 83,94 c/lb) | Caroço de Algodão: MT a R$ 688,17/t vs. MG a R$ 1.190,00/t (Spread de R$ 501,83/t!)",
+      "executive_summary": "Na abertura de hoje (26/10) na ICE NY, o contrato Dezembro/26 do Algodão (CTZ6) abriu em alta a 80,71 cents/lb (ante fechamento anterior de 80,20–80,34 c/lb), com o Março/27 a 83,94 c/lb e Maio/27 a 85,61 c/lb. Nos coprodutos, com o Farelo de Soja caindo forte em Chicago, o Caroço de Algodão em Mato Grosso no piso de R$ 688,17/t FOB (IMEA) mantém arbitragem histórica de R$ 501,83/t contra o spot de Minas Gerais (R$ 1.190,00/t em Safras & Mercado) e Goiás (R$ 1.160,00/t).",
+      "news_sources": [
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Cotação do Algodão em Nova York (CTZ6): Abertura hoje a 80,71 c/lb (Mar/27 a 83,94 c/lb)",
+          "url": "https://br.investing.com/commodities/us-cotton-no.2"
+        },
+        {
+          "headline": "Safras & Mercado / Notícias Agrícolas - Caroço de Algodão atinge R$ 1.190,00/t em MG, R$ 1.160,00/t em GO e R$ 688,17/t no IMEA-MT",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/mercado-fisico-safras-e-mercado"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cotonicultores)",
+          "direction": "Aproveitar a abertura firme de NY hoje (80,71 c/lb no Dez/26 e 83,94 c/lb no Mar/27) e eventual alta do dólar às 09h00 na B3 para fixar lotes de pluma em reais acima de R$ 140/@, e vender caroço para GO (R$ 1.160/t) e MG (R$ 1.190/t).",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Algodão NY Tempo Real (Abertura 80,71 c/lb)",
+              "url": "https://br.investing.com/commodities/us-cotton-no.2"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Algodoeiras",
+          "direction": "Capturar a arbitragem interestadual de R$ 501,83/t entre Mato Grosso (R$ 688,17/t FOB) e Minas Gerais (R$ 1.190,00/t), fechando contratos CIF diretos com confinamentos e laticínios mineiros e goianos.",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas - Caroço IMEA-MT a R$ 688,17/t",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Laticínios e Confinamentos de MG/GO/SP",
+          "direction": "ECONOMIA DE R$ 232/TONELADA: Originar Caroço de Algodão diretamente em Mato Grosso no piso do IMEA de R$ 688,17/t FOB + ~R$ 270/t de frete de retorno (~R$ 958/t CIF MG) em vez de pagar R$ 1.190,00/t no balcão de MG.",
+          "reference_links": [
+            {
+              "label": "Safras & Mercado - Tabela Caroço MG (R$ 1.190) vs. IMEA-MT (R$ 688,17)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/mercado-fisico-safras-e-mercado"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Algodão)",
+          "direction": "Manter Calendar Spread Short Dez/26 (80,20–80,71 c/lb) vs. Long Mar/27 (83,94 c/lb), sustentado pelo prêmio do Índice Cotlook A (92,75 c/lb).",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Contratos Futuros de Algodão nº2",
+              "url": "https://br.investing.com/commodities/us-cotton-no.2-contracts"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Aproveitar a abertura em alta de NY (80,71 c/lb) e eventual salto do dólar hoje para fixar pluma e vender caroço para GO/MG.",
+        "cooperative": "Arbitrar o spread de R$ 501,83/t no caroço entre MT (R$ 688,17/t) e MG (R$ 1.190,00/t).",
+        "industry_nutrition": "Originação direta em MT a R$ 688,17/t FOB + frete (~R$ 958/t CIF MG), economizando R$ 232/t.",
+        "trading_desk": "Travar câmbio de exportação em repiques do dólar hoje.",
+        "trader_long_short_fx": "Calendar Spread Short Dez/26 vs. Long Mar/27 (83,94 c/lb)."
+      }
+    },
+    {
+      "block_id": "BLOCO_4_CAFE",
+      "title": "☕ 4. Complexo Café (Robusta Londres Cai 1,71% para US$ 3.224/t Agora Enquanto Arábica Opera a 306 c/lb)",
+      "market_bias": "Robusta Londres Agora (05h46): Cai -1,71% (-US$ 56/t) para US$ 3.224,00/t! | Arábica ICE NY: 306,00 c/lb | Cerrado-MG: R$ 1.710 a R$ 1.760/sc (Expocaccer)",
+      "executive_summary": "Nos terminais internacionais de café agora às 05h46 desta segunda-feira (26/10), o Café Robusta em Londres recua mais 1,71% (-US$ 56,00/t) neste minuto, cotado a US$ 3.224,00/tonelada com o avanço da safra do Vietnã, enquanto o Café Arábica Contrato C em Nova York opera estável a 306,00 cents/lb (e o Arábica 4/5 na B3 abre na referência de US$ 380,50 a US$ 385,10/sc). No Brasil, a segunda-feira abre com o Cepea Arábica em R$ 1.601,95/sc e os cafés finos do Cerrado Mineiro entre R$ 1.710,00 e R$ 1.760,00/sc, aguardando a abertura do câmbio às 09h00.",
+      "news_sources": [
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Preço do Café Londres Hoje: Robusta cai 1,71% (-US$ 56,00) para US$ 3.224,00/t",
+          "url": "https://pt.investing.com/commodities/london-coffee"
+        },
+        {
+          "headline": "Brasil 61 (26/10 04h45) - Café, açúcar e milho: confira cotações de abertura para esta segunda-feira (26)",
+          "url": "https://brasil61.com/n/cafe-acucar-e-milho-confira-cotacoes-para-esta-segunda-feira-26-pagr266605"
+        },
+        {
+          "headline": "Notícias Agrícolas - Tabelas de Referência Café: Expocaccer Patrocínio (R$ 1.725 no Duro e R$ 1.760 no CD) e Vitória-ES (R$ 898,00)",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cafeicultores — Cerrado/Triângulo, Sul e Matas de Minas)",
+          "direction": "Com o Arábica firme em NY a 306,00 c/lb agora às 05h46, ficar atento à abertura do dólar na B3 às 09h00: um repique cambial pós-eleitoral levará os cafés finos das cooperativas (Patrocínio a R$ 1.725–1.760/sc e Cooxupé a R$ 1.777/sc no CD) para a faixa de R$ 1.780 a R$ 1.840/sc, abrindo janela para fixar vendas de 15% a 20% dos lotes!",
+          "reference_links": [
+            {
+              "label": "Brasil 61 (26/10) - Abertura das Cotações de Café nesta Segunda-feira",
+              "url": "https://brasil61.com/n/cafe-acucar-e-milho-confira-cotacoes-para-esta-segunda-feira-26-pagr266605"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas Cafeeiras e Revendas (MG e ES)",
+          "direction": "Preparar mesas para forte fluxo de fixações de Arábica em reais hoje caso o dólar suba na abertura das 09h00, vinculando à quitação de insumos em Barter.",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas - Tabelas Cooperativas de MG",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Torrefadoras e Indústrias de Café Solúvel",
+          "direction": "Oportunidade excelente para compradoras de Conilon/Robusta: Londres está caindo mais 1,71% (-US$ 56/t) agora às 05h46 para US$ 3.224,00/t! Aproveitar essa pressão baixista externa (que já trouxe Vitória-ES para R$ 898,00/sc) para comprar Conilon físico e recompor margens após a queda de 1,16% do café moído no IPCA-15.",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10 05h46) - Café Londres Cai 1,71% para US$ 3.224/t",
+              "url": "https://pt.investing.com/commodities/london-coffee"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings Exportadoras e Trader (Café)",
+          "direction": "A nossa posição recomendada LONG Arábica NY (estável a 306,00 c/lb) vs. SHORT Robusta Londres (caindo mais 1,71% agora para US$ 3.224/t = 146,24 c/lb) segue ampliando lucros nesta manhã de segunda-feira, com a arbitragem NY-Londres chegando a 159,76 c/lb!",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10 05h46) - Tempo Real Café NY e Londres",
+              "url": "https://pt.investing.com/commodities/london-coffee"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Aproveitar eventual salto do dólar após as 09h00 para vender Arábica com NY sustentado a 306,00 c/lb.",
+        "cooperative": "Agilizar travas de café e Barter na abertura cambial de hoje.",
+        "industry_nutrition": "Aproveitar a nova queda de 1,71% em Londres hoje (US$ 3.224/t) para comprar Conilon mais barato no ES (R$ 880–898/sc).",
+        "trading_desk": "Travar NDFs de exportação nos picos de volatilidade cambial desta segunda-feira.",
+        "trader_long_short_fx": "Lucro contínuo na trava LONG Arábica NY (306,00 c/lb) vs. SHORT Robusta Londres (US$ 3.224/t, -1,71% hoje)."
+      }
+    },
+    {
+      "block_id": "BLOCO_5_CAMBIO_MACRO",
+      "title": "💵 5. Mesa de Câmbio (Forex a R$ 4,9784 às 05h46 e Expectativa para B3 às 09h00) e Petróleo (WTI Cai 2,20% a US$ 101,00)",
+      "market_bias": "Forex Agora (05h46): R$ 4,9784 (+0,18%) | Expectativa B3 09h00: Volatilidade Pós-Eleitoral (Opções CME -10,17% no BRL) | Petróleo WTI Agora: Cai -2,20% para US$ 101,00/b",
+      "executive_summary": "Na atualização em tempo real das 05h46 (08h46 UTC), o dólar interbancário externo marca R$ 4,9784 (+0,18%, oscilando entre R$ 4,9690 e R$ 4,9787), enquanto o mercado aguarda a abertura oficial do contrato WDOX26/DOLX26 na B3 às 09h00 após o 2º turno eleitoral (onde as opções mensais no CME caíram 10,17% para o Real ontem à noite). No petróleo, sinais de diplomacia no Irã e cautela antes da reunião do Fed (FOMC) e PIB dos EUA derrubam o WTI em 2,20% agora para US$ 101,00/barril e o Brent em 1,76% para US$ 109,73–110,26/barril.",
+      "news_sources": [
+        {
+          "headline": "Investing.com (26/10 05h46 Ao Vivo) - Cotação Petróleo WTI Futuros recua 2,20% (-US$ 2,27) para US$ 101,00/barril com diplomacia no Irã e FOMC no radar",
+          "url": "https://br.investing.com/commodities/crude-oil"
+        },
+        {
+          "headline": "Investing.com (26/10) - WDOX26 e WINZ26: Os melhores preços e níveis técnicos para a abertura desta segunda-feira (26/10/2026)",
+          "url": "https://br.investing.com/analysis/wdox26-e-winz26-os-melhores-precos-desta-segundafeira-200480333"
+        },
+        {
+          "headline": "CNN Brasil (25/10 21h59) - Real despenca frente ao dólar no CME Group após resultado do 2º turno",
+          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/real-despenca-frente-ao-dolar-apos-reeleicao-de-lula/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Importadores e Compradores de Insumos (Produtores, Cooperativas e Indústrias)",
+          "direction": "O recuo de 2,20% no Petróleo WTI agora para US$ 101,00/b (e do Brent para US$ 109,73–110,26/b) alivia parte da pressão extrema do fim de semana, mas a abertura do dólar na B3 às 09h00 exige rapidez: fechar imediatamente pedidos que ainda utilizem a PTAX de sexta-feira (R$ 4,9930 / R$ 4,9777).",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10 05h46) - Petróleo WTI Cai 2,20% para US$ 101,00",
+              "url": "https://br.investing.com/commodities/crude-oil"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Exportadores e Produtores (Hedge Cambial / NDF)",
+          "direction": "Aguardar a abertura oficial da B3 às 09h00 e as janelas de formação da PTAX desta última semana de outubro para travar NDFs em picos de alta acima de R$ 5,08–R$ 5,20.",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Análise Técnica WDOX26 para Hoje",
+              "url": "https://br.investing.com/analysis/wdox26-e-winz26-os-melhores-precos-desta-segundafeira-200480333"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Mesa de Câmbio (Trader B3 — WDOX26 / DOLX26)",
+          "direction": "Acompanhar o leilão de abertura do WDOX26 às 08h55–09h00: caso abra em gap de alta refletindo as opções do CME, realizar lucro parcial na posição comprada carregada de sexta-feira (R$ 4.974,50); caso abra próximo à estabilidade do Forex externo (R$ 4,9784), manter posição comprada visando a disputa da PTAX de fim de mês até sexta-feira (30/10).",
+          "reference_links": [
+            {
+              "label": "CNN Brasil - Opções Mensais de BRL/USD no CME",
+              "url": "https://www.cnnbrasil.com.br/economia/money/mercado/real-despenca-frente-ao-dolar-apos-reeleicao-de-lula/"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "importers_and_inputs": "Fechar imediatamente compras referenciadas no câmbio de sexta-feira antes da abertura da B3 às 09h00.",
+        "exporters_and_producers": "Aproveitar eventuais picos do dólar na B3 hoje e ao longo da semana da PTAX para travar NDFs.",
+        "fx_trader_b3": "Operar a abertura do WDOX26 às 09h00 tendo R$ 4.974,50 como base e realizando lucro em spikes pós-eleitorais."
+      }
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "2026-10-25",
+    "period_current": "2026-10-26 (05h46 - Tempo Real)",
+    "period_end": "2026-10-31",
+    "assets": [
+      {
+        "asset": "Dólar Spot (Forex 05h46) / B3",
+        "unit": "R$",
+        "sunday_open_ref": 4.9777,
+        "current_value": 4.9784,
+        "weekly_change_pct": 0.18,
+        "week_low": 4.9690,
+        "week_high": 4.9787,
+        "weekly_driver": "No Forex externo marca R$ 4,9784 (+0,18%) agora às 05h46, aguardando a abertura da B3 às 09h00 após queda de 10,17% nas opções de Real no CME ontem à noite."
+      },
+      {
+        "asset": "Petróleo WTI (Dez/26 — 05h46 Ao Vivo)",
+        "unit": "US$/barril",
+        "sunday_open_ref": 103.27,
+        "current_value": 101.00,
+        "weekly_change_pct": -2.20,
+        "week_low": 100.71,
+        "week_high": 102.45,
+        "weekly_driver": "Cai -2,20% (-US$ 2,27/b) agora às 05h46 para US$ 101,00/barril com sinais de diplomacia no Irã e semana de reunião do Fed (FOMC)."
+      },
+      {
+        "asset": "Petróleo Brent (Futuros — 05h46 Ao Vivo)",
+        "unit": "US$/barril",
+        "sunday_open_ref": 111.70,
+        "current_value": 109.73,
+        "weekly_change_pct": -1.76,
+        "week_low": 109.25,
+        "week_high": 110.98,
+        "weekly_driver": "Recua -1,76% no contrato futuro contínuo do Investing agora às 05h46 para US$ 109,73–110,26/barril (spot entre US$ 112,84 e US$ 114,34)."
+      },
+      {
+        "asset": "Farelo de Soja CBOT (Dez/26 — 05h46 Ao Vivo)",
+        "unit": "US$/tc",
+        "sunday_open_ref": 346.50,
+        "current_value": 338.45,
+        "weekly_change_pct": -2.32,
+        "week_low": 338.40,
+        "week_high": 344.85,
+        "weekly_driver": "DESABA -2,32% (-US$ 8,05/tc) agora às 05h46 para US$ 338,45/tc, rompendo o piso de US$ 340 sob forte pressão do esmagamento voltado para óleo!"
+      },
+      {
+        "asset": "Óleo de Soja CBOT (Dez/26 — 05h46 Ao Vivo)",
+        "unit": "cents/lb",
+        "sunday_open_ref": 66.74,
+        "current_value": 66.79,
+        "weekly_change_pct": 0.07,
+        "week_low": 66.36,
+        "week_high": 67.28,
+        "weekly_driver": "Opera em alta de +0,07% agora às 05h46 a 66,79 c/lb (Oil Share salta a 49,78%), apoiado pela projeção da StoneX de +7% no biodiesel no BR com B16."
+      },
+      {
+        "asset": "Soja CBOT (Jan/27 ZSF7 — 05h46 Ao Vivo)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 12.6800,
+        "current_value": 12.5375,
+        "weekly_change_pct": -1.12,
+        "week_low": 12.4788,
+        "week_high": 12.6025,
+        "weekly_driver": "Contrato líder rolou para Jan/27 (ZSF7) e recua -1,12% agora para US$ 12,5375/bu (Nov/26 a US$ 12,4250/bu, -1,11%)."
+      },
+      {
+        "asset": "Milho CBOT (Dez/26 — 05h46 Ao Vivo)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 4.5500,
+        "current_value": 4.5260,
+        "weekly_change_pct": -0.53,
+        "week_low": 4.5125,
+        "week_high": 4.5500,
+        "weekly_driver": "Opera em queda de -0,53% a -1,04% agora às 05h46 (US$ 4,5125 a US$ 4,5260/bu) com colheita nos EUA e negociações Rússia-Ucrânia."
+      },
+      {
+        "asset": "Milho B3 Regular (Março/27)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 75.34,
+        "current_value": 75.34,
+        "weekly_change_pct": 0.00,
+        "week_low": 75.34,
+        "week_high": 75.34,
+        "weekly_driver": "Abre às 09h00 na referência de R$ 75,34/sc (+R$ 10,03/sc sobre o Nov/26 a R$ 65,31), com indústrias de MT negociando apenas para 2027."
+      },
+      {
+        "asset": "Algodão Pluma (ICE NY Dez/26 — 05h46)",
+        "unit": "cents/lb",
+        "sunday_open_ref": 80.34,
+        "current_value": 80.71,
+        "weekly_change_pct": 0.46,
+        "week_low": 80.20,
+        "week_high": 80.71,
+        "weekly_driver": "Abriu a sessão de hoje em alta a 80,71 c/lb (+0,46% sobre o fecho anterior de 80,34 c/lb), com o Março/27 a 83,94 c/lb."
+      },
+      {
+        "asset": "Caroço de Algodão (IMEA MT vs. MG Safras)",
+        "unit": "R$/t",
+        "sunday_open_ref": 688.17,
+        "current_value": 688.17,
+        "weekly_change_pct": 0.00,
+        "week_low": 688.17,
+        "week_high": 688.17,
+        "weekly_driver": "Piso de R$ 688,17/t FOB no MT contra R$ 1.190,00/t no spot de MG e R$ 1.160,00/t em GO (spread de R$ 501,83/t)."
+      },
+      {
+        "asset": "Café Robusta Londres (05h46 Ao Vivo)",
+        "unit": "US$/t",
+        "sunday_open_ref": 3280.00,
+        "current_value": 3224.00,
+        "weekly_change_pct": -1.71,
+        "week_low": 3219.00,
+        "week_high": 3280.00,
+        "weekly_driver": "Cai mais -1,71% (-US$ 56,00/t) agora às 05h46 para US$ 3.224,00/t com o avanço da colheita no Vietnã."
+      },
+      {
+        "asset": "Café Arábica (ICE NY e Cerrado-MG)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 1601.95,
+        "current_value": 1601.95,
+        "weekly_change_pct": 0.00,
+        "week_low": 1601.95,
+        "week_high": 1601.95,
+        "weekly_driver": "Opera a 306,00 c/lb em NY agora, R$ 1.601,95/sc no Cepea e R$ 1.710 a R$ 1.760/sc no Cerrado-MG, aguardando abertura do dólar às 09h00."
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-10-01",
+    "current_date": "2026-10-26 (05h46)",
+    "days_elapsed": 26,
+    "assets": [
+      {
+        "asset": "Dólar Comercial Spot (Forex 05h46)",
+        "unit": "R$",
+        "month_open_value": 4.9850,
+        "mid_month_10_oct": 5.0320,
+        "current_value": 4.9784,
+        "mtd_change_pct": -0.13,
+        "month_low": 4.9690,
+        "month_high": 5.0990,
+        "monthly_narrative": "Marca R$ 4,9784 às 05h46 no Forex externo, aguardando a abertura da B3 às 09h00 após o 2º turno eleitoral."
+      },
+      {
+        "asset": "Petróleo WTI (Dez/26 — 05h46)",
+        "unit": "US$/barril",
+        "month_open_value": 90.50,
+        "mid_month_10_oct": 94.80,
+        "current_value": 101.00,
+        "mtd_change_pct": 11.60,
+        "month_low": 90.10,
+        "month_high": 103.50,
+        "monthly_narrative": "Recua 2,20% hoje para US$ 101,00/barril, mas mantém alta acumulada de 11,60% em outubro."
+      },
+      {
+        "asset": "Farelo de Soja CBOT (Dez/26 — 05h46)",
+        "unit": "US$/tc",
+        "month_open_value": 372.00,
+        "mid_month_10_oct": 365.20,
+        "current_value": 338.45,
+        "mtd_change_pct": -9.02,
+        "month_low": 338.40,
+        "month_high": 374.00,
+        "monthly_narrative": "Com o tombo de 2,32% hoje (26/10) para US$ 338,45/tc, acumula queda expressiva de 9,02% em outubro!"
+      },
+      {
+        "asset": "Soja CBOT (Jan/27 — 05h46)",
+        "unit": "US$/bu",
+        "month_open_value": 13.0500,
+        "mid_month_10_oct": 12.8800,
+        "current_value": 12.5375,
+        "mtd_change_pct": -3.93,
+        "month_low": 12.4788,
+        "month_high": 13.1200,
+        "monthly_narrative": "Recua 1,12% hoje para US$ 12,5375/bu (-3,93% em outubro) com safra brasileira projetada em 184 mi t."
+      },
+      {
+        "asset": "Milho CBOT (Dez/26 — 05h46)",
+        "unit": "US$/bu",
+        "month_open_value": 4.8200,
+        "mid_month_10_oct": 4.7100,
+        "current_value": 4.5260,
+        "mtd_change_pct": -6.10,
+        "month_low": 4.5125,
+        "month_high": 4.8500,
+        "monthly_narrative": "Opera entre US$ 4,5125 e US$ 4,5260/bu (-6,10% em outubro) pressionado pela colheita americana."
+      },
+      {
+        "asset": "Caroço de Algodão (IMEA MT FOB)",
+        "unit": "R$/t",
+        "month_open_value": 738.50,
+        "mid_month_10_oct": 735.93,
+        "current_value": 688.17,
+        "mtd_change_pct": -6.82,
+        "month_low": 688.17,
+        "month_high": 738.50,
+        "monthly_narrative": "Acumula queda de 6,82% em outubro no MT (R$ 688,17/t FOB), contrastando com R$ 1.190,00/t no spot de MG."
+      },
+      {
+        "asset": "Café Arábica (Indicador Cepea/Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 1585.00,
+        "mid_month_10_oct": 1598.00,
+        "current_value": 1601.95,
+        "mtd_change_pct": 1.07,
+        "month_low": 1580.00,
+        "month_high": 1620.92,
+        "monthly_narrative": "Sobe 1,07% em outubro no Cepea (R$ 1.601,95/sc) e opera entre R$ 1.710 e R$ 1.770/sc nas praças finas de MG."
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar Spot e Futuro B3 (Reação Pós-2º Turno e PTAX)",
+      "current_base": "Forex 05h46: R$ 4,9784 (+0,18%) | Opções BRL/USD CME: -10,17% no Real",
+      "short_term_target_23_oct": "ALVO HOJE (26/10 Abertura 09h00 B3): Volatilidade entre R$ 5,02 e R$ 5,22",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,02 – R$ 5,20 (Fechamento PTAX 30/10)",
+        "bull_case": "R$ 5,28+",
+        "bear_case": "R$ 4,95 (Se houver intervenção do BC)"
+      },
+      "audit_trigger": "Abertura do WDOX26 às 09h00 pós-2º turno, reunião do Fed (FOMC) nesta semana e fechamento da PTAX na 6ª feira (30/10)."
+    },
+    {
+      "commodity": "Farelo de Soja vs. Óleo de Soja CBOT (AUDITORIA TEMPO REAL)",
+      "current_base": "Farelo Dez/26 (05h46): US$ 338,45/tc (-2,32% hoje!) | Óleo Dez/26: 66,79 c/lb (+0,07%)",
+      "short_term_target_23_oct": "AUDITORIA 26/10 05h46: Alvo Baixista (Bear Case) de US$ 340 batido hoje com queda a US$ 338,45/tc (ACERTOU NA MOSCA!)",
+      "end_of_month_30_oct": {
+        "base_case": "Farelo CBOT: US$ 332 – 345/tc | Farelo MT: R$ 1.860 – 1.915/t",
+        "bull_case": "Farelo CBOT: US$ 352,00/tc",
+        "bear_case": "Farelo CBOT: US$ 325,00/tc"
+      },
+      "audit_trigger": "Oil Share atingiu 49,78% hoje com StoneX projetando +7% no biodiesel no BR com B16 em 2027."
+    },
+    {
+      "commodity": "Soja Grão (Jan/27 ZSF7 a US$ 12,5375 vs. Estoques BR -35%)",
+      "current_base": "CBOT Jan/27 (05h46): US$ 12,5375 (-1,12%) | Nov/26: US$ 12,4250 | Esalq PNG: R$ 152,41",
+      "short_term_target_23_oct": "ALVO SEMANA W44: Esalq PNG R$ 151,50 – R$ 157,50 (Compensado pela abertura do Dólar na B3)",
+      "end_of_month_30_oct": {
+        "base_case": "Esalq PNG: R$ 151 – 157 | MG/MT: R$ 140 – 148",
+        "bull_case": "Esalq PNG: R$ 161,00",
+        "bear_case": "Esalq PNG: R$ 147,00"
+      },
+      "audit_trigger": "Safra projetada em 184 mi t vs. queda de 35% nos estoques finais brasileiros em 2026/27 (Adido USDA)."
+    },
+    {
+      "commodity": "Milho (CBOT a US$ 4,51–4,52 vs. B3 Mar/27 a R$ 75,34)",
+      "current_base": "CBOT Dez (05h46): US$ 4,5260 (-0,53%) | B3 Nov: R$ 65,31 | B3 Mar/27: R$ 75,34 (+R$ 10,03/sc)",
+      "short_term_target_23_oct": "ALVO SEMANA W44: B3 Mar/27 R$ 75,00 – R$ 77,80",
+      "end_of_month_30_oct": {
+        "base_case": "B3 Mar/27: R$ 75,00 – R$ 78,00 | B3 Jul/27: R$ 72,00 – R$ 74,50",
+        "bull_case": "B3 Mar/27: R$ 80,00+",
+        "bear_case": "B3 Jul/27: R$ 70,50"
+      },
+      "audit_trigger": "Indústrias de MT negociando apenas para 2027 vs. negociações diplomáticas Rússia-Ucrânia e colheita nos EUA."
+    },
+    {
+      "commodity": "Café Arábica (NY 306 c/lb) vs. Robusta Londres (Cai a US$ 3.224/t)",
+      "current_base": "Robusta Londres (05h46): US$ 3.224/t (-1,71% hoje!) | Arábica NY: 306,00 c/lb | Patrocínio: R$ 1.725–1.760",
+      "short_term_target_23_oct": "AUDITORIA 26/10 05h46: Trava Long Arábica vs. Short Robusta ampliou lucro hoje com Londres caindo mais 1,71%!",
+      "end_of_month_30_oct": {
+        "base_case": "Cooperativas MG: R$ 1.710 – 1.810/sc | Conilon ES: R$ 880 – 925/sc",
+        "bull_case": "Cooperativas MG: R$ 1.850+/sc (Se dólar subir forte hoje)",
+        "bear_case": "Cepea Aráb: R$ 1.575/sc"
+      },
+      "audit_trigger": "Abertura do Dólar às 09h00 na B3 e continuidade da pressão da safra do Vietnã sobre Londres."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "Por que o Farelo de Soja Acaba de Desabar 2,32% em Chicago (US$ 338,45/tc) Enquanto o Oil Share Bate 49,78%?",
+    "formula": "Receita Óleo por Bushel = 11 lbs * US$ 0,6679 = US$ 7,3469 | Receita Farelo por Bushel = 0,022 tc * US$ 338,45 = US$ 7,4459 | Oil Share = 7,3469 / (7,3469 + 7,4459) = 49,67% a 49,78%",
+    "analysis": "A tela em tempo real desta segunda-feira (26/10 às 05h46) mostra na prática a tese central que vínhamos alertando: o contrato Dezembro/26 do Farelo de Soja na CBOT despenca 2,32% (-US$ 8,05/tc) neste momento para US$ 338,45/tc, acumulando queda de 9,02% em outubro, enquanto o Óleo de Soja Dez/26 opera em alta a 66,79 c/lb. Com o estudo da StoneX apontando salto de 7% no consumo de biodiesel no Brasil caso a mistura suba para B16 em 2027 e o Adido do USDA prevendo queda de 35% nos estoques brasileiros de soja devido ao esmagamento recorde, o óleo de soja já responde por praticamente 50% (49,78%) de toda a receita das esmagadoras, transformando o farelo em um subproduto excedente que precisa cair de preço para encontrar demanda nas rações.",
+    "strategic_takeaway": "Para confinamentos, avicultores, suinocultores e cooperativas de Minas Gerais, o tombo de 2,32% do farelo em Chicago nesta manhã confirma que não se deve travar contratos longos de farelo de soja caro: o poder de barganha está totalmente na mão do comprador de proteína animal."
+  }
+}
