@@ -14,20 +14,19 @@ hora_str = agora_brt.strftime("%H:%M")
 timestamp_iso = agora_brt.strftime("%Y-%m-%dT%H:%M:00-03:00")
 id_relatorio = agora_brt.strftime("AGRI-INTEL-%Y-%m-%d-%H%M")
 
-# Ajustado para 'Historico/' (com H maiúsculo para coincidir com a pasta do seu repositório)
 nome_arquivo_historico = agora_brt.strftime("Historico/historico_%Y_%m_%d-%Hh.json")
 nome_relatorio_md = agora_brt.strftime("Historico/relatorio_%Y_%m_%d-%Hh.md")
 
-# 2. Carrega o boletim_atual.json anterior (se existir) para manter o histórico diário do gráfico
+# 2. Carrega o boletim_atual.json anterior (se existir)
 contexto_anterior = ""
 if os.path.exists("boletim_atual.json"):
     with open("boletim_atual.json", "r", encoding="utf-8") as f:
         contexto_anterior = f.read()
 
-# 3. Inicializa o cliente Gemini (a chave vem da variável de ambiente GEMINI_API_KEY)
+# 3. Inicializa o cliente Gemini
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
-# 4. Define o Prompt com as instruções exatas da nossa conversa
+# 4. Define o Prompt
 prompt = f"""
 Data e Hora Atual da Execução: {data_str} às {hora_str} BRT (Timestamp: {timestamp_iso}).
 Atue como Analista Sênior, Estrategista de Derivativos e Mentor de Inteligência de Mercado da Germinare Agro.
@@ -53,19 +52,19 @@ max_tentativas = 3
 for tentativa in range(1, max_tentativas + 1):
     try:
         response = client.models.generate_content(
-            model="gemini-3.8-flash",
+            model="gemini-2.5-flash",  # Usando o modelo flash padrão altamente estável
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[types.Tool(google_search=types.GoogleSearch())],
                 temperature=0.2,
             ),
         )
-        break  # Se deu certo, sai do loop
+        break
     except Exception as e:
         print(f"⚠️ Tentativa {tentativa} falhou: {e}")
         if tentativa < max_tentativas:
-            print("⏳ Aguardando 20 segundos para tentar novamente...")
-            time.sleep(20)
+            print("⏳ Aguardando 40 segundos para a cota redefinir...")
+            time.sleep(40)
         else:
             raise e
 
@@ -77,16 +76,14 @@ if not padrao_json:
     raise ValueError("❌ Não foi possível encontrar um bloco ```json válido na resposta do modelo.")
 
 json_str = padrao_json.group(1).strip()
-
-# Valida se o JSON está perfeitamente formatado antes de salvar
 dados_json = json.loads(json_str)
 
-# 6. Salva o boletim_atual.json (que alimenta o index.html)
+# 6. Salva o boletim_atual.json
 with open("boletim_atual.json", "w", encoding="utf-8") as f:
     json.dump(dados_json, f, ensure_ascii=False, indent=2)
 print("✅ Arquivo 'boletim_atual.json' atualizado com sucesso!")
 
-# 7. Cria a pasta 'Historico/' e salva o NOVO arquivo JSON e o relatório em Markdown
+# 7. Salva na pasta 'Historico/'
 os.makedirs("Historico", exist_ok=True)
 
 with open(nome_arquivo_historico, "w", encoding="utf-8") as f:
