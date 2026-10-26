@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "report_id": "AGRI-INTEL-2026-10-26-1358",
+    "timestamp": "2026-10-26T13:58:00-03:00",
+    "week_reference": "2026-W44 (25/10/2026 a 31/10/2026 - Segunda-feira 13h58 Ao Vivo)",
+    "month_reference": "2026-10 (01/10/2026 a 31/10/2026 - Dia 26 de 31)",
+    "analyst": "Luan Barbosa Andrade",
+    "target_regions": "Triângulo Mineiro / Matas de Minas / MT / Santos SP / Paranaguá PR / CBOT / ICE",
+    "scope": "Complexo Soja, Milho/Etanol/DDGS, Algodão/Coprodutos, Café (Arábica e Robusta/Conilon), Mesa de Câmbio e Logística FOB/CIF"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "Sessão histórica de altíssima volatilidade nesta segunda-feira (26/10 às 13h58) após o resultado do 2º turno presidencial: o dólar comercial abriu em forte disparada e atingiu a máxima de R$ 5,6040 (+12,25%) às 09h45, levando a B3 a acionar o circuit breaker no Ibovespa e a expandir os limites máximos de oscilação diária do Dólar Futuro (DOL/WDO) de 6% para 8,4% e dos contratos de juros (DI Jan/31 bateu 14,460%, alta de 182 bps). Após o Tesouro Nacional cancelar os leilões de títulos prefixados e IPCA+ da semana e o Banco Central ofertar 75.000 contratos de swap cambial, o dólar comercial opera neste exato minuto (13h56 BRT) a R$ 5,4387 (+9,44% no dia). No petróleo, o Brent (Dez/26) recua 1,51% para US$ 114,96/barril e o WTI (Dez/26) cede 2,07% para US$ 101,13/barril, mas o salto de quase 10% no dólar amplia drasticamente a defasagem do óleo diesel e dos fertilizantes importados no Brasil.",
+    "complexo_soja": "A disparada do dólar para R$ 5,4387 (+9,44%) provocou movimentos opostos entre Chicago e o Brasil agora à tarde (26/10): na CBOT, o câmbio brasileiro altamente depreciado estimulou vendas e derrubou a soja Nov/26 em quase 2% (-24,00 cents frente a sexta-feira), operando a US$ 12,3250/bu (e o Farelo Dez/26 desabando a US$ 338,45/tc), mesmo após o USDA informar agora às 13h42 que as inspeções semanais de exportação dos EUA subiram quase 20% para 2,48 milhões de toneladas (com a China liderando). No Brasil, a AgRural divulgou hoje (09h07) que o plantio da soja 2026/27 saltou de 26% para 40% da área nacional (com 75,81% em MT segundo o IMEA). Como o dólar subiu 9,44% enquanto Chicago caiu 1,91%, a paridade de exportação da soja em Reais nos portos brasileiros salta mais de R$ 10 a R$ 12/saca hoje!",
+    "complexo_milho_etanol_ddgs": "Confirmação exata da nossa projeção matinal: na atualização das 12h14 desta segunda-feira (26/10), os contratos futuros do milho na B3 dispararam mais de 2,5% impulsionados pelo salto do dólar a R$ 5,4387! O contrato Novembro/26 subiu 2,70% para R$ 67,30/sc, o Janeiro/27 saltou 2,23% para R$ 71,64/sc, o Março/27 disparou para R$ 77,26/sc (+2,55%) e o Maio/27 avançou 2,72% para R$ 76,72/sc! Na mão oposta, em Chicago o contrato Dezembro/26 recua 0,44% (-2,00 cents) para US$ 4,5400/bu e o Março/27 cede para US$ 4,6800/bu. A AgRural informou hoje que o plantio do milho verão 2026/27 atingiu 58% da área no Centro-Sul (+10 p.p. na semana).",
+    "complexo_algodao": "Com o dólar saltando 9,44% para R$ 5,4387 nesta segunda-feira (26/10) e a pluma na ICE NY operando ao redor de 80,20 a 80,71 c/lb no Dez/26 e 83,94 c/lb no Mar/27, a paridade de exportação da pluma brasileira ganha mais de R$ 11,00 por arroba em moeda nacional! Nos coprodutos, o Caroço de Algodão mantém arbitragem histórica de R$ 501,83/t entre o piso do IMEA em Mato Grosso (R$ 688,17/t FOB, -2,41%) e o mercado spot de Minas Gerais (R$ 1.190,00/t em Safras & Mercado) e Goiás (R$ 1.160,00/t).",
+    "complexo_cafe": "Na atualização das 12h16 desta segunda-feira (26/10), a disparada de mais de 9% do dólar no Brasil derrubou as cotações externas do café: na ICE NY, o Café Arábica Dezembro/26 recuou 2,50% e perdeu o patamar dos 300 cents, negociado a 299,75 cents/lb. Em Londres, o Café Robusta cai 1,51% (-US$ 49) para US$ 3.193,00/t no Jan/27 e recua US$ 68 para US$ 3.160,00/t no Nov/26 (Mar/27 a US$ 3.185/t). Contudo, na conversão para Reais com o dólar a R$ 5,4387 (+9,44%), a paridade de exportação do café arábica brasileiro salta quase 7% hoje, projetando fortes altas nas pedras das cooperativas de Minas Gerais (que abriram entre R$ 1.710 e R$ 1.770/sc)!"
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_spot_tempo_real_13h58": "R$ 5,4387 (+9,44% agora às 13h56 BRT | Máxima do dia: R$ 5,6040 às 09h45, +12,25%!)",
+      "dolar_futuro_e_juros_b3_hoje": "B3 ampliou limite do WDO/DOL para 8,4% (bateu teto de +9,16% na abertura) | DI Jan/31 disparou a 14,460%",
+      "atuacao_tesouro_e_bc_hoje": "Tesouro cancelou leilões de prefixados e IPCA+ da semana | BC ofertou 75.000 contratos de swap",
+      "petroleo_brent_hoje_26_10": "US$ 114,96 / barril (-1,51% hoje | Defasagem do diesel explode com dólar a R$ 5,44)",
+      "petroleo_wti_hoje_26_10": "US$ 101,13 / barril (-2,07% hoje)",
+      "biodiesel_fisico_br": "Rondonópolis-MT: R$ 6.915,20/m³ | SP: R$ 6.354,78/m³ | GO: R$ 6.275,20/m³"
+    },
+    "complexo_soja": {
+      "soja_cbot_hoje_12h11": "Nov/26: US$ 12,3250 / bu (-24,00 cents ou -1,91% hoje!) | Abertura 07h23: US$ 12,4175 / bu",
+      "inspecoes_exportacao_eua_13h42": "2,48 milhões de t na semana (+20% na semana e +100% no ano, com China liderando - USDA)",
+      "plantio_brasil_agrural_hoje": "40,0% da área nacional semeada (+14 p.p. na semana vs. 36% ano passado | MT em 75,81% no IMEA)",
+      "farelo_e_oleo_cbot_hoje": "Farelo Dez/26: US$ 338,45 / tc (-2,32%) | Óleo Dez/26: 66,79 cents / lb (Oil Share: 49,78%)",
+      "efeito_cambial_portos_e_interior": "Com dólar a R$ 5,4387 (+9,44%), paridade portuária salta de R$ 152,41–155,00 para ~R$ 162–166/sc!",
+      "farelo_fisico_mt_imea": "R$ 1.921,64 / t (-2,21% na base de 6ª feira)"
+    },
+    "complexo_milho_e_ddgs": {
+      "b3_dispara_hoje_12h14": "Nov/26: R$ 67,30 / sc (+2,70%) | Jan/27: R$ 71,64 / sc (+2,23%) | Mar/27: R$ 77,26 / sc (+2,55%) | Mai/27: R$ 76,72 (+2,72%)",
+      "spread_carrego_b3_hoje": "+R$ 9,96 / sc (+14,80% entre Nov/26 a R$ 67,30 e Mar/27 a R$ 77,26!)",
+      "milho_cbot_hoje_12h02": "Dez/26: US$ 4,5400 / bu (-2,00 c ou -0,44%) | Mar/27: US$ 4,6800 (-2,25 c) | Mai/27: US$ 4,7650 | Jul/27: US$ 4,8275",
+      "plantio_milho_verao_agrural": "58,0% da área plantada no Centro-Sul (+10 p.p. na semana vs. 55% há um ano)",
+      "fisico_mg_go_mt_portos": "Esalq Ref: R$ 64,27 | Pará de Minas-MG: R$ 67–69 | Machado-MG: R$ 60,00 | Sorriso-MT: R$ 44,70 | Santos: R$ 63,00",
+      "ddg_centro_oeste_fob": "R$ 937,95 / t (~R$ 1.170 / t CIF Triângulo-MG)"
+    },
+    "complexo_algodao": {
+      "pluma_ice_ny_hoje": "Dez/26: 80,20 a 80,71 c/lb | Mar/27: 83,94 c/lb (Paridade em R$/@ salta +9,4% hoje com dólar a R$ 5,44!)",
+      "indicador_cepea_e_cotlook": "Cepea Ref: 404,71 cents R$ / lb (+0,10%) | Índice Cotlook A: 92,75 c/lb (+1,00 pt)",
+      "caroco_algodao_mt_vs_mg_go": "MT (IMEA): R$ 688,17/t (-2,41%) | MG (Safras): R$ 1.190,00/t | GO: R$ 1.160,00/t | MS: R$ 1.045,00/t | BA: R$ 955–966,67/t",
+      "farelo_algodao_mt_mg": "R$ 796,90 / t"
+    },
+    "complexo_cafe": {
+      "arabica_ice_ny_hoje_12h16": "Dez/26: 299,75 cents / lb (-2,50% hoje — Caiu abaixo de 300 c/lb com disparada do dólar no BR!)",
+      "robusta_londres_hoje_12h16": "Nov/26: US$ 3.160 / t (-US$ 68) | Jan/27: US$ 3.193 / t (-US$ 49 ou -1,51%) | Mar/27: US$ 3.185 / t (-US$ 44)",
+      "paridade_arabica_em_reais_hoje": "Equivalência NY (299,75 c/lb) com Dólar a R$ 5,4387 salta para R$ 2.156,00/sc (+6,7% líquido em R$ hoje!)",
+      "fisico_mg_ref_cooperativas": "Patrocínio (Expocaccer Ref): R$ 1.725 (Duro) e R$ 1.760 (CD) | Cerrado-MG: R$ 1.710 | Cepea Ref: R$ 1.601,95",
+      "conilon_es_ref": "Cepea Robusta Ref: R$ 936,73 / sc | Vitória-ES: R$ 898,00 a R$ 940,00 / sc"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "block_id": "BLOCO_1_SOJA",
+      "title": "🌱 1. Complexo Soja (Dólar a R$ 5,44 Derruba CBOT em Quase 2% Hoje, Plantio BR Chega a 40% e Inspeções dos EUA Sobem 20%)",
+      "market_bias": "CBOT Hoje (12h11): Nov/26 Cai -1,91% (-24 cents) para US$ 12,3250/bu com Choque do Real | Em Reais no Brasil: FORTEMENTE ALTISTA (+7,3% líquido na paridade portuária com Dólar a R$ 5,4387!) | Plantio AgRural: 40%",
+      "executive_summary": "A disparada de 9,44% do dólar no Brasil (a R$ 5,4387 às 13h58, após bater R$ 5,6040 pela manhã) derrubou os preços futuros da soja em Chicago em quase 2% nesta segunda-feira (26/10 às 12h11), com o contrato Novembro/26 perdendo 24,00 cents para operar a US$ 12,3250/bu (e o Farelo Dez/26 caindo a US$ 338,45/tc). Apesar da queda em dólares na CBOT, o USDA informou agora às 13h42 que as inspeções semanais de exportação de soja dos EUA subiram quase 20% para 2,48 milhões de toneladas (mais que o dobro de um ano atrás, com a China na liderança). No Brasil, a AgRural reportou hoje (09h07) que o plantio da safra 2026/27 atingiu 40% da área nacional (+14 p.p. na semana vs. 36% há um ano). Como o dólar subiu 9,44% e Chicago caiu 1,91%, o produtor brasileiro ganha mais de R$ 10 a R$ 12/saca na paridade em Reais hoje!",
+      "news_sources": [
+        {
+          "headline": "Notícias Agrícolas (26/10 12h11) - Soja amplia perdas em Chicago nesta segunda-feira e novembro recua quase 2% (US$ 12,3250/bu) com pressão do câmbio brasileiro",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430312-soja-amplia-perdas-em-chicago-nesta-segunda-feira-e-novembro-recua-quase-2-com-pressao-do-cambio-brasileiro.html"
+        },
+        {
+          "headline": "Notícias Agrícolas (26/10 13h42) - Inspeções de soja dos EUA sobem quase 20% na semana (2,48 mi t), com China liderando destinos",
+          "url": "https://www.noticiasagricolas.com.br/noticias/graos/430318-inspecoes-de-soja-dos-eua-sobem-quase-20-na-semana-com-china-liderando-destinos-milho-e-trigo-recuam.html"
+        },
+        {
+          "headline": "Notícias Agrícolas / AgRural (26/10 09h07) - Menos chuva de um lado e mais de outro levam plantio de soja a 40% no país",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430282-ag-rural-menos-chuva-de-um-lado-e-mais-de-outro-levam-plantio-de-soja-a-40-no-pais.html"
+        },
+        {
+          "headline": "Notícias Agrícolas / Cepea (26/10 07h18) - Soja/Cepea: Expectativa de safra volumosa pressiona cotações externas para 2027, mas Adido vê queda de 35% nos estoques",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Soja)",
+          "direction": "JANELA HISTÓRICA DE VENDA EM REAIS E NDF HOJE: Exatamente como alertamos às 05h34 da manhã, o salto do dólar para R$ 5,4387 (+9,44%, máxima de R$ 5,6040) mais do que engoliu a queda de 1,91% de Chicago (US$ 12,3250/bu), gerando um ganho líquido de +R$ 10 a +R$ 12/saca na paridade em Reais! Aproveitar o pregão desta tarde para fixar preços em Reais de lotes disponíveis e travar NDFs da safra 2026/27 (que com a explosão dos juros DI para mais de 14,4% pagam acima de R$ 5,65–R$ 5,80/USD para 2027)!",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 12h11) - Soja CBOT vs. Explosão do Câmbio no Brasil",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/430312-soja-amplia-perdas-em-chicago-nesta-segunda-feira-e-novembro-recua-quase-2-com-pressao-do-cambio-brasileiro.html"
+            },
+            {
+              "label": "UOL Economia (26/10) - Dólar Bate R$ 5,60 e Juros DI Disparam 182 bps",
+              "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Soja)",
+          "direction": "Com o plantio atingindo 40% no Brasil (AgRural hoje) e o dólar saltando 9,44% para R$ 5,4387, congelar imediatamente tabelas antigas em Reais e travar o hedge cambial dos insumos importados, utilizando a valorização da saca em Reais para fechar operações de Barter com CPR Física registrada.",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas / AgRural (26/10 09h07) - Plantio da Soja Atinge 40% no País",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/430282-ag-rural-menos-chuva-de-um-lado-e-mais-de-outro-levam-plantio-de-soja-a-40-no-pais.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos (Farelo e Óleo de Soja)",
+          "direction": "Atenção redobrada: embora o Farelo de Soja em Chicago tenha caído para US$ 338,45/tc (-2,32%), a alta de 9,44% do dólar no Brasil hoje encarece a conversão em Reais! Fechar compras físicas imediatas de Farelo de Soja nas indústrias locais que ainda mantenham a tabela de sexta-feira (R$ 1.921,64/t no MT).",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Farelo de Soja CBOT",
+              "url": "https://br.investing.com/commodities/us-soybean-meal"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Complexo Soja)",
+          "direction": "Físico: O salto do dólar para R$ 5,4387 abriu o maior incentivo de venda física para o produtor no semestre: acelerar a originação de soja 2025/26 e 2026/27 hoje! Derivativos: Com as inspeções semanais dos EUA subindo 20% para 2,48 mi t (USDA hoje às 13h42), aproveitar o recuo de 24 cents do Nov/26 (US$ 12,3250/bu) para realizar lucro em posições vendidas em Chicago.",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 13h42) - Inspeções de Soja dos EUA Sobem 20% para 2,48 mi t",
+              "url": "https://www.noticiasagricolas.com.br/noticias/graos/430318-inspecoes-de-soja-dos-eua-sobem-quase-20-na-semana-com-china-liderando-destinos-milho-e-trigo-recuam.html"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Aproveitar o salto do dólar a R$ 5,4387 (+9,44%) e dos juros DI (>14,4%) hoje para travar vendas de soja em Reais e NDFs da safra 2027 acima de R$ 5,65–5,80!",
+        "cooperative": "Atualizar tabelas dolarizadas e acelerar Barter aproveitando o pico da saca em Reais.",
+        "industry_nutrition": "Travar lotes físicos de farelo que ainda estejam na tabela pré-choque cambial (R$ 1.921,64/t no MT).",
+        "trading_desk": "Acelerar originação física aproveitando o gatilho cambial de R$ 5,44–5,60.",
+        "trader_long_short_fx": "Realizar lucro nas posições compradas em Dólar e Short Farelo CBOT (US$ 338,45/tc)."
+      }
+    },
+    {
+      "block_id": "BLOCO_2_MILHO_DDGS",
+      "title": "🌽 2. Complexo Milho, Sorgo e Derivados (Milho Dispara Mais de 2,5% na B3 Hoje: Março/27 Salta a R$ 77,26/sc!)",
+      "market_bias": "B3 Hoje (12h14): FORTEMENTE ALTISTA — Nov/26 Sobe +2,70% a R$ 67,30, Jan/27 a R$ 71,64 (+2,23%), Mar/27 a R$ 77,26 (+2,55%) e Mai/27 a R$ 76,72 (+2,72%)! | CBOT: Dez/26 Recua a US$ 4,5400/bu (-0,44%) | Plantio Verão: 58%",
+      "executive_summary": "A nossa leitura matinal confirmou-se com precisão cirúrgica no pregão de hoje (26/10 às 12h14): impulsionados pela disparada de 9,44% do dólar após o 2º turno eleitoral, os contratos futuros do milho na B3 saltaram mais de 2,5% nesta segunda-feira! O contrato Novembro/26 subiu 2,70% para R$ 67,30/sc, o Janeiro/27 avançou 2,23% para R$ 71,64/sc, o Março/27 disparou para R$ 77,26/sc (+2,55%) e o Maio/27 saltou 2,72% para R$ 76,72/sc! Na Bolsa de Chicago, o cenário foi oposto, com o Dezembro/26 recuando 0,44% (-2,00 c) para US$ 4,5400/bu e o Março/27 a US$ 4,6800/bu. A AgRural informou ainda hoje (09h07) que o plantio do milho verão 2026/27 chegou a 58% da área no Centro-Sul (+10 p.p. na semana).",
+      "news_sources": [
+        {
+          "headline": "Notícias Agrícolas (26/10 12h14) - Milho dispara mais de 2% na B3 nesta segunda-feira com alta do dólar (Nov R$ 67,30, Jan R$ 71,64, Mar R$ 77,26 e Mai R$ 76,72), enquanto Chicago segue em queda",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430313-milho-dispara-mais-de-2-na-b-3-nesta-segunda-feira-com-alta-do-dolar-enquanto-chicago-segue-em-queda.html"
+        },
+        {
+          "headline": "Notícias Agrícolas / AgRural (26/10 09h07) - Área prevista para o milho verão 2026/27 chega a 58% plantada no Centro-Sul (+10 p.p. na semana)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430282-ag-rural-menos-chuva-de-um-lado-e-mais-de-outro-levam-plantio-de-soja-a-40-no-pais.html"
+        },
+        {
+          "headline": "Notícias Agrícolas / Cepea (26/10 07h19) - Milho/Cepea: Oferta elevada no disponível e queda externa pressionam spot, mas câmbio muda paridade hoje",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430270-milho-cepea-oferta-elevada-e-queda-nos-precos-externos-pressionam-cotacoes.html"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Milho e Sorgo)",
+          "direction": "ALVO BATIDO NA B3 HOJE: O contrato Março/27 acaba de saltar de R$ 75,34/sc para R$ 77,26/sc (+2,55%) e o Maio/27 subiu 2,72% para R$ 76,72/sc nesta segunda-feira! Aproveitar imediatamente esse rali cambial na B3 para travar vendas de mais 20% a 30% do milho armazenado no contrato Março/27 a R$ 77,26/sc (ou Maio/27 a R$ 76,72/sc), garantindo quase R$ 10,00/saca de carrego sobre o Novembro/26 (R$ 67,30/sc)!",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 12h14) - Milho Dispara na B3: Março/27 a R$ 77,26 e Maio/27 a R$ 76,72/sc",
+              "url": "https://www.noticiasagricolas.com.br/noticias/milho/430313-milho-dispara-mais-de-2-na-b-3-nesta-segunda-feira-com-alta-do-dolar-enquanto-chicago-segue-em-queda.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Milho)",
+          "direction": "Com o dólar a R$ 5,4387 reabrindo fortemente a paridade de exportação nos portos (Santos e Paranaguá) para novembro e janeiro, originar lotes físicos dos cooperados e travar hedge imediato na B3 a R$ 71,64/sc (Jan/27) e R$ 77,26/sc (Mar/27).",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 12h14) - Alta do Dólar Favorece Exportações de Nov e Jan",
+              "url": "https://www.noticiasagricolas.com.br/noticias/milho/430313-milho-dispara-mais-de-2-na-b-3-nesta-segunda-feira-com-alta-do-dolar-enquanto-chicago-segue-em-queda.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Avicultura, Suinocultura e Confinamentos (Milho e DDGS)",
+          "direction": "ALERTA DE COMPRA FÍSICA IMEDIATA: Como o mercado físico de balcão reage com atraso de 24 a 48 horas em relação à tela da B3 (que já subiu mais de 2,5% hoje com o dólar a R$ 5,44), fechar imediatamente compras físicas de milho disponível (MT a R$ 44,70–48,30/sc e MG a R$ 60,00–67,00/sc) e de DDG (R$ 937,95/t FOB CO) antes que os vendedores reajustem as pedras pelo novo câmbio!",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas / Cepea (26/10 07h19) - Preços do Disponível Antes do Choque Cambial",
+              "url": "https://www.noticiasagricolas.com.br/noticias/milho/430270-milho-cepea-oferta-elevada-e-queda-nos-precos-externos-pressionam-cotacoes.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Milho e DDGS)",
+          "direction": "Físico e Portos: O salto do dólar de R$ 4,993 para R$ 5,4387 (+9,44%) combinando com a queda de Chicago para US$ 4,54/bu eleva a paridade de exportação nos portos brasileiros em cerca de +R$ 5,50/saca hoje, destravando vendas externas para novembro e janeiro para enxugar os estoques da virada do ano! Derivativos B3: Realizar lucro parcial nas posições compradas em Março/27 (R$ 77,26/sc) e Maio/27 (R$ 76,72/sc).",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 12h14) - Análise de Paridade e Curva B3 Hoje",
+              "url": "https://www.noticiasagricolas.com.br/noticias/milho/430313-milho-dispara-mais-de-2-na-b-3-nesta-segunda-feira-com-alta-do-dolar-enquanto-chicago-segue-em-queda.html"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Aproveitar a disparada de hoje na B3 para travar vendas no Março/27 a R$ 77,26/sc (+2,55%) e Maio/27 a R$ 76,72/sc (+2,72%)!",
+        "cooperative": "Originar físico e travar hedge nos vencimentos 2027 da B3 acima de R$ 71,64–77,26/sc.",
+        "industry_nutrition": "Comprar milho físico e DDG (R$ 937,95/t FOB) hoje antes que o salto de 9,44% do dólar e de 2,7% da B3 seja repassado ao spot.",
+        "trading_desk": "Fechar navios de exportação para novembro e janeiro aproveitando o dólar a R$ 5,4387.",
+        "trader_long_short_fx": "Realização parcial de lucro na ponta comprada do Março/27 (que bateu nosso alvo de R$ 77,26/sc hoje!)."
+      }
+    },
+    {
+      "block_id": "BLOCO_3_ALGODAO",
+      "title": "☁️ 3. Complexo Algodão e Coprodutos (Dólar a R$ 5,44 Faz Paridade da Pluma Saltar +R$ 11/@ e Mantém Arbitragem no Caroço)",
+      "market_bias": "Paridade Pluma em R$/@ Hoje: Dispara +9,4% com Dólar a R$ 5,4387 (Equivalência NY Mar/27 sobe de R$ 138,79/@ para ~R$ 151,00/@!) | Caroço MT: R$ 688,17/t vs. MG R$ 1.190,00/t",
+      "executive_summary": "O choque cambial desta segunda-feira (26/10 às 13h58), com o dólar subindo 9,44% para R$ 5,4387, transforma completamente a rentabilidade da cotonicultura exportadora brasileira: com a ICE NY operando ao redor de 80,20–80,71 c/lb no Dez/26 e 83,94 c/lb no Mar/27, a paridade de exportação da pluma em moeda nacional salta de R$ 132,61/@ (Dez) e R$ 138,79/@ (Mar) para cerca de R$ 145,00/@ e R$ 151,00/@! Nos coprodutos, o Caroço de Algodão em Mato Grosso no piso de R$ 688,17/t FOB (IMEA) mantém arbitragem histórica de R$ 501,83/t contra o spot de Minas Gerais (R$ 1.190,00/t).",
+      "news_sources": [
+        {
+          "headline": "Investing.com (26/10) - Cotação do Algodão em Nova York (CTZ6) e impacto cambial",
+          "url": "https://br.investing.com/commodities/us-cotton-no.2"
+        },
+        {
+          "headline": "Safras & Mercado / Notícias Agrícolas - Caroço de Algodão atinge R$ 1.190,00/t em MG, R$ 1.160,00/t em GO e R$ 688,17/t no IMEA-MT",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/mercado-fisico-safras-e-mercado"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cotonicultores)",
+          "direction": "EXATAMENTE COMO PROJETAMOS HOJE CEDO: Com o dólar saltando para R$ 5,4387 (após tocar R$ 5,6040), a paridade do contrato Março/27 (83,94 c/lb) ultrapassou R$ 150,00/@! Aproveitar esta tarde para fixar preços em Reais e travar NDFs da pluma 2026/27!",
+          "reference_links": [
+            {
+              "label": "Investing.com (26/10) - Algodão NY e Conversão Cambial",
+              "url": "https://br.investing.com/commodities/us-cotton-no.2"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Algodoeiras",
+          "direction": "Acelerar fixações de exportação de pluma em Reais para os cooperados hoje e travar contratos CIF de caroço de algodão (originado a R$ 688,17/t no MT) para MG (R$ 1.190/t) e GO (R$ 1.160/t) antes que a alta do dólar force reajuste no óleo diesel.",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas - Caroço IMEA-MT a R$ 688,17/t",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Laticínios e Confinamentos de MG/GO/SP",
+          "direction": "COMPRAR E EMBARCAR AGORA: Com o dólar saltando a R$ 5,4387 e o Brent em US$ 114,96/barril, a pressão por um reajuste imediato do óleo diesel pela Petrobras multiplicou-se hoje! Travar imediatamente o Caroço de Algodão no MT a R$ 688,17/t FOB + frete atual (~R$ 958/t CIF MG, economizando R$ 232/t frente aos R$ 1.190/t de MG) antes que o frete rodoviário suba!",
+          "reference_links": [
+            {
+              "label": "Safras & Mercado - Tabela Caroço MG (R$ 1.190) vs. IMEA-MT (R$ 688,17)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/mercado-fisico-safras-e-mercado"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Algodão)",
+          "direction": "Aproveitar o dólar a R$ 5,4387 e a disparada dos juros DI (>14,4%) para travar NDFs de exportação de pluma do 1º semestre de 2027 em patamares superiores a R$ 5,65–5,75/USD.",
+          "reference_links": [
+            {
+              "label": "UOL Economia (26/10) - Disparada do Dólar e dos Juros Futuros DI Hoje",
+              "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Aproveitar o salto do dólar a R$ 5,4387 hoje para fixar pluma Mar/27 na paridade acima de R$ 150/@!",
+        "cooperative": "Arbitrar o spread de R$ 501,83/t no caroço entre MT (R$ 688,17/t) e MG (R$ 1.190,00/t).",
+        "industry_nutrition": "Travar frete e compra de caroço no MT (R$ 688,17/t FOB) hoje antes que o dólar a R$ 5,44 force alta do diesel.",
+        "trading_desk": "Travar NDFs de exportação de pluma 2027 capturando o dólar a R$ 5,44 e DI >14,4%.",
+        "trader_long_short_fx": "Calendar Spread Short Dez/26 vs. Long Mar/27 na ICE NY e realização parcial de lucro em Dólar."
+      }
+    },
+    {
+      "block_id": "BLOCO_4_CAFE",
+      "title": "☕ 4. Complexo Café (Arábica Cai a 299,75 c/lb em NY Hoje com Pressão do Real, mas Paridade em Reais Salta Quase 7%!)",
+      "market_bias": "ICE NY Hoje (12h16): Dez/26 Cai -2,50% para 299,75 c/lb e Londres Recua -1,51% para US$ 3.193/t | Em Reais no Brasil: FORTEMENTE ALTISTA (+6,7% líquido na paridade com Dólar a R$ 5,4387, projetando cafés finos de MG acima de R$ 1.820/sc!)",
+      "executive_summary": "Na atualização das 12h16 desta segunda-feira (26/10), os preços internacionais do café ampliaram as perdas em Nova York e Londres pressionados pela desvalorização de quase 10% do Real no Brasil (que estimula fixações exportadoras): na ICE NY, o contrato Dezembro/26 do Arábica caiu 2,50%, perdendo o piso dos 300 cents para operar a 299,75 cents/lb. Em Londres, o Robusta recua 1,51% (-US$ 49) para US$ 3.193,00/t no Jan/27 e cai US$ 68 para US$ 3.160,00/t no Nov/26 (Mar/27 a US$ 3.185/t). Porém, na matemática da mesa física brasileira, como o dólar disparou 9,44% (para R$ 5,4387) enquanto NY caiu apenas 2,50%, a equivalência em Reais do contrato Dez/26 salta de R$ 2.033/sc para mais de R$ 2.156/sc (+6,7% líquido hoje), impulsionando fortemente as pedras das cooperativas de Minas Gerais!",
+      "news_sources": [
+        {
+          "headline": "Notícias Agrícolas (26/10 12h16) - Café amplia perdas em Nova York e arábica cai abaixo dos 300 cents (299,75 c/lb, -2,50%) nesta segunda-feira; Londres opera a US$ 3.160–3.193/t",
+          "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430314-cafe-amplia-perdas-em-nova-york-e-arabica-cai-abaixo-dos-300-cents-nesta-segunda-feira.html"
+        },
+        {
+          "headline": "UOL Economia (26/10) - Dólar dispara até 12,25% (R$ 5,604) e opera acima de R$ 5,43, impulsionando paridade de exportação",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+        },
+        {
+          "headline": "Notícias Agrícolas - Tabelas de Referência Café: Expocaccer Patrocínio (R$ 1.725 no Duro e R$ 1.760 no CD) e Vitória-ES",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cafeicultores — Cerrado/Triângulo, Sul e Matas de Minas)",
+          "direction": "GATILHO DE VENDA ACIONADO HOJE À TARDE: Exatamente como orientamos às 05h34 da manhã, a explosão do dólar para R$ 5,4387 (+9,44%, máxima de R$ 5,6040) superou com folga a queda de 2,50% de Nova York (299,75 c/lb), gerando ganho líquido de quase +7% em Reais por saca hoje! Aproveitar as pedras desta tarde nas cooperativas mineiras (Expocaccer, Coocacer, Cooxupé) para vender de 15% a 25% dos lotes disponíveis nos picos acima de R$ 1.800–R$ 1.850/sc!",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 12h16) - Café NY a 299,75 c/lb e Impacto do Câmbio",
+              "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430314-cafe-amplia-perdas-em-nova-york-e-arabica-cai-abaixo-dos-300-cents-nesta-segunda-feira.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas Cafeeiras e Revendas (MG e ES)",
+          "direction": "Com o forte fluxo de fixações de café em Reais nesta tarde, vincular imediatamente os repasses dos cooperados à quitação antecipada de contratos de Barter e insumos antes do reajuste das tabelas de fertilizantes pelo novo dólar de R$ 5,44.",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas - Tabelas Cooperativas de MG",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Torrefadoras e Indústrias de Café Solúvel",
+          "direction": "Embora o Robusta em Londres tenha caído mais 1,51% hoje (para US$ 3.160/t no Nov/26 e US$ 3.193/t no Jan/27), o salto de 9,44% no dólar encarece a paridade de exportação do Conilon: fechar compras físicas imediatas no Espírito Santo que ainda estejam próximas da referência anterior (R$ 898 a R$ 940/sc).",
+          "reference_links": [
+            {
+              "label": "Notícias Agrícolas (26/10 12h16) - Robusta Londres Cai a US$ 3.160–3.193/t",
+              "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430314-cafe-amplia-perdas-em-nova-york-e-arabica-cai-abaixo-dos-300-cents-nesta-segunda-feira.html"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings Exportadoras e Trader (Café)",
+          "direction": "Aproveitar o salto do dólar spot para R$ 5,4387 e a explosão dos juros futuros DI (acima de 14,4% a 15,0%) para travar NDFs de exportação de café da safra 2026/27 a taxas extraordinárias acima de R$ 5,65–R$ 5,80/USD!",
+          "reference_links": [
+            {
+              "label": "UOL Economia (26/10) - Disparada do Dólar e dos Juros Futuros DI na B3",
+              "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "producer": "Vender de 15% a 25% dos lotes disponíveis hoje à tarde aproveitando o ganho líquido de +6,7% em Reais gerado pelo dólar a R$ 5,4387!",
+        "cooperative": "Converter fixações recordes de café hoje em quitação de Barter de insumos.",
+        "industry_nutrition": "Garantir lotes físicos de Conilon antes que o dólar de R$ 5,44 anule a queda de 1,51% em Londres.",
+        "trading_desk": "Travar NDFs de exportação aproveitando o pico histórico do dólar (R$ 5,44–5,60) e dos juros DI (>14,4%).",
+        "trader_long_short_fx": "Realizar lucro em Long de Dólar e manter arbitragem NY (299,75 c/lb) vs. Londres (US$ 3.160/t)."
+      }
+    },
+    {
+      "block_id": "BLOCO_5_CAMBIO_MACRO",
+      "title": "💵 5. Mesa de Câmbio (Dólar Bate R$ 5,604 na Máxima e Opera a R$ 5,4387 às 13h58; Circuit Breaker na B3) e Petróleo (US$ 114,96)",
+      "market_bias": "Dólar Spot Agora (13h58): R$ 5,4387 (+9,44% hoje | Máxima: R$ 5,6040, +12,25%!) | B3 Amplia Limite do Dólar Futuro para 8,4% e Juros DI Saltam 182 bps | Brent: US$ 114,96 (-1,51%)",
+      "executive_summary": "A abertura pós-2º turno presidencial (reeleição de Lula) provocou um choque nos ativos domésticos nesta segunda-feira (26/10): a B3 acionou o circuit breaker após queda de mais de 10% no Ibovespa (EWZ caiu 26,74% e Petrobras ADR -23,55% no pré-mercado), enquanto o dólar comercial disparou 12,25% às 09h45 para bater R$ 5,6040! O Dólar Futuro Novembro/26 travou no limite máximo de alta logo após as 09h00 (+9,16%), forçando a B3 a expandir extraordinariamente os limites diários de oscilação do dólar (de 6% para 8,4%) e dos juros futuros DI (que subiram até 182 bps, com o DI Jan/31 a 14,460%). O Tesouro Nacional cancelou os leilões de prefixados e IPCA+ de terça (27) e quinta (29) e o BC realizou leilão de 75.000 contratos de swap às 11h30, trazendo o dólar comercial agora às 13h56 BRT para R$ 5,4387 (+9,44%).",
+      "news_sources": [
+        {
+          "headline": "UOL Economia (26/10) - Dólar sobe 12,3%, a R$ 5,604 na máxima; B3 aciona circuit breaker, amplia limites do dólar futuro para 8,4% e Tesouro cancela leilões",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+        },
+        {
+          "headline": "Veja Economia (26/10) - AO VIVO: B3 aciona circuit breaker e dólar dispara a R$ 5,60 após resultado do 2º turno",
+          "url": "https://veja.abril.com.br/economia/ao-vivo-ibovespa-futuro-derrete-15-dolar-dispara-8-apos-vitoria-de-lula/"
+        },
+        {
+          "headline": "Enfoque (26/10) - Petróleo recua em correção técnica: Brent opera a US$ 114,96 (-1,51%) e WTI a US$ 101,13 (-2,07%)",
+          "url": "https://enfoque.com.br/noticias/26-10-2026/petroleo-recua-apos-fortes-ganhos-em-possivel-correcao-tecnicaos-contratos-futuros-do-petroleo-operam-em-queda-nesta-2f-em-possivel-movimento-de-correcao-tecnica-apos-os-fortes-ganhos-recentes-entretanto-as-cotacoes-permanecem-elevadas-com-o-brent-negociado-acima-dos-us-114-por-barril-e-o-wti-em-torno-de-us-101-por-barril-ja-hellip?k=157902"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Importadores e Compradores de Insumos (Produtores, Cooperativas e Indústrias)",
+          "direction": "Quem seguiu nossa recomendação de sexta-feira e desta manhã (comprando diesel e insumos na referência de R$ 4,9930) economizou mais de 9,4% (quase R$ 0,45 a R$ 0,60 por dólar)! Agora, com o dólar a R$ 5,4387, priorizar apenas compras em Reais de fornecedores com estoque nacional antigo e usar operações de Barter (já que a saca de soja, milho e café subiu junto com o dólar).",
+          "reference_links": [
+            {
+              "label": "UOL Economia (26/10) - Choque Cambial e Medidas do Tesouro e B3 Hoje",
+              "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Exportadores e Produtores (Hedge Cambial / NDF)",
+          "direction": "OPORTUNIDADE EXTRAORDINÁRIA DE HEDGE CAMBIAL (NDF): A combinação de Dólar Spot a R$ 5,4387 (máxima de R$ 5,6040) com a disparada de até 182 pontos-base nos juros futuros DI (DI Jan/27 com limite expandido a 14,288% e Jan/29 a 15,030%) elevou o prêmio das NDFs para o maior nível do ano! Travar imediatamente de 30% a 40% da receita em dólar de 2027 via NDF na faixa de R$ 5,65 a R$ 5,85/USD!",
+          "reference_links": [
+            {
+              "label": "UOL Economia (26/10) - Disparada dos Juros Futuros DI (+182 bps) e Dólar",
+              "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/26/dolar-bolsa-abre-hoje-26-de-outubro-de-2026.ghtm"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Mesa de Câmbio (Trader B3 — DOL / WDO)",
+          "direction": "TRADE HISTÓRICO CONCLUÍDO COM SUCESSO: A nossa recomendação de compra tática (Long / Call) montada no fechamento de sexta-feira a R$ 4.974,50 / R$ 4,9930 explodiu hoje com ganho de +9,44% a +12,25% (batendo R$ 5,6040 na máxima e R$ 5,4387 agora às 13h58)! Realizar 70% a 80% do lucro agora na faixa de R$ 5,43–5,45 e subir o stop gain do restante para R$ 5,32.",
+          "reference_links": [
+            {
+              "label": "Veja Economia (26/10) - Dólar Dispara a R$ 5,60 e Circuit Breaker na B3",
+              "url": "https://veja.abril.com.br/economia/ao-vivo-ibovespa-futuro-derrete-15-dolar-dispara-8-apos-vitoria-de-lula/"
+            }
+          ]
+        }
+      ],
+      "consulting_and_trader_strategy": {
+        "importers_and_inputs": "Suspender compras dolarizadas no spot a R$ 5,44 e migrar 100% para Barter travado em sacas valorizadas.",
+        "exporters_and_producers": "Travar agressivamente NDFs de exportação hoje capturando o dólar a R$ 5,4387 (máx R$ 5,604) e juros DI >14,2%!",
+        "fx_trader_b3": "Realizar lucro histórico (+450 a +610 pontos!) na posição LONG montada a R$ 4.974,50 / R$ 4,9930 antes do 2º turno!"
+      }
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "2026-10-25",
+    "period_current": "2026-10-26 (13h58 - Tempo Real)",
+    "period_end": "2026-10-31",
+    "assets": [
+      {
+        "asset": "Dólar Comercial Spot (13h58 Ao Vivo)",
+        "unit": "R$",
+        "sunday_open_ref": 4.9930,
+        "current_value": 5.4387,
+        "weekly_change_pct": 8.93,
+        "week_low": 4.9692,
+        "week_high": 5.6040,
+        "weekly_driver": "EXPLODIU hoje (26/10) após o 2º turno eleitoral: bateu máxima de R$ 5,6040 (+12,25%) às 09h45 com circuit breaker na B3 e opera às 13h58 a R$ 5,4387 (+9,44% sobre o pré-mercado e +8,93% sobre 6ª feira)!"
+      },
+      {
+        "asset": "Petróleo Brent (Dez/26 — 26/10 Ao Vivo)",
+        "unit": "US$/barril",
+        "sunday_open_ref": 116.72,
+        "current_value": 114.96,
+        "weekly_change_pct": -1.51,
+        "week_low": 114.20,
+        "week_high": 116.72,
+        "weekly_driver": "Recua -1,51% hoje para US$ 114,96/barril em correção técnica, mas o dólar a R$ 5,4387 faz o barril em Reais saltar +7,8% no Brasil!"
+      },
+      {
+        "asset": "Petróleo WTI (Dez/26 — 26/10 Ao Vivo)",
+        "unit": "US$/barril",
+        "sunday_open_ref": 103.27,
+        "current_value": 101.13,
+        "weekly_change_pct": -2.07,
+        "week_low": 100.71,
+        "week_high": 103.27,
+        "weekly_driver": "Cai -2,07% hoje para US$ 101,13/barril antes da reunião do Fed (FOMC)."
+      },
+      {
+        "asset": "Milho B3 (Março/27 — 12h14 Ao Vivo)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 75.34,
+        "current_value": 77.26,
+        "weekly_change_pct": 2.55,
+        "week_low": 75.34,
+        "week_high": 77.50,
+        "weekly_driver": "DISPAROU +2,55% hoje (26/10 às 12h14) para R$ 77,26/sc (Maio/27 subiu +2,72% a R$ 76,72/sc) impulsionado pelo choque do dólar a R$ 5,44!"
+      },
+      {
+        "asset": "Milho B3 (Novembro/26 — 12h14 Ao Vivo)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 65.53,
+        "current_value": 67.30,
+        "weekly_change_pct": 2.70,
+        "week_low": 65.53,
+        "week_high": 67.50,
+        "weekly_driver": "Saltou +2,70% hoje na B3 para R$ 67,30/sc (Janeiro/27 subiu +2,23% para R$ 71,64/sc) com a reabertura da paridade de exportação pelo dólar."
+      },
+      {
+        "asset": "Milho CBOT (Dez/26 — 12h02 Ao Vivo)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 4.5600,
+        "current_value": 4.5400,
+        "weekly_change_pct": -0.44,
+        "week_low": 4.5125,
+        "week_high": 4.5600,
+        "weekly_driver": "Recua -0,44% (-2,00 c) às 12h02 para US$ 4,5400/bu (Mar/27 a US$ 4,6800/bu) com avanço da colheita nos EUA."
+      },
+      {
+        "asset": "Soja CBOT (Nov/26 — 12h11 Ao Vivo)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 12.5650,
+        "current_value": 12.3250,
+        "weekly_change_pct": -1.91,
+        "week_low": 12.3100,
+        "week_high": 12.5000,
+        "weekly_driver": "Caiu -1,91% (-24,00 cents) hoje para US$ 12,3250/bu pressionada pela disparada do dólar no Brasil e pelo plantio brasileiro em 40% (AgRural)."
+      },
+      {
+        "asset": "Farelo de Soja CBOT (Dez/26 — 26/10)",
+        "unit": "US$/tc",
+        "sunday_open_ref": 346.50,
+        "current_value": 338.45,
+        "weekly_change_pct": -2.32,
+        "week_low": 338.40,
+        "week_high": 344.85,
+        "weekly_driver": "Desabou -2,32% (-US$ 8,05/tc) hoje para US$ 338,45/tc com o foco mundial em óleo/biodiesel."
+      },
+      {
+        "asset": "Café Arábica ICE NY (Dez/26 — 12h16 Ao Vivo)",
+        "unit": "cents/lb",
+        "sunday_open_ref": 307.45,
+        "current_value": 299.75,
+        "weekly_change_pct": -2.50,
+        "week_low": 298.50,
+        "week_high": 306.00,
+        "weekly_driver": "Recuou -2,50% hoje às 12h16 para 299,75 c/lb pressionado pelo salto do dólar a R$ 5,44 no Brasil (mas em Reais sobe +6,7% hoje!)."
+      },
+      {
+        "asset": "Café Robusta Londres (Jan/27 — 12h16 Ao Vivo)",
+        "unit": "US$/t",
+        "sunday_open_ref": 3242.00,
+        "current_value": 3193.00,
+        "weekly_change_pct": -1.51,
+        "week_low": 3160.00,
+        "week_high": 3242.00,
+        "weekly_driver": "Caiu -1,51% (-US$ 49) hoje no Jan/27 para US$ 3.193,00/t (Nov/26 caiu US$ 68 para US$ 3.160,00/t)."
+      },
+      {
+        "asset": "Caroço de Algodão (IMEA MT vs. MG Safras)",
+        "unit": "R$/t",
+        "sunday_open_ref": 688.17,
+        "current_value": 688.17,
+        "weekly_change_pct": 0.00,
+        "week_low": 688.17,
+        "week_high": 688.17,
+        "weekly_driver": "Piso de R$ 688,17/t FOB no MT contra R$ 1.190,00/t no spot de MG e R$ 1.160,00/t em GO (spread de R$ 501,83/t)."
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-10-01",
+    "current_date": "2026-10-26 (13h58)",
+    "days_elapsed": 26,
+    "assets": [
+      {
+        "asset": "Dólar Comercial Spot (13h58 Ao Vivo)",
+        "unit": "R$",
+        "month_open_value": 4.9850,
+        "mid_month_10_oct": 5.0320,
+        "current_value": 5.4387,
+        "mtd_change_pct": 9.10,
+        "month_low": 4.9690,
+        "month_high": 5.6040,
+        "monthly_narrative": "Virada histórica em 26/10: após operar a R$ 4,993 na 6ª feira, disparou até R$ 5,6040 hoje pós-eleição e opera às 13h58 a R$ 5,4387 (+9,10% no mês)!"
+      },
+      {
+        "asset": "Petróleo Brent (Dez/26 — 26/10)",
+        "unit": "US$/barril",
+        "month_open_value": 98.40,
+        "mid_month_10_oct": 103.50,
+        "current_value": 114.96,
+        "mtd_change_pct": 16.83,
+        "month_low": 98.00,
+        "month_high": 117.25,
+        "monthly_narrative": "Acumula alta de 16,83% em outubro (US$ 114,96/b), agravada hoje pelo salto de 9,44% no dólar sobre o custo de importação do diesel."
+      },
+      {
+        "asset": "Milho B3 (Março/27 — 12h14 Ao Vivo)",
+        "unit": "R$/sc",
+        "month_open_value": 74.80,
+        "mid_month_10_oct": 75.00,
+        "current_value": 77.26,
+        "mtd_change_pct": 3.29,
+        "month_low": 74.50,
+        "month_high": 77.50,
+        "monthly_narrative": "Com o salto de +2,55% hoje para R$ 77,26/sc puxado pelo dólar, renova máxima do mês (+3,29% em outubro)."
+      },
+      {
+        "asset": "Soja CBOT (Nov/26 — 12h11 Ao Vivo)",
+        "unit": "US$/bu",
+        "month_open_value": 12.9500,
+        "mid_month_10_oct": 12.7800,
+        "current_value": 12.3250,
+        "mtd_change_pct": -4.83,
+        "month_low": 12.3100,
+        "month_high": 13.0200,
+        "monthly_narrative": "Caiu para US$ 12,3250/bu (-4,83% no mês) pressionada pelo avanço do plantio no Brasil (40%) e pela desvalorização do Real hoje."
+      },
+      {
+        "asset": "Farelo de Soja CBOT (Dez/26 — 26/10)",
+        "unit": "US$/tc",
+        "month_open_value": 372.00,
+        "mid_month_10_oct": 365.20,
+        "current_value": 338.45,
+        "mtd_change_pct": -9.02,
+        "month_low": 338.40,
+        "month_high": 374.00,
+        "monthly_narrative": "Acumula tombo de 9,02% em outubro (US$ 338,45/tc) devido ao excesso mundial de oferta gerado pelo foco no óleo."
+      },
+      {
+        "asset": "Café Arábica ICE NY (Dez/26 — 12h16)",
+        "unit": "cents/lb",
+        "month_open_value": 302.00,
+        "mid_month_10_oct": 308.50,
+        "current_value": 299.75,
+        "mtd_change_pct": -0.75,
+        "month_low": 298.50,
+        "month_high": 316.65,
+        "monthly_narrative": "Recuou 2,50% hoje para 299,75 c/lb com a disparada do dólar no Brasil, mas em Reais por saca atinge o maior valor do semestre."
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar Spot e Futuro B3 (AUDITORIA CHOQUE PÓS-2º TURNO)",
+      "current_base": "Spot (13h58): R$ 5,4387 (+9,44% hoje!) | Máxima 09h45: R$ 5,6040 (+12,25%!)",
+      "short_term_target_23_oct": "AUDITORIA 26/10: Às 05h34 alertamos para explosão cambial pós-eleição com base nas opções do CME (-10,17%); o dólar subiu até +12,25% (R$ 5,604) e opera a R$ 5,4387 (ACERTO HISTÓRICO!)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,30 – R$ 5,55 (Fechamento PTAX 30/10)",
+        "bull_case": "R$ 5,65+",
+        "bear_case": "R$ 5,18 (Se houver intervenção pesada do BC/Tesouro)"
+      },
+      "audit_trigger": "Sinalizações da equipe econômica, leilões extraordinários do BC e fechamento da PTAX na 6ª feira (30/10)."
+    },
+    {
+      "commodity": "Milho B3 (AUDITORIA MARÇO/27 E NOVEMBRO/26 HOJE)",
+      "current_base": "Nov/26: R$ 67,30 (+2,70%) | Jan/27: R$ 71,64 (+2,23%) | Mar/27: R$ 77,26 (+2,55%) | Mai/27: R$ 76,72 (+2,72%)",
+      "short_term_target_23_oct": "AUDITORIA 26/10 12h14: Projetamos alvo de R$ 75,00 a R$ 77,80 para o Março/27 puxado pelo dólar; atingiu R$ 77,26/sc hoje (ACERTOU NA MOSCA!)",
+      "end_of_month_30_oct": {
+        "base_case": "B3 Mar/27: R$ 76,50 – R$ 79,50 | B3 Nov/26: R$ 66,80 – R$ 69,00",
+        "bull_case": "B3 Mar/27: R$ 81,00+",
+        "bear_case": "B3 Mar/27: R$ 75,00"
+      },
+      "audit_trigger": "Repasse do dólar a R$ 5,44 para a paridade de exportação de milho em novembro e janeiro."
+    },
+    {
+      "commodity": "Soja CBOT vs. Paridade em Reais no Brasil",
+      "current_base": "CBOT Nov (12h11): US$ 12,3250 (-1,91%) | Inspeções EUA: 2,48 mi t (+20%) | Plantio BR: 40%",
+      "short_term_target_23_oct": "AUDITORIA 26/10: Explicamos às 05h34 que a alta do dólar (+9,44%) superaria a queda da CBOT (-1,91%), gerando saldo líquido de +7,3% em Reais/saca hoje (ACERTOU!)",
+      "end_of_month_30_oct": {
+        "base_case": "Paridade Portos BR: R$ 160 – R$ 166/sc | CBOT Nov: US$ 12,20 – 12,55/bu",
+        "bull_case": "Portos BR: R$ 170,00/sc",
+        "bear_case": "Portos BR: R$ 155,00/sc"
+      },
+      "audit_trigger": "Ritmo de fixações dos produtores brasileiros a R$ 5,44 vs. compras chinesas (inspeções EUA +20%)."
+    },
+    {
+      "commodity": "Café Arábica (NY 299,75 c/lb) e Robusta (Londres US$ 3.160–3.193/t)",
+      "current_base": "NY Dez (12h16): 299,75 c/lb (-2,50%) | Londres Jan: US$ 3.193/t (-1,51%) | Paridade R$: +6,7% hoje!",
+      "short_term_target_23_oct": "AUDITORIA 26/10: Dólar a R$ 5,4387 projeta cafés finos das cooperativas de MG rompendo R$ 1.800–1.850/sc hoje!",
+      "end_of_month_30_oct": {
+        "base_case": "Cooperativas MG: R$ 1.780 – R$ 1.880/sc | Conilon ES: R$ 920 – R$ 980/sc",
+        "bull_case": "Cooperativas MG: R$ 1.920+/sc",
+        "bear_case": "Cooperativas MG: R$ 1.720/sc"
+      },
+      "audit_trigger": "Sustentação do dólar acima de R$ 5,40 vs. pressão de vendas na ICE NY abaixo de 300 c/lb."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "Anatomia do Choque Cambial de Hoje (Dólar a R$ 5,4387, +9,44%, e DI +182 bps): Por que a B3 Disparou +2,7% Enquanto Chicago Caiu 1,91%?",
+    "formula": "Variação Líquida em R$/saca = [(1 + Var. Dólar +9,44%) * (1 + Var. CBOT -1,91%)] - 1 = (1,0944 * 0,9809) - 1 = +7,35% de Ganho Líquido em Reais hoje!",
+    "analysis": "O pregão desta segunda-feira (26/10 às 13h58) é uma aula prática ao vivo da relação inversa entre o Real brasileiro e as bolsas internacionais (CBOT e ICE NY): como o dólar comercial disparou até 12,25% pela manhã (R$ 5,6040) e opera agora em alta de 9,44% a R$ 5,4387 após o 2º turno eleitoral, o produto agrícola brasileiro ficou instantaneamente muito mais barato em dólares para o importador estrangeiro. Isso forçou a Soja Nov/26 em Chicago a cair 1,91% (para US$ 12,3250/bu) e o Café Arábica em NY a cair 2,50% (para 299,75 c/lb). Porém, para o produtor brasileiro que vende em Reais, a alta de 9,44% no câmbio esmaga a queda de 1,91% em Chicago, gerando um ganho líquido de +7,35% em Reais na soja (+R$ 10 a +R$ 12/saca) e fazendo o Milho na B3 disparar até +2,72% (com o Março/27 saltando para R$ 77,26/sc)!",
+    "strategic_takeaway": "Em dias de choque cambial doméstico (+9,44% no dólar e +182 bps nos juros DI), o produtor não deve olhar isoladamente para a tela vermelha de Chicago ou Nova York: a conversão em Reais e as NDFs para 2027 estão pagando os maiores valores do semestre hoje!"
+  }
+}
