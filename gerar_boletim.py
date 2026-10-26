@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from google import genai
@@ -12,8 +13,10 @@ data_str = agora_brt.strftime("%Y-%m-%d")
 hora_str = agora_brt.strftime("%H:%M")
 timestamp_iso = agora_brt.strftime("%Y-%m-%dT%H:%M:00-03:00")
 id_relatorio = agora_brt.strftime("AGRI-INTEL-%Y-%m-%d-%H%M")
-nome_arquivo_historico = agora_brt.strftime("historico/boletim_%Y-%m-%d_%H%M.json")
-nome_relatorio_md = agora_brt.strftime("historico/relatorio_%Y-%m-%d_%H%M.md")
+
+# Ajustado para 'Historico/' (com H maiúsculo para coincidir com a pasta do seu repositório)
+nome_arquivo_historico = agora_brt.strftime("Historico/historico_%Y_%m_%d-%Hh.json")
+nome_relatorio_md = agora_brt.strftime("Historico/relatorio_%Y_%m_%d-%Hh.md")
 
 # 2. Carrega o boletim_atual.json anterior (se existir) para manter o histórico diário do gráfico
 contexto_anterior = ""
@@ -44,15 +47,27 @@ Gere o relatório completo e, ao final, inclua OBRIGATORIAMENTE o bloco ```json 
 
 print(f"🔄 Consultando Gemini com Pesquisa Google ao vivo ({timestamp_iso})...")
 
-response = client.models.generate_content(
-    model="gemini-3.8-flash",  # Atualizado para o modelo correto da API
-    contents=prompt,
-    config=types.GenerateContentConfig(
-        # Habilita a busca na web em tempo real!
-        tools=[types.Tool(google_search=types.GoogleSearch())],
-        temperature=0.2,
-    ),
-)
+response = None
+max_tentativas = 3
+
+for tentativa in range(1, max_tentativas + 1):
+    try:
+        response = client.models.generate_content(
+            model="gemini-3.8-flash",
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())],
+                temperature=0.2,
+            ),
+        )
+        break  # Se deu certo, sai do loop
+    except Exception as e:
+        print(f"⚠️ Tentativa {tentativa} falhou: {e}")
+        if tentativa < max_tentativas:
+            print("⏳ Aguardando 20 segundos para tentar novamente...")
+            time.sleep(20)
+        else:
+            raise e
 
 texto_resposta = response.text
 
@@ -71,8 +86,8 @@ with open("boletim_atual.json", "w", encoding="utf-8") as f:
     json.dump(dados_json, f, ensure_ascii=False, indent=2)
 print("✅ Arquivo 'boletim_atual.json' atualizado com sucesso!")
 
-# 7. Cria a pasta 'historico/' e salva o NOVO arquivo JSON e o relatório em Markdown
-os.makedirs("historico", exist_ok=True)
+# 7. Cria a pasta 'Historico/' e salva o NOVO arquivo JSON e o relatório em Markdown
+os.makedirs("Historico", exist_ok=True)
 
 with open(nome_arquivo_historico, "w", encoding="utf-8") as f:
     json.dump(dados_json, f, ensure_ascii=False, indent=2)
