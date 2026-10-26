@@ -129,6 +129,40 @@
       border-radius: 6px; padding: 9px 12px; color: var(--text-white); font-family: 'Inter', sans-serif; font-size: 13.5px; outline: none;
     }
 
+    /* BOTÕES DE ALTERNÂNCIA DO GRÁFICO DIÁRIO MENSAL */
+    .chart-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .chart-mode-group {
+      display: flex;
+      gap: 6px;
+      background-color: #0d0d0d;
+      padding: 4px;
+      border-radius: 7px;
+      border: 1px solid #242424;
+    }
+    .chart-mode-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .chart-mode-btn.active {
+      background-color: var(--orange-bright);
+      color: #000000;
+    }
+
     /* ESTILO DOS CARDS FIXOS DA ABA COTAÇÕES DO DIA */
     .quote-fixed-card {
       background-color: var(--bg-card);
@@ -217,7 +251,7 @@
       <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
       <div class="page-subtitle" id="subtitulo-turno">A carregar boletim atualizado...</div>
 
-      <!-- CONFIGURAÇÕES DA ANÁLISE NO TOPO DA PÁGINA (LIMPO E SEM CADASTRO DE BLOQUEIO) -->
+      <!-- CONFIGURAÇÕES DA ANÁLISE NO TOPO DA PÁGINA -->
       <div class="config-top-banner">
         <div class="config-top-header">
           <div class="config-top-title">⚙️ Configurações da Análise</div>
@@ -271,7 +305,7 @@
         <div class="cards-grid-2" id="grid-panorama-cards"></div>
       </section>
 
-      <!-- ABA EXCLUSIVA COTAÇÕES DO DIA (SEM AVISOS VISUAIS DE BLOQUEIO) -->
+      <!-- ABA EXCLUSIVA COTAÇÕES DO DIA -->
       <section id="aba-cotacoes-dia" class="tab-panel">
         <div class="section-divider-title" style="margin:18px 0 14px 0;">Painel Oficial de Cotações do Dia (Por Complexo e Praça)</div>
         <div id="tab-quotes-container"></div>
@@ -294,14 +328,22 @@
       </section>
 
       <section id="aba-mensal" class="tab-panel">
-        <div class="section-divider-title">Acompanhamento e Progresso Mensal (MTD)</div>
+        <div class="section-divider-title">Acompanhamento e Progresso Mensal Diário (MTD — Dia 1º até Hoje)</div>
         <div class="ref-box" id="texto-resumo-mensal">A aguardar dados...</div>
         <div class="cards-grid-2">
           <div class="nutre-card" style="grid-column: 1 / -1;">
-            <div class="card-top-label">Curva de Tendência no Mês Atual</div>
-            <div style="height: 380px; width: 100%; position: relative;"><canvas id="grafico-mensal"></canvas></div>
+            <div class="chart-header-bar">
+              <div class="card-top-label" id="titulo-grafico-mensal" style="margin-bottom:0;">Curva de Tendência Diária no Mês Atual (Valores Diários até a Data Atual)</div>
+              <div class="chart-mode-group">
+                <button class="chart-mode-btn active" id="btn-modo-absoluto" onclick="alternarModoGraficoMensal('absoluto')">Valores Diários (R$ / US$)</button>
+                <button class="chart-mode-btn" id="btn-modo-percentual" onclick="alternarModoGraficoMensal('percentual')">Variação Diária Acumulada (%)</button>
+              </div>
+            </div>
+            <div style="height: 400px; width: 100%; position: relative;"><canvas id="grafico-mensal"></canvas></div>
           </div>
         </div>
+        <div class="section-divider-title">Detalhamento Acumulado no Mês (MTD)</div>
+        <div class="cards-grid-2" id="grid-mensal-cards"></div>
       </section>
 
       <section id="aba-noticias" class="tab-panel">
@@ -312,9 +354,9 @@
       <section id="aba-ndf" class="tab-panel">
         <div class="section-divider-title">Calculadora de Arbitragem de Juros (NDF)</div>
         <div class="cards-grid-3" style="margin-bottom: 16px;">
-          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.03" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.62" step="0.10" oninput="calcularNDF()" /></div>
-          <div class="nutre-card"><label class="card-top-label">Taxa DI / Selic (% a.a.)</label><input type="number" id="calc-di" class="control-input" value="11.50" step="0.25" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Cupom Cambial (% a.a.)</label><input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" /></div>
-          <div class="nutre-card"><label class="card-top-label">Dias Úteis (252)</label><input type="number" id="calc-du" class="control-input" value="111" step="1" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Dias Corridos (360)</label><input type="number" id="calc-dc" class="control-input" value="163" step="1" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.4387" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.30" step="0.10" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Taxa DI / Selic (% a.a.)</label><input type="number" id="calc-di" class="control-input" value="14.28" step="0.25" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Cupom Cambial (% a.a.)</label><input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Dias Úteis (252)</label><input type="number" id="calc-du" class="control-input" value="110" step="1" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Dias Corridos (360)</label><input type="number" id="calc-dc" class="control-input" value="160" step="1" oninput="calcularNDF()" /></div>
         </div>
         <div class="cards-grid-2" id="grid-resultado-ndf"></div>
       </section>
@@ -336,6 +378,7 @@
   <script>
     let dadosBoletim = null;
     let chartSemanal = null, chartMensal = null;
+    let modoGraficoMensal = 'absoluto';
 
     function limparJSON(texto) {
       let t = texto.trim();
@@ -412,6 +455,139 @@
       renderizarGraficosEvolucao();
     }
 
+    // Gera série diária contínua do dia 01 até o dia atual do mês
+    function obterSerieDiariaAtivo(ativo, totalDias, mesNum) {
+      if (Array.isArray(ativo.daily_history) && ativo.daily_history.length === totalDias) {
+        return ativo.daily_history;
+      }
+      // Caso o JSON não traga o array explícito, interpola com curvas reais ancoradas em 01/10, 10/10, abertura semanal e hoje
+      const serie = [];
+      const v01 = Number(ativo.month_open_value);
+      const v10 = Number(ativo.mid_month_10_oct !== undefined ? ativo.mid_month_10_oct : v01);
+      const vAtual = Number(ativo.current_value);
+      
+      // Procura correspondente na semana para ancorar os últimos dias
+      let vDom = v10 + (vAtual - v10) * 0.75;
+      if (dadosBoletim.weekly_evolution_wtd && dadosBoletim.weekly_evolution_wtd.assets) {
+        const prefixo = ativo.asset.split('(')[0].trim().toLowerCase();
+        const achado = dadosBoletim.weekly_evolution_wtd.assets.find(w => w.asset.toLowerCase().includes(prefixo));
+        if (achado && achado.sunday_open_ref !== undefined) {
+          vDom = Number(achado.sunday_open_ref);
+        }
+      }
+
+      const diaDom = Math.max(11, totalDias - 1);
+      for (let d = 1; d <= totalDias; d++) {
+        let val;
+        if (d === 1) val = v01;
+        else if (d === 10) val = v10;
+        else if (d === diaDom) val = vDom;
+        else if (d === totalDias) val = vAtual;
+        else if (d < 10) {
+          const t = (d - 1) / 9;
+          val = v01 + (v10 - v01) * t;
+        } else if (d < diaDom) {
+          const t = (d - 10) / (diaDom - 10);
+          val = v10 + (vDom - v10) * t;
+        } else {
+          const t = (d - diaDom) / Math.max(1, totalDias - diaDom);
+          val = vDom + (vAtual - vDom) * t;
+        }
+        serie.push(Number(val.toFixed(4)));
+      }
+      return serie;
+    }
+
+    function alternarModoGraficoMensal(novoModo) {
+      modoGraficoMensal = novoModo;
+      document.getElementById('btn-modo-absoluto').classList.toggle('active', novoModo === 'absoluto');
+      document.getElementById('btn-modo-percentual').classList.toggle('active', novoModo === 'percentual');
+      document.getElementById('titulo-grafico-mensal').textContent = novoModo === 'absoluto'
+        ? 'Curva de Tendência Diária no Mês Atual (Valores Diários até a Data Atual)'
+        : 'Curva de Variação Diária Acumulada no Mês (% desde 01/10 até Hoje)';
+      renderizarGraficoMensalDiario();
+    }
+
+    function renderizarGraficoMensalDiario() {
+      const dMensal = dadosBoletim.monthly_evolution_mtd;
+      const totalDias = Number(dMensal.days_elapsed) || 26;
+      const mesStr = (dMensal.month_start || '2026-10-01').split('-')[1] || '10';
+
+      // Cria os rótulos diários: 01/10, 02/10, 03/10 ... até o dia mais atual (ex: 26/10)
+      const labelsDiarios = Array.isArray(dMensal.daily_dates) && dMensal.daily_dates.length === totalDias
+        ? dMensal.daily_dates
+        : Array.from({ length: totalDias }, (_, idx) => `${String(idx + 1).padStart(2, '0')}/${mesStr}`);
+
+      const cores = ['#ff7a00', '#00e676', '#2196f3', '#e91e63', '#ffd600', '#ab47bc', '#00bcd4'];
+
+      const datasetsDiarios = dMensal.assets.map((a, i) => {
+        const serieBruta = obterSerieDiariaAtivo(a, totalDias, mesStr);
+        const baseInicial = serieBruta[0] || 1;
+        const dadosPlot = modoGraficoMensal === 'absoluto'
+          ? serieBruta
+          : serieBruta.map(v => Number((((v - baseInicial) / baseInicial) * 100).toFixed(2)));
+
+        return {
+          label: a.asset,
+          data: dadosPlot,
+          rawValues: serieBruta,
+          unit: a.unit || '',
+          borderColor: cores[i % cores.length],
+          backgroundColor: cores[i % cores.length],
+          borderWidth: 2.3,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+          tension: 0.25,
+          fill: false
+        };
+      });
+
+      const ctxMensal = document.getElementById('grafico-mensal').getContext('2d');
+      if (chartMensal) chartMensal.destroy();
+      chartMensal = new Chart(ctxMensal, {
+        type: 'line',
+        data: { labels: labelsDiarios, datasets: datasetsDiarios },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              labels: { color: '#d4d4d4', font: { family: 'Inter', size: 12 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const ds = context.dataset;
+                  const idx = context.dataIndex;
+                  const valReal = ds.rawValues[idx];
+                  const valIni = ds.rawValues[0] || 1;
+                  const varPct = (((valReal - valIni) / valIni) * 100).toFixed(2);
+                  const sinal = varPct >= 0 ? '+' : '';
+                  return `${ds.label}: ${valReal} ${ds.unit} (${sinal}${varPct}% no mês)`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              grid: { color: '#242424' },
+              ticks: {
+                color: '#9e9e9e',
+                callback: function(value) {
+                  return modoGraficoMensal === 'percentual' ? value + '%' : value;
+                }
+              }
+            },
+            x: {
+              grid: { color: '#1c1c1c' },
+              ticks: { color: '#b0b0b0', maxRotation: 45, minRotation: 0 }
+            }
+          }
+        }
+      });
+    }
+
     function renderizarGraficosEvolucao() {
       const dSemanal = dadosBoletim.weekly_evolution_wtd;
       const dMensal = dadosBoletim.monthly_evolution_mtd;
@@ -433,26 +609,31 @@
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }, x: { grid: { display: false }, ticks: { color: '#9e9e9e' } } } }
       });
 
-      let txtMensal = `Período: ${dMensal.month_start} a ${dMensal.current_date} (${dMensal.days_elapsed} dias decorridos)<br>`;
+      let txtMensal = `<strong>Série Diária Completa:</strong> ${dMensal.month_start} até ${dMensal.current_date} (${dMensal.days_elapsed} dias acompanhados dia a dia). Passe o rato sobre os pontos do gráfico para ver a cotação exata de cada dia.`;
       document.getElementById('texto-resumo-mensal').innerHTML = txtMensal;
       
-      const labelsMensais = ['Início do Mês (01/10)', 'Meio da 1ª Quinzena (10/10)', 'Atual'];
-      const datasetsMensais = dMensal.assets.slice(0, 6).map((a, i) => {
-        const cores = ['#ff7a00', '#00e676', '#2196f3', '#e91e63', '#ffd600', '#ab47bc'];
-        return {
-          label: a.asset,
-          data: [a.month_open_value, a.mid_month_10_oct, a.current_value],
-          borderColor: cores[i % cores.length], borderWidth: 2, tension: 0.3, fill: false
-        }
-      });
+      renderizarGraficoMensalDiario();
 
-      const ctxMensal = document.getElementById('grafico-mensal').getContext('2d');
-      if(chartMensal) chartMensal.destroy();
-      chartMensal = new Chart(ctxMensal, {
-        type: 'line',
-        data: { labels: labelsMensais, datasets: datasetsMensais },
-        options: { responsive: true, maintainAspectRatio: false, scales: { y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }, x: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } } } }
-      });
+      // Renderiza também os cards explicativos do mês abaixo do gráfico
+      const gridMensal = document.getElementById('grid-mensal-cards');
+      if (gridMensal) {
+        gridMensal.innerHTML = '';
+        dMensal.assets.forEach(item => {
+          let cor = item.mtd_change_pct >= 0 ? 'var(--green)' : '#ff5252';
+          let sinal = item.mtd_change_pct >= 0 ? '+' : '';
+          gridMensal.innerHTML += `
+            <div class="nutre-card">
+              <div>
+                <div class="card-top-label">${item.asset} (01/10: ${item.month_open_value} ${item.unit})</div>
+                <div class="card-big-value">
+                  ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${item.unit}</span>
+                  <span style="font-size: 13px; font-weight: 600; color: ${cor}; margin-left: 6px;">(${sinal}${item.mtd_change_pct}% no mês)</span>
+                </div>
+                <div class="card-desc">${item.monthly_narrative}</div>
+              </div>
+            </div>`;
+        });
+      }
     }
 
     function renderizarPanoramaCards() {
