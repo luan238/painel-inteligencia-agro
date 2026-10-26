@@ -45,7 +45,7 @@ Gere o relatório completo e, ao final, inclua OBRIGATORIAMENTE o bloco ```json 
 print(f"🔄 Consultando Gemini com Pesquisa Google ao vivo ({timestamp_iso})...")
 
 response = client.models.generate_content(
-    model="gemini-2.5-flash",  # Alterado para o modelo padrão atual do AI Studio
+    model="gemini-3.8-flash",  # Atualizado para o modelo correto da API
     contents=prompt,
     config=types.GenerateContentConfig(
         # Habilita a busca na web em tempo real!
