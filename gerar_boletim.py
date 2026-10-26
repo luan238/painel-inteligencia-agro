@@ -52,7 +52,7 @@ max_tentativas = 3
 for tentativa in range(1, max_tentativas + 1):
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash",  # Usando o modelo flash padrão altamente estável
+            model="gemini-3.8-flash",  # Usando o modelo flash padrão altamente estável
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[types.Tool(google_search=types.GoogleSearch())],
