@@ -1,444 +1,332 @@
 {
-  "report_id": "AGRI-INTEL-2026-10-27-0725",
-  "timestamp": "2026-10-27T07:25:00-03:00",
-  "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro",
   "metadata": {
-    "id": "AGRI-INTEL-2026-10-27-0725",
-    "date": "2026-10-27",
-    "time_brt": "07:25",
-    "shift": "Morning Call - Consolidado Tempo Real",
-    "sources": [
-      {
-        "title": "Notícias Agrícolas - Cotações e Tabelas de Soja",
-        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
-      },
-      {
-        "title": "Notícias Agrícolas - Cotações e Tabelas de Milho (B3, CBOT, IMEA)",
-        "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
-      },
-      {
-        "title": "Notícias Agrícolas - Fechamento de Algodão NYBOT e Tabelas IMEA/AIBA",
-        "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430340-algodao-recua-mais-de-1-em-nova-york-nesta-2-feira.html"
-      },
-      {
-        "title": "Visão Agro - Exportações de DDG de Mato Grosso crescem 35% em 2026",
-        "url": "https://visaoagro.com.br/exportacoes-de-ddg-de-mato-grosso-crescem-35-em-2026-impulsionadas-pela-china/"
-      },
-      {
-        "title": "Banco Central do Brasil - Boletim Oficial PTAX",
-        "url": "https://ptax.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do"
-      },
-      {
-        "title": "Notícias Agrícolas - Indicador Cepea/Esalq Café Arábica e Conilon",
-        "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe/indicador-cepea-esalq-cafe-arabica"
-      }
-    ]
+    "target_regions": "Triângulo Mineiro / Mato Grosso / Santos / Paranaguá / Chicago / ICE / B3",
+    "scope": "Soja, Milho, DDGS, Algodão, Café e Câmbio (FOB / CIF)",
+    "timestamp": "27/10/2026 às 07:30 BRT",
+    "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
-  "audio_script_morning_call": {
-    "title": "🎧 Versão para Ouvir (Resumo Falado — 2 a 3 min)",
-    "duration_estimate": "2m45s",
-    "full_text": "Bom dia a todos da mesa e parceiros no campo. Começamos esta terça-feira, vinte e sete de outubro de dois mil e vinte e seis, digerindo um pregão de altíssima volatilidade cambial e descolamento total entre as bolsas internacionais e o mercado físico brasileiro. Ontem, vimos um movimento clássico de proteção cambial: enquanto Chicago fechou no vermelho para soja e milho devido à pressão da colheita americana, o dólar comercial no Brasil disparou mais de oito por cento no mercado futuro da B3, levando a taxa PTAX oficial do Banco Central para cinco reais e cinquenta centavos no fechamento. Esse salto do câmbio funcionou como uma mola propulsora imediata para a paridade de exportação. Na soja, mesmo com o contrato novembro em Chicago caindo quinze centavos e fechando a doze dólares e quarenta e um centavos por bushel, o indicador de Paranaguá saltou mais de dois por cento num único dia, batendo cento e cinquenta e cinco reais e cinquenta e cinco centavos por saca, enquanto o indicador Paraná subiu para cento e quarenta e nove reais e dezoito centavos. No milho, o cenário não foi diferente: Chicago recuou levemente para quatro dólares e cinquenta e cinco centavos no vencimento dezembro, mas na B3 os contratos futuros dispararam mais de dois e meio por cento ao longo de toda a curva de dois mil e vinte e sete, com o março indo a setenta e sete reais e trinta e quatro centavos. Na nutrição animal e coprodutos, o DDGS mato-grossense segue batendo recordes históricos de embarque para a China, acumulando alta de trinta e cinco por cento nas exportações do ano, enquanto o caroço de algodão trava em seiscentos e oitenta e oito reais a tonelada no Mato Grosso contra novecentos e sessenta e seis reais no Oeste da Bahia. No café arábica, a firmeza cambial também compensou a queda de Nova Iorque e empurrou o indicador Cepea para mil seiscentos e vinte e sete reais por saca. A mensagem central da mesa hoje é direta: aproveitem o pico cambial para travar receitas em reais e fixar relações de troca, enquanto confinadores devem correr para garantir coprodutos antes que o repasse do dólar encareça toda a matriz proteica."
+  "executive_summary": {
+    "cambio_energia_frete": "O dólar PTAX encerrou cotado a R$ 5,5007 (alta expressiva de +9,19% face à referência anterior) e o Dólar Futuro na B3 disparou +8,11% aos 5.378 pontos, impulsionando instantaneamente a paridade de exportação nos portos brasileiros e gerando volatilidade nos insumos agrícolas.",
+    "complexo_soja": "Chicago recuou -1,21% (Nov/26 a US$ 12,4125/bu) devido à colheita nos EUA, mas o salto do câmbio neutralizou a queda externa: o Indicador Paranaguá avançou +2,06% para R$ 155,55/sc e o PR subiu para R$ 149,18/sc.",
+    "complexo_milho_etanol_ddgs": "Curva futura da B3 em forte alta (+2,23% a +2,65%), com o Jan/27 a R$ 71,83/sc e Mar/27 a R$ 77,34/sc. As exportações de DDGS do Mato Grosso acumulam alta de +35,01% em 2026, impulsionadas pela demanda externa.",
+    "complexo_algodao": "Pluma Cepea firmou alta de +0,35% aos 406,11 ¢ R$/lb (apesar de recuo em Nova Iorque). O caroço de algodão opera com forte arbitragem regional: R$ 688,17/t no MT contra R$ 966,67/t na Bahia.",
+    "complexo_cafe": "O efeito cambial anulou a baixa da ICE NY (-2,59%), empurrando o Indicador Cepea Arábica para R$ 1.627,46/sc (+1,59%) e o Conilon para R$ 954,64/sc."
   },
   "market_indicators": {
-    "cambio_macro": {
-      "dolar_ptax_compra": 5.4998,
-      "dolar_ptax_venda": 5.5007,
-      "dolar_ptax_var_pc": 9.19,
-      "euro_ptax_venda": 6.1487,
-      "dolar_futuro_b3_nov26_pts": 5378.00,
-      "dolar_futuro_b3_var_pc": 8.11,
-      "petroleo_wti_dez26_usd": 102.23,
-      "petroleo_wti_var_pc": -1.01
+    "cambio_e_energia": {
+      "dolar_ptax": "R$ 5,5007 (+9,19%)",
+      "dolar_futuro_b3": "5.378,00 pts (+8,11%)",
+      "petroleo_wti": "US$ 102,23 / barril (-1,01%)",
+      "euro_ptax": "R$ 6,1487 (+8,98%)"
     },
     "complexo_soja": {
-      "cbot_nov26_usd_bu": 12.4125,
-      "cbot_jan27_usd_bu": 12.5250,
-      "cbot_mar27_usd_bu": 12.6100,
-      "cbot_mai27_usd_bu": 12.7000,
-      "cbot_nov26_var_pc": -1.21,
-      "b3_soja_nov26_usd_sc": 27.33,
-      "b3_soja_jan27_usd_sc": 27.65,
-      "farelo_cbot_dez26_usd_ton": 340.20,
-      "farelo_cbot_jan27_usd_ton": 338.40,
-      "farelo_cbot_var_pc": -1.70,
-      "esalq_paranagua_brl_sc": 155.55,
-      "esalq_paranagua_var_pc": 2.06,
-      "cepea_pr_brl_sc": 149.18,
-      "cepea_pr_var_pc": 1.70,
-      "premio_paranagua_out26_usd_bu": 1.40,
-      "premio_paranagua_nov26_usd_bu": 1.55,
-      "premio_paranagua_dez26_usd_bu": 1.50,
-      "pracas_fisicas_brl_sc": {
-        "porto_paranagua_disp": 155.00,
-        "porto_rio_grande_disp": 156.00,
-        "sorriso_mt": 133.20,
-        "campo_grande_ms": 142.00,
-        "luis_eduardo_magalhaes_ba": 149.50,
-        "oeste_bahia_aiba": 139.75,
-        "pato_branco_pr": 139.50,
-        "ubirata_pr": 137.00,
-        "candido_mota_sp": 139.00
-      },
-      "farelo_soja_rs_brl_ton": 2130.00
+      "cbot_soja_nov26": "US$ 12,4125 / bu (-1,21%)",
+      "farelo_cbot_dez26": "US$ 340,20 / ton (-1,70%)",
+      "esalq_paranagua": "R$ 155,55 / sc (+2,06%)",
+      "cepea_parana": "R$ 149,18 / sc (+1,70%)",
+      "premio_paranagua_nov26": "+155 cents / bu"
     },
-    "complexo_milho_ddgs": {
-      "cbot_dez26_usd_bu": 4.5500,
-      "cbot_mar27_usd_bu": 4.6875,
-      "cbot_dez26_var_pc": -0.22,
-      "b3_nov26_brl_sc": 66.99,
-      "b3_jan27_brl_sc": 71.83,
-      "b3_mar27_brl_sc": 77.34,
-      "b3_mai27_brl_sc": 76.65,
-      "esalq_campinas_brl_sc": 64.24,
-      "esalq_campinas_var_pc": -0.05,
-      "pracas_fisicas_brl_sc": {
-        "passo_fundo_rs": 68.00,
-        "paranagua_pr_porto": 65.00,
-        "machado_sul_mg": 60.00,
-        "maringa_pr": 57.00,
-        "rondonopolis_mt_imea": 48.00,
-        "tangara_da_serra_mt_imea": 42.90
-      },
-      "ddgs_indicadores": {
-        "exportacoes_mt_acumulado_ton": 754880,
-        "crescimento_anual_exportacao_pc": 35.01,
-        "expansao_etanol_milho_sao_martinho_brl": 1100000000,
-        "status_mercado": "Forte demanda externa (China/Argélia) e alta competitividade proteica interna"
-      }
+    "complexo_milho_e_ddgs": {
+      "cbot_milho_dez26": "US$ 4,5500 / bu (-0,22%)",
+      "milho_b3_jan27": "R$ 71,83 / sc (+2,50%)",
+      "milho_b3_mar27": "R$ 77,34 / sc (+2,65%)",
+      "esalq_campinas": "R$ 64,24 / sc (-0,05%)",
+      "ddgs_export_mt": "+35,01% em 2026 (754 mil t)"
     },
     "complexo_algodao": {
-      "ice_ny_dez26_cents_lb": 79.06,
-      "ice_ny_mar27_cents_lb": 82.86,
-      "ice_ny_dez26_var_pc": -1.42,
-      "cepea_pluma_cents_brl_lb": 406.11,
-      "cepea_pluma_var_pc": 0.35,
-      "cotlook_a_index_cents_lb": 91.95,
-      "pluma_fisico_brl_arroba": {
-        "rondonopolis_mt_imea": 128.22,
-        "sorriso_mt_imea": 126.07,
-        "alto_garcas_mt_imea": 128.93,
-        "oeste_bahia_aiba": 127.50
-      },
-      "coprodutos_algodao_brl_ton": {
-        "caroco_algodao_imea_mt": 688.17,
-        "caroco_algodao_bahia_fisico": 955.00,
-        "caroco_algodao_aiba_ba": 966.67,
-        "spread_arbitragem_ba_mt": 278.50
-      }
+      "ice_ny_pluma_dez26": "79,06 ¢ / lb (-1,42%)",
+      "cepea_pluma_brasil": "406,11 ¢ R$/lb (+0,35%)",
+      "caroco_algodao_mt": "R$ 688,17 / ton (IMEA)",
+      "caroco_algodao_ba": "R$ 966,67 / ton (AIBA)"
     },
-    "complexo_cafe_boi": {
-      "ice_ny_arabica_dez26_cents_lb": 299.50,
-      "ice_ny_arabica_var_pc": -2.59,
-      "ice_londres_robusta_nov26_usd_ton": 3194.00,
-      "b3_arabica_dez26_usd_sc": 369.40,
-      "b3_arabica_mar27_usd_sc": 356.80,
-      "cepea_arabica_brl_sc": 1627.46,
-      "cepea_arabica_var_pc": 1.59,
-      "cepea_robusta_brl_sc": 954.64,
-      "cepea_robusta_var_pc": 1.91,
-      "pracas_cafe_fisico_brl_sc": {
-        "patrocinio_mg_cerrado": 1725.00,
-        "patrocinio_mg_expocaccer_tipo6": 1815.00,
-        "guaxupe_mg_cooxupe": 1699.00,
-        "araguari_mg_coocacer": 1700.00,
-        "machado_mg_sul_de_minas": 1770.00,
-        "varginha_mg": 1620.00,
-        "conilon_vitoria_es_tipo7_8": 930.00
-      },
-      "pecuaria_corte": {
-        "boi_gordo_cepea_sp_vista_brl_arroba": 381.40,
-        "boi_gordo_cepea_sp_prazo_brl_arroba": 385.71,
-        "boi_gordo_b3_out26_brl_arroba": 384.50,
-        "diferencial_base_sp_go_brl": 15.00
-      }
+    "complexo_cafe": {
+      "cepea_arabica": "R$ 1.627,46 / sc (+1,59%)",
+      "cepea_robusta_conilon": "R$ 954,64 / sc (+1,91%)",
+      "patrocinio_mg_cerrado": "R$ 1.725,00 / sc",
+      "boi_gordo_cepea_sp": "R$ 381,40 / @"
     }
   },
-  "detailed_analysis_by_commodity": {
-    "soja_e_derivados": {
-      "resumo_executivo": "A soja viveu uma sessão de forças opostas extremas nas últimas 24 horas. Em Chicago (CBOT), o vencimento Novembro/26 recuou 1,21% para US$ 12,4125/bu e o farelo Dezembro/26 cedeu 1,70% para US$ 340,20/ton, pressionados pelo avanço final da colheita americana e pela expectativa de safra sul-americana volumosa. Contudo, no Brasil, a disparada do dólar (+8,11% no futuro da B3 e fechamento PTAX a R$ 5,5007) somada a prêmios firmes em Paranaguá (+155 cents/bu para Nov/26) gerou um repasse cambial imediato, elevando o Indicador Esalq/B3 Paranaguá em +2,06% (para R$ 155,55/sc) e o Cepea Paraná em +1,70% (R$ 149,18/sc).",
-      "detalhamento_e_fatos": "Nos portos do Sul, a soja disponível bateu R$ 155,00/sc em Paranaguá e R$ 156,00/sc em Rio Grande (para Nov/26 já se pagam R$ 157,00/sc). No interior, praças do Paraná registraram valorizações expressivas de +3,79% em Ubiratã e Marechal Cândido Rondon (R$ 137,00/sc) e +3,33% em Pato Branco (R$ 139,50/sc). Em Sorriso-MT, a referência física fechou em R$ 133,20/sc, enquanto em Luís Eduardo Magalhães-BA operou a R$ 149,50/sc e em Campo Grande-MS a R$ 142,00/sc. No farelo de soja físico no RS, as cotações rodam na casa de R$ 2.130,00/t.",
-      "links": [
-        "https://www.noticiasagricolas.com.br/cotacoes/soja",
-        "https://www.agrolink.com.br/noticias/soja-cai-em-chicago-e-na-b3_520229.html",
-        "https://jornalbrasilsoberano.com/infraestrutura/dolar-a-r-5-41-exportadores-arco-norte-soja-e-minerio/"
+  "detailed_blocks_and_news": [
+    {
+      "title": "🌱 Complexo Soja e Derivados",
+      "market_bias": "Neutral a Altista no Físico Interno / Lateral a Pressionado em Chicago",
+      "executive_summary": "A queda em Chicago (Nov/26 a US$ 12,41/bu) foi totalmente compensada no Brasil pela disparada da PTAX a R$ 5,5007. Os prêmios em Paranaguá firmes em +155 cents elevaram o indicador portuário para R$ 155,55/sc.",
+      "news_sources": [
+        {
+          "headline": "Soja recua na CBOT pressionada pela colheita dos EUA, mas câmbio sustenta portos",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+        },
+        {
+          "headline": "Paridade de exportação dispara com dólar acima de R$ 5,40 no Arco Sul e Norte",
+          "url": "https://jornalbrasilsoberano.com/infraestrutura/dolar-a-r-5-41-exportadores-arco-norte-soja-e-minerio/"
+        }
       ],
-      "direcionamentos_estrategicos": {
-        "produtores_rurais": "O salto de R$ 146,69 para R$ 149,18 no PR e R$ 155,55 no porto é um presente cambial em meio à queda de Chicago. Aproveite os picos de tela em reais para fixar lotes remanescentes de old crop e avançar nas travas da safra 2026/27.",
-        "cooperativas_e_revendas": "Alerta vermelho na relação de troca de defensivos e fertilizantes de cobertura. O dólar a R$ 5,50 encarece imediatamente a tabela de reposição em reais; oriente o cooperado a fechar operações de barter travando a ponta do grão hoje.",
-        "industrias_e_confinamentos": "Com o farelo em Chicago recuando para US$ 340,20/t mas o câmbio puxando a paridade interna, evite compras spot desprotegidas no pico de estresse cambial; priorize contratos com prêmio travado ou substituição parcial por DDGS/caroço.",
-        "tradings_mesa_fisica": "Excelente janela de originação no Sul e MS, onde o preço rompeu a barreira psicológica dos R$ 137–140/sc e destravou vendas de produtores.",
-        "visao_do_trader_derivativos_fx": "A queda de -1,37% na Soja B3 (US$ 27,33/sc) contra a alta de +8,11% no WDO/DOL mostra que o ganho do exportador ontem veio 100% da perna cambial. Estratégia recomendada: Short em volatilidade cambial via trava de NDF no topo (R$ 5,50+) combinado com Call Spread em CBOT caso o clima sul-americano apresente veranicos em novembro."
-      }
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais",
+          "direction": "Aproveite o salto do indicador para R$ 155,55 em Paranaguá e R$ 149,18 no PR para fixar lotes remanescentes e avançar em travas de custos da safra 2026/27.",
+          "reference_links": [{"label": "Cotações de Soja Cepea/Esalq", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"}]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "Alerta na relação de troca de insumos: o dólar a R$ 5,50 encarece a reposição de fertilizantes; oriente cooperados a fechar barter travando grãos imediatamente.",
+          "reference_links": [{"label": "Portal do Agronegócio - Insumos", "url": "https://www.portaldoagronegocio.com.br/"}]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "Evite compras spot desprotegidas no pico do câmbio; priorize contratos com prêmio travado ou substituição parcial de farelo por DDGS.",
+          "reference_links": [{"label": "Notícias Agrícolas - Mercado de Farelo", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"}]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "Janela de originação ativa no Sul e MS com quebra da barreira de R$ 137-142/sc. Mesa de FX: recomendo Short em volatilidade cambial via NDF nos tetos da PTAX combinada com Call Spreads em CBOT.",
+          "reference_links": [{"label": "Banco Central - Boletim PTAX", "url": "https://ptax.bcb.gov.br/"}]
+        }
+      ]
     },
-    "milho_sorgo_e_ddgs": {
-      "resumo_executivo": "Enquanto o milho em Chicago operou praticamente de lado/leve baixa (Dezembro/26 a US$ 4,5500/bu, -0,22%), a curva futura do milho na B3 protagonizou um rali generalizado superior a 2,2% a 2,65% puxado pelo dólar e pela firmeza da demanda interna das usinas de etanol de milho. O Indicador Esalq/B3 (Campinas) manteve-se estável em R$ 64,24/sc (-0,05%), mas os portos de Paranaguá dispararam +8,33% (indo a R$ 65,00–68,00/sc). No setor de biocombustíveis e nutrição, a Usina São Martinho anunciou início de expansão bilionária de R$ 1,1 bilhão em Goiás para produzir mais 270 milhões de litros de etanol de milho/ano, e os dados do IMEA confirmaram que as exportações de DDG de Mato Grosso cresceram 35,01% em 2026 (754,88 mil toneladas até setembro), impulsionadas pela China e abertura da Argélia.",
-      "detalhamento_e_fatos": "Na B3, o fechamento regular cravou: Nov/26 a R$ 66,99/sc (+2,23%), Jan/27 a R$ 71,83/sc (+2,50%), Mar/27 a R$ 77,34/sc (+2,65%) e Mai/27 a R$ 76,65/sc (+2,62%). No físico regional, Machado (Sul de MG/Coopama) opera firme a R$ 60,00/sc, Passo Fundo-RS a R$ 68,00/sc, Maringá-PR subiu +4,59% para R$ 57,00/sc, e no Mato Grosso (IMEA) o disponível gira entre R$ 42,90/sc (Tangará da Serra) e R$ 48,00/sc (Rondonópolis).",
-      "links": [
-        "https://www.noticiasagricolas.com.br/cotacoes/milho",
-        "https://visaoagro.com.br/exportacoes-de-ddg-de-mato-grosso-crescem-35-em-2026-impulsionadas-pela-china/",
-        "https://www.portaldoagronegocio.com.br/gestao-rural/analise-de-mercado/noticias/exportacoes-de-soja-e-milho-devem-superar-12-9-milhoes-de-toneladas-em-outubro-projeta-anec"
+    {
+      "title": "🌽 Complexo Milho, Etanol e DDGS",
+      "market_bias": "Firme / Viés de Alta no Físico e Curva Futura B3",
+      "executive_summary": "Chicago operou estável (US$ 4,55/bu), mas a B3 disparou (+2,2% a +2,65% com Jan/27 a R$ 71,83 e Mar/27 a R$ 77,34). Exportações de DDG de Mato Grosso cresceram 35,01% em 2026 impulsionadas pela China.",
+      "news_sources": [
+        {
+          "headline": "Curva futura do milho na B3 dispara com alta do dólar e demanda das usinas de etanol",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+        },
+        {
+          "headline": "Exportações de DDG de Mato Grosso crescem 35% em 2026 com forte apetite da China",
+          "url": "https://visaoagro.com.br/exportacoes-de-ddg-de-mato-grosso-crescem-35-em-2026-impulsionadas-pela-china/"
+        }
       ],
-      "direcionamentos_estrategicos": {
-        "produtores_rurais": "Olho vivo na curva futura da B3! O contrato Março/27 a R$ 77,34/sc e Janeiro/27 a R$ 71,83/sc oferecem um carry espetacular de R$ 7,50 a R$ 13,00/sc sobre o físico atual (R$ 64,24). Quem tem milho estocado ou capacidade de armazenagem deve vender o futuro Março/27 na B3 para capturar esse carrego financeiro.",
-        "cooperativas_e_revendas": "Nas praças mineiras (como Sul de MG a R$ 60,00/sc e Triângulo/Pará de Minas), a retenção de vendas é forte. Estruture compras futuras para os produtores de leite e granjas locais antes que a puxada da B3 contamine totalmente o spot.",
-        "industrias_e_confinamentos": "Com o milho B3 apontando para R$ 77/sc no primeiro trimestre de 2027 e a China enxugando o excedente de DDG do Mato Grosso (+35% nas exportações), garanta contratos de DDGS de médio prazo agora. A arbitragem calórica e proteica do DDGS frente ao binômio milho + farelo de soja continua altamente favorável em MT, GO e MG.",
-        "tradings_mesa_fisica": "O salto de +8,33% na referência portuária de Paranaguá (R$ 65–68/sc) reabre a janela de originação para embarques de final de ano (ANEC projeta 12,95 mi t somadas entre soja e milho neste mês).",
-        "visao_do_trader_derivativos_fx": "O spread CCMF27 (Jan/27) vs CCMH27 (Mar/27) abriu para R$ 5,51/sc. Excelente oportunidade para travas de Calendar Spread ou venda de Call coberta nos vencimentos de verão aproveitando a explosão de volatilidade implícita."
-      }
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais",
+          "direction": "O contrato Março/27 a R$ 77,34/sc na B3 oferece excelente carrego financeiro frente ao físico atual (R$ 64,24). Venda futuros na B3 para capturar o carrego.",
+          "reference_links": [{"label": "Cotações de Milho B3", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"}]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "Forte retenção de milho em Minas Gerais (Machado a R$ 60/sc). Garanta compras futuras para granjas e gado de leite antes da contaminação total do spot.",
+          "reference_links": [{"label": "Cotação do Café e Milho MG", "url": "https://cotacaodocafe.com/"}]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "Garanta contratos de DDGS de médio prazo agora. A arbitragem com o binômio milho+farelo no Centro-Oeste e Sudeste continua altamente vantajosa.",
+          "reference_links": [{"label": "Visao Agro - DDGS", "url": "https://visaoagro.com.br/"}]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "Porto de Paranaguá disparou +8,33% (R$ 65-68/sc), reabrindo originação para embarques da ANEC (12,95 mi t projetadas em grãos no mês).",
+          "reference_links": [{"label": "ANEC - Embarques", "url": "https://www.portaldoagronegocio.com.br/"}]
+        }
+      ]
     },
-    "algodao_e_coprodutos": {
-      "resumo_executivo": "Na Bolsa de Nova Iorque (ICE/NYBOT), a pluma de algodão encerrou a segunda-feira em queda de 1,42% no contrato Dezembro/26 (79,06 cents/lb) e de 1,29% no Março/27 (82,86 cents/lb), acompanhando a realização do petróleo WTI (que recuou 1,01% para US$ 102,23/barril) e a aversão ao risco global. No Brasil, porém, a desvalorização do real sustentou o Indicador Cepea/Esalq em alta de +0,35%, atingindo 406,11 centavos de real por libra-peso. Nos coprodutos, a arbitragem regional do caroço de algodão segue escancarada: R$ 688,17/ton no Mato Grosso (IMEA) contra R$ 955,00 a R$ 966,67/ton no Oeste da Bahia (AIBA).",
-      "detalhamento_e_fatos": "O Índice Internacional Cotlook A fechou em 91,95 cents/lb (-0,80 pts). No mercado físico de pluma no Brasil, o Oeste da Bahia (AIBA) opera a R$ 127,50/@, enquanto no Mato Grosso (IMEA) as praças variam entre R$ 126,07/@ (Sorriso) e R$ 128,93/@ (Alto Garças), com Rondonópolis a R$ 128,22/@. O faturamento diário das exportações brasileiras de algodão acumula crescimento de 27,8% até a 4ª semana de outubro, com safra nacional revisada para 4,271 milhões de toneladas de pluma.",
-      "links": [
-        "https://www.noticiasagricolas.com.br/noticias/algodao/430340-algodao-recua-mais-de-1-em-nova-york-nesta-2-feira.html",
-        "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+    {
+      "title": "☁️ Complexo Algodão, Caroço e Farelo",
+      "market_bias": "Sustentação Interna pela Paridade Cambial / Ajuste Externo na ICE NY",
+      "executive_summary": "ICE NY recuou para 79,06 ¢/lb, mas o Indicador Cepea subiu para 406,11 ¢ R$/lb devido ao dólar. O caroço de algodão mantém spread de arbitragem gigante entre MT (R$ 688/t) e Bahia (R$ 966/t).",
+      "news_sources": [
+        {
+          "headline": "Algodão recua mais de 1% em Nova York, mas dólar sustenta preços internos no Brasil",
+          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430340-algodao-recua-mais-de-1-em-nova-york-nesta-2-feira.html"
+        },
+        {
+          "headline": "Tabelas de Caroço de Algodão IMEA e AIBA mantêm disparidade regional",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+        }
       ],
-      "direcionamentos_estrategicos": {
-        "produtores_rurais": "Mesmo com NY recuando para 79 cents/lb, a conversão em reais da tela de NY para Dez/26 equivale a R$ 141,70/@ e para Mar/27 vai a R$ 148,51/@ graças ao câmbio acima de R$ 5,42–5,50. Momento tático para fixar contratos de exportação em reais.",
-        "cooperativas_e_revendas": "Atuar na intermediação de lotes de caroço e torta de algodão junto às algodoeiras do MT para abastecer cooperados pecuaristas do Sudeste e Centro-Sul.",
-        "industrias_e_confinamentos": "Observe o diferencial de base gigantesco no caroço de algodão: R$ 688,17/t no MT contra R$ 966,67/t na Bahia (spread de quase R$ 280/t!). Para confinamentos e bacias leiteiras de Goiás, Triângulo Mineiro e São Paulo, a originação de caroço e farelo de algodão via frete de retorno do Mato Grosso segue imbatível para fechar fibra efetiva e energia (EE) na dieta com boi gordo firme a R$ 381,40–385,71/@ em SP.",
-        "tradings_mesa_fisica": "Aproveitar o câmbio em R$ 5,50 para acelerar fechamentos de embarque de pluma e escoamento de caroço mato-grossense.",
-        "visao_do_trader_derivativos_fx": "Trava sintética em reais (Venda de CTZ26 na ICE NY combinada com venda de Dólar Futuro na B3) garante níveis acima de R$ 141/@ na pluma."
-      }
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais",
+          "direction": "A conversão em reais da tela de NY para Dez/26 equivale a R$ 141,70/@ e Mar/27 a R$ 148,51/@. Janela excelente para fixação em reais.",
+          "reference_links": [{"label": "Indicador Cepea Algodão", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "Intermedie lotes de caroço de algodão do Mato Grosso para suprir confinadores do Sudeste via frete de retorno.",
+          "reference_links": [{"label": "IMEA Cotações", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "Aproveite o caroço no MT a R$ 688/t frente aos R$ 966/t na Bahia para baratear a fibra e energia na dieta com o boi firme a R$ 381/@ em SP.",
+          "reference_links": [{"label": "AIBA Cotacoes", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "Exportações de pluma acumulam alta de +27,8% em outubro. Trava sintética em reais via ICE NY + Dólar Futuro B3 garante excelentes margens.",
+          "reference_links": [{"label": "Noticias Agricolas Algodao", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}]
+        }
+      ]
     },
-    "macro_cafe_logistica_e_cambio": {
-      "resumo_executivo": "O epicentro financeiro das últimas 24 horas foi o mercado doméstico brasileiro: o Dólar PTAX saltou para R$ 5,5007 (com o Dólar Futuro Nov/26 na B3 avançando +8,11% aos 5.378 pontos no ajuste regular e batendo picos intradiários acima de R$ 5,51), em um dia de forte aversão ao risco doméstico. No Complexo Café, o efeito cambial anulou a baixa de Nova Iorque (Dez/26 a 299,50 cents/lb, -2,59%) e impulsionou os indicadores físicos do Cepea: o Café Arábica subiu +1,59% para R$ 1.627,46/sc e o Robusta/Conilon avançou +1,91% para R$ 954,64/sc.",
-      "detalhamento_e_fatos": "Nas praças cafeeiras de Minas Gerais, as cotações físicas mostram firmeza sustentada pela retenção de vendedores e câmbio: Patrocínio-MG (Cerrado) a R$ 1.725,00/sc (Expocaccer Tipo 6 até R$ 1.815,00/sc), Araguari-MG a R$ 1.700,00/sc, Guaxupé-MG a R$ 1.699,00/sc, Machado-MG a R$ 1.770,00/sc e Varginha-MG a R$ 1.620,00/sc. Em Vitória-ES, o Conilon Tipo 7/8 opera a R$ 930,00/sc. Na pecuária de corte, o Boi Gordo Cepea SP segue firme em R$ 381,40/@ (à vista) e R$ 385,71/@ (a prazo), garantindo excelente relação de troca para confinadores.",
-      "links": [
-        "https://ptax.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do",
-        "https://www.noticiasagricolas.com.br/cotacoes/cafe/indicador-cepea-esalq-cafe-arabica",
-        "https://cotacaodocafe.com/cotacao/cafe-arabica/"
+    {
+      "title": "☕ Complexo Café, Pecuária e Câmbio",
+      "market_bias": "Firmeza Absoluta Sustentada pelo Câmbio e Retenção Física",
+      "executive_summary": "O dólar PTAX a R$ 5,5007 anulou a queda da ICE NY e elevou o Café Arábica Cepea para R$ 1.627,46/sc (+1,59%) e o Conilon para R$ 954,64/sc. Boi gordo firme em R$ 381,40/@ em SP.",
+      "news_sources": [
+        {
+          "headline": "Indicador Cepea Café Arábica salta com disparo do dólar e firmeza em Minas Gerais",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe/indicador-cepea-esalq-cafe-arabica"
+        },
+        {
+          "headline": "Cotações regionais de café em MG registram negócios acima de R$ 1.700/sc",
+          "url": "https://cotacaodocafe.com/cotacao/cafe-arabica/"
+        }
       ],
-      "direcionamentos_estrategicos": {
-        "produtores_rurais": "Cafeicultores do Cerrado, Sul de Minas e Matas de Minas encontram preços entre R$ 1.699 e R$ 1.815/sc nos cafés finos; excelente janela para fixar lotes aproveitando o dólar a R$ 5,50.",
-        "cooperativas_e_revendas": "Oferecer travas a termo de café para entrega futura calçadas na alta do dólar futuro da B3.",
-        "industrias_e_confinamentos": "Pecuaristas com boi pronto em SP (R$ 381,40/@) e MG/GO devem aproveitar a firmeza da arroba para travar boi futuro na B3 (Out/Nov acima de R$ 384/@) e garantir a margem do segundo giro.",
-        "tradings_mesa_fisica": "Forte proteção de margens via hedge cambial imediato na B3 a cada lote originado no interior.",
-        "visao_do_trader_derivativos_fx": "Monitorar a formação da PTAX de fim de mês (sexta-feira, 30/10); picos de estresse acima de R$ 5,50 favorecem venda tática de dólar futuro (WDOX26/DOLX26) para exportadores que precisam travar receita."
-      }
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais",
+          "direction": "Café no Cerrado e Sul de Minas opera entre R$ 1.699 e R$ 1.815/sc (Expocaccer). Aproveite o dólar a R$ 5,50 para fixar lotes finos.",
+          "reference_links": [{"label": "Cotação do Café MG", "url": "https://cotacaodocafe.com/"}]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "Ofereça travas a termo para entrega futura calçadas na alta do dólar futuro B3.",
+          "reference_links": [{"label": "Cepea Cafe", "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe/indicador-cepea-esalq-cafe-arabica"}]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "Pecuaristas com gordo pronto em SP (R$ 381,40/@) devem travar boi futuro na B3 acima de R$ 384/@ para garantir a margem do 2º giro.",
+          "reference_links": [{"label": "Cepea Boi Gordo", "url": "https://www.noticiasagricolas.com.br/cotacoes/"}]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "Atenção máxima à formação da PTAX de fim de mês (30/10). Picos acima de R$ 5,50 são excelentes para venda tática de dólar futuro.",
+          "reference_links": [{"label": "BCB PTAX", "url": "https://ptax.bcb.gov.br/"}]
+        }
+      ]
     }
-  },
+  ],
   "weekly_evolution_wtd": {
-    "reference_period": "25/10/2026 a 27/10/2026 (Domingo a Sábado — Semana Corrente)",
-    "observations_summary": "A semana abriu marcada pelo choque cambial doméstico de segunda-feira (+5,00% a +9,19% dependendo do referencial spot/PTAX e +8,11% no Dólar Futuro B3), que reprecificou instantaneamente todas as curvas futuras em reais na B3 (milho subindo até +2,65% e soja porto ganhando R$ 3,14/sc em um único pregão), blindando o produtor brasileiro das quedas externas em Chicago (-1,21% na soja) e Nova Iorque (-1,42% no algodão e -2,59% no café).",
-    "assets": {
-      "dolar_ptax": {
-        "open_week": 5.2390,
-        "current": 5.5007,
-        "change_pc": 5.00,
-        "change_abs": 0.2617,
-        "week_high": 5.5145,
-        "week_low": 5.2390
+    "period_start": "25/10/2026",
+    "period_end": "27/10/2026",
+    "period_current": "Semana Corrente (WTD)",
+    "assets": [
+      {
+        "asset": "Dólar PTAX (Spot)",
+        "unit": "R$",
+        "current_value": 5.5007,
+        "weekly_change_pct": 5.00,
+        "weekly_driver": "Choque cambial doméstico elevou a PTAX oficial em +5,00% na abertura semanal."
       },
-      "soja_cbot_nov26_usd": {
-        "open_week": 12.5650,
-        "current": 12.4125,
-        "change_pc": -1.21,
-        "change_abs": -0.1525,
-        "week_high": 12.5650,
-        "week_low": 12.3925
+      {
+        "asset": "Soja Paranaguá",
+        "unit": "R$/sc",
+        "current_value": 155.55,
+        "weekly_change_pct": 2.06,
+        "weekly_driver": "Paridade de exportação turbinada pelo dólar acima de R$ 5,50."
       },
-      "soja_paranagua_esalq_brl": {
-        "open_week": 152.41,
-        "current": 155.55,
-        "change_pc": 2.06,
-        "change_abs": 3.14,
-        "week_high": 155.55,
-        "week_low": 152.41
+      {
+        "asset": "Soja Paraná (Cepea)",
+        "unit": "R$/sc",
+        "current_value": 149.18,
+        "weekly_change_pct": 1.70,
+        "weekly_driver": "Repasse cambial imediato compensou a queda de Chicago."
       },
-      "soja_cepea_pr_brl": {
-        "open_week": 146.69,
-        "current": 149.18,
-        "change_pc": 1.70,
-        "change_abs": 2.49,
-        "week_high": 149.18,
-        "week_low": 146.69
+      {
+        "asset": "Milho B3 (Jan/27)",
+        "unit": "R$/sc",
+        "current_value": 71.83,
+        "weekly_change_pct": 2.50,
+        "weekly_driver": "Demanda firme das usinas de etanol e alta do dólar puxaram toda a curva."
       },
-      "milho_b3_nov26_brl": {
-        "open_week": 65.53,
-        "current": 66.99,
-        "change_pc": 2.23,
-        "change_abs": 1.46,
-        "week_high": 68.26,
-        "week_low": 65.53
+      {
+        "asset": "Algodão Pluma (Cepea)",
+        "unit": "¢ R$/lb",
+        "current_value": 406.11,
+        "weekly_change_pct": 0.35,
+        "weekly_driver": "Sustentação interna pelo câmbio compensou baixa na ICE NY."
       },
-      "milho_b3_jan27_brl": {
-        "open_week": 70.08,
-        "current": 71.83,
-        "change_pc": 2.50,
-        "change_abs": 1.75,
-        "week_high": 72.10,
-        "week_low": 70.08
-      },
-      "milho_esalq_campinas_brl": {
-        "open_week": 64.27,
-        "current": 64.24,
-        "change_pc": -0.05,
-        "change_abs": -0.03,
-        "week_high": 64.27,
-        "week_low": 64.24
-      },
-      "algodao_cepea_cents_brl": {
-        "open_week": 404.71,
-        "current": 406.11,
-        "change_pc": 0.35,
-        "change_abs": 1.40,
-        "week_high": 406.11,
-        "week_low": 404.71
-      },
-      "cafe_arabica_cepea_brl": {
-        "open_week": 1601.95,
-        "current": 1627.46,
-        "change_pc": 1.59,
-        "change_abs": 25.51,
-        "week_high": 1627.46,
-        "week_low": 1574.39
+      {
+        "asset": "Café Arábica (Cepea)",
+        "unit": "R$/sc",
+        "current_value": 1627.46,
+        "weekly_change_pct": 1.59,
+        "weekly_driver": "Retenção de vendedores e câmbio forte sustentaram alta no físico."
       }
-    }
+    ]
   },
   "monthly_evolution_mtd": {
-    "reference_period": "01/10/2026 a 27/10/2026 (Acumulado do Mês — MTD)",
-    "observations_summary": "Ao longo das três primeiras semanas de outubro, a soja e o milho acumularam baixas de 4% a 6% no mercado físico interno devido à combinação de dólar recuando até a mínima de R$ 5,01 (em 20/10), projeção de safra recorde brasileira de 367,1 milhões de toneladas e necessidade de liberação de espaço nos armazéns. Contudo, na última semana do mês, a virada brusca do câmbio de volta para R$ 5,50 devolveu fôlego às cotações portuárias e enxugou parte das perdas mensais da soja.",
-    "assets": {
-      "dolar_ptax": {
-        "day_01": 5.4245,
-        "current": 5.5007,
-        "change_mtd_pc": 1.40,
-        "change_mtd_abs": 0.0762,
-        "month_low": 5.0070,
-        "month_high": 5.5145
+    "month_start": "2026-10-01",
+    "current_date": "2026-10-27",
+    "days_elapsed": 27,
+    "assets": [
+      {
+        "asset": "Dólar PTAX",
+        "unit": "R$",
+        "month_open_value": 5.4245,
+        "mid_month_10_oct": 5.1200,
+        "current_value": 5.5007,
+        "mtd_change_pct": 1.40,
+        "monthly_narrative": "Dólar iniciou outubro em R$ 5,42, recuou até a mínima de R$ 5,01 no dia 20, e disparou na última semana para fechar a R$ 5,5007."
       },
-      "soja_paranagua_esalq_brl": {
-        "day_01": 161.56,
-        "current": 155.55,
-        "change_mtd_pc": -3.72,
-        "change_mtd_abs": -6.01,
-        "month_low": 152.41,
-        "month_high": 161.56
+      {
+        "asset": "Soja Paranaguá",
+        "unit": "R$/sc",
+        "month_open_value": 161.56,
+        "mid_month_10_oct": 158.00,
+        "current_value": 155.55,
+        "mtd_change_pct": -3.72,
+        "monthly_narrative": "Acumula baixa no mês devido à pressão de safra e queda anterior do câmbio, parcialmente recuperada com o salto recente."
       },
-      "soja_cepea_pr_brl": {
-        "day_01": 154.90,
-        "current": 149.18,
-        "change_mtd_pc": -3.69,
-        "change_mtd_abs": -5.72,
-        "month_low": 146.69,
-        "month_high": 154.90
+      {
+        "asset": "Milho Campinas",
+        "unit": "R$/sc",
+        "month_open_value": 68.67,
+        "mid_month_10_oct": 66.50,
+        "current_value": 64.24,
+        "mtd_change_pct": -6.45,
+        "monthly_narrative": "Pressionado ao longo de outubro pela entrada do milho de 2ª safra e escoamento, segurando suporte na casa de R$ 64."
       },
-      "milho_esalq_campinas_brl": {
-        "day_01": 68.67,
-        "current": 64.24,
-        "change_mtd_pc": -6.45,
-        "change_mtd_abs": -4.43,
-        "month_low": 64.24,
-        "month_high": 68.67
-      },
-      "algodao_cepea_cents_brl": {
-        "day_01": 401.50,
-        "current": 406.11,
-        "change_mtd_pc": 1.15,
-        "change_mtd_abs": 4.61,
-        "month_low": 400.20,
-        "month_high": 406.11
-      },
-      "cafe_arabica_cepea_brl": {
-        "day_01": 1585.00,
-        "current": 1627.46,
-        "change_mtd_pc": 2.68,
-        "change_mtd_abs": 42.46,
-        "month_low": 1560.00,
-        "month_high": 1627.46
+      {
+        "asset": "Café Arábica",
+        "unit": "R$/sc",
+        "month_open_value": 1585.00,
+        "mid_month_10_oct": 1570.00,
+        "current_value": 1627.46,
+        "mtd_change_pct": 2.68,
+        "monthly_narrative": "Trajetória de alta sustentada pela firmeza dos diferenciais de exportação e pelo câmbio forte no fechamento do mês."
       }
-    }
-  },
-  "audit_panel_projections": {
-    "dolar_usd_brl": {
-      "current_base": 5.5007,
-      "short_term_7d": "5.38 - 5.52",
-      "month_end_base": 5.42,
-      "month_end_bullish": 5.60,
-      "month_end_bearish": 5.28,
-      "audit_trigger": "Fluxo de hedge pós-ajuste fiscal e rolagem da PTAX de fim de mês (sexta, 30/10)."
-    },
-    "soja_paranagua_brl": {
-      "current_base": 155.55,
-      "short_term_7d": "154.00 - 157.50",
-      "month_end_base": 155.00,
-      "month_end_bullish": 158.00,
-      "month_end_bearish": 152.00,
-      "audit_trigger": "Sustentação do dólar acima de R$ 5,40 + prêmio Nov/26 em +155c/bu."
-    },
-    "milho_b3_jan27_brl": {
-      "current_base": 71.83,
-      "short_term_7d": "71.00 - 73.50",
-      "month_end_base": 72.00,
-      "month_end_bullish": 74.00,
-      "month_end_bearish": 69.80,
-      "audit_trigger": "Ritmo de embarques da ANEC e apetite comprador das usinas de etanol no Centro-Oeste."
-    },
-    "caroco_algodao_mt_brl": {
-      "current_base": 688.17,
-      "short_term_7d": "685.00 - 700.00",
-      "month_end_base": 690.00,
-      "month_end_bullish": 710.00,
-      "month_end_bearish": 675.00,
-      "audit_trigger": "Demanda de confinamentos de 2º giro com boi gordo acima de R$ 380/@."
-    }
-  },
-  "market_intelligence_pill": {
-    "title": "Decomposição de Paridade de Exportação e Elasticidade Cambial Assimétrica no Físico",
-    "concept": "Formação de Preços Portuários (Export Parity) vs. Lag de Transmissão para o Interior",
-    "formula": "Preço Porto (R$/sc) = [ (CBOT + Prêmio Porto) * 0,367454 - Custos de Fobização ] * Taxa de Câmbio (USD/BRL)",
-    "explanation": "O pregão de ontem é uma aula prática de formação de preços no agronegócio brasileiro. Por que a Soja em Chicago caiu -1,21%, mas o Indicador Paranaguá subiu +2,06% no mesmo dia? Quando o câmbio dá um salto de +5% a +8% num único dia e o prêmio físico permanece travado em +155 cents/bu, a variação positiva do dólar supera com folga a queda de 15 centavos em Chicago. Porém, note a assimetria de transmissão: o porto repassa a alta do dólar no mesmo minuto (+2,06% em Paranaguá), enquanto o interior (como Sorriso-MT ou o milho físico em Campinas a R$ 64,24) demora de 24 a 72 horas para absorver o repasse. É exatamente nessa janela de atraso (lag de transmissão) que as mesas de originação e confinadores mais ágeis capturam margem!"
-  },
-  "daily_dates": [
-    "20/10",
-    "21/10",
-    "22/10",
-    "23/10",
-    "26/10"
-  ],
-  "daily_history": {
-    "soja_paranagua_esalq": [
-      153.80,
-      153.50,
-      152.90,
-      152.41,
-      155.55
-    ],
-    "soja_cepea_pr": [
-      148.10,
-      147.80,
-      147.10,
-      146.69,
-      149.18
-    ],
-    "milho_cepea": [
-      64.60,
-      64.45,
-      64.30,
-      64.27,
-      64.24
-    ],
-    "algodao_cepea": [
-      403.50,
-      404.10,
-      404.30,
-      404.71,
-      406.11
-    ],
-    "cafe_arabica_cepea": [
-      1615.20,
-      1618.40,
-      1619.90,
-      1601.95,
-      1627.46
-    ],
-    "dolar_ptax": [
-      5.0070,
-      5.2205,
-      5.2355,
-      5.2390,
-      5.5007
     ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar Spot (USD/BRL)",
+      "current_base": "R$ 5,5007",
+      "short_term_target_23_oct": "R$ 5,38 - R$ 5,52",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,42",
+        "bull_case": "R$ 5,60",
+        "bear_case": "R$ 5,28"
+      },
+      "audit_trigger": "Fluxo de hedge fiscal e formação da PTAX de fim de mês (30/10)."
+    },
+    {
+      "commodity": "Soja Paranaguá (R$/sc)",
+      "current_base": "R$ 155,55",
+      "short_term_target_23_oct": "R$ 154,00 - R$ 157,50",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 155,00",
+        "bull_case": "R$ 158,00",
+        "bear_case": "R$ 152,00"
+      },
+      "audit_trigger": "Manutenção do câmbio acima de R$ 5,40 e prêmio Nov/26 em +155c."
+    },
+    {
+      "commodity": "Milho B3 (Jan/27)",
+      "current_base": "R$ 71,83",
+      "short_term_target_23_oct": "R$ 71,00 - R$ 73,50",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 72,00",
+        "bull_case": "R$ 74,00",
+        "bear_case": "R$ 69,80"
+      },
+      "audit_trigger": "Ritmo de embarques ANEC e demanda das usinas de etanol de milho."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "Decomposição de Paridade de Exportação e Lag de Transmissão",
+    "formula": "Preço Porto (R$/sc) = [ (CBOT + Prêmio) * 0,367454 - Custos ] * Câmbio (USD/BRL)",
+    "analysis": "Quando o câmbio sobe +5% a +9% num único dia e o prêmio trava em +155c, o repasse portuário é imediato (+2,06% em Paranaguá). Porém, o interior (Sorriso-MT ou Campinas) sofre um lag de transmissão de 24 a 72 horas.",
+    "strategic_takeaway": "É exatamente nessa janela de atraso (lag) que as mesas de originação e confinadores mais ágeis capturam margens expressivas comprando no interior antes do repasse total do frete e do câmbio."
   }
 }
