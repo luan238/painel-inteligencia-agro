@@ -1,0 +1,462 @@
+{
+  "metadata": {
+    "target_regions": "Triângulo Mineiro (Uberlândia) / Matas de Minas (Praça Base: Manhuaçu-MG) / MT (IMEA) / Santos SP / Paranaguá PR / CBOT / ICE / B3",
+    "scope": "Soja, Milho, DDGS, Algodão, Café e Câmbio (FOB / CIF)",
+    "timestamp": "27/10/2026 às 17:38 BRT (Fechamento Oficial Bolsas & PTAX)",
+    "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "No boletim oficial de fechamento desta terça-feira (27/10), o Dólar PTAX do Banco Central recuou -3,02% para R$ 5,3346 na venda (R$ 5,3340 na compra), devolvendo parte do choque de segunda-feira (R$ 5,5007), enquanto o Euro PTAX fechou a R$ 5,9449 (-3,31%) e o Petróleo WTI aliviou no exterior.",
+    "complexo_soja": "A soja em Chicago devolveu os ganhos da manhã e fechou esta terça-feira em queda de quase 1% (~US$ 12,30/bu no Nov/26). No Brasil, o plantio atingiu 42,8% (MT acima de 75,8%), mas a Serasa alertou hoje que o El Niño pode cortar a safra em 9,7% (para 163,6 mi t, pondo R$ 33 bi em risco). No físico, Paranaguá marca R$ 155,55/sc, Uberlândia-MG opera a R$ 142,05/sc e o farelo fecha a R$ 1.921,64/t no IMEA-MT.",
+    "complexo_milho_etanol_ddgs": "O milho perdeu mais de 1% em Chicago hoje e o Dezembro/26 fechou abaixo de US$ 4,50/bu (~US$ 4,48/bu), fazendo a B3 devolver parte da alta de ontem com o dólar a R$ 5,3346. Porém, o etanol de milho já responde por 20% da produção nacional na largada da safra 26/27 e as exportações de DDG de MT acumulam +35,01%, sustentando Pará de Minas-MG a R$ 67,00/sc.",
+    "complexo_algodao": "O algodão recuou pela 2ª sessão consecutiva na ICE NY: Dez/26 caiu 1,27% (-1,00 cent) fechando a 78,06 ¢/lb e Mar/27 a 81,82 ¢/lb (-1,26%) sob cautela com o Fed. No Brasil, a pluma Cepea marca 406,11 ¢ R$/lb (+0,35%) e o caroço de algodão trava em R$ 688,17/t no IMEA-MT contra R$ 966,67/t na AIBA-BA.",
+    "complexo_cafe": "O Café Arábica fechou em queda de 2,39% na ICE NY a 293,75 ¢/lb (Dez/26), enquanto o Robusta subiu +46 pontos em Londres para US$ 3.240,00/t. Na região das Matas de Minas (Praça Base Oficial: Manhuaçu-MG, via Agrolink/CCCMG), o Arábica Dura Tipo 6 opera a R$ 1.615,00/sc (Safra Nova) e R$ 1.627,00/sc na média regional, enquanto Patrocínio-MG (Expocaccer) atingiu R$ 1.815,00/sc e Guaxupé-MG (Cooxupé) R$ 1.800,00/sc."
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_ptax_fechamento_27_10": "R$ 5,3346 (-3,02% vs 26/10)",
+      "dolar_ptax_compra_27_10": "R$ 5,3340 (Mínima dia: R$ 5,3180)",
+      "dolar_ptax_vespera_26_10": "R$ 5,5007 (+9,19%)",
+      "euro_ptax_fechamento_27_10": "R$ 5,9449 (-3,31%)",
+      "selic_e_cdi_referencia": "Selic: 13,75% | CDI: 13,65% a.a.",
+      "petroleo_wti_nybot": "US$ 101,83 / barril (-1,39%)"
+    },
+    "complexo_soja": {
+      "cbot_soja_nov26_fecho": "~US$ 12,30 / bu (Queda de ~1% hoje)",
+      "cbot_soja_jan27_fecho": "~US$ 12,41 / bu (Devolveu ganhos)",
+      "esalq_paranagua_porto": "R$ 155,55 / sc (+2,06%)",
+      "cepea_parana_media": "R$ 149,18 / sc (+1,70%)",
+      "triangulo_mineiro_uberlandia": "R$ 142,05 / sc (+0,77%)",
+      "farelo_soja_imea_mt": "R$ 1.921,64 / ton (Estável)",
+      "farelo_soja_rondonopolis_mt": "R$ 2.020,00 / ton (-4,72%)",
+      "farelo_soja_media_rs": "R$ 2.130,00 / ton (Clicmercado)",
+      "plantio_soja_brasil_26_27": "42,8% semeado (MT: 75,81% | PR: 62%)"
+    },
+    "complexo_milho_e_ddgs": {
+      "cbot_milho_dez26_fecho": "< US$ 4,50 / bu (~US$ 4,4850, -1,15%)",
+      "milho_b3_nov26_e_jan27": "Nov: R$ 66,50 | Jan/27: R$ 71,20 (Ajuste)",
+      "para_de_minas_mg_cif": "R$ 67,00 / sc (Safras & Mercado)",
+      "esalq_campinas_sp": "R$ 64,24 / sc (-0,05%)",
+      "sul_de_minas_machado": "R$ 60,00 / sc | Passo Fundo-RS: R$ 68,00/sc",
+      "imea_rondonopolis_mt": "R$ 48,00 / sc (Disponível)",
+      "etanol_de_milho_participacao": "20% da produção nacional na safra 26/27",
+      "ddgs_exportacoes_mt_2026": "754,88 mil ton (+35,01% no ano)"
+    },
+    "complexo_algodao": {
+      "ice_ny_pluma_dez26_fecho": "78,06 ¢ / lb (-1,27% / -1,00 ¢ hoje)",
+      "ice_ny_pluma_mar27_fecho": "81,82 ¢ / lb (-1,26% / -1,04 ¢ hoje)",
+      "cepea_pluma_brasil": "406,11 ¢ R$/lb (+0,35%)",
+      "safra_mt_imea_26_27": "6,65 milhões ton em caroço (IMEA)",
+      "caroco_algodao_imea_mt": "R$ 688,17 / ton (Estável)",
+      "caroco_algodao_bahia_aiba": "R$ 966,67 / ton (AIBA) | R$ 955,00/t (Físico)"
+    },
+    "complexo_cafe": {
+      "ice_ny_arabica_dez26_fecho": "293,75 ¢ / lb (-2,39% / -7,20 pts hoje)",
+      "ice_ny_arabica_mar27_fecho": "281,10 ¢ / lb (-4,10 pts hoje)",
+      "ice_londres_robusta_nov26": "US$ 3.240,00 / ton (+46 pts hoje)",
+      "cepea_arabica_e_robusta": "Arábica: R$ 1.627,46 | Robusta: R$ 954,64/sc",
+      "praca_base_matas_de_minas": "Manhuaçu-MG (Hub Oficial Matas de Minas)",
+      "matas_de_minas_manhuacu_dura_t6": "R$ 1.615,00 (S. Nova) a R$ 1.627,00/sc (Agrolink)",
+      "matas_de_minas_manhuacu_rio_e_t7": "Rio T.7: R$ 1.084,00 | Dura T.7: R$ 1.470,00/sc",
+      "cerrado_patrocinio_expocaccer": "Tipo 6: R$ 1.815,00 (+5,22%) | CD: R$ 1.830/sc",
+      "sul_de_minas_guaxupe_cooxupe": "Tipo 6: R$ 1.800,00 (+5,94%) | CD: R$ 1.883/sc",
+      "araguari_coocacer_e_varginha": "Araguari: R$ 1.750,00 | Varginha: R$ 1.720,00/sc",
+      "boi_gordo_b3_e_fisico_mg_sp": "Rompeu R$ 400,00 / @ na B3 e em MG/SP/PR!"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "title": "🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo)",
+      "market_bias": "Queda de ~1% no Fecho da CBOT e Recuo da PTAX (R$ 5,3346) / Alerta de El Niño (-9,7% na Safra segundo Serasa)",
+      "executive_summary": "A soja abriu em alta na CBOT com o avanço de quase 20% nas inspeções de exportação dos EUA, mas perdeu fôlego e fechou esta terça-feira (27/10) em queda de quase 1%. No Brasil, a PTAX oficial recuou -3,02% para R$ 5,3346. O plantio nacional chegou a 42,8% (MT com 75,81% e PR com 62%, onde o excesso de chuva já força replantio pontual). Estudo da Serasa Experian divulgado hoje alerta que o El Niño pode cortar a safra brasileira em 9,7% (para 163,6 mi t, colocando R$ 33 bilhões em risco). As exportações brasileiras de farelo de soja subiram 5,5% em outubro, com o farelo cotado a R$ 1.921,64/t no IMEA-MT e R$ 2.130/t no RS.",
+      "news_sources": [
+        {
+          "headline": "Soja devolve ganhos da manhã e fecha terça-feira (27/10) em queda de quase 1% em Chicago",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430432-soja-devolve-ganhos-da-manha-e-fecha-terca-feira-em-queda-de-quase-1-em-chicago.amp.html"
+        },
+        {
+          "headline": "Safra de soja do Brasil poderia cair a 163,6 mi t (-9,7%) e pôr R$ 33 bi em risco por El Niño, diz Serasa",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430396-safra-de-soja-do-brasil-poderia-cair-a-1636-mi-t-em-cenario-de-perdas-por-el-nino-diz-serasa.html"
+        },
+        {
+          "headline": "Chuva força replantio pontual de soja (62%) e provoca perda de nutrientes no Paraná, aponta Deral",
+          "url": "https://www.noticiasagricolas.com.br/noticias/graos/430411-chuva-forca-replantio-pontual-de-soja-e-mantem-milho-sob-pressao-no-parana.html"
+        },
+        {
+          "headline": "Tabelas de Soja e Farelo (IMEA-MT a R$ 1.921,64/t, Rondonópolis a R$ 2.020/t e RS a R$ 2.130/t)",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Triângulo Mineiro, MT e Sul)",
+          "direction": "O recuo da PTAX hoje para R$ 5,3346 (-3,02%) combinado com a virada negativa de Chicago no fim da tarde prova como os picos cambiais devem ser travados rápido. Aproveite as ofertas que ainda pagam R$ 142,05/sc em Uberlândia-MG e R$ 155,55/sc em Paranaguá para fechar lotes e travar insumos.",
+          "reference_links": [
+            {"label": "Fechamento da Soja CBOT 27/10 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430432-soja-devolve-ganhos-da-manha-e-fecha-terca-feira-em-queda-de-quase-1-em-chicago.amp.html"},
+            {"label": "Cotação Soja Uberlândia-MG — Grão Direto", "url": "https://www.graodireto.com.br/ofertas/soja/mg/uberlandia/"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "O volume de entregas de fertilizantes no Brasil deve atingir 47,5 milhões de toneladas em 2027. Com o alerta de El Niño da Serasa e replantio pontual no PR, acelere operações de Barter de fungicidas e adubos de cobertura com os cooperados.",
+          "reference_links": [
+            {"label": "Risco Climático El Niño na Soja — Serasa/Reuters", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430396-safra-de-soja-do-brasil-poderia-cair-a-1636-mi-t-em-cenario-de-perdas-por-el-nino-diz-serasa.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "O recuo de -4,72% no farelo de soja em Rondonópolis-MT (para R$ 2.020,00/t, com média IMEA-MT em R$ 1.921,64/t) e a queda da PTAX para R$ 5,3346 abrem janela de compra física de farelo para fábricas de ração de MG, GO e SP.",
+          "reference_links": [
+            {"label": "Cotações de Farelo de Soja IMEA e RS — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "Exportações brasileiras de farelo de soja subiram +5,5% em outubro. Na mesa de derivativos, a queda de quase 1% em Chicago hoje barateou o prêmio das opções: monte Call Spreads para Março/27 apostando no prêmio de risco climático do El Niño.",
+          "reference_links": [
+            {"label": "Panorama de Exportações e Plantio — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430372-soja-abre-terca-feira-em-alta-em-chicago-apos-queda-forte-de-ontem-e-avanco-das-exportacoes-americanas.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌽 Complexo Milho, Etanol e DDGS",
+      "market_bias": "Baixista em Chicago (< US$ 4,50/bu) e Ajuste na B3 / Altista Estrutural para Etanol de Milho (20% da Safra) e DDGS",
+      "executive_summary": "O milho ampliou as perdas nesta terça-feira (27/10) em Chicago, caindo mais de 1% e fechando o contrato Dezembro/26 abaixo de US$ 4,50/bu (~US$ 4,48/bu). Na B3, os contratos devolveram parte dos ganhos de ontem acompanhando o recuo de 3,02% no dólar PTAX. Enquanto o milho perde saída pelos portos (-12% nas exportações ante 2025), o mercado interno conta com um pilar histórico: o etanol de milho já responde por 20% de toda a produção nacional no início da safra 2026/27, sustentando o físico em Pará de Minas-MG a R$ 67,00/sc e as exportações de DDG de MT em alta de +35,01%.",
+      "news_sources": [
+        {
+          "headline": "Milho perde mais de 1% em Chicago nesta terça-feira (27/10) e dezembro fecha abaixo de US$ 4,50/bu",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430433-milho-perde-mais-de-1-em-chicago-nesta-terca-feira-e-dezembro-fecha-abaixo-de-us-4-50-por-bushel.html"
+        },
+        {
+          "headline": "Milho recua em Chicago e B3 nesta terça-feira, devolvendo parte da alta da véspera",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430402-milho-recua-em-chicago-e-b-3-nesta-terca-feira-com-contratos-brasileiros-devolvendo-parte-da-alta-da-vespera.html"
+        },
+        {
+          "headline": "Plantio do milho verão chega a 40% e etanol de milho já responde por 20% da produção nacional",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430376-plantio-do-milho-verao-chega-a-40-e-supera-2025-e-media-historica.html"
+        },
+        {
+          "headline": "Exportações de DDG de Mato Grosso crescem 35% em 2026 impulsionadas pela China",
+          "url": "https://visaoagro.com.br/exportacoes-de-ddg-de-mato-grosso-crescem-35-em-2026-impulsionadas-pela-china/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais",
+          "direction": "Com o milho perdendo saída nos portos e Chicago abaixo de US$ 4,50/bu, não fique exposto ao mercado spot sem proteção: aproveite os vencimentos Jan/27 e Mar/27 na B3 (acima de R$ 71 a R$ 76/sc) para travar o carrego da safra.",
+          "reference_links": [
+            {"label": "Fechamento do Milho CBOT 27/10 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/milho/430433-milho-perde-mais-de-1-em-chicago-nesta-terca-feira-e-dezembro-fecha-abaixo-de-us-4-50-por-bushel.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "O plantio da 1ª safra chegou a 40% no Centro-Sul (94% no PR e projeção de +3,4% de área em SC pela Epagri). Aproveite o recuo de hoje na B3 para recompor estoques para as fábricas de ração de MG (onde Pará de Minas segue a R$ 67,00/sc).",
+          "reference_links": [
+            {"label": "Avanço do Plantio de Milho Verão — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/milho/430376-plantio-do-milho-verao-chega-a-40-e-supera-2025-e-media-historica.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "Com o Boi Gordo rompendo R$ 400/@ hoje na B3 e o etanol de milho atingindo 20% da produção nacional, a relação de troca Boi x Ração está histórica (mais de 6,2 sacas de milho por arroba!). Trave contratos de DDGS e milho agora para garantir margem recorde no confinamento.",
+          "reference_links": [
+            {"label": "Exportações de DDG MT — Visão Agro", "url": "https://visaoagro.com.br/exportacoes-de-ddg-de-mato-grosso-crescem-35-em-2026-impulsionadas-pela-china/"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "Redirecione o fluxo logístico: com os portos menos atrativos para o milho, a originação física no MT (R$ 48/sc em Rondonópolis) e GO deve focar no abastecimento CIF das usinas de etanol de milho e polos consumidores de MG e SP.",
+          "reference_links": [
+            {"label": "Ajuste do Milho na B3 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/milho/430402-milho-recua-em-chicago-e-b-3-nesta-terca-feira-com-contratos-brasileiros-devolvendo-parte-da-alta-da-vespera.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☁️ Complexo Algodão, Caroço e Farelo",
+      "market_bias": "2ª Queda Seguida na ICE NY (78,06 ¢/lb) / Firmeza no Cepea (406,11 ¢ R$/lb) e Forte Arbitragem no Caroço",
+      "executive_summary": "O algodão fechou esta terça-feira (27/10) em queda pela segunda sessão seguida em Nova Iorque: o Dezembro/26 caiu 1,27% (-1,00 cent) para 78,06 cents/lb e o Março/27 recuou 1,26% para 81,82 cents/lb, sob cautela com juros no Fed (Warsh). No Brasil, o faturamento diário das exportações de pluma cresce 27,8% em outubro, o IMEA projeta safra 26/27 de 6,65 milhões de t de algodão em caroço em MT, e o caroço disponível opera a R$ 688,17/t no MT contra R$ 966,67/t na AIBA (Oeste da Bahia).",
+      "news_sources": [
+        {
+          "headline": "Algodão recua pela 2ª sessão consecutiva em NY; Dez/26 cai 1,27% e fecha a 78,06 cents/lb (27/10)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430435-algodao-recua-pela-segunda-sessao-consecutiva-em-nova-york.html"
+        },
+        {
+          "headline": "Cotação Oficial AIBA: Caroço de Algodão no Oeste da Bahia fecha em R$ 966,67/ton",
+          "url": "https://aiba.org.br/cotacoes/"
+        },
+        {
+          "headline": "IMEA estima área maior e produção de 6,65 milhões de toneladas de algodão em caroço em MT na safra 26/27",
+          "url": "https://matogrosso.canalrural.com.br/agricultura/algodao/imea-estima-area-maior-e-producao-de-665-milhoes-de-toneladas-de-algodao-em-mt-na-safra-2026-27/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cotonicultores)",
+          "direction": "A perda dos 79 cents em NY (fechando a 78,06 ¢/lb no Dez/26) ligada ao risco de juros no Fed e ao recuo da PTAX para R$ 5,3346 alerta para não adiar travas comerciais da pluma.",
+          "reference_links": [
+            {"label": "Fechamento do Algodão NY 27/10 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430435-algodao-recua-pela-segunda-sessao-consecutiva-em-nova-york.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas",
+          "direction": "Aproveitar a oferta consolidada de 6,81 milhões de t de algodão em caroço da safra 25/26 no MT para fechar contratos coletivos de caroço e torta de algodão para pecuaristas de MG e GO.",
+          "reference_links": [
+            {"label": "Projeção de Safra Algodão IMEA-MT — Canal Rural", "url": "https://matogrosso.canalrural.com.br/agricultura/algodao/imea-estima-area-maior-e-producao-de-665-milhoes-de-toneladas-de-algodao-em-mt-na-safra-2026-27/"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos",
+          "direction": "Com o Boi Gordo rompendo R$ 400,00/@ hoje na B3, 1 tonelada de caroço de algodão no MT (R$ 688,17/t, contra R$ 966,67/t na AIBA-BA) custa apenas 1,72 arroba de boi! Trave compras imediatamente aproveitando o frete de retorno.",
+          "reference_links": [
+            {"label": "Cotações AIBA Oeste da Bahia", "url": "https://aiba.org.br/cotacoes/"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "O faturamento diário das exportações brasileiras de pluma acumula alta de +27,8% até a 4ª semana de outubro. Mantenha hedge de venda em NY combinado com trava de NDF.",
+          "reference_links": [
+            {"label": "Tabelas de Algodão — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☕ Complexo Café — Matas de Minas (Praça Base: Manhuaçu-MG), Cerrado, Boi a R$ 400/@ & Câmbio",
+      "market_bias": "Arábica NY Cai 2,39% (293,75 ¢/lb) vs. Robusta Sobe em Londres (US$ 3.240/t) / Cooperativas de MG a R$ 1.800-1.815/sc e Manhuaçu a R$ 1.615-1.627/sc",
+      "executive_summary": "No fechamento desta terça-feira (27/10), o Café Arábica Dez/26 na ICE NY caiu 2,39% (-7,20 pts) para 293,75 ¢/lb com previsão de chuvas >100 mm no Sudeste e recuo do dólar PTAX para R$ 5,3346 (-3,02%), enquanto o Robusta em Londres subiu +46 pontos para US$ 3.240,00/t. Na região das Matas de Minas (Praça Base Oficial: Manhuaçu-MG, via Agrolink/CCCMG), o Arábica Bebida Dura Tipo 6 opera a R$ 1.615,00/sc (Safra Nova) e R$ 1.627,00/sc na média regional. Nas cooperativas do Cerrado e Sul de MG, o Tipo 6 disparou para R$ 1.815,00/sc em Patrocínio-MG (Expocaccer), R$ 1.800,00/sc em Guaxupé-MG (Cooxupé) e R$ 1.750,00/sc em Araguari-MG (Coocacer), com o Cereja Descascado a R$ 1.883,00/sc em Guaxupé! Na pecuária, o Boi Gordo superou R$ 400,00/@ na B3 e em praças de MG, SP e PR.",
+      "news_sources": [
+        {
+          "headline": "Arábica fecha terça-feira (27/10) com queda de 2,39% em NY (293,75 c/lb), enquanto Robusta avança em Londres (US$ 3.240/t)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430428-arabica-fecha-terca-feira-com-queda-de-2-39-em-nova-york-enquanto-robusta-avanca-em-londres.html"
+        },
+        {
+          "headline": "Praça de Manhuaçu-MG (Referência Matas de Minas): Arábica Dura Tipo 6 entre R$ 1.615,00 e R$ 1.627,00/sc em 27/10",
+          "url": "https://www.agrolink.com.br/regional/mg/manhuacu/cotacoes"
+        },
+        {
+          "headline": "Cooperativas de MG: Patrocínio (Expocaccer) bate R$ 1.815/sc, Guaxupé (Cooxupé) R$ 1.800/sc e CD chega a R$ 1.883/sc",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+        },
+        {
+          "headline": "Dólar PTAX fecha em R$ 5,3346 (-3,02%) nesta terça-feira (27/10) e Boi Gordo supera R$ 400/@ na B3 e em MG/SP/PR",
+          "url": "https://www.piranot.com.br/2026/10/27/noticias/economia/dolar-ptax-fecha-em-r-53346-nesta-terca-feira-27-10-2026-veja-a/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais — Matas de Minas (Praça: Manhuaçu-MG), Cerrado e Sul de MG",
+          "direction": "Com NY fechando a 293,75 ¢/lb (-2,39%) e a PTAX recuando para R$ 5,3346, aproveite imediatamente as tabelas das cooperativas que refletiram o salto cambial de ontem: Patrocínio (Expocaccer) a R$ 1.815/sc, Guaxupé (Cooxupé) a R$ 1.800/sc (CD a R$ 1.883/sc), Araguari (Coocacer) a R$ 1.750/sc e a Praça de Manhuaçu-MG (Matas de Minas) entre R$ 1.615 e R$ 1.627/sc!",
+          "reference_links": [
+            {"label": "Cotação Praça de Manhuaçu-MG (Matas de Minas) — Agrolink", "url": "https://www.agrolink.com.br/regional/mg/manhuacu/cotacoes"},
+            {"label": "Tabelas das Cooperativas de MG (Cooxupé/Expocaccer/Coocacer)", "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Manhuaçu, Zona da Mata, Cerrado e Sul de MG)",
+          "direction": "Orientar o cooperado a travar lotes de Cereja Descascado (R$ 1.830 a R$ 1.883/sc) e Bebida Dura Tipo 6 antes que as chuvas acima de 100 mm previstas para o Sudeste aumentem a pressão baixista sobre Nova Iorque.",
+          "reference_links": [
+            {"label": "Fechamento do Café NY e Londres 27/10 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430428-arabica-fecha-terca-feira-com-queda-de-2-39-em-nova-york-enquanto-robusta-avanca-em-londres.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Torrefações e Confinamentos (Boi a R$ 400/@)",
+          "direction": "Enquanto o Arábica recuou em NY, o Robusta subiu em Londres para US$ 3.240/t (+46 pts), mantendo o Conilon firme em MG (R$ 950/sc em Manhuaçu) e ES (R$ 905-940/sc). Para os confinadores de MG, SP e PR, o rompimento dos R$ 400,00/@ na B3 hoje exige trava imediata de venda do boi gordo nos contratos Novembro e Dezembro!",
+          "reference_links": [
+            {"label": "Boi Gordo Supera R$ 400/@ na B3 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Mesa de Câmbio)",
+          "direction": "A PTAX caiu -3,02% hoje para R$ 5,3346 (com mínima intermediária de R$ 5,3180 às 11h02). Quem vendeu dólar futuro/NDF ontem perto de R$ 5,50 embolsou lucro expressivo; agora o foco é a rolagem da PTAX de fim de mês na sexta-feira (30/10).",
+          "reference_links": [
+            {"label": "Boletins Intradiários e Fechamento PTAX 27/10 — BCB", "url": "https://www.piranot.com.br/2026/10/27/noticias/economia/dolar-ptax-fecha-em-r-53346-nesta-terca-feira-27-10-2026-veja-a/"}
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "25/10/2026",
+    "period_end": "27/10/2026",
+    "period_current": "Semana Corrente (WTD — Fechamento Oficial 27/10 às 17:38 BRT)",
+    "assets": [
+      {
+        "asset": "Dólar PTAX Oficial (BCB)",
+        "unit": "R$",
+        "sunday_open_ref": 5.0377,
+        "current_value": 5.3346,
+        "weekly_change_pct": 5.89,
+        "weekly_driver": "Subiu +9,19% na segunda (R$ 5,5007) e recuou -3,02% hoje fechando a R$ 5,3346 (+5,89% acumulados na semana)."
+      },
+      {
+        "asset": "Soja Paranaguá",
+        "unit": "R$/sc",
+        "sunday_open_ref": 152.41,
+        "current_value": 155.55,
+        "weekly_change_pct": 2.06,
+        "weekly_driver": "Sustentada pelo câmbio e prêmio firme, apesar de Chicago devolver ganhos hoje (~ -1%)."
+      },
+      {
+        "asset": "Soja Triângulo (Uberlândia-MG)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 140.96,
+        "current_value": 142.05,
+        "weekly_change_pct": 0.77,
+        "weekly_driver": "Firmeza na praça de Uberlândia-MG acompanhando a paridade portuária."
+      },
+      {
+        "asset": "Algodão ICE NY (Dez/26)",
+        "unit": "¢/lb",
+        "sunday_open_ref": 80.20,
+        "current_value": 78.06,
+        "weekly_change_pct": -2.67,
+        "weekly_driver": "Segunda queda consecutiva em NY (-1,27% hoje para 78,06 ¢/lb) sob cautela com o Fed."
+      },
+      {
+        "asset": "Café Matas de Minas (Manhuaçu-MG)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 1647.00,
+        "current_value": 1615.00,
+        "weekly_change_pct": -1.94,
+        "weekly_driver": "Praça de Manhuaçu-MG ajusta com a queda de -2,39% na ICE NY (293,75 ¢/lb), enquanto cooperativas do Cerrado/Sul de MG batem R$ 1.800-1.815/sc."
+      },
+      {
+        "asset": "Boi Gordo B3 (Nov/Dez 26)",
+        "unit": "R$/@",
+        "sunday_open_ref": 384.50,
+        "current_value": 400.50,
+        "weekly_change_pct": 4.16,
+        "weekly_driver": "Rompeu a barreira histórica de R$ 400,00/@ hoje na B3 e em negócios físicos em MG, SP e PR!"
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-10-01",
+    "current_date": "2026-10-27",
+    "days_elapsed": 19,
+    "daily_dates": [
+      "01/10", "02/10", "05/10", "06/10", "07/10", "08/10", "09/10", "12/10", "13/10", "14/10",
+      "15/10", "16/10", "19/10", "20/10", "21/10", "22/10", "23/10", "26/10", "27/10"
+    ],
+    "assets": [
+      {
+        "asset": "Dólar PTAX Oficial (BCB)",
+        "unit": "R$",
+        "month_open_value": 5.4245,
+        "mid_month_10_oct": 5.1200,
+        "current_value": 5.3346,
+        "mtd_change_pct": -1.66,
+        "monthly_narrative": "Abriu outubro em R$ 5,4245, bateu piso de R$ 5,0140 (20/10), saltou para R$ 5,5007 ontem (26/10) e fechou oficialmente hoje (27/10) a R$ 5,3346 (-3,02% no dia).",
+        "daily_history": [
+          5.4245, 5.4120, 5.3900, 5.3500, 5.3000, 5.2500, 5.2000, 5.1500, 5.1200, 5.1000,
+          5.0800, 5.0500, 5.0300, 5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346
+        ]
+      },
+      {
+        "asset": "Soja Paranaguá (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 161.56,
+        "mid_month_10_oct": 158.00,
+        "current_value": 155.55,
+        "mtd_change_pct": -3.72,
+        "monthly_narrative": "Recuou nas três primeiras semanas com a queda do dólar e colheita nos EUA, recuperando para R$ 155,55/sc (+2,06%) nesta semana.",
+        "daily_history": [
+          161.56, 161.00, 160.50, 160.00, 159.50, 159.00, 158.50, 158.00, 157.50, 157.00,
+          156.50, 156.00, 154.50, 153.80, 153.50, 152.90, 152.41, 155.55, 155.55
+        ]
+      },
+      {
+        "asset": "Milho Campinas (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 68.67,
+        "mid_month_10_oct": 66.50,
+        "current_value": 64.24,
+        "mtd_change_pct": -6.45,
+        "monthly_narrative": "Ajustou -6,45% no acumulado do mês em Campinas (R$ 64,24/sc), mas conta com suporte estrutural do etanol de milho (20% da safra) e Pará de Minas a R$ 67,00/sc.",
+        "daily_history": [
+          68.67, 68.40, 68.10, 67.80, 67.50, 67.20, 66.80, 66.50, 66.20, 65.90,
+          65.60, 65.30, 64.90, 64.60, 64.45, 64.30, 64.27, 64.24, 64.24
+        ]
+      },
+      {
+        "asset": "Café Matas de Minas (Praça Manhuaçu-MG T.6)",
+        "unit": "R$/sc",
+        "month_open_value": 1597.00,
+        "mid_month_10_oct": 1560.00,
+        "current_value": 1615.00,
+        "mtd_change_pct": 1.13,
+        "monthly_narrative": "Série histórica oficial da Praça de Manhuaçu-MG (referência para as Matas de Minas): abriu outubro a R$ 1.597/sc, bateu piso de R$ 1.560 (09 a 13/10), pico de R$ 1.677 (20/10) e opera em 27/10 a R$ 1.615/sc na Safra Nova (+1,13% no mês).",
+        "daily_history": [
+          1597.0, 1597.0, 1608.0, 1574.0, 1620.0, 1620.0, 1560.0, 1560.0, 1560.0, 1584.0,
+          1616.0, 1617.0, 1654.0, 1677.0, 1647.0, 1664.0, 1647.0, 1647.0, 1615.0
+        ]
+      },
+      {
+        "asset": "Café Arábica (Cepea Nacional)",
+        "unit": "R$/sc",
+        "month_open_value": 1585.00,
+        "mid_month_10_oct": 1570.00,
+        "current_value": 1627.46,
+        "mtd_change_pct": 2.68,
+        "monthly_narrative": "Acumula valorização de +2,68% em outubro, com cooperativas de MG (Cooxupé e Expocaccer) negociando hoje entre R$ 1.800 e R$ 1.815/sc.",
+        "daily_history": [
+          1585.0, 1582.0, 1578.0, 1575.0, 1572.0, 1570.0, 1568.0, 1565.0, 1560.0, 1562.0,
+          1565.0, 1570.0, 1600.0, 1615.2, 1618.4, 1619.9, 1601.95, 1627.46, 1627.46
+        ]
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar PTAX (USD/BRL)",
+      "current_base": "R$ 5,3346 (-3,02% hoje)",
+      "short_term_target_23_oct": "R$ 5,28 - R$ 5,45",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,35",
+        "bull_case": "R$ 5,50",
+        "bear_case": "R$ 5,22"
+      },
+      "audit_trigger": "Disputa da PTAX de fim de mês (sexta, 30/10) após devolução de 3,02% nesta terça-feira."
+    },
+    {
+      "commodity": "Soja Paranaguá / Uberlândia-MG",
+      "current_base": "R$ 155,55 (PR) / R$ 142,05 (MG)",
+      "short_term_target_23_oct": "R$ 153,00 - R$ 156,50 (Porto)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 154,50",
+        "bull_case": "R$ 157,50",
+        "bear_case": "R$ 151,50"
+      },
+      "audit_trigger": "Alerta de corte de safra por El Niño (Serasa -9,7%) vs. recuo da PTAX para R$ 5,3346."
+    },
+    {
+      "commodity": "Milho CBOT & B3 (Jan/27)",
+      "current_base": "< US$ 4,50/bu (CBOT) | R$ 71,20 (B3)",
+      "short_term_target_23_oct": "R$ 70,50 - R$ 73,00 (Jan/27)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 71,50",
+        "bull_case": "R$ 73,50",
+        "bear_case": "R$ 69,50"
+      },
+      "audit_trigger": "Perda dos US$ 4,50/bu em Chicago vs. etanol de milho atingindo 20% da produção nacional."
+    },
+    {
+      "commodity": "Café Matas de Minas (Praça Manhuaçu-MG T.6)",
+      "current_base": "R$ 1.615,00 a R$ 1.627,00 / sc",
+      "short_term_target_23_oct": "R$ 1.595,00 - R$ 1.645,00",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.615,00",
+        "bull_case": "R$ 1.655,00",
+        "bear_case": "R$ 1.580,00"
+      },
+      "audit_trigger": "Previsão de >100 mm de chuva no Sudeste e NY a 293,75 ¢/lb vs. Robusta subindo a US$ 3.240/t em Londres."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "Relação de Troca 'Boi x Milho / Coprodutos' (Steer-to-Corn Ratio) com o Boi Gordo a R$ 400,00/@",
+    "formula": "Relação Boi/Milho (sacas/@) = Preço da Arroba do Boi Gordo (R$/@) / Preço da Saca de Milho (R$/sc)",
+    "analysis": "Hoje (27/10) vimos uma abertura histórica de margem para a pecuária intensiva: enquanto o Milho em Chicago perdeu o suporte de US$ 4,50/bu e o Farelo de Soja em Rondonópolis-MT recuou 4,72% para R$ 2.020/t, o Boi Gordo rompeu a barreira dos R$ 400,00/@ na B3 (vencimentos Nov e Dez) e em negócios pontuais em MG, SP e PR! Com a arroba a R$ 400,00, cada arroba compra 6,22 sacas de milho em SP (R$ 64,24) ou 5,97 sacas em Pará de Minas-MG (R$ 67,00), e apenas 1,72 arroba compra 1 tonelada inteira de caroço de algodão no MT (R$ 688,17/t).",
+    "strategic_takeaway": "Sempre que a relação Boi/Milho supera 5,8 a 6,0 sacas por arroba, o confinamento opera no pico de rentabilidade histórica. A recomendação executiva imediata é travar as duas pontas (Double Hedge): vender contratos futuros de Boi Gordo na B3 a R$ 400,00/@ (ou comprar Put) e travar a compra física de DDGS, caroço de algodão e milho para todo o giro final de ano!"
+  }
+}
