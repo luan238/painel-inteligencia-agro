@@ -2,11 +2,11 @@
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia) / Matas de Minas (Praça Base: Manhuaçu-MG) / MT (IMEA) / Santos SP / Paranaguá PR / CBOT / ICE / B3",
     "scope": "Soja, Milho, DDGS, Algodão, Café e Câmbio (FOB / CIF)",
-    "timestamp": "28/10/2026 às 06:31 BRT (Abertura Intraday & Fechamentos Consolidados)",
+    "timestamp": "28/10/2026 às 07:25 BRT (Abertura Intraday & Fechamentos Consolidados)",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
-    "cambio_energia_frete": "Nesta quarta-feira (28/10 às 06:31 BRT), o Dólar Comercial Spot opera estável a R$ 5,3515 após a PTAX oficial do Banco Central ter recuado -3,02% no fechamento de ontem para R$ 5,3346 (devolvendo parte do pico de R$ 5,5007 de segunda-feira). O Euro PTAX fechou a R$ 5,9449 (-3,31%) e o Petróleo WTI negocia na faixa de US$ 101,22 a US$ 101,83/barril.",
+    "cambio_energia_frete": "Nesta quarta-feira (28/10), o Dólar Comercial Spot opera estável a R$ 5,3515 após a PTAX oficial do Banco Central ter recuado -3,02% no fechamento de ontem para R$ 5,3346 (devolvendo parte do pico de R$ 5,5007 de segunda-feira). O Euro PTAX fechou a R$ 5,9449 (-3,31%) e o Petróleo WTI negocia na faixa de US$ 101,22 a US$ 101,83/barril.",
     "complexo_soja": "A soja em Chicago abre a manhã desta quarta-feira (28/10) em recuperação de +0,20% a US$ 12,4550/bu no Jan/27 (após o Nov/26 fechar ontem a US$ 12,2925/bu, -0,97%). No físico brasileiro, o repasse cambial acumulado na semana levou os indicadores a novas máximas: o Esalq/B3 Paranaguá subiu +1,20% para R$ 157,41/sc, o Cepea Paraná avançou +1,47% para R$ 151,38/sc e no Triângulo Mineiro (Praça: Uberlândia-MG) a saca disponível saltou +2,67% para R$ 145,84/sc!",
     "complexo_milho_etanol_ddgs": "O milho em Chicago tenta reação nesta manhã (+0,19% a US$ 4,4960/bu) após fechar ontem a US$ 4,4875/bu e ajustar na B3 para R$ 66,35/sc (Nov/26) e R$ 70,40/sc (Jan/27). Na contramão das bolsas, o mercado físico brasileiro disparou: o Indicador Esalq Campinas subiu +0,98% para R$ 64,87/sc, Pará de Minas-MG avançou para R$ 68,00/sc e o Porto de Paranaguá saltou +2,94% para R$ 70,00/sc, sustentados pelo etanol de milho (20% da produção nacional) e pelas exportações recordes de DDG de MT (+35,01%).",
     "complexo_algodao": "Na ICE NY, a pluma Dez/26 opera nesta manhã de 28/10 a 77,83 ¢/lb (-0,29%), após fechar ontem em baixa de 1,27% a 78,06 ¢/lb. No Brasil, o Indicador Cepea Pluma mantém 406,11 ¢ R$/lb (+0,35%) e o caroço de algodão segue com forte arbitragem regional entre o Mato Grosso (R$ 688,17/t IMEA) e o Oeste da Bahia (R$ 955,00 Safras a R$ 966,67/t AIBA).",
@@ -14,7 +14,7 @@
   },
   "market_indicators": {
     "cambio_e_energia": {
-      "dolar_spot_abertura_28_10": "R$ 5,3515 (Estável às 06:31 BRT)",
+      "dolar_spot_abertura_28_10": "R$ 5,3515 (Estável na manhã)",
       "dolar_ptax_oficial_bcb": "R$ 5,3346 (-3,02% vs R$ 5,5007)",
       "dolar_futuro_b3_nov26": "5.316,00 pts (-1,15%)",
       "euro_ptax_oficial_bcb": "R$ 5,9449 (-3,31%)",
@@ -275,7 +275,7 @@
   "weekly_evolution_wtd": {
     "period_start": "25/10/2026",
     "period_end": "28/10/2026",
-    "period_current": "Semana Corrente (WTD — Atualizado 28/10 às 06:31 BRT)",
+    "period_current": "Semana Corrente (WTD — Atualizado 28/10 às 07:25 BRT)",
     "assets": [
       {
         "asset": "Dólar Comercial (USD/BRL)",
@@ -313,7 +313,7 @@
         "asset": "Milho Esalq/B3 (Campinas)",
         "unit": "R$/sc",
         "sunday_open_ref": 64.27,
-        "current_value": 64,87,
+        "current_value": 64.87,
         "weekly_change_pct": 0.93,
         "weekly_driver": "Subiu +0,98% no último fechamento (com Pará de Minas-MG a R$ 68,00/sc e Paranaguá a R$ 70,00/sc)."
       },
@@ -330,10 +330,10 @@
   "monthly_evolution_mtd": {
     "month_start": "2026-10-01",
     "current_date": "2026-10-28",
-    "days_elapsed": 20,
+    "days_elapsed": 19,
     "daily_dates": [
-      "01/10", "02/10", "05/10", "06/10", "07/10", "08/10", "09/10", "12/10", "13/10", "14/10",
-      "15/10", "16/10", "19/10", "20/10", "21/10", "22/10", "23/10", "26/10", "27/10", "28/10"
+      "01/10", "02/10", "05/10", "06/10", "07/10", "08/10", "09/10", "13/10", "14/10", "15/10",
+      "16/10", "19/10", "20/10", "21/10", "22/10", "23/10", "26/10", "27/10", "28/10"
     ],
     "assets": [
       {
@@ -345,8 +345,8 @@
         "mtd_change_pct": -1.35,
         "monthly_narrative": "Abriu outubro em R$ 5,4245, bateu piso de R$ 5,0140 (20/10), saltou para R$ 5,5007 (26/10), fechou a PTAX de 27/10 a R$ 5,3346 e opera hoje (28/10) a R$ 5,3515.",
         "daily_history": [
-          5.4245, 5.4120, 5.3900, 5.3500, 5.3000, 5.2500, 5.2000, 5.1500, 5.1200, 5.1000,
-          5.0800, 5.0500, 5.0300, 5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346, 5.3515
+          5.4245, 5.4120, 5.3900, 5.3500, 5.3000, 5.2500, 5.2000, 5.1200, 5.1000, 5.0800,
+          5.0500, 5.0300, 5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346, 5.3515
         ]
       },
       {
@@ -358,8 +358,8 @@
         "mtd_change_pct": -2.57,
         "monthly_narrative": "Após recuar até R$ 152,41 em 23/10, engatou dois dias de forte alta (+2,06% e +1,20%) e atingiu R$ 157,41/sc.",
         "daily_history": [
-          161.56, 161.00, 160.50, 160.00, 159.50, 159.00, 158.50, 158.00, 157.50, 157.00,
-          156.50, 156.00, 154.50, 153.80, 153.50, 152.90, 152.41, 155.55, 157.41, 157.41
+          161.56, 161.00, 160.50, 160.00, 159.50, 159.00, 158.50, 157.50, 157.00, 156.50,
+          156.00, 154.50, 153.80, 153.50, 152.90, 152.41, 155.55, 157.41, 157.41
         ]
       },
       {
@@ -371,8 +371,8 @@
         "mtd_change_pct": -1.46,
         "monthly_narrative": "Série real de Uberlândia-MG (Grão Direto): bateu R$ 148,40 em 16/10, recuou a R$ 140,97 em 22/10 e saltou +2,67% nos últimos dias para R$ 145,84/sc.",
         "daily_history": [
-          148.00, 147.50, 147.00, 146.50, 146.00, 145.50, 145.00, 144.80, 144.64, 147.23,
-          148.03, 148.40, 147.81, 146.74, 141.30, 140.97, 142.05, 145.84, 145.84, 145.84
+          148.00, 147.50, 147.00, 146.50, 146.00, 145.50, 145.00, 144.64, 147.23, 148.03,
+          148.40, 147.81, 146.74, 141.30, 140.97, 142.05, 144.20, 145.84, 145.84
         ]
       },
       {
@@ -384,8 +384,8 @@
         "mtd_change_pct": -5.53,
         "monthly_narrative": "Reagiu +0,98% no último fechamento para R$ 64,87/sc, acompanhando a puxada de Pará de Minas-MG (R$ 68,00/sc) e Paranaguá (R$ 70,00/sc).",
         "daily_history": [
-          68.67, 68.40, 68.10, 67.80, 67.50, 67.20, 66.80, 66.50, 66.20, 65.90,
-          65.60, 65.30, 64.90, 64.60, 64.45, 64.30, 64.27, 64.24, 64.87, 64.87
+          68.67, 68.40, 68.10, 67.80, 67.50, 67.20, 66.80, 66.20, 65.90, 65.60,
+          65.30, 64.90, 64.60, 64.45, 64.30, 64.27, 64.24, 64.87, 64.87
         ]
       },
       {
@@ -397,8 +397,8 @@
         "mtd_change_pct": 1.88,
         "monthly_narrative": "Série oficial da Praça de Manhuaçu-MG (referência para as Matas de Minas): abriu outubro a R$ 1.597/sc, ajustou ontem a R$ 1.615/sc e subiu +0,7% hoje (28/10) para R$ 1.627,00/sc (+1,88% no mês).",
         "daily_history": [
-          1597.0, 1597.0, 1608.0, 1574.0, 1620.0, 1620.0, 1560.0, 1560.0, 1560.0, 1584.0,
-          1616.0, 1617.0, 1654.0, 1677.0, 1647.0, 1664.0, 1647.0, 1647.0, 1615.0, 1627.0
+          1597.0, 1597.0, 1608.0, 1574.0, 1620.0, 1620.0, 1560.0, 1560.0, 1584.0, 1616.0,
+          1617.0, 1654.0, 1677.0, 1647.0, 1664.0, 1647.0, 1647.0, 1615.0, 1627.0
         ]
       },
       {
@@ -410,8 +410,8 @@
         "mtd_change_pct": 1.59,
         "monthly_narrative": "Após atingir R$ 1.627,46 em 26/10, ajustou -1,06% em 27/10 para R$ 1.610,19/sc, mantendo alta de +1,59% em outubro.",
         "daily_history": [
-          1585.0, 1582.0, 1578.0, 1575.0, 1572.0, 1570.0, 1568.0, 1565.0, 1560.0, 1562.0,
-          1565.0, 1570.0, 1600.0, 1615.2, 1618.4, 1619.9, 1601.95, 1627.46, 1610.19, 1610.19
+          1585.0, 1582.0, 1578.0, 1575.0, 1572.0, 1570.0, 1568.0, 1560.0, 1562.0, 1565.0,
+          1570.0, 1600.0, 1615.2, 1618.4, 1619.9, 1601.95, 1627.46, 1610.19, 1610.19
         ]
       }
     ]
