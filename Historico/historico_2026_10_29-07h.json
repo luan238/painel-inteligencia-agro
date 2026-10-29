@@ -1,0 +1,511 @@
+{
+  "metadata": {
+    "target_regions": "Triângulo Mineiro (Uberlândia) / Matas de Minas (Praça Base: Manhuaçu-MG) / PR & RS (Trigo e Soja) / MT (IMEA) / Santos SP / Paranaguá PR / CBOT / ICE / B3",
+    "scope": "Cenário Político, Petróleo (WTI/Brent), Câmbio, Soja, Milho, Trigo (PR/RS/GO), DDGS, Algodão, Café e Boi Gordo",
+    "timestamp": "29/10/2026 às 07:14 BRT (Abertura Intraday & Fechamentos Consolidados de 28/10)",
+    "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "No Cenário Político e Cambial desta quinta-feira (29/10 às 07:14 BRT), o mercado acomoda-se após o estresse pós-eleitoral: o Dólar à Vista fechou ontem a R$ 5,3466 (operando hoje entre R$ 5,34 e R$ 5,35), a PTAX oficial do Banco Central fechou em R$ 5,3420 (+0,14%) e o Dólar Futuro B3 (WDOX26) ajustou entre 5.349 e 5.360 pontos (máxima de 5.410). Em Brasília, o governo remanejou R$ 5,166 bilhões do Orçamento para BPC e saúde (elevando os DIs longos), enquanto nos EUA o Fed manteve os juros entre 3,75% e 4,00% a.a. No Petróleo, após saltar mais de 3% ontem com queda nos estoques dos EUA e tensões no Oriente Médio, nesta manhã de 29/10 o WTI corrige -1,35% para US$ 101,39/barril (fecho anterior: US$ 102,78-102,93) e o Brent opera a US$ 110,43/barril (-1,08% vs US$ 111,64), mantendo pressão nos custos de frete, diesel e fertilizantes (cujas entregas devem somar 47,5 mi t em 2027).",
+    "complexo_soja": "A soja fechou em queda pelo 3º dia consecutivo em Chicago ontem (acumulando -2,55% na semana) e opera nesta manhã de 29/10 a US$ 12,1725/bu no Nov/26 (-7,25 cents) e US$ 12,3150/bu no Jan/27 (-6,50 cents), pressionada pela colheita nos EUA apesar da venda de 120 mil t do USDA. Na contramão externa, o mercado físico brasileiro bateu novas máximas: o Indicador Esalq/B3 Paranaguá cravou R$ 157,42/sc (com lotes físicos disponíveis a R$ 158,00/sc, Paranaguá Nov/26 a R$ 160,00/sc e Rio Grande Nov/26 a R$ 161,00/sc!), o Cepea Paraná subiu +0,34% para R$ 151,89/sc e no Triângulo Mineiro/Alto Paranaíba (Grão Direto) a média regional avançou +0,96% para R$ 147,24/sc (Uberlândia a R$ 145,84/sc).",
+    "complexo_milho_etanol_ddgs": "O milho voltou a subir em Chicago no fechamento de ontem (Dez/26 +0,67% a US$ 4,5175/bu e Mar/27 a US$ 4,6500/bu), enquanto na B3 o Nov/26 subiu +0,68% para R$ 66,80/sc e o Jan/27 avançou para R$ 70,56/sc. Estudo técnico comprovou que a B3 acompanha melhor os preços do milho no interior do que Chicago em prazos de até 2 meses. No físico, o Indicador Esalq fechou a R$ 64,73/sc, o Triângulo Mineiro/Alto Paranaíba subiu para R$ 62,92/sc (com Pará de Minas-MG e Passo Fundo-RS a R$ 68,00/sc), Goiás subiu +1,96% para R$ 52,00/sc (Rio Verde/Jataí) e o Porto de Paranaguá manteve R$ 70,00/sc. No Trigo, Chicago caiu quase 2% ontem e fechou abaixo de US$ 6,00/bu pela 1ª vez desde julho, mas no Brasil a oferta restrita de Trigo Tipo 1 sustenta as praças do Rio Grande do Sul (R$ 1.500,74/t Cepea, +0,08%), Paraná (R$ 1.569,61/t Cepea, +0,39%) e Cristalina-GO (R$ 1.400,00/t FOB).",
+    "complexo_algodao": "Forte valorização da pluma no Brasil: o Indicador Cepea/Esalq (8 dias) saltou +0,67% no fechamento de 28/10 para 411,34 centavos de real por libra-peso, refletindo o repasse cambial na paridade de exportação, enquanto na ICE NY (Dez/26) o contrato abre esta quinta-feira (29/10) subindo +0,18% a 78,29 cents/lb. Nos coprodutos, o caroço de algodão segue firme a R$ 955,00/t (Safras) a R$ 966,67/t (AIBA) no Oeste da Bahia contra R$ 688,17/t no Mato Grosso (IMEA).",
+    "complexo_cafe": "Com a previsão de chuvas no Centro-Sul e expectativa de oferta, o Café Arábica na ICE NY fechou ontem em baixa de 2,52% a 286,35 cents/lb (acumulando -6,7% em três pregões) e o Robusta em Londres fechou a US$ 3.200/t (-40 pts). No Brasil, o Indicador Cepea Arábica ajustou -1,01% para R$ 1.593,89/sc (Robusta Cepea a R$ 960,10/sc) e na região das Matas de Minas (Praça Base Oficial: Manhuaçu-MG, via Agrolink) a cotação de hoje (29/10) ajustou -2,0% para R$ 1.594,00/sc no Dura Tipo 6 Safra Nova (com Guaxupé/Cooxupé a R$ 1.710 no Dura e R$ 1.793 no Cereja Descascado). Já na pecuária, o Indicador do Boi Gordo Cepea/Esalq (SP) subiu mais +0,71% para um novo recorde nominal histórico de R$ 389,05/@ (com média AgroBrazil em R$ 390,45/@ em SP, R$ 375,79/@ em MG e futuros acima de R$ 400/@ na B3)!"
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_spot_e_ptax_bcb": "Spot: R$ 5,3466 | PTAX Oficial: R$ 5,3420 (+0,14%)",
+      "dolar_futuro_b3_wdox26": "Ajuste: 5.360,00 pts | Regular: 5.349,00 pts",
+      "cenario_politico_e_fed": "Fed mantém 3,75%-4,00% | Gov. remaneja R$ 5,16 bi (DIs sobem)",
+      "petroleo_wti_ny_29_10": "Hoje: US$ 101,39/bbl (-1,35%) | Ontem: US$ 102,93 (+3,03%)",
+      "petroleo_brent_ice_29_10": "Hoje: US$ 110,43/bbl (-1,08%) | Ontem: US$ 111,64",
+      "fertilizantes_e_frete_2027": "Entregas previstas: 47,5 mi t em 2027 (Frete pressionado)"
+    },
+    "complexo_soja": {
+      "cbot_soja_nov26_e_jan27_29_10": "Nov/26: US$ 12,1725 (-7,25¢) | Jan/27: US$ 12,3150/bu",
+      "soja_b3_cme_nov26": "US$ 26,98 / sc (-0,52%)",
+      "esalq_paranagua_e_portos": "Indicador: R$ 157,42 | Disp: R$ 158 | Nov/26: R$ 160,00/sc",
+      "cepea_parana_e_rio_grande": "Cepea PR: R$ 151,89 (+0,34%) | Rio Grande Nov: R$ 161,00/sc",
+      "triangulo_mineiro_uberlandia": "Média Triângulo: R$ 147,24 (+0,96%) | Uberlândia: R$ 145,84/sc",
+      "interior_go_ms_ba_sc": "Abelardo Luz-SC: R$ 153 | AIBA-BA: R$ 145,38 | GO: R$ 132/sc",
+      "farelo_soja_cbot_mt_rs": "CBOT: US$ 335,70/t | IMEA-MT: R$ 1.921,64 | RS: R$ 2.130/t"
+    },
+    "complexo_milho_e_ddgs": {
+      "cbot_milho_dez26_e_mar27": "Dez/26: US$ 4,5175 (+0,67%) | Mar/27: US$ 4,6500/bu (+0,49%)",
+      "milho_b3_nov26_jan27_mar27": "Nov: R$ 66,80 (+0,68%) | Jan: R$ 70,56 | Mar/27: R$ 75,20/sc",
+      "esalq_campinas_indicador": "R$ 64,73 / sc (-0,22% | Físico Campinas: R$ 66,00/sc)",
+      "triangulo_sul_mg_e_para_minas": "Triângulo: R$ 62,92 (+0,06%) | Sul MG: R$ 60,70 | Pará Minas: R$ 68",
+      "goias_e_porto_paranagua": "Rio Verde/Jataí-GO: R$ 52,00 (+1,96%) | Paranaguá: R$ 70,00/sc",
+      "trigo_cepea_pr_rs_e_go_fob": "PR: R$ 1.569,61/t (+0,39%) | RS: R$ 1.500,74/t (+0,08%) | GO: R$ 1.400/t",
+      "trigo_cbot_e_qualidade_br": "CBOT fecha < US$ 6,00/bu (-2%) | Escassez Tipo 1 no PR e SP",
+      "etanol_milho_e_ddgs_mt": "Etanol Milho: 20% da safra | DDG MT: +35,01% (Milho MT: R$ 42,30-47,50)"
+    },
+    "complexo_algodao": {
+      "cepea_pluma_brasil_28_10": "411,34 ¢ R$/lb (+0,67% — Forte alta na paridade!)",
+      "ice_ny_pluma_dez26_29_10": "78,29 ¢ / lb (+0,18% hoje | Ontem: 78,10 ¢)",
+      "pluma_fisico_imea_mt": "Média MT: R$ 126,44 / @ | Safra MT: 6,65 mi t em caroço",
+      "caroco_algodao_imea_mt": "R$ 688,17 / ton (Estável no Mato Grosso)",
+      "caroco_algodao_bahia": "R$ 955,00 / ton (Safras) | R$ 966,67 / ton (AIBA Oeste BA)"
+    },
+    "complexo_cafe": {
+      "ice_ny_arabica_dez26_e_b3": "ICE NY: 286,35 ¢/lb (-2,52%) | B3 Dez/26: US$ 355,00/sc",
+      "ice_londres_e_cepea_robusta": "Londres Nov/26: US$ 3.200/t (-40 pts) | Cepea Robusta: R$ 960,10/sc",
+      "cepea_arabica_nacional_28_10": "R$ 1.593,89 / sc (-1,01% em 28/10)",
+      "praca_base_matas_de_minas": "Manhuaçu-MG (Hub Oficial Matas de Minas)",
+      "matas_de_minas_manhuacu_29_10": "R$ 1.594,00 / sc (-2,0% hoje 29/10 — Dura T.6 Safra Nova)",
+      "cooxupe_guaxupe_dura_e_cd": "Dura T.6: R$ 1.710,00 (-2,29%) | Cereja Desc. (CD): R$ 1.793,00/sc",
+      "expocaccer_patrocinio_e_varginha": "Patrocínio T.6: R$ 1.675 (CD: R$ 1.715) | Varginha 29/10: R$ 1.660/sc",
+      "boi_gordo_recorde_cepea_e_mg": "Cepea SP: R$ 389,05/@ (+0,71%) | AgroBrazil SP: R$ 390,45 | MG: R$ 375,79/@"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "title": "🏛️🛢️ Cenário Político, Petróleo (WTI/Brent) e Mesa de Câmbio (Dólar)",
+      "market_bias": "Dólar Acomodado em R$ 5,3466 (PTAX R$ 5,3420, +0,14%) com Alta nos DIs Longos / Petróleo Acima de US$ 101 (WTI) e US$ 110 (Brent)",
+      "executive_summary": "No front político e macroeconômico, o câmbio busca novo ponto de equilíbrio após o choque pós-eleitoral de segunda-feira: a PTAX oficial do Banco Central fechou ontem (28/10) em R$ 5,3420 (+0,14%), o Dólar à Vista encerrou a R$ 5,3466 e o Dólar Futuro (WDOX26) ajustou a 5.360 pontos (regular a 5.349 pts). As taxas dos DIs de longo prazo subiram refletindo a cautela fiscal — com o governo remanejando R$ 5,166 bilhões do Orçamento para BPC e saúde e o Ibovespa caindo 3,17% aos 171.006 pts —, enquanto nos EUA o Fed manteve os juros entre 3,75% e 4,00% a.a. No Petróleo, após saltar mais de 3% ontem (WTI a US$ 102,93 e Brent a US$ 111,64) devido à queda nos estoques americanos e tensões geopolíticas no Oriente Médio/Catar, nesta manhã de quinta-feira (29/10) o WTI opera a US$ 101,39/barril (-1,35%) e o Brent a US$ 110,43/barril (-1,08%), mantendo custos elevados de frete e sustentando a recuperação do setor de fertilizantes para 47,5 mi t em 2027.",
+      "news_sources": [
+        {
+          "headline": "Dólar PTAX fecha em R$ 5,3420 (+0,14%); Fed mantém juros dos EUA entre 3,75% e 4% e Governo remaneja R$ 5,166 bi do Orçamento",
+          "url": "https://www.piranot.com.br/2026/10/28/noticias/economia/dolar-ptax-fecha-em-r-53420-nesta-quarta-feira-28-10-2026-veja-a/"
+        },
+        {
+          "headline": "Dólar hoje se acomodando à nova realidade política (Fecho à vista a R$ 5,3466 e WDOX26 com ajuste em 5.360 pts) — Investing.com",
+          "url": "https://br.investing.com/analysis/dolar-hoje-se-acomodando-a-nova-realidade-politica-200480413"
+        },
+        {
+          "headline": "Petróleo WTI negocia a US$ 101,39/barril (após fechar ontem a US$ 102,78-102,93) e Brent a US$ 110,43/barril — Investing.com",
+          "url": "https://br.investing.com/commodities/crude-oil"
+        },
+        {
+          "headline": "Taxas dos DIs de longo prazo sobem sob influência do noticiário político; entregas de fertilizantes devem atingir 47,5 mi t em 2027",
+          "url": "https://www.noticiasagricolas.com.br/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais ePlanejamento de Safra",
+          "direction": "Com o petróleo sustentado acima de US$ 101/bbl (WTI) e US$ 110/bbl (Brent) e a projeção de aumento nas entregas de fertilizantes para 47,5 milhões de toneladas em 2027, o custo de frete rodoviário e de adubos nitrogenados segue pressionado. Aproveite os preços físicos recordes da soja nos portos (R$ 160/sc) e do boi gordo (R$ 389/@) para travar o Barter de insumos!",
+          "reference_links": [
+            {"label": "Cotação Petróleo WTI Tempo Real — Investing.com", "url": "https://br.investing.com/commodities/crude-oil"},
+            {"label": "Noticiário Político, DIs e Fertilizantes — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas, Revendas e Logística",
+          "direction": "A subida das taxas dos DIs longos no Brasil combinada com a manutenção dos juros pelo Fed (3,75%-4,00%) ampliou o diferencial de juros interno vs. externo: utilize a Calculadora NDF para estruturar vendas a termo de grãos dos cooperados capturando um carrego financeiro superior a R$ 5,50/sc na soja.",
+          "reference_links": [
+            {"label": "Fechamento PTAX Oficial Banco Central e Decisão do Fed", "url": "https://www.piranot.com.br/2026/10/28/noticias/economia/dolar-ptax-fecha-em-r-53420-nesta-quarta-feira-28-10-2026-veja-a/"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader (Mesa de Câmbio / WDO)",
+          "direction": "No WDOX26 (ajuste em 5.360 pts, máxima de 5.410 e mínima de 5.313), a disputa final da PTAX de fim de mês entre hoje (29/10) e amanhã (sexta, 30/10) ditará o direcional de curto prazo. Mantenha proteção cambial ativa.",
+          "reference_links": [
+            {"label": "Análise Técnica WDOX26 para Quinta-Feira (29/10) — Investing.com", "url": "https://br.investing.com/analysis/wdox26-e-winz26-os-melhores-precos-desta-quintafeira-200480415"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo)",
+      "market_bias": "Físico Brasileiro Bate Novas Máximas (Paranaguá Nov/26 a R$ 160,00, Cepea PR a R$ 151,89 e Triângulo-MG a R$ 147,24) vs. 3º Dia de Queda na CBOT",
+      "executive_summary": "A soja fechou em queda pelo 3º dia consecutivo em Chicago ontem (Nov/26 a US$ 12,2450/bu, acumulando -2,55% na semana) e opera nesta manhã de quinta-feira (29/10 às 06h08) a US$ 12,1725/bu no Nov/26 (-7,25 cents) e US$ 12,3150/bu no Jan/27 (-6,50 cents), pressionada pelo avanço da colheita nos EUA mesmo após venda de 120 mil t anunciada pelo USDA. Além disso, a Argentina está focando no mercado de farelo de soja da União Europeia diante das regras antidesmatamento (EUDR) que desafiam o Brasil. No físico doméstico, porém, os preços atingiram novos picos: o Indicador Esalq/B3 Paranaguá cravou R$ 157,42/sc (com lotes físicos disponíveis a R$ 158,00/sc, Paranaguá Nov/26 a R$ 160,00/sc e Rio Grande Nov/26 a R$ 161,00/sc!), o Cepea Paraná avançou +0,34% para R$ 151,89/sc e a média do Triângulo Mineiro/Alto Paranaíba subiu +0,96% para R$ 147,24/sc (Uberlândia a R$ 145,84/sc).",
+      "news_sources": [
+        {
+          "headline": "Soja fecha em queda pelo 3º dia consecutivo em Chicago (-2,55% na semana), mas Paranaguá Nov/26 atinge R$ 160,00/sc e Cepea PR vai a R$ 151,89/sc",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+        },
+        {
+          "headline": "Argentina foca mercado de farelo de soja da União Europeia, enquanto regras antidesmatamento ameaçam Brasil",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+        },
+        {
+          "headline": "Cotação da Soja via Grão Direto: Triângulo Mineiro/Alto Paranaíba avança +0,96% para R$ 147,24/sc (Sul Goiano sobe +2,32% para R$ 138,74/sc)",
+          "url": "https://www.graodireto.com.br/precos/soja/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Triângulo Mineiro, PR, RS, GO e MT)",
+          "direction": "Janela crítica de venda física! Enquanto Chicago recuou para US$ 12,17/bu nesta manhã de 29/10 (-2,55% na semana), o mercado físico brasileiro subiu para R$ 160,00/sc em Paranaguá (Nov/26), R$ 161,00/sc em Rio Grande (Nov/26), R$ 153,00/sc FOB em Abelardo Luz-SC, R$ 151,89/sc no Cepea PR e R$ 145,84 a R$ 147,24/sc no Triângulo Mineiro! Liquide lotes disponíveis imediatamente para capturar esse prêmio antes que a baixa externa chegue ao interior.",
+          "reference_links": [
+            {"label": "Tabelas Físicas de Soja (Portos a R$ 160-161 e Cepea PR a R$ 151,89) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"},
+            {"label": "Preços Regionais da Soja (Triângulo Mineiro a R$ 147,24/sc) — Grão Direto", "url": "https://www.graodireto.com.br/precos/soja/"}
+          ]
+        },
+        {
+          "elo": "Elo:Indústrias e Confinamentos (Farelo de Soja)",
+          "direction": "O Farelo de Soja na CBOT (Dez/26) recuou para US$ 335,70/ton (-0,12%), mantendo o prêmio em Paranaguá estável (+US$ 0,10/t curta) e os preços físicos em R$ 1.921,64/t no IMEA-MT e R$ 2.130,00/t no RS. Excelente ponto de compra para fábricas de ração.",
+          "reference_links": [
+            {"label": "Cotações de Farelo de Soja CBOT e Físico — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Exportadores e Trader",
+          "direction": "No Porto de Santos-SP, a soja safra nova (Fev/Mar 2027, Dellagro) subiu +1,40% para R$ 145,00/sc. Monitorar o avanço da Argentina nas exportações de farelo certificadas para a União Europeia.",
+          "reference_links": [
+            {"label": "Fechamento Soja CME/B3 e Portos — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌽🌾 Complexo Milho, DDGS e Complexo Trigo (Com Praças Identificadas)",
+      "market_bias": "Milho Sobe na CBOT (US$ 4,5175/bu), na B3 (Nov/26 a R$ 66,80) e em Goiás (+1,96% a R$ 52/sc) / Trigo Cai < US$ 6,00 na CBOT mas Sobe no RS (R$ 1.500,74/t) e PR (R$ 1.569,61/t)",
+      "executive_summary": "No Milho, Chicago fechou a quarta-feira em alta (+0,67% no Dez/26 a US$ 4,5175/bu e Mar/27 a US$ 4,6500/bu) e a B3 avançou nos vencimentos curtos (Nov/26 +0,68% a R$ 66,80/sc e Jan/27 +0,16% a R$ 70,56/sc). Estudo inédito comprovou que a B3 acompanha melhor os preços do milho no interior do que Chicago em prazos de até 2 meses. No físico, Goiás subiu +1,96% para R$ 52,00/sc (Rio Verde/Jataí), o Triângulo Mineiro avançou para R$ 62,92/sc (Pará de Minas e Passo Fundo a R$ 68,00/sc) e Paranaguá manteve R$ 70,00/sc. No Trigo, Chicago caiu quase 2% ontem e fechou abaixo de US$ 6,00/bu pela 1ª vez desde julho com maior oferta na Austrália e Argentina, mas no Brasil a escassez de Trigo Tipo 1 no PR e SP sustenta o físico: o Indicador Cepea subiu para R$ 1.500,74/t (+0,08%) na praça do Rio Grande do Sul, mantém R$ 1.569,61/t (+0,39%) na praça do Paraná e R$ 1.400,00/t FOB na praça de Cristalina-GO.",
+      "news_sources": [
+        {
+          "headline": "Milho volta a subir em Chicago (US$ 4,5175/bu) e B3 fecha com Nov/26 em alta a R$ 66,80/sc; Goiás sobe +1,96% para R$ 52,00/sc",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+        },
+        {
+          "headline": "B3 acompanha melhor preços do milho no interior do que Chicago em prazos de até dois meses, aponta estudo (28/10)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/"
+        },
+        {
+          "headline": "Trigo perde quase 2% em Chicago nesta quarta-feira (28/10) e fecha abaixo de US$ 6,00 pela primeira vez desde julho",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo/trigo-mercado-fisico"
+        },
+        {
+          "headline": "Preço Médio do Trigo Cepea/Esalq: Rio Grande do Sul sobe para R$ 1.500,74/t (28/10), Paraná a R$ 1.569,61/t e Cristalina-GO a R$ 1.400/t FOB",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores de Milho e Trigo (PR, RS, MG, GO e MT)",
+          "direction": "No Milho, utilize a curva da B3 (Jan/27 a R$ 70,56 e Mar/27 a R$ 75,20/sc) para travar preços, já que o estudo confirma sua aderência superior ao mercado físico interno. No Trigo, produtores das praças do Paraná (R$ 1.569,61/t), Rio Grande do Sul (R$ 1.500,74/t) e Cristalina-GO (R$ 1.400,00/t FOB) com lotes Tipo 1 devem exigir prêmio de qualidade junto aos moinhos!",
+          "reference_links": [
+            {"label": "Tabelas Completas de Milho B3, CBOT e Físico — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"},
+            {"label": "Cotações de Trigo Cepea PR e RS — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo"}
+          ]
+        },
+        {
+          "elo": "Elo: Moinhos, Cooperativas e Fábricas de Ração (DDGS e Farelo de Trigo)",
+          "direction": "Para moinhos de trigo em SP, MG e Sul, a queda de Chicago para abaixo de US$ 6,00/bu abre oportunidade para travar importações futuras. Para confinamentos e nutrição animal, a maior presença de trigo tipos 2 e 3 no PR/SP, o farelo de trigo e o milho no MT entre R$ 42,30 (Tangará) e R$ 47,50/sc (Rondonópolis), somados ao DDGS, garantem dietas de alto desempenho a custo controlado.",
+          "reference_links": [
+            {"label": "Análise Cepea Trigo (Qualidade Tipo 1 vs Tipos 2 e 3 no PR/SP)", "url": "https://www.noticiasagricolas.com.br/noticias/trigo/428356-trigo-cepea-em-meio-a-incertezas-quanto-a-safra-cotacoes-seguem-em-alta.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☁️ Complexo Algodão, Caroço e Farelo",
+      "market_bias": "Forte Salto no Indicador Cepea Pluma para 411,34 ¢ R$/lb (+0,67%) e Alta na ICE NY Hoje (78,29 ¢/lb) / Arbitragem no Caroço",
+      "executive_summary": "O Indicador do Algodão em Pluma Cepea/Esalq (8 dias) acelerou a alta no fechamento de quarta-feira (28/10), subindo +0,67% para 411,34 centavos de real por libra-peso (contra 408,60 ¢ na terça e 406,11 ¢ na segunda), impulsionado pelo câmbio na paridade de exportação. Na ICE NY (Dez/26), a pluma abre esta quinta-feira (29/10 às 06h04) em alta de +0,18% a 78,29 cents/lb. Nos coprodutos, o caroço de algodão segue cotado a R$ 955,00/t (Safras) a R$ 966,67/t (AIBA) na Bahia frente a R$ 688,17/t no IMEA-MT.",
+      "news_sources": [
+        {
+          "headline": "Indicador do Algodão Cepea/Esalq salta +0,67% em 28/10 para 411,34 centavos de real por libra-peso e NY opera a 78,29 ¢/lb em 29/10",
+          "url": "https://www.noticiasagricolas.com.br/"
+        },
+        {
+          "headline": "Algodão/Cepea: Dólar em alta eleva paridade de exportação; mercado interno foca em contratos a termo",
+          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430451-algodao-cepea-dolar-em-alta-eleva-paridade-de-exportacao-mercado-interno-segue-lento.html"
+        },
+        {
+          "headline": "Cotações Oficiais AIBA: Caroço de Algodão no Oeste da Bahia e Pluma no Mato Grosso (IMEA)",
+          "url": "https://aiba.org.br/cotacoes/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cotonicultores)",
+          "direction": "O salto do Indicador Cepea para 411,34 ¢ R$/lb (+1,64% na semana) confirma o excelente momento para fixar contratos a termo de pluma combinando o prêmio cambial do NDF.",
+          "reference_links": [
+            {"label": "Indicadores Cepea Atualizados (28/10) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos (Nutrição Animal)",
+          "direction": "Com o Boi Gordo batendo novo recorde de R$ 389,05/@ no Cepea (e R$ 375,79/@ em MG), o caroço de algodão originado no MT a R$ 688,17/t (vs R$ 955/t na Bahia) proporciona retorno máximo por cabeça confinada.",
+          "reference_links": [
+            {"label": "Tabela Mercado Físico (Caroço BA a R$ 955/t) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☕🐂 Complexo Café — Matas de Minas (Praça Base: Manhuaçu-MG) & Pecuária (Boi a R$ 389,05/@)",
+      "market_bias": "Boi Gordo Crava Novo Recorde a R$ 389,05/@ no Cepea (+0,71%) / Café Ajusta Hoje (29/10) em Manhuaçu-MG para R$ 1.594,00/sc (-2,0%) e Cepea a R$ 1.593,89/sc após Queda na ICE NY",
+      "executive_summary": "No Café, a queda de -2,52% ontem na ICE NY (Dez/26 a 286,35 cents/lb, acumulando -6,7% em três pregões com o avanço das chuvas no Centro-Sul) e de -40 pontos no Robusta em Londres (US$ 3.200/t) levou o Indicador Café Arábica Cepea/Esalq a fechar ontem (28/10) em R$ 1.593,89/sc (-1,01%) e o Robusta Cepea em R$ 960,10/sc (-0,81%). Na região das Matas de Minas — cuja praça oficial de extração é Manhuaçu-MG (via Agrolink) — a cotação atualizada hoje (quinta-feira, 29/10) ajustou -2,0% para R$ 1.594,00/sc no Arábica Bebida Dura Tipo 6 Safra Nova (exatamente em linha com o Cepea!), enquanto Varginha-MG ajustou para R$ 1.660,00/sc (-2,9%), Guaxupé-MG (Cooxupé) fechou a R$ 1.710,00/sc no Dura (e R$ 1.793,00/sc no Cereja Descascado) e Patrocínio-MG (Expocaccer) a R$ 1.675,00/sc no Dura (R$ 1.715,00/sc no CD). Já na Pecuária, o Indicador do Boi Gordo Cepea/Esalq (SP) subiu mais +0,71% ontem e cravou novo recorde nominal histórico de R$ 389,05/@ (com média AgroBrazil em R$ 390,45/@ em SP, R$ 375,79/@ em MG e futuros acima de R$ 400/@ na B3)!",
+      "news_sources": [
+        {
+          "headline": "Atualização de Hoje (29/10) na Praça de Manhuaçu-MG (Matas de Minas): Arábica Dura Tipo 6 Safra Nova cotado a R$ 1.594,00/sc (-2,0%) — Agrolink",
+          "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
+        },
+        {
+          "headline": "Indicador Café Arábica Cepea fecha em R$ 1.593,89/sc (-1,01%), Robusta a R$ 960,10/sc e Cooxupé paga R$ 1.710 no Dura e R$ 1.793 no Cereja Descascado",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+        },
+        {
+          "headline": "Indicador do Boi Gordo Cepea/Esalq avança mais +0,71% em 28/10 para R$ 389,05/@ (AgroBrazil SP a R$ 390,45/@ e MG a R$ 375,79/@)",
+          "url": "https://www.noticiasagricolas.com.br/"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Cafeicultores — Matas de Minas (Praça: Manhuaçu-MG), Sul e Cerrado",
+          "direction": "Conforme alertamos ontem, o recuo acumulado de 6,7% em NY foi parcialmente repassado ao físico, ajustando Manhuaçu-MG hoje (29/10) para R$ 1.594,00/sc (mas ainda acumulando +6,1% em 30 dias!) e o Cepea para R$ 1.593,89/sc. Cafés especiais e Cereja Descascado seguem pagando prêmios excelentes entre R$ 1.715 (Patrocínio) e R$ 1.793/sc (Guaxupé). Evite vender na pressão de baixa de NY e utilize o NDF para travar entregas futuras!",
+          "reference_links": [
+            {"label": "Cotação Oficial de Hoje (29/10) em Manhuaçu-MG — Agrolink", "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"},
+            {"label": "Tabelas Completas de Café Físico e Cooperativas — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"}
+          ]
+        },
+        {
+          "elo": "Elo: Pecuaristas e Confinamentos (SP, MG, GO, MS e MT)",
+          "direction": "Com o Boi Gordo Cepea atingindo R$ 389,05/@ em SP, R$ 375,79/@ em MG, R$ 378,13/@ no MS e mais de R$ 400,00/@ na B3, mas com o alerta de que o custo de reposição exige cautela na margem do campo, trave a venda da boiada na B3 e feche simultaneamente o custo alimentar (milho, DDGS e caroço de algodão)!",
+          "reference_links": [
+            {"label": "Indicadores Cepea e AgroBrazil Boi Gordo (28/10) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/"}
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "25/10/2026",
+    "period_end": "29/10/2026",
+    "period_current": "Semana Corrente (WTD — Atualizado 29/10 às 07:14 BRT)",
+    "assets": [
+      {
+        "asset": "Dólar Comercial (USD/BRL)",
+        "unit": "R$",
+        "sunday_open_ref": 5.0377,
+        "current_value": 5.3466,
+        "weekly_change_pct": 6.13,
+        "weekly_driver": "Acomodou-se em R$ 5,3466 no spot e R$ 5,3420 na PTAX (+0,14% ontem), acumulando +6,13% na semana com DIs longos em alta."
+      },
+      {
+        "asset": "Petróleo WTI (NYMEX)",
+        "unit": "US$/bbl",
+        "sunday_open_ref": 99.90,
+        "current_value": 101.39,
+        "weekly_change_pct": 1.49,
+        "weekly_driver": "Após saltar +3,03% ontem (US$ 102,93), opera hoje a US$ 101,39/bbl (+1,49% na semana), mantendo Brent em US$ 110,43/bbl."
+      },
+      {
+        "asset": "Soja Paraná (Cepea)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 146.69,
+        "current_value": 151.89,
+        "weekly_change_pct": 3.54,
+        "weekly_driver": "Subiu mais +0,34% em 28/10 para R$ 151,89/sc (Paranaguá a R$ 157,42 e Nov/26 a R$ 160,00/sc), acumulando +3,54% na semana!"
+      },
+      {
+        "asset": "Soja Triângulo (Uberlândia-MG)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 142.05,
+        "current_value": 147.24,
+        "weekly_change_pct": 3.65,
+        "weekly_driver": "Média do Triângulo Mineiro/Alto Paranaíba subiu +0,96% para R$ 147,24/sc (Uberlândia a R$ 145,84/sc)."
+      },
+      {
+        "asset": "Trigo Cepea (RS & PR)",
+        "unit": "R$/t",
+        "sunday_open_ref": 1473.40,
+        "current_value": 1500.74,
+        "weekly_change_pct": 1.86,
+        "weekly_driver": "Praça RS subiu para R$ 1.500,74/t (+1,86% na semana) e Praça PR bateu R$ 1.569,61/t com oferta restrita de Tipo 1."
+      },
+      {
+        "asset": "Algodão Pluma (Cepea)",
+        "unit": "¢ R$/lb",
+        "sunday_open_ref": 404.71,
+        "current_value": 411.34,
+        "weekly_change_pct": 1.64,
+        "weekly_driver": "Saltou +0,67% ontem para 411,34 ¢ R$/lb (+1,64% na semana) com repasse do dólar na paridade de exportação."
+      },
+      {
+        "asset": "Café Matas de Minas (Manhuaçu-MG)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 1647.00,
+        "current_value": 1594.00,
+        "weekly_change_pct": -3.22,
+        "weekly_driver": "Ajustou -2,0% hoje (29/10) em Manhuaçu-MG para R$ 1.594,00/sc (Cepea a R$ 1.593,89/sc) após queda de -6,7% em 3 dias na ICE NY."
+      },
+      {
+        "asset": "Boi Gordo Cepea/Esalq (SP)",
+        "unit": "R$/@",
+        "sunday_open_ref": 381.40,
+        "current_value": 389.05,
+        "weekly_change_pct": 2.01,
+        "weekly_driver": "Cravou novo recorde histórico a R$ 389,05/@ (+0,71% ontem e +2,01% na semana), com B3 acima de R$ 400,00/@!"
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-10-01",
+    "current_date": "2026-10-29",
+    "days_elapsed": 20,
+    "daily_dates": [
+      "01/10", "02/10", "05/10", "06/10", "07/10", "08/10", "09/10", "13/10", "14/10", "15/10",
+      "16/10", "19/10", "20/10", "21/10", "22/10", "23/10", "26/10", "27/10", "28/10", "29/10"
+    ],
+    "assets": [
+      {
+        "asset": "Dólar Comercial / PTAX (USD/BRL)",
+        "unit": "R$",
+        "month_open_value": 5.4245,
+        "mid_month_10_oct": 5.1200,
+        "current_value": 5.3466,
+        "mtd_change_pct": -1.44,
+        "monthly_narrative": "Abriu outubro em R$ 5,4245, bateu piso de R$ 5,0140 (20/10), saltou a R$ 5,5007 (26/10) e acomodou-se entre R$ 5,3420 (PTAX) e R$ 5,3466 (Spot).",
+        "daily_history": [
+          5.4245, 5.4120, 5.3900, 5.3500, 5.3000, 5.2500, 5.2000, 5.1200, 5.1000, 5.0800,
+          5.0500, 5.0300, 5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346, 5.3420, 5.3466
+        ]
+      },
+      {
+        "asset": "Petróleo WTI (NYMEX)",
+        "unit": "US$/bbl",
+        "month_open_value": 96.50,
+        "mid_month_10_oct": 98.20,
+        "current_value": 101.39,
+        "mtd_change_pct": 5.07,
+        "monthly_narrative": "Acumula alta de +5,07% em outubro, saindo de US$ 96,50 no dia 01/10 para US$ 102,93 ontem e US$ 101,39/barril nesta manhã de 29/10.",
+        "daily_history": [
+          96.50, 96.80, 97.10, 97.50, 97.80, 98.00, 98.20, 98.50, 98.90, 99.20,
+          99.50, 99.80, 100.10, 100.40, 100.80, 99.90, 101.46, 101.22, 102.93, 101.39
+        ]
+      },
+      {
+        "asset": "Soja Paranaguá (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 161.56,
+        "mid_month_10_oct": 158.00,
+        "current_value": 157.42,
+        "mtd_change_pct": -2.56,
+        "monthly_narrative": "Após tocar R$ 152,41 em 23/10, recuperou R$ 5,01/sc na última semana e cravou R$ 157,42/sc (com lotes Nov/26 a R$ 160,00/sc).",
+        "daily_history": [
+          161.56, 161.00, 160.50, 160.00, 159.50, 159.00, 158.50, 157.50, 157.00, 156.50,
+          156.00, 154.50, 153.80, 153.50, 152.90, 152.41, 155.55, 157.41, 157.42, 157.42
+        ]
+      },
+      {
+        "asset": "Trigo Cepea (Praça RS)",
+        "unit": "R$/t",
+        "month_open_value": 1465.00,
+        "mid_month_10_oct": 1468.00,
+        "current_value": 1500.74,
+        "mtd_change_pct": 2.44,
+        "monthly_narrative": "Série oficial Cepea RS: saiu de R$ 1.465,00/t no início do mês para R$ 1.500,74/t em 28/10 (+2,44%), com o Paraná firme em R$ 1.569,61/t.",
+        "daily_history": [
+          1465.00, 1466.00, 1467.00, 1468.00, 1469.00, 1468.00, 1467.00, 1466.00, 1465.74, 1459.99,
+          1482.72, 1475.23, 1475.23, 1473.40, 1473.40, 1473.40, 1503.06, 1499.49, 1500.74, 1500.74
+        ]
+      },
+      {
+        "asset": "Milho Campinas (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 68.67,
+        "mid_month_10_oct": 66.50,
+        "current_value": 64.73,
+        "mtd_change_pct": -5.74,
+        "monthly_narrative": "Estabilizou na faixa de R$ 64,73 a R$ 64,87/sc na reta final de outubro, sustentado pelo etanol de milho (20% da safra) e alta em Goiás (R$ 52/sc).",
+        "daily_history": [
+          68.67, 68.40, 68.10, 67.80, 67.50, 67.20, 66.80, 66.20, 65.90, 65.60,
+          65.30, 64.90, 64.60, 64.45, 64.30, 64.27, 64.24, 64.87, 64.73, 64.73
+        ]
+      },
+      {
+        "asset": "Café Matas de Minas (Praça Manhuaçu-MG T.6)",
+        "unit": "R$/sc",
+        "month_open_value": 1597.00,
+        "mid_month_10_oct": 1560.00,
+        "current_value": 1594.00,
+        "mtd_change_pct": -0.19,
+        "monthly_narrative": "Série oficial Agrolink Manhuaçu-MG: abriu outubro a R$ 1.597/sc, bateu R$ 1.677 (20/10), R$ 1.627 (27/10) e ajustou hoje (29/10) para R$ 1.594,00/sc.",
+        "daily_history": [
+          1597.0, 1597.0, 1608.0, 1574.0, 1620.0, 1620.0, 1560.0, 1560.0, 1584.0, 1616.0,
+          1617.0, 1654.0, 1677.0, 1647.0, 1664.0, 1647.0, 1615.0, 1627.0, 1594.0, 1594.0
+        ]
+      },
+      {
+        "asset": "Boi Gordo Cepea/Esalq (SP)",
+        "unit": "R$/@",
+        "month_open_value": 364.43,
+        "mid_month_10_oct": 372.00,
+        "current_value": 389.05,
+        "mtd_change_pct": 6.76,
+        "monthly_narrative": "Disparou +6,76% em outubro (+R$ 24,62/@ no mês), cravando novo recorde nominal de R$ 389,05/@ em 28/10 e superando R$ 400/@ na B3!",
+        "daily_history": [
+          364.43, 365.50, 367.00, 368.50, 370.00, 371.00, 372.00, 373.50, 375.00, 376.50,
+          378.00, 379.00, 380.00, 380.50, 381.00, 381.40, 381.40, 386.30, 389.05, 389.05
+        ]
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar Comercial / PTAX (USD/BRL)",
+      "current_base": "R$ 5,3466 (PTAX: R$ 5,3420)",
+      "short_term_target_23_oct": "R$ 5,28 - R$ 5,45",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,35",
+        "bull_case": "R$ 5,46",
+        "bear_case": "R$ 5,25"
+      },
+      "audit_trigger": "Formação da PTAX de fim de mês amanhã (sexta, 30/10), remanejamento fiscal (R$ 5,16 bi) e Fed (3,75%-4,00%)."
+    },
+    {
+      "commodity": "Petróleo WTI & Brent (USD/barril)",
+      "current_base": "US$ 101,39 (WTI) | US$ 110,43 (Brent)",
+      "short_term_target_23_oct": "US$ 99,50 - US$ 105,00 (WTI)",
+      "end_of_month_30_oct": {
+        "base_case": "US$ 102,00",
+        "bull_case": "US$ 105,50",
+        "bear_case": "US$ 98,50"
+      },
+      "audit_trigger": "Tensão geopolítica no Oriente Médio/Catar e estoques dos EUA vs. realização técnica hoje."
+    },
+    {
+      "commodity": "Soja Paranaguá / PR / Triângulo-MG",
+      "current_base": "R$ 157,42 (Porto) | R$ 151,89 (PR) | R$ 147,24 (MG)",
+      "short_term_target_23_oct": "R$ 156,00 - R$ 159,50 (Porto)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 157,50",
+        "bull_case": "R$ 160,00",
+        "bear_case": "R$ 154,50"
+      },
+      "audit_trigger": "Físico Nov/26 já negociado a R$ 160-161/sc nos portos vs. 3 dias de queda na CBOT (US$ 12,17/bu)."
+    },
+    {
+      "commodity": "Trigo Cepea (Praças PR, RS e GO)",
+      "current_base": "R$ 1.569,61/t (PR) | R$ 1.500,74/t (RS) | R$ 1.400 (GO)",
+      "short_term_target_23_oct": "R$ 1.495,00 - R$ 1.580,00 / t",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.570,00 (PR)",
+        "bull_case": "R$ 1.595,00",
+        "bear_case": "R$ 1.540,00"
+      },
+      "audit_trigger": "Escassez de Trigo Tipo 1 no PR e SP e geadas na Argentina vs. queda abaixo de US$ 6,00/bu na CBOT."
+    },
+    {
+      "commodity": "Milho Esalq / B3 / Goiás",
+      "current_base": "R$ 64,73 (Esalq) | R$ 66,80 (Nov B3) | R$ 52,00 (GO)",
+      "short_term_target_23_oct": "R$ 70,00 - R$ 72,50 (Jan/27)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 70,80",
+        "bull_case": "R$ 72,80",
+        "bear_case": "R$ 69,00"
+      },
+      "audit_trigger": "Reação em Chicago (US$ 4,5175/bu) e em Goiás (+1,96%) + aderência superior da B3 no interior."
+    },
+    {
+      "commodity": "Café Matas de Minas (Praça Manhuaçu-MG T.6)",
+      "current_base": "R$ 1.594,00 / sc (-2,0% hoje | Cepea: R$ 1.593,89)",
+      "short_term_target_23_oct": "R$ 1.575,00 - R$ 1.635,00",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.595,00",
+        "bull_case": "R$ 1.630,00",
+        "bear_case": "R$ 1.565,00"
+      },
+      "audit_trigger": "Repasse da queda de -6,7% em 3 dias na ICE NY (286,35 ¢/lb) com chuvas em MG vs. suporte do dólar."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "Aderência de Hedge (B3 vs. CBOT no Milho) e Efeito da Abertura dos DIs Longos no NDF",
+    "formula": "NDF = Spot * [ (1 + Taxa DI)^(DU / 252) ] / [ 1 + Cupom Cambial * (DC / 360) ]",
+    "analysis": "Dois eventos das últimas 24h reforçam a gestão profissional de derivativos: (1) Estudo econométrico divulgado ontem comprovou que a B3 acompanha muito melhor os preços físicos do milho no interior do que Chicago em prazos de até 60 dias, pois captura a demanda real do etanol de milho (20% da safra) e dos confinamentos (Boi a R$ 389,05/@); (2) A manutenção dos juros pelo Fed (3,75%-4,00%) combinada com a alta dos DIs longos no Brasil (pelo risco político/fiscal) ampliou o diferencial de juros no numerador da fórmula do NDF.",
+    "strategic_takeaway": "Na prática, com o Dólar Spot em R$ 5,3466 (PTAX a R$ 5,3420) e os DIs futuros mais altos, travar vendas futuras via NDF garante um carrego cambial ainda mais forte (+R$ 5,50/sc na soja e +R$ 60/sc no café), protegendo a margem do produtor contra o recuo das bolsas externas!"
+  }
+}
