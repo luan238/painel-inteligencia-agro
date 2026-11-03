@@ -1,467 +1,466 @@
 {
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia) / Matas de Minas (Praça Base: Manhuaçu-MG) / PR, RS & SP (Trigo e Soja) / MT (IMEA) / Santos SP / Paranaguá PR / CBOT / ICE / B3",
-    "scope": "Cenário Político & PTAX Mensal (R$ 5,4212 / Spot R$ 5,4456), Petróleo & Diesel (+19,4%), Soja, Milho, Trigo (PR/RS/SP/GO), DDGS, Algodão (Caroço MT +3,24%), Café e Boi Gordo (Alvo R$ 430-440/@)",
-    "timestamp": "30/10/2026 às 17:31 BRT (Fechamento Oficial da Semana, do Mês de Outubro & Auditoria Backtesting)",
+    "scope": "Fechamento Internacional de Finados (02/11 às 17h30): Petróleo Despenca > 7% (Acordo Irã), Café Fecha em Forte Alta (+2,12% a 293,30 ¢ / Máx 297,05 ¢), Soja Cai > 1% na CBOT (Apesar de Inspeções > 2,44 Mi t e Queda de 16% nos Estoques de Óleo), Milho e Trigo Sobem, Frete Sobe 1,5% em MT e Dólar a R$ 5,4373",
+    "timestamp": "02/11/2026 às 17:30 BRT (Feriado de Finados no Brasil / B3 Fechada | Fechamento Oficial de Chicago, Nova Iorque e Londres)",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
-    "cambio_energia_frete": "No fechamento oficial desta sexta-feira (30/10 às 17:31 BRT), último dia útil de outubro, a PTAX oficial de venda do Banco Central fechou em R$ 5,4212 (+0,87% no dia e +7,61% na semana), enquanto no mercado à vista o Dólar Comercial ampliou a alta durante a tarde, tocou a máxima de R$ 5,4564 e encerrou cotado a R$ 5,4456 (+1,09% hoje e +8,10% na semana, virando positivo no mês de outubro em +0,39%!), puxando o Dólar Futuro Dez/26 na B3 para 5.464,50 pontos (+0,90%). Conforme reportagens da CNN Brasil e do UOL Economia, o Ibovespa engatou a 5ª queda consecutiva (acumulando baixa de 18,4% desde antes do 2º turno) em meio às incertezas sobre a equipe econômica e o ajuste fiscal (impacto estimado em R$ 40 bi pelo IFI e dívida bruta em 82,93% do PIB), no mesmo dia em que fontes afirmaram à Reuters que Donald Trump não planeja apoiar alegações de Flávio Bolsonaro sobre liderança no Brasil e Lula confirmou ida à COP31 e à cúpula da Asean. No Petróleo e Diesel, após um petroleiro no Estreito de Ormuz ser atingido por minas impulsionando o WTI para US$ 103,92 a US$ 104,01/bbl (+1,88%) e o Brent para US$ 113,29/bbl, estudo da Veloe/Fipe revelou hoje que o diesel S-10 subiu 19,4% em 12 meses (e 5% nos últimos dois meses), sendo o combustível que mais encareceu no Brasil!",
-    "complexo_soja": "Conforme reportagem de fechamento publicada às 15h46 pelo Notícias Agrícolas, a soja interrompeu a sequência de quatro quedas consecutivas em Chicago nesta sexta-feira (Nov/26 subindo +0,20% para fechar a US$ 12,2225/bu e Maio/27 a US$ 12,5350/bu), embora o contrato novembro tenha fechado a semana com baixa acumulada de 2,73%. No fim da tarde (16h32), o IMEA informou que Mato Grosso já realizou o plantio de soja em quase 90% da área projetada (e a Capal alcançou 55% em SP e no PR). Enquanto o Farelo de Soja (Dez/26) caiu mais -1,43% hoje na CBOT para US$ 324,60/t após a confirmação de gripe aviária em Iowa-EUA, no mercado físico brasileiro o salto do dólar para R$ 5,4456 puxou alta de +0,78% hoje no Farelo de Soja no IMEA-MT (para R$ 1.936,57/t), impulsionou a soja em Luís Eduardo Magalhães-BA em +3,57% (para R$ 145,00/sc) e em Jataí/Rio Verde-GO em +0,76% (para R$ 133,00/sc), mantendo Uberlândia-MG firme em R$ 148,57/sc (+0,90%), Paranaguá em R$ 158,28/sc (Nov/26 a R$ 160,00) e Cepea PR em R$ 152,47/sc!",
-    "complexo_milho_etanol_ddgs": "Conforme reportagem de fechamento publicada às 15h38 pelo Notícias Agrícolas, o milho fechou o mês de outubro com queda acumulada superior a 10% em Chicago (Março/27 caiu 10,57% no mês) e o contrato Dezembro/26 terminou abaixo dos US$ 4,50, cotado a US$ 4,4775/bu (-0,78% hoje), enquanto a StoneX avaliou hoje que a produção de etanol de milho no Centro-Sul ficou aquém do esperado. No Brasil, porém, a disparada do dólar para R$ 5,4456 sustentou a B3 (Nov/26 fechou a R$ 67,22/sc após tocar R$ 67,96, e Set/27 subiu +0,41% para R$ 77,57/sc) e puxou altas nas tabelas físicas de hoje (30/10): Jataí e Rio Verde (GO) subiram +1,92% para R$ 53,00/sc e Tangará da Serra-MT (IMEA) reagiu +1,19% para R$ 42,50/sc, mantendo Campinas-SP em R$ 67,00/sc (Esalq em R$ 65,59/sc, +1,33%) e Paranaguá em R$ 70,00/sc. No Trigo, reportagem publicada hoje alerta que as perdas na safra de trigo paulista agravam os desafios para a cadeia estadual, somando-se à quebra de 34% no Paraná que sustenta o Cepea PR em R$ 1.578,12/t (+0,43%), o Cepea RS em R$ 1.493,38/t e Cristalina-GO em R$ 1.400,00/t FOB.",
-    "complexo_algodao": "Conforme reportagem de fechamento publicada às 16h00 pelo Notícias Agrícolas, o algodão na ICE NY recuou 0,85% nesta sexta-feira para fechar a 77,90 cents/lb no Dez/26 (acumulando baixa de 2,87% na semana e de 0,79% em outubro). Em contrapartida, no mercado físico brasileiro atualizado hoje (30/10), o dólar a R$ 5,4456 sustentou o Indicador Cepea Pluma em 412,15 centavos de real por libra-peso (+0,20%), elevou a pluma em Alto Garças-MT para R$ 130,19/@ e provocou um salto de +3,24% hoje no Caroço de Algodão no IMEA-MT, que subiu de R$ 688,17 para R$ 710,49/tonelada (mantendo R$ 966,67/t na AIBA-BA)!",
-    "complexo_cafe": "Conforme reportagem de fechamento publicada às 14h57 pelo Notícias Agrícolas, o café arábica interrompeu a sequência de quatro quedas consecutivas nesta sexta-feira em Nova Iorque (após subir mais de 1% ao meio-dia, encerrando a semana com ajuste de -6,59% e outubro com leve recuo de -1,20% em NY), acompanhado por ganhos generalizados do robusta em Londres e alta do Março/27 na B3 para US$ 350,25/sc (+0,65%). Nas tabelas físicas de hoje (30/10), Guaxupé-MG (Cooxupé) subiu mais +0,58% para R$ 1.732,00/sc no Bebida Dura Tipo 6 (e R$ 1.696,00/sc no Tipo 6/7, +0,83%), enquanto Manhuaçu-MG (Matas de Minas) registrou R$ 1.570,00/sc (Cepea Arábica em R$ 1.590,72/sc e Robusta em R$ 965,47/sc) e a meteorologia prevê temporais no feriado em MG, RJ e ES. Na pecuária, além do Boi Gordo bater R$ 405,00 a R$ 406,90/@ no Nov/26 da B3 e R$ 389,20/@ no Esalq, projeções da Agromove divulgadas hoje apontam que a arroba pode chegar entre R$ 430,00 e R$ 440,00 até fevereiro de 2027!"
+    "cambio_energia_frete": "No fechamento internacional desta segunda-feira de feriado nacional de Finados (02/11/2026 às 17:30 BRT), o Dólar Comercial no mercado interbancário encerrou firme a R$ 5,4373 (após máxima de R$ 5,4437 pela manhã), preservando a maior alta semanal desde a crise de 2008 (+9,15% na semana pós-eleição, com PTAX em R$ 5,4212 e Dólar Futuro Dez/26 em 5.471,00 pontos, e juros DIs longos entre 14,965% e 15,260% a.a.). Já no Petróleo, conforme reportagem publicada às 15h01 pelo Notícias Agrícolas, os preços despencaram mais de 7% nesta segunda-feira — com o Brent recuando para perto de US$ 105,00/barril e o WTI caindo abaixo dos US$ 100,00/barril — diante das expectativas de um acordo diplomático para encerrar a guerra entre os Estados Unidos e o Irã, no dia seguinte à decisão da OPEP+ de manter suas metas de produção para dezembro! No Brasil, porém, o IMEA informou hoje (11h30) que a alta recente de 5% no óleo diesel já elevou em 1,5% o custo do frete agrícola para os produtores de Mato Grosso (somando-se à alta de 19,4% do diesel S-10 em 12 meses apontada pela Veloe/Fipe).",
+    "complexo_soja": "Conforme reportagem de fechamento publicada hoje (02/11 às 17h00) pelo Notícias Agrícolas, a soja iniciou novembro com perdas superiores a 1% na Bolsa de Chicago — com o contrato Janeiro/27 recuando para perto de US$ 12,15/bushel e o Novembro/26 aproximando-se dos US$ 12,00/bu —, pressionada pelo tombo de mais de 7% do petróleo, pela colheita americana e pelo avanço do plantio no Brasil (que chegou a 53% da área segundo a AgRural e quase 90% em Mato Grosso segundo o IMEA). A queda ocorreu mesmo após o USDA informar hoje que as inspeções semanais de exportação de soja dos EUA superaram 2,44 milhões de toneladas (+56% no acumulado da temporada) e que, no relatório mensal de esmagamento divulgado às 17h15, os estoques norte-americanos de óleo de soja bruto caíram mais de 16% em setembro (com o esmagamento recuando 5% ante agosto)! Além disso, novo painel do El Niño divulgado hoje (11h45) alerta que a seca extrema avançou de 4 para 68 municípios em dois meses, ameaçando áreas do Norte, Nordeste e Matopiba. No físico brasileiro, onde os preços fecharam antes do feriado nas máximas (Paranaguá a R$ 158,88/sc, Santos subindo R$ 8,00/sc na semana e Uberlândia-MG a R$ 148,93/sc, com Farelo no IMEA-MT a R$ 1.936,57/t), o produtor deve aproveitar a reabertura de amanhã cedo (03/11) para vender antes do repasse da queda de Chicago!",
+    "complexo_milho_etanol_ddgs": "Conforme reportagem de fechamento publicada hoje (02/11 às 16h55) pelo Notícias Agrícolas, os preços futuros do milho encerraram esta segunda-feira em leve alta na Bolsa de Chicago, embora o contrato Dezembro/26 não tenha sustentado os US$ 4,50 da manhã e tenha fechado cotado a US$ 4,4825/bushel (+0,11% / +0,50 cent, enquanto o Março/27 subiu +1,00 cent). O suporte veio do salto de 38,63% nas inspeções semanais de exportação de milho dos EUA e do relatório do USDA divulgado às 17h17 mostrando que o consumo de milho para produção de etanol nos EUA em setembro (apesar de cair 9% frente a agosto) superou o volume de setembro de 2025! No Brasil, onde o Indicador Esalq/B3 fechou antes do feriado em R$ 65,64/sc e o Janeiro/27 na B3 subiu +0,81% para R$ 71,16/sc, Mato Grosso concentra 60,72% do etanol de milho nacional e cresce a procura por sementes de sorgo para a 2ª safra. No Trigo, reportagem de fechamento das 17h09 confirma que o cereal recuperou o patamar dos US$ 6,00/bu em Chicago e iniciou novembro com pequenas altas, reforçando o suporte às praças do Paraná (Cepea a R$ 1.569,82/t) e Rio Grande do Sul (Cepea a R$ 1.482,17/t) diante das perdas severas em SP (> 80%), PR (-34%) e RS (~50%).",
+    "complexo_algodao": "Conforme reportagens publicadas hoje às 13h24 e 17h07 pelo Notícias Agrícolas, após iniciar novembro em alta de quase 1% pela manhã, os preços do algodão perderam força à tarde — pressionados pelo tombo de mais de 7% do petróleo (que barateia a fibra sintética) e pelo avanço da colheita nos EUA — e fecharam em queda na Bolsa de Nova Iorque. No Brasil, porém, onde o preço mínimo operacional (break-even) em Mato Grosso está em R$ 119,61/@ segundo o IMEA, o dólar firme a R$ 5,4373 sustenta o Indicador Cepea Pluma em 413,02 centavos de real por libra-peso (~R$ 136,58/@, com Unaí-MG a R$ 136,29/@ e Alto Garças-MT a R$ 130,19/@), enquanto o Caroço de Algodão no IMEA-MT saltou +3,24% para R$ 710,49/tonelada (contra R$ 955,00 a R$ 966,67/t na Bahia).",
+    "complexo_cafe": "Grande vencedor deste feriado de Finados: conforme reportagem de fechamento publicada hoje (02/11 às 16h53) pelo Notícias Agrícolas, o café iniciou novembro com altas superiores a 1% a 2% em Nova Iorque e Londres em meio à atenção aos estoques certificados da ICE — o contrato Dezembro/26 na ICE NY alcançou a máxima intradiária de 297,05 cents/lb e fechou cotado a 293,30 cents/lb (+2,12% / +6,15 cents no dia!)! Somada ao dólar firme em R$ 5,4373 e à conquista das três categorias do Cup of Excellence 2026 pela Mantiqueira de Minas com cafés Gesha, essa disparada garante uma reabertura de forte alta amanhã (terça-feira, 03/11) na Praça de Manhuaçu-MG (Matas de Minas, que fechou antes do feriado subindo +1,0% a R$ 1.586,00/sc), no Cepea Arábica (R$ 1.598,37/sc), no Cepea Robusta (R$ 972,44/sc) e nas cooperativas (Guaxupé a R$ 1.732 no Dura e R$ 1.795/sc no CD; Patrocínio e Araguari a R$ 1.725-1.730/sc)! Na pecuária, reportagem especial da Reuters publicada hoje confirma que o dólar alto, a oferta baixa e a exportação à China colocam o boi gordo no Brasil na rota consolidada de R$ 400/arroba (já batendo R$ 407,50/@ no Nov/26 da B3, R$ 389,90 no Esalq SP e R$ 380 em MG, com a Agromove projetando R$ 430 a R$ 440/@ até fev/27)!"
   },
   "market_indicators": {
     "cambio_e_energia": {
-      "dolar_spot_fechamento_30_10": "R$ 5,4456 (+1,09% hoje | Máxima: R$ 5,4564 | +8,10% na sem.!)",
-      "dolar_ptax_mensal_outubro_bcb": "R$ 5,4212 (+0,87% hoje | Compra: R$ 5,4206 — Fecho Mensal)",
-      "dolar_futuro_b3_dez26_30_10": "5.464,50 pts (+0,90% hoje | Ibovespa cai 1,79% a 167.942 pts)",
-      "cenario_politico_e_diplomacia": "Trump evita apoiar Flávio Bolsonaro | Lula confirma ida à COP31",
-      "petroleo_wti_brent_e_ormuz": "WTI: US$ 103,92-104,01 (+1,88%) | Brent: US$ 113,29 (Ataque Ormuz)",
-      "diesel_s10_veloe_fipe_30_10": "Diesel S-10 dispara +19,4% em 12 meses e sobe 5% em 2 meses"
+      "dolar_spot_fechamento_02_11": "R$ 5,4373 (+0,02% hoje | Máx: R$ 5,4437 | +9,15% sem. ant.!)",
+      "dolar_ptax_e_futuro_b3_dez26": "PTAX: R$ 5,4212 (+0,87%) | Futuro Dez/26: 5.471,00 pts (+1,02%)",
+      "juros_futuros_dis_longos": "DI Jan/27: 13,642% | DI Jan/29: 14,965% | DI Jan/31: 15,260% a.a.",
+      "petroleo_wti_e_brent_02_11": "Despencam > 7% hoje! WTI cai abaixo de US$ 100 e Brent ~US$ 105/bbl",
+      "frete_mt_imea_02_11_11h30": "Alta de 5% no diesel eleva em 1,5% o custo do frete em MT (IMEA)",
+      "diesel_s10_veloe_fipe": "Diesel S-10 dispara +19,4% em 12 meses (Refinarias Petrobras a 98%)"
     },
     "complexo_soja": {
-      "cbot_soja_fecho_30_10": "Nov/26: US$ 12,2225 (+0,20%) | Maio/27: US$ 12,5350/bu (+0,06%)",
-      "plantio_mt_imea_e_capal_30_10": "Mato Grosso atinge quase 90% da área (IMEA) | Capal SP/PR: 55%",
-      "esalq_paranagua_e_cepea_pr": "Paranaguá: R$ 158,28 (+0,55%) | Cepea PR: R$ 152,47/sc (+0,38%)",
-      "triangulo_mineiro_uberlandia": "Disponível: R$ 148,57 (+0,90%) | FOB Uberlândia: R$ 146,94 (+1,13%)",
-      "destaques_fisico_30_10_ba_go": "LEM-BA: R$ 145,00 (+3,57% hoje!) | Jataí/Rio Verde-GO: R$ 133 (+0,76%)",
-      "farelo_soja_cbot_fecho_30_10": "Dez/26: US$ 324,60/t (-1,43%) | Jan/27: US$ 325,20/t (-1,36%)",
-      "farelo_soja_fisico_mt_30_10": "IMEA-MT sobe +0,78% hoje p/ R$ 1.936,57/t | Rondonópolis: R$ 2.020/t"
+      "cbot_soja_fecho_02_11_17h00": "Cai > 1% hoje: Jan/27 recua p/ ~US$ 12,15/bu e Nov/26 perto de US$ 12,00",
+      "inspecoes_export_usda_02_11": "Superam 2,44 milhões t na semana (+146% a/a e +56% na temporada!)",
+      "esmagamento_e_oleo_eua_17h15": "Esmagamento EUA recua 5% em set e estoques de óleo bruto caem > 16%",
+      "plantio_agrural_e_seca_el_nino": "Plantio BR chega a 53% (AgRural) | Seca extrema avança p/ 68 municípios",
+      "esalq_paranagua_e_santos": "Paranaguá: R$ 158,88 (+0,38%) | Santos sobe R$ 8,00/sc na semana!",
+      "triangulo_mineiro_uberlandia": "Disponível: R$ 148,93 (+0,24% / +4,84% sem.) | Ibiá-MG: R$ 150,00/sc",
+      "farelo_soja_mt_e_export_br": "IMEA-MT sobe +0,78% p/ R$ 1.936,57/t | Export. BR +44,2% em out"
     },
     "complexo_milho_e_ddgs": {
-      "cbot_milho_fecho_30_10": "Dez/26: US$ 4,4775/bu (-0,78% hoje | Cai > 10% no mês de outubro)",
-      "milho_b3_30_10": "Nov/26: R$ 67,22 (Máx: R$ 67,96) | Set/27: R$ 77,57/sc (+0,41%)",
-      "esalq_campinas_e_portos": "Esalq: R$ 65,59 (+1,33%) | Campinas: R$ 67 | Paranaguá: R$ 70,00",
-      "altas_fisico_30_10_go_e_mt": "Jataí/Rio Verde-GO: R$ 53,00 (+1,92%) | Tangará-MT: R$ 42,50 (+1,19%)",
-      "etanol_milho_stonex_e_frango": "Produção de etanol de milho aquém do esperado (StoneX) | Custo frango PR",
-      "trigo_cepea_pr_rs_e_sp_30_10": "PR: R$ 1.578,12/t (+0,43%) | RS: R$ 1.493,38/t | Perdas agravam safra SP",
-      "trigo_cbot_e_cristalina_go": "CBOT Dez/26: US$ 6,0375/bu (+0,79%) | Cristalina-GO FOB: R$ 1.400/t",
-      "ddgs_mt_e_sorgo_uberlandia": "DDG MT: +35,01% em 2026 | Sorgo Disp.: R$ 48,91/sc"
+      "cbot_milho_fecho_02_11_16h55": "Dez/26 fecha em leve alta a US$ 4,4825/bu (+0,11%) e Mar/27 sobe +1,00¢",
+      "inspecoes_e_etanol_eua_02_11": "Inspeções EUA sobem +38,63% na sem. | Uso p/ etanol em set supera 2025",
+      "esalq_campinas_e_b3": "Esalq: R$ 65,64 (+0,08%) | B3 Nov: R$ 67,35 | Jan/27: R$ 71,16 (+0,81%)",
+      "plantio_rs_e_sorgo_2safra": "Semeadura desigual no RS hoje | 66 mi t disp. e procura por sorgo",
+      "uberlandia_patrocinio_e_sorgo": "Milho Uberlândia: R$ 62,22-63 | Patrocínio: R$ 65 | Sorgo: R$ 50-57",
+      "trigo_cbot_fecho_02_11_17h09": "Recupera os US$ 6,00/bu em Chicago e inicia novembro c/ pequenas altas!",
+      "trigo_cepea_pr_rs_e_quebras": "PR: R$ 1.569,82/t | RS: R$ 1.482,17/t (Quebras em SP > 80%, PR -34% e RS)",
+      "etanol_milho_mt_e_ddgs": "Etanol de milho é 20% do BR (MT tem 60,72%) | DDG MT: +35%"
     },
     "complexo_algodao": {
-      "cepea_pluma_brasil": "412,15 ¢ R$/lb (+0,20% — Dólar a R$ 5,4456 turbina paridade!)",
-      "ice_ny_pluma_fecho_30_10": "Dez/26: 77,90 ¢/lb (-0,85% hoje | -2,87% na sem. e -0,79% no mês)",
-      "pluma_fisico_mt_30_10": "Alto Garças-MT: R$ 130,19/@ | Rondonópolis-MT: R$ 127,27/@ (+0,72%)",
-      "caroco_algodao_imea_mt_30_10": "R$ 710,49 / ton (+3,24% hoje no IMEA-MT! | Saltou R$ 22,32/t)",
+      "ice_ny_pluma_fecho_02_11": "Devolve ganhos da manhã e fecha em queda em NY c/ petróleo (-7%)",
+      "cepea_pluma_brasil": "413,02 ¢ R$/lb (+0,21% — Equivale a R$ 136,58/@ vs Break-even R$ 119,61/@!)",
+      "pluma_fisico_mg_e_mt": "Unaí-MG: R$ 136,29/@ (+0,2%) | Alto Garças-MT: R$ 130,19/@",
+      "caroco_algodao_imea_mt": "R$ 710,49 / ton (+3,24% no IMEA-MT! | Saltou R$ 22,32/t)",
       "caroco_algodao_bahia": "R$ 955,00 / ton (Safras) | R$ 966,67 / ton (AIBA Oeste BA)"
     },
     "complexo_cafe": {
-      "ice_ny_e_londres_fecho_30_10": "Arábica interrompe 4 quedas em NY (-1,20% no mês) e Londres avança!",
-      "b3_mar27_e_cepea_robusta": "B3 Mar/27: US$ 350,25/sc (+0,65%) | Cepea Robusta: R$ 965,47 (+0,56%)",
-      "cepea_arabica_nacional": "R$ 1.590,72 / sc (-0,20%)",
+      "ice_ny_fecho_02_11_16h53": "Fecha em forte alta a 293,30 ¢/lb (+2,12%) após máxima de 297,05 ¢/lb!",
+      "vencedores_coe_2026": "Mantiqueira de Minas vence as 3 categorias do COE 2026 c/ Gesha!",
+      "cepea_arabica_e_robusta": "Arábica: R$ 1.598,37 (+0,48%) | Robusta: R$ 972,44/sc (+0,72%)",
       "praca_base_matas_de_minas": "Manhuaçu-MG (Hub Oficial Matas de Minas)",
-      "matas_de_minas_manhuacu_30_10": "R$ 1.570,00 / sc (-1,5% em 30/10 — Dura T.6 Safra Nova Agrolink)",
-      "guaxupe_cooxupe_30_10": "Dura T.6 sobe +0,58% hoje p/ R$ 1.732,00/sc | Tipo 6/7: R$ 1.696 (+0,83%)",
-      "araguari_e_varginha_cd": "Araguari T.6: R$ 1.680 (+1,82%) | Varginha CD: R$ 1.750 (+2,34%)",
-      "boi_gordo_b3_e_alvo_agromove": "Esalq: R$ 389,20 | B3 Nov: R$ 405-406,90 | Agromove vê R$ 430-440 até fev/27!"
+      "matas_de_minas_manhuacu": "R$ 1.586,00 / sc (+1,0% — Saltará forte na reabertura de amanhã!)",
+      "cooperativas_dura_t6_mg": "Guaxupé: R$ 1.732 (+0,58%) | Araguari: R$ 1.730 (+2,98%) | Patroc.: R$ 1.725 (+2,99%)",
+      "cereja_descascado_mg": "Guaxupé: R$ 1.795 (+0,56%) | Varginha: R$ 1.780 (+1,71%) | Patroc.: R$ 1.760 (+2,62%)",
+      "boi_gordo_reuters_02_11_e_b3": "Rota de R$ 400/@ (Reuters) | Esalq: R$ 389,90 | MG: R$ 380 | B3: R$ 407,50/@"
     }
   },
   "detailed_blocks_and_news": [
     {
-      "title": "🏛️🛢️ Cenário Político, PTAX Mensal a R$ 5,4212, Dólar a R$ 5,4456 e Diesel S-10 (+19,4% em 12 Meses)",
-      "market_bias": "Dólar Fecha Sexta-Feira a R$ 5,4456 (Máxima de R$ 5,4564 e PTAX Mensal a R$ 5,4212, +0,87%) com 5ª Queda do Ibovespa / Diesel S-10 Dispara +19,4% em 12 Meses (Veloe/Fipe) e Petróleo Sobe a US$ 104",
-      "executive_summary": "No fechamento oficial do mês de outubro nesta sexta-feira (30/10), a PTAX de venda do Banco Central encerrou em R$ 5,4212 (+0,87% no dia), enquanto o dólar comercial à vista prolongou a alta à tarde, tocou a máxima de R$ 5,4564 e encerrou a R$ 5,4456 (+1,09% hoje e +8,10% na semana, fechando outubro no positivo em +0,39%!), levando o Dólar Futuro Dez/26 na B3 a 5.464,50 pontos (+0,90%). Conforme a CNN Brasil e o UOL Economia, o Ibovespa teve a 5ª queda seguida (acumulando perda de 18,4% desde antes do 2º turno) por incertezas fiscais e sobre o Ministério da Fazenda, enquanto fontes disseram à Reuters que Donald Trump não planeja apoiar alegações de Flávio Bolsonaro sobre liderança no Brasil e Lula confirmou presença na COP31 e na cúpula da Asean. No Petróleo e Diesel, após um petroleiro ser atingido por minas no Estreito de Ormuz impulsionando o WTI para US$ 103,92-104,01/bbl (+1,88%), o Monitor Veloe/Fipe revelou hoje que o diesel S-10 subiu 19,4% em 12 meses (e 5% nos últimos 2 meses), sendo o combustível que mais encareceu no país!",
+      "title": "🏛️🛢️ Cenário Político, Dólar Firme (R$ 5,4373), Tombo de 7% no Petróleo Hoje (02/11) e Alta de 1,5% no Frete em MT",
+      "market_bias": "Petróleo Despenca Mais de 7% Nesta Segunda-Feira (02/11 às 15h01) com Expectativas de Acordo Para Encerrar Guerra com Irã (WTI < US$ 100 e Brent ~US$ 105) / Alta de 5% no Diesel Eleva em 1,5% o Frete em MT e Dólar Fecha a R$ 5,4373",
+      "executive_summary": "Conforme reportagem publicada hoje (02/11 às 15h01) pelo Notícias Agrícolas, os preços do petróleo despencaram mais de 7% nesta segunda-feira — com o Brent recuando para perto de US$ 105,00/barril e o WTI caindo abaixo dos US$ 100,00/barril — diante das expectativas de um acordo para encerrar a guerra entre Estados Unidos e Irã, no dia seguinte à decisão da OPEP+ de manter suas metas de produção para dezembro. No Brasil, porém, estudo do IMEA/Famato divulgado hoje (11h30) mostrou que a alta recente de 5% no diesel elevou em 1,5% o custo do frete para os produtores de Mato Grosso (somando-se à alta de 19,4% do diesel S-10 em 12 meses na Veloe/Fipe). No câmbio internacional neste feriado de Finados, o dólar fechou firme a R$ 5,4373 (máxima de R$ 5,4437), preservando a maior alta semanal desde a crise de 2008 (+9,15%), com os juros DIs longos entre 14,965% e 15,260% a.a.",
       "news_sources": [
         {
-          "headline": "Dólar PTAX fecha em R$ 5,4212 nesta sexta-feira (30/10/2026); veja a cotação oficial — Piranot / Banco Central (30/10 às 13h04)",
-          "url": "https://www.piranot.com.br/2026/10/30/noticias/economia/dolar-ptax-fecha-em-r-54212-nesta-sexta-feira-30-10-2026-veja-a/"
+          "headline": "Petróleo despenca mais de 7% nesta segunda-feira com expectativas de acordo para encerrar guerra com Irã (Brent recua p/ perto de US$ 105 e WTI fica abaixo de US$ 100) — Notícias Agrícolas (02/11 às 15h01)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/430690-petroleo-despenca-mais-de-7-nesta-segunda-feira-com-expectativas-de-acordo-para-encerrar-guerra-com-ira.html"
         },
         {
-          "headline": "Bolsa caminha para 5ª queda consecutiva enquanto dólar vai a R$ 5,45 — CNN Brasil / Reuters (30/10 às 16h14)",
-          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-30-outubro-2026/"
+          "headline": "Alta de 5% no diesel eleva em 1,5% o custo do frete para produtores de MT, diz Imea — Famato / Notícias Agrícolas (02/11 às 11h30)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/logistica/430678-alta-de-5-no-diesel-eleva-em-1-5-o-custo-do-frete-para-produtores-de-mt-diz-imea.html"
         },
         {
-          "headline": "Diesel S-10 sobe 19,4% em 12 meses, mostra Veloe/Fipe (e avança 5% em dois meses) — Notícias Agrícolas (30/10 às 11h29)",
+          "headline": "OPEP+ mantém metas de produção de petróleo para dezembro, antes de decisão sobre 2027 — Reuters / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/430666-opep-mantem-metas-de-producao-de-petroleo-para-dezembro-antes-de-decisao-sobre-2027.html"
+        },
+        {
+          "headline": "Fim do horário de verão nos EUA altera negociações em Chicago e NY; Londres também já mudou horários — Notícias Agrícolas (02/11 às 09h27)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/430671-fim-do-horario-de-verao-nos-eua-altera-negociacoes-em-chicago-e-ny-londres-tambem-ja-mudou-horarios.html"
+        },
+        {
+          "headline": "Dólar tem maior alta semanal desde 2008 (+9,15%); Ibovespa despenca 18,12% e juros longos superam 15% — UOL Economia",
+          "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/30/dolar-fecha-a-r-544-e-sobe-9-na-semana-ibovespa-cai-pela-5-vez.ghtm"
+        },
+        {
+          "headline": "Diesel S-10 sobe 19,4% em 12 meses, mostra Veloe/Fipe (e avança 5% em dois meses) — Notícias Agrícolas",
           "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/430615-diesel-s-10-sobe-19-4-em-12-meses-mostra-veloe-fipe.html"
-        },
-        {
-          "headline": "Trump não planeja apoiar alegação de Flávio Bolsonaro sobre ser líder do Brasil, dizem fontes — Reuters / Notícias Agrícolas (30/10 às 14h55)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/430642-trump-nao-planeja-apoiar-alegacao-de-flavio-bolsonaro-sobre-ser-lider-do-brasil-dizem-fontes.html"
-        },
-        {
-          "headline": "Petroleiro no Estreito de Ormuz é atingido por minas de fixação ao casco, segundo fontes de segurança — Reuters / Notícias Agrícolas (30/10)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/430609-petroleiro-no-estreito-de-ormuz-e-atingido-por-minas-de-fixacao-ao-casco-segundo-fontes-de-seguranca.amp.html"
-        },
-        {
-          "headline": "Lula confirma ida à COP31, na Turquia, e cúpula da Asean, nas Filipinas — Reuters / Notícias Agrícolas (30/10 às 15h48)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/430646-lula-confirma-ida-a-cop31-na-turquia-e-cupula-da-asean-nas-filipinas.html"
         }
       ],
       "strategic_directions_by_elo": [
         {
-          "elo": "Elo: Produtores Rurais e Gestão de Custos (Diesel +19,4% e Fertilizantes)",
-          "direction": "Com o estudo da Veloe/Fipe confirmando hoje que o diesel S-10 disparou 19,4% em 12 meses e o ataque no Estreito de Ormuz mantendo o petróleo WTI em US$ 104/bbl, o custo de máquinas e frete seguirá pressionado. Aproveite o dólar fechando a sexta-feira em R$ 5,4456 para travar vendas de grãos e fechar o Barter de insumos!",
+          "elo": "Elo: Produtores Rurais e Logística (Tombo de 7% no Petróleo Hoje vs. Frete +1,5% em MT)",
+          "direction": "O tombo de mais de 7% no petróleo hoje (02/11) com as negociações EUA-Irã retira a pressão de novos aumentos imediatos da Petrobras nas refinarias, mas no mercado interno o repasse anterior já encareceu o frete em 1,5% no MT (IMEA). Aproveite o dólar a R$ 5,4373 na reabertura de amanhã para travar receitas!",
           "reference_links": [
-            {"label": "Reportagem (30/10 11h29): Diesel S-10 sobe 19,4% em 12 meses, mostra Veloe/Fipe — NA", "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/430615-diesel-s-10-sobe-19-4-em-12-meses-mostra-veloe-fipe.html"},
-            {"label": "Artigo (30/10): Entregas de fertilizantes podem cair até 15% em 2026 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/artigos/artigos-geral/430612-entregas-de-fertilizantes-podem-cair-ate-15-em-2026.html"}
+            {"label": "Reportagem (02/11 15h01): Petróleo despenca mais de 7% com expectativas de acordo no Irã — NA", "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/430690-petroleo-despenca-mais-de-7-nesta-segunda-feira-com-expectativas-de-acordo-para-encerrar-guerra-com-ira.html"},
+            {"label": "Reportagem (02/11 11h30): Alta de 5% no diesel eleva em 1,5% o custo do frete em MT, diz Imea — NA", "url": "https://www.noticiasagricolas.com.br/noticias/logistica/430678-alta-de-5-no-diesel-eleva-em-1-5-o-custo-do-frete-para-produtores-de-mt-diz-imea.html"}
           ]
         },
         {
-          "elo": "Elo: Cooperativas, Tradings e Mesa de Câmbio (NDF a R$ 5,6517)",
-          "direction": "Com o dólar spot encerrando a R$ 5,4456 (máxima de R$ 5,4564), a PTAX mensal em R$ 5,4212 e o Dólar Futuro Dez/26 a 5.464,50 pontos na B3, a Calculadora NDF para 160 dias já projeta um dólar a termo de R$ 5,6517 (+R$ 5,63/sc de ganho extra na soja)!",
+          "elo": "Elo: Cooperativas, Tradings e Mesa de Câmbio (NDF a R$ 5,6431 na Reabertura de Terça-Feira)",
+          "direction": "Com o dólar fechando o feriado a R$ 5,4373 e os juros DIs longos entre 14,96% e 15,26% a.a., a Calculadora NDF para 160 dias projeta R$ 5,6431 (+R$ 5,62/sc na soja). Posicione suas travas cambiais logo na abertura da B3 amanhã (03/11)!",
           "reference_links": [
-            {"label": "Boletim Oficial (30/10 13h04): Dólar PTAX fecha em R$ 5,4212 — Piranot / BCB", "url": "https://www.piranot.com.br/2026/10/30/noticias/economia/dolar-ptax-fecha-em-r-54212-nesta-sexta-feira-30-10-2026-veja-a/"},
-            {"label": "Reportagem (30/10 16h14): Bolsa caminha para 5ª queda enquanto dólar vai a R$ 5,45 — CNN Brasil", "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-30-outubro-2026/"}
+            {"label": "Reportagem: Dólar tem maior alta semanal desde 2008 e juros longos sobem — UOL Economia", "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/10/30/dolar-fecha-a-r-544-e-sobe-9-na-semana-ibovespa-cai-pela-5-vez.ghtm"}
           ]
         }
       ]
     },
     {
       "title": "🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo)",
-      "market_bias": "Soja Interrompe 4 Quedas em Chicago (US$ 12,2225/bu, +0,20%) e Plantio Atinge Quase 90% em MT (IMEA) / Dólar a R$ 5,4456 Puxa Altas em LEM-BA (+3,57% a R$ 145), Goiás (+0,76%) e no Farelo em MT (+0,78%)",
-      "executive_summary": "Conforme reportagem de fechamento publicada hoje (30/10 às 15h46) pelo Notícias Agrícolas, a soja interrompeu a sequência de quatro quedas em Chicago (Nov/26 subindo +0,20% para fechar a US$ 12,2225/bu e Maio/27 a US$ 12,5350/bu), embora o contrato novembro tenha fechado a semana com baixa de 2,73%. Às 16h32, o IMEA informou que Mato Grosso já realizou o plantio de soja em quase 90% da área projetada (e a Capal alcançou 55% em SP e no PR). Enquanto o Farelo de Soja (Dez/26) caiu mais -1,43% hoje na CBOT para US$ 324,60/t após o foco de gripe aviária em Iowa, no Brasil a disparada do dólar para R$ 5,4456 puxou alta de +0,78% hoje no Farelo no IMEA-MT (para R$ 1.936,57/t), fez a soja saltar +3,57% em Luís Eduardo Magalhães-BA (para R$ 145,00/sc) e +0,76% em Jataí e Rio Verde-GO (para R$ 133,00/sc), mantendo Uberlândia-MG em R$ 148,57/sc (+0,90%) e Paranaguá em R$ 158,28/sc.",
+      "market_bias": "Soja Inicia Novembro com Perdas Superiores a 1% em Chicago Hoje (Jan/27 Perto de US$ 12,15 e Nov/26 Perto de US$ 12,00), Apesar de Inspeções > 2,44 Mi t e Queda de 16% nos Estoques de Óleo Bruto nos EUA",
+      "executive_summary": "Conforme reportagem de fechamento publicada hoje (02/11 às 17h00) pelo Notícias Agrícolas, a soja iniciou novembro com perdas superiores a 1% em Chicago (Janeiro/27 recuou para perto de US$ 12,15/bu e Novembro/26 aproximou-se dos US$ 12,00/bu), pressionada pelo tombo de 7% do petróleo, pela colheita americana e pelo plantio no Brasil (que chegou a 53% da área segundo a AgRural e quase 90% no MT segundo o IMEA). A queda ocorreu mesmo após o USDA informar hoje que as inspeções semanais de exportação de soja dos EUA superaram 2,44 milhões de toneladas (+56% na temporada) e que, no relatório mensal de esmagamento das 17h15, os estoques norte-americanos de óleo de soja bruto caíram mais de 16% em setembro (com esmagamento recuando 5%)! Além disso, novo painel do El Niño alerta que a seca extrema avançou de 4 para 68 municípios em dois meses, ameaçando a soja no Matopiba.",
       "news_sources": [
         {
-          "headline": "Soja interrompe sequência de quedas em Chicago (Nov/26 sobe +0,20% a US$ 12,2225/bu), mas novembro fecha semana com perda de 2,73% — Notícias Agrícolas (30/10 às 15h46)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430645-soja-interrompe-sequencia-de-quedas-em-chicago-mas-novembro-fecha-semana-com-perda-de-2-73.html"
+          "headline": "Soja inicia novembro com perdas superiores a 1% em Chicago, apesar de inspeções de exportação acima de 2,44 milhões de toneladas — Notícias Agrícolas (02/11 às 17h00)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430693-soja-inicia-novembro-com-perdas-superiores-a-1-em-chicago-apesar-de-inspecoes-de-exportacao-acima-de-2-44-milhoes-de-toneladas.html"
         },
         {
-          "headline": "Mato Grosso realizou o plantio de soja em quase 90% da área projetada, diz Imea — Reuters / Notícias Agrícolas (30/10 às 16h32)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430654-mato-grosso-realizou-o-plantio-de-soja-em-quase-90-da-area-projetada-diz-imea.html"
+          "headline": "Esmagamento de soja nos EUA recua 5% em setembro e estoques de óleo bruto caem mais de 16%, aponta USDA — Notícias Agrícolas (02/11 às 17h15)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430697-esmagamento-de-soja-nos-eua-recua-5-em-setembro-e-estoques-de-oleo-bruto-caem-mais-de-16-aponta-usda.html"
         },
         {
-          "headline": "Plantio da safra de verão alcança 55% da área da Capal em São Paulo e Paraná — Notícias Agrícolas (30/10 às 11h34)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/graos/430616-plantio-da-safra-de-verao-alcanca-55-da-area-da-capal-em-sao-paulo.html"
+          "headline": "USDA: Inspeções de soja superam 2,44 milhões de toneladas e acumulam alta de 56% na temporada — Notícias Agrícolas (02/11 às 13h14)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/graos/430683-usda-inspecoes-de-soja-superam-2-44-milhoes-de-toneladas-e-acumulam-alta-de-56-na-temporada.html"
         },
         {
-          "headline": "EUA confirmam primeiro foco de gripe aviária em granja comercial de Iowa desde dezembro de 2025 — Reuters / Notícias Agrícolas (30/10)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/granjeiros/430600-eua-confirmam-primeiro-foco-de-gripe-aviaria-em-granja-comercial-de-iowa-desde-dezembro-de-2025.html"
+          "headline": "Seca extrema avança de 4 para 68 municípios em dois meses e ameaça atividades agropecuárias (Riscos no Norte, Nordeste e Matopiba) — Notícias Agrícolas (02/11 às 11h45)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/tempo-e-clima/430681-seca-extrema-avanca-de-4-para-68-municipios-em-dois-meses-e-ameaca-atividades-agropecuarias.html"
         },
         {
-          "headline": "Tabelas Físicas 30/10: LEM-BA salta +3,57% (R$ 145), Goiás sobe +0,76% (R$ 133), Uberlândia a R$ 148,57 e Farelo MT sobe +0,78% (R$ 1.936,57/t) — Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+          "headline": "Plantio de soja no Brasil chega a 53%, segundo a AgRural — Reuters / Notícias Agrícolas (02/11 às 09h31)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/430672-plantio-de-soja-no-brasil-chega-a-53-segundo-a-agrural.html"
+        },
+        {
+          "headline": "Preço da soja disponível em Uberlândia-MG sobe mais +0,24% e atinge R$ 148,93/sc (Ibiá-MG a R$ 150,00/sc) — Grão Direto",
+          "url": "https://www.graodireto.com.br/ofertas/soja/mg/uberlandia/"
         }
       ],
       "strategic_directions_by_elo": [
         {
-          "elo": "Elo: Produtores Rurais (Uberlândia-MG a R$ 148,57, LEM-BA a R$ 145,00 e Portos a R$ 158,28-161,00/sc)",
-          "direction": "Com Mato Grosso já chegando a quase 90% da área plantada (o que garantirá forte oferta de soja precoce a partir de janeiro) e o dólar batendo R$ 5,4456 hoje (puxando altas de até +3,57% no físico da Bahia e mantendo Uberlândia em R$ 148,57/sc), venda lotes físicos e trave a safra nova via NDF (R$ 5,6517)!",
+          "elo": "Elo: Produtores Rurais (Ação Rápida Amanhã Cedo em Uberlândia-MG a R$ 148,93 e Paranaguá a R$ 158,88/sc)",
+          "direction": "Atenção máxima: como a soja fechou hoje caindo mais de 1% em Chicago durante o feriado brasileiro (Jan/27 perto de US$ 12,15/bu e Nov/26 perto de US$ 12,00/bu), venda lotes disponíveis amanhã cedo (terça-feira, 03/11) aproveitando as tabelas de pico de Uberlândia-MG (R$ 148,93/sc) e Paranaguá (R$ 158,88/sc) e trave NDF (R$ 5,6431) antes que as compradoras repassam a baixa de Chicago!",
           "reference_links": [
-            {"label": "Reportagem (30/10 15h46): Soja interrompe sequência de quedas em Chicago — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430645-soja-interrompe-sequencia-de-quedas-em-chicago-mas-novembro-fecha-semana-com-perda-de-2-73.html"},
-            {"label": "Reportagem (30/10 16h32): Mato Grosso realizou plantio em quase 90% da área, diz Imea — Reuters / NA", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430654-mato-grosso-realizou-o-plantio-de-soja-em-quase-90-da-area-projetada-diz-imea.html"}
+            {"label": "Reportagem (02/11 17h00): Soja inicia novembro com perdas superiores a 1% em Chicago — NA", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430693-soja-inicia-novembro-com-perdas-superiores-a-1-em-chicago-apesar-de-inspecoes-de-exportacao-acima-de-2-44-milhoes-de-toneladas.html"},
+            {"label": "Reportagem (02/11 17h15): Esmagamento nos EUA recua 5% e estoques de óleo caem > 16% — NA", "url": "https://www.noticiasagricolas.com.br/noticias/soja/430697-esmagamento-de-soja-nos-eua-recua-5-em-setembro-e-estoques-de-oleo-bruto-caem-mais-de-16-aponta-usda.html"}
           ]
         },
         {
-          "elo": "Elo: Indústrias e Confinamentos (Farelo Cai -1,43% na CBOT mas Sobe +0,78% no MT pelo Dólar)",
-          "direction": "Embora o Farelo Dez/26 tenha caído mais -1,43% hoje na CBOT (para US$ 324,60/t), a disparada do dólar para R$ 5,4456 já fez o farelo físico no IMEA-MT subir +0,78% hoje para R$ 1.936,57/t! Antecipe compras físicas antes que o câmbio continue encarecendo o farelo interno.",
+          "elo": "Elo: Indústrias e Confinamentos (Farelo de Soja e Óleo Bruto)",
+          "direction": "A queda de 5% no esmagamento de setembro nos EUA e o salto de +44,2% nas exportações brasileiras de farelo mantêm o farelo físico firme no Brasil (IMEA-MT subiu +0,78% para R$ 1.936,57/t). Aproveite eventuais ajustes de Chicago amanhã para travar farelo!",
           "reference_links": [
-            {"label": "Tabelas de Fechamento Farelo de Soja CBOT e IMEA-MT (30/10/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"}
+            {"label": "Reportagem: Farelo de soja dispara 44% nos portos brasileiros — Pensar Agro", "url": "https://oestadoderondonia.com.br/farelo-de-soja-dispara-44-e-milho-ganha-forca-nos-portos-brasileiros/"}
           ]
         }
       ]
     },
     {
-      "title": "🌽🌾 Complexo Milho, DDGS e Complexo Trigo (Com Praças Identificadas)",
-      "market_bias": "Milho Fecha Outubro com Queda > 10% em Chicago (Dez/26 a US$ 4,4775/bu), Mas Dólar Puxa Alta Hoje em Goiás (+1,92% a R$ 53/sc) e Tangará-MT (+1,19% a R$ 42,50/sc) / Perdas Agravam Safra de Trigo em SP e PR",
-      "executive_summary": "No Milho, conforme reportagem de fechamento publicada hoje (30/10 às 15h38) pelo Notícias Agrícolas, o cereal fechou outubro com queda superior a 10% em Chicago (Março/27 recuou 10,57% no mês) e o Dezembro/26 terminou a US$ 4,4775/bu (-0,78% hoje), enquanto a StoneX apontou que a produção de etanol de milho no Centro-Sul ficou aquém do esperado. No Brasil, porém, o dólar a R$ 5,4456 sustentou a B3 (Nov/26 a R$ 67,22/sc após bater R$ 67,96, e Set/27 subindo +0,41% a R$ 77,57/sc) e puxou altas no físico de hoje (30/10): Jataí e Rio Verde (GO) subiram +1,92% para R$ 53,00/sc e Tangará da Serra-MT (IMEA) avançou +1,19% para R$ 42,50/sc, mantendo Campinas-SP em R$ 67,00/sc (Esalq em R$ 65,59/sc, +1,33%) e Paranaguá em R$ 70,00/sc. No Trigo, reportagem de hoje (11h56) alerta que as perdas na safra de trigo paulista agravam os desafios para a cadeia estadual, somando-se à quebra de 34% no Paraná que sustenta o Cepea PR em R$ 1.578,12/t (+0,43%), o Cepea RS em R$ 1.493,38/t e Cristalina-GO em R$ 1.400,00/t FOB.",
+      "title": "🌽🌾 Complexo Milho (Fecha em Alta a US$ 4,4825/bu), Etanol EUA (USDA), Sorgo, DDGS e Trigo (Recupera US$ 6,00+)",
+      "market_bias": "Milho Fecha em Leve Alta Hoje em Chicago (Dez/26 a US$ 4,4825/bu, +0,11%) com Salto de 38,63% nas Inspeções Semanais e Consumo p/ Etanol Superando 2025 / Trigo Recupera os US$ 6,00/bu em Chicago!",
+      "executive_summary": "Conforme reportagem de fechamento publicada hoje (02/11 às 16h55) pelo Notícias Agrícolas, o milho encerrou esta segunda-feira em leve alta na CBOT (Dezembro/26 fechou a US$ 4,4825/bu, +0,11%, e Março/27 avançou +1,00 cent), sustentado pelo avanço de 38,63% nas inspeções semanais de exportação dos EUA e pelo relatório do USDA das 17h17 mostrando que o consumo de milho para etanol em setembro (embora 9% menor que agosto) superou o volume de setembro de 2025! No Brasil, o Indicador Esalq/B3 está em R$ 65,64/sc e o Jan/27 na B3 em R$ 71,16/sc (+0,81%), com Mato Grosso concentrando 60,72% do etanol de milho nacional e forte procura por sorgo na 2ª safra. No Trigo, reportagem das 17h09 confirma que o cereal recuperou o patamar dos US$ 6,00/bu em Chicago e iniciou novembro com pequenas altas, reforçando o suporte às praças do PR (Cepea a R$ 1.569,82/t) e RS (Cepea a R$ 1.482,17/t) diante das quebras em SP (> 80%), PR (-34%) e RS (~50%).",
       "news_sources": [
         {
-          "headline": "Milho fecha outubro com queda de mais de 10% em Chicago e dezembro termina abaixo dos US$ 4,50 (a US$ 4,4775/bu) — Notícias Agrícolas (30/10 às 15h38)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430644-milho-fecha-outubro-com-queda-de-mais-de-10-em-chicago-e-dezembro-termina-abaixo-dos-us-4-50.html"
+          "headline": "Milho fecha em leve alta em Chicago nesta segunda-feira (Dez/26 a US$ 4,4825/bu, +0,11%), mas dezembro não sustenta os US$ 4,50 — Notícias Agrícolas (02/11 às 16h55)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430692-milho-fecha-em-leve-alta-em-chicago-nesta-segunda-feira-mas-dezembro-nao-sustenta-os-us-4-50.html"
         },
         {
-          "headline": "Produção de etanol de milho no centro-sul fica aquém do esperado, avalia StoneX — Reuters / Notícias Agrícolas (30/10 às 10h50)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/biocombustivel/430617-producao-de-etanol-de-milho-no-centro-sul-fica-aquem-do-esperado-avalia-stonex.html"
+          "headline": "Consumo de milho para produção de etanol nos EUA cai 9% em setembro, mas supera volume de 2025 — Notícias Agrícolas (02/11 às 17h17)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/430698-consumo-de-milho-para-producao-de-etanol-nos-eua-cai-9-em-setembro-mas-supera-volume-de-2025.html"
         },
         {
-          "headline": "Perdas na safra de trigo paulista agravam desafios para a cadeia produtiva estadual — Notícias Agrícolas (30/10 às 11h56)",
+          "headline": "USDA: Inspeções de soja superam 2,44 mi t; milho avança 38,63% na comparação semanal — Notícias Agrícolas (02/11 às 13h14)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/graos/430683-usda-inspecoes-de-soja-superam-2-44-milhoes-de-toneladas-e-acumulam-alta-de-56-na-temporada.html"
+        },
+        {
+          "headline": "Semeadura de milho avança em ritmo desigual no RS — Agrolink (02/11 às 09h00)",
+          "url": "https://www.agrolink.com.br/noticias/semeadura-de-milho-avanca-em-ritmo-desigual-no-rs_520462.html"
+        },
+        {
+          "headline": "Perdas na safra de trigo paulista agravam desafios para a cadeia produtiva estadual (Produção em SP pode cair mais de 80%, ficando abaixo de 70 mil t) — Notícias Agrícolas",
           "url": "https://www.noticiasagricolas.com.br/noticias/trigo/430620-perdas-na-safra-de-trigo-paulista-agravam-desafios-para-a-cadeia-produtiva-estadual.html"
-        },
-        {
-          "headline": "Custo de produção do frango superou preço recebido no Paraná; ração encareceu 5,06% — Notícias Agrícolas (30/10 às 14h37)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/granjeiros/430634-custo-de-producao-do-frango-superou-preco-recebido-no-parana-cenario-em-outubro-ainda-exige-cautela.html"
-        },
-        {
-          "headline": "Tabelas Físicas 30/10: Milho sobe +1,92% em Jataí/Rio Verde-GO (R$ 53,00/sc) e +1,19% em Tangará da Serra-MT (R$ 42,50/sc) — Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
         }
       ],
       "strategic_directions_by_elo": [
         {
-          "elo": "Elo: Produtores de Milho e Trigo (PR, RS, SP, MG, GO e MT)",
-          "direction": "O balanço de outubro prova a força do mercado interno e da B3 frente a Chicago: enquanto a CBOT tombou mais de 10% no mês, hoje o milho subiu mais +1,92% em Goiás (R$ 53,00/sc) e +1,19% em Tangará-MT (R$ 42,50/sc), com o Esalq a R$ 65,59/sc. No Trigo, as perdas nas safras de São Paulo e do Paraná (-34%) somadas ao dólar a R$ 5,4456 garantem prêmios firmes para o trigo nacional no PR (R$ 1.578,12/t) e SP!",
+          "elo": "Elo: Produtores de Milho, Sorgo e Trigo (PR, RS, SP, MG, GO e MT)",
+          "direction": "Enquanto a soja caiu > 1% em Chicago, o milho e o trigo conseguiram fechar esta segunda-feira no positivo (Milho Dez/26 a US$ 4,4825/bu e Trigo acima de US$ 6,00/bu), o que somado ao dólar em R$ 5,4373 manterá a B3 (Jan/27 a R$ 71,16/sc) e o trigo pão no PR (R$ 1.569,82/t) firmes na reabertura de amanhã!",
           "reference_links": [
-            {"label": "Reportagem (30/10 15h38): Milho fecha outubro com queda de mais de 10% em Chicago — NA", "url": "https://www.noticiasagricolas.com.br/noticias/milho/430644-milho-fecha-outubro-com-queda-de-mais-de-10-em-chicago-e-dezembro-termina-abaixo-dos-us-4-50.html"},
-            {"label": "Reportagem (30/10 11h56): Perdas na safra de trigo paulista agravam desafios — NA", "url": "https://www.noticiasagricolas.com.br/noticias/trigo/430620-perdas-na-safra-de-trigo-paulista-agravam-desafios-para-a-cadeia-produtiva-estadual.html"}
+            {"label": "Reportagem (02/11 16h55): Milho fecha em leve alta em Chicago nesta segunda-feira — NA", "url": "https://www.noticiasagricolas.com.br/noticias/milho/430692-milho-fecha-em-leve-alta-em-chicago-nesta-segunda-feira-mas-dezembro-nao-sustenta-os-us-4-50.html"},
+            {"label": "Reportagem (02/11 17h17): Consumo de milho p/ etanol nos EUA supera volume de 2025 — NA", "url": "https://www.noticiasagricolas.com.br/noticias/milho/430698-consumo-de-milho-para-producao-de-etanol-nos-eua-cai-9-em-setembro-mas-supera-volume-de-2025.html"}
           ]
         },
         {
-          "elo": "Elo: Moinhos, Avicultores e Confinamentos (Ração +5,06%, DDGS e Farelo de Trigo)",
-          "direction": "Como a ração já encareceu 5,06% pressionando a avicultura no PR e o milho voltou a subir hoje em GO (+1,92%) e Tangará-MT (+1,19%), confinadores e granjas devem travar compras de milho, DDGS e farelo de trigo imediatamente!",
+          "elo": "Elo: Moinhos, Avicultores e Confinamentos (Trigo Feed, DDGS, Sorgo e Farelo de Trigo)",
+          "direction": "Com o consumo de milho para etanol acima de 2025 nos EUA e MT concentrando 60,72% no Brasil, há boa oferta de DDGS, que junto ao sorgo no Triângulo Mineiro (R$ 50 a R$ 57/sc) e ao trigo feed permite reduzir o custo da ração!",
           "reference_links": [
-            {"label": "Reportagem (30/10 14h37): Custo de produção do frango superou preço recebido no PR — NA", "url": "https://www.noticiasagricolas.com.br/noticias/granjeiros/430634-custo-de-producao-do-frango-superou-preco-recebido-no-parana-cenario-em-outubro-ainda-exige-cautela.html"}
+            {"label": "Cotações de Sorgo e Milho no Triângulo Mineiro — Grão Direto", "url": "https://www.graodireto.com.br/ofertas/sorgo/mg/uberlandia/"}
           ]
         }
       ]
     },
     {
-      "title": "☁️ Complexo Algodão, Caroço (+3,24% Hoje em MT) e Farelo",
-      "market_bias": "Algodão Fecha a 77,90 ¢/lb em NY (-0,85% Hoje), Mas Dólar a R$ 5,4456 Sustenta Cepea Pluma (412,15 ¢) e Caroço de Algodão Salta +3,24% Hoje no MT para R$ 710,49/t!",
-      "executive_summary": "Conforme reportagem de fechamento publicada hoje (30/10 às 16h00) pelo Notícias Agrícolas, o algodão na ICE NY recuou 0,85% nesta sexta-feira para fechar a 77,90 cents/lb no Dez/26 (acumulando -2,87% na semana e -0,79% em outubro). Em contrapartida, nas tabelas físicas brasileiras atualizadas hoje (30/10), o dólar a R$ 5,4456 manteve o Indicador Cepea Pluma em 412,15 ¢ R$/lb (+0,20%), puxou a pluma em Alto Garças-MT para R$ 130,19/@ (e Rondonópolis-MT para R$ 127,27/@, +0,72%) e fez o Caroço de Algodão no IMEA-MT saltar +3,24% hoje, subindo de R$ 688,17 para R$ 710,49/tonelada (enquanto na Bahia opera a R$ 966,67/t na AIBA)!",
+      "title": "☁️ Complexo Algodão (Devolve Ganhos em NY c/ Petróleo -7%), Cepea a 413,02 ¢ e Caroço (+3,24% em MT)",
+      "market_bias": "Algodão Devolve Ganhos da Manhã e Fecha em Queda Hoje em NY com Colheita dos EUA e Tombo de 7% do Petróleo / No Brasil, Dólar Sustenta Cepea Pluma (413,02 ¢ R$/lb) e Caroço Salta +3,24% no MT!",
+      "executive_summary": "Conforme reportagens publicadas hoje às 13h24 e 17h07 pelo Notícias Agrícolas, após iniciar novembro em alta de quase 1% pela manhã, o algodão perdeu força em Nova Iorque e fechou em queda nesta segunda-feira, pressionado pelo avanço da colheita americana e pelo tombo de mais de 7% do petróleo (que barateia o poliéster concorrente). No Brasil, porém, o dólar a R$ 5,4373 sustenta o Indicador Cepea Pluma em 413,02 centavos de real por libra-peso (~R$ 136,58/@, acima do break-even operacional de R$ 119,61/@ no MT), enquanto o Caroço de Algodão no IMEA-MT saltou +3,24% para R$ 710,49/tonelada!",
       "news_sources": [
         {
-          "headline": "Algodão perde mais de 2% na semana e encerra outubro com pouca variação (Dez/26 fecha a 77,90 cents/lb) — Notícias Agrícolas (30/10 às 16h00)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430648-algodao-perde-mais-de-2-na-semana-e-encerra-outubro-com-pouca-variacao.html"
+          "headline": "Algodão perde força em Nova York nesta segunda-feira e passa a cair após abrir com alta de quase 1% (e fecha em queda às 17h07) — Notícias Agrícolas (02/11)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430685-algodao-perde-forca-em-nova-york-nesta-segunda-feira-e-passa-a-cair-apos-abrir-com-alta-de-quase-1.amp.html"
         },
         {
-          "headline": "Tabelas Físicas de Algodão (30/10/2026): Caroço de Algodão salta +3,24% hoje no IMEA-MT para R$ 710,49/t e Pluma sobe em MT — Notícias Agrícolas",
+          "headline": "Soja, milho e algodão têm custos pressionados em MT; algodão exige preço mínimo de R$ 119,61/@ para cobrir despesas operacionais — Canal Rural",
+          "url": "https://matogrosso.canalrural.com.br/agricultura/soja-milho-e-algodao-tem-custos-pressionados-e-margens-mais-estreitas-em-mato-grosso/"
+        },
+        {
+          "headline": "Tabelas Oficiais Algodão: Cepea bate 413,02 ¢ R$/lb e Caroço de Algodão salta +3,24% no IMEA-MT para R$ 710,49/t — Notícias Agrícolas",
           "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
         }
       ],
       "strategic_directions_by_elo": [
         {
           "elo": "Elo: Produtores Rurais (Cotonicultores) e Tradings",
-          "direction": "Mesmo com NY recuando para 77,90 ¢/lb no fechamento de hoje, a disparada do dólar para R$ 5,4456 (PTAX a R$ 5,4212 e NDF a R$ 5,6517) puxou a pluma física no MT para até R$ 130,19/@ (Alto Garças). Excelente momento para fixar contratos em reais!",
+          "direction": "Como a queda de 7% do petróleo fez a pluma devolver os ganhos em NY hoje à tarde, aproveite imediatamente na reabertura de amanhã (03/11) que o Indicador Cepea está na máxima de 413,02 ¢ R$/lb (~R$ 136,58/@ vs break-even de R$ 119,61/@) e trave contratos a termo com NDF a R$ 5,6431!",
           "reference_links": [
-            {"label": "Reportagem (30/10 16h00): Algodão perde mais de 2% na semana em NY — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430648-algodao-perde-mais-de-2-na-semana-e-encerra-outubro-com-pouca-variacao.html"}
+            {"label": "Reportagem (02/11): Algodão perde força em NY e passa a cair após abrir em alta — NA", "url": "https://www.noticiasagricolas.com.br/noticias/algodao/430685-algodao-perde-forca-em-nova-york-nesta-segunda-feira-e-passa-a-cair-apos-abrir-com-alta-de-quase-1.amp.html"}
           ]
         },
         {
-          "elo": "Elo: Indústrias e Confinamentos (Caroço Salta +3,24% Hoje no MT)",
-          "direction": "Atenção máxima: o Caroço de Algodão no IMEA-MT saltou +3,24% hoje (de R$ 688,17 para R$ 710,49/t) puxado pela demanda pecuária! Ainda assim, frente à Bahia (R$ 966,67/t) e ao Boi a R$ 405/@ na B3, continua muito barato — feche compras imediatamente antes de novas altas!",
+          "elo": "Elo: Indústrias e Confinamentos (Caroço Salta +3,24% no MT)",
+          "direction": "O salto de +3,24% no Caroço de Algodão no MT (para R$ 710,49/t) mostra que a demanda de confinamentos já começou a enxugar a oferta. Antecipe compras antes que o spread em relação à Bahia (R$ 955-966/t) se feche!",
           "reference_links": [
-            {"label": "Tabelas Físicas de Algodão e Caroço IMEA-MT (30/10/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}
+            {"label": "Tabelas Físicas de Caroço de Algodão IMEA-MT e Bahia — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}
           ]
         }
       ]
     },
     {
-      "title": "☕🐂 Complexo Café (Guaxupé Sobe a R$ 1.732/sc Hoje) & Pecuária (Agromove Projeta Boi a R$ 430–440/@ Até Fev/27)",
-      "market_bias": "Café Arábica Interrompe 4 Quedas Nesta Sexta-Feira em NY e Guaxupé Sobe +0,58% Hoje para R$ 1.732,00/sc / Agromove Projeta Arroba do Boi Entre R$ 430 e R$ 440 Até Fevereiro de 2027!",
-      "executive_summary": "Conforme reportagem de fechamento publicada hoje (30/10 às 14h57) pelo Notícias Agrícolas, o café arábica interrompeu a sequência de quatro quedas consecutivas nesta sexta-feira em Nova Iorque (após subir mais de 1% ao meio-dia, encerrando a semana com ajuste de -6,59% e o mês de outubro com leve variação de -1,20% em NY), acompanhado por ganhos generalizados do robusta em Londres e alta do Março/27 na B3 para US$ 350,25/sc (+0,65%). No físico brasileiro atualizado hoje (30/10), o dólar a R$ 5,4456 puxou nova alta de +0,58% em Guaxupé-MG (Cooxupé) para R$ 1.732,00/sc no Bebida Dura Tipo 6 (e R$ 1.696,00/sc no Tipo 6/7, +0,83%), enquanto Manhuaçu-MG (Matas de Minas) registrou R$ 1.570,00/sc e a meteorologia alerta para temporais no feriado em MG, RJ e ES. Na Pecuária, além do Boi Gordo bater R$ 405,00 a R$ 406,90/@ hoje no Nov/26 da B3 e R$ 389,20/@ no Esalq, projeções da consultoria Agromove divulgadas hoje (13h33) apontam que a arroba pode chegar entre R$ 430,00 e R$ 440,00 até fevereiro de 2027!",
+      "title": "☕🐂 Complexo Café (Fecha em Forte Alta de +2,12% a 293,30 ¢/lb em NY!) & Pecuária (Reuters Destaca Rota de R$ 400/@!)",
+      "market_bias": "Café Inicia Novembro com Altas Superiores a 1% a 2% no Fechamento de NY e Londres (Dez/26 Toca 297,05 ¢ e Fecha a 293,30 ¢/lb, +2,12%!) / Reuters Destaca que Dólar, Oferta Baixa e China Colocam Boi na Rota de R$ 400/@!",
+      "executive_summary": "Conforme reportagem de fechamento publicada hoje (02/11 às 16h53) pelo Notícias Agrícolas, o café iniciou novembro com altas superiores a 1% a 2% em Nova Iorque e Londres em meio à atenção aos estoques certificados da ICE: o contrato Dezembro/26 na ICE NY alcançou máxima intradiária de 297,05 cents/lb e fechou cotado a 293,30 cents/lb (+2,12% / +6,15 cents no dia!)! Somada ao dólar em R$ 5,4373 e à conquista das três categorias do Cup of Excellence 2026 pela Mantiqueira de Minas com cafés Gesha, essa disparada garante uma reabertura de forte alta amanhã (terça-feira, 03/11) na Praça de Manhuaçu-MG (Matas de Minas, hoje em R$ 1.586,00/sc), no Cepea Arábica (R$ 1.598,37/sc) e nas cooperativas (Guaxupé a R$ 1.732 no Dura e R$ 1.795/sc no CD)! Na Pecuária, reportagem especial da Reuters publicada hoje confirma que o dólar alto, a oferta baixa e a exportação à China colocam o boi gordo no Brasil na rota consolidada de R$ 400/arroba (já batendo R$ 407,50/@ no Nov/26 da B3, R$ 389,90 no Esalq SP, R$ 380 em MG e quarto traseiro subindo +5,36% no atacado para R$ 29,50/kg, com a Agromove projetando R$ 430 a R$ 440/@ até fev/27)!",
       "news_sources": [
         {
-          "headline": "Café arábica interrompe sequência de perdas nesta sexta-feira, mas encerra semana com queda de 6,59% em NY (-1,20% no mês) — Notícias Agrícolas (30/10 às 14h57)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430638-cafe-arabica-interrompe-sequencia-de-perdas-nesta-sexta-feira-mas-encerra-semana-com-queda-de-6-59-em-ny.html"
+          "headline": "Café inicia novembro com altas superiores a 1% em Nova York e Londres, em meio à atenção aos estoques da ICE (Dez/26 bate 297,05 ¢ e fecha a 293,30 ¢, +2,12%) — Notícias Agrícolas (02/11 às 16h53)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430691-cafe-inicia-novembro-com-altas-superiores-a-1-em-nova-york-e-londres-em-meio-a-atencao-aos-estoques-da-ice.html"
         },
         {
-          "headline": "Projeções da Agromove apontam para arroba entre R$ 430 e R$ 440 até fevereiro de 2027 — Notícias Agrícolas (30/10 às 13h33)",
-          "url": "https://www.noticiasagricolas.com.br/podcasts/18762-projecoes-da-agromove-apontam-para-arroba-entre-r4.html"
+          "headline": "Dólar, oferta baixa e exportação à China colocam boi no Brasil na rota de R$ 400/arroba — Reuters / Notícias Agrícolas (02/11 às 09h17)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/boi/430673-dolar-oferta-baixa-e-exportacao-a-china-colocam-boi-no-brasil-na-rota-de-r400arroba.html"
         },
         {
-          "headline": "Feriado de Finados terá risco de temporais em Minas Gerais e no Espírito Santo — Notícias Agrícolas (30/10 às 11h51)",
-          "url": "https://www.noticiasagricolas.com.br/noticias/tempo-e-clima/430619-feriado-de-finados-tera-risco-de-temporais-em-minas-gerais-e-no-espirito-santo.html"
+          "headline": "Mantiqueira de Minas conquista as três categorias do Cup of Excellence 2026 (Gesha vence nas três modalidades) — CaféPoint",
+          "url": "https://www.cafepoint.com.br/noticias/giro-de-noticias/mantiqueira-de-minas-conquista-as-tres-categorias-do-cup-of-excellence-2026-242742/"
         },
         {
-          "headline": "Tabela Oficial Café Físico 30/10/2026: Guaxupé-MG (Cooxupé) sobe +0,58% hoje para R$ 1.732,00/sc — Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe/cafe-arabica-mercado-fisico-tipo-6-duro"
+          "headline": "[Cotação Oficial] Praça de Manhuaçu-MG (Matas de Minas): Café Arábica Bebida Dura Tipo 6 sobe +1,0% para R$ 1.586,00/sc — Agrolink",
+          "url": "https://www.agrolink.com.br/cotacoes/graos/cafe"
         },
         {
-          "headline": "[Cotação Oficial 30/10/2026] Praça de Manhuaçu-MG (Matas de Minas): Café Arábica Bebida Dura Tipo 6 a R$ 1.570,00/sc — Agrolink",
-          "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
+          "headline": "Boi gordo passa dos R$ 400 e entra em novembro com oferta apertada (MG chega a R$ 380/@ e traseiro sobe 5,36% para R$ 29,50/kg) — Panorama MT",
+          "url": "https://panoramamt.com.br/agronegocio/boi-gordo-passa-dos-r-400-e-entra-em-novembro-com-oferta-apertada/"
         }
       ],
       "strategic_directions_by_elo": [
         {
-          "elo": "Elo: Cafeicultores — Matas de Minas (Manhuaçu-MG), Cerrado e Sul de MG (Guaxupé a R$ 1.732/sc)",
-          "direction": "A interrupção das quedas em NY hoje somada ao dólar em R$ 5,4456 (PTAX a R$ 5,4212) já fez a Cooxupé em Guaxupé subir mais +0,58% hoje para R$ 1.732,00/sc! Com o feriado de Finados trazendo alerta de temporais em Minas Gerais e Espírito Santo, aproveite o NDF a R$ 5,6517 para travar vendas futuras!",
+          "elo": "Elo: Cafeicultores — Matas de Minas (Manhuaçu-MG a R$ 1.586/sc), Cerrado (Patrocínio/Araguari a R$ 1.725-1.730) e Sul de MG (Guaxupé CD a R$ 1.795/sc)",
+          "direction": "O fechamento do Café Arábica Dez/26 hoje em NY com salto de +2,12% a 293,30 cents/lb (após máxima de 297,05 cents!) somado ao dólar em R$ 5,4373 garante que amanhã (terça-feira, 03/11) as tabelas físicas em Manhuaçu-MG e nas cooperativas (Cooxupé, Expocaccer, Minasul) abrirão com alta de R$ 20 a R$ 35/saca! Aproveite o rali de amanhã para vender lotes físicos e travar NDF (R$ 5,6431)!",
           "reference_links": [
-            {"label": "Reportagem (30/10 14h57): Café arábica interrompe sequência de perdas nesta sexta-feira — NA", "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430638-cafe-arabica-interrompe-sequencia-de-perdas-nesta-sexta-feira-mas-encerra-semana-com-queda-de-6-59-em-ny.html"},
-            {"label": "Tabela Oficial Café Físico 30/10 (Guaxupé sobe +0,58% a R$ 1.732,00/sc) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe/cafe-arabica-mercado-fisico-tipo-6-duro"}
+            {"label": "Reportagem (02/11 16h53): Café inicia novembro com altas superiores a 1% em NY e Londres — NA", "url": "https://www.noticiasagricolas.com.br/noticias/cafe/430691-cafe-inicia-novembro-com-altas-superiores-a-1-em-nova-york-e-londres-em-meio-a-atencao-aos-estoques-da-ice.html"},
+            {"label": "Reportagem: Mantiqueira de Minas conquista as 3 categorias do Cup of Excellence 2026 — CaféPoint", "url": "https://www.cafepoint.com.br/noticias/giro-de-noticias/mantiqueira-de-minas-conquista-as-tres-categorias-do-cup-of-excellence-2026-242742/"}
           ]
         },
         {
-          "elo": "Elo: Pecuaristas e Confinamentos (Projeção Agromove de R$ 430 a R$ 440/@ Até Fev/27)",
-          "direction": "Com a consultoria Agromove projetando hoje que a arroba pode chegar entre R$ 430 e R$ 440 até fevereiro de 2027 (e os EUA registrando o menor abate desde 1963), escalone travas na B3 (que hoje já bateu R$ 405,00 a R$ 406,90/@) ou compre opções de Call para participar da alta!",
+          "elo": "Elo: Pecuaristas e Confinamentos (Rota de R$ 400/@ segundo a Reuters, B3 a R$ 407,50/@ e Quarto Traseiro +5,36%)",
+          "direction": "Com a reportagem especial da Reuters de hoje confirmando que o dólar, a oferta baixa e as exportações para a China colocam o boi na rota consolidada de R$ 400/@ (e a B3 já pagando R$ 407,50/@ no Nov/26), escalone travas na reabertura de amanhã e garanta imediatamente os insumos de ração!",
           "reference_links": [
-            {"label": "Projeção (30/10 13h33): Agromove aponta para arroba entre R$ 430 e R$ 440 até fev/27 — NA", "url": "https://www.noticiasagricolas.com.br/podcasts/18762-projecoes-da-agromove-apontam-para-arroba-entre-r4.html"}
+            {"label": "Reportagem Especial (02/11): Dólar, oferta baixa e China colocam boi na rota de R$ 400/@ — Reuters / NA", "url": "https://www.noticiasagricolas.com.br/noticias/boi/430673-dolar-oferta-baixa-e-exportacao-a-china-colocam-boi-no-brasil-na-rota-de-r400arroba.html"}
           ]
         }
       ]
     }
   ],
   "weekly_evolution_wtd": {
-    "period_start": "25/10/2026",
-    "period_end": "30/10/2026",
-    "period_current": "Semana Consolidada (WTD — Fechamento Oficial 30/10 às 17:31 BRT)",
+    "period_start": "01/11/2026",
+    "period_end": "02/11/2026",
+    "period_current": "Semana Corrente (WTD — Domingo 01/11 a Segunda-Feira 02/11 às 17:30 BRT)",
     "assets": [
       {
         "asset": "Dólar Comercial (USD/BRL)",
         "unit": "R$",
-        "sunday_open_ref": 5.0377,
-        "current_value": 5.4456,
-        "weekly_change_pct": 8.10,
-        "weekly_driver": "Subiu +1,09% hoje para fechar a sexta-feira a R$ 5,4456 (máxima de R$ 5,4564 e PTAX mensal a R$ 5,4212), acumulando +8,10% na semana!"
+        "sunday_open_ref": 5.4364,
+        "current_value": 5.4373,
+        "weekly_change_pct": 0.02,
+        "weekly_driver": "Fechou firme a R$ 5,4373 neste feriado de Finados (máxima hoje de R$ 5,4437), preservando o salto de +9,15% da semana anterior!"
       },
       {
         "asset": "Petróleo WTI (Dez/26)",
         "unit": "US$/bbl",
-        "sunday_open_ref": 99.90,
-        "current_value": 103.92,
-        "weekly_change_pct": 4.02,
-        "weekly_driver": "Avançou +1,88% hoje para US$ 103,92 a US$ 104,01/bbl (+4,02% na semana) após ataque no Estreito de Ormuz, com diesel S-10 subindo +19,4% em 12 meses."
+        "sunday_open_ref": 104.12,
+        "current_value": 96.80,
+        "weekly_change_pct": -7.03,
+        "weekly_driver": "Despencou mais de -7,0% hoje (02/11), caindo abaixo de US$ 100/bbl (e Brent recuando p/ perto de US$ 105/bbl) com expectativas de acordo para encerrar guerra com Irã!"
       },
       {
-        "asset": "Soja Paranaguá (Esalq)",
+        "asset": "Café Arábica (ICE NY Dez/26)",
+        "unit": "¢/lb",
+        "sunday_open_ref": 287.15,
+        "current_value": 293.30,
+        "weekly_change_pct": 2.12,
+        "weekly_driver": "Fechou em forte alta de +2,12% hoje (02/11) em Nova Iorque a 293,30 ¢/lb (após bater máxima de 297,05 ¢/lb), garantindo salto nas praças de MG amanhã!"
+      },
+      {
+        "asset": "Milho Chicago (CBOT Dez/26)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 4.4775,
+        "current_value": 4.4825,
+        "weekly_change_pct": 0.11,
+        "weekly_driver": "Fechou em leve alta de +0,11% hoje (02/11) a US$ 4,4825/bu (Mar/27 +1,00¢), com inspeções semanais subindo +38,63% e etanol acima de 2025 nos EUA!"
+      },
+      {
+        "asset": "Soja Chicago (CBOT Jan/27)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 12.3425,
+        "current_value": 12.1500,
+        "weekly_change_pct": -1.56,
+        "weekly_driver": "Recuou mais de -1% hoje em Chicago (Jan/27 perto de US$ 12,15 e Nov/26 perto de US$ 12,00) com tombo de 7% do petróleo e plantio em 53% no Brasil (AgRural)."
+      },
+      {
+        "asset": "Trigo Chicago (CBOT Dez/26)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 6.0350,
+        "current_value": 6.0450,
+        "weekly_change_pct": 0.17,
+        "weekly_driver": "Recuperou os US$ 6,00/bu e iniciou novembro com pequenas altas hoje em Chicago, somando-se às quebras em SP (> 80%), PR (-34%) e RS (~50%)."
+      },
+      {
+        "asset": "Soja Paranaguá & Uberlândia-MG",
         "unit": "R$/sc",
-        "sunday_open_ref": 152.41,
-        "current_value": 158.28,
-        "weekly_change_pct": 3.85,
-        "weekly_driver": "Avançou +3,85% na semana (+R$ 5,87/sc) para R$ 158,28/sc, com Chicago voltando a subir hoje (+0,20% a US$ 12,2225/bu)."
-      },
-      {
-        "asset": "Soja Triângulo (Uberlândia-MG)",
-        "unit": "R$/sc",
-        "sunday_open_ref": 142.05,
-        "current_value": 148.57,
-        "weekly_change_pct": 4.59,
-        "weekly_driver": "Saltou +4,59% na semana (+R$ 6,52/sc) para R$ 148,57/sc em Uberlândia-MG, enquanto LEM-BA subiu +3,57% hoje para R$ 145,00/sc!"
-      },
-      {
-        "asset": "Milho Esalq & Goiás",
-        "unit": "R$/sc",
-        "sunday_open_ref": 64.27,
-        "current_value": 65.59,
-        "weekly_change_pct": 2.05,
-        "weekly_driver": "Subiu +2,05% na semana no Esalq (R$ 65,59/sc), com Jataí/Rio Verde-GO subindo +1,92% hoje para R$ 53,00/sc e Tangará-MT +1,19% para R$ 42,50/sc!"
-      },
-      {
-        "asset": "Trigo Cepea (Praça PR)",
-        "unit": "R$/t",
-        "sunday_open_ref": 1560.32,
-        "current_value": 1578.12,
-        "weekly_change_pct": 1.14,
-        "weekly_driver": "Subiu +1,14% na semana para R$ 1.578,12/t com perdas nas safras do Paraná (-34%) e de São Paulo."
-      },
-      {
-        "asset": "Caroço de Algodão (IMEA-MT)",
-        "unit": "R$/t",
-        "sunday_open_ref": 688.17,
-        "current_value": 710.49,
-        "weekly_change_pct": 3.24,
-        "weekly_driver": "Deu um salto de +3,24% hoje (30/10) no IMEA-MT para R$ 710,49/t (+R$ 22,32/t), mantendo Cepea Pluma em 412,15 ¢ R$/lb!"
-      },
-      {
-        "asset": "Café Guaxupé & Manhuaçu-MG",
-        "unit": "R$/sc",
-        "sunday_open_ref": 1710.00,
-        "current_value": 1732.00,
-        "weekly_change_pct": 1.29,
-        "weekly_driver": "Guaxupé-MG subiu mais +0,58% hoje (30/10) para R$ 1.732,00/sc (+1,29% nos últimos dias, com Manhuaçu-MG a R$ 1.570,00/sc) após NY interromper quedas!"
+        "sunday_open_ref": 148.93,
+        "current_value": 148.93,
+        "weekly_change_pct": 0.00,
+        "weekly_driver": "Em R$ 148,93/sc em Uberlândia-MG e R$ 158,88/sc em Paranaguá; produtor deve vender amanhã cedo antes que o recuo de 1% de Chicago seja repassado!"
       },
       {
         "asset": "Boi Gordo Esalq & B3 (SP)",
         "unit": "R$/@",
-        "sunday_open_ref": 381.40,
-        "current_value": 389.20,
-        "weekly_change_pct": 2.05,
-        "weekly_driver": "Avançou +2,05% na semana para R$ 389,20/@ (B3 Nov a R$ 405,00-406,90/@), com Agromove projetando R$ 430 a R$ 440/@ até fev/27!"
+        "sunday_open_ref": 389.90,
+        "current_value": 389.90,
+        "weekly_change_pct": 0.00,
+        "weekly_driver": "Reportagem especial da Reuters hoje (02/11) confirma que dólar, oferta baixa e exportação à China colocam o boi na rota consolidada de R$ 400/@ (B3 a R$ 407,50/@)!"
       }
     ]
   },
   "monthly_evolution_mtd": {
-    "month_start": "2026-10-01",
-    "current_date": "2026-10-30",
+    "month_start": "2026-11-01",
+    "current_date": "2026-11-02",
     "days_elapsed": 21,
     "daily_dates": [
-      "01/10", "02/10", "05/10", "06/10", "07/10", "08/10", "09/10", "13/10", "14/10", "15/10",
-      "16/10", "19/10", "20/10", "21/10", "22/10", "23/10", "26/10", "27/10", "28/10", "29/10", "30/10"
+      "05/10", "06/10", "07/10", "08/10", "09/10", "13/10", "14/10", "15/10", "16/10", "19/10",
+      "20/10", "21/10", "22/10", "23/10", "26/10", "27/10", "28/10", "29/10", "30/10", "01/11", "02/11"
     ],
     "assets": [
       {
         "asset": "Dólar Comercial (USD/BRL)",
         "unit": "R$",
-        "month_open_value": 5.4245,
+        "month_open_value": 5.4364,
         "mid_month_10_oct": 5.1200,
-        "current_value": 5.4456,
-        "mtd_change_pct": 0.39,
-        "monthly_narrative": "Abriu outubro em R$ 5,4245, tocou piso de R$ 4,9900 (23/10) e disparou após a eleição, fechando o mês hoje (30/10) a R$ 5,4456 (máxima de R$ 5,4564 e PTAX mensal a R$ 5,4212)!",
+        "current_value": 5.4373,
+        "mtd_change_pct": 0.02,
+        "monthly_narrative": "Fecha o feriado de Finados (02/11) firme em R$ 5,4373 (máxima de R$ 5,4437 hoje) após registrar na última semana de outubro a maior alta semanal desde 2008 (+9,15%)!",
         "daily_history": [
-          5.4245, 5.4120, 5.3900, 5.3500, 5.3000, 5.2500, 5.2000, 5.1200, 5.1000, 5.0800,
-          5.0500, 5.0300, 5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346, 5.3420, 5.3875, 5.4456
+          5.3900, 5.3500, 5.3000, 5.2500, 5.2000, 5.1200, 5.1000, 5.0800, 5.0500, 5.0300,
+          5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346, 5.3420, 5.3875, 5.4387, 5.4364, 5.4373
         ]
       },
       {
         "asset": "Petróleo WTI (Dez/26)",
         "unit": "US$/bbl",
-        "month_open_value": 92.87,
+        "month_open_value": 104.12,
         "mid_month_10_oct": 91.85,
-        "current_value": 103.92,
-        "mtd_change_pct": 11.90,
-        "monthly_narrative": "Série histórica oficial: abriu 01/10 a US$ 92,87 e saltou +11,90% no mês para fechar outubro a US$ 103,92/barril (com Brent a US$ 113,29)!",
+        "current_value": 96.80,
+        "mtd_change_pct": -7.03,
+        "monthly_narrative": "Após atingir a máxima de 6 meses (US$ 104,12-104,48), despenca mais de -7,0% hoje (02/11) para abaixo de US$ 100/bbl com expectativas de acordo para encerrar guerra com Irã!",
         "daily_history": [
-          92.87, 91.11, 89.43, 89.44, 88.28, 91.49, 91.85, 94.14, 95.09, 96.50,
-          99.02, 98.54, 97.82, 97.15, 99.47, 103.27, 101.76, 99.90, 102.78, 101.52, 103.92
+          89.43, 89.44, 88.28, 91.49, 91.85, 94.14, 95.09, 96.50, 99.02, 98.54,
+          97.82, 97.15, 99.47, 103.27, 101.76, 99.90, 102.78, 101.52, 104.48, 104.12, 96.80
         ]
       },
       {
         "asset": "Soja Paranaguá (Esalq)",
         "unit": "R$/sc",
-        "month_open_value": 161.56,
+        "month_open_value": 158.88,
         "mid_month_10_oct": 158.00,
-        "current_value": 158.28,
-        "mtd_change_pct": -2.03,
-        "monthly_narrative": "Após tocar R$ 152,41 em 23/10, recuperou R$ 5,87/sc na última semana, fechando outubro a R$ 158,28/sc (com Nov/26 nos portos a R$ 160-161/sc)!",
+        "current_value": 158.88,
+        "mtd_change_pct": 0.00,
+        "monthly_narrative": "Em R$ 158,88/sc (+4,25% na última semana); atenção na reabertura de amanhã após a soja cair > 1% hoje em Chicago com o tombo do petróleo!",
         "daily_history": [
-          161.56, 161.00, 160.50, 160.00, 159.50, 159.00, 158.50, 157.50, 157.00, 156.50,
-          156.00, 154.50, 153.80, 153.50, 152.90, 152.41, 155.55, 157.41, 157.42, 158.28, 158.28
+          160.50, 160.00, 159.50, 159.00, 158.50, 157.50, 157.00, 156.50, 156.00, 154.50,
+          153.80, 153.50, 152.90, 152.41, 155.55, 157.41, 157.42, 158.28, 158.88, 158.88, 158.88
         ]
       },
       {
         "asset": "Soja Uberlândia-MG (Triângulo)",
         "unit": "R$/sc",
-        "month_open_value": 148.00,
+        "month_open_value": 148.93,
         "mid_month_10_oct": 145.50,
-        "current_value": 148.57,
-        "mtd_change_pct": 0.39,
-        "monthly_narrative": "Série oficial Grão Direto Uberlândia-MG: tocou piso de R$ 140,97 em 22/10, disparou R$ 7,60/sc na reta final e fechou outubro positiva a R$ 148,57/sc (+0,39%)!",
+        "current_value": 148.93,
+        "mtd_change_pct": 0.00,
+        "monthly_narrative": "Na máxima de R$ 148,93/sc (+4,84% na última semana, com Ibiá-MG a R$ 150,00/sc), enquanto o plantio chega a 53% no Brasil segundo a AgRural!",
         "daily_history": [
-          148.00, 147.50, 147.00, 146.50, 146.00, 145.50, 145.00, 144.64, 147.23, 148.03,
-          148.40, 147.81, 146.74, 141.30, 140.97, 142.05, 145.84, 147.24, 148.57, 148.57, 148.57
+          147.00, 146.50, 146.00, 145.50, 145.00, 144.64, 147.23, 148.03, 148.40, 147.81,
+          146.74, 141.30, 140.97, 142.05, 145.84, 147.24, 148.57, 148.93, 148.93, 148.93, 148.93
         ]
       },
       {
         "asset": "Trigo Cepea (Praça PR)",
         "unit": "R$/t",
-        "month_open_value": 1545.00,
+        "month_open_value": 1569.82,
         "mid_month_10_oct": 1552.00,
-        "current_value": 1578.12,
-        "mtd_change_pct": 2.14,
-        "monthly_narrative": "Subiu +2,14% em outubro na Praça do Paraná, encerrando a R$ 1.578,12/t após confirmação de perdas severas no PR (-34%) e em SP.",
+        "current_value": 1569.82,
+        "mtd_change_pct": 0.00,
+        "monthly_narrative": "Firme em R$ 1.569,82/t no Paraná com perdas severas em SP (> 80%), PR (-34%) e RS (~50%) e trigo recuperando os US$ 6,00/bu hoje em Chicago!",
         "daily_history": [
-          1545.00, 1546.00, 1548.00, 1550.00, 1551.00, 1552.00, 1553.00, 1554.00, 1555.00, 1556.00,
-          1558.00, 1559.00, 1560.00, 1560.32, 1560.32, 1560.32, 1563.50, 1569.61, 1571.30, 1578.12, 1578.12
+          1548.00, 1550.00, 1551.00, 1552.00, 1553.00, 1554.00, 1555.00, 1556.00, 1558.00, 1559.00,
+          1560.00, 1560.32, 1560.32, 1560.32, 1563.50, 1569.61, 1571.30, 1578.12, 1569.82, 1569.82, 1569.82
         ]
       },
       {
         "asset": "Milho Campinas (Esalq)",
         "unit": "R$/sc",
-        "month_open_value": 68.67,
+        "month_open_value": 65.64,
         "mid_month_10_oct": 66.50,
-        "current_value": 65.59,
-        "mtd_change_pct": -4.49,
-        "monthly_narrative": "Resistiu bem à queda de mais de 10% em Chicago, reagindo +1,33% para R$ 65,59/sc (com Goiás subindo hoje +1,92% para R$ 53,00/sc).",
+        "current_value": 65.64,
+        "mtd_change_pct": 0.00,
+        "monthly_narrative": "Em R$ 65,64/sc no Esalq (Jan/27 na B3 a R$ 71,16/sc), apoiado pelo fechamento positivo hoje em Chicago (US$ 4,4825/bu, +0,11%) e +38,63% nas inspeções dos EUA!",
         "daily_history": [
-          68.67, 68.40, 68.10, 67.80, 67.50, 67.20, 66.80, 66.20, 65.90, 65.60,
-          65.30, 64.90, 64.60, 64.45, 64.30, 64.27, 64.24, 64.87, 64.73, 65.59, 65.59
+          68.10, 67.80, 67.50, 67.20, 66.80, 66.20, 65.90, 65.60, 65.30, 64.90,
+          64.60, 64.45, 64.30, 64.27, 64.24, 64.87, 64.73, 65.59, 65.64, 65.64, 65.64
         ]
       },
       {
         "asset": "Café Matas de Minas (Praça Manhuaçu-MG T.6)",
         "unit": "R$/sc",
-        "month_open_value": 1597.00,
+        "month_open_value": 1586.00,
         "mid_month_10_oct": 1560.00,
-        "current_value": 1570.00,
-        "mtd_change_pct": -1.69,
-        "monthly_narrative": "Série oficial Agrolink Manhuaçu-MG: fechou outubro a R$ 1.570,00/sc (-1,69%), enquanto Guaxupé-MG subiu hoje +0,58% para R$ 1.732,00/sc!",
+        "current_value": 1586.00,
+        "mtd_change_pct": 0.00,
+        "monthly_narrative": "Em R$ 1.586,00/sc (+1,0% antes do feriado) em Manhuaçu-MG; saltará forte amanhã (03/11) após o café fechar hoje em alta de +2,12% em NY (293,30 ¢/lb, máxima de 297,05 ¢)!",
         "daily_history": [
-          1597.0, 1597.0, 1608.0, 1574.0, 1620.0, 1620.0, 1560.0, 1560.0, 1584.0, 1616.0,
-          1617.0, 1654.0, 1677.0, 1647.0, 1664.0, 1647.0, 1615.0, 1627.0, 1594.0, 1594.0, 1570.0
+          1608.0, 1574.0, 1620.0, 1620.0, 1560.0, 1560.0, 1584.0, 1616.0, 1617.0, 1654.0,
+          1677.0, 1647.0, 1664.0, 1647.0, 1615.0, 1627.0, 1594.0, 1570.0, 1586.0, 1586.0, 1586.0
         ]
       },
       {
         "asset": "Boi Gordo Esalq/B3 (SP)",
         "unit": "R$/@",
-        "month_open_value": 364.43,
+        "month_open_value": 389.90,
         "mid_month_10_oct": 372.00,
-        "current_value": 389.20,
-        "mtd_change_pct": 6.80,
-        "monthly_narrative": "Disparou +6,80% em outubro (+R$ 24,77/@ no mês), fechando a R$ 389,20/@ no Esalq, R$ 405-406,90/@ na B3 e com projeção da Agromove de R$ 430-440/@ até fev/27!",
+        "current_value": 389.90,
+        "mtd_change_pct": 0.00,
+        "monthly_narrative": "Em recorde de R$ 389,90/@ no Esalq, negócios a R$ 400 em SP, R$ 380 em MG e R$ 407,50/@ na B3, com Reuters destacando rota consolidada de R$ 400/@!",
         "daily_history": [
-          364.43, 365.50, 367.00, 368.50, 370.00, 371.00, 372.00, 373.50, 375.00, 376.50,
-          378.00, 379.00, 380.00, 380.50, 381.00, 381.40, 381.40, 386.30, 389.05, 389.20, 389.20
+          367.00, 368.50, 370.00, 371.00, 372.00, 373.50, 375.00, 376.50, 378.00, 379.00,
+          380.00, 380.50, 381.00, 381.40, 381.40, 386.30, 389.05, 389.20, 389.90, 389.90, 389.90
         ]
       }
     ]
@@ -469,75 +468,75 @@
   "audit_panel_projections": [
     {
       "commodity": "Dólar Comercial & PTAX (USD/BRL)",
-      "current_base": "PTAX 30/10: R$ 5,4212 | Spot: R$ 5,4456 — ✅ CRAVOU A PTAX PROJETADA (R$ 5,42) E BANDA ALTISTA NO SPOT",
-      "short_term_target_23_oct": "R$ 5,38 - R$ 5,52 (Alvo 7 dias Nov/26)",
+      "current_base": "Spot (02/11 17h15): R$ 5,4373 | PTAX: R$ 5,4212 | Fut: 5.471,00",
+      "short_term_target_23_oct": "R$ 5,38 - R$ 5,52 (Alvo 7 dias — 06/11)",
       "end_of_month_30_oct": {
-        "base_case": "R$ 5,45 (Nov/26)",
+        "base_case": "R$ 5,45 (30/11)",
         "bull_case": "R$ 5,60",
         "bear_case": "R$ 5,30"
       },
-      "audit_trigger": "AUDITORIA FINAL DE OUTUBRO: PTAX mensal fechou exatamente no nosso alvo base de R$ 5,42 (R$ 5,4212) e o spot atingiu R$ 5,4456!"
+      "audit_trigger": "Reabertura da B3 amanhã (03/11), pacote fiscal e juros DIs acima de 15% a.a. (maior alta semanal desde 2008)."
     },
     {
       "commodity": "Petróleo WTI & Brent (USD/barril)",
-      "current_base": "WTI: US$ 103,92-104,01 | Brent: US$ 113,29 — ✅ CRAVOU O CENÁRIO BASE (US$ 104,00)",
-      "short_term_target_23_oct": "US$ 101,00 - US$ 107,00 (WTI 7d)",
+      "current_base": "WTI < US$ 100 | Brent ~US$ 105 (-7% hoje em 02/11!)",
+      "short_term_target_23_oct": "US$ 95,00 - US$ 102,50 (WTI 7d — 06/11)",
       "end_of_month_30_oct": {
-        "base_case": "US$ 104,50 (Nov/26)",
-        "bull_case": "US$ 109,00",
-        "bear_case": "US$ 99,00"
+        "base_case": "US$ 99,50 (30/11)",
+        "bull_case": "US$ 105,00",
+        "bear_case": "US$ 94,00"
       },
-      "audit_trigger": "AUDITORIA FINAL DE OUTUBRO: Ataque no Estreito de Ormuz levou o WTI exatamente ao nosso alvo de US$ 104,00/bbl!"
+      "audit_trigger": "Expectativas de acordo para encerrar guerra com Irã derrubam petróleo em > 7% hoje, mas frete em MT já subiu 1,5% (IMEA)."
     },
     {
-      "commodity": "Soja Paranaguá & Uberlândia-MG",
-      "current_base": "R$ 158,28 (Porto) | R$ 148,57 (MG) | R$ 145 (BA) — ✅ ACERTO PRECISO EM TODAS AS PRAÇAS",
-      "short_term_target_23_oct": "R$ 158,00 - R$ 162,00 (Porto 7d)",
+      "commodity": "Soja Paranaguá, Santos & Uberlândia-MG",
+      "current_base": "R$ 158,88 (Paranaguá) | R$ 148,93 (Uberlândia) | CBOT hoje: -1% (Jan ~US$ 12,15)",
+      "short_term_target_23_oct": "R$ 156,50 - R$ 160,50 (Porto 7d — 06/11)",
       "end_of_month_30_oct": {
-        "base_case": "R$ 160,00 (Nov/26)",
-        "bull_case": "R$ 164,00",
-        "bear_case": "R$ 155,00"
+        "base_case": "R$ 159,00 (30/11)",
+        "bull_case": "R$ 163,50",
+        "bear_case": "R$ 154,50"
       },
-      "audit_trigger": "AUDITORIA FINAL DE OUTUBRO: Cravou R$ 158,28 em Paranaguá, R$ 148,57 em Uberlândia e +3,57% hoje em LEM-BA (R$ 145)!"
+      "audit_trigger": "Queda de > 1% hoje na CBOT (com tombo de 7% do petróleo e plantio BR em 53%) vs. dólar a R$ 5,4373 e estoques de óleo -16% nos EUA."
     },
     {
       "commodity": "Trigo Cepea (Praças PR, RS, SP e GO)",
-      "current_base": "R$ 1.578,12/t (PR) | R$ 1.493,38/t (RS) — ✅ CRAVOU O ALVO DO PARANÁ (R$ 1.580/t)",
-      "short_term_target_23_oct": "R$ 1.570,00 - R$ 1.605,00 / t (PR 7d)",
+      "current_base": "R$ 1.569,82/t (PR) | R$ 1.482,17/t (RS) | CBOT hoje: > US$ 6,00/bu",
+      "short_term_target_23_oct": "R$ 1.565,00 - R$ 1.600,00 / t (PR 7d — 06/11)",
       "end_of_month_30_oct": {
-        "base_case": "R$ 1.590,00 (Nov/26)",
-        "bull_case": "R$ 1.630,00",
-        "bear_case": "R$ 1.550,00"
+        "base_case": "R$ 1.585,00 (30/11)",
+        "bull_case": "R$ 1.625,00",
+        "bear_case": "R$ 1.545,00"
       },
-      "audit_trigger": "AUDITORIA FINAL DE OUTUBRO: Quebra de 34% no PR e perdas em SP sustentaram o Cepea PR em R$ 1.578,12/t."
+      "audit_trigger": "Trigo recupera os US$ 6,00/bu hoje em Chicago + quebras severas em SP (> 80%), PR (-34%) e RS (~50%)."
     },
     {
-      "commodity": "Milho Esalq, B3, Goiás & MT",
-      "current_base": "R$ 65,59 (Esalq) | R$ 67,22 (B3) | R$ 53,00 (GO +1,92%) — ✅ ACERTO EXATO NA REAÇÃO INTERNA",
-      "short_term_target_23_oct": "R$ 65,50 - R$ 68,50 (Esalq 7d)",
+      "commodity": "Milho Esalq, B3 (Jan/27) & CBOT",
+      "current_base": "R$ 65,64 (Esalq) | R$ 71,16 (Jan B3) | CBOT fecho hoje: US$ 4,4825 (+0,11%)",
+      "short_term_target_23_oct": "R$ 65,50 - R$ 68,50 (Esalq 7d — 06/11)",
       "end_of_month_30_oct": {
-        "base_case": "R$ 67,50 (Nov/26)",
-        "bull_case": "R$ 70,50",
-        "bear_case": "R$ 64,50"
+        "base_case": "R$ 72,00 (Jan/27 B3 em 30/11)",
+        "bull_case": "R$ 74,50",
+        "bear_case": "R$ 69,50"
       },
-      "audit_trigger": "AUDITORIA FINAL DE OUTUBRO: Mesmo com Chicago caindo > 10% no mês, B3 e físico brasileiro subiram puxados pelo dólar!"
+      "audit_trigger": "Fechamento positivo hoje na CBOT (+0,11%), salto de +38,63% nas inspeções semanais dos EUA e etanol acima de 2025."
     },
     {
       "commodity": "Café Matas de Minas & Sul/Cerrado MG",
-      "current_base": "R$ 1.590,72 (Cepea) | R$ 1.732,00 (Guaxupé +0,58% hoje) | R$ 1.570 (Manh.) — ✅ CRAVOU O ALVO BASE (R$ 1.590)",
-      "short_term_target_23_oct": "R$ 1.575,00 - R$ 1.645,00 (7d)",
+      "current_base": "R$ 1.598,37 (Cepea) | R$ 1.586,00 (Manh.) | NY fecho hoje: 293,30 ¢ (+2,12%)",
+      "short_term_target_23_oct": "R$ 1.605,00 - R$ 1.665,00 (7d — 06/11)",
       "end_of_month_30_oct": {
-        "base_case": "R$ 1.615,00 (Nov/26)",
-        "bull_case": "R$ 1.670,00",
-        "bear_case": "R$ 1.560,00"
+        "base_case": "R$ 1.635,00 (30/11)",
+        "bull_case": "R$ 1.690,00",
+        "bear_case": "R$ 1.580,00"
       },
-      "audit_trigger": "AUDITORIA FINAL DE OUTUBRO: NY interrompeu 4 quedas hoje e Guaxupé subiu mais +0,58% para R$ 1.732,00/sc com dólar a R$ 5,4456!"
+      "audit_trigger": "Café fecha hoje com salto de +2,12% em NY a 293,30 ¢/lb (máxima de 297,05 ¢), garantindo forte puxada amanhã em MG!"
     }
   ],
   "market_intelligence_pill": {
-    "title": "Descolamento Histórico de Outubro (Milho CBOT -10,5% vs. Alta no Brasil) + Salto do Caroço (+3,24%) e Farelo (+0,78%) em MT Diante do Boi Projetado a R$ 430-440/@",
-    "formula": "NDF (160 dias) = 5,4456 * [ (1 + 0,1428)^(110 / 252) ] / [ 1 + 0,0480 * (160 / 360) ] = R$ 5,6517",
-    "analysis": "O fechamento de outubro nesta sexta-feira (30/10) comprova na prática duas teses centrais da nossa mesa: (1) Embora o milho tenha acumulado queda superior a 10% em outubro em Chicago (fechando hoje a US$ 4,4775/bu) e o farelo tenha caído mais -1,43% hoje na CBOT (US$ 324,60/t), a disparada de +8,10% do dólar na semana (fechando hoje a R$ 5,4456 e PTAX mensal a R$ 5,4212) fez o milho físico subir hoje +1,92% em Goiás (R$ 53,00/sc) e +1,19% em Tangará da Serra-MT (R$ 42,50/sc); (2) Na nutrição animal, o Farelo de Soja no IMEA-MT subiu +0,78% hoje para R$ 1.936,57/t e o Caroço de Algodão no IMEA-MT saltou +3,24% hoje para R$ 710,49/t!",
-    "strategic_takeaway": "Com a consultoria Agromove projetando hoje que a arroba do boi gordo pode atingir entre R$ 430,00 e R$ 440,00 até fevereiro de 2027 (e a B3 já batendo R$ 405,00 a R$ 406,90/@ hoje), o pecuarista deve travar imediatamente seus contratos de coprodutos (caroço, farelo e DDGS), enquanto o produtor de grãos e café deve aproveitar o NDF a R$ 5,6517 (+R$ 5,63/sc de ganho extra na soja)!"
+    "title": "Mapa de Abertura Pós-Feriado para Terça-Feira (03/11): Tombo de 7% do Petróleo Derruba Soja (-1%), Mas Café (+2,12% a 293,30 ¢) e Milho (+0,11%) Fecham em Alta!",
+    "formula": "NDF (160 dias) = 5,4373 * [ (1 + 0,1428)^(110 / 252) ] / [ 1 + 0,0480 * (160 / 360) ] = R$ 5,6431",
+    "analysis": "O fechamento das bolsas norte-americanas nesta tarde de segunda-feira de Finados (02/11 às 17:30 BRT) entrega um guia de ação imediato para a reabertura do mercado brasileiro amanhã às 09h00: (1) Com o petróleo despencando mais de 7% à tarde (Brent perto de US$ 105 e WTI abaixo de US$ 100/bbl) por expectativas de acordo no Irã, o óleo de soja desabou e puxou a Soja em Chicago para queda superior a 1% (Jan/27 perto de US$ 12,15/bu e Nov/26 perto de US$ 12,00/bu, mesmo com inspeções semanais de 2,44 mi t e queda de 16% nos estoques de óleo bruto nos EUA), além de fazer o Algodão devolver os ganhos da manhã em NY; (2) Na ponta oposta, o Café Arábica (Dez/26) disparou +2,12% para fechar a 293,30 cents/lb (após máxima de 297,05 cents!), o Milho fechou em alta (+0,11% a US$ 4,4825/bu, com inspeções subindo +38,63%) e o Trigo recuperou os US$ 6,00/bu!",
+    "strategic_takeaway": "Plano tático para amanhã cedo (terça-feira, 03/11): na Soja, venda lotes disponíveis logo na abertura em Uberlândia-MG (R$ 148,93/sc) e Paranaguá (R$ 158,88/sc) antes que as tradings descontem a queda de 1% de Chicago! Já no Café, aguarde a atualização das tabelas das cooperativas e de Manhuaçu-MG, que terão forte reajuste positivo (+R$ 20 a R$ 35/saca) combinando o salto para 293,30 ¢/lb em NY com o dólar a R$ 5,4373 (NDF a R$ 5,6431)!"
   }
 }
