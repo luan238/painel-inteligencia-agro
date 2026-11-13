@@ -1,0 +1,657 @@
+{
+  "metadata": {
+    "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Praça Base: Manhuaçu-MG) / Paraná, Rio Grande do Sul & São Paulo (Trigo/Soja) / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
+    "scope": "Morning Call & Auditoria Oficial de Sexta-Feira (13/11 às 08h11): Dólar Comercial Opera em Tempo Real a R$ 5,6423 (Após Fechar 12/11 a R$ 5,6507 e Futuro Dez/26 a 5.660,50 pts, NDF a R$ 5,8561); Senado Aprova Texto-Base de Projeto Fiscal de Até R$ 60 Bi (Atualizado às 07h44), Fed Sinaliza Novos Aumentos de Juros nos EUA e Banco do Brasil Recua Após Reação do Agro Afirmando que 90% dos Produtores Estão em Dia (07h20/07h35); Petróleo Salta US$ 3 com Ataques a Instalações Energéticas Sauditas (Brent a US$ 95,82 e WTI a US$ 87,54-88,74); Indicadores Finais do Cepea de 12/11 Explodem em Bloco: Soja Paranaguá Salta +1,18% para R$ 162,31/sc (e CBOT Jan/27 Sobe +11,75¢ Hoje em 13/11 para US$ 12,3075/bu, com Uberlândia/Uberaba a R$ 150,14 e CIF a R$ 152,00/sc!), Café Cepea Salta +1,64% para R$ 1.619,43/sc (B3 Mar/27 +4,88% a US$ 344/sc, Enquanto NY Realiza Hoje às 07h44 e Manhuaçu Marca R$ 1.576 em 13/11), Algodão Cepea Sobe +0,83% para 417,68 ¢, Trigo PR Salta +0,68% para R$ 1.572,37/t e Bezerro MS Dispara +0,43% para R$ 3.624,54 (Boi Esalq a R$ 394,30/@ à Vista, R$ 398,54/@ a Prazo e R$ 400/@ no PR e RJ)!",
+    "timestamp": "13/11/2026 às 08:11 BRT (Auditoria Semanal de Sexta-Feira, Dólar em Tempo Real a R$ 5,6423, Indicadores Finais Cepea de 12/11 & Manchetes de 13/11 até 07h44)",
+    "analyst": "Analista Sênior e Estrategista de Derivativos — Germinare Agro"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "Nesta manhã de sexta-feira (13/11/2026 às 08:11 BRT), dia oficial da nossa Auditoria Semanal de Backtesting, o Dólar Comercial opera no mercado interbancário eletrônico (08h10 BRT / 11h10 UTC) cotado a R$ 5,6423 (+0,02%, após máxima de R$ 5,6452 na madrugada e fechamento oficial de ontem a R$ 5,6507 na Reuters, com o Dólar Futuro Dez/26 na B3 encerrando às 18h49 em 5.660,50 pontos, +1,04%, e PTAX em R$ 5,6143). Três fatos políticos e econômicos dominam a abertura de hoje (13/11): (1) O Senado Federal aprovou ontem à noite (atualizado hoje às 07h44) o texto-base do projeto fiscal com impacto estimado de até R$ 60 bilhões em 2027; (2) Nos EUA, a diretora do Fed Mary Daly afirmou que o banco central americano provavelmente precisará elevar ainda mais os juros para conter a inflação, enquanto ações chinesas de IA caíram após a renúncia do CEO da Nvidia; e (3) No crédito rural, após forte reação da Aprosoja Brasil, Famato, Farsul e Faesp (que declarou hoje às 07h35 que 'o Agro não é o vilão'), o Banco do Brasil recuou e divulgou nota oficial negando ter responsabilizado o setor rural por seus resultados e afirmando que 90% dos clientes do agro estão em dia! No petróleo, após ataques a instalações energéticas sauditas e interrupções em Ormuz fazerem o Brent saltar +US$ 3,06 (+3,30%) para US$ 95,82/bbl (e o WTI operar entre US$ 87,54 e US$ 88,74/bbl), a Petrobras tenta subvenção federal para a gasolina.",
+    "complexo_soja": "Os novos indicadores finais do Cepea/Esalq divulgados na noite de ontem (12/11) e o pregão eletrônico desta sexta-feira (13/11) confirmaram uma explosão nos preços da soja: no Brasil, impulsionado pelo dólar a R$ 5,65, o Indicador da Soja Esalq/B3 Paranaguá saltou +1,18% (+R$ 1,90/sc em um único dia!), atingindo R$ 162,31/saca (com Abelardo Luz-SC FOB subindo para R$ 157,00/sc e o Centro Oriental Paranaense subindo +0,71% hoje na Grão Direto para R$ 152,56/sc)! No Triângulo Mineiro (Grão Direto 13/11), tanto Uberlândia-MG quanto Uberaba-MG subiram +0,88% e cravaram R$ 150,14/saca no disponível, com ofertas de compra CIF em Uberlândia atingindo R$ 152,00/sc! E na Bolsa de Chicago, na atualização eletrônica desta sexta-feira (13/11 às 03h53), a soja voltou a subir forte: o Novembro/26 avança +7,25 cents para US$ 12,3425/bushel, o Janeiro/27 salta +11,75 cents para US$ 12,3075/bu e o Março/27 sobe +11,25 cents para US$ 12,3625/bu, refletindo a venda de 136 mil t dos EUA para a China e o alerta do CPC/NOAA de mais de 79% de chance de um El Niño forte a muito forte entre janeiro e março!",
+    "complexo_milho_etanol_ddgs": "Conforme reportagem de fechamento publicada ontem à noite (12/11 às 18h33) pelo Notícias Agrícolas, embora o milho tenha fechado em baixa em Chicago, a disparada do dólar para R$ 5,65 puxou alta nos contratos futuros da B3 (Novembro/26 subiu +0,13% para R$ 67,49/sc, Janeiro/27 subiu +0,17% para R$ 70,89/sc, Março/27 avançou +0,40% para R$ 74,80/sc e Maio/27 subiu +0,34% para R$ 73,77/sc), enquanto o Indicador Esalq/B3 Campinas fechou 12/11 em R$ 67,28/sc (-0,03%, acumulando +2,50% no mês, com Sorriso-MT subindo +1,59% a R$ 44,70/sc, Rondonópolis +1,69% a R$ 48,00/sc e ofertas CIF em Uberlândia a R$ 65,00/sc no milho e R$ 63,00/sc no sorgo)! Dois fundamentos fortíssimos reforçam a demanda doméstica por milho e sorgo hoje: (1) O Ministério de Minas e Energia apontou que os estoques de etanol do Centro-Sul estão 15% mais baixos ante 2025; e (2) O boletim Frango/Cepea publicado hoje (13/11 às 07h41) destaca que as exportações brasileiras de carne de frango atingiram o maior volume mensal desde março de 2023 e podem bater recorde em 2026 e 2027 (e o lucro da MBRF mais que dobrou no 3T26 para R$ 210 milhões)! No Trigo, o Indicador Cepea Paraná deu um salto de +0,68% (+R$ 10,59/t) em 12/11 para R$ 1.572,37/t e o Cepea RS subiu para R$ 1.475,06/t (+0,03%).",
+    "complexo_algodao": "Na consolidação oficial noturna de 12/11 do Cepea/Esalq, o Indicador do Algodão em Pluma deu um salto de +0,83%, atingindo 417,68 centavos de real por libra-peso (renovando a máxima de novembro e acumulando +2,08% na semana!), impulsionado pelo fechamento em alta de NY (Dezembro/26 a 78,67 ¢/lb = R$ 146,99/@, Março/27 a 82,51 ¢/lb = R$ 154,16/@ e Maio/27 a 84,21 ¢/lb = R$ 157,34/@ com o dólar de R$ 5,65) e pela disparada de US$ 3 no petróleo Brent! Nas praças físicas de Mato Grosso (IMEA), Alto Garças subiu +1,28% para R$ 131,67-131,69/@ e Sorriso subiu +0,41% para R$ 128,59/@, enquanto o Caroço de Algodão fechou 12/11 em R$ 695,36/ton no MT contra R$ 966,67-967,00/ton na Bahia.",
+    "complexo_cafe": "Explosão nos indicadores oficiais finais de ontem à noite (12/11): refletindo a disparada de mais de 4% na ICE NY (Dez/26 a 280,15-280,20 ¢/lb, +4,15%) e o dólar a R$ 5,65, o Indicador Cepea Arábica saltou +1,64% (+R$ 26,15/saca em um único dia!) para fechar em R$ 1.619,43/saca, enquanto no fechamento completo da B3 (18h49) o contrato Março/27 disparou +4,88% para US$ 344,00/saca (e as cooperativas saltaram para R$ 1.752,00/sc em Guaxupé, R$ 1.731,00 em Campos Gerais e R$ 1.700,00 em Franca e Poços de Caldas)! Já na abertura desta sexta-feira (13/11 às 07h44), conforme reportagem do Notícias Agrícolas, o arábica passa por realização técnica de lucros em Nova Iorque após a disparada da véspera, enquanto na Praça de Manhuaçu-MG (referência oficial das Matas de Minas) a atualização de hoje (13/11/2026) no Agrolink marca R$ 1.576,00/sc no Bebida Dura Tipo 6 e R$ 1.031,00/sc no Café Rio (com Cepea Robusta em R$ 969,24/sc). Na Pecuária, novos recordes absolutos em 12/11: o Indicador do Boi Gordo Esalq subiu a R$ 394,30/@ à vista (+0,04%), a Média SP a prazo chegou a R$ 398,54/@ (+0,04%, com o Noroeste do PR e o RJ já cravando R$ 400,00/@ a prazo na Scot Consultoria e MT subindo +1,75% a R$ 364,09/@ na Agrobrazil!) e o Bezerro Cepea MS disparou +0,43% para R$ 3.624,54/cabeça!"
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_spot_intraday_13_11_08h10": "R$ 5,6423 (+0,02% às 08h10 | Máx hoje: R$ 5,6452 | Fecho oficial ontem: R$ 5,6507, +1,58%!)",
+      "dolar_futuro_b3_18h49_e_ptax": "Fut Dez/26 fechou às 18h49 em 5.660,50 pts (+1,04%, após máxima de 5.669,50) | PTAX: R$ 5,6143",
+      "senado_aprova_fiscal_13_11_07h44": "Senado aprova texto-base de projeto fiscal com impacto de até R$ 60 bi em 2027 (Reuters 07h44)!",
+      "fed_juros_eua_e_dis_brasil": "Diretora do Fed (Daly) diz que EUA precisarão subir mais os juros | Taxas dos DIs sobem firme no BR",
+      "bb_recua_apos_reacao_agro_13_11": "Após reação de Aprosoja, Famato, Farsul e Faesp (07h35), BB nega culpar agro e diz que 90% estão em dia!",
+      "petroleo_ataques_sauditas_e_petrobras": "Brent salta +US$ 3,06 (+3,3%) p/ US$ 95,82 e WTI a US$ 87,54-88,74 c/ ataques sauditas | Petrobras pede subvenção"
+    },
+    "complexo_soja": {
+      "esalq_paranagua_12_11_dispara": "R$ 162,31 / sc (+1,18% — Salta +R$ 1,90/sc em um único dia na consolidação final do Cepea/Esalq!)",
+      "triangulo_mineiro_uberlandia_13_11": "Uberlândia e Uberaba-MG cravam R$ 150,14/sc (+0,88%) na Grão Direto e Ofertas CIF Uberlândia batem R$ 152,00/sc!",
+      "cbot_soja_13_11_03h53": "Volta a subir forte hoje (13/11)! Nov/26: US$ 12,3425 (+7,25¢) | Jan/27: US$ 12,3075 (+11,75¢!) | Mar/27: US$ 12,3625 (+11,25¢)",
+      "altas_fisico_pr_sc_rs_ms": "Abelardo Luz-SC FOB: R$ 157,00 | Centro Oriental PR (13/11): R$ 152,56 (+0,71%) | Sudoeste MS: R$ 139,61 (+0,84%)",
+      "portos_rio_grande_e_paranagua": "Rio Grande Disp: R$ 162,00 (+0,31%) e Dez: R$ 162,50 | Prêmios Paranaguá: Nov +1,60 e Dez +1,70/bu",
+      "venda_china_e_el_nino_79pct": "USDA vende 136 mil t à China | CPC/NOAA vê > 79% de chance de El Niño forte a muito forte entre jan-mar!",
+      "farelo_soja_cbot_e_fisico": "CBOT Dez/26: US$ 325,40/t | Média RS: R$ 2.130,00/t | IMEA-MT: R$ 1.884,37/t"
+    },
+    "complexo_milho_e_ddgs": {
+      "milho_b3_sobe_12_11_18h33": "Sobe na B3 c/ dólar a R$ 5,65! Nov/26: R$ 67,49 (+0,13%) | Jan/27: R$ 70,89 (+0,17%) | Mar/27: R$ 74,80 (+0,40%) | Mai: R$ 73,77",
+      "esalq_campinas_12_11_final": "R$ 67,28 / sc (-0,03% em 12/11 — Firme no topo, acumulando +2,50% em novembro!)",
+      "estoques_etanol_mme_431295": "Estoques de etanol do Centro-Sul estão 15% mais baixos ante 2025 (aponta Ministério de Minas e Energia)!",
+      "frango_cepea_recorde_13_11_07h41": "Frango/Cepea: Exportações atingem maior volume desde mar/23 e podem bater recorde em 2026 e 2027 (07h41)!",
+      "lucro_mbrf_dobra_e_ovos_cepea": "Lucro da MBRF mais que dobra no 3T26 p/ R$ 210 mi | Ovos/Cepea aponta recuo nas exportações em out (07h40)",
+      "altas_fisico_mt_e_uberlandia_cif": "Rondonópolis: R$ 48 (+1,69%) | Sorriso: R$ 44,70 (+1,59%) | Uberlândia CIF: R$ 65 (Milho) e R$ 63 (Sorgo)",
+      "trigo_cepea_pr_e_rs_12_11_salto": "Cepea PR salta +0,68% (+R$ 10,59/t) p/ R$ 1.572,37/t! | Cepea RS sobe +0,03% p/ R$ 1.475,06/t!",
+      "trigo_atacado_pr_e_go": "Atacado Média PR: R$ 80,02/sc (0,00%) | Cristalina-GO FOB: R$ 1.400,00/t | Passo Fundo Milho: R$ 68,00/sc"
+    },
+    "complexo_algodao": {
+      "cepea_pluma_12_11_recorde": "417,68 ¢ R$/lb (+0,83% em 12/11 — Forte salto no indicador Cepea, atingindo nova máxima do mês!)",
+      "ice_ny_em_reais_12_11": "NY Dez/26: 78,67 ¢ (R$ 146,99/@ c/ dólar a R$ 5,65!) | Mar/27: 82,51 ¢ (R$ 154,16/@) | Mai/27: 84,21 ¢ (R$ 157,34/@)!",
+      "fisico_mt_e_bahia": "Alto Garças-MT sobe +1,28% p/ R$ 131,67-131,69/@ | Sorriso-MT sobe +0,41% p/ R$ 128,59/@ | Bahia: R$ 130,00/@",
+      "caroco_algodao_imea_mt_12_11": "R$ 695,36 / ton (Confirmado no fecho de 12/11 — Abaixo de R$ 700/t no MT p/ confinamentos!)",
+      "caroco_algodao_bahia_12_11": "R$ 966,67 a R$ 967,00 / ton na Bahia (Spread regional MT-BA em R$ 271,64/t!)"
+    },
+    "complexo_cafe": {
+      "cepea_arabica_12_11_explosao": "R$ 1.619,43 / sc (+1,64% — Salta +R$ 26,15/sc em um único dia na consolidação final de 12/11!)",
+      "b3_cafe_18h49_e_ny_13_11_07h44": "B3 Mar/27 salta +4,88% p/ US$ 344,00/sc! | Em 13/11 (07h44), NY realiza após disparar > 4% ontem (280,15 ¢)",
+      "praca_base_matas_de_minas": "Manhuaçu-MG (Hub Oficial Matas de Minas)",
+      "matas_de_minas_manhuacu_13_11": "R$ 1.576,00 / sc (Atualizado hoje, 13/11/2026, no Agrolink | Café Rio: R$ 1.031,00 — Descontado R$ 43 frente ao Cepea!)",
+      "cooperativas_guaxupe_e_campos_gerais": "Guaxupé: R$ 1.752 (+2,34%) | Campos Gerais: R$ 1.731 (+3,59%) | Machado: R$ 1.710 (+3,01%) | Franca/Poços: R$ 1.700",
+      "cepea_robusta_e_conilon_vitoria": "Cepea Robusta (12/11): R$ 969,24/sc (-0,51%) | Conilon Tipo 7/8 Vitória-ES: R$ 960,00/sc",
+      "boi_gordo_esalq_prazo_e_400_scot": "Esalq SP: R$ 394,30/@ (+0,04% Recorde!) | Prazo SP: R$ 398,54/@ (+0,04%) | PR Noroeste e RJ batem R$ 400,00/@ na Scot!",
+      "bezerro_ms_dispara_e_agrobrazil": "Bezerro Cepea MS salta +0,43% p/ R$ 3.624,54/cab! | Agrobrazil (18h11): MT sobe +1,75% (R$ 364,09/@) e SP +0,41% (R$ 390,42)"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "title": "🏛️ 2.1. Cenário Político & Crédito (Senado Aprova Texto-Base Fiscal de Até R$ 60 Bi Hoje às 07h44, Dólar Opera a R$ 5,6423 Após Fechar a R$ 5,6507, Banco do Brasil Recua Após Pressão do Agro Hoje às 07h20 e Petróleo Salta US$ 3 com Ataques a Energéticas Sauditas!)",
+      "market_bias": "Dólar Comercial Opera a R$ 5,6423 Nesta Sexta-Feira (13/11 às 08h10) Após Fechar a R$ 5,6507 e Futuro Dez/26 Bater 5.660,50 pts / Senado Aprova Texto-Base Fiscal de Até R$ 60 Bi (Atualizado às 07h44) e Fed Sinaliza Mais Juros nos EUA / Após Forte Reação de Aprosoja, Famato, Farsul e Faesp (07h35), Banco do Brasil Recua e Nega Ter Culpado o Agro (90% Estão em Dia!) / Petróleo Salta US$ 3 com Ataques a Energéticas Sauditas!",
+      "executive_summary": "Nesta manhã de sexta-feira (13/11 às 08:11 BRT), o dólar comercial opera firme a R$ 5,6423 (+0,02%, após fechar ontem a R$ 5,6507 e o Futuro Dez/26 na B3 encerrar às 18h49 em 5.660,50 pts, +1,04%). Na pauta política e econômica (atualizada às 07h44), o Senado aprovou ontem à noite o texto-base do projeto fiscal com impacto de até R$ 60 bi em 2027, enquanto nos EUA a diretora do Fed Mary Daly afirmou que o Fed provavelmente precisará elevar mais os juros. No crédito rural, após dura reação da Aprosoja, Famato, Farsul e Faesp (07h35), o Banco do Brasil recuou em nota oficial negando ter responsabilizado o agro e afirmando que 90% dos produtores estão em dia! Na energia, o petróleo saltou US$ 3/bbl (Brent a US$ 95,82) após ataques a instalações energéticas sauditas e interrupções em Ormuz.",
+      "news_sources": [
+        {
+          "headline": "Senado aprova texto-base de projeto fiscal com impacto de até R$ 60 bi em 2027 — Reuters / Notícias Agrícolas (Publicado em 12/11 às 21h39 / Atualizado em 13/11/2026 às 07h44)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431318-senado-aprova-texto-base-de-projeto-fiscal-com-impacto-de-ate-r60-bi-em-2027.html"
+        },
+        {
+          "headline": "Após reação de entidades do agro, Banco do Brasil nega ter responsabilizado setor por piora nos resultados (Afirma que 90% dos clientes estão em dia) — Notícias Agrícolas (13/11/2026)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/431310-apos-reacao-de-entidades-do-agro-banco-do-brasil-nega-ter-responsabilizado-setor-por-piora-nos-resultados.html"
+        },
+        {
+          "headline": "O Agro não é o vilão: é preciso responsabilidade no crédito rural, afirma Faesp — Notícias Agrícolas (13/11/2026 às 07h35)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/431312-o-agro-nao-e-o-vilao-e-preciso-responsabilidade-no-credito-rural-afirma-faesp.html"
+        },
+        {
+          "headline": "Petróleo sobe US$ 3 (Brent fecha a US$ 95,82) com ataques a instalações energéticas sauditas e interrupções em Ormuz — Reuters / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/431304-petroleo-sobe-us3-com-ataques-a-instalacoes-energeticas-sauditas-e-interrupcoes-em-ormuz.html"
+        },
+        {
+          "headline": "Fed tem tempo para calibrar aumentos dos juros, afirma Daly (Fed provavelmente precisará aumentar ainda mais as taxas) — Reuters / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431306-fed-tem-tempo-para-calibrar-aumentos-dos-juros-afirma-daly.html"
+        },
+        {
+          "headline": "Taxas dos DIs fecham em alta firme em meio a insatisfação com pacote fiscal e exterior negativo — Reuters / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431296-taxas-dos-dis-fecham-em-alta-firme-em-meio-a-insatisfacao-com-pacote-fiscal-e-exterior-negativo.html"
+        },
+        {
+          "headline": "Ações de empresas chinesas de IA recuam após renúncia de CEO da Nvidia — Reuters / Notícias Agrícolas (13/11/2026)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431316-acoes-de-empresas-chinesas-de-ia-recuam-apos-renuncia-de-ceo-da-nvidia.html"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Vitória Institucional das Entidades Contra o BB Hoje + Alerta no Diesel com Ataques Sauditas!)",
+          "direction": "A mobilização rápida da Aprosoja, Famato, Farsul e Faesp surtiu efeito imediato: o Banco do Brasil recuou em nota oficial reconhecendo que 90% dos produtores rurais estão em dia, o que preserva a imagem do setor e facilita o destravamento das renegociações via MP 1.376 aprovada no Senado! Nos custos operacionais, porém, a confirmação pela Reuters de ataques a instalações energéticas da Arábia Saudita fazendo o Brent saltar US$ 3 (para US$ 95,82/bbl) exige travar imediatamente o óleo diesel antes de repasses nas distribuidoras!",
+          "reference_links": [
+            {"label": "Reportagem (13/11): Após reação de entidades do agro, Banco do Brasil nega ter responsabilizado setor — NA", "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/431310-apos-reacao-de-entidades-do-agro-banco-do-brasil-nega-ter-responsabilizado-setor-por-piora-nos-resultados.html"},
+            {"label": "Reportagem: Petróleo sobe US$ 3 com ataques a instalações energéticas sauditas — Reuters / NA", "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/431304-petroleo-sobe-us3-com-ataques-a-instalacoes-energeticas-sauditas-e-interrupcoes-em-ormuz.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas, Revendas e Crédito Rural",
+          "direction": "Com a alta firme nas taxas dos DIs e a diretora do Fed Mary Daly sinalizando novos aumentos de juros nos Estados Unidos, o custo financeiro continuará elevado em 2027. Aproveite a disparada da soja (R$ 162,31/sc em Paranaguá e R$ 150,14-152,00/sc em Uberlândia) e do café (R$ 1.619,43/sc no Cepea) para liquidar operações de Barter com os cooperados.",
+          "reference_links": [
+            {"label": "Reportagem (13/11 07h35): O Agro não é o vilão: é preciso responsabilidade no crédito rural, afirma Faesp — NA", "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/431312-o-agro-nao-e-o-vilao-e-preciso-responsabilidade-no-credito-rural-afirma-faesp.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Usinas e Logística",
+          "direction": "Os ataques a instalações energéticas sauditas e interrupções em Ormuz somados aos estoques de etanol 15% mais baixos no Centro-Sul criam um cenário de forte pressão inflacionária nos combustíveis e fretes neste final de ano.",
+          "reference_links": [
+            {"label": "Reportagem: Estoques de etanol do centro-sul estão 15% mais baixos ante 2025 — NA", "url": "https://www.noticiasagricolas.com.br/noticias/biocombustivel/431295-estoques-de-etanol-do-centro-sul-estao-15-mais-baixos-ante-2025-aponta-ministerio.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Exportadores (Dólar Sustentado em R$ 5,6423 e NDF a R$ 5,8561!)",
+          "direction": "Mesmo após o Senado aprovar ontem à noite o texto-base do projeto fiscal de até R$ 60 bi (07h44), o dólar comercial segue colado nas máximas agora às 08h10 BRT a R$ 5,6423 (Futuro Dez/26 a 5.660,50 pts) devido à perspectiva de juros mais altos no Fed! A nossa Calculadora NDF para 160 dias entrega R$ 5,8561 — mantenha o ritmo forte de fixação cambial!",
+          "reference_links": [
+            {"label": "Reportagem (13/11 07h44): Senado aprova texto-base de projeto fiscal com impacto de até R$ 60 bi — Reuters / NA", "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431318-senado-aprova-texto-base-de-projeto-fiscal-com-impacto-de-ate-r60-bi-em-2027.html"}
+          ]
+        },
+        {
+          "elo": "Visão do Trader (Auditoria Semanal 100% Cravada no Dólar e Posicionamento p/ 20/11)",
+          "direction": "Na nossa Auditoria Oficial de Sexta-Feira hoje (13/11), o Dólar Spot (R$ 5,6423 agora e R$ 5,6507 no fecho de ontem) cravou exatamente o topo da banda projetada de R$ 5,50-R$ 5,65! Com a aprovação do texto-base fiscal no Senado (07h44) contrabalançada pelo tom hawkish do Fed (Daly), a nova banda para a próxima sexta-feira (20/11) sobe para R$ 5,55-R$ 5,72.",
+          "reference_links": [
+            {"label": "Reportagem: Fed tem tempo para calibrar aumentos dos juros, afirma Daly — Reuters / NA", "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431306-fed-tem-tempo-para-calibrar-aumentos-dos-juros-afirma-daly.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌱 2.2. Complexo Soja e Derivados (Indicador Paranaguá Dispara +1,18% em 12/11 para R$ 162,31/sc, Uberlândia e Uberaba Cravam R$ 150,14/sc com Ofertas CIF a R$ 152/sc e Chicago Volta a Subir +11,75 Cents Hoje em 13/11!)",
+      "market_bias": "Indicador da Soja Esalq/B3 Paranaguá Dispara +1,18% (+R$ 1,90/sc em Um Dia!) em 12/11 para R$ 162,31/sc, Abelardo Luz Vai a R$ 157/sc e Uberlândia/Uberaba-MG Rompem R$ 150,14/sc (+0,88%, Ofertas CIF a R$ 152,00/sc)! / Na Madrugada de Hoje (13/11), Soja Volta a Subir Forte em Chicago (Jan/27 +11,75¢ a US$ 12,3075/bu e Nov/26 +7,25¢ a US$ 12,3425/bu)!",
+      "executive_summary": "Explosão nos preços internos e externos da soja: na divulgação oficial noturna de 12/11 do Cepea/Esalq, o Indicador da Soja Paranaguá saltou +1,18% (+R$ 1,90/sc) para R$ 162,31/sc (com Abelardo Luz-SC FOB subindo a R$ 157,00/sc e Centro Oriental PR a R$ 152,56/sc hoje na Grão Direto), enquanto no Triângulo Mineiro (Grão Direto 13/11) Uberlândia e Uberaba cravaram R$ 150,14/sc (+0,88%) com ofertas CIF em Uberlândia a R$ 152,00/sc! Além disso, no pregão eletrônico desta sexta-feira (13/11 às 03h53) na CBOT, a soja voltou a subir forte: o Janeiro/27 salta +11,75 cents para US$ 12,3075/bu e o Novembro/26 sobe +7,25 cents para US$ 12,3425/bu!",
+      "news_sources": [
+        {
+          "headline": "Cotação Oficial: Indicador da Soja ESALQ/B3 - Paranaguá salta +1,18% (+R$ 1,90/sc) em 12/11/2026 para R$ 162,31/sc — Cepea / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/soja/soja-indicador-cepea-esalq-porto-paranagua"
+        },
+        {
+          "headline": "Cotação e Preço da Soja Hoje (13/11/2026: Triângulo Mineiro/Alto Paranaíba a R$ 150,14/sc, +0,88%, Centro Oriental PR a R$ 152,56/sc, +0,71%, e Sudoeste MS a R$ 139,61/sc, +0,84%) — Grão Direto",
+          "url": "https://www.graodireto.com.br/precos/soja/"
+        },
+        {
+          "headline": "Preço da soja em Uberaba e Uberlândia-MG sobe +0,88% para R$ 150,14/sc (Ofertas de compra em Uberlândia batem R$ 152,00/sc) — Grão Direto",
+          "url": "https://www.graodireto.com.br/ofertas/soja/mg/uberaba/"
+        },
+        {
+          "headline": "Painel Chicago (CME) Atualizado em 13/11/2026 às 03h53: Soja Nov/26 sobe +7,25¢ para US$ 12,3425/bu, Jan/27 salta +11,75¢ para US$ 12,3075/bu e Mar/27 sobe +11,25¢ para US$ 12,3625/bu — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+        },
+        {
+          "headline": "CPC vê mais de 79% de chance de um El Niño forte a muito forte entre janeiro e março — Reuters / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/tempo-e-clima/431269-cpc-ve-mais-de-79-de-chance-de-um-el-nino-forte-a-muito-forte-entre-janeiro-e-marco.html"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Paranaguá Explode a R$ 162,31/sc, Uberlândia/Uberaba a R$ 150,14-152,00/sc e Chicago Volta a Subir +11,75¢ Hoje!)",
+          "direction": "Olhe o resultado extraordinário para quem seguiu nossa leitura: ontem à noite o Indicador Esalq Paranaguá deu um salto de +1,18% (+R$ 1,90/sc) para R$ 162,31/sc, Uberlândia e Uberaba-MG cravaram R$ 150,14/sc (+0,88%, com ofertas CIF em Uberlândia a R$ 152,00/sc) e hoje cedo (13/11) Chicago já devolveu toda a queda de ontem, subindo +11,75 cents no Janeiro/27 (para US$ 12,3075/bu) com dólar a R$ 5,6423! Isso projeta novas altas físicas no pregão de hoje: aproveite esta sexta-feira para vender lotes disponíveis no topo do semestre e travar o NDF a R$ 5,8561!",
+          "reference_links": [
+            {"label": "Cotação Oficial Indicador Soja Paranaguá (12/11/2026: R$ 162,31/sc, +1,18%) — NA", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja/soja-indicador-cepea-esalq-porto-paranagua"},
+            {"label": "Cotação Oficial Grão Direto 13/11/2026 (Triângulo Mineiro a R$ 150,14/sc e ofertas a R$ 152,00/sc)", "url": "https://www.graodireto.com.br/precos/soja/"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas Agrícolas e Armazéns",
+          "direction": "Com Abelardo Luz-SC FOB subindo para R$ 157,00/sc, o Centro Oriental Paranaense avançando +0,71% para R$ 152,56/sc e o Sudoeste de MS subindo +0,84% para R$ 139,61/sc hoje na Grão Direto, acelere o fechamento de lotes de safra velha aproveitando o apetite dos exportadores.",
+          "reference_links": [
+            {"label": "Preços Regionais da Soja em 13/11/2026 — Grão Direto", "url": "https://www.graodireto.com.br/precos/soja/"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias Esmagadoras, Granjas e Confinamentos",
+          "direction": "A volta da alta em Chicago nesta manhã de sexta-feira (+11,75¢ no Jan/27) combinada com o salto de US$ 3 no petróleo Brent (US$ 95,82/bbl) impulsiona novamente tanto o óleo quanto o farelo de soja. Garanta estoques físicos de farelo imediatamente!",
+          "reference_links": [
+            {"label": "Painel Chicago CME 13/11/2026 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings (Mesa Física e Exportação)",
+          "direction": "O salto do Indicador Paranaguá para R$ 162,31/sc (+1,18%) comprova a firmeza dos prêmios e a disputa pelos lotes disponíveis nos portos brasileiros.",
+          "reference_links": [
+            {"label": "Indicador da Soja Esalq/B3 Paranaguá — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/soja/soja-indicador-cepea-esalq-porto-paranagua"}
+          ]
+        },
+        {
+          "elo": "Visão do Trader (Reversão Imediata na CBOT em 13/11: Jan/27 Volta a US$ 12,3075/bu!)",
+          "direction": "Veja como a queda de -11,75 cents de ontem no Janeiro/27 em Chicago foi apenas uma sacudida técnica: na abertura eletrônica de hoje (13/11 às 03h53), o Janeiro/27 subiu exatamente +11,75 cents, voltando a US$ 12,3075/bu (e o Novembro/26 subiu +7,25¢ para nova máxima de US$ 12,3425/bu)! Mantenha posição comprada (Long).",
+          "reference_links": [
+            {"label": "Painel Chicago CME 13/11/2026 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌽 2.3. Complexo Milho (Sobe na B3 com Dólar a R$ 5,65, Estoques de Etanol Estão 15% Mais Baixos no Centro-Sul e Frango Pode Bater Recorde de Exportação Hoje às 07h41!) & Trigo (Cepea PR Salta +0,68% em 12/11 para R$ 1.572,37/t!)",
+      "market_bias": "Milho Sobe na B3 com Dólar a R$ 5,65 (Reportagem das 18h33: Nov/26 a R$ 67,49, Jan/27 a R$ 70,89 e Mar/27 a R$ 74,80/sc), Esalq Marca R$ 67,28/sc, Estoques de Etanol do Centro-Sul Estão 15% Mais Baixos Ante 2025 e Exportações de Frango Podem Bater Recorde (Cepea 13/11 às 07h41)! / Trigo Cepea PR Salta +0,68% (+R$ 10,59/t) em 12/11 para R$ 1.572,37/t!",
+      "executive_summary": "Conforme reportagem de fechamento das 18h33 e tabelas oficiais de 12/11 do Notícias Agrícolas, a disparada do dólar para R$ 5,65 levou o milho a fechar em alta na B3 (Nov/26 a R$ 67,49, Jan/27 a R$ 70,89, Mar/27 a R$ 74,80 e Mai/27 a R$ 73,77/sc, com Esalq Campinas a R$ 67,28/sc). Dois fundamentos estruturais reforçam o mercado hoje: o Ministério de Minas e Energia apontou que os estoques de etanol do Centro-Sul estão 15% mais baixos ante 2025, e o boletim Frango/Cepea de hoje (13/11 às 07h41) destaca que as exportações de carne de frango podem bater recorde em 2026 e 2027 (com o lucro da MBRF mais que dobrando para R$ 210 mi no 3T26)! No Trigo, o Cepea PR deu um salto de +0,68% em 12/11 para R$ 1.572,37/t e o Cepea RS subiu para R$ 1.475,06/t.",
+      "news_sources": [
+        {
+          "headline": "Milho fecha em queda em Chicago, mas sobe na B3 com dólar a R$ 5,65 nesta 5ª feira (Nov/26 a R$ 67,49, Jan/27 a R$ 70,89 e Mar/27 a R$ 74,80/sc) — Notícias Agrícolas (12/11/2026 às 18h33)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/431307-milho-fecha-em-queda-em-chicago-mas-sobe-na-b-3-com-dolar-a-r-5-65-nesta-5-feira.html"
+        },
+        {
+          "headline": "Estoques de etanol do centro-sul estão 15% mais baixos ante 2025, aponta ministério — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/biocombustivel/431295-estoques-de-etanol-do-centro-sul-estao-15-mais-baixos-ante-2025-aponta-ministerio.html"
+        },
+        {
+          "headline": "Frango/Cepea: Exportações podem atingir recorde em 2026 e 2027 (Embarques em outubro alcançam maior volume mensal desde março de 2023) — Cepea / Notícias Agrícolas (13/11/2026 às 07h41)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/granjeiros/431315-frango-cepea-exportacoes-podem-atingir-recorde-em-2.html"
+        },
+        {
+          "headline": "Lucro da MBRF mais que dobra no 3º tri (R$ 210 milhões) com melhor resultado em 2 anos para unidade dos EUA — Reuters / Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/431308-lucro-da-mbrf-mais-que-dobra-no-3o-tri-com-melhor-resultado-em-2-anos-para-unidade-dos-eua.amp.html"
+        },
+        {
+          "headline": "Cotação e Preço do Trigo Cepea/Esalq em 12/11/2026: Paraná salta +0,68% (+R$ 10,59/t) para R$ 1.572,37/t e Rio Grande do Sul sobe +0,03% para R$ 1.475,06/t — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores de Milho, Sorgo e Trigo (Trigo PR Salta +0,68% a R$ 1.572,37/t e Estoques de Etanol Estão 15% Menores!)",
+          "direction": "Duas confirmações poderosas para o produtor hoje (13/11): (1) No Trigo, exatamente como avisamos ontem, o dólar a R$ 5,65 fez o Indicador Cepea Paraná dar um salto de +0,68% (+R$ 10,59/t em um dia!), voltando para R$ 1.572,37/t (e o RS subiu pelo 3º dia para R$ 1.475,06/t) — aproveite para vender lotes de trigo pão! (2) No Milho e Sorgo, a revelação do MME de que os estoques de etanol no Centro-Sul estão 15% abaixo de 2025 (somada ao salto de US$ 3 no petróleo e ao recorde nas exportações de frango apontado hoje às 07h41 pelo Cepea) explica por que a B3 subiu ontem (Março/27 a R$ 74,80/sc) e por que as usinas estão disputando cada saca em MT (+1,69%) e no Triângulo Mineiro (R$ 65 CIF no milho e R$ 63 CIF no sorgo)!",
+          "reference_links": [
+            {"label": "Reportagem: Estoques de etanol do centro-sul estão 15% mais baixos ante 2025 — NA", "url": "https://www.noticiasagricolas.com.br/noticias/biocombustivel/431295-estoques-de-etanol-do-centro-sul-estao-15-mais-baixos-ante-2025-aponta-ministerio.html"},
+            {"label": "Tabelas Oficiais Trigo Cepea PR (12/11/2026: R$ 1.572,37/t, +0,68%) — NA", "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo"}
+          ]
+        },
+        {
+          "elo": "Elo: Usinas de Etanol (Cana, Milho e Sorgo) e Cooperativas",
+          "direction": "Com os estoques de etanol 15% menores no Centro-Sul (431295), o Brent a US$ 95,82/bbl e a Petrobras encontrando dificuldades fiscais para obter subvenção na gasolina, a margem das usinas de etanol de milho e sorgo na entressafra da cana (dezembro a março) será extraordinária!",
+          "reference_links": [
+            {"label": "Reportagem (12/11 18h33): Milho fecha em queda em Chicago, mas sobe na B3 com dólar a R$ 5,65 — NA", "url": "https://www.noticiasagricolas.com.br/noticias/milho/431307-milho-fecha-em-queda-em-chicago-mas-sobe-na-b-3-com-dolar-a-r-5-65-nesta-5-feira.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Moinhos de Trigo, Avicultores (Exportação Recorde às 07h41), Suinocultores e Confinamentos",
+          "direction": "O boletim Frango/Cepea publicado hoje às 07h41 (projetando recorde de exportações em 2026 e 2027, após o lucro da MBRF mais que dobrar para R$ 210 milhões no 3T26) confirma que o alojamento nas granjas seguirá aquecido, disputando milho e farelo com as usinas de etanol e confinamentos. Enquanto o Suíno Vivo Cepea ajustou em 12/11 (MG a R$ 6,11/kg e SP a R$ 6,22/kg) e os ovos tiveram menor exportação em outubro (07h40), a avicultura de corte e a bovinocultura puxam o consumo de ração — trave milho, sorgo e trigo feed imediatamente!",
+          "reference_links": [
+            {"label": "Reportagem (13/11 07h41): Frango/Cepea: Exportações podem atingir recorde em 2026 e 2027 — NA", "url": "https://www.noticiasagricolas.com.br/noticias/granjeiros/431315-frango-cepea-exportacoes-podem-atingir-recorde-em-2.html"},
+            {"label": "Reportagem: Lucro da MBRF mais que dobra no 3º tri para R$ 210 milhões — Reuters / NA", "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/431308-lucro-da-mbrf-mais-que-dobra-no-3o-tri-com-melhor-resultado-em-2-anos-para-unidade-dos-eua.amp.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Exportadores de Milho",
+          "direction": "Com o dólar operando a R$ 5,6423 hoje e a soja subindo +11,75 cents na abertura de Chicago, o milho em Chicago tende a acompanhar o movimento de recuperação ao longo desta sexta-feira.",
+          "reference_links": [
+            {"label": "Tabelas Oficiais Milho B3 e Esalq (12/11/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"}
+          ]
+        },
+        {
+          "elo": "Visão do Trader (Validação Total do Long na Curva da B3: Jan/27 a R$ 70,89 e Mar/27 a R$ 74,80/sc!)",
+          "direction": "Ontem recomendamos comprar os vencimentos de 2027 na B3 apostando no dólar e no físico: no fechamento oficial (18h33), o Janeiro/27 subiu +0,17% para R$ 70,89/sc, o Março/27 saltou +0,40% para R$ 74,80/sc e o Maio/27 subiu +0,34% para R$ 73,77/sc!",
+          "reference_links": [
+            {"label": "Tabela Oficial Milho B3 Pregão Regular (12/11/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☁️ 2.4. Complexo Algodão e Derivados (Indicador Cepea Salta +0,83% em 12/11 para 417,68 ¢ R$/lb — Nova Máxima do Mês! — e Equivalência de NY Vai a R$ 146,99-157,34/@ com Dólar a R$ 5,65!)",
+      "market_bias": "Indicador Cepea do Algodão em Pluma Dispara +0,83% em 12/11 para 417,68 ¢ R$/lb (Renovando a Máxima do Mês e Acumulando +2,08% na Semana!), Enquanto Equivalência de NY Sobe a R$ 146,99/@ no Dez/26 e R$ 154,16/@ no Mar/27 com Dólar a R$ 5,65! / Caroço em MT Segue a R$ 695,36/t vs. R$ 966,67-967,00/t na Bahia!",
+      "executive_summary": "Exatamente como projetamos ontem no fechamento ('a subida do dólar e de NY projetam forte valorização para o Cepea'), na divulgação oficial noturna de 12/11 o Indicador do Algodão em Pluma Cepea/Esalq deu um salto de +0,83%, atingindo 417,68 ¢ R$/lb (nova máxima do mês!), acompanhando a alta da ICE NY (Dez/26 a 78,67 ¢/lb = R$ 146,99/@ e Mar/27 a 82,51 ¢/lb = R$ 154,16/@ com dólar de R$ 5,65) e das praças do IMEA-MT (Alto Garças +1,28% a R$ 131,67-131,69/@ e Sorriso +0,41% a R$ 128,59/@). Nos coprodutos, o Caroço de Algodão fechou 12/11 em R$ 695,36/t no MT contra R$ 966,67-967,00/t na Bahia.",
+      "news_sources": [
+        {
+          "headline": "Cotação e Preço do Algodão em 12/11/2026: Indicador Cepea/Esalq salta +0,83% para 417,68 ¢ R$/lb e NY Dez/26 equivale a R$ 146,99/@ (Mar/27 a R$ 154,16/@ e Mai/27 a R$ 157,34/@ com Dólar a R$ 5,65) — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+        },
+        {
+          "headline": "Cotação Oficial: Caroço de Algodão em 12/11/2026 (Mato Grosso IMEA a R$ 695,36/t e Oeste da Bahia AIBA a R$ 966,67/t) — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao/caroco-de-algodo"
+        },
+        {
+          "headline": "Preços do algodão oscilam ao longo do dia e fecham com ganhos nesta 5ª feira (12) — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431291-precos-do-algodao-oscilam-ao-longo-do-dia-e-fecham-com-ganhos-nesta-5-feira-12.html"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cotonicultores — Cepea Bate Novo Recorde do Mês a 417,68 ¢ R$/lb!)",
+          "direction": "Veja a precisão da nossa chamada de ontem às 18h01: avisamos que o fechamento do dólar a R$ 5,65 e a alta de NY fariam o Indicador Cepea saltar à noite. Resultado oficial de 12/11: o Cepea disparou +0,83%, atingindo 417,68 ¢ R$/lb (acumulando +2,08% na semana e +4,11% em 30 dias)! E como a conversão oficial de NY com dólar a R$ 5,65 já bate R$ 146,99/@ no Dez/26, R$ 154,16/@ no Mar/27 e R$ 157,34/@ no Mai/27, aproveite esta sexta-feira (13/11) para fixar vendas de pluma e travar o NDF a R$ 5,8561!",
+          "reference_links": [
+            {"label": "Tabelas Oficiais Algodão Cepea (417,68 ¢, +0,83%) e NY em Reais (12/11/2026) — NA", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}
+          ]
+        },
+        {
+          "elo": "Elo: Algodoeiras e Cooperativas",
+          "direction": "Com o Brent a US$ 95,82/bbl (+US$ 3,06) encarecendo o poliéster sintético globalmente e o dólar acima de R$ 5,64, mantenha a originação voltada para o mercado externo.",
+          "reference_links": [
+            {"label": "Reportagem: Preços do algodão fecham com ganhos em NY — NA", "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431291-precos-do-algodao-oscilam-ao-longo-do-dia-e-fecham-com-ganhos-nesta-5-feira-12.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos (Caroço de Algodão a R$ 695,36/t no MT vs. Bezerro MS Disparando a R$ 3.624,54!)",
+          "direction": "Com o Bezerro Cepea MS disparando +0,43% ontem à noite para R$ 3.624,54/cabeça e o Boi em MT subindo +1,75% na Agrobrazil (R$ 364,09/@), travar o Caroço de Algodão no IMEA-MT a R$ 695,36/tonelada (desconto de R$ 271,64/t sobre a Bahia!) é fundamental para proteger a margem do confinamento!",
+          "reference_links": [
+            {"label": "Cotação Oficial Caroço de Algodão 12/11/2026 — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao/caroco-de-algodo"}
+          ]
+        },
+        {
+          "elo": "Elo: Tradings Exportadoras",
+          "direction": "A equivalência de R$ 154,16/@ no Março/27 e R$ 157,34/@ no Maio/27 na ICE NY oferece excelente janela para travamento de embarques da safra 2026/27.",
+          "reference_links": [
+            {"label": "Tabelas Oficiais Algodão NYBOT (12/11/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}
+          ]
+        },
+        {
+          "elo": "Visão do Trader (Continuidade da Alta na ICE NY a 78,55-78,67 ¢/lb)",
+          "direction": "Com o petróleo sustentado próximo de US$ 96 no Brent após os ataques a instalações sauditas, o algodão na ICE NY mantém viés comprador firme acima do suporte de 78,50 ¢/lb.",
+          "reference_links": [
+            {"label": "Tabelas Oficiais Algodão ICE NY — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☕ 2.5. Complexo Café (Indicador Cepea Dispara +1,64% em 12/11 para R$ 1.619,43/sc e B3 Salta +4,88% para US$ 344/sc, Enquanto NY Realiza Hoje às 07h44 e Manhuaçu Marca R$ 1.576 em 13/11!) & Pecuária (Bezerro MS Dispara +0,43% a R$ 3.624,54 e PR/RJ Cravam R$ 400/@ na Scot!)",
+      "market_bias": "Indicador Cepea do Café Arábica Dispara +1,64% (+R$ 26,15/sc!) em 12/11 para R$ 1.619,43/sc e B3 Março/27 Salta +4,88% para US$ 344,00/sc; Nesta Manhã de Sexta-Feira (13/11 às 07h44), NY Realiza Lucros Após Subir > 4% na Véspera e Manhuaçu-MG Marca R$ 1.576,00/sc no Agrolink! / Na Pecuária, Esalq Bate R$ 394,30/@ à Vista, R$ 398,54/@ a Prazo, PR e RJ Cravam R$ 400,00/@ na Scot, MT Salta +1,75% na Agrobrazil e Bezerro MS Dispara +0,43% para R$ 3.624,54!",
+      "executive_summary": "Nos indicadores finais de ontem à noite (12/11), o Indicador Cepea Arábica deu um salto de +1,64% (+R$ 26,15/sc) para R$ 1.619,43/sc e o contrato Março/27 na B3 disparou +4,88% para US$ 344,00/sc, acompanhando o salto de +4,15% de NY (280,15-280,20 ¢/lb) e das cooperativas (Guaxupé a R$ 1.752/sc). Já na abertura desta sexta-feira (13/11 às 07h44), o café arábica passa por realização técnica em NY após a disparada da véspera, e Manhuaçu-MG (Matas de Minas) registra R$ 1.576,00/sc hoje (13/11) no Agrolink. Na Pecuária, recordes em toda a linha em 12/11: o Esalq subiu a R$ 394,30/@ à vista (+0,04%), o Prazo SP foi a R$ 398,54/@ (+0,04%), o Noroeste do PR e o RJ atingiram R$ 400,00/@ a prazo na Scot Consultoria, a Agrobrazil apontou salto de +1,75% em MT (R$ 364,09/@) e o Bezerro Cepea MS disparou +0,43% para R$ 3.624,54/cabeça!",
+      "news_sources": [
+        {
+          "headline": "Após disparada de mais de 4% na véspera, café arábica recua em Nova York nesta 6ª feira — Notícias Agrícolas (13/11/2026 às 07h44)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431319-apos-disparada-de-mais-de-4-na-vespera-cafe-arabica-recua-em-nova-york-nesta-6-feira.html"
+        },
+        {
+          "headline": "Painel Oficial Indicadores Cepea e B3 em 12/11/2026: Café Arábica Cepea salta +1,64% para R$ 1.619,43/sc e B3 Março/27 dispara +4,88% para US$ 344,00/sc — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+        },
+        {
+          "headline": "[Cotação Oficial 13/11/2026] Cotações em Manhuaçu-MG (Matas de Minas): Café Arábica Bebida Dura Tipo 6 a R$ 1.576,00/sc e Café Rio a R$ 1.031,00/sc — Agrolink",
+          "url": "https://www.agrolink.com.br/regional/mg/manhuacu/cotacoes"
+        },
+        {
+          "headline": "Agrobrazil: Avanço na cotação média de São Paulo (+0,41% a R$ 390,42/@) e de Mato Grosso (+1,75% a R$ 364,09/@) — Notícias Agrícolas (12/11/2026 às 18h11)",
+          "url": "https://www.noticiasagricolas.com.br/analises/boi-agrobrazil/431303-agrobrazil-avanco-na-cotacao-media-de-sao-paulo-e-de-mato-grosso.html"
+        },
+        {
+          "headline": "Tabelas Oficiais de Fechamento do Boi Gordo em 12/11/2026: Esalq sobe a R$ 394,30/@ (+0,04%), Prazo SP sobe a R$ 398,54/@ (+0,04%), Bezerro MS dispara +0,43% para R$ 3.624,54/cab e Scot Consultoria registra R$ 400,00/@ no Noroeste do PR e no RJ — Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Cafeicultores Matas de Minas (Manhuaçu a R$ 1.576 vs. Cepea a R$ 1.619,43/sc!) e Sul/Cerrado MG (Guaxupé a R$ 1.752/sc!)",
+          "direction": "Atenção máxima à oportunidade desta manhã de sexta-feira (13/11): ontem à noite o Indicador Cepea Arábica disparou +1,64% (+R$ 26,15/sc) para R$ 1.619,43/saca e as cooperativas saltaram para R$ 1.752,00/sc em Guaxupé, R$ 1.731,00 em Campos Gerais e R$ 1.700,00 em Franca/Poços! Como hoje cedo (07h44) Nova Iorque abriu realizando parte dos lucros após subir mais de 4% ontem, para os produtores do Sul de Minas e Mogiana o momento é de VENDER IMEDIATAMENTE nas tabelas das cooperativas que subiram ontem (R$ 1.700 a R$ 1.752/sc) antes que ajustem à realização de NY! Já em Manhuaçu-MG (onde o Agrolink manteve R$ 1.576,00/sc hoje, R$ 43 abaixo do Cepea!), exija preço alinhado aos R$ 1.610-1.620/sc do Cepea!",
+          "reference_links": [
+            {"label": "Reportagem (13/11 07h44): Após disparada de mais de 4% na véspera, café arábica recua em NY nesta 6ª feira — NA", "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431319-apos-disparada-de-mais-de-4-na-vespera-cafe-arabica-recua-em-nova-york-nesta-6-feira.html"},
+            {"label": "Cotação Oficial 13/11/2026 em Manhuaçu-MG (R$ 1.576,00/sc) — Agrolink", "url": "https://www.agrolink.com.br/regional/mg/manhuacu/cotacoes"}
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Exportadores (Encerramento da SIC 2026 Hoje em Belo Horizonte-MG)",
+          "direction": "No último dia da Semana Internacional do Café (SIC 2026) hoje em BH, com o contrato Março/27 na B3 tendo saltado +4,88% ontem à noite para US$ 344,00/saca e o dólar a R$ 5,6423 (NDF a R$ 5,8561), aproveite o pico para fechar negócios de exportação!",
+          "reference_links": [
+            {"label": "Painel Oficial B3 e Cepea (12/11/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"}
+          ]
+        },
+        {
+          "elo": "Elo: Pecuaristas e Confinamentos (PR e RJ Já Batem R$ 400,00/@ na Scot Consultoria e Bezerro MS Dispara +0,43% a R$ 3.624,54!)",
+          "direction": "A barreira histórica dos R$ 400,00/@ acaba de ser rompida nas tabelas físicas da Scot Consultoria no Noroeste do Paraná (R$ 400,00/@ a prazo / R$ 395,50/@ à vista) e no Rio de Janeiro (R$ 400,00/@ a prazo), enquanto a Média SP a prazo chegou a R$ 398,54/@ (Esalq à vista em R$ 394,30/@) e Mato Grosso saltou +1,75% na Agrobrazil (para R$ 364,09/@)! Ao mesmo tempo, o Bezerro Cepea MS disparou +0,43% ontem à noite para R$ 3.624,54/cabeça! Venda o boi gordo exigindo os R$ 400/@ e garanta imediatamente a compra do bezerro e do caroço de algodão em MT (R$ 695,36/t)!",
+          "reference_links": [
+            {"label": "Tabelas Oficiais Boi Gordo Esalq (R$ 394,30), Prazo SP (R$ 398,54), Bezerro MS (R$ 3.624,54) e Scot (PR e RJ a R$ 400/@) — NA", "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo"},
+            {"label": "Reportagem (12/11 18h11): Agrobrazil: Avanço na cotação média de SP e de MT (+1,75%) — NA", "url": "https://www.noticiasagricolas.com.br/analises/boi-agrobrazil/431303-agrobrazil-avanco-na-cotacao-media-de-sao-paulo-e-de-mato-grosso.html"}
+          ]
+        },
+        {
+          "elo": "Elo: Frigoríficos Exportadores e Torrefadoras",
+          "direction": "O corte do diferencial de base SP vs. GO para R$ 10,41/@ ontem mostra que a disputa por boiadas se espalhou por todos os estados exportadores, sustentada pelo dólar a R$ 5,6423.",
+          "reference_links": [
+            {"label": "Tabelas Oficiais Boi Gordo — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo"}
+          ]
+        },
+        {
+          "elo": "Visão do Trader (Realização de Lucro no Café NY Hoje às 07h44 e Compra em Recuos no Boi B3)",
+          "direction": "No Café, após o lucro extraordinário de +1.120 pontos (+4,15%) ontem no KCZ26 e de +4,88% no ICFH27 da B3 (US$ 344,00/sc), a realização técnica de hoje cedo (07h44) é natural — proteja os ganhos! Na B3 do Boi Gordo, ontem os contratos recuaram levemente (-0,53% no Dez/26 para R$ 406,90/@ e -0,69% no Nov/26 para R$ 403,05/@), enquanto o físico subiu para R$ 394,30/@ à vista e R$ 398,54/@ a prazo: excelente ponto para comprar os recuos na B3!",
+          "reference_links": [
+            {"label": "Tabela Oficial Boi Gordo B3 (12/11/2026) — Notícias Agrícolas", "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo/boi-gordo-b3-prego-regular"}
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "08/11/2026",
+    "period_end": "13/11/2026",
+    "period_current": "Semana Corrente (WTD — Domingo 08/11 a Sexta-Feira 13/11 às 08:11 BRT — Auditoria Semanal)",
+    "assets": [
+      {
+        "asset": "Soja Chicago (CBOT Nov/26 & Jan/27)",
+        "unit": "US$/bu",
+        "sunday_open_ref": 11.8900,
+        "current_value": 12.3425,
+        "weekly_change_pct": 3.81,
+        "weekly_driver": "Voltou a subir forte na madrugada desta sexta-feira (13/11): Nov/26 avança +7,25¢ para US$ 12,3425/bu (+3,81% na semana!) e Jan/27 salta +11,75¢ para US$ 12,3075/bu com corte do USDA e risco de El Niño forte (> 79%)."
+      },
+      {
+        "asset": "Dólar Comercial & Futuro B3 (USD/BRL)",
+        "unit": "R$",
+        "sunday_open_ref": 5.5066,
+        "current_value": 5.6423,
+        "weekly_change_pct": 2.46,
+        "weekly_driver": "Opera agora às 08h10 de sexta-feira (13/11) a R$ 5,6423 (+2,46% na semana, após fechar ontem a R$ 5,6507 e o Futuro Dez/26 na B3 a 5.660,50 pts, +1,04%), com Senado aprovando texto-base fiscal de R$ 60 bi (07h44) e Fed hawkish."
+      },
+      {
+        "asset": "Soja Paranaguá (Esalq) & Uberlândia-MG",
+        "unit": "R$/sc",
+        "sunday_open_ref": 158.53,
+        "current_value": 162.31,
+        "weekly_change_pct": 2.38,
+        "weekly_driver": "Indicador Esalq Paranaguá disparou +1,18% (+R$ 1,90/sc) em 12/11 para R$ 162,31/sc (+2,38% na semana!), enquanto Uberlândia e Uberaba-MG subiram a R$ 150,14/sc (+2,16% na sem., com ofertas CIF a R$ 152,00/sc)!"
+      },
+      {
+        "asset": "Algodão Pluma (Cepea & NY)",
+        "unit": "¢ R$/lb",
+        "sunday_open_ref": 409.15,
+        "current_value": 417.68,
+        "weekly_change_pct": 2.08,
+        "weekly_driver": "Indicador Cepea saltou +0,83% em 12/11 para nova máxima do mês em 417,68 ¢ R$/lb (+2,08% na semana!), com NY Dez/26 equivalente a R$ 146,99/@ e Mar/27 a R$ 154,16/@."
+      },
+      {
+        "asset": "Milho Campinas (Esalq) & B3 (Mar/27)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 66.60,
+        "current_value": 67.28,
+        "weekly_change_pct": 1.02,
+        "weekly_driver": "Esalq em R$ 67,28/sc (+1,02% na sem. e +2,50% no mês), B3 fechando em alta com dólar a R$ 5,65 (Mar/27 a R$ 74,80/sc) e estoques de etanol no Centro-Sul 15% mais baixos ante 2025!"
+      },
+      {
+        "asset": "Café Cepea, Cooperativas & Manhuaçu-MG",
+        "unit": "R$/sc",
+        "sunday_open_ref": 1603.86,
+        "current_value": 1619.43,
+        "weekly_change_pct": 0.97,
+        "weekly_driver": "Cepea Arábica disparou +1,64% (+R$ 26,15/sc) em 12/11 para R$ 1.619,43/sc (B3 Mar/27 +4,88% a US$ 344/sc e Guaxupé a R$ 1.752/sc), enquanto em 13/11 NY realiza (07h44) e Manhuaçu marca R$ 1.576/sc no Agrolink."
+      },
+      {
+        "asset": "Trigo Cepea (Praças PR & RS)",
+        "unit": "R$/t",
+        "sunday_open_ref": 1560.21,
+        "current_value": 1572.37,
+        "weekly_change_pct": 0.78,
+        "weekly_driver": "Deu um salto de +0,68% (+R$ 10,59/t) em 12/11 na Praça do Paraná para R$ 1.572,37/t (+0,78% na semana, e RS subiu a R$ 1.475,06/t) puxado pelo dólar a R$ 5,65!"
+      },
+      {
+        "asset": "Boi Gordo Esalq & Bezerro MS",
+        "unit": "R$/@",
+        "sunday_open_ref": 391.35,
+        "current_value": 394.30,
+        "weekly_change_pct": 0.75,
+        "weekly_driver": "Recorde de R$ 394,30/@ à vista e R$ 398,54/@ a prazo em SP (Noroeste do PR e RJ cravando R$ 400,00/@ na Scot!), com o Bezerro Cepea MS disparando +0,43% em 12/11 para R$ 3.624,54/cabeça!"
+      },
+      {
+        "asset": "Petróleo WTI & Brent",
+        "unit": "US$/bbl",
+        "sunday_open_ref": 90.83,
+        "current_value": 87.54,
+        "weekly_change_pct": -3.62,
+        "weekly_driver": "Brent saltou +US$ 3,06 (+3,30%) para US$ 95,82/bbl e WTI opera entre US$ 87,54 e US$ 88,74/bbl após ataques a instalações energéticas sauditas e interrupções em Ormuz."
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-11-01",
+    "current_date": "2026-11-13",
+    "days_elapsed": 21,
+    "daily_dates": [
+      "19/10", "20/10", "21/10", "22/10", "23/10", "26/10", "27/10", "28/10", "29/10", "30/10",
+      "01/11", "02/11", "03/11", "04/11", "05/11", "06/11", "09/11", "10/11", "11/11", "12/11", "13/11"
+    ],
+    "assets": [
+      {
+        "asset": "Dólar Comercial (USD/BRL)",
+        "unit": "R$",
+        "month_open_value": 5.4364,
+        "mid_month_10_oct": 5.0300,
+        "current_value": 5.6423,
+        "mtd_change_pct": 3.79,
+        "monthly_narrative": "Após fechar ontem (12/11) a R$ 5,6507 (+1,58%, maior valor desde junho de 2025, com Futuro Dez/26 a 5.660,50 pts e PTAX a R$ 5,6143), opera nesta manhã de sexta-feira (13/11 às 08h10) a R$ 5,6423, acumulando +3,79% em novembro!",
+        "daily_history": [
+          5.0300, 5.0140, 5.0277, 5.0383, 5.0377, 5.5007, 5.3346, 5.3420, 5.3875, 5.4387,
+          5.4364, 5.4373, 5.4885, 5.4511, 5.4876, 5.5066, 5.5058, 5.5860, 5.5628, 5.6507, 5.6423
+        ]
+      },
+      {
+        "asset": "Petróleo WTI (Dez/26)",
+        "unit": "US$/bbl",
+        "month_open_value": 104.12,
+        "mid_month_10_oct": 98.54,
+        "current_value": 87.54,
+        "mtd_change_pct": -15.92,
+        "monthly_narrative": "Após saltar para US$ 88,74 no fecho regular de ontem (com o Brent disparando +US$ 3,06 para US$ 95,82/bbl) por ataques a energéticas sauditas, opera na manhã de 13/11 na faixa de US$ 87,54 a US$ 88,74/bbl.",
+        "daily_history": [
+          98.54, 97.82, 97.15, 99.47, 103.27, 101.76, 99.90, 102.78, 101.52, 104.48,
+          104.12, 96.80, 95.95, 87.75, 90.46, 90.83, 87.46, 86.04, 86.53, 88.74, 87.54
+        ]
+      },
+      {
+        "asset": "Soja Paranaguá (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 158.88,
+        "mid_month_10_oct": 154.50,
+        "current_value": 162.31,
+        "mtd_change_pct": 2.16,
+        "monthly_narrative": "Deu um salto de +1,18% (+R$ 1,90/sc) em 12/11 para atingir R$ 162,31/sc (+2,16% em novembro e +6,50% frente ao piso de 23/10!), acompanhado hoje (13/11) por nova alta de +11,75¢ no Jan/27 em Chicago!",
+        "daily_history": [
+          154.50, 153.80, 153.50, 152.90, 152.41, 155.55, 157.41, 157.42, 158.28, 158.88,
+          158.88, 158.88, 159.28, 158.17, 158.53, 158.52, 158.62, 159.87, 160.41, 162.31, 162.31
+        ]
+      },
+      {
+        "asset": "Soja Uberlândia-MG (Triângulo)",
+        "unit": "R$/sc",
+        "month_open_value": 148.10,
+        "mid_month_10_oct": 147.81,
+        "current_value": 150.14,
+        "mtd_change_pct": 1.38,
+        "monthly_narrative": "Série oficial Grão Direto Uberlândia e Uberaba-MG: subiu +0,88% para cravar R$ 150,14/sc (+1,38% em novembro e +6,50% vs 22/10, com ofertas CIF em Uberlândia pagando R$ 152,00/sc)!",
+        "daily_history": [
+          147.81, 146.74, 141.30, 140.97, 142.05, 145.84, 147.24, 148.57, 148.93, 148.10,
+          148.10, 144.46, 146.46, 146.96, 146.96, 147.89, 148.60, 148.23, 148.83, 150.14, 150.14
+        ]
+      },
+      {
+        "asset": "Milho Campinas (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 65.64,
+        "mid_month_10_oct": 64.90,
+        "current_value": 67.28,
+        "mtd_change_pct": 2.50,
+        "monthly_narrative": "Opera firme no topo em R$ 67,28/sc (+2,50% em novembro), com a B3 subindo até R$ 74,80/sc no Março/27 e os estoques de etanol no Centro-Sul 15% abaixo de 2025!",
+        "daily_history": [
+          64.90, 64.60, 64.45, 64.30, 64.27, 64.24, 64.87, 64.73, 65.59, 65.64,
+          65.64, 65.64, 66.19, 66.47, 66.60, 66.77, 66.88, 67.14, 67.30, 67.28, 67.28
+        ]
+      },
+      {
+        "asset": "Trigo Cepea (Praça PR)",
+        "unit": "R$/t",
+        "month_open_value": 1569.82,
+        "mid_month_10_oct": 1559.00,
+        "current_value": 1572.37,
+        "mtd_change_pct": 0.16,
+        "monthly_narrative": "Saltou +0,68% (+R$ 10,59/t) em 12/11 para R$ 1.572,37/t no Paraná (virando para alta de +0,16% no acumulado de novembro, com o RS subindo a R$ 1.475,06/t) graças ao dólar a R$ 5,65!",
+        "daily_history": [
+          1559.00, 1560.00, 1560.32, 1560.32, 1560.32, 1563.50, 1569.61, 1571.30, 1578.12, 1569.82,
+          1569.82, 1569.82, 1565.43, 1566.88, 1560.21, 1572.66, 1555.77, 1564.03, 1561.78, 1572.37, 1572.37
+        ]
+      },
+      {
+        "asset": "Café Cepea & Manhuaçu-MG",
+        "unit": "R$/sc",
+        "month_open_value": 1598.37,
+        "mid_month_10_oct": 1654.00,
+        "current_value": 1619.43,
+        "mtd_change_pct": 1.32,
+        "monthly_narrative": "O Indicador Cepea Arábica disparou +1,64% (+R$ 26,15/sc) em 12/11 para R$ 1.619,43/sc (+1,32% em novembro, com B3 Mar/27 subindo +4,88% a US$ 344/sc e Guaxupé a R$ 1.752/sc), enquanto Manhuaçu-MG marca R$ 1.576,00/sc em 13/11 no Agrolink.",
+        "daily_history": [
+          1654.0, 1677.0, 1647.0, 1664.0, 1674.0, 1647.0, 1615.0, 1627.0, 1594.0, 1598.37,
+          1598.37, 1598.37, 1611.06, 1600.77, 1603.86, 1611.14, 1597.00, 1611.30, 1593.28, 1619.43, 1619.43
+        ]
+      },
+      {
+        "asset": "Boi Gordo Esalq/B3 (SP)",
+        "unit": "R$/@",
+        "month_open_value": 389.90,
+        "mid_month_10_oct": 379.00,
+        "current_value": 394.30,
+        "mtd_change_pct": 1.13,
+        "monthly_narrative": "Atingiu novo recorde histórico absoluto de R$ 394,30/@ à vista (+0,04%) e R$ 398,54/@ a prazo em SP (+1,13% em novembro e +8,20% em 30 dias), com o Bezerro MS disparando +0,43% para R$ 3.624,54/cabeça e PR/RJ batendo R$ 400,00/@!",
+        "daily_history": [
+          379.00, 380.00, 380.50, 381.00, 381.40, 381.40, 386.30, 389.05, 389.20, 389.90,
+          389.90, 389.90, 390.00, 390.85, 391.35, 391.35, 392.70, 393.30, 394.15, 394.30, 394.30
+        ]
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar Comercial & Futuro B3 (USD/BRL)",
+      "current_base": "Spot (13/11 08h10): R$ 5,6423 (Ontem: R$ 5,6507) | Fut: 5.660,50 — ✅ AUDITORIA 13/11: 100% CRAVADO NO TOPO (R$ 5,65)!",
+      "short_term_target_23_oct": "R$ 5,55 — R$ 5,72 (Novo Alvo 7d — Sexta 20/11)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,62 (30/11)",
+        "bull_case": "R$ 5,78",
+        "bear_case": "R$ 5,48"
+      },
+      "audit_trigger": "AUDITORIA DE SEXTA-FEIRA (13/11): Dólar fechou ontem a R$ 5,6507 e opera hoje a R$ 5,6423, cravando o topo da nossa banda semanal (R$ 5,50-5,65) com Fed hawkish e pacote fiscal no Senado."
+    },
+    {
+      "commodity": "Petróleo WTI & Brent (USD/barril)",
+      "current_base": "WTI: US$ 87,54 a 88,74 | Brent: US$ 95,82 (+US$ 3,06!) — ✅ AUDITORIA 13/11: ACERTO EXATO NO CENTRO DA BANDA!",
+      "short_term_target_23_oct": "US$ 85,00 — US$ 93,00 (Novo Alvo 7d — 20/11)",
+      "end_of_month_30_oct": {
+        "base_case": "US$ 89,00 (30/11)",
+        "bull_case": "US$ 96,50",
+        "bear_case": "US$ 83,00"
+      },
+      "audit_trigger": "AUDITORIA DE SEXTA-FEIRA (13/11): WTI cravou US$ 87,54-88,74 dentro da banda de US$ 84-91 após ataques a instalações energéticas sauditas e interrupções em Ormuz!"
+    },
+    {
+      "commodity": "Soja Paranaguá (Esalq), CBOT & Uberlândia-MG",
+      "current_base": "Esalq: R$ 162,31 (+1,18%!) | MG: R$ 150,14 (CIF R$ 152) | CBOT Jan: US$ 12,3075 (+11,75¢) — ✅ AUDITORIA 13/11: ACERTO TOTAL!",
+      "short_term_target_23_oct": "R$ 160,50 — R$ 165,50 (Porto 20/11)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 163,00 (30/11)",
+        "bull_case": "R$ 168,00",
+        "bear_case": "R$ 158,00"
+      },
+      "audit_trigger": "AUDITORIA DE SEXTA-FEIRA (13/11): Esalq saltou para R$ 162,31/sc cravando o centro-alto da nossa banda (R$ 159-164) e o alvo base de R$ 162,50!"
+    },
+    {
+      "commodity": "Trigo Cepea (Praças PR & RS)",
+      "current_base": "R$ 1.572,37/t (+0,68% PR!) | R$ 1.475,06/t (+0,03% RS) — ✅ AUDITORIA 13/11: CRAVADO NO CENTRO DA BANDA (R$ 1.572)!",
+      "short_term_target_23_oct": "R$ 1.560,00 — R$ 1.595,00 / t (PR 20/11)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.585,00 (30/11)",
+        "bull_case": "R$ 1.625,00",
+        "bear_case": "R$ 1.545,00"
+      },
+      "audit_trigger": "AUDITORIA DE SEXTA-FEIRA (13/11): Cepea PR saltou +0,68% para R$ 1.572,37/t cravando exatamente o meio da banda projetada de R$ 1.555-1.590/t!"
+    },
+    {
+      "commodity": "Milho Esalq/B3 (Campinas) & Curva B3",
+      "current_base": "Esalq: R$ 67,28 (+2,50% MTD) | B3 Mar/27: R$ 74,80 (+0,40%) — ✅ AUDITORIA 13/11: VALIDADO DENTRO DA BANDA!",
+      "short_term_target_23_oct": "R$ 67,00 — R$ 69,80 (Esalq 20/11)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 69,00 (Esalq em 30/11)",
+        "bull_case": "R$ 72,00",
+        "bear_case": "R$ 66,00"
+      },
+      "audit_trigger": "AUDITORIA DE SEXTA-FEIRA (13/11): Esalq em R$ 67,28/sc dentro da banda de R$ 66,80-69,50, com estoques de etanol 15% menores no Centro-Sul e exportação recorde de frango (07h41)!"
+    },
+    {
+      "commodity": "Café Cepea, Cooperativas & Manhuaçu-MG",
+      "current_base": "Cepea: R$ 1.619,43 (+1,64%!) | Manhuaçu (13/11): R$ 1.576 | Guaxupé: R$ 1.752 — ✅ AUDITORIA 13/11: 100% VALIDADO!",
+      "short_term_target_23_oct": "R$ 1.580,00 — R$ 1.645,00 (20/11)",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.625,00 (30/11)",
+        "bull_case": "R$ 1.685,00",
+        "bear_case": "R$ 1.570,00"
+      },
+      "audit_trigger": "AUDITORIA DE SEXTA-FEIRA (13/11): Cepea saltou +1,64% para R$ 1.619,43/sc cravando nossa banda (R$ 1.575-1.635), enquanto NY realiza lucros hoje às 07h44!"
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "O Show de Indicadores Noturnos de 12/11 (Soja Paranaguá +1,18% a R$ 162,31/sc, Café Cepea +1,64% a R$ 1.619,43/sc, Algodão Cepea +0,83% a 417,68 ¢, Trigo PR +0,68% a R$ 1.572,37/t e Bezerro MS +0,43% a R$ 3.624,54) + A Arbitragem em Manhuaçu-MG Hoje!",
+    "formula": "NDF (160 dias) = 5,6423 * [(1 + 0,1428)^(110/252)] / [1 + 0,0480 * (160/360)] = R$ 5,8561",
+    "analysis": "A divulgação noturna dos indicadores oficiais do Cepea/Esalq de 12/11 e os dados desta manhã de sexta-feira (13/11 às 08:11 BRT) coroaram 100% das nossas projeções na Auditoria Semanal: (1) Todos os cinco indicadores dispararam com o dólar a R$ 5,64-5,65 — Soja Paranaguá saltou +1,18% (+R$ 1,90/sc) para R$ 162,31/sc (e hoje na CBOT o Jan/27 sobe mais +11,75¢ para US$ 12,3075/bu!), Café Cepea saltou +1,64% (+R$ 26,15/sc) para R$ 1.619,43/sc (B3 Mar/27 +4,88% a US$ 344/sc), Algodão Cepea subiu +0,83% para 417,68 ¢ R$/lb, Trigo PR saltou +0,68% para R$ 1.572,37/t e o Bezerro MS disparou +0,43% para R$ 3.624,54/cabeça (com PR e RJ cravando R$ 400,00/@ no Boi Gordo na Scot)! (2) Como hoje cedo (07h44) o Café Arábica abriu realizando lucros em NY após subir mais de 4% ontem, quem tem café em Guaxupé (R$ 1.752/sc), Campos Gerais (R$ 1.731/sc) e Franca/Poços (R$ 1.700/sc) deve vender na abertura antes do ajuste da tarde, enquanto em Manhuaçu-MG (R$ 1.576/sc no Agrolink, R$ 43 abaixo do Cepea!) o produtor deve exigir o repasse da alta!",
+    "strategic_takeaway": "Nesta sexta-feira (13/11), aproveite o dólar a R$ 5,6423 (NDF a R$ 5,8561 para 160 dias) e a subida da Soja hoje em Chicago (+11,75¢ no Jan/27) para: (1) Vender soja disponível no pico de R$ 162,31/sc em Paranaguá e R$ 150,14-152,00/sc em Uberlândia-MG; (2) Vender café nas cooperativas que explodiram ontem (R$ 1.700 a R$ 1.752/sc) antes que ajustem ao recuo de hoje de NY (07h44); (3) Travar vendas de algodão no recorde do Cepea (417,68 ¢) e trigo no PR (R$ 1.572,37/t); e (4) Garantir óleo diesel e caroço de algodão em MT (R$ 695,36/t) imediatamente!"
+  }
+}
