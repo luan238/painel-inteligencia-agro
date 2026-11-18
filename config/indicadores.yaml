@@ -1,0 +1,650 @@
+# =============================================================================
+#  INDICADORES (COTAÇÕES) — de onde vem cada número e como ele é conferido
+# =============================================================================
+#  A IA NUNCA gera estes números: eles são lidos destas fontes, conferidos e
+#  gravados em data/historico.csv. Cada indicador pode ter várias fontes; a
+#  de menor "prioridade" vence e as outras servem de checagem cruzada.
+#
+#  Checagens automáticas por indicador:
+#    faixa                     → valor fora dela é REJEITADO (erro de unidade, de leitura etc.)
+#    var_max_dia_pct           → variação maior gera ALERTA (3x maior = rejeitado)
+#    defasagem_max_dias_uteis  → dado mais velho que isso vira "desatualizado"
+#    divergencia_max_pct       → diferença entre fontes acima disso gera ALERTA
+#
+#  Tipos de fonte (coletores):
+#    bcb_ptax      → API oficial PTAX do Banco Central
+#    bcb_sgs       → API oficial de séries do BCB (ex.: 432 = Selic meta)
+#    b3_ajustes    → página oficial "Ajustes do Pregão" da B3 (mercadoria + vencimento)
+#    tabela_html   → lê uma tabela de uma página: escolhe a tabela pelo título,
+#                    a linha pelo rótulo e a coluna pelo cabeçalho
+#    regex_pagina  → captura um número no texto da página com uma expressão regular
+#    json_api      → qualquer API JSON (aceita ${VARIAVEL} de ambiente na URL)
+#    yahoo         → Yahoo Finance (fora da sua lista; desativado — só checagem cruzada)
+#
+#  "verificado: false" = configuração ainda não testada no site real. Rode a
+#  ação "Checar fontes" no GitHub para confirmar.
+# =============================================================================
+
+indicadores:
+
+  # ======================================================== CÂMBIO & ENERGIA
+  - id: dolar_ptax
+    nome: "Dólar PTAX (venda) — Banco Central"
+    nome_curto: "Dólar PTAX (USD/BRL)"
+    bloco: cambio_e_energia
+    unidade: "R$"
+    casas: 4
+    faixa: [3.0, 10.0]
+    var_max_dia_pct: 4
+    defasagem_max_dias_uteis: 1
+    fontes:
+      - fonte: Banco Central do Brasil
+        tipo: bcb_ptax
+        verificado: true
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "BRL=X"
+        ativa: false
+        verificado: false
+
+  - id: dolar_futuro_b3
+    nome: "Dólar Futuro B3 (DOL) — 1º vencimento"
+    nome_curto: "Dólar Futuro B3"
+    bloco: cambio_e_energia
+    unidade: "pts"
+    casas: 2
+    faixa: [3000, 10000]
+    var_max_dia_pct: 4
+    defasagem_max_dias_uteis: 1
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_ajustes
+        mercadoria: DOL
+        vencimento: 1
+        verificado: false
+
+  - id: selic_meta
+    nome: "Taxa Selic meta — Banco Central"
+    nome_curto: "Selic meta"
+    bloco: cambio_e_energia
+    unidade: "% a.a."
+    casas: 2
+    faixa: [1, 40]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 5
+    fontes:
+      - fonte: Banco Central do Brasil
+        tipo: bcb_sgs
+        serie: 432
+        verificado: true
+
+  - id: petroleo_wti
+    nome: "Petróleo WTI — NYMEX (1º vencimento)"
+    nome_curto: "Petróleo WTI"
+    bloco: cambio_e_energia
+    unidade: "US$/bbl"
+    casas: 2
+    faixa: [20, 250]
+    var_max_dia_pct: 9
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/petroleo
+        titulo_contem: ["wti"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço", "valor"]
+        verificado: false
+      - fonte: EIA (governo dos EUA)
+        tipo: json_api
+        url: "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RWTC&sort[0][column]=period&sort[0][direction]=desc&length=30"
+        caminho_lista: "response.data"
+        campo_data: "period"
+        campo_valor: "value"
+        requer_env: EIA_API_KEY
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "CL=F"
+        ativa: false
+        verificado: false
+
+  - id: petroleo_brent
+    nome: "Petróleo Brent — ICE Londres (1º vencimento)"
+    nome_curto: "Petróleo Brent"
+    bloco: cambio_e_energia
+    unidade: "US$/bbl"
+    casas: 2
+    faixa: [20, 250]
+    var_max_dia_pct: 9
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/petroleo
+        titulo_contem: ["brent"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço", "valor"]
+        verificado: false
+      - fonte: EIA (governo dos EUA)
+        tipo: json_api
+        url: "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RBRTE&sort[0][column]=period&sort[0][direction]=desc&length=30"
+        caminho_lista: "response.data"
+        campo_data: "period"
+        campo_valor: "value"
+        requer_env: EIA_API_KEY
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "BZ=F"
+        ativa: false
+        verificado: false
+
+  # ============================================================ COMPLEXO SOJA
+  - id: soja_cbot
+    nome: "Soja CBOT — 1º vencimento"
+    nome_curto: "Soja CBOT"
+    bloco: complexo_soja
+    unidade: "US$/bu"
+    casas: 4
+    faixa: [6, 30]
+    fatores_aceitos: [1, 0.01]          # aceita a cotação em centavos e converte para US$
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/soja
+        titulo_contem: ["soja", "chicago"]
+        titulo_nao_contem: ["farelo", "óleo", "oleo"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "ZS=F"
+        ativa: false
+        verificado: false
+
+  - id: farelo_cbot
+    nome: "Farelo de Soja CBOT — 1º vencimento"
+    nome_curto: "Farelo CBOT"
+    bloco: complexo_soja
+    unidade: "US$/t curta"
+    casas: 2
+    faixa: [150, 800]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/soja
+        titulo_contem: ["farelo", "chicago"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "ZM=F"
+        ativa: false
+        verificado: false
+
+  - id: oleo_soja_cbot
+    nome: "Óleo de Soja CBOT — 1º vencimento"
+    nome_curto: "Óleo de Soja CBOT"
+    bloco: complexo_soja
+    unidade: "¢/lb"
+    casas: 2
+    faixa: [15, 150]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/soja
+        titulo_contem: ["óleo", "chicago"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "ZL=F"
+        ativa: false
+        verificado: false
+
+  - id: soja_paranagua
+    nome: "Soja — Indicador Cepea/Esalq Paranaguá"
+    nome_curto: "Soja Paranaguá (Cepea)"
+    bloco: complexo_soja
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [60, 450]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/soja
+        titulo_contem: ["soja", "paranagu"]
+        linha: 1
+        coluna_valor: ["vista", "r$", "valor", "preço", "fechamento"]
+        coluna_data: ["data"]
+        verificado: false
+
+  - id: soja_parana
+    nome: "Soja — Indicador Cepea/Esalq Paraná"
+    nome_curto: "Soja Paraná (Cepea)"
+    bloco: complexo_soja
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [60, 450]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/soja
+        titulo_contem: ["soja", "paran"]
+        titulo_nao_contem: ["paranagu"]
+        linha: 1
+        coluna_valor: ["vista", "r$", "valor", "preço", "fechamento"]
+        coluna_data: ["data"]
+        verificado: false
+
+  - id: soja_uberlandia
+    nome: "Soja — Uberlândia-MG (mercado físico)"
+    nome_curto: "Soja Uberlândia-MG"
+    bloco: complexo_soja
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [60, 450]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 3
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/soja
+        titulo_contem: ["soja", "físico"]
+        linha_contem: ["uberl"]
+        coluna_valor: ["preço", "valor", "r$"]
+        verificado: false
+      - fonte: Agrolink
+        tipo: tabela_html
+        url: https://www.agrolink.com.br/cotacoes/graos/soja
+        titulo_contem: []
+        linha_contem: ["uberl"]
+        coluna_valor: ["preço", "valor", "r$", "atual"]
+        verificado: false
+
+  - id: soja_b3
+    nome: "Soja B3 (SJC) — 1º vencimento"
+    nome_curto: "Soja B3"
+    bloco: complexo_soja
+    unidade: "US$/sc"
+    casas: 2
+    faixa: [10, 80]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 1
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_ajustes
+        mercadoria: SJC
+        vencimento: 1
+        verificado: false
+
+  - id: soja_rosario
+    nome: "Soja — Pizarra Rosario (BCR, Argentina)"
+    nome_curto: "Soja Rosario (BCR)"
+    bloco: complexo_soja
+    unidade: "ARS/t"
+    casas: 0
+    faixa: [10000, 50000000]
+    var_max_dia_pct: 12
+    defasagem_max_dias_uteis: 3
+    fontes:
+      - fonte: BCR – Bolsa de Comercio de Rosario
+        tipo: tabela_html
+        url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0
+        titulo_contem: []
+        linha_contem: ["soja"]
+        coluna_valor: ["$/tn", "pizarra", "precio", "$"]
+        verificado: false
+
+  # ===================================================== MILHO, SORGO E TRIGO
+  - id: milho_cbot
+    nome: "Milho CBOT — 1º vencimento"
+    nome_curto: "Milho CBOT"
+    bloco: complexo_milho_e_ddgs
+    unidade: "US$/bu"
+    casas: 4
+    faixa: [2, 15]
+    fatores_aceitos: [1, 0.01]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/milho
+        titulo_contem: ["milho", "chicago"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "ZC=F"
+        ativa: false
+        verificado: false
+
+  - id: milho_campinas
+    nome: "Milho — Indicador Cepea/Esalq Campinas"
+    nome_curto: "Milho Campinas (Esalq)"
+    bloco: complexo_milho_e_ddgs
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [25, 250]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/milho
+        titulo_contem: ["milho", "esalq"]
+        titulo_nao_contem: ["chicago", "futuro"]
+        linha: 1
+        coluna_valor: ["vista", "r$", "valor", "preço", "fechamento"]
+        coluna_data: ["data"]
+        verificado: false
+
+  - id: milho_b3
+    nome: "Milho B3 (CCM) — 1º vencimento"
+    nome_curto: "Milho B3"
+    bloco: complexo_milho_e_ddgs
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [25, 250]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 1
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_ajustes
+        mercadoria: CCM
+        vencimento: 1
+        verificado: false
+
+  - id: milho_b3_2
+    nome: "Milho B3 (CCM) — 2º vencimento"
+    nome_curto: "Milho B3 (2º venc.)"
+    bloco: complexo_milho_e_ddgs
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [25, 250]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 1
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_ajustes
+        mercadoria: CCM
+        vencimento: 2
+        verificado: false
+
+  - id: trigo_cbot
+    nome: "Trigo CBOT — 1º vencimento"
+    nome_curto: "Trigo CBOT"
+    bloco: complexo_milho_e_ddgs
+    unidade: "US$/bu"
+    casas: 4
+    faixa: [3, 18]
+    fatores_aceitos: [1, 0.01]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/trigo
+        titulo_contem: ["trigo", "chicago"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "ZW=F"
+        ativa: false
+        verificado: false
+
+  - id: trigo_parana
+    nome: "Trigo — Preço médio Cepea/Esalq Paraná"
+    nome_curto: "Trigo Paraná (Cepea)"
+    bloco: complexo_milho_e_ddgs
+    unidade: "R$/t"
+    casas: 2
+    faixa: [400, 5000]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 3
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/trigo
+        titulo_contem: ["trigo", "cepea"]
+        linha_contem: ["paran"]
+        coluna_valor: ["r$", "valor", "preço", "média"]
+        verificado: false
+
+  - id: trigo_rs
+    nome: "Trigo — Preço médio Cepea/Esalq Rio Grande do Sul"
+    nome_curto: "Trigo RS (Cepea)"
+    bloco: complexo_milho_e_ddgs
+    unidade: "R$/t"
+    casas: 2
+    faixa: [400, 5000]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 3
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/trigo
+        titulo_contem: ["trigo", "cepea"]
+        linha_contem: ["rio grande"]
+        coluna_valor: ["r$", "valor", "preço", "média"]
+        verificado: false
+
+  # ========================================================= COMPLEXO ALGODÃO
+  - id: algodao_ice
+    nome: "Algodão ICE Nova York — 1º vencimento"
+    nome_curto: "Algodão NY (ICE)"
+    bloco: complexo_algodao
+    unidade: "¢/lb"
+    casas: 2
+    faixa: [30, 250]
+    var_max_dia_pct: 7
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/algodao
+        titulo_contem: ["algod", "nova york"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "CT=F"
+        ativa: false
+        verificado: false
+
+  - id: algodao_cepea
+    nome: "Algodão em pluma — Indicador Cepea/Esalq"
+    nome_curto: "Algodão Pluma (Cepea)"
+    bloco: complexo_algodao
+    unidade: "¢R$/lb"
+    casas: 2
+    faixa: [150, 1200]
+    var_max_dia_pct: 6
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/algodao
+        titulo_contem: ["algod", "cepea"]
+        titulo_nao_contem: ["caroço", "caroco"]
+        linha: 1
+        coluna_valor: ["vista", "prazo", "valor", "preço", "centavos"]
+        coluna_data: ["data"]
+        verificado: false
+
+  - id: caroco_algodao_mt
+    nome: "Caroço de Algodão — Mato Grosso"
+    nome_curto: "Caroço de Algodão MT"
+    bloco: complexo_algodao
+    unidade: "R$/t"
+    casas: 2
+    faixa: [200, 4000]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 5
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/algodao
+        titulo_contem: ["caroço"]
+        linha_contem: ["mato grosso", "/mt", "- mt", "(mt)"]
+        coluna_valor: ["preço", "valor", "r$"]
+        verificado: false
+
+  - id: caroco_algodao_ba
+    nome: "Caroço de Algodão — Oeste da Bahia"
+    nome_curto: "Caroço de Algodão BA"
+    bloco: complexo_algodao
+    unidade: "R$/t"
+    casas: 2
+    faixa: [200, 4000]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 5
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/algodao
+        titulo_contem: ["caroço"]
+        linha_contem: ["bahia", "/ba", "- ba", "(ba)"]
+        coluna_valor: ["preço", "valor", "r$"]
+        verificado: false
+
+  # ================================================== COMPLEXO CAFÉ & PECUÁRIA
+  - id: cafe_arabica_ice
+    nome: "Café Arábica ICE Nova York — 1º vencimento"
+    nome_curto: "Café Arábica NY (ICE)"
+    bloco: complexo_cafe
+    unidade: "¢/lb"
+    casas: 2
+    faixa: [60, 700]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/cafe
+        titulo_contem: ["café", "nova york"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+      - fonte: Yahoo Finance (checagem)
+        tipo: yahoo
+        simbolo: "KC=F"
+        ativa: false
+        verificado: false
+
+  - id: cafe_robusta_londres
+    nome: "Café Robusta ICE Londres — 1º vencimento"
+    nome_curto: "Café Robusta Londres"
+    bloco: complexo_cafe
+    unidade: "US$/t"
+    casas: 0
+    faixa: [800, 12000]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/cafe
+        titulo_contem: ["londres"]
+        linha: 1
+        coluna_valor: ["fechamento", "último", "ultimo", "cotação", "preço"]
+        verificado: false
+
+  - id: cafe_arabica_cepea
+    nome: "Café Arábica — Indicador Cepea/Esalq"
+    nome_curto: "Café Arábica (Cepea)"
+    bloco: complexo_cafe
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [300, 6000]
+    var_max_dia_pct: 8
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/cafe
+        titulo_contem: ["arábica", "cepea"]
+        linha: 1
+        coluna_valor: ["vista", "r$", "valor", "preço"]
+        coluna_data: ["data"]
+        verificado: false
+
+  - id: cafe_manhuacu
+    nome: "Café Arábica tipo 6 bebida dura — Manhuaçu-MG"
+    nome_curto: "Café Manhuaçu-MG (Matas de Minas)"
+    bloco: complexo_cafe
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [300, 6000]
+    var_max_dia_pct: 8
+    defasagem_max_dias_uteis: 3
+    fontes:
+      - fonte: Agrolink
+        tipo: tabela_html
+        url: https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg
+        titulo_contem: []
+        linha_contem: ["manhua"]
+        coluna_valor: ["preço", "valor", "r$", "atual"]
+        verificado: false
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/cafe
+        titulo_contem: ["café", "físico"]
+        linha_contem: ["manhua"]
+        coluna_valor: ["preço", "valor", "r$"]
+        verificado: false
+
+  - id: boi_gordo_cepea
+    nome: "Boi Gordo — Indicador Cepea/Esalq (SP, à vista)"
+    nome_curto: "Boi Gordo (Cepea)"
+    bloco: complexo_cafe
+    unidade: "R$/@"
+    casas: 2
+    faixa: [120, 800]
+    var_max_dia_pct: 5
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: Notícias Agrícolas
+        tipo: tabela_html
+        url: https://www.noticiasagricolas.com.br/cotacoes/boi-gordo
+        titulo_contem: ["boi", "esalq"]
+        titulo_nao_contem: ["futuro", "b3 -", "magro"]
+        linha: 1
+        coluna_valor: ["vista", "r$", "valor", "preço"]
+        coluna_data: ["data"]
+        verificado: false
+
+  - id: boi_b3
+    nome: "Boi Gordo B3 (BGI) — 1º vencimento"
+    nome_curto: "Boi Gordo B3"
+    bloco: complexo_cafe
+    unidade: "R$/@"
+    casas: 2
+    faixa: [120, 800]
+    var_max_dia_pct: 5
+    defasagem_max_dias_uteis: 1
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_ajustes
+        mercadoria: BGI
+        vencimento: 1
+        verificado: false

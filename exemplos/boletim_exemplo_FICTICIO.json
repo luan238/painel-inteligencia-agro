@@ -1,0 +1,2093 @@
+{
+  "metadata": {
+    "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
+    "scope": "⚠️ EXEMPLO COM DADOS FICTÍCIOS (internet e IA simuladas) — não usar para decisão",
+    "timestamp": "17/11/2026 19:40 BRT — Fechamento de Terça-Feira · EXEMPLO FICTÍCIO",
+    "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
+  },
+  "executive_summary": {
+    "cambio_energia_frete": "Dólar PTAX (venda) — Banco Central em R$ 5,7324 (+1,43% (+R$ 0,0809) vs 16/11). <a href=\"https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>",
+    "complexo_soja": "Soja CBOT — 1º vencimento em US$ 12,0225/bu (+0,40% (+US$ 0,0475/bu) vs 16/11). <a href=\"https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>",
+    "complexo_milho_etanol_ddgs": "Milho CBOT — 1º vencimento em US$ 4,4525/bu (+0,50% (+US$ 0,0221/bu) vs 16/11). <a href=\"https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>",
+    "complexo_algodao": "Algodão ICE Nova York — 1º vencimento em 78,36 ¢/lb (+1,54% (+1,19 ¢/lb) vs 16/11). <a href=\"https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>",
+    "complexo_cafe": "Café Arábica ICE Nova York — 1º vencimento em 279,75 ¢/lb (+1,85% (+5,07 ¢/lb) vs 16/11). <a href=\"https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>"
+  },
+  "market_indicators": {
+    "cambio_e_energia": {
+      "dolar_ptax": "R$ 5,7324 (+1,43% no dia · +1,24% na semana) — Banco Central do Brasil, 17/11",
+      "dolar_futuro_b3": "5.761,50 pts [Z26] (+1,27% no dia · +0,92% na semana) — B3 Agro, 17/11",
+      "selic_meta": "13,75% a.a. (0,00% no dia · 0,00% na semana) — Banco Central do Brasil, 17/11",
+      "petroleo_wti": "US$ 90,40/bbl [Dez/26] (+1,00% no dia · +4,07% na semana) — Notícias Agrícolas, 17/11",
+      "petroleo_brent": "US$ 97,80/bbl [Jan/27] (-1,37% no dia · -2,19% na semana) — Notícias Agrícolas, 17/11",
+      "ndf_teorico_160d": "R$ 5,9222 (spot R$ 5,7324 · juros R$ 13,75% a.a. · cupom 4,80% a.a. · 105 d.u.)"
+    },
+    "complexo_soja": {
+      "soja_cbot": "US$ 12,0225/bu [Jan/27] (+0,40% no dia · -0,56% na semana) — Notícias Agrícolas, 17/11",
+      "farelo_cbot": "US$ 318,50/t curta [Dez/26] (+1,74% no dia · +1,69% na semana) — Notícias Agrícolas, 17/11",
+      "oleo_soja_cbot": "51,20 ¢/lb [Dez/26] (-0,09% no dia · -0,05% na semana) — Notícias Agrícolas, 17/11",
+      "soja_paranagua": "R$ 158,52/sc (-0,05% no dia · -0,35% na semana) — Notícias Agrícolas, 17/11",
+      "soja_parana": "R$ 152,10/sc (+0,60% no dia · +1,06% na semana) — Notícias Agrícolas, 17/11",
+      "soja_uberlandia": "R$ 147,89/sc [Uberlândia/MG] (-0,10% no dia · -1,11% na semana) — Notícias Agrícolas, 17/11",
+      "soja_b3": "US$ 26,34/sc [F27] (+0,36% no dia · +0,16% na semana) — B3 Agro, 17/11",
+      "soja_rosario": "ARS 445.000/t [Soja] (+1,25% no dia · +2,06% na semana) — BCR – Bolsa de Comercio de Rosario, 17/11",
+      "spread_soja_porto_uberlandia": "R$ 10,63/sc — Soja Paranaguá (Cepea) 158,52 − Soja Uberlândia-MG 147,89 (17/11)"
+    },
+    "complexo_milho_e_ddgs": {
+      "milho_cbot": "US$ 4,4525/bu [Dez/26] (+0,50% no dia · -0,48% na semana) — Notícias Agrícolas, 17/11",
+      "milho_campinas": "R$ 66,77/sc (+0,44% no dia · +0,94% na semana) — Notícias Agrícolas, 17/11",
+      "milho_b3": "R$ 66,88/sc [X26] (+1,58% no dia · +2,90% na semana) — B3 Agro, 17/11",
+      "milho_b3_2": "R$ 71,35/sc [F27] (-0,09% no dia · +0,61% na semana) — B3 Agro, 17/11",
+      "trigo_cbot": "US$ 5,9650/bu [Dez/26] (-0,16% no dia · -0,97% na semana) — Notícias Agrícolas, 17/11",
+      "trigo_parana": "R$ 1.572,66/t [Paraná] (+0,24% no dia · +0,87% na semana) — Notícias Agrícolas, 17/11",
+      "trigo_rs": "R$ 1.454,93/t [Rio Grande do Sul] (+0,34% no dia · +0,89% na semana) — Notícias Agrícolas, 17/11",
+      "spread_milho_b3_calendario": "R$ 4,47/sc — Milho B3 (2º venc.) 71,35 − Milho B3 66,88 (17/11)"
+    },
+    "complexo_algodao": {
+      "algodao_ice": "78,36 ¢/lb [Dez/26] (+1,54% no dia · +2,92% na semana) — Notícias Agrícolas, 17/11",
+      "algodao_cepea": "410,04 ¢R$/lb (+0,24% no dia · +0,02% na semana) — Notícias Agrícolas, 17/11",
+      "caroco_algodao_mt": "R$ 695,36/t [Mato Grosso] (+1,06% no dia · +2,20% na semana) — Notícias Agrícolas, 17/11",
+      "caroco_algodao_ba": "R$ 983,33/t [Oeste da Bahia] (+0,96% no dia · +1,22% na semana) — Notícias Agrícolas, 17/11",
+      "spread_caroco_ba_mt": "R$ 287,97/t — Caroço de Algodão BA 983,33 − Caroço de Algodão MT 695,36 (17/11)"
+    },
+    "complexo_cafe": {
+      "cafe_arabica_ice": "279,75 ¢/lb [Dez/26] (+1,85% no dia · +4,25% na semana) — Notícias Agrícolas, 17/11",
+      "cafe_robusta_londres": "US$ 4.285/t [Jan/27] (+1,61% no dia · +2,24% na semana) — Notícias Agrícolas, 17/11",
+      "cafe_arabica_cepea": "R$ 1.611,14/sc (-1,24% no dia · -0,38% na semana) — Notícias Agrícolas, 17/11",
+      "cafe_manhuacu": "R$ 1.586,00/sc [Manhuaçu/MG] (-0,70% no dia · -0,54% na semana) — Agrolink, 17/11",
+      "boi_gordo_cepea": "R$ 392,70/@ (+0,12% no dia · +0,42% na semana) — Notícias Agrícolas, 17/11",
+      "boi_b3": "R$ 407,00/@ [X26] (-0,45% no dia · -0,59% na semana) — B3 Agro, 17/11",
+      "spread_cafe_cepea_manhuacu": "R$ 25,14/sc — Café Arábica (Cepea) 1.611,14 − Café Manhuaçu-MG (Matas de Minas) 1.586,00 (17/11)"
+    }
+  },
+  "detailed_blocks_and_news": [
+    {
+      "title": "🏛️🛢️ Cenário Político, Macro, Câmbio &amp; Energia — Mercado ajusta posições no fechamento",
+      "market_bias": "Viés neutro com atenção ao câmbio <a href=\"https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "executive_summary": "Dólar PTAX (venda) — Banco Central em R$ 5,7324 (+1,43% (+R$ 0,0809) vs 16/11). As notícias do dia reforçam a leitura <a href=\"https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "news_sources": [
+        {
+          "headline": "Dólar fecha em alta com payroll forte nos EUA e cautela fiscal — Notícias Agrícolas (17/11 17:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar"
+        },
+        {
+          "headline": "Petróleo cai com expectativa de acordo no Oriente Médio — Notícias Agrícolas (17/11 14:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/petroleo/431009-petroleo"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Gestão de Custos, Insumos e Crédito)",
+          "direction": "Acompanhar Dólar PTAX (venda) — Banco Central e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Dólar fecha em alta com payroll forte nos EUA e cautela fiscal — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar"
+            },
+            {
+              "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (17/11)",
+              "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes"
+            },
+            {
+              "label": "Cotação verificada: Dólar Futuro B3 — B3 Agro (17/11)",
+              "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Barter e Políticas de Crédito)",
+          "direction": "Acompanhar Dólar PTAX (venda) — Banco Central e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Dólar fecha em alta com payroll forte nos EUA e cautela fiscal — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar"
+            },
+            {
+              "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (17/11)",
+              "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes"
+            },
+            {
+              "label": "Cotação verificada: Dólar Futuro B3 — B3 Agro (17/11)",
+              "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias, Usinas e Logística (Diesel, Frete e Energia)",
+          "direction": "Acompanhar Dólar PTAX (venda) — Banco Central e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Dólar fecha em alta com payroll forte nos EUA e cautela fiscal — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar"
+            },
+            {
+              "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (17/11)",
+              "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes"
+            },
+            {
+              "label": "Cotação verificada: Dólar Futuro B3 — B3 Agro (17/11)",
+              "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF)",
+          "direction": "Acompanhar Dólar PTAX (venda) — Banco Central e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Dólar fecha em alta com payroll forte nos EUA e cautela fiscal — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/politica-economia/431004-dolar"
+            },
+            {
+              "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (17/11)",
+              "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes"
+            },
+            {
+              "label": "Cotação verificada: Dólar Futuro B3 — B3 Agro (17/11)",
+              "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo) — Mercado ajusta posições no fechamento",
+      "market_bias": "Viés neutro com atenção ao câmbio <a href=\"https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "executive_summary": "Soja CBOT — 1º vencimento em US$ 12,0225/bu (+0,40% (+US$ 0,0475/bu) vs 16/11). As notícias do dia reforçam a leitura <a href=\"https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "news_sources": [
+        {
+          "headline": "Soja recua em Chicago com previsão de safra recorde no Brasil — Notícias Agrícolas (17/11 16:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago"
+        },
+        {
+          "headline": "Importações de soja pela China em 2026/27 estimadas em 110 mi t, diz adido do USDA — Notícias Agrícolas (17/11 14:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/431002-china-110-mi-t"
+        },
+        {
+          "headline": "Plantio de soja em Mato Grosso chega a 96% da área prevista — Canal Rural (17/11 09:40)",
+          "url": "https://www.canalrural.com.br/agricultura/plantio-soja-mt-96"
+        },
+        {
+          "headline": "US soybean export sales top 1.2 million tonnes — World Grain (17/11 05:40)",
+          "url": "https://www.world-grain.com/articles/23001-us-soybean-export-sales"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Comercialização e Hedge)",
+          "direction": "Acompanhar Soja CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Soja recua em Chicago com previsão de safra recorde no Brasil — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago"
+            },
+            {
+              "label": "Cotação verificada: Soja CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            },
+            {
+              "label": "Cotação verificada: Farelo CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Recebimento de Grãos",
+          "direction": "Acompanhar Soja CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Soja recua em Chicago com previsão de safra recorde no Brasil — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago"
+            },
+            {
+              "label": "Cotação verificada: Soja CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            },
+            {
+              "label": "Cotação verificada: Farelo CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias Esmagadoras e Confinamentos (Farelo e Óleo)",
+          "direction": "Acompanhar Soja CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Soja recua em Chicago com previsão de safra recorde no Brasil — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago"
+            },
+            {
+              "label": "Cotação verificada: Soja CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            },
+            {
+              "label": "Cotação verificada: Farelo CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Visão do Trader (Basis, Spreads & CBOT)",
+          "direction": "Acompanhar Soja CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Soja recua em Chicago com previsão de safra recorde no Brasil — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/soja/431001-soja-recua-em-chicago"
+            },
+            {
+              "label": "Cotação verificada: Soja CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            },
+            {
+              "label": "Cotação verificada: Farelo CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/soja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "🌽🌾 Complexo Milho, Sorgo, Trigo e Coprodutos (Etanol e DDG/DDGS) — Mercado ajusta posições no fechamento",
+      "market_bias": "Viés neutro com atenção ao câmbio <a href=\"https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "executive_summary": "Milho CBOT — 1º vencimento em US$ 4,4525/bu (+0,50% (+US$ 0,0221/bu) vs 16/11). As notícias do dia reforçam a leitura <a href=\"https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "news_sources": [
+        {
+          "headline": "Trigo: baixa oferta de grão de qualidade sustenta preços no Paraná — Notícias Agrícolas (17/11 10:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr"
+        },
+        {
+          "headline": "Milho sobe em Chicago com avanço da produção de etanol nos EUA — Notícias Agrícolas (17/11 15:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/431003-milho-etanol"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores de Milho, Sorgo e Trigo",
+          "direction": "Acompanhar Milho CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Trigo: baixa oferta de grão de qualidade sustenta preços no Paraná — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr"
+            },
+            {
+              "label": "Cotação verificada: Milho CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            },
+            {
+              "label": "Cotação verificada: Milho Campinas (Esalq) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Sementeiras",
+          "direction": "Acompanhar Milho CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Trigo: baixa oferta de grão de qualidade sustenta preços no Paraná — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr"
+            },
+            {
+              "label": "Cotação verificada: Milho CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            },
+            {
+              "label": "Cotação verificada: Milho Campinas (Esalq) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Moinhos, Granjas (Frango, Ovos, Suínos) e Confinamentos",
+          "direction": "Acompanhar Milho CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Trigo: baixa oferta de grão de qualidade sustenta preços no Paraná — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr"
+            },
+            {
+              "label": "Cotação verificada: Milho CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            },
+            {
+              "label": "Cotação verificada: Milho Campinas (Esalq) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Visão do Trader (B3 vs. CBOT)",
+          "direction": "Acompanhar Milho CBOT — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Trigo: baixa oferta de grão de qualidade sustenta preços no Paraná — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/trigo/431008-trigo-pr"
+            },
+            {
+              "label": "Cotação verificada: Milho CBOT — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            },
+            {
+              "label": "Cotação verificada: Milho Campinas (Esalq) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/milho"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☁️ Complexo Algodão e Coprodutos (Pluma, Caroço e Farelo) — Mercado ajusta posições no fechamento",
+      "market_bias": "Viés neutro com atenção ao câmbio <a href=\"https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "executive_summary": "Algodão ICE Nova York — 1º vencimento em 78,36 ¢/lb (+1,54% (+1,19 ¢/lb) vs 16/11). As notícias do dia reforçam a leitura <a href=\"https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "news_sources": [
+        {
+          "headline": "Algodão sobe mais de 1,5% em Nova York com fundos comprando — Notícias Agrícolas (17/11 11:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Produtores Rurais (Cotonicultores)",
+          "direction": "Acompanhar Algodão ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Algodão sobe mais de 1,5% em Nova York com fundos comprando — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny"
+            },
+            {
+              "label": "Cotação verificada: Algodão NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            },
+            {
+              "label": "Cotação verificada: Algodão Pluma (Cepea) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Algodoeiras e Cooperativas",
+          "direction": "Acompanhar Algodão ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Algodão sobe mais de 1,5% em Nova York com fundos comprando — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny"
+            },
+            {
+              "label": "Cotação verificada: Algodão NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            },
+            {
+              "label": "Cotação verificada: Algodão Pluma (Cepea) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Indústrias e Confinamentos (Caroço e Farelo de Algodão)",
+          "direction": "Acompanhar Algodão ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Algodão sobe mais de 1,5% em Nova York com fundos comprando — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny"
+            },
+            {
+              "label": "Cotação verificada: Algodão NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            },
+            {
+              "label": "Cotação verificada: Algodão Pluma (Cepea) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Visão do Trader (ICE NY & Câmbio)",
+          "direction": "Acompanhar Algodão ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Algodão sobe mais de 1,5% em Nova York com fundos comprando — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/algodao/431007-algodao-ny"
+            },
+            {
+              "label": "Cotação verificada: Algodão NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            },
+            {
+              "label": "Cotação verificada: Algodão Pluma (Cepea) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "☕🐂 Complexo Café (Arábica &amp; Robusta) e Pecuária — Mercado ajusta posições no fechamento",
+      "market_bias": "Viés neutro com atenção ao câmbio <a href=\"https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "executive_summary": "Café Arábica ICE Nova York — 1º vencimento em 279,75 ¢/lb (+1,85% (+5,07 ¢/lb) vs 16/11). As notícias do dia reforçam a leitura <a href=\"https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny\" target=\"_blank\" rel=\"noopener noreferrer\">[Notícias Agrícolas]</a>.",
+      "news_sources": [
+        {
+          "headline": "Café arábica recua em Nova York com perspectiva de exportações maiores — Notícias Agrícolas (17/11 13:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny"
+        },
+        {
+          "headline": "Café: praça de Manhuaçu mantém preços firmes no físico — Agrolink (17/11 08:40)",
+          "url": "https://www.agrolink.com.br/noticias/cafe-manhuacu-mantem-precos-firmes_521002.html"
+        },
+        {
+          "headline": "Boi gordo renova recorde nominal no indicador paulista — Notícias Agrícolas (17/11 12:40)",
+          "url": "https://www.noticiasagricolas.com.br/noticias/boi/431006-boi-recorde"
+        },
+        {
+          "headline": "Frigoríficos aceleram abates para atender cota da China — Canal Rural (17/11 07:40)",
+          "url": "https://www.canalrural.com.br/pecuaria/frigorificos-cota-china"
+        }
+      ],
+      "strategic_directions_by_elo": [
+        {
+          "elo": "Elo: Cafeicultores (Matas de Minas, Cerrado e Sul de Minas)",
+          "direction": "Acompanhar Café Arábica ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Café arábica recua em Nova York com perspectiva de exportações maiores — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny"
+            },
+            {
+              "label": "Cotação verificada: Café Arábica NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            },
+            {
+              "label": "Cotação verificada: Café Robusta Londres — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas de Café e Exportadores",
+          "direction": "Acompanhar Café Arábica ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Café arábica recua em Nova York com perspectiva de exportações maiores — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny"
+            },
+            {
+              "label": "Cotação verificada: Café Arábica NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            },
+            {
+              "label": "Cotação verificada: Café Robusta Londres — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Pecuaristas e Confinamentos",
+          "direction": "Acompanhar Café Arábica ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Café arábica recua em Nova York com perspectiva de exportações maiores — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny"
+            },
+            {
+              "label": "Cotação verificada: Café Arábica NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            },
+            {
+              "label": "Cotação verificada: Café Robusta Londres — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café)",
+          "direction": "Acompanhar Café Arábica ICE Nova York — 1º vencimento e escalonar decisões.",
+          "reference_links": [
+            {
+              "label": "Café arábica recua em Nova York com perspectiva de exportações maiores — Notícias Agrícolas",
+              "url": "https://www.noticiasagricolas.com.br/noticias/cafe/431005-cafe-ny"
+            },
+            {
+              "label": "Cotação verificada: Café Arábica NY (ICE) — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            },
+            {
+              "label": "Cotação verificada: Café Robusta Londres — Notícias Agrícolas (17/11)",
+              "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly_evolution_wtd": {
+    "period_start": "15/11/2026",
+    "period_end": "17/11/2026",
+    "period_current": "Semana corrente (WTD — domingo 15/11 a terça-feira 17/11)",
+    "assets": [
+      {
+        "asset": "Dólar PTAX (USD/BRL)",
+        "unit": "R$",
+        "sunday_open_ref": 5.6622,
+        "current_value": 5.7324,
+        "weekly_change_pct": 1.24,
+        "weekly_driver": "Movimento semanal de +1,24% (+R$ 0,0702) desde 13/11."
+      },
+      {
+        "asset": "Petróleo WTI",
+        "unit": "US$/bbl",
+        "sunday_open_ref": 86.87,
+        "current_value": 90.4,
+        "weekly_change_pct": 4.07,
+        "weekly_driver": "Movimento semanal de +4,07% (+US$ 3,53/bbl) desde 13/11."
+      },
+      {
+        "asset": "Soja Paranaguá (Cepea)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 159.07,
+        "current_value": 158.52,
+        "weekly_change_pct": -0.35,
+        "weekly_driver": "Movimento semanal de -0,35% (−R$ 0,55/sc) desde 13/11."
+      },
+      {
+        "asset": "Soja CBOT",
+        "unit": "US$/bu",
+        "sunday_open_ref": 12.0899,
+        "current_value": 12.0225,
+        "weekly_change_pct": -0.56,
+        "weekly_driver": "Movimento semanal de -0,56% (−US$ 0,0674/bu) desde 13/11."
+      },
+      {
+        "asset": "Milho Campinas (Esalq)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 66.15,
+        "current_value": 66.77,
+        "weekly_change_pct": 0.94,
+        "weekly_driver": "Movimento semanal de +0,94% (+R$ 0,62/sc) desde 13/11."
+      },
+      {
+        "asset": "Trigo Paraná (Cepea)",
+        "unit": "R$/t",
+        "sunday_open_ref": 1559.05,
+        "current_value": 1572.66,
+        "weekly_change_pct": 0.87,
+        "weekly_driver": "Movimento semanal de +0,87% (+R$ 13,61/t) desde 13/11."
+      },
+      {
+        "asset": "Algodão NY (ICE)",
+        "unit": "¢/lb",
+        "sunday_open_ref": 76.14,
+        "current_value": 78.36,
+        "weekly_change_pct": 2.92,
+        "weekly_driver": "Movimento semanal de +2,92% (+2,22 ¢/lb) desde 13/11."
+      },
+      {
+        "asset": "Café Arábica (Cepea)",
+        "unit": "R$/sc",
+        "sunday_open_ref": 1617.24,
+        "current_value": 1611.14,
+        "weekly_change_pct": -0.38,
+        "weekly_driver": "Movimento semanal de -0,38% (−R$ 6,10/sc) desde 13/11."
+      },
+      {
+        "asset": "Boi Gordo (Cepea)",
+        "unit": "R$/@",
+        "sunday_open_ref": 391.06,
+        "current_value": 392.7,
+        "weekly_change_pct": 0.42,
+        "weekly_driver": "Movimento semanal de +0,42% (+R$ 1,64/@) desde 13/11."
+      }
+    ]
+  },
+  "monthly_evolution_mtd": {
+    "month_start": "2026-11-01",
+    "current_date": "2026-11-17",
+    "days_elapsed": 21,
+    "daily_dates": [
+      "19/10",
+      "20/10",
+      "21/10",
+      "22/10",
+      "23/10",
+      "26/10",
+      "27/10",
+      "28/10",
+      "29/10",
+      "30/10",
+      "03/11",
+      "04/11",
+      "05/11",
+      "06/11",
+      "09/11",
+      "10/11",
+      "11/11",
+      "12/11",
+      "13/11",
+      "16/11",
+      "17/11"
+    ],
+    "assets": [
+      {
+        "asset": "Dólar PTAX (USD/BRL)",
+        "unit": "R$",
+        "month_open_value": 5.7858,
+        "mid_month_10_oct": 5.7139,
+        "current_value": 5.7324,
+        "mtd_change_pct": -0.92,
+        "monthly_narrative": "Acumulado do mês: -0,92% (−R$ 0,0534) desde 30/10.",
+        "daily_history": [
+          5.6265,
+          5.6136,
+          5.6537,
+          5.6849,
+          5.6061,
+          5.6716,
+          5.6335,
+          5.6723,
+          5.7245,
+          5.7858,
+          5.7139,
+          5.6651,
+          5.695,
+          5.6886,
+          5.7166,
+          5.6692,
+          5.6776,
+          5.6547,
+          5.6622,
+          5.6515,
+          5.7324
+        ]
+      },
+      {
+        "asset": "Petróleo WTI",
+        "unit": "US$/bbl",
+        "month_open_value": 91.51,
+        "mid_month_10_oct": 91.71,
+        "current_value": 90.4,
+        "mtd_change_pct": -1.21,
+        "monthly_narrative": "Acumulado do mês: -1,21% (−US$ 1,11/bbl) desde 30/10.",
+        "daily_history": [
+          81.31,
+          79.83,
+          82.13,
+          81.6,
+          82.07,
+          84.9,
+          86.13,
+          87.89,
+          88.22,
+          91.51,
+          91.71,
+          94.41,
+          90.5,
+          89.2,
+          88.95,
+          87.77,
+          89.68,
+          87.4,
+          86.87,
+          89.5,
+          90.4
+        ]
+      },
+      {
+        "asset": "Soja Paranaguá (Cepea)",
+        "unit": "R$/sc",
+        "month_open_value": 158.86,
+        "mid_month_10_oct": 159.77,
+        "current_value": 158.52,
+        "mtd_change_pct": -0.22,
+        "monthly_narrative": "Acumulado do mês: -0,22% (−R$ 0,34/sc) desde 30/10.",
+        "daily_history": [
+          156.23,
+          156.85,
+          157.02,
+          155.91,
+          155.88,
+          155.01,
+          155.84,
+          156.86,
+          156.79,
+          158.86,
+          159.77,
+          160.75,
+          160.93,
+          159.72,
+          159.12,
+          160.74,
+          158.96,
+          159.13,
+          159.07,
+          158.6,
+          158.52
+        ]
+      },
+      {
+        "asset": "Soja Uberlândia-MG",
+        "unit": "R$/sc",
+        "month_open_value": 150.63,
+        "mid_month_10_oct": 148.39,
+        "current_value": 147.89,
+        "mtd_change_pct": -1.82,
+        "monthly_narrative": "Acumulado do mês: -1,82% (−R$ 2,74/sc) desde 30/10.",
+        "daily_history": [
+          149.27,
+          148.27,
+          148.61,
+          148.43,
+          149.46,
+          148.66,
+          150.98,
+          150.89,
+          150.62,
+          150.63,
+          148.39,
+          149.0,
+          149.21,
+          148.75,
+          149.15,
+          147.98,
+          147.47,
+          147.55,
+          149.54,
+          148.03,
+          147.89
+        ]
+      },
+      {
+        "asset": "Milho Campinas (Esalq)",
+        "unit": "R$/sc",
+        "month_open_value": 66.06,
+        "mid_month_10_oct": 66.05,
+        "current_value": 66.77,
+        "mtd_change_pct": 1.07,
+        "monthly_narrative": "Acumulado do mês: +1,07% (+R$ 0,71/sc) desde 30/10.",
+        "daily_history": [
+          65.26,
+          65.44,
+          65.81,
+          66.05,
+          66.16,
+          65.97,
+          66.02,
+          65.69,
+          65.37,
+          66.06,
+          66.05,
+          66.14,
+          65.6,
+          66.19,
+          66.19,
+          65.85,
+          66.17,
+          66.33,
+          66.15,
+          66.48,
+          66.77
+        ]
+      },
+      {
+        "asset": "Trigo Paraná (Cepea)",
+        "unit": "R$/t",
+        "month_open_value": 1575.75,
+        "mid_month_10_oct": 1570.57,
+        "current_value": 1572.66,
+        "mtd_change_pct": -0.2,
+        "monthly_narrative": "Acumulado do mês: -0,20% (−R$ 3,09/t) desde 30/10.",
+        "daily_history": [
+          1571.08,
+          1576.92,
+          1578.77,
+          1578.46,
+          1575.68,
+          1573.61,
+          1567.69,
+          1570.35,
+          1579.5,
+          1575.75,
+          1570.57,
+          1565.76,
+          1568.8,
+          1570.23,
+          1556.53,
+          1569.91,
+          1562.49,
+          1564.93,
+          1559.05,
+          1568.83,
+          1572.66
+        ]
+      },
+      {
+        "asset": "Café Manhuaçu-MG (Matas de Minas)",
+        "unit": "R$/sc",
+        "month_open_value": 1608.72,
+        "mid_month_10_oct": 1601.26,
+        "current_value": 1586.0,
+        "mtd_change_pct": -1.41,
+        "monthly_narrative": "Acumulado do mês: -1,41% (−R$ 22,72/sc) desde 30/10.",
+        "daily_history": [
+          1503.48,
+          1531.88,
+          1520.66,
+          1550.43,
+          1560.27,
+          1566.94,
+          1581.6,
+          1598.27,
+          1590.86,
+          1608.72,
+          1601.26,
+          1629.58,
+          1619.0,
+          1611.14,
+          1618.55,
+          1608.39,
+          1621.43,
+          1605.57,
+          1594.68,
+          1597.22,
+          1586.0
+        ]
+      },
+      {
+        "asset": "Boi Gordo (Cepea)",
+        "unit": "R$/@",
+        "month_open_value": 389.81,
+        "mid_month_10_oct": 388.99,
+        "current_value": 392.7,
+        "mtd_change_pct": 0.74,
+        "monthly_narrative": "Acumulado do mês: +0,74% (+R$ 2,89/@) desde 30/10.",
+        "daily_history": [
+          393.2,
+          391.93,
+          390.13,
+          388.79,
+          389.54,
+          389.78,
+          390.77,
+          390.77,
+          391.1,
+          389.81,
+          388.99,
+          387.43,
+          388.77,
+          389.77,
+          388.74,
+          388.36,
+          387.24,
+          389.94,
+          391.06,
+          392.21,
+          392.7
+        ]
+      }
+    ]
+  },
+  "audit_panel_projections": [
+    {
+      "commodity": "Dólar PTAX (USD/BRL)",
+      "current_base": "R$ 5,7324 (Banco Central do Brasil, 17/11) · Track record: 10/10 bandas acertadas (100,0%)",
+      "short_term_target_23_oct": "R$ 5,6803 – R$ 5,8917 até 25/11 (banda ±1,0σ, viés de alta) · Última aferição (16/11): 5,6515 ✅ dentro da banda 5,6179–5,8170",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 5,7990 (30/11)",
+        "bull_case": "R$ 5,9347 (+1,0σ)",
+        "bear_case": "R$ 5,6665 (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 0,82%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Petróleo WTI",
+      "current_base": "US$ 90,40/bbl (Notícias Agrícolas, 17/11) · Track record: 7/10 bandas acertadas (70,0%)",
+      "short_term_target_23_oct": "US$ 86,20/bbl – US$ 94,81/bbl até 25/11 (banda ±1,0σ) · Última aferição (16/11): 89,50 ✅ dentro da banda 84,72–93,38",
+      "end_of_month_30_oct": {
+        "base_case": "US$ 90,40/bbl (30/11)",
+        "bull_case": "US$ 96,01/bbl (+1,0σ)",
+        "bear_case": "US$ 85,12/bbl (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 2,13%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Soja Paranaguá (Cepea)",
+      "current_base": "R$ 158,52/sc (Notícias Agrícolas, 17/11) · Track record: 6/10 bandas acertadas (60,0%)",
+      "short_term_target_23_oct": "R$ 157,41/sc – R$ 161,90/sc até 25/11 (banda ±1,0σ, viés de alta) · Última aferição (16/11): 158,60 ✅ dentro da banda 157,12–161,14",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 159,94/sc (30/11)",
+        "bull_case": "R$ 162,81/sc (+1,0σ)",
+        "bear_case": "R$ 157,12/sc (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 0,63%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Milho Campinas (Esalq)",
+      "current_base": "R$ 66,77/sc (Notícias Agrícolas, 17/11) · Track record: 9/10 bandas acertadas (90,0%)",
+      "short_term_target_23_oct": "R$ 66,41/sc – R$ 67,87/sc até 25/11 (banda ±1,0σ, viés de alta) · Última aferição (16/11): 66,48 ✅ dentro da banda 65,35–67,03",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 67,23/sc (30/11)",
+        "bull_case": "R$ 68,17/sc (+1,0σ)",
+        "bear_case": "R$ 66,31/sc (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 0,49%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Trigo Paraná (Cepea)",
+      "current_base": "R$ 1.572,66/t (Notícias Agrícolas, 17/11) · Track record: 9/10 bandas acertadas (90,0%)",
+      "short_term_target_23_oct": "R$ 1.556,65/t – R$ 1.588,84/t até 25/11 (banda ±1,0σ) · Última aferição (16/11): 1.568,83 ✅ dentro da banda 1.539,16–1.574,10",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.572,66/t (30/11)",
+        "bull_case": "R$ 1.593,15/t (+1,0σ)",
+        "bear_case": "R$ 1.552,43/t (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 0,46%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Algodão NY (ICE)",
+      "current_base": "78,36 ¢/lb (Notícias Agrícolas, 17/11) · Track record: 6/10 bandas acertadas (60,0%)",
+      "short_term_target_23_oct": "77,21 ¢/lb – 81,92 ¢/lb até 25/11 (banda ±1,0σ, viés de alta) · Última aferição (16/11): 77,17 ✅ dentro da banda 76,88–81,23",
+      "end_of_month_30_oct": {
+        "base_case": "79,84 ¢/lb (30/11)",
+        "bull_case": "82,90 ¢/lb (+1,0σ)",
+        "bear_case": "76,90 ¢/lb (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 1,33%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Café Arábica (Cepea)",
+      "current_base": "R$ 1.611,14/sc (Notícias Agrícolas, 17/11) · Track record: 7/10 bandas acertadas (70,0%)",
+      "short_term_target_23_oct": "R$ 1.592,76/sc – R$ 1.667,57/sc até 25/11 (banda ±1,0σ, viés de alta) · Última aferição (16/11): 1.631,38 ❌ fora da banda 1.642,56–1.713,21",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 1.634,70/sc (30/11)",
+        "bull_case": "R$ 1.682,85/sc (+1,0σ)",
+        "bear_case": "R$ 1.587,92/sc (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 1,03%, 45 pregões no histórico)."
+    },
+    {
+      "commodity": "Boi Gordo (Cepea)",
+      "current_base": "R$ 392,70/@ (Notícias Agrícolas, 17/11) · Track record: 9/10 bandas acertadas (90,0%)",
+      "short_term_target_23_oct": "R$ 389,88/@ – R$ 395,54/@ até 25/11 (banda ±1,0σ) · Última aferição (16/11): 392,21 ❌ fora da banda 385,91–391,59",
+      "end_of_month_30_oct": {
+        "base_case": "R$ 392,70/@ (30/11)",
+        "bull_case": "R$ 396,29/@ (+1,0σ)",
+        "bear_case": "R$ 389,14/@ (−1,0σ)"
+      },
+      "audit_trigger": "Mudança no câmbio ou no clima das principais praças. | Método: banda de volatilidade (σ diário 0,32%, 45 pregões no histórico)."
+    }
+  ],
+  "market_intelligence_pill": {
+    "title": "Carrego do câmbio a termo",
+    "formula": "NDF (160 dias) = 5,7324 × (1 + 0,1375)^(105/252) ÷ [1 + 0,0480 × (160/360)] = R$ 5,9222",
+    "analysis": "O Dólar PTAX (venda) — Banco Central está em R$ 5,7324.",
+    "strategic_takeaway": "Compare a trava com o preço físico antes de decidir."
+  },
+  "audio_script": "Boa noite a todos da mesa e parceiros do campo. Este é o fechamento do dia. Dólar PTAX (venda) — Banco Central em R$ 5,7324 (+1,43% (+R$ 0,0809) vs 16/11). Soja CBOT — 1º vencimento em US$ 12,0225/bu (+0,40% (+US$ 0,0475/bu) vs 16/11). Milho CBOT — 1º vencimento em US$ 4,4525/bu (+0,50% (+US$ 0,0221/bu) vs 16/11). Algodão ICE Nova York — 1º vencimento em 78,36 ¢/lb (+1,54% (+1,19 ¢/lb) vs 16/11). Café Arábica ICE Nova York — 1º vencimento em 279,75 ¢/lb (+1,85% (+5,07 ¢/lb) vs 16/11). Boa noite a todos da mesa e parceiros do campo. Este é o fechamento do dia. Dólar PTAX (venda) — Banco Central em R$ 5,7324 (+1,43% (+R$ 0,0809) vs 16/11). Soja CBOT — 1º vencimento em US$ 12,0225/bu (+0,40% (+US$ 0,0475/bu) vs 16/11). Milho CBOT — 1º vencimento em US$ 4,4525/bu (+0,50% (+US$ 0,0221/bu) vs 16/11). Algodão ICE Nova York — 1º vencimento em 78,36 ¢/lb (+1,54% (+1,19 ¢/lb) vs 16/11). Café Arábica ICE Nova York — 1º vencimento em 279,75 ¢/lb (+1,85% (+5,07 ¢/lb) vs 16/11). Vamos às tabelas e ao painel.",
+  "ndf_parameters": {
+    "spot": 5.7324,
+    "di_aa": 13.75,
+    "cupom_aa": 4.8,
+    "du": 105,
+    "dc": 160,
+    "ndf": 5.9222,
+    "saca_usd": 26.34
+  },
+  "data_quality": {
+    "gerado_em": "2026-11-17T19:40-03:00",
+    "turno": "fechamento",
+    "versao_agente": "1.0.0",
+    "modo_atualizacao": "completo",
+    "analise_gerada_em": "2026-11-17T19:40-03:00",
+    "cotacoes_atualizadas_em": "2026-11-17T19:40-03:00",
+    "indicadores": {
+      "total": 30,
+      "ok": 30,
+      "alerta": 0,
+      "desatualizado": 0,
+      "indisponivel": 0
+    },
+    "lista_indicadores": [
+      {
+        "id": "dolar_ptax",
+        "nome": "Dólar PTAX (venda) — Banco Central",
+        "nome_curto": "Dólar PTAX (USD/BRL)",
+        "bloco": "cambio_e_energia",
+        "status": "ok",
+        "valor": "R$ 5,7324",
+        "data": "2026-11-17",
+        "fonte": "Banco Central do Brasil",
+        "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Banco Central do Brasil",
+            "status": "ok",
+            "mensagem": "45 valor(es); último 5.7324 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "dolar_futuro_b3",
+        "nome": "Dólar Futuro B3 (DOL) — 1º vencimento",
+        "nome_curto": "Dólar Futuro B3",
+        "bloco": "cambio_e_energia",
+        "status": "ok",
+        "valor": "5.761,50 pts",
+        "data": "2026-11-17",
+        "fonte": "B3 Agro",
+        "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 5761.5 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "selic_meta",
+        "nome": "Taxa Selic meta — Banco Central",
+        "nome_curto": "Selic meta",
+        "bloco": "cambio_e_energia",
+        "status": "ok",
+        "valor": "13,75% a.a.",
+        "data": "2026-11-17",
+        "fonte": "Banco Central do Brasil",
+        "url": "https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Banco Central do Brasil",
+            "status": "ok",
+            "mensagem": "30 valor(es); último 13.75 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "petroleo_wti",
+        "nome": "Petróleo WTI — NYMEX (1º vencimento)",
+        "nome_curto": "Petróleo WTI",
+        "bloco": "cambio_e_energia",
+        "status": "ok",
+        "valor": "US$ 90,40/bbl",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/petroleo",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 90.4 em 17/11/2026"
+          },
+          {
+            "fonte": "EIA (governo dos EUA)",
+            "status": "inativa",
+            "mensagem": "opcional — defina o secret EIA_API_KEY no GitHub para ativar"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "petroleo_brent",
+        "nome": "Petróleo Brent — ICE Londres (1º vencimento)",
+        "nome_curto": "Petróleo Brent",
+        "bloco": "cambio_e_energia",
+        "status": "ok",
+        "valor": "US$ 97,80/bbl",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/petroleo",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 97.8 em 17/11/2026"
+          },
+          {
+            "fonte": "EIA (governo dos EUA)",
+            "status": "inativa",
+            "mensagem": "opcional — defina o secret EIA_API_KEY no GitHub para ativar"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "soja_cbot",
+        "nome": "Soja CBOT — 1º vencimento",
+        "nome_curto": "Soja CBOT",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "US$ 12,0225/bu",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 1202.25 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "farelo_cbot",
+        "nome": "Farelo de Soja CBOT — 1º vencimento",
+        "nome_curto": "Farelo CBOT",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "US$ 318,50/t curta",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 318.5 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "oleo_soja_cbot",
+        "nome": "Óleo de Soja CBOT — 1º vencimento",
+        "nome_curto": "Óleo de Soja CBOT",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "51,20 ¢/lb",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 51.2 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "soja_paranagua",
+        "nome": "Soja — Indicador Cepea/Esalq Paranaguá",
+        "nome_curto": "Soja Paranaguá (Cepea)",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "R$ 158,52/sc",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "10 valor(es); último 158.52 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "soja_parana",
+        "nome": "Soja — Indicador Cepea/Esalq Paraná",
+        "nome_curto": "Soja Paraná (Cepea)",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "R$ 152,10/sc",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "10 valor(es); último 152.1 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "soja_uberlandia",
+        "nome": "Soja — Uberlândia-MG (mercado físico)",
+        "nome_curto": "Soja Uberlândia-MG",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "R$ 147,89/sc",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+        "mensagens": [
+          "confirmado por 2 fontes (diferença 0,10%)"
+        ],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 147.89 em 17/11/2026"
+          },
+          {
+            "fonte": "Agrolink",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 148.04 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "soja_b3",
+        "nome": "Soja B3 (SJC) — 1º vencimento",
+        "nome_curto": "Soja B3",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "US$ 26,34/sc",
+        "data": "2026-11-17",
+        "fonte": "B3 Agro",
+        "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 26.34 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "soja_rosario",
+        "nome": "Soja — Pizarra Rosario (BCR, Argentina)",
+        "nome_curto": "Soja Rosario (BCR)",
+        "bloco": "complexo_soja",
+        "status": "ok",
+        "valor": "ARS 445.000/t",
+        "data": "2026-11-17",
+        "fonte": "BCR – Bolsa de Comercio de Rosario",
+        "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "BCR – Bolsa de Comercio de Rosario",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 445000.0 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "milho_cbot",
+        "nome": "Milho CBOT — 1º vencimento",
+        "nome_curto": "Milho CBOT",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "US$ 4,4525/bu",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/milho",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 445.25 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "milho_campinas",
+        "nome": "Milho — Indicador Cepea/Esalq Campinas",
+        "nome_curto": "Milho Campinas (Esalq)",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "R$ 66,77/sc",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/milho",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "10 valor(es); último 66.77 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "milho_b3",
+        "nome": "Milho B3 (CCM) — 1º vencimento",
+        "nome_curto": "Milho B3",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "R$ 66,88/sc",
+        "data": "2026-11-17",
+        "fonte": "B3 Agro",
+        "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 66.88 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "milho_b3_2",
+        "nome": "Milho B3 (CCM) — 2º vencimento",
+        "nome_curto": "Milho B3 (2º venc.)",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "R$ 71,35/sc",
+        "data": "2026-11-17",
+        "fonte": "B3 Agro",
+        "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 71.35 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "trigo_cbot",
+        "nome": "Trigo CBOT — 1º vencimento",
+        "nome_curto": "Trigo CBOT",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "US$ 5,9650/bu",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 596.5 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "trigo_parana",
+        "nome": "Trigo — Preço médio Cepea/Esalq Paraná",
+        "nome_curto": "Trigo Paraná (Cepea)",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "R$ 1.572,66/t",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 1572.66 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "trigo_rs",
+        "nome": "Trigo — Preço médio Cepea/Esalq Rio Grande do Sul",
+        "nome_curto": "Trigo RS (Cepea)",
+        "bloco": "complexo_milho_e_ddgs",
+        "status": "ok",
+        "valor": "R$ 1.454,93/t",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 1454.93 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "algodao_ice",
+        "nome": "Algodão ICE Nova York — 1º vencimento",
+        "nome_curto": "Algodão NY (ICE)",
+        "bloco": "complexo_algodao",
+        "status": "ok",
+        "valor": "78,36 ¢/lb",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 78.36 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "algodao_cepea",
+        "nome": "Algodão em pluma — Indicador Cepea/Esalq",
+        "nome_curto": "Algodão Pluma (Cepea)",
+        "bloco": "complexo_algodao",
+        "status": "ok",
+        "valor": "410,04 ¢R$/lb",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "10 valor(es); último 410.04 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "caroco_algodao_mt",
+        "nome": "Caroço de Algodão — Mato Grosso",
+        "nome_curto": "Caroço de Algodão MT",
+        "bloco": "complexo_algodao",
+        "status": "ok",
+        "valor": "R$ 695,36/t",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 695.36 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "caroco_algodao_ba",
+        "nome": "Caroço de Algodão — Oeste da Bahia",
+        "nome_curto": "Caroço de Algodão BA",
+        "bloco": "complexo_algodao",
+        "status": "ok",
+        "valor": "R$ 983,33/t",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 983.33 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "cafe_arabica_ice",
+        "nome": "Café Arábica ICE Nova York — 1º vencimento",
+        "nome_curto": "Café Arábica NY (ICE)",
+        "bloco": "complexo_cafe",
+        "status": "ok",
+        "valor": "279,75 ¢/lb",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 279.75 em 17/11/2026"
+          },
+          {
+            "fonte": "Yahoo Finance (checagem)",
+            "status": "inativa",
+            "mensagem": "fonte desativada na configuração"
+          }
+        ]
+      },
+      {
+        "id": "cafe_robusta_londres",
+        "nome": "Café Robusta ICE Londres — 1º vencimento",
+        "nome_curto": "Café Robusta Londres",
+        "bloco": "complexo_cafe",
+        "status": "ok",
+        "valor": "US$ 4.285/t",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 4285.0 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "cafe_arabica_cepea",
+        "nome": "Café Arábica — Indicador Cepea/Esalq",
+        "nome_curto": "Café Arábica (Cepea)",
+        "bloco": "complexo_cafe",
+        "status": "ok",
+        "valor": "R$ 1.611,14/sc",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "10 valor(es); último 1611.14 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "cafe_manhuacu",
+        "nome": "Café Arábica tipo 6 bebida dura — Manhuaçu-MG",
+        "nome_curto": "Café Manhuaçu-MG (Matas de Minas)",
+        "bloco": "complexo_cafe",
+        "status": "ok",
+        "valor": "R$ 1.586,00/sc",
+        "data": "2026-11-17",
+        "fonte": "Agrolink",
+        "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
+        "mensagens": [
+          "confirmado por 2 fontes (diferença 0,13%)"
+        ],
+        "fontes": [
+          {
+            "fonte": "Agrolink",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 1586.0 em 17/11/2026"
+          },
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 1588.0 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "boi_gordo_cepea",
+        "nome": "Boi Gordo — Indicador Cepea/Esalq (SP, à vista)",
+        "nome_curto": "Boi Gordo (Cepea)",
+        "bloco": "complexo_cafe",
+        "status": "ok",
+        "valor": "R$ 392,70/@",
+        "data": "2026-11-17",
+        "fonte": "Notícias Agrícolas",
+        "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Notícias Agrícolas",
+            "status": "ok",
+            "mensagem": "10 valor(es); último 392.7 em 17/11/2026"
+          }
+        ]
+      },
+      {
+        "id": "boi_b3",
+        "nome": "Boi Gordo B3 (BGI) — 1º vencimento",
+        "nome_curto": "Boi Gordo B3",
+        "bloco": "complexo_cafe",
+        "status": "ok",
+        "valor": "R$ 407,00/@",
+        "data": "2026-11-17",
+        "fonte": "B3 Agro",
+        "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 407.0 em 17/11/2026"
+          }
+        ]
+      }
+    ],
+    "texto": {
+      "modo": "ia_verificada",
+      "modelo": "modelo-de-teste @ local",
+      "chamadas": 7,
+      "respostas_reprovadas": 1,
+      "corrigidos_pela_ia": 1,
+      "campos_verificados": 129,
+      "campos_substituidos": 0,
+      "erros_llm": [],
+      "detalhes": []
+    },
+    "noticias": {
+      "coletadas": 14,
+      "usadas": 13,
+      "fontes_ok": 4,
+      "fontes_com_falha": 22
+    },
+    "track_record": {
+      "auditadas": 60,
+      "acertos": 50,
+      "taxa_pct": 83.3,
+      "direcao_avaliadas": 0,
+      "direcao_acertos": 0
+    }
+  },
+  "labels": {
+    "dolar_ptax": "Dólar PTAX (USD/BRL)",
+    "dolar_futuro_b3": "Dólar Futuro B3",
+    "selic_meta": "Selic meta",
+    "petroleo_wti": "Petróleo WTI",
+    "petroleo_brent": "Petróleo Brent",
+    "soja_cbot": "Soja CBOT",
+    "farelo_cbot": "Farelo CBOT",
+    "oleo_soja_cbot": "Óleo de Soja CBOT",
+    "soja_paranagua": "Soja Paranaguá (Cepea)",
+    "soja_parana": "Soja Paraná (Cepea)",
+    "soja_uberlandia": "Soja Uberlândia-MG",
+    "soja_b3": "Soja B3",
+    "soja_rosario": "Soja Rosario (BCR)",
+    "milho_cbot": "Milho CBOT",
+    "milho_campinas": "Milho Campinas (Esalq)",
+    "milho_b3": "Milho B3",
+    "milho_b3_2": "Milho B3 (2º venc.)",
+    "trigo_cbot": "Trigo CBOT",
+    "trigo_parana": "Trigo Paraná (Cepea)",
+    "trigo_rs": "Trigo RS (Cepea)",
+    "algodao_ice": "Algodão NY (ICE)",
+    "algodao_cepea": "Algodão Pluma (Cepea)",
+    "caroco_algodao_mt": "Caroço de Algodão MT",
+    "caroco_algodao_ba": "Caroço de Algodão BA",
+    "cafe_arabica_ice": "Café Arábica NY (ICE)",
+    "cafe_robusta_londres": "Café Robusta Londres",
+    "cafe_arabica_cepea": "Café Arábica (Cepea)",
+    "cafe_manhuacu": "Café Manhuaçu-MG (Matas de Minas)",
+    "boi_gordo_cepea": "Boi Gordo (Cepea)",
+    "boi_b3": "Boi Gordo B3",
+    "spread_caroco_ba_mt": "Spread Caroço de Algodão BA − MT",
+    "spread_soja_porto_uberlandia": "Diferencial Soja Paranaguá − Uberlândia",
+    "spread_milho_b3_calendario": "Spread Calendário Milho B3 (2º − 1º venc.)",
+    "spread_cafe_cepea_manhuacu": "Diferencial Café Cepea − Manhuaçu",
+    "ndf_teorico_160d": "NDF teórico 160 dias"
+  },
+  "trusted_sources": {
+    "repo": "",
+    "arquivo": "config/fontes.yaml",
+    "gerado_em": "2026-11-17T19:40-03:00",
+    "regioes": [
+      {
+        "regiao": "Brasil",
+        "fontes": [
+          {
+            "nome": "Notícias Agrícolas",
+            "url": "https://www.noticiasagricolas.com.br/cotacoes/",
+            "tipo": "noticias_e_cotacoes",
+            "idioma": "pt",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "Principal fonte de cotações físicas (republica indicadores Cepea/Esalq), Chicago, NY e B3.",
+            "status": "ok",
+            "detalhe": "9 notícia(s) na janela via rss (https://www.noticiasagricolas.com.br/rss/noticias.xml) · cotações: 22/22 leituras ok"
+          },
+          {
+            "nome": "Farmnews",
+            "url": "https://www.farmnews.com.br/",
+            "tipo": "noticias",
+            "idioma": "pt",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "AgFeed",
+            "url": "https://agfeed.com.br/",
+            "tipo": "noticias",
+            "idioma": "pt",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Canal Rural",
+            "url": "https://www.canalrural.com.br/",
+            "tipo": "noticias",
+            "idioma": "pt",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "ok",
+            "detalhe": "2 notícia(s) na janela via rss (https://www.canalrural.com.br/feed/)"
+          },
+          {
+            "nome": "Globo Rural",
+            "url": "https://globorural.globo.com/",
+            "tipo": "noticias",
+            "idioma": "pt",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Agrolink",
+            "url": "https://www.agrolink.com.br/",
+            "tipo": "noticias_e_cotacoes",
+            "idioma": "pt",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "Cotações por praça (ex.: café em Manhuaçu-MG).",
+            "status": "ok",
+            "detalhe": "2 notícia(s) na janela via pagina · cotações: 2/2 leituras ok"
+          },
+          {
+            "nome": "Money Times Agro",
+            "url": "https://www.moneytimes.com.br/tag/agronegocio/",
+            "tipo": "noticias",
+            "idioma": "pt",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "CONAB",
+            "url": "https://www.conab.gov.br/info-agro/precos/boletim-semanal",
+            "tipo": "relatorio_oficial",
+            "idioma": "pt",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "Boletim semanal de preços (oficial).",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "B3 Agro",
+            "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/cotacoes-derivativos.htm",
+            "tipo": "cotacoes",
+            "idioma": "pt",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "O agente lê a página oficial 'Ajustes do Pregão' da B3 (dólar, milho, boi, café, soja).",
+            "status": "ok",
+            "detalhe": "cotações: 5/5 leituras ok"
+          },
+          {
+            "nome": "Banco Central do Brasil",
+            "url": "https://www.bcb.gov.br/",
+            "tipo": "api_oficial",
+            "idioma": "pt",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "Adicionada pelo agente — API oficial da PTAX e da Selic (dados abertos do BCB).",
+            "status": "ok",
+            "detalhe": "cotações: 2/2 leituras ok"
+          },
+          {
+            "nome": "CEPEA / ESALQ",
+            "url": "https://www.cepea.esalq.usp.br/",
+            "tipo": "cotacoes",
+            "idioma": "pt",
+            "prioridade": 1,
+            "ativa": false,
+            "observacao": "Desativada. Os indicadores Cepea chegam via Notícias Agrícolas.",
+            "status": "desativada",
+            "detalhe": "fora do uso (ativa: false)"
+          }
+        ]
+      },
+      {
+        "regiao": "Argentina",
+        "fontes": [
+          {
+            "nome": "Bolsa de Cereales de Buenos Aires",
+            "url": "https://www.bolsadecereales.com/",
+            "tipo": "noticias",
+            "idioma": "es",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "BCR – Bolsa de Comercio de Rosario",
+            "url": "https://www.bcr.com.ar/",
+            "tipo": "noticias_e_cotacoes",
+            "idioma": "es",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "",
+            "status": "parcial",
+            "detalhe": "notícias: página e feed inacessíveis · cotações: 1/1 leituras ok"
+          },
+          {
+            "nome": "Infobae Campo",
+            "url": "https://www.infobae.com/campo/",
+            "tipo": "noticias",
+            "idioma": "es",
+            "prioridade": 3,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Clarín Rural",
+            "url": "https://www.clarin.com/rural/",
+            "tipo": "noticias",
+            "idioma": "es",
+            "prioridade": 3,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          }
+        ]
+      },
+      {
+        "regiao": "Internacional",
+        "fontes": [
+          {
+            "nome": "Pro Farmer",
+            "url": "https://www.profarmer.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Barchart Grains",
+            "url": "https://www.barchart.com/news/commodities/grain",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Reuters Commodities",
+            "url": "https://www.reuters.com/markets/commodities/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "Costuma bloquear robôs; as matérias da Reuters também chegam via Notícias Agrícolas.",
+            "status": "robots",
+            "detalhe": "notícias: robots.txt de www.reuters.com não permite ler https://www.reuters.com/markets/commodities/"
+          },
+          {
+            "nome": "Bloomberg Agriculture",
+            "url": "https://www.bloomberg.com/markets/commodities/futures/agriculture",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "Paywall e bloqueio de robôs — pode falhar.",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "USDA WASDE",
+            "url": "https://www.usda.gov/oce/commodity/wasde",
+            "tipo": "relatorio_oficial",
+            "idioma": "en",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "USDA FAS",
+            "url": "https://www.fas.usda.gov/",
+            "tipo": "relatorio_oficial",
+            "idioma": "en",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Grain Central",
+            "url": "https://www.graincentral.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 3,
+            "ativa": true,
+            "observacao": "Austrália.",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Successful Farming",
+            "url": "https://www.agriculture.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 3,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "AgWeb",
+            "url": "https://www.agweb.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "World Grain",
+            "url": "https://www.world-grain.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "ok",
+            "detalhe": "1 notícia(s) na janela via rss (https://www.world-grain.com/atom.xml)"
+          },
+          {
+            "nome": "Feed Navigator",
+            "url": "https://www.feednavigator.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 3,
+            "ativa": false,
+            "observacao": "",
+            "status": "desativada",
+            "detalhe": "fora do uso (ativa: false)"
+          },
+          {
+            "nome": "Soybean & Corn Advisor",
+            "url": "https://www.soybeansandcorn.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 3,
+            "ativa": false,
+            "observacao": "",
+            "status": "desativada",
+            "detalhe": "fora do uso (ativa: false)"
+          },
+          {
+            "nome": "FarmLead / GrainCents",
+            "url": "https://farmlead.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 3,
+            "ativa": false,
+            "observacao": "",
+            "status": "desativada",
+            "detalhe": "fora do uso (ativa: false)"
+          }
+        ]
+      },
+      {
+        "regiao": "China",
+        "fontes": [
+          {
+            "nome": "eFeedLink",
+            "url": "https://www.efeedlink.com/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "CZ App / China Agri",
+            "url": "http://www.cnzsmpw.com/",
+            "tipo": "noticias",
+            "idioma": "zh",
+            "prioridade": 3,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "SunSirs",
+            "url": "https://www.sunsirs.com/uk/",
+            "tipo": "noticias_e_cotacoes",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "falha",
+            "detalhe": "notícias: página e feed inacessíveis"
+          },
+          {
+            "nome": "Reuters China Agri",
+            "url": "https://www.reuters.com/world/china/",
+            "tipo": "noticias",
+            "idioma": "en",
+            "prioridade": 2,
+            "ativa": true,
+            "observacao": "",
+            "status": "robots",
+            "detalhe": "notícias: robots.txt de www.reuters.com não permite ler https://www.reuters.com/world/china/"
+          }
+        ]
+      }
+    ]
+  }
+}
