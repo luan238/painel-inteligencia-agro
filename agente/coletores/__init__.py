@@ -52,11 +52,12 @@ def coletar_indicador(ind: dict, cfg, cliente, hoje: date):
                     o.detalhe += f" · convertido de {fonte.get('unidade_origem', 'outra unidade')} (×{fator})"
             observacoes.extend(obs)
             ultima = max(obs, key=lambda o: o.data)
-            relatorio.append({**linha, "status": "ok", "mensagem": f"{len(obs)} valor(es); último {ultima.valor} em {ultima.data:%d/%m/%Y}"})
+            relatorio.append({**linha, "status": "ok", "mensagem": f"{len(obs)} valor(es); último {ultima.valor} em "
+                              f"{ultima.data:%d/%m/%Y}" + (f" · {ultima.detalhe[:150]}" if ultima.detalhe else "")})
         except BloqueadoPorRobots as e:
             relatorio.append({**linha, "status": "robots", "mensagem": str(e)})
         except ErroColeta as e:
-            relatorio.append({**linha, "status": "erro", "mensagem": str(e)[:300]})
+            relatorio.append({**linha, "status": "erro", "mensagem": str(e)[:420]})
         except Exception as e:                       # nunca deixa uma fonte derrubar o relatório
             relatorio.append({**linha, "status": "erro", "mensagem": f"{type(e).__name__}: {str(e)[:250]}"})
     return observacoes, relatorio

@@ -141,9 +141,9 @@ def extrair(html: str, fonte: dict, ind: dict, hoje: date, estilo: str = "br", u
 
 def _amostra(tab: Tabela) -> str:
     """Trecho da estrutura lida, para o relatório do Checar fontes mostrar o que a página tem."""
-    cab = [c[:18] for c in tab.cabecalhos[:8]]
-    l1 = [c[:14] for c in (tab.linhas[0] if tab.linhas else [])[:8]]
-    return f" · cabeçalhos={cab} · 1ª linha={l1}"[:230]
+    cab = [c[:16] for c in tab.cabecalhos[:8]]
+    linhas = [[c[:12] for c in l[:8]] for l in tab.linhas[:3]]
+    return f" · cabeçalhos={cab} · linhas={linhas}"[:280]
 
 
 def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: str, url: str) -> list[Observacao]:
@@ -172,6 +172,13 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
 
     # ---- modo valor: uma linha escolhida
     linha = None
+    if fonte.get("linha_rotulo_padrao"):                # ex.: só linhas de vencimento ("Ene-27")
+        padrao = re.compile(fonte["linha_rotulo_padrao"], re.I)
+        linhas_validas = [l for l in tab.linhas if l and padrao.search(l[0].strip())]
+        if not linhas_validas:
+            raise ErroColeta(f"nenhuma linha com rótulo no formato {fonte['linha_rotulo_padrao']}" + _amostra(tab))
+        tab = Tabela(contexto=tab.contexto, cabecalhos=tab.cabecalhos, linhas=linhas_validas,
+                     data_contexto=tab.data_contexto)
     if fonte.get("linha_contem"):
         termos = [normalizar(t) for t in fonte["linha_contem"]]
         for l in tab.linhas:
