@@ -1,14 +1,14 @@
 {
- "gerado_em": "2026-11-18T16:45-03:00",
+ "gerado_em": "2026-11-18T16:51-03:00",
  "turno": "fechamento",
  "blocos_txt": {
   "cambio_e_energia": {
-   "resumo_curto": "O Dólar PTAX fechou cotado a R$ 5,8102 em 18/11, registrando alta de +0,43% no dia e acumulando +2,80% na semana e +7,18% no mês, em sua 5ª alta seguida. A taxa Selic meta permaneceu em 13,75% a.a. No cenário macroeconômico, a aversão ao risco global e a ata do Fed influenciam os mercados.",
-   "manchete": "Dólar PTAX atinge R$ 5,8102 e acumula 5 altas seguidas",
-   "vies": "Viés de alta para o câmbio diante da aversão ao risco global, com atenção aos desdobramentos da política monetária externa e doméstica.",
-   "resumo_executivo": "O mercado cambial brasileiro registrou nova alta nesta quarta-feira (18), com o Dólar PTAX (venda) atingindo R$ 5,8102, alta de +0,43% no dia e acumulando variação positiva de +7,18% no mês, completando 5 altas seguidas [dolar_ptax]. A divisa norte-americana foi impulsionada por fatores globais de aversão ao risco, refletidos na forte alta do dólar frente a outras moedas e na queda do ouro [N1, N4]. Paralelamente, a ata do Fed indicou que o comitê poderá considerar uma alta de juros superior a 0,25 ponto em dezembro [N3]. No âmbito interno, a taxa Selic meta seguiu inalterada em 13,75% a.a. [selic_meta], enquanto o NDF teórico de 160 dias foi calculado em R$ 6,0026 [ndf]. A valorização cambial impactou positivamente a paridade de exportação de commodities como o algodão [N2], ao mesmo tempo em que pressiona custos e o financiamento do crédito rural [N6, N8].",
+   "resumo_curto": "O Dólar PTAX fechou em R$ 5,8102 em 18/11, registrando 5 altas seguidas com variação diária de +0,43% e acumulada no mês de +7,18%. A taxa Selic meta permaneceu em 13,75% a.a., enquanto o NDF teórico de 160 dias ficou em R$ 6,0026. O cenário macro reflete aversão ao risco e discussões sobre juros globais.",
+   "manchete": "Dólar PTAX engata 5ª alta seguida a R$ 5,8102 com aversão ao risco",
+   "vies": "Viés de alta para o câmbio sustentado pela aversão global ao risco e pressão inflacionária, com atenção à ata do Fed e política fiscal.",
+   "resumo_executivo": "O Dólar PTAX (venda) encerrou o dia 18/11 cotado a R$ 5,8102, acumulando alta de +7,18% no mês e registrando 5 altas seguidas [dolar_ptax]. A aversão ao risco global e os impactos na economia impulsionam a divisa, refletindo-se também no mercado de algodão e nas negociações de exportação [N2, N4]. Paralelamente, o mercado monitora a ata do Fed, que considera ajustes nas taxas de juros nos Estados Unidos [N3], e o patamar da inflação implícita no Brasil [N8]. Enquanto isso, o Ministério da Fazenda descarta controle de capital e reafirma a manutenção do livre fluxo [N7], e o NDF teórico de 160 dias foi calculado em R$ 6,0026 com pontos forward de 0,1924 [ndf].",
    "noticias_destaque": [
-    "N1",
+    "N2",
     "N3",
     "N4",
     "N8"
@@ -16,15 +16,16 @@
    "elos": [
     {
      "elo": "Elo: Produtores Rurais (Gestão de Custos, Insumos e Crédito)",
-     "direcionamento": "A alta dos juros e a restrição no crédito rural exigem cautela na contratação de novos financiamentos e na aquisição de máquinas e insumos. O cenário de inflação implícita elevada e juros elevados encarece o custo de capital na atividade agrícola.",
+     "direcionamento": "A alta do dólar para R$ 5,8102 eleva a paridade de exportação, mas a inflação implícita e a restrição ao crédito com a Selic a 13,75% a.a. exigem cautela na tomada de novos financiamentos e compra de máquinas para a próxima safra.",
      "referencias": [
+      "N2",
       "N6",
       "N8"
      ]
     },
     {
      "elo": "Elo: Cooperativas e Revendas (Barter e Políticas de Crédito)",
-     "direcionamento": "As operações de barter devem ser geridas com atenção redobrada aos riscos de volatilidade cambial e de preços de insumos. A restrição no crédito e a cautela da indústria de máquinas exigem maior seletividade nas linhas de financiamento para os cooperados.",
+     "direcionamento": "O ambiente de juros elevados e a volatilidade cambial impactam o custo de carregamento de insumos e as operações de barter. É fundamental monitorar o rigor na concessão de crédito frente às pressões de custos na cadeia.",
      "referencias": [
       "N6",
       "N8"
@@ -32,49 +33,48 @@
     },
     {
      "elo": "Elo: Indústrias, Usinas e Logística (Diesel, Frete e Energia)",
-     "direcionamento": "Com a manutenção da Selic em 13,75% a.a. e a pressão inflacionária, o custo de carregamento de estoques e de investimentos em infraestrutura e frota permanece elevado. A indústria de máquinas projeta avanço limitado de 3% nas vendas para o próximo período.",
+     "direcionamento": "Com o câmbio em patamares elevados e impactos nos custos operacionais, as indústrias devem redobrar a atenção na gestão de hedge de matérias-primas e fluxo logístico, acompanhando os reflexos macroeconômicos locais e externos.",
      "referencias": [
-      "N6",
-      "N8"
+      "N2",
+      "N4"
      ]
     },
     {
      "elo": "Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF)",
-     "direcionamento": "O Dólar PTAX a R$ 5,8102 e o NDF teórico de 160 dias em R$ 6,0026 oferecem oportunidades para proteção de margens de exportação e hedge cambial. Monitore os impactos da ata do Fed e o fluxo de ordens cambiais diante do cenário de aversão ao risco global.",
+     "direcionamento": "O Dólar PTAX a R$ 5,8102 e o NDF teórico de 160 dias a R$ 6,0026 oferecem oportunidades para estruturas de proteção cambial. Atente-se aos desdobramentos da ata do Fed e ao posicionamento direcional frente à volatilidade.",
      "referencias": [
-      "N1",
       "N3",
       "N4"
      ]
     }
    ],
    "drivers_semana": {
-    "dolar_ptax": "O Dólar PTAX acumulou alta de +2,80% desde 13/11, impulsionado pelo ambiente de aversão ao risco e forte demanda pela moeda americana."
+    "dolar_ptax": "O Dólar PTAX acumulou variação de +2,80% (+R$ 0,1584) desde 13/11, impulsionado pela aversão global ao risco e pressão cambial."
    },
    "narrativas_mes": {
-    "dolar_ptax": "No acumulado do mês desde 30/10, o Dólar PTAX registra valorização de +7,18%, refletindo pressões fiscais domésticas e o fortalecimento global do dólar."
+    "dolar_ptax": "A moeda norte-americana acumula alta de +7,18% (+R$ 0,3890) desde 30/10, refletindo o cenário de incertezas fiscais e externas."
    },
    "gatilhos": {
-    "dolar_ptax": "Uma reversão no fluxo de capitais externos para o Brasil ou sinalizações mais brandas por parte do Federal Reserve em relação aos juros americanos."
+    "dolar_ptax": "Uma reversão na tendência de alta do câmbio depende de sinais claros de descompressão fiscal doméstica e alteração no tom da política monetária externa."
    },
    "vieses_projecao": {
     "dolar_ptax": "alta"
    }
   },
   "complexo_soja": {
-   "resumo_curto": "O complexo soja registra preços firmes no mercado físico brasileiro, sustentados pela alta do dólar PTAX a R$ 5,8102, que acumula variação positiva de +7,18% desde 30/10. Na CBOT, a soja de 1º vencimento opera a US$ 12,2551/bu, enquanto o porto de Paranaguá registra R$ 169,00/sc, refletindo a pressão do câmbio sobre as cotações internacionais.",
-   "manchete": "Soja firme no Brasil com apoio do dólar alto",
-   "vies": "Viés de alta para os preços em reais no mercado interno devido ao câmbio, com ponto de atenção voltado para o clima irregular e os custos de produção nas lavouras [N13, N19].",
-   "resumo_executivo": "As cotações da soja no mercado físico brasileiro mantêm patamares elevados, com o porto de Paranaguá cotado a R$ 169,00/sc e Cascavel a R$ 158,00/sc, impulsionadas pelo avanço do dólar PTAX a R$ 5,8102, que registra alta diária de +0,43% e avanço mensal de +7,18% [dolar_ptax]. Na bolsa de Chicago, os contratos futuros trabalham pressionados pelo ambiente macroeconômico desfavorável e pelas condições favoráveis de plantio na América do Sul [N11, N9]. No âmbito produtivo, desafios climáticos como veranicos e irregularidade de chuvas em regiões como Mato Grosso, Tocantins e Pará exigem atenção redobrada no manejo e na cobertura de solo [N13, N15, N19].",
+   "resumo_curto": "A soja na CBOT recuou 0,71% a US$ 12,1678/bu, pressionada pela alta do dólar e boas condições de plantio no Brasil e na Argentina. No mercado físico brasileiro, o porto de Paranaguá registrou R$ 169,00/sc. O dólar PTAX fechou cotado a R$ 5,8102, com alta de 0,43% no dia e 7,18% no mês.",
+   "manchete": "Soja recua em Chicago com dólar forte e clima favorável",
+   "vies": "Viés de baixa na CBOT condicionado à força do câmbio e ao avanço do plantio na América do Sul, com atenção aos riscos climáticos locais.",
+   "resumo_executivo": "A sessão foi marcada pela queda dos futuros de soja na CBOT, onde o primeiro vencimento encerrou a US$ 12,1678/bu (-0,71%), pressionado pelo tom risk-off nos mercados e pela valorização global da moeda norte-americana [N11]. As condições meteorológicas predominantemente favoráveis para o desenvolvimento das lavouras no Brasil e na Argentina também pesaram sobre as cotações internacionais [N9]. No mercado doméstico, o dólar PTAX atingiu R$ 5,8102, acumulando alta de 7,18% no mês, o que mantém sustentação para os preços físicos em regiões como Paranaguá (R$ 169,00/sc) e Uberlândia (R$ 156,00/sc). Enquanto isso, desafios climáticos pontuais como o veranico e irregularidades de chuvas exigem atenção no manejo e na logística em estados produtores [N13, N15, N19].",
    "noticias_destaque": [
     "N11",
     "N9",
-    "N13"
+    "N18"
    ],
    "elos": [
     {
      "elo": "Elo: Produtores Rurais (Comercialização e Hedge)",
-     "direcionamento": "O momento de dólar em patamares elevados favorece o avanço das negociações da nova safra e fixações parciais. Produtores devem atentar-se aos riscos climáticos, como veranicos e irregularidade de chuvas em áreas produtoras, que podem impactar a produtividade final.",
+     "direcionamento": "O patamar elevado do dólar e os preços firmes em Paranaguá a R$ 169,00/sc oferecem oportunidades vantajosas para o avanço das negociações da safra. Produtores devem monitorar os riscos de veranicos e irregularidades de chuvas que podem afetar o potencial produtivo [N13, N18, N19].",
      "referencias": [
       "N13",
       "N18",
@@ -83,23 +83,23 @@
     },
     {
      "elo": "Elo: Cooperativas e Recebimento de Grãos",
-     "direcionamento": "A irregularidade de chuvas e os replantios em regiões produtoras exigem monitoramento rigoroso da logística de recebimento e da qualidade dos grãos. Cooperativas devem orientar os cooperados quanto ao manejo de solo para mitigar o estresse hídrico.",
+     "direcionamento": "A irregularidade climática em algumas regiões produtoras exige planejamento logístico e atenção redobrada aos custos e à armazenagem. A volatilidade cambial exige cautela na gestão de recebíveis e compromissos futuros [N15, N19].",
      "referencias": [
-      "N13",
+      "N15",
       "N19"
      ]
     },
     {
      "elo": "Elo: Indústrias Esmagadoras e Confinamentos (Farelo e Óleo)",
-     "direcionamento": "Com o farelo de soja CBOT a US$ 335,20/t curta e o óleo a 62,13 ¢/lb, as indústrias acompanham a demanda por coprodutos na nutrição animal, onde ajustes em dietas buscam otimizar custos e maximizar os valores energéticos do farelo.",
+     "direcionamento": "O farelo de soja CBOT operou com leve alta de +0,21% a US$ 335,89/t curta, enquanto o óleo recuou 3,62% para 59,88 ¢/lb. A demanda por farelo na nutrição animal permanece relevante para limitar quedas de desempenho em dietas [N11, N12].",
      "referencias": [
-      "N12",
-      "N14"
+      "N11",
+      "N12"
      ]
     },
     {
      "elo": "Elo: Tradings e Visão do Trader (Basis, Spreads & CBOT)",
-     "direcionamento": "A forte valorização do dólar PTAX, que acumula alta de +7,18% no mês, impulsiona a competitividade das exportações brasileiras e contrabalança a pressão de baixa observada nos contratos futuros em Chicago.",
+     "direcionamento": "O avanço do dólar e a pressão vendedora em Chicago derrubaram os contratos internacionais, exigindo monitoramento rigoroso dos spreads de basis nos portos brasileiros. O fluxo exportador segue competitivo devido à taxa de câmbio [N9, N11, N18].",
      "referencias": [
       "N9",
       "N11",
@@ -110,17 +110,17 @@
    "drivers_semana": {},
    "narrativas_mes": {},
    "gatilhos": {
-    "soja_paranagua": "Uma reversão drástica na tendência de alta do dólar ou chuvas generalizadas e abundantes nas principais regiões produtoras da América do Sul."
+    "soja_paranagua": "Uma reversão abrupta na tendência de alta do dólar ou chuvas generalizadas frustrando safras na América do Sul."
    },
    "vieses_projecao": {
     "soja_paranagua": "alta"
    }
   },
   "complexo_milho_e_ddgs": {
-   "resumo_curto": "O milho na CBOT fechou cotado a US$ 4,4676/bu e o trigo a US$ 5,9526/bu, com o mercado físico de milho em Campinas-SP a R$ 67,50/sc e a B3 em R$ 71,10/sc no 1º vencimento. No câmbio, o Dólar PTAX atingiu R$ 5,8102, registrando avanço de +2,80% na semana e alta de +7,18% no mês, impulsionado por 5 altas seguidas. O setor de trigo enfrenta pressões de oferta e qualidade devido a chuvas no Paraná ligadas ao El Niño.",
-   "manchete": "Milho e Trigo operam firmes com Dólar PTAX em alta e pressões climáticas",
-   "vies": "Viés neutro para o complexo de grãos, com atenção redobrada aos impactos climáticos na safra de trigo e à volatilidade cambial.",
-   "resumo_executivo": "O mercado de milho e trigo reflete um cenário de cautela e ajustes técnicos. Na CBOT, o milho 1º vencimento registrou US$ 4,4676/bu, enquanto o trigo ficou em US$ 5,9526/bu [milho_cbot, trigo_cbot]. No mercado interno, o milho em Campinas-SP seguiu a R$ 67,50/sc e os contratos na B3 negociados a R$ 71,10/sc para o 1º vencimento e R$ 75,45/sc para o 2º vencimento, com spread de calendário em R$ 4,35/sc [milho_campinas, milho_b3, milho_b3_2, spread_milho_b3_calendario]. O trigo no Paraná (Ponta Grossa) atingiu R$ 1.550,00/t e no Rio Grande do Sul (Porto Alegre) R$ 1.630,00/t [trigo_parana, trigo_rs], pressionado por quebras de produtividade decorrentes do excesso de chuvas associado ao El Niño [N21]. Enquanto isso, o Dólar PTAX subiu para R$ 5,8102, acumulando alta mensal de +7,18% [dolar_ptax], o que influencia diretamente a paridade de exportação e os custos internos.",
+   "resumo_curto": "O Milho CBOT recuou 2,52% para US$ 4,3550/bu em 18/11 e o Trigo CBOT caiu 4,24% a US$ 5,7000/bu, pressionados pela força do dólar e pelo ambiente de aversão ao risco. No Brasil, o milho físico em Campinas registrou R$ 67,50/sc e o trigo em Ponta Grossa ficou cotado a R$ 1.550,00/t em 17/11.",
+   "manchete": "Milho e Trigo fecham em baixa na CBOT pressionados por dólar forte",
+   "vies": "Viés de baixa no curto prazo para os grãos na CBOT, com atenção redobrada aos impactos climáticos no Paraná e aos desdobramentos geopolíticos no Mar Negro.",
+   "resumo_executivo": "A sessão foi marcada por quedas expressivas nas bolsas internacionais. O Milho CBOT recuou 2,52% a US$ 4,3550/bu e o Trigo CBOT caiu 4,24% a US$ 5,7000/bu [milho_cbot, trigo_cbot]. O movimento refletiu um tom de aversão ao risco nos mercados financeiros e a valorização global do dólar, com a PTAX atingindo R$ 5,8102 [dolar_ptax, N11]. No mercado interno, o trigo paranaense sofreu com excesso de chuvas associado ao El Niño, reduzindo produtividades médias para abaixo de 40 sacas por hectare em cooperativas como a Coamo, que estima queda na colheita de 360 mil para 280 mil toneladas [N21]. Enquanto isso, o trigo em Ponta Grossa manteve-se a R$ 1.550,00/t e o milho em Campinas a R$ 67,50/sc [milho_campinas, trigo_parana].",
    "noticias_destaque": [
     "N21",
     "N22",
@@ -129,28 +129,31 @@
    "elos": [
     {
      "elo": "Elo: Produtores de Milho, Sorgo e Trigo",
-     "direcionamento": "Produtores no Paraná enfrentam perdas significativas de produtividade e qualidade no trigo devido a chuvas excessivas do El Niño, com produtividades abaixo de 40 sacas por hectare [N21]. Recomenda-se cautela na comercialização do disponible e monitoramento rigoroso dos custos frente à valorização do dólar.",
+     "direcionamento": "Produtores de trigo no Paraná enfrentam perdas de produtividade e qualidade devido às chuvas do El Niño, exigindo cautela na comercialização do volume remanescente [N21]. Monitorar os patamares de preços físicos em Campinas (R$ 67,50/sc) e Ponta Grossa (R$ 1.550,00/t) para tomada de decisão de venda [milho_campinas, trigo_parana].",
      "referencias": [
       "N21"
      ]
     },
     {
      "elo": "Elo: Cooperativas e Sementeiras",
-     "direcionamento": "As cooperativas registram volumes de recebimento de trigo abaixo do projetado, como o caso da Coamo no Paraná, exigindo gestão rigorosa de estoques e classificação de grãos [N21]. O momento é oportuno para intensificar investimentos em variedades adaptadas e suporte técnico aos cooperados.",
+     "direcionamento": "Cooperativas paranaenses lidam com o impacto do clima adverso na recepção do trigo, registrando quebras significativas em relação ao volume inicialmente esperado [N21]. A valorização da cevada vislumbrada pela Ambev até 2030 traz novas alternativas de diversificação para o planejamento de safras futuras [N23].",
      "referencias": [
-      "N21"
+      "N21",
+      "N23"
      ]
     },
     {
      "elo": "Elo: Moinhos, Granjas (Frango, Ovos, Suínos) e Confinamentos",
-     "direcionamento": "Moinhos e indústrias de ração lidam com a oferta restrita de trigo de qualidade e os patamares de preços do milho, enquanto o câmbio elevado encarece insumos [dolar_ptax]. A gestão de margens deve ser priorizada diante da volatilidade dos custos de nutrição animal.",
+     "direcionamento": "Moinhos e indústrias de ração devem acompanhar a oferta restrita de trigo de qualidade e a oscilação nos custos dos insumos, atrelados ao câmbio e às cotações internacionais [N21, N22]. O avanço de tecnologias genéticas na suinocultura, como o projeto da PIC com suínos CRISPR até 2028, sinaliza mudanças futuras na eficiência nutricional e sanitária dos plantéis [N20].",
      "referencias": [
-      "N21"
+      "N20",
+      "N21",
+      "N22"
      ]
     },
     {
      "elo": "Elo: Tradings e Visão do Trader (B3 vs. CBOT)",
-     "direcionamento": "O trader deve monitorar o spread de calendário do milho na B3, atualmente em R$ 4,35/sc [spread_milho_b3_calendario], e o impacto da alta contínua do Dólar PTAX (+2,80% na semana) [dolar_ptax] sobre as cotações de exportação. As incertezas geopolíticas no Mar Negro continuam dando sustentação aos preços internacionais do trigo [N22].",
+     "direcionamento": "Com a queda do Milho CBOT para US$ 4,3550/bu e do Trigo CBOT para US$ 5,7000/bu sob o peso da alta do dólar (PTAX a R$ 5,8102), tradings devem atentar aos spreads e à volatilidade cambial [milho_cbot, trigo_cbot, dolar_ptax]. A persistência de impasses no Mar Negro continua a dar suporte aos prêmios e contratos futuros de trigo [N22].",
      "referencias": [
       "N22",
       "N11"
@@ -160,8 +163,8 @@
    "drivers_semana": {},
    "narrativas_mes": {},
    "gatilhos": {
-    "milho_campinas": "Uma retração acentuada na demanda interna por ração ou queda expressiva nos prêmios de exportação invalidariam o suporte atual em Campinas.",
-    "trigo_parana": "A entrada massiva de trigo importado com preços mais competitivos ou revisão positiva na oferta regional pode alterar a dinâmica de preços no PR."
+    "milho_campinas": "Uma reversão na tendência de baixa da CBOT associada a picos de demanda interna na região de Campinas.",
+    "trigo_parana": "Intensificação de perdas logísticas ou novas revisões de safra decorrentes de intempéries climáticas adicionais no Paraná."
    },
    "vieses_projecao": {
     "milho_campinas": "neutro",
@@ -169,42 +172,45 @@
    }
   },
   "complexo_algodao": {
-   "resumo_curto": "O mercado de algodão no Brasil registrou recuperação nos preços, impulsionado pela forte valorização do dólar frente ao real. A PTAX fechou em R$ 5,8102, acumulando alta de 7,18% no mês, o que favoreceu a paridade de exportação. No entanto, os preços domésticos seguem abaixo da paridade, conforme apontado pelo Cepea.",
-   "manchete": "Algodão avança no Brasil com impulso do dólar",
-   "vies": "Viés de alta sustentado pela alta do câmbio, com atenção à paridade de exportação.",
-   "resumo_executivo": "As cotações do algodão em pluma voltaram a subir no mercado brasileiro, impulsionadas pelo aumento da paridade de exportação gerada pela forte valorização do dólar [N27]. A PTAX encerrou o dia em R$ 5,8102, registrando alta de +0,43% no dia e +7,18% no mês. Segundo o Cepea, o indicador registrou o preço médio de R$ 4,1558 a libra-peso, com alta de 0,62% no acumulado de novembro, embora os preços domésticos permaneçam abaixo da paridade de exportação [N27]. Nesse cenário, tradings seguiram adquirindo a fibra [N27], enquanto a Abrapa apresentou inovações tecnológicas no SIGA [N29] e a Abimaq projetou alta nas vendas de máquinas para 2027 [N28].",
+   "resumo_curto": "O mercado brasileiro de algodão em pluma registrou recuperação nos preços, impulsionado pela valorização do dólar frente ao real. O Dólar PTAX fechou a R$ 5,8102, acumulando alta de +7,18% desde 30/10. O indicador Cepea/Esalq registrou o preço médio de R$ 4,1558 a libra-peso em 17/11.",
+   "manchete": "Algodão sobe no Brasil com avanço do dólar",
+   "vies": "Viés de alta sustentado pela valorização cambial, com atenção à paridade de exportação.",
+   "resumo_executivo": "As cotações do algodão em pluma voltaram a subir no mercado brasileiro nos últimos dias, impulsionadas pelo aumento da paridade de exportação favorecida pela forte valorização do dólar frente ao real [N2, N27]. O Dólar PTAX (venda) encerrou cotado a R$ 5,8102 em 18/11, registrando variação de +0,43% no dia e alta de +7,18% desde 30/10. Segundo o Cepea, o preço médio atingiu R$ 4,1558 a libra-peso em 17/11, mantendo-se contudo abaixo da paridade de exportação, o que representa a maior diferença negativa desde agosto de 2020 [N27]. Nesse cenário, tradings seguiram ativas na aquisição da fibra, enquanto o setor também acompanha perspectivas positivas para máquinas agrícolas em 2027 e avanços tecnológicos da Abrapa [N27, N28, N29].",
    "noticias_destaque": [
-    "N27",
     "N2",
+    "N27",
+    "N28",
     "N29"
    ],
    "elos": [
     {
      "elo": "Elo: Produtores Rurais (Cotonicultores)",
-     "direcionamento": "Os cotonicultores observam uma recuperação nos preços da pluma no mercado brasileiro, beneficiados pela valorização do dólar que eleva a paridade de exportação [N2]. O otimismo também se reflete nas projeções para o setor de máquinas agrícolas para 2027 [N28], enquanto a Abrapa avança na modernização tecnológica com o novo módulo do SIGA [N29].",
+     "direcionamento": "A alta recente nos preços da pluma no mercado brasileiro, influenciada pela valorização cambial, traz oportunidades pontuais de comercialização [N2, N27]. Produtores devem monitorar os custos e a relação com a paridade de exportação, além de acompanhar as projeções otimistas para o setor em 2027 e os avanços nos cadastros e certificações da Abrapa [N27, N28, N29].",
      "referencias": [
       "N2",
-      "N28",
-      "N29"
+      "N27",
+      "N28"
      ]
     },
     {
      "elo": "Elo: Algodoeiras e Cooperativas",
-     "direcionamento": "As cooperativas e algodoeiras acompanham o avanço das cotações da pluma no mercado interno, impulsionadas pela alta da moeda norte-americana [N2]. A modernização dos cadastros e sistemas apresentada pela Abrapa auxilia na gestão e infraestrutura das operações [N29].",
+     "direcionamento": "As algodoeiras observam uma recuperação nos preços domésticos da pluma em função da alta da moeda norte-americana [N2, N27]. A modernização tecnológica promovida pela Abrapa com o novo módulo de cadastro do SIGA oferece suporte para a eficiência operacional das entidades [N29].",
      "referencias": [
       "N2",
+      "N27",
       "N29"
      ]
     },
     {
      "elo": "Elo: Indústrias e Confinamentos (Caroço e Farelo de Algodão)",
-     "direcionamento": "As cotações para o caroço de algodão encontram-se com status indisponível no sistema, exigindo cautela na aquisição de insumos para alimentação animal. Recomenda-se o acompanhamento direto com fornecedores regionais para balizar negociações de curto prazo.",
+     "direcionamento": "Com a ausência de cotações verificadas para o caroço de algodão em Mato Grosso e no Oeste da Bahia, as indústrias e confinamentos devem operar com cautela na formulação de dietas e negociações de coprodutos. O foco permanece na gestão de estoques e nos custos alternativos de insumos.",
      "referencias": []
     },
     {
      "elo": "Elo: Tradings e Visão do Trader (ICE NY & Câmbio)",
-     "direcionamento": "Com a PTAX registrando variação positiva e acumulando alta de +7,18% no mês, tradings mantêm o apetite na aquisição da fibra aproveitando a paridade de exportação [N27]. O contrato ICE NY encontra-se com cotação indisponível, limitando referências externas diretas na tela.",
+     "direcionamento": "A forte valorização do Dólar PTAX, que acumulou alta de +7,18% desde 30/10, impulsionou a paridade de exportação e sustentou as compras de pluma por tradings no mercado interno [N2, N27]. Fatores como a cotação da ICE NY, indisponível no momento, exigem monitoramento rigoroso dos fluxos internacionais e da base.",
      "referencias": [
+      "N2",
       "N27"
      ]
     }
@@ -212,17 +218,17 @@
    "drivers_semana": {},
    "narrativas_mes": {},
    "gatilhos": {
-    "algodao_cepea": "Inversão na tendência de alta do dólar ou queda expressiva na paridade de exportação."
+    "algodao_cepea": "Reversão na tendência de alta da taxa de câmbio ou queda acentuada nos preços externos da fibra que reduzam a paridade de exportação."
    },
    "vieses_projecao": {
     "algodao_cepea": "alta"
    }
   },
   "complexo_cafe": {
-   "resumo_curto": "O mercado físico do café arábica no Sul de Minas registrou R$ 1.830,00/sc em 17/11, enquanto em Manhuaçu-MG ficou em R$ 1.688,00/sc em 18/11. No complexo pecuário, o boi gordo em São Paulo fechou a R$ 395,00/@ e o primeiro vencimento na B3 a R$ 398,50/@ em 17/11. O dólar PTAX encerrou cotado a R$ 5,8102 em 18/11, acumulando alta de +2,80% na semana.",
-   "manchete": "Café estável e boi gordo pressionado no mercado físico",
-   "vies": "Viés neutro para café e boi gordo, com atenção ao câmbio e ao escoamento da carne no mercado interno.",
-   "resumo_executivo": "O mercado do café arábica apresenta preços sustentados no físico, com referência de R$ 1.830,00/sc no Sul de Minas e R$ 1.688,00/sc em Manhuaçu-MG. Na pecuária, o boi gordo seguiu estável na maior parte do país, cotado a R$ 395,00/@ em São Paulo e a R$ 398,50/@ na B3 para o primeiro vencimento, refletindo o escoamento lento da carne no mercado interno e oferta ajustada [N30]. O dólar PTAX fechou o dia em R$ 5,8102, registrando alta de +0,43% no dia e +2,80% na semana.",
+   "resumo_curto": "O mercado físico de café arábica no Sul de Minas registrou R$ 1.830,00/sc em 17/11, enquanto em Manhuaçu a cotação ficou em R$ 1.688,00/sc em 18/11. No complexo pecuário, o boi gordo em São Paulo fechou a R$ 395,00/@ em 17/11 e o contrato futuro na B3 encerrou a R$ 398,50/@. O dólar PTAX encerrou cotado a R$ 5,8102, acumulando alta de +7,18% no mês.",
+   "manchete": "Café e boi gordo mantêm sustentação com foco em câmbio e oferta",
+   "vies": "Viés neutro para o complexo café e pecuária, com atenção ao câmbio e ao escoamento lento da carne no mercado interno.",
+   "resumo_executivo": "O mercado pecuário apresentou estabilidade na maior parte do país, com o boi gordo cotado a R$ 395,00/@ em São Paulo [N30, N32]. O contrato futuro do boi gordo na B3 registrou R$ 398,50/@, operando no menor patamar de novembro [N33]. No mercado físico de café, o arábica no Sul de Minas foi cotado a R$ 1.830,00/sc, enquanto em Manhuaçu o indicador apontou R$ 1.688,00/sc. Na ponta cambial, o dólar PTAX fechou a R$ 5,8102, com alta diária de +0,43% e avanço mensal de +7,18%, o que incentiva tradings e exportadores a elevarem as vendas de café [N10]. Na Bahia, a oferta restrita sustentou avanços nos preços do boi gordo [N30].",
    "noticias_destaque": [
     "N30",
     "N32",
@@ -232,22 +238,22 @@
    "elos": [
     {
      "elo": "Elo: Cafeicultores (Matas de Minas, Cerrado e Sul de Minas)",
-     "direcionamento": "Os produtores acompanham os preços firmes no físico, como R$ 1.830,00/sc no Sul de Minas e R$ 1.688,00/sc em Manhuaçu-MG. Eventos como o Concurso Café Qualidade Paraná reforçam a busca por valorização e profissionalização da qualidade [N34, N36].",
+     "direcionamento": "Produtores acompanham a volatilidade nas bolsas internacionais e a valorização do dólar frente ao real, que favorece a conversão cambial nas exportações. O momento exige atenção à qualidade do grão e aos custos operacionais.",
      "referencias": [
-      "N34",
-      "N36"
+      "N10",
+      "N35"
      ]
     },
     {
      "elo": "Elo: Cooperativas de Café e Exportadores",
-     "direcionamento": "A alta do dólar, com PTAX a R$ 5,8102, incentiva exportadores a intensificarem as vendas devido à maior conversão em moeda nacional, movimento observado nas negociações recentes [N10].",
+     "direcionamento": "A taxa de câmbio em patamares elevados estimula o fluxo de vendas externas por parte dos exportadores. Cooperativas devem monitorar o basis e a entrega de lotes físicos frente às oscilações em Nova York.",
      "referencias": [
       "N10"
      ]
     },
     {
      "elo": "Elo: Pecuaristas e Confinamentos",
-     "direcionamento": "Com o boi gordo a R$ 395,00/@ em São Paulo, o ritmo de negócios permanece cadenciado pelo escoamento lento da carne no mercado interno, apesar de ajustes pontuais de alta em outras praças [N30, N32].",
+     "direcionamento": "O mercado físico permanece estável na maior parte das praças, condicionado pelo escoamento lento da carne no mercado interno. Ajustes pontuais na oferta ocorrem em regiões específicas, exigindo cautela na gestão de margens.",
      "referencias": [
       "N30",
       "N32"
@@ -255,17 +261,18 @@
     },
     {
      "elo": "Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café)",
-     "direcionamento": "Os contratos futuros operam em patamares ajustados, com o boi B3 a R$ 398,50/@ refletindo o menor patamar de preços para o período em novembro [N33]. Monitorar a volatilidade cambial e o fluxo de exportação.",
+     "direcionamento": "A cotação futura do boi na B3 reflete a pressão de baixa na parcial de novembro, negociando abaixo de patamares anteriores. No câmbio, o Dólar PTAX a R$ 5,8102 dita o ritmo das operações de exportação.",
      "referencias": [
-      "N33"
+      "N33",
+      "N10"
      ]
     }
    ],
    "drivers_semana": {},
    "narrativas_mes": {},
    "gatilhos": {
-    "cafe_arabica_cepea": "Mudanças abruptas nas condições climáticas nas regiões produtoras ou reversão expressiva nas cotações internacionais em Nova York.",
-    "boi_gordo_cepea": "Aceleração na demanda externa por carne bovina ou retração acentuada na oferta de animais terminados nas principais praças."
+    "cafe_arabica_cepea": "Mudanças abruptas nas condições climáticas nas regiões produtoras ou reversão expressiva no câmbio.",
+    "boi_gordo_cepea": "Aceleração na demanda externa por carne bovina ou retração acentuada na oferta de animais terminados."
    },
    "vieses_projecao": {
     "cafe_arabica_cepea": "neutro",
@@ -274,13 +281,13 @@
   }
  },
  "fech": {
-  "escopo": "Fechamento Germinare Agro: Dólar PTAX a R$ 5,8102 engata 5ª alta seguida e sustenta preços firmes.",
+  "escopo": "Fechamento Germinare Agro 18/11: Dólar PTAX engata 5ª alta seguida a R$ 5,8102 com aversão ao risco global.",
   "pilula": {
-   "titulo": "Impacto da PTAX e do cupom cambial na precificação de NDF e paridade de exportação",
-   "analise": "O conceito de NDF (Non-Deliverable Forward) reflete a taxa de câmbio a termo ajustada pelo diferencial de juros entre o cupom cambial interno e externo. Com a PTAX cotada a R$ 5,8102 em 18/11 e a taxa Selic meta em 13,75% a.a., o contrato de NDF para 160 dias corridos resulta em R$ 6,0026. Esse carrego cambial impacta diretamente a formação de preços dos ativos exportadores e as operações de hedge da cadeia agrícola, elevando a proteção contra a volatilidade global e a aversão ao risco.",
-   "conclusao": "Acompanhar a curva de juros e a variação do dólar é essencial para otimizar o timing de fixação de preços e a gestão de margens nas tradings."
+   "titulo": "Impacto da alta do dólar e do NDF nas operações de hedge cambial",
+   "analise": "O conceito de NDF (Non-Deliverable Forward) reflete a expectativa de taxa de câmbio futura ajustada pelo diferencial de juros entre o Real e o Dólar. Com a PTAX a R$ 5,8102 [dolar_ptax] e a Selic meta em 13,75% a.a. [selic_meta], o NDF teórico de 160 dias calculado em R$ 6,0026 demonstra o carrego cambial embutido na estrutura a termo. Para os tradings e indústrias, a alta contínua do câmbio — que registrou 5 altas seguidas [dolar_ptax] e variação mensal de +7,18% [dolar_ptax] — altera diretamente a paridade de exportação dos grãos e o custo de importação de insumos. A desvalorização da moeda local pressiona as margens de originação, exigindo um monitoramento rigoroso do basis e das taxas implícitas nos contratos futuros para a proteção de margens de escoamento e originação física.",
+   "conclusao": "A gestão ativa de derivativos e o uso de NDFs tornam-se essenciais para mitigar a volatilidade cambial e garantir margens operacionais seguras no cenário atual."
   },
-  "roteiro_audio": "Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado nesta quarta-feira, 18/11/2026, às 16:45. No cenário macroeconômico e cambial, o Dólar PTAX (venda) fechou o dia cotado a R$ 5,8102, registrando alta de +0,43% em relação ao dia anterior e acumulando avanço de +2,80% na semana e +7,18% no mês. Essa alta marca a 5ª alta seguida da moeda norte-americana, impulsionada pela aversão ao risco global e ata do Fed. A taxa Selic meta permaneceu inalterada em 13,75% a.a. Com base nesses patamares, o NDF de 160 dias foi calculado em R$ 6,0026, refletindo o diferencial de juros. No complexo soja, os preços no mercado físico brasileiro mantêm-se firmes com o suporte do dólar alto. A soja no porto de Paranaguá está cotada a R$ 169,00/sc, enquanto na CBOT o primeiro vencimento opera a US$ 12,2551/bu. No complexo milho e coprodutos, o milho em Campinas-SP fechou a R$ 67,50/sc e na CBOT a US$ 4,4676/bu. O trigo em Ponta Grossa-PR registra R$ 1.550,00/t, enfrentando pressões de oferta e qualidade. No algodão, a pluma em Rondonópolis-MT é negociada a 396,00 ¢R$/lb, com o mercado buscando paridade de exportação beneficiada pela alta cambial. No setor de café e pecuária, o café arábica no Sul de Minas está cotado a R$ 1.830,00/sc e em Manhuaçu-MG a R$ 1.688,00/sc. Já o boi gordo em São Paulo fechou a R$ 395,00/@, com o primeiro vencimento na B3 a R$ 398,50/@. Vamos às tabelas e ao painel."
+  "roteiro_audio": "Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta terça-feira, 18/11/2026, às 16:51. Iniciamos pelo cenário macroeconômico e cambial. O Dólar PTAX fechou cotado a R$ 5,8102, registrando sua 5ª alta seguida, com variação diária de +0,43% e avanço acumulado no mês de +7,18% [dolar_ptax]. A taxa Selic meta manteve-se em 13,75% a.a. [selic_meta], enquanto o NDF teórico de 160 dias ficou precificado em R$ 6,0026, refletindo o forte carrego e a aversão ao risco nos mercados globais. No complexo soja, a CBOT encerrou em baixa de 0,71%, cotada a US$ 12,1678 por bushel, pressionada pela força do dólar e pelo avanço do plantio na América do Sul [soja_cbot]. No mercado físico brasileiro, o porto de Paranaguá registrou R$ 169,00 por saca [soja_paranagua]. No complexo milho e trigo, o milho na CBOT recuou 2,52% para US$ 4,3550 por bushel, e o trigo caiu 4,24% a US$ 5,7000 por bushel. No físico interno, o milho em Campinas fechou a R$ 67,50 por saca e o trigo em Ponta Grossa ficou cotado a R$ 1.550,00 por tonelada [trigo_parana]. No algodão, a pluma em Rondonópolis registrou 396,00 centavos de real por libra-peso [algodao_cepea], sustentada pela valorização cambial. No mercado de café e pecuária, o arábica no Sul de Minas foi cotado a R$ 1.830,00 por saca [cafe_arabica_cepea] e em Manhuaçu a R$ 1.688,00 por saca [cafe_manhuacu]. Na pecuária, o boi gordo em São Paulo encerrou a R$ 395,00 por arroba no mercado físico [boi_gordo_cepea]. Vamos às tabelas e ao painel."
  },
  "noticias": {
   "cambio_e_energia": [
@@ -295,7 +302,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 8.77,
+    "pontuacao": 8.76,
     "id": "N1"
    },
    {
@@ -310,7 +317,7 @@
      "complexo_algodao",
      "cambio_e_energia"
     ],
-    "pontuacao": 8.08,
+    "pontuacao": 8.07,
     "id": "N2"
    },
    {
@@ -338,7 +345,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 6.7,
+    "pontuacao": 6.69,
     "id": "N4"
    },
    {
@@ -352,7 +359,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 5.53,
+    "pontuacao": 5.52,
     "id": "N5"
    },
    {
@@ -366,7 +373,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 5.4,
+    "pontuacao": 5.39,
     "id": "N6"
    },
    {
@@ -380,7 +387,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 5.35,
+    "pontuacao": 5.34,
     "id": "N7"
    },
    {
@@ -394,7 +401,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 4.72,
+    "pontuacao": 4.71,
     "id": "N8"
    },
    {
@@ -410,7 +417,7 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 4.66,
+    "pontuacao": 4.65,
     "id": "N9"
    },
    {
@@ -425,7 +432,7 @@
      "complexo_cafe",
      "cambio_e_energia"
     ],
-    "pontuacao": 6.54,
+    "pontuacao": 6.53,
     "id": "N10"
    }
   ],
@@ -443,7 +450,7 @@
      "cambio_e_energia",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 6.16,
+    "pontuacao": 6.15,
     "id": "N11"
    },
    {
@@ -458,7 +465,7 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 5.5,
+    "pontuacao": 5.49,
     "id": "N12"
    },
    {
@@ -472,7 +479,7 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 5.39,
+    "pontuacao": 5.38,
     "id": "N13"
    },
    {
@@ -487,7 +494,7 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 4.81,
+    "pontuacao": 4.8,
     "id": "N14"
    },
    {
@@ -517,7 +524,7 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 4.66,
+    "pontuacao": 4.65,
     "id": "N9"
    },
    {
@@ -531,7 +538,7 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 4.53,
+    "pontuacao": 4.52,
     "id": "N16"
    },
    {
@@ -545,7 +552,7 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 4.29,
+    "pontuacao": 4.28,
     "id": "N17"
    },
    {
@@ -560,7 +567,7 @@
      "cambio_e_energia",
      "complexo_soja"
     ],
-    "pontuacao": 4.15,
+    "pontuacao": 4.14,
     "id": "N18"
    },
    {
@@ -574,7 +581,7 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 4.15,
+    "pontuacao": 4.14,
     "id": "N19"
    }
   ],
@@ -604,7 +611,7 @@
     "blocos": [
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 6.07,
+    "pontuacao": 6.06,
     "id": "N21"
    },
    {
@@ -618,7 +625,7 @@
     "blocos": [
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 5.07,
+    "pontuacao": 5.06,
     "id": "N22"
    },
    {
@@ -632,7 +639,7 @@
     "blocos": [
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 4.77,
+    "pontuacao": 4.76,
     "id": "N23"
    },
    {
@@ -646,7 +653,7 @@
     "blocos": [
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 4.48,
+    "pontuacao": 4.47,
     "id": "N24"
    },
    {
@@ -662,7 +669,7 @@
      "complexo_milho_e_ddgs",
      "complexo_soja"
     ],
-    "pontuacao": 4.33,
+    "pontuacao": 4.32,
     "id": "N25"
    },
    {
@@ -678,7 +685,7 @@
      "cambio_e_energia",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 6.16,
+    "pontuacao": 6.15,
     "id": "N11"
    },
    {
@@ -693,7 +700,7 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 5.5,
+    "pontuacao": 5.49,
     "id": "N12"
    },
    {
@@ -707,7 +714,7 @@
     "blocos": [
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 3.04,
+    "pontuacao": 3.03,
     "id": "N26"
    },
    {
@@ -722,7 +729,7 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 4.81,
+    "pontuacao": 4.8,
     "id": "N14"
    }
   ],
@@ -739,7 +746,7 @@
      "complexo_algodao",
      "cambio_e_energia"
     ],
-    "pontuacao": 8.08,
+    "pontuacao": 8.07,
     "id": "N2"
    },
    {
@@ -769,7 +776,7 @@
      "complexo_cafe",
      "complexo_algodao"
     ],
-    "pontuacao": 7.42,
+    "pontuacao": 7.41,
     "id": "N28"
    },
    {
@@ -783,7 +790,7 @@
     "blocos": [
      "complexo_algodao"
     ],
-    "pontuacao": 5.15,
+    "pontuacao": 5.14,
     "id": "N29"
    }
   ],
@@ -799,7 +806,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 9.47,
+    "pontuacao": 9.46,
     "id": "N30"
    },
    {
@@ -813,7 +820,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 7.53,
+    "pontuacao": 7.52,
     "id": "N31"
    },
    {
@@ -828,7 +835,7 @@
      "complexo_cafe",
      "complexo_algodao"
     ],
-    "pontuacao": 7.42,
+    "pontuacao": 7.41,
     "id": "N28"
    },
    {
@@ -842,7 +849,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 7.22,
+    "pontuacao": 7.21,
     "id": "N32"
    },
    {
@@ -856,7 +863,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 7.18,
+    "pontuacao": 7.17,
     "id": "N33"
    },
    {
@@ -870,7 +877,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 7.15,
+    "pontuacao": 7.14,
     "id": "N34"
    },
    {
@@ -884,7 +891,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 7.05,
+    "pontuacao": 7.04,
     "id": "N35"
    },
    {
@@ -899,7 +906,7 @@
      "complexo_cafe",
      "cambio_e_energia"
     ],
-    "pontuacao": 6.54,
+    "pontuacao": 6.53,
     "id": "N10"
    },
    {
@@ -913,7 +920,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 5.39,
+    "pontuacao": 5.38,
     "id": "N36"
    },
    {
@@ -927,7 +934,7 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 5.07,
+    "pontuacao": 5.06,
     "id": "N37"
    }
   ]
@@ -1211,11 +1218,11 @@
  ],
  "texto_stats": {
   "modo": "ia_verificada",
-  "modelo": "gemini-flash-lite-latest @ Google Gemini ×6",
-  "chamadas": 6,
-  "respostas_reprovadas": 0,
-  "corrigidos_pela_ia": 0,
-  "campos_verificados": 134,
+  "modelo": "gemini-flash-lite-latest @ Google Gemini ×7",
+  "chamadas": 7,
+  "respostas_reprovadas": 1,
+  "corrigidos_pela_ia": 1,
+  "campos_verificados": 141,
   "campos_substituidos": 0,
   "blocos_com_ia": 6,
   "erros_llm": [],
@@ -1241,16 +1248,16 @@
    13.75
   ],
   "soja_cbot": [
-   "2026-11-17",
-   12.25514
+   "2026-11-18",
+   12.167778
   ],
   "farelo_cbot": [
-   "2026-11-17",
-   335.19569
+   "2026-11-18",
+   335.894222
   ],
   "oleo_soja_cbot": [
-   "2026-11-17",
-   62.12895
+   "2026-11-18",
+   59.879134
   ],
   "soja_paranagua": [
    "2026-11-17",
@@ -1273,8 +1280,8 @@
    550000.0
   ],
   "milho_cbot": [
-   "2026-11-17",
-   4.467563
+   "2026-11-18",
+   4.355036
   ],
   "milho_campinas": [
    "2026-11-17",
@@ -1289,8 +1296,8 @@
    75.45
   ],
   "trigo_cbot": [
-   "2026-11-17",
-   5.952574
+   "2026-11-18",
+   5.700014
   ],
   "trigo_parana": [
    "2026-11-17",
