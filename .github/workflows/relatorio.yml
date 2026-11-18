@@ -1,0 +1,125 @@
+name: Relatório de Inteligência de Mercado
+
+on:
+  schedule:
+    # Horários em UTC (Brasília = UTC-3). Minutos "quebrados" evitam a fila do GitHub na hora cheia.
+    - cron: "41 11 * * 1-5"   # 08:41 BRT — abertura (fechamento anterior + notícias da noite)
+    - cron: "17 16 * * 1-5"   # 13:17 BRT — meio do dia (PTAX do dia já publicada)
+    - cron: "43 22 * * 1-5"   # 19:43 BRT — fechamento (Cepea, B3 e Chicago fechados)
+    - cron: "11 20 * * 0"     # domingo 17:11 BRT — balanço da semana
+  workflow_dispatch:
+    inputs:
+      turno:
+        description: "Turno (vazio = pelo horário)"
+        required: false
+        type: choice
+        options: ["", abertura, meio_dia, fechamento, fim_de_semana]
+      sem_ia:
+        description: "Gerar sem IA (texto automático)"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+
+concurrency:
+  group: relatorio
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90          # com as APIs gratuitas sai em poucos minutos; só a IA local leva de 20 a 40 min
+    env:
+      TZ: America/Sao_Paulo
+      # Modelo open source da IA local (gratuita e sem limite). Para trocar, crie a variável
+      # LLM_LOCAL_MODEL em Settings → Secrets and variables → Actions → Variables (ex.: qwen2.5:3b).
+      LLM_LOCAL_MODEL: ${{ vars.LLM_LOCAL_MODEL || 'qwen2.5:7b' }}
+      USAR_IA_LOCAL: ${{ (inputs.sem_ia != true && vars.IA_LOCAL != 'nao') && 'sim' || 'nao' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # ---------- IA local (rede de segurança sem limite): instala em SEGUNDO PLANO, sem atrasar o boletim.
+      # O agente só espera por ela se todas as APIs gratuitas da fila esgotarem.
+      - name: Preparar a IA local em segundo plano
+        if: env.USAR_IA_LOCAL == 'sim'
+        run: |
+          nohup bash scripts/preparar_ia_local.sh "$LLM_LOCAL_MODEL" "$RUNNER_TEMP/ia_local_status" \
+            > "$RUNNER_TEMP/ia_local.log" 2>&1 &
+          echo "OLLAMA_EM_PREPARO=1" >> "$GITHUB_ENV"
+          echo "IA_LOCAL_STATUS=$RUNNER_TEMP/ia_local_status" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Gerar boletim
+        env:
+          # Fila de IAs gratuitas (config/configuracoes.yaml → llm.provedores). Secret vazio = API pulada.
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Variáveis opcionais para trocar o modelo de cada API sem editar o código
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          # API extra opcional (qualquer provedor compatível com a OpenAI)
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          TURNO: ${{ inputs.turno }}
+          SEM_IA: ${{ inputs.sem_ia }}
+        run: |
+          ARGS=""
+          if [ -n "$TURNO" ]; then ARGS="$ARGS --turno $TURNO"; fi
+          if [ "$SEM_IA" = "true" ]; then ARGS="$ARGS --sem-ia"; fi
+          python -m agente executar $ARGS
+
+      - name: Situação da IA local
+        if: always() && env.USAR_IA_LOCAL == 'sim'
+        run: |
+          echo "Status: $(cat "$RUNNER_TEMP/ia_local_status" 2>/dev/null || echo desconhecido)"
+          tail -n 5 "$RUNNER_TEMP/ia_local.log" 2>/dev/null || true
+
+      - name: Salvar boletim, histórico e relatório
+        if: always()
+        run: |
+          git config user.name "agro-intel-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in data relatorios boletim_atual.json; do
+            if [ -e "$p" ]; then git add "$p"; fi     # pastas criadas pelo agente na 1ª execução
+          done
+          if git diff --cached --quiet; then echo "Nada novo para salvar"; exit 0; fi
+          git commit -m "Boletim $(date +'%d/%m/%Y %H:%M') BRT"
+          git pull --rebase -X theirs
+          git push
+
+      - name: Atualizar o painel (GitHub Pages)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "/repos/${{ github.repository }}/pages/builds" >/dev/null 2>&1 || echo "GitHub Pages não configurado (ok)"
+
+      - name: Abrir alerta se falhar
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const titulo = '⚠️ Falha na geração do boletim';
+            const url = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const abertas = await github.rest.issues.listForRepo({ ...context.repo, state: 'open', labels: 'falha-boletim' });
+            const corpo = `A execução de ${new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })} falhou.\n\nO boletim anterior foi mantido (nada inventado foi publicado). Veja o log: ${url}`;
+            if (abertas.data.length) {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: abertas.data[0].number, body: corpo });
+            } else {
+              await github.rest.issues.create({ ...context.repo, title: titulo, body: corpo, labels: ['falha-boletim'] });
+            }

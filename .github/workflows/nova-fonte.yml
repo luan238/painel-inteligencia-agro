@@ -1,0 +1,63 @@
+name: Adicionar fonte (formulário)
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: config-fontes
+  cancel-in-progress: false
+
+jobs:
+  adicionar:
+    # Só processa issues do formulário abertas pelo dono do repositório ou por colaboradores
+    if: >
+      contains(github.event.issue.labels.*.name, 'nova-fonte') &&
+      github.event.issue.state == 'open' &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Incluir a fonte em config/fontes.yaml
+        id: fonte
+        env:
+          CORPO_ISSUE: ${{ github.event.issue.body }}
+        run: python scripts/adicionar_fonte_issue.py
+
+      - name: Salvar no repositório
+        if: steps.fonte.outputs.resultado == 'ok'
+        run: |
+          git config user.name "agro-intel-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/fontes.yaml
+          git commit -m "Nova fonte via formulário (#${{ github.event.issue.number }})"
+          git pull --rebase -X theirs
+          git push
+
+      - name: Responder e fechar a issue
+        uses: actions/github-script@v7
+        env:
+          RESULTADO: ${{ steps.fonte.outputs.resultado }}
+          MENSAGEM: ${{ steps.fonte.outputs.mensagem }}
+        with:
+          script: |
+            const ok = process.env.RESULTADO === 'ok';
+            const texto = ok
+              ? `✅ ${process.env.MENSAGEM}. Ela será usada a partir da próxima execução do relatório e aparecerá na aba **🌐 Fontes & Qualidade** do painel.`
+              : `❌ Não foi possível adicionar: ${process.env.MENSAGEM}. Edite a issue para corrigir (o robô tenta de novo).`;
+            await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body: texto });
+            if (ok) {
+              await github.rest.issues.update({ ...context.repo, issue_number: context.issue.number, state: 'closed' });
+            }
