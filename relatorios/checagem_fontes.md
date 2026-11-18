@@ -1,4 +1,4 @@
-# Checagem de fontes — 18/11/2026 08:15
+# Checagem de fontes — 18/11/2026 09:10
 
 ## Cotações
 
@@ -55,9 +55,9 @@
 |---|---|---|---|---|---|---|
 | Notícias Agrícolas | Brasil | ❌ falha | — | 0 | 0 | página e feed inacessíveis |
 | Farmnews | Brasil | ✅ ok | rss | 6 | 7 | https://www.farmnews.com.br/feed/ |
-| AgFeed | Brasil | ✅ ok | rss | 8 | 10 | https://agfeed.com.br/feed/ |
+| AgFeed | Brasil | ✅ ok | rss | 7 | 10 | https://agfeed.com.br/feed/ |
 | Canal Rural | Brasil | ✅ ok | rss | 10 | 10 | https://www.canalrural.com.br/feed/ |
-| Globo Rural | Brasil | ✅ ok | rss | 29 | 30 | https://globorural.globo.com/rss/globorural |
+| Globo Rural | Brasil | ✅ ok | rss | 30 | 30 | https://globorural.globo.com/rss/globorural |
 | Agrolink | Brasil | ✅ ok | rss | 30 | 30 | https://www.agrolink.com.br/rss/noticias.rss |
 | Money Times Agro | Brasil | ✅ ok | rss | 10 | 10 | https://www.moneytimes.com.br/feed/ |
 | CONAB | Brasil | ✅ ok | pagina | 0 | 2 |  |
@@ -65,7 +65,7 @@
 | BCR – Bolsa de Comercio de Rosario | Argentina | ⚠️ sem_itens | pagina | 0 | 0 | nenhuma matéria reconhecida na página |
 | Infobae Campo | Argentina | ✅ ok | pagina | 0 | 10 |  |
 | Clarín Rural | Argentina | ✅ ok | rss | 10 | 10 | https://www.clarin.com/rss |
-| Pro Farmer | Internacional | ✅ ok | pagina | 6 | 8 |  |
+| Pro Farmer | Internacional | ✅ ok | pagina | 7 | 8 |  |
 | Barchart Grains | Internacional | ❌ falha | — | 0 | 0 | página e feed inacessíveis |
 | Reuters Commodities | Internacional | 🚫 robots | — | 0 | 0 | robots.txt de www.reuters.com não permite ler https://www.reuters.com/markets/commodities/ |
 | Bloomberg Agriculture | Internacional | ❌ falha | — | 0 | 0 | página e feed inacessíveis |
