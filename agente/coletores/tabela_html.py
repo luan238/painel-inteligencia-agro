@@ -95,6 +95,12 @@ def tabelas_da_pagina(html: str) -> list[Tabela]:
             if m:
                 data_txt = m.group(1) if m.lastindex else m.group(0)
                 break
+        if not data_txt:                          # data escrita no próprio cabeçalho (ex.: BCR)
+            for c in cabecalhos:
+                m = _RE_QUALQUER_DATA.search(c)
+                if m:
+                    data_txt = m.group(0)
+                    break
         tabelas.append(Tabela(contexto=contexto, cabecalhos=cabecalhos, linhas=linhas, data_contexto=data_txt))
     return tabelas
 
@@ -209,8 +215,11 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
             raise ErroColeta(f"tabela '{tab.contexto[:50]}' tem só {len(tab.linhas)} linhas")
         linha = tab.linhas[n - 1]
 
-    if fonte.get("colunas_esperadas") and linha is not None and len(linha) != int(fonte["colunas_esperadas"]):
-        raise ErroColeta(f"a tabela mudou: {len(linha)} colunas em vez de {fonte['colunas_esperadas']}" + _amostra(tab))
+    if fonte.get("colunas_esperadas") and linha is not None:
+        if len(linha) != int(fonte["colunas_esperadas"]):
+            raise ErroColeta(f"a tabela mudou: {len(linha)} colunas em vez de {fonte['colunas_esperadas']}" + _amostra(tab))
+        if por_posicao:
+            incerta = False                       # leiaute conferido: posição + número exato de colunas
 
     valor = None
     if col_valor is not None and col_valor < len(linha):

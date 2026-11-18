@@ -135,8 +135,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["soja"]
-        coluna_reserva: 4                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
-        colunas_esperadas: 7
+        coluna_reserva: 7                    # cabeçalho sem nomes: Posição, Trigo (preço, var.), Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 13
         linha_rotulo_padrao: '^[A-Za-zÁÉÍÓÚáéíóú]{3}\W?\d{2}$'   # vencimentos: Dic-26, Ene-27…
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0272155
@@ -158,8 +158,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["harina"]
-        coluna_reserva: 6                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
-        colunas_esperadas: 7
+        coluna_reserva: 11                    # cabeçalho sem nomes: Posição, Trigo (preço, var.), Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 13
         linha_rotulo_padrao: '^[A-Za-zÁÉÍÓÚáéíóú]{3}\W?\d{2}$'   # vencimentos: Dic-26, Ene-27…
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.90718474
@@ -181,8 +181,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["aceite"]
-        coluna_reserva: 5                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
-        colunas_esperadas: 7
+        coluna_reserva: 9                    # cabeçalho sem nomes: Posição, Trigo (preço, var.), Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 13
         linha_rotulo_padrao: '^[A-Za-zÁÉÍÓÚáéíóú]{3}\W?\d{2}$'   # vencimentos: Dic-26, Ene-27…
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0453592
@@ -292,8 +292,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["maiz"]
-        coluna_reserva: 3                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
-        colunas_esperadas: 7
+        coluna_reserva: 5                    # cabeçalho sem nomes: Posição, Trigo (preço, var.), Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 13
         linha_rotulo_padrao: '^[A-Za-zÁÉÍÓÚáéíóú]{3}\W?\d{2}$'   # vencimentos: Dic-26, Ene-27…
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0254012
@@ -365,8 +365,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["trigo chicago"]
-        coluna_reserva: 1                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
-        colunas_esperadas: 7
+        coluna_reserva: 1                    # cabeçalho sem nomes: Posição, Trigo (preço, var.), Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 13
         linha_rotulo_padrao: '^[A-Za-zÁÉÍÓÚáéíóú]{3}\W?\d{2}$'   # vencimentos: Dic-26, Ene-27…
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0272155

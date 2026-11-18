@@ -102,22 +102,25 @@ def _canal_rural(produto: str, titulo: str, linhas: list[tuple[str, str, str, fl
 
 
 def _bcr_chicago() -> str:
-    """Imita 'Precios Chicago/Kansas' da BCR: US$/t, cabeçalho em <td>, 0,00 = posição sem contrato."""
+    """Imita 'Precios Chicago/Kansas' da BCR como o robô lê: cabeçalho só com o título e a data,
+    13 colunas (posição + preço e variação de 6 produtos), '-' ou 0,00 = sem contrato."""
     soja_t = _ultimo("soja_cbot") / 100 / 0.0272155
     milho_t = _ultimo("milho_cbot") / 100 / 0.0254012
     trigo_t = _ultimo("trigo_cbot") / 100 / 0.0272155
     oleo_t = _ultimo("oleo") / 0.0453592
     farelo_t = _ultimo("farelo") / 0.90718474
     linhas = [
-        ["Dic-26", f"{fmt(trigo_t, 2)} (2,94)", "232,59 (5,14)", f"{fmt(milho_t, 2)} (-0,79)", "0,00",
-         f"{fmt(oleo_t, 2)} (-1,54)", f"{fmt(farelo_t, 2)} (0,77)"],
-        ["Ene-27", "0,00", "0,00", "0,00", f"{fmt(soja_t, 2)} (-1,29)", "1.375,44 (-2,87)", "367,28 (0,99)"],
-        ["Mar-27", "224,23 (3,40)", "236,82 (5,60)", "180,80 (0,20)", "452,42 (-0,64)", "1.387,35 (-3,09)", "368,39 (1,87)"],
+        ["Dic-26", fmt(trigo_t, 2), "2,94", "232,59", "5,14", fmt(milho_t, 2), "-0,79", "-", "-",
+         fmt(oleo_t, 2), "-1,54", fmt(farelo_t, 2), "0,77"],
+        ["Ene-27", "0,00", "0,00", "0,00", "0,00", "0,00", "0,00", fmt(soja_t, 2), "-1,29", "1.375,44", "-2,87", "367,28", "0,99"],
+        ["Mar-27", "224,23", "3,40", "236,82", "5,60", "180,80", "0,20", "452,42", "-0,64", "1.387,35", "-3,09", "368,39", "1,87"],
     ]
-    cab = ["Posición", "Trigo Chicago", "Trigo Chicago/2", "Maíz", "Soja", "Aceite de soja", "Harina de soja"]
-    trs = "<tr>" + "".join(f"<td>{c}</td>" for c in cab) + "</tr>"
-    trs += "".join("<tr>" + "".join(f"<td>{c}</td>" for c in l) + "</tr>" for l in linhas)
-    return pagina("<h2>Precios Chicago/Kansas</h2><p>17/11/2026</p><p>U$S / TN</p>", f"<table>{trs}</table>")
+    trs = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in l) + "</tr>" for l in linhas)
+    return pagina("<h2>Cotizaciones Internacionales</h2><h3>Precios Chicago/Kansas</h3>",
+                  "<table><thead><tr><th>Precios de cierre (U$S / TN)</th><th></th><th>17/11/2026</th></tr>"
+                  "<tr><th></th><th></th></tr></thead>"
+                  f"<tbody>{trs}"
+                  "<tr><td>(1) Trigo duro colorado de invierno (Kansas)</td></tr></tbody></table>")
 
 
 def boletim_b3_zip(dia: date = HOJE) -> bytes:

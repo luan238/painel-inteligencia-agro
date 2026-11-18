@@ -153,7 +153,7 @@ def test_bcr_chicago_primeira_posicao_com_valor_e_conversao(cfg):
         obs, rel = coletar_indicador(ind, cfg, Cli(html), HOJE)
         assert rel[0]["status"] == "ok", rel
         assert obs[0].valor == pytest.approx(base, abs=10 ** -casas), ind_id
-        assert "convertido de US$/t" in obs[0].detalhe and obs[0].data == HOJE
+        assert "convertido de US$/t" in obs[0].detalhe and obs[0].data == HOJE and not obs[0].incerta
     soja = coletar_indicador(_fontes_reais("soja_cbot"), cfg, Cli(html), HOJE)[0][0]
     assert "Ene-27" in soja.detalhe                       # Dic-26 tem 0,00 na soja: pula para a 1ª posição cotada
 
@@ -243,6 +243,8 @@ def test_tabela_sem_texto_no_cabecalho_usa_a_posicao():
     fonte = {"titulo_contem": ["chicago"], "coluna_valor": ["soja"], "coluna_reserva": 4, "colunas_esperadas": 7,
              "primeira_linha_com_valor": True}
     o = tabela_html.extrair(html, fonte, IND, HOJE, estilo="br")[0]
-    assert o.valor == 450.30 and o.incerta and "pela posição" in o.detalhe and "Ene-27" in o.detalhe
+    assert o.valor == 450.30 and not o.incerta and "pela posição" in o.detalhe and "Ene-27" in o.detalhe
+    sem_conferir = {k: v for k, v in fonte.items() if k != "colunas_esperadas"}
+    assert tabela_html.extrair(html, sem_conferir, IND, HOJE, estilo="br")[0].incerta   # posição sem conferir = incerta
     with pytest.raises(Exception, match="a tabela mudou"):
         tabela_html.extrair(html, {**fonte, "colunas_esperadas": 8}, IND, HOJE)
