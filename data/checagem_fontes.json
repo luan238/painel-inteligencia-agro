@@ -15,7 +15,7 @@
   "eFeedLink": "https://www.efeedlink.com/rss.xml",
   "SunSirs": "pagina"
  },
- "gerado_em": "2026-11-18T09:10-03:00",
+ "gerado_em": "2026-11-18T09:59-03:00",
  "indicadores": {
   "dolar_ptax": [
    {
@@ -38,11 +38,11 @@
   "dolar_futuro_b3": [
    {
     "fonte": "B3 Agro",
-    "tipo": "b3_ajustes",
+    "tipo": "b3_boletim",
     "prioridade": 1,
-    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
-    "status": "erro",
-    "mensagem": "tabela de ajustes não encontrada na página da B3"
+    "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 5786.407 em 17/11/2026"
    }
   ],
   "selic_meta": [
@@ -57,156 +57,92 @@
   ],
   "petroleo_wti": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/petroleo",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/petroleo"
-   },
-   {
     "fonte": "EIA (governo dos EUA)",
     "tipo": "json_api",
-    "prioridade": 2,
+    "prioridade": 1,
     "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RWTC&sort[0][column]=period&sort[0][direction]=desc&length=30",
     "status": "inativa",
     "mensagem": "opcional — defina o secret EIA_API_KEY no GitHub para ativar"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 3,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
    }
   ],
   "petroleo_brent": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/petroleo",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/petroleo"
-   },
-   {
     "fonte": "EIA (governo dos EUA)",
     "tipo": "json_api",
-    "prioridade": 2,
+    "prioridade": 1,
     "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RBRTE&sort[0][column]=period&sort[0][direction]=desc&length=30",
     "status": "inativa",
     "mensagem": "opcional — defina o secret EIA_API_KEY no GitHub para ativar"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 3,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
    }
   ],
   "soja_cbot": [
    {
-    "fonte": "Notícias Agrícolas",
+    "fonte": "BCR – Bolsa de Comercio de Rosario",
     "tipo": "tabela_html",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
     "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
+    "mensagem": "nenhuma linha com valor na coluna ['soja'] da tabela 'Precios Chicago/Kansas | Cotizaciones Internaciona'"
    }
   ],
   "farelo_cbot": [
    {
-    "fonte": "Notícias Agrícolas",
+    "fonte": "BCR – Bolsa de Comercio de Rosario",
     "tipo": "tabela_html",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
     "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
+    "mensagem": "nenhuma linha com valor na coluna ['harina'] da tabela 'Precios Chicago/Kansas | Cotizaciones Internaciona'"
    }
   ],
   "oleo_soja_cbot": [
    {
-    "fonte": "Notícias Agrícolas",
+    "fonte": "BCR – Bolsa de Comercio de Rosario",
     "tipo": "tabela_html",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
     "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
+    "mensagem": "nenhuma linha com valor na coluna ['aceite'] da tabela 'Precios Chicago/Kansas | Cotizaciones Internaciona'"
    }
   ],
   "soja_paranagua": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+    "url": "https://www.canalrural.com.br/cotacoes/soja/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 169.0 em 17/11/2026"
    }
   ],
   "soja_parana": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+    "url": "https://www.canalrural.com.br/cotacoes/soja/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 158.0 em 17/11/2026"
    }
   ],
   "soja_uberlandia": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
-   },
-   {
     "fonte": "Agrolink",
     "tipo": "tabela_html",
-    "prioridade": 2,
-    "url": "https://www.agrolink.com.br/cotacoes/graos/soja",
-    "status": "erro",
-    "mensagem": "linha com ['uberl'] não encontrada na tabela ''"
+    "prioridade": 1,
+    "url": "https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 155.0 em 18/11/2026"
    }
   ],
   "soja_b3": [
    {
     "fonte": "B3 Agro",
-    "tipo": "b3_ajustes",
+    "tipo": "b3_boletim",
     "prioridade": 1,
-    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
-    "status": "erro",
-    "mensagem": "tabela de ajustes não encontrada na página da B3"
+    "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 27.0172 em 17/11/2026"
    }
   ],
   "soja_rosario": [
@@ -221,174 +157,97 @@
   ],
   "milho_cbot": [
    {
-    "fonte": "Notícias Agrícolas",
+    "fonte": "BCR – Bolsa de Comercio de Rosario",
     "tipo": "tabela_html",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/milho",
+    "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
     "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/milho"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
+    "mensagem": "nenhuma linha com valor na coluna ['maiz'] da tabela 'Precios Chicago/Kansas | Cotizaciones Internaciona'"
    }
   ],
   "milho_campinas": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/milho",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/milho"
+    "url": "https://www.canalrural.com.br/cotacoes/milho/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 67.5 em 17/11/2026"
    }
   ],
   "milho_b3": [
    {
     "fonte": "B3 Agro",
-    "tipo": "b3_ajustes",
+    "tipo": "b3_boletim",
     "prioridade": 1,
-    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
-    "status": "erro",
-    "mensagem": "tabela de ajustes não encontrada na página da B3"
+    "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 71.1 em 18/11/2026"
    }
   ],
   "milho_b3_2": [
    {
     "fonte": "B3 Agro",
-    "tipo": "b3_ajustes",
+    "tipo": "b3_boletim",
     "prioridade": 1,
-    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
-    "status": "erro",
-    "mensagem": "tabela de ajustes não encontrada na página da B3"
+    "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 75.45 em 18/11/2026"
    }
   ],
   "trigo_cbot": [
    {
-    "fonte": "Notícias Agrícolas",
+    "fonte": "BCR – Bolsa de Comercio de Rosario",
     "tipo": "tabela_html",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+    "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
     "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
+    "mensagem": "nenhuma linha com valor na coluna ['trigo chicago'] da tabela 'Precios Chicago/Kansas | Cotizaciones Internaciona'"
    }
   ],
   "trigo_parana": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo"
+    "url": "https://www.canalrural.com.br/cotacoes/trigo/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 1550.0 em 17/11/2026"
    }
   ],
   "trigo_rs": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo"
+    "url": "https://www.canalrural.com.br/cotacoes/trigo/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 1630.0 em 17/11/2026"
    }
   ],
-  "algodao_ice": [
-   {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
-   }
-  ],
+  "algodao_ice": [],
   "algodao_cepea": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
+    "url": "https://www.canalrural.com.br/cotacoes/algodao/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 396.0 em 17/11/2026"
    }
   ],
-  "caroco_algodao_mt": [
-   {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
-   }
-  ],
-  "caroco_algodao_ba": [
-   {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
-   }
-  ],
-  "cafe_arabica_ice": [
-   {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
-   },
-   {
-    "fonte": "Yahoo Finance (checagem)",
-    "tipo": "yahoo",
-    "prioridade": 2,
-    "url": "",
-    "status": "inativa",
-    "mensagem": "fonte desativada na configuração"
-   }
-  ],
-  "cafe_robusta_londres": [
-   {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
-   }
-  ],
+  "caroco_algodao_mt": [],
+  "caroco_algodao_ba": [],
+  "cafe_arabica_ice": [],
+  "cafe_robusta_londres": [],
   "cafe_arabica_cepea": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
+    "url": "https://www.canalrural.com.br/cotacoes/cafe/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 1830.0 em 17/11/2026"
    }
   ],
   "cafe_manhuacu": [
@@ -399,56 +258,37 @@
     "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
     "status": "ok",
     "mensagem": "1 valor(es); último 1688.0 em 18/11/2026"
-   },
-   {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
-    "prioridade": 2,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
    }
   ],
   "boi_gordo_cepea": [
    {
-    "fonte": "Notícias Agrícolas",
-    "tipo": "tabela_html",
+    "fonte": "Canal Rural",
+    "tipo": "regex_pagina",
     "prioridade": 1,
-    "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo",
-    "status": "erro",
-    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/boi-gordo"
+    "url": "https://www.canalrural.com.br/cotacoes/boi/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 395.0 em 17/11/2026"
    }
   ],
   "boi_b3": [
    {
     "fonte": "B3 Agro",
-    "tipo": "b3_ajustes",
+    "tipo": "b3_boletim",
     "prioridade": 1,
-    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
-    "status": "erro",
-    "mensagem": "tabela de ajustes não encontrada na página da B3"
+    "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 398.5 em 18/11/2026"
    }
   ]
  },
  "noticias": [
-  {
-   "nome": "Notícias Agrícolas",
-   "regiao": "Brasil",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis"
-  },
   {
    "nome": "Farmnews",
    "regiao": "Brasil",
    "modo": "rss",
    "feed": "https://www.farmnews.com.br/feed/",
    "itens_lidos": 7,
-   "itens_na_janela": 6,
+   "itens_na_janela": 7,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -481,7 +321,7 @@
    "modo": "rss",
    "feed": "https://globorural.globo.com/rss/globorural",
    "itens_lidos": 30,
-   "itens_na_janela": 30,
+   "itens_na_janela": 29,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""

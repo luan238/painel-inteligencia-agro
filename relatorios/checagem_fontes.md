@@ -1,4 +1,4 @@
-# Checagem de fontes — 18/11/2026 09:10
+# Checagem de fontes — 18/11/2026 09:59
 
 ## Cotações
 
@@ -6,58 +6,39 @@
 |---|---|---|---|
 | dolar_ptax | Banco Central do Brasil | ✅ ok | 40 valor(es); último 5.7851 em 17/11/2026 |
 | dolar_ptax | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| dolar_futuro_b3 | B3 Agro | ❌ erro | tabela de ajustes não encontrada na página da B3 |
+| dolar_futuro_b3 | B3 Agro | ✅ ok | 1 valor(es); último 5786.407 em 17/11/2026 |
 | selic_meta | Banco Central do Brasil | ✅ ok | 61 valor(es); último 13.75 em 18/11/2026 |
-| petroleo_wti | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/petroleo |
 | petroleo_wti | EIA (governo dos EUA) | ⏸️ inativa | opcional — defina o secret EIA_API_KEY no GitHub para ativar |
-| petroleo_wti | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| petroleo_brent | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/petroleo |
 | petroleo_brent | EIA (governo dos EUA) | ⏸️ inativa | opcional — defina o secret EIA_API_KEY no GitHub para ativar |
-| petroleo_brent | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| soja_cbot | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja |
-| soja_cbot | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| farelo_cbot | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja |
-| farelo_cbot | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| oleo_soja_cbot | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja |
-| oleo_soja_cbot | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| soja_paranagua | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja |
-| soja_parana | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja |
-| soja_uberlandia | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja |
-| soja_uberlandia | Agrolink | ❌ erro | linha com ['uberl'] não encontrada na tabela '' |
-| soja_b3 | B3 Agro | ❌ erro | tabela de ajustes não encontrada na página da B3 |
+| soja_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | nenhuma linha com valor na coluna ['soja'] da tabela 'Precios Chicago/Kansas / Cotizaciones Internaciona' |
+| farelo_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | nenhuma linha com valor na coluna ['harina'] da tabela 'Precios Chicago/Kansas / Cotizaciones Internaciona' |
+| oleo_soja_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | nenhuma linha com valor na coluna ['aceite'] da tabela 'Precios Chicago/Kansas / Cotizaciones Internaciona' |
+| soja_paranagua | Canal Rural | ✅ ok | 1 valor(es); último 169.0 em 17/11/2026 |
+| soja_parana | Canal Rural | ✅ ok | 1 valor(es); último 158.0 em 17/11/2026 |
+| soja_uberlandia | Agrolink | ✅ ok | 1 valor(es); último 155.0 em 18/11/2026 |
+| soja_b3 | B3 Agro | ✅ ok | 1 valor(es); último 27.0172 em 17/11/2026 |
 | soja_rosario | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 545000.0 em 18/11/2026 |
-| milho_cbot | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/milho |
-| milho_cbot | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| milho_campinas | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/milho |
-| milho_b3 | B3 Agro | ❌ erro | tabela de ajustes não encontrada na página da B3 |
-| milho_b3_2 | B3 Agro | ❌ erro | tabela de ajustes não encontrada na página da B3 |
-| trigo_cbot | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo |
-| trigo_cbot | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| trigo_parana | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo |
-| trigo_rs | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo |
-| algodao_ice | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao |
-| algodao_ice | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| algodao_cepea | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao |
-| caroco_algodao_mt | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao |
-| caroco_algodao_ba | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao |
-| cafe_arabica_ice | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe |
-| cafe_arabica_ice | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| cafe_robusta_londres | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe |
-| cafe_arabica_cepea | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe |
+| milho_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | nenhuma linha com valor na coluna ['maiz'] da tabela 'Precios Chicago/Kansas / Cotizaciones Internaciona' |
+| milho_campinas | Canal Rural | ✅ ok | 1 valor(es); último 67.5 em 17/11/2026 |
+| milho_b3 | B3 Agro | ✅ ok | 1 valor(es); último 71.1 em 18/11/2026 |
+| milho_b3_2 | B3 Agro | ✅ ok | 1 valor(es); último 75.45 em 18/11/2026 |
+| trigo_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | nenhuma linha com valor na coluna ['trigo chicago'] da tabela 'Precios Chicago/Kansas / Cotizaciones Internaciona' |
+| trigo_parana | Canal Rural | ✅ ok | 1 valor(es); último 1550.0 em 17/11/2026 |
+| trigo_rs | Canal Rural | ✅ ok | 1 valor(es); último 1630.0 em 17/11/2026 |
+| algodao_cepea | Canal Rural | ✅ ok | 1 valor(es); último 396.0 em 17/11/2026 |
+| cafe_arabica_cepea | Canal Rural | ✅ ok | 1 valor(es); último 1830.0 em 17/11/2026 |
 | cafe_manhuacu | Agrolink | ✅ ok | 1 valor(es); último 1688.0 em 18/11/2026 |
-| cafe_manhuacu | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe |
-| boi_gordo_cepea | Notícias Agrícolas | ❌ erro | HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/boi-gordo |
-| boi_b3 | B3 Agro | ❌ erro | tabela de ajustes não encontrada na página da B3 |
+| boi_gordo_cepea | Canal Rural | ✅ ok | 1 valor(es); último 395.0 em 17/11/2026 |
+| boi_b3 | B3 Agro | ✅ ok | 1 valor(es); último 398.5 em 18/11/2026 |
 
 ## Notícias
 
 | Fonte | Região | Status | Modo | Na janela | Lidos | Feed / mensagem |
 |---|---|---|---|---|---|---|
-| Notícias Agrícolas | Brasil | ❌ falha | — | 0 | 0 | página e feed inacessíveis |
-| Farmnews | Brasil | ✅ ok | rss | 6 | 7 | https://www.farmnews.com.br/feed/ |
+| Farmnews | Brasil | ✅ ok | rss | 7 | 7 | https://www.farmnews.com.br/feed/ |
 | AgFeed | Brasil | ✅ ok | rss | 7 | 10 | https://agfeed.com.br/feed/ |
 | Canal Rural | Brasil | ✅ ok | rss | 10 | 10 | https://www.canalrural.com.br/feed/ |
-| Globo Rural | Brasil | ✅ ok | rss | 30 | 30 | https://globorural.globo.com/rss/globorural |
+| Globo Rural | Brasil | ✅ ok | rss | 29 | 30 | https://globorural.globo.com/rss/globorural |
 | Agrolink | Brasil | ✅ ok | rss | 30 | 30 | https://www.agrolink.com.br/rss/noticias.rss |
 | Money Times Agro | Brasil | ✅ ok | rss | 10 | 10 | https://www.moneytimes.com.br/feed/ |
 | CONAB | Brasil | ✅ ok | pagina | 0 | 2 |  |
