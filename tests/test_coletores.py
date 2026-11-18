@@ -202,3 +202,47 @@ def test_boletim_da_b3_baixado_uma_vez_so(tmp_path):
     segundo = b3_boletim.coletar({"mercadoria": "BGI"}, IND, Cli(), HOJE)[0]
     assert Cli.downloads == 1 and primeiro.valor == segundo.valor and segundo.data == HOJE
     assert "BGIX26" in (tmp_path / "data" / "b3_ajustes.json").read_text(encoding="utf-8")
+
+
+def test_b3_mesmo_pregao_e_arquivo_de_outro_dia(tmp_path):
+    """After-hours (registro com data D+1) é ignorado, e um arquivo antigo devolvido no lugar do
+    pedido fica com a data do pregão dele."""
+    import io
+    import zipfile
+
+    def arquivo(registros):
+        xml = "".join(f"<PricRpt><TradDt><Dt>{d}</Dt></TradDt><SctyId><TckrSymb>{t}</TckrSymb></SctyId>"
+                      f"<FinInstrmAttrbts><AdjstdQt>{v}</AdjstdQt></FinInstrmAttrbts></PricRpt>" for t, d, v in registros)
+        b = io.BytesIO()
+        with zipfile.ZipFile(b, "w") as z:
+            z.writestr("x.xml", f"<Document>{xml}</Document>")
+        return b.getvalue()
+
+    zip17 = arquivo([("CCMF27", "2026-11-17", 71.10), ("CCMF27", "2026-11-18", 71.40),
+                     ("DOLZ26", "2026-11-17", 5786.4), ("BGIX26", "2026-11-17", 398.5)])
+
+    class Cli:
+        downloads = []
+
+        def obter(self, url, **kw):
+            Cli.downloads.append(url[-10:])
+            return Resposta(url, 200, zip17)               # a B3 devolve o último arquivo que tem
+
+    b3_boletim.usar_cache(tmp_path / "b3_ajustes.json")
+    o = b3_boletim.coletar({"mercadoria": "CCM"}, IND, Cli(), date(2026, 11, 18))[0]
+    assert o.valor == 71.10 and o.data == date(2026, 11, 17)      # nem o after-hours, nem a data errada
+    assert Cli.downloads == ["261118.zip"]                        # o de 17/11 veio do cache gravado
+    assert '"2026-11-18"' not in (tmp_path / "b3_ajustes.json").read_text(encoding="utf-8")
+
+
+def test_tabela_sem_texto_no_cabecalho_usa_a_posicao():
+    html = ("<h2>Precios Chicago/Kansas</h2><p>17/11/2026</p><table><thead><tr>" + "<th><img alt=''></th>" * 7 +
+            "</tr></thead><tbody><tr><td>Dic-26</td><td>218,72 (2,94)</td><td>232,59</td><td>175,88</td><td>0,00</td>"
+            "<td>1.369,71</td><td>369,49</td></tr><tr><td>Ene-27</td><td>0,00</td><td>0,00</td><td>0,00</td>"
+            "<td>450,30 (-1,29)</td><td>1.375,44</td><td>367,28</td></tr></tbody></table>")
+    fonte = {"titulo_contem": ["chicago"], "coluna_valor": ["soja"], "coluna_reserva": 4, "colunas_esperadas": 7,
+             "primeira_linha_com_valor": True}
+    o = tabela_html.extrair(html, fonte, IND, HOJE, estilo="br")[0]
+    assert o.valor == 450.30 and o.incerta and "pela posição" in o.detalhe and "Ene-27" in o.detalhe
+    with pytest.raises(Exception, match="a tabela mudou"):
+        tabela_html.extrair(html, {**fonte, "colunas_esperadas": 8}, IND, HOJE)

@@ -66,7 +66,8 @@ def _local(tag: str) -> str:
 
 
 def ler_xml(bruto: bytes) -> dict:
-    """{ticker: (preço de ajuste, data do pregão)} só dos contratos futuros (ex.: CCMF27)."""
+    """{ticker: [(preço de ajuste, data do registro), …]} só dos contratos futuros (ex.: CCMF27).
+    Um mesmo contrato pode ter mais de um registro (ex.: sessão after-hours com data D+1)."""
     precos: dict = {}
     for _, el in ET.iterparse(io.BytesIO(bruto), events=("end",)):
         if _local(el.tag) != "PricRpt":
@@ -84,22 +85,42 @@ def ler_xml(bruto: bytes) -> dict:
             except ValueError:
                 valor = 0.0
             if valor:
-                precos[ticker] = (valor, dia)
+                precos.setdefault(ticker, []).append((valor, dia))
         el.clear()
     return precos
 
 
+def resolver(registros: dict) -> tuple[dict, date | None]:
+    """Escolhe um preço por contrato, todos do MESMO pregão: o dia que aparece na maioria dos
+    registros do arquivo. Registros com data posterior (after-hours, D+1) são ignorados."""
+    from collections import Counter
+    dias = Counter(d for lista in registros.values() for _, d in lista if d)
+    if not dias:
+        return {}, None
+    sessao = dias.most_common(1)[0][0]
+    precos = {}
+    for ticker, lista in registros.items():
+        do_dia = [v for v, d in lista if d == sessao]
+        if do_dia:
+            precos[ticker] = (do_dia[-1], sessao)
+    return precos, sessao
+
+
 def ler_zip(dados: bytes) -> dict:
     """Abre o .zip (que às vezes vem com outro .zip dentro) e lê os XML."""
-    precos: dict = {}
+    registros: dict = {}
     with zipfile.ZipFile(io.BytesIO(dados)) as z:
         for nome in z.namelist():
             bruto = z.read(nome)
             if bruto[:2] == b"PK":
-                precos.update(ler_zip(bruto))
+                partes = ler_zip(bruto)
             elif nome.lower().endswith(".xml") or bruto.lstrip()[:1] == b"<":
-                precos.update(ler_xml(bruto))
-    return precos
+                partes = ler_xml(bruto)
+            else:
+                continue
+            for ticker, lista in partes.items():
+                registros.setdefault(ticker, []).extend(lista)
+    return registros
 
 
 def _precos_do_dia(cliente, dia: date, ignorar_robots: bool) -> dict | None:
@@ -112,9 +133,11 @@ def _precos_do_dia(cliente, dia: date, ignorar_robots: bool) -> dict | None:
         url = URL_ARQUIVO.format(aammdd=dia.strftime("%y%m%d"))
         try:
             resp = cliente.obter(url, ignorar_robots=ignorar_robots)
-            _cache[chave] = ler_zip(resp.conteudo) if resp.conteudo[:2] == b"PK" else None
-            if _cache[chave]:
-                _gravar_cache(dia, _cache[chave])
+            precos, sessao = resolver(ler_zip(resp.conteudo)) if resp.conteudo[:2] == b"PK" else ({}, None)
+            if precos and sessao:
+                _gravar_cache(sessao, precos)           # guardado pelo dia do pregão, não pelo pedido
+            # a B3 pode devolver o arquivo de outro pregão: só vale se for o do dia pedido
+            _cache[chave] = precos if (precos and sessao == dia) else None
         except ErroColeta:
             _cache[chave] = None
         except (zipfile.BadZipFile, ET.ParseError):

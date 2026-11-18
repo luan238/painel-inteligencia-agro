@@ -139,11 +139,22 @@ def extrair(html: str, fonte: dict, ind: dict, hoje: date, estilo: str = "br", u
     raise ErroColeta(" / ".join(erros[:3]))
 
 
+def _amostra(tab: Tabela) -> str:
+    """Trecho da estrutura lida, para o relatório do Checar fontes mostrar o que a página tem."""
+    cab = [c[:18] for c in tab.cabecalhos[:8]]
+    l1 = [c[:14] for c in (tab.linhas[0] if tab.linhas else [])[:8]]
+    return f" · cabeçalhos={cab} · 1ª linha={l1}"[:230]
+
+
 def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: str, url: str) -> list[Observacao]:
     nome_fonte = fonte.get("fonte", "")
     col_data = _indice_coluna(tab.cabecalhos, fonte.get("coluna_data")) if fonte.get("coluna_data") else None
     col_valor = _indice_coluna(tab.cabecalhos, fonte.get("coluna_valor"))
     incerta = False
+    por_posicao = False
+    if col_valor is None and fonte.get("coluna_reserva") is not None:
+        col_valor, por_posicao = int(fonte["coluna_reserva"]), True    # cabeçalho sem texto: vale a posição
+        incerta = True
 
     # ---- modo série: tabela com uma coluna de datas (vários dias)
     if col_data is not None and col_valor is not None:
@@ -173,7 +184,8 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
                     linha = l
                     break
         if linha is None:
-            raise ErroColeta(f"linha com {fonte['linha_contem']} não encontrada na tabela '{tab.contexto[:50]}'")
+            raise ErroColeta(f"linha com {fonte['linha_contem']} não encontrada na tabela '{tab.contexto[:50]}'"
+                             + _amostra(tab))
     elif fonte.get("primeira_linha_com_valor"):
         for l in tab.linhas:
             if col_valor is not None and col_valor < len(l):
@@ -182,12 +194,16 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
                     linha = l
                     break
         if linha is None:
-            raise ErroColeta(f"nenhuma linha com valor na coluna {fonte.get('coluna_valor')} da tabela '{tab.contexto[:50]}'")
+            raise ErroColeta(f"nenhuma linha com valor na coluna {fonte.get('coluna_valor')} da tabela "
+                             f"'{tab.contexto[:50]}'" + _amostra(tab))
     else:
         n = int(fonte.get("linha", 1))
         if len(tab.linhas) < n:
             raise ErroColeta(f"tabela '{tab.contexto[:50]}' tem só {len(tab.linhas)} linhas")
         linha = tab.linhas[n - 1]
+
+    if fonte.get("colunas_esperadas") and linha is not None and len(linha) != int(fonte["colunas_esperadas"]):
+        raise ErroColeta(f"a tabela mudou: {len(linha)} colunas em vez de {fonte['colunas_esperadas']}" + _amostra(tab))
 
     valor = None
     if col_valor is not None and col_valor < len(linha):
@@ -213,6 +229,8 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
         incerta = True
     rotulo = linha[0] if linha else ""
     nome_col = tab.cabecalhos[col_valor] if (col_valor is not None and col_valor < len(tab.cabecalhos)) else "1ª coluna numérica"
+    if por_posicao:
+        nome_col = f"nº {col_valor + 1}, pela posição"
     return [Observacao(indicador=ind["id"], data=d, valor=valor, fonte=nome_fonte, url=url, incerta=incerta,
                        detalhe=f"tabela '{tab.contexto[:60]}' · linha '{rotulo[:30]}' · coluna '{nome_col}'"
                                + (" · data não informada na página" if not tab.data_contexto and d == hoje else ""))]

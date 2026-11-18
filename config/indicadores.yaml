@@ -135,6 +135,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["soja"]
+        coluna_reserva: 4                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 7
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0272155
         unidade_origem: "US$/t"
@@ -155,6 +157,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["harina"]
+        coluna_reserva: 6                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 7
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.90718474
         unidade_origem: "US$/t"
@@ -175,6 +179,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["aceite"]
+        coluna_reserva: 5                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 7
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0453592
         unidade_origem: "US$/t"
@@ -283,6 +289,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["maiz"]
+        coluna_reserva: 3                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 7
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0254012
         unidade_origem: "US$/t"
@@ -353,6 +361,8 @@ indicadores:
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
         titulo_contem: ["chicago"]
         coluna_valor: ["trigo chicago"]
+        coluna_reserva: 1                    # se o cabeçalho vier sem texto: Posição, Trigo, Trigo Kansas, Milho, Soja, Óleo, Farelo
+        colunas_esperadas: 7
         primeira_linha_com_valor: true      # posição mais próxima com cotação (1º vencimento)
         fator: 0.0272155
         unidade_origem: "US$/t"
