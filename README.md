@@ -248,7 +248,7 @@ python -m agente executar            # gera o boletim (turno pelo horário)
 python -m agente executar --turno fechamento --sem-ia
 python -m agente monitorar           # só cotações; republica se houver cotação nova
 python -m agente adicionar-fonte --nome "Portal X" --url https://... --regiao Brasil
-python -m pytest -q                  # 59 testes (internet e IA simuladas)
+python -m pytest -q                  # 64 testes (internet e IA simuladas)
 python tests/gerar_exemplo.py        # gera exemplos/boletim_exemplo_FICTICIO.json
 ```
 
@@ -256,8 +256,12 @@ Se o site de alguma fonte bloquear os servidores do GitHub, rode o agente no seu
 *self-hosted runner* ou pelo Agendador de Tarefas do Windows.
 
 ## Limites conhecidos
-- Sites com paywall ou bloqueio de robôs (Reuters, Bloomberg) costumam falhar. As matérias da Reuters
-  também chegam pela Notícias Agrícolas.
+- Sites com paywall ou bloqueio de robôs (Reuters, Bloomberg) costumam falhar. A **Notícias Agrícolas** recusa
+  robôs (HTTP 403) desde nov/2026 e está desligada em `config/fontes.yaml`. As cotações vêm de: Banco Central
+  (PTAX, Selic), arquivo oficial de ajustes da B3 (dólar, milho, boi, soja), Bolsa de Rosario (Chicago:
+  soja, farelo, óleo, milho, trigo), Canal Rural/CMA (praças físicas), Agrolink e EIA (petróleo, com chave grátis).
+- Sem fonte gratuita que aceite robôs hoje: algodão e café em Nova York, robusta em Londres e caroço de algodão.
+  Esses cards ficam em branco até surgir uma fonte (basta incluí-la em `config/indicadores.yaml`).
 - O agente **respeita o robots.txt** de cada site (`respeitar_robots_txt: true`). Fontes que proíbem
   robôs aparecem como 🚫 no painel. Use `ignorar_robots: true` numa fonte só se você tiver autorização do site.
 - As projeções são bandas estatísticas de volatilidade, não previsões. O track record mostra a calibração real.

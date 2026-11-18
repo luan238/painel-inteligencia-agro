@@ -1,0 +1,113 @@
+# =============================================================================
+#  CONFIGURAÇÕES GERAIS DO AGENTE
+# =============================================================================
+
+relatorio:
+  analista: "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
+  mesa: "Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro"
+  # Separadas por "/" — viram as "pílulas" de praças no topo do painel
+  pracas: "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3"
+  fuso_horario: America/Sao_Paulo
+  aviso_legal: "Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento."
+
+saidas:
+  json: boletim_atual.json                 # o index.html lê este arquivo (mesma pasta do index.html)
+  relatorio_md: relatorios/relatorio_atual.md
+  arquivo_dir: relatorios/arquivo          # cópia de cada boletim gerado (auditoria)
+  historico_csv: data/historico.csv        # série histórica de TODAS as cotações coletadas
+  projecoes: data/projecoes.jsonl          # projeções registradas + resultado da auditoria
+  noticias_dir: data/noticias
+  checagem_fontes: data/checagem_fontes.json
+  ultima_analise: data/ultima_analise.json     # última análise verificada (o monitor reaproveita)
+  estado_cotacoes: data/estado_cotacoes.json   # cotações do último boletim publicado
+
+coleta:
+  tempo_limite_s: 25
+  tentativas: 3
+  pausa_mesmo_site_s: 1.5
+  respeitar_robots_txt: true               # não lê páginas que o site proíbe para robôs
+  user_agent: "Mozilla/5.0 (compatible; AgroIntelAgent/1.0; +https://github.com/)"
+  # Se menos que este % de indicadores tiver dado válido, o boletim anterior é
+  # mantido (não sobrescreve) e o GitHub abre um alerta.
+  minimo_indicadores_validos_pct: 40
+
+noticias:
+  janela_horas: 36
+  janela_horas_fim_de_semana: 72
+  max_itens_por_fonte: 15
+  max_por_bloco: 10                        # quantas notícias vão para a IA por complexo
+  max_materias_baixadas: 60                # limite de páginas de matéria abertas por execução
+  max_caracteres_resumo: 900
+
+janela:
+  pregoes: 21                              # tamanho do daily_history (gráfico mensal do painel)
+  max_dias_repetidos: 2                    # repete o último preço por no máx. N pregões sem cotação nova
+
+ndf:
+  prazo_dias_corridos: 160
+  cupom_cambial_aa: 4.80                   # % a.a. — referência para a calculadora (ajuste quando quiser)
+  indicador_spot: dolar_ptax
+  indicador_taxa_brl: selic_meta
+  indicador_saca_usd: soja_b3              # preço da saca em US$ (B3) para o card do NDF
+
+projecoes:
+  pregoes_curto_prazo: 5
+  sigma: 1.0                               # largura da banda em desvios-padrão
+  janela_volatilidade: 21
+  minimo_pregoes_para_banda: 10
+  deslocamento_vies_sigma: 0.5             # quanto o viés (alta/baixa) da análise desloca a banda
+  registrar_nos_turnos: [fechamento]       # registra 1 projeção por dia (no fechamento)
+
+llm:
+  # A IA só ESCREVE o texto: os números vêm dos coletores e cada número escrito é conferido.
+  # Ordem de uso:
+  #   1) APIs gratuitas da lista "provedores", de cima para baixo. Cada uma só entra se a chave
+  #      dela estiver nos secrets do GitHub (sem chave = pulada). Bateu o limite por minuto? Pausa
+  #      curta e o pedido vai para a próxima. Acabou a cota do dia? Sai da fila até a próxima execução.
+  #   2) API extra opcional (secrets LLM_BASE_URL, LLM_API_KEY, LLM_MODEL).
+  #   3) IA LOCAL (Ollama no próprio GitHub Actions): gratuita e SEM limite. Quando todas as APIs
+  #      esgotam, tudo vai para ela. Sem nenhuma IA, o texto sai automático (sem inventar nada).
+  # Para mudar a ordem, basta mudar a ordem dos itens abaixo.
+  temperatura: 0.25
+  max_tokens: 5000
+  tentativas_por_bloco: 3
+  pausa_entre_chamadas_s: 2
+  tempo_limite_s: 180
+  espera_maxima_s: 90           # pausa por minuto até isso: espera a API em vez de ir para a IA local (mais lenta)
+  max_pausas_por_provedor: 4    # pausas seguidas sem nenhuma resposta antes de tirar a API da fila
+  prompt_enxuto:                # usado pela IA local e por APIs com limite de tokens apertado
+    max_noticias_por_bloco: 6
+    max_caracteres_resumo: 350
+  provedores:
+    - nome: Groq
+      base_url: https://api.groq.com/openai/v1
+      chave_env: GROQ_API_KEY            # console.groq.com → API Keys (grátis, sem cartão)
+      modelo_env: GROQ_MODEL             # variável opcional no GitHub para trocar o modelo
+      modelos: [openai/gpt-oss-120b, openai/gpt-oss-20b]
+      compacto: true                     # plano grátis: 8 mil tokens por minuto → prompt enxuto
+      max_tokens: 3000
+      parametros_extras: {reasoning_effort: low}
+    - nome: NVIDIA
+      base_url: https://integrate.api.nvidia.com/v1
+      chave_env: NVIDIA_API_KEY          # build.nvidia.com → Get API Key (começa com nvapi-)
+      modelo_env: NVIDIA_MODEL
+      modelos: [nvidia/nemotron-3-super-120b-a12b, nvidia/nemotron-nano-3-30b-a3b, nvidia/llama-3.3-nemotron-super-49b-v1.5]
+      tempo_limite_s: 300
+    - nome: Google Gemini
+      base_url: https://generativelanguage.googleapis.com/v1beta/openai
+      chave_env: GEMINI_API_KEY          # aistudio.google.com → Get API key
+      modelo_env: GEMINI_MODEL
+      modelos: [gemini-flash-lite-latest, gemini-3.1-flash-lite, gemini-flash-latest]
+      parametros_extras: {reasoning_effort: low}
+    - nome: OpenRouter
+      base_url: https://openrouter.ai/api/v1
+      chave_env: OPENROUTER_API_KEY      # openrouter.ai → Keys (modelos gratuitos custam zero)
+      modelo_env: OPENROUTER_MODEL
+      modelos: [openrouter/free]
+  local:
+    ativo: true
+    base_url: http://localhost:11434/v1
+    modelo: qwen2.5:7b            # troque pela variável LLM_LOCAL_MODEL no GitHub (ex.: qwen2.5:3b, mais rápido)
+    tempo_limite_s: 1500          # sem placa de vídeo cada resposta leva alguns minutos
+    max_tokens: 3000
+    espera_preparo_s: 900         # no GitHub a IA local é instalada em segundo plano; espera até isso se precisar dela
