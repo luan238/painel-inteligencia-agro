@@ -1,4 +1,4 @@
-# Checagem de fontes — 18/11/2026 10:14
+# Checagem de fontes — 18/11/2026 10:21
 
 ## Cotações
 
@@ -10,19 +10,19 @@
 | selic_meta | Banco Central do Brasil | ✅ ok | 61 valor(es); último 13.75 em 18/11/2026 · SGS série 432 (API api.bcb.gov.br) |
 | petroleo_wti | EIA (governo dos EUA) | ⏸️ inativa | opcional — defina o secret EIA_API_KEY no GitHub para ativar |
 | petroleo_brent | EIA (governo dos EUA) | ⏸️ inativa | opcional — defina o secret EIA_API_KEY no GitHub para ativar |
-| soja_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
-| farelo_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
-| oleo_soja_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| soja_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 12.25514 em 17/11/2026 · tabela 'Precios Chicago/Kansas / Cotizaciones Internacionales / Home' · linha 'Ene-27' · coluna 'nº 8, pela posição |
+| farelo_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 335.19569 em 17/11/2026 · tabela 'Precios Chicago/Kansas / Cotizaciones Internacionales / Home' · linha 'Dic-26' · coluna 'nº 12, pela posiç |
+| oleo_soja_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 62.12895 em 17/11/2026 · tabela 'Precios Chicago/Kansas / Cotizaciones Internacionales / Home' · linha 'Dic-26' · coluna 'nº 10, pela posiçã |
 | soja_paranagua | Canal Rural | ✅ ok | 1 valor(es); último 169.0 em 17/11/2026 · regex 'Paranagu[aá]\s+PR\s+[^$]{0,40}?R\$\s*([\' |
 | soja_parana | Canal Rural | ✅ ok | 1 valor(es); último 158.0 em 17/11/2026 · regex 'Cascavel\s+PR\s+[^$]{0,40}?R\$\s*([\d.]+' |
 | soja_uberlandia | Agrolink | ✅ ok | 1 valor(es); último 155.0 em 18/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)' · data não informada na página |
 | soja_b3 | B3 Agro | ✅ ok | 1 valor(es); último 27.0172 em 17/11/2026 · SJCF27 · preço de ajuste (boletim oficial da B3) |
-| soja_rosario | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 550000.0 em 18/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* / Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica'  |
-| milho_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| soja_rosario | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 550000.0 em 17/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* / Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica' |
+| milho_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 4.467563 em 17/11/2026 · tabela 'Precios Chicago/Kansas / Cotizaciones Internacionales / Home' · linha 'Dic-26' · coluna 'nº 6, pela posição |
 | milho_campinas | Canal Rural | ✅ ok | 1 valor(es); último 67.5 em 17/11/2026 · regex 'Campinas\s+SP\s+[^$]{0,40}?R\$\s*([\d.]+' |
 | milho_b3 | B3 Agro | ✅ ok | 1 valor(es); último 71.1 em 17/11/2026 · CCMF27 · preço de ajuste (boletim oficial da B3) |
 | milho_b3_2 | B3 Agro | ✅ ok | 1 valor(es); último 75.45 em 17/11/2026 · CCMH27 · preço de ajuste (boletim oficial da B3) |
-| trigo_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| trigo_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 5.952574 em 17/11/2026 · tabela 'Precios Chicago/Kansas / Cotizaciones Internacionales / Home' · linha 'Dic-26' · coluna 'nº 2, pela posição |
 | trigo_parana | Canal Rural | ✅ ok | 1 valor(es); último 1550.0 em 17/11/2026 · regex 'Ponta Grossa\s+PR\s+[^$]{0,40}?R\$\s*([\' |
 | trigo_rs | Canal Rural | ✅ ok | 1 valor(es); último 1630.0 em 17/11/2026 · regex 'Porto Alegre\s+RS\s+[^$]{0,40}?R\$\s*([\' |
 | algodao_cepea | Canal Rural | ✅ ok | 1 valor(es); último 396.0 em 17/11/2026 · regex 'Rondon[oó]polis\s+MT\s+[^$]{0,40}?R\$\s*' · convertido de R$/lb (×100) |
@@ -38,7 +38,7 @@
 | Farmnews | Brasil | ✅ ok | rss | 7 | 7 | https://www.farmnews.com.br/feed/ |
 | AgFeed | Brasil | ✅ ok | rss | 7 | 10 | https://agfeed.com.br/feed/ |
 | Canal Rural | Brasil | ✅ ok | rss | 10 | 10 | https://www.canalrural.com.br/feed/ |
-| Globo Rural | Brasil | ✅ ok | rss | 27 | 30 | https://globorural.globo.com/rss/globorural |
+| Globo Rural | Brasil | ✅ ok | rss | 28 | 30 | https://globorural.globo.com/rss/globorural |
 | Agrolink | Brasil | ✅ ok | rss | 30 | 30 | https://www.agrolink.com.br/rss/noticias.rss |
 | Money Times Agro | Brasil | ✅ ok | rss | 10 | 10 | https://www.moneytimes.com.br/feed/ |
 | CONAB | Brasil | ✅ ok | pagina | 0 | 2 |  |
