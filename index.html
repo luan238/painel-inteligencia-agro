@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Germinare | Market Intelligence Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-topbar: #050505;
+      --bg-panel: #0a0a0a;
+      --bg-main: #0d0d0d;
+      --bg-card: #141414;
+      --bg-ref: #161616;
+      --bg-input: #111111;
+      --border-color: #242424;
+      --border-subtle: #1f1f1f;
+      --orange-bright: #ff7a00;
+      --green: #2eb85c;
+      --text-white: #ffffff;
+      --text-light: #e5e5e5;
+      --text-muted: #8c8c8c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background-color: var(--bg-main); color: var(--text-light); overflow-x: hidden; }
+    
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; height: 54px;
+      background-color: var(--bg-topbar); border-bottom: 1.5px solid var(--orange-bright);
+      display: flex; align-items: center; justify-content: space-between; padding: 0 26px; z-index: 1000;
+    }
+    .brand-logo img { height: 30px; object-fit: contain; }
+    .topbar-right { font-size: 13px; color: #a3a3a3; }
+
+    .layout-wrapper { margin-top: 54px; min-height: calc(100vh - 54px); display: flex; justify-content: center; }
+    .main-content { width: 100%; max-width: 1440px; padding: 28px 36px 60px 36px; }
+
+    .page-title { font-size: 29px; font-weight: 700; color: var(--text-white); margin-bottom: 4px; }
+    .page-title span { color: var(--orange-bright); }
+    .page-subtitle { font-size: 13.8px; color: var(--text-muted); margin-bottom: 18px; }
+
+    /* PAINEL DE CONFIGURAÇÕES DA ANÁLISE FIXO NO TOPO */
+    .config-top-banner {
+      background-color: var(--bg-panel);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--orange-bright);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .config-top-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-bottom: 1px solid #1c1c1c;
+      padding-bottom: 8px;
+    }
+    .config-top-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--orange-bright);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .config-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 14px;
+    }
+    .config-item-box {
+      background-color: var(--bg-input);
+      border: 1px solid #222222;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .config-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .config-fixed-value {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-white);
+      line-height: 1.45;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .praca-pill {
+      background-color: #1b1611;
+      border: 1px solid #3d2814;
+      color: #ffb74d;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 5px;
+    }
+
+    .ref-box { background-color: var(--bg-ref); border: 1px solid #282828; border-radius: 8px; padding: 14px 18px; font-size: 13.2px; color: #d4d4d4; line-height: 1.55; margin-bottom: 22px; }
+    .ref-box strong { color: var(--text-white); }
+
+    .tabs-bar { display: flex; gap: 22px; border-bottom: 1px solid #242424; margin-bottom: 20px; overflow-x: auto; white-space: nowrap; }
+    .tab-btn { background: transparent; border: none; color: var(--text-muted); font-family: 'Inter', sans-serif; font-size: 13.8px; font-weight: 500; padding: 10px 2px; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; }
+    .tab-btn:hover { color: #d4d4d4; }
+    .tab-btn.active { color: var(--orange-bright); font-weight: 600; border-bottom: 2px solid var(--orange-bright); }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    .section-divider-title { font-size: 17.5px; font-weight: 700; color: var(--text-white); padding-bottom: 10px; border-bottom: 1px solid #222222; margin: 18px 0 14px 0; }
+    .sub-group-title { font-size: 15px; font-weight: 700; color: var(--text-white); margin: 18px 0 10px 0; border-left: 3px solid var(--orange-bright); padding-left: 10px; }
+    .cards-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 18px; }
+    .cards-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-bottom: 22px; }
+
+    .control-input {
+      width: 100%; background-color: var(--bg-input); border: 1px solid #262626;
+      border-radius: 6px; padding: 9px 12px; color: var(--text-white); font-family: 'Inter', sans-serif; font-size: 13.5px; outline: none;
+    }
+
+    /* BOTÕES DE ALTERNÂNCIA DO GRÁFICO DIÁRIO MENSAL */
+    .chart-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .chart-mode-group {
+      display: flex;
+      gap: 6px;
+      background-color: #0d0d0d;
+      padding: 4px;
+      border-radius: 7px;
+      border: 1px solid #242424;
+    }
+    .chart-mode-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .chart-mode-btn.active {
+      background-color: var(--orange-bright);
+      color: #000000;
+    }
+
+    /* ESTILO DOS CARDS FIXOS DA ABA COTAÇÕES DO DIA */
+    .quote-fixed-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 13px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .quote-fixed-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .quote-fixed-value {
+      background-color: var(--bg-input);
+      border: 1px solid #222222;
+      border-radius: 6px;
+      padding: 9px 12px;
+      font-size: 13.2px;
+      font-weight: 600;
+      color: #f5f5f5;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+
+    .nutre-card {
+      background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px;
+      padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .culture-block-card {
+      background-color: #101010; border: 1px solid #282828; border-radius: 12px;
+      padding: 22px; margin-bottom: 30px;
+    }
+    .culture-block-title {
+      font-size: 19px; font-weight: 800; color: var(--orange-bright);
+      padding-bottom: 10px; margin-bottom: 12px; border-bottom: 1px solid #242424;
+    }
+    .culture-bias-badge {
+      background-color: #1a140e; border-left: 3px solid var(--orange-bright);
+      padding: 9px 14px; border-radius: 6px; font-size: 13px; color: #ffb74d;
+      margin-bottom: 14px; line-height: 1.45;
+    }
+    .card-top-label { font-size: 12.2px; color: #9e9e9e; margin-bottom: 6px; }
+    .card-big-value { font-size: 20px; font-weight: 800; color: var(--text-white); margin-bottom: 6px; line-height: 1.3; }
+    .card-desc { font-size: 13px; color: #b5b5b5; line-height: 1.55; margin-bottom: 14px; }
+    .card-footer { border-top: 1px solid #202020; padding-top: 10px; font-size: 12.2px; color: var(--orange-bright); display: flex; gap: 12px; align-items: center; }
+    .card-footer a { color: var(--orange-bright); text-decoration: none; }
+
+    .sources-box { background-color: #111111; border: 1px solid #222; border-radius: 6px; padding: 10px 14px; margin-top: 8px; font-size: 12.5px; }
+    .sources-box summary { color: var(--orange-bright); cursor: pointer; font-weight: 600; outline: none; }
+    .sources-list { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+    .sources-list a { color: #3399ff; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+    .sources-list a:hover { text-decoration: underline; }
+
+    .table-wrapper { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px; background-color: var(--bg-card); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+    th { background-color: #1a1a1a; color: #ffffff; font-weight: 600; padding: 12px 14px; border-bottom: 1px solid #2a2a2a; }
+    td { padding: 12px 14px; border-bottom: 1px solid #1f1f1f; color: #d4d4d4; }
+
+    /* ===== Fontes & Qualidade (agente automático) ===== */
+    .chip { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px; border: 1px solid #333; white-space: nowrap; }
+    .chip-ok { background: #0f2417; color: #4ade80; border-color: #1f5133; }
+    .chip-alerta, .chip-parcial, .chip-sem_itens { background: #2a2110; color: #fbbf24; border-color: #5c4613; }
+    .chip-desatualizado { background: #1c1a2e; color: #a5b4fc; border-color: #3a3d6b; }
+    .chip-falha, .chip-indisponivel, .chip-erro { background: #2a1212; color: #f87171; border-color: #5c1f1f; }
+    .chip-robots { background: #22152a; color: #d8b4fe; border-color: #4b2a5c; }
+    .chip-desativada, .chip-nao_usada, .chip-inativa { background: #1a1a1a; color: #8c8c8c; border-color: #2a2a2a; }
+    .qualidade-linha { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12.5px; color: #a3a3a3; margin: -8px 0 16px 0; cursor: pointer; }
+    .fonte-linha { display: grid; grid-template-columns: 1.3fr 0.8fr 2.9fr; gap: 12px; padding: 11px 16px; border-bottom: 1px solid #1f1f1f; font-size: 13px; align-items: start; }
+    .fonte-linha:last-child { border-bottom: none; }
+    .fonte-linha a { color: #3399ff; text-decoration: none; font-weight: 600; }
+    .fonte-meta { color: #8c8c8c; font-size: 12px; margin-top: 3px; line-height: 1.45; }
+    .form-grid { display: grid; grid-template-columns: 1.2fr 1.6fr 0.9fr 1fr auto; gap: 10px; align-items: end; }
+    .btn-laranja { background: var(--orange-bright); color: #000; border: none; border-radius: 6px; padding: 10px 16px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 13px; cursor: pointer; white-space: nowrap; }
+    .btn-contorno { background: transparent; color: var(--orange-bright); border: 1px solid var(--orange-bright); border-radius: 6px; padding: 5px 12px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12px; cursor: pointer; margin-left: 8px; }
+    select.control-input { appearance: auto; }
+    .ref-box a, .card-desc a, .culture-bias-badge a, .quote-fixed-value a, td a { color: #5aa9ff; text-decoration: none; font-weight: 600; }
+    .ref-box a:hover, .card-desc a:hover, .culture-bias-badge a:hover, td a:hover { text-decoration: underline; }
+    code { background: #1a1a1a; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+    .atualizar-barra { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: -4px 0 18px 0; }
+    .atualizar-barra .control-input { width: auto; padding: 8px 10px; font-size: 12.5px; }
+    .btn-laranja:disabled { opacity: 0.55; cursor: wait; }
+    .status-atualizacao { font-size: 12.5px; color: #a3a3a3; }
+    .status-atualizacao a, .link-discreto { color: #5aa9ff; text-decoration: none; font-size: 12.5px; }
+    .painel-token { display: none; background-color: var(--bg-panel); border: 1px solid var(--border-color); border-left: 4px solid #5aa9ff; border-radius: 10px; padding: 16px 20px; margin-bottom: 20px; font-size: 13px; color: #d4d4d4; line-height: 1.6; }
+    .painel-token ol { margin: 8px 0 12px 20px; }
+    .painel-token .linha-token { display: flex; gap: 10px; flex-wrap: wrap; }
+    .painel-token .linha-token input { flex: 1; min-width: 260px; }
+
+    @media (max-width: 900px) {
+      .main-content { max-width: 100%; padding: 20px; }
+      .config-grid { grid-template-columns: 1fr; }
+      .cards-grid-2 { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .fonte-linha { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="#" class="brand-logo">
+      <img src="logo-germinare.png" alt="germinare" onerror="this.style.display='none'; document.getElementById('svg-fallback').style.display='block';" />
+      <svg id="svg-fallback" style="display:none;" width="155" height="36" viewBox="0 0 210 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="2" y="32" font-family="'Inter', sans-serif" font-size="33" font-weight="400" fill="#f58220">germinare</text>
+        <path d="M23 32 C25 39, 32 43, 37 41 C35 36, 29 33, 23 32 Z" fill="#00a843"/>
+      </svg>
+    </a>
+    <div class="topbar-right">Inteligência em insumos</div>
+  </header>
+
+  <div class="layout-wrapper">
+    <main class="main-content">
+      <h1 class="page-title">Market Intelligence <span>Pro</span></h1>
+      <div class="page-subtitle" id="subtitulo-turno">A carregar boletim atualizado...</div>
+      <div class="qualidade-linha" id="linha-qualidade" onclick="abrirAbaFontes()" title="Ver conferência das fontes"></div>
+      <div class="atualizar-barra">
+        <button class="btn-laranja" id="btn-atualizar" onclick="atualizarAgora()">🔄 Atualizar agora</button>
+        <select id="modo-atualizacao" class="control-input" title="Tipo de atualização">
+          <option value="completo">Completo, com IA (5 a 40 min)</option>
+          <option value="rapido">Rápido, só cotações (≈ 2 min)</option>
+        </select>
+        <span class="status-atualizacao" id="status-atualizacao"></span>
+        <a href="#" class="link-discreto" onclick="abrirConfigToken(); return false;">🔑 Acesso do botão</a>
+      </div>
+      <div class="painel-token" id="painel-token">
+        <strong>Configurar o botão “Atualizar agora” (uma vez por navegador)</strong><br>
+        O botão pede ao GitHub para rodar o agente na hora. Para isso o GitHub exige uma chave de acesso sua:
+        <ol>
+          <li>Abra <a class="link-discreto" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub → Fine-grained token → Generate new token</a>.</li>
+          <li><em>Repository access</em>: <strong>Only select repositories</strong> → escolha <strong>só</strong> o repositório do agente.</li>
+          <li><em>Permissions</em>: <strong>Actions: Read and write</strong> e <strong>Contents: Read-only</strong>. Defina uma validade (ex.: 90 dias).</li>
+          <li>Gere, copie e cole abaixo.</li>
+        </ol>
+        A chave fica salva <strong>só neste navegador</strong>: não vai para o site, para o repositório nem para outras pessoas. Para revogar, apague-a no GitHub.
+        <div class="linha-token" style="margin-top: 10px;">
+          <input type="password" id="input-token" class="control-input" placeholder="github_pat_..." autocomplete="off" />
+          <button class="btn-laranja" onclick="salvarToken()">Salvar neste navegador</button>
+          <button class="btn-contorno" onclick="esquecerToken()">Esquecer chave</button>
+        </div>
+      </div>
+
+      <!-- CONFIGURAÇÕES DA ANÁLISE NO TOPO DA PÁGINA -->
+      <div class="config-top-banner">
+        <div class="config-top-header">
+          <div class="config-top-title">⚙️ Configurações da Análise</div>
+        </div>
+        <div class="config-grid">
+          <div class="config-item-box">
+            <span class="config-label">Praças de Extração das Cotações</span>
+            <div class="config-fixed-value" id="top-config-pracas">
+              <span class="praca-pill">Triângulo Mineiro</span>
+              <span class="praca-pill">Matas de Minas</span>
+              <span class="praca-pill">Mato Grosso (IMEA)</span>
+              <span class="praca-pill">Porto de Santos (SP)</span>
+              <span class="praca-pill">Porto de Paranaguá (PR)</span>
+              <span class="praca-pill">CBOT (Chicago)</span>
+              <span class="praca-pill">ICE NY / Londres</span>
+              <span class="praca-pill">B3</span>
+            </div>
+          </div>
+          <div class="config-item-box">
+            <span class="config-label">Perfil de Comercialização</span>
+            <div class="config-fixed-value" id="top-config-perfil" style="font-size: 13px; color: #e5e5e5;">
+              Todos os Elos da Cadeia (Visão Completa: Produtores, Cooperativas, Indústrias/Confinamentos e Tradings)
+            </div>
+          </div>
+          <div class="config-item-box">
+            <span class="config-label">Escopo de Ativos & Janela</span>
+            <div class="config-fixed-value" id="top-config-escopo" style="font-size: 12.5px; color: #cccccc;">
+              Soja, Milho, DDGS, Algodão, Café e Câmbio (FOB / CIF)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ref-box" id="caixa-resumo-falado">
+        <strong>Resumo Executivo do Turno.</strong> A carregar dados...
+      </div>
+
+      <div class="tabs-bar">
+        <button class="tab-btn active" onclick="trocarAba('aba-panorama', this)">Panorama Geral</button>
+        <button class="tab-btn" onclick="trocarAba('aba-cotacoes-dia', this)">📊 Cotações do Dia</button>
+        <button class="tab-btn" onclick="trocarAba('aba-culturas', this)">Análise por Cultura & Trading</button>
+        <button class="tab-btn" onclick="trocarAba('aba-semanal', this)">📈 Evolução Semanal</button>
+        <button class="tab-btn" onclick="trocarAba('aba-mensal', this)">📅 Evolução Mensal</button>
+        <button class="tab-btn" onclick="trocarAba('aba-noticias', this)">Central de Notícias</button>
+        <button class="tab-btn" onclick="trocarAba('aba-ndf', this)">Câmbio (NDF)</button>
+        <button class="tab-btn" onclick="trocarAba('aba-base', this)">Projeções</button>
+        <button class="tab-btn" id="btn-aba-fontes" onclick="trocarAba('aba-fontes', this)">🌐 Fontes & Qualidade</button>
+      </div>
+
+      <section id="aba-panorama" class="tab-panel active">
+        <div class="section-divider-title" id="titulo-praca-panorama">Análise Económica e Fecho — Praças: Triângulo Mineiro / MT / Santos / Paranaguá / CBOT / ICE</div>
+        <div class="cards-grid-2" id="grid-panorama-cards"></div>
+      </section>
+
+      <!-- ABA EXCLUSIVA COTAÇÕES DO DIA -->
+      <section id="aba-cotacoes-dia" class="tab-panel">
+        <div class="section-divider-title" style="margin:18px 0 14px 0;">Painel Oficial de Cotações do Dia (Por Complexo e Praça)</div>
+        <div id="tab-quotes-container"></div>
+      </section>
+
+      <section id="aba-culturas" class="tab-panel">
+        <div class="section-divider-title">Análise Detalhada por Cultura, Direcionamento por Elo & Fontes de Base</div>
+        <div id="container-analise-culturas"></div>
+      </section>
+
+      <section id="aba-semanal" class="tab-panel">
+        <div class="section-divider-title">Visão Consolidada da Semana (WTD)</div>
+        <div class="ref-box" id="texto-resumo-semanal">A aguardar dados...</div>
+        <div class="cards-grid-2">
+          <div class="nutre-card" style="grid-column: 1 / -1;">
+            <div class="card-top-label">Variação Percentual Acumulada na Semana (%)</div>
+            <div style="height: 320px; width: 100%; position: relative;"><canvas id="grafico-semanal"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aba-mensal" class="tab-panel">
+        <div class="section-divider-title">Acompanhamento e Progresso Mensal Diário (MTD — Dia 1º até Hoje)</div>
+        <div class="ref-box" id="texto-resumo-mensal">A aguardar dados...</div>
+        <div class="cards-grid-2">
+          <div class="nutre-card" style="grid-column: 1 / -1;">
+            <div class="chart-header-bar">
+              <div class="card-top-label" id="titulo-grafico-mensal" style="margin-bottom:0;">Curva de Tendência Diária no Mês Atual (Valores Diários até a Data Atual)</div>
+              <div class="chart-mode-group">
+                <button class="chart-mode-btn active" id="btn-modo-absoluto" onclick="alternarModoGraficoMensal('absoluto')">Valores Diários (R$ / US$)</button>
+                <button class="chart-mode-btn" id="btn-modo-percentual" onclick="alternarModoGraficoMensal('percentual')">Variação Diária Acumulada (%)</button>
+              </div>
+            </div>
+            <div style="height: 400px; width: 100%; position: relative;"><canvas id="grafico-mensal"></canvas></div>
+          </div>
+        </div>
+        <div class="section-divider-title">Detalhamento Acumulado no Mês (MTD)</div>
+        <div class="cards-grid-2" id="grid-mensal-cards"></div>
+      </section>
+
+      <section id="aba-noticias" class="tab-panel">
+        <div class="section-divider-title">Central de Notícias e Fontes Oficiais (Separadas por Cultura)</div>
+        <div id="grid-noticias-links"></div>
+      </section>
+
+      <section id="aba-ndf" class="tab-panel">
+        <div class="section-divider-title">Calculadora de Arbitragem de Juros (NDF)</div>
+        <div class="cards-grid-3" style="margin-bottom: 16px;">
+          <div class="nutre-card"><label class="card-top-label">Dólar Spot (R$)</label><input type="number" id="calc-spot" class="control-input" value="5.4387" step="0.01" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Preço Saca (US$)</label><input type="number" id="calc-saca-usd" class="control-input" value="27.30" step="0.10" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Taxa DI / Selic (% a.a.)</label><input type="number" id="calc-di" class="control-input" value="14.28" step="0.25" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Cupom Cambial (% a.a.)</label><input type="number" id="calc-cupom" class="control-input" value="4.80" step="0.10" oninput="calcularNDF()" /></div>
+          <div class="nutre-card"><label class="card-top-label">Dias Úteis (252)</label><input type="number" id="calc-du" class="control-input" value="110" step="1" oninput="calcularNDF()" /><label class="card-top-label" style="margin-top:10px;">Dias Corridos (360)</label><input type="number" id="calc-dc" class="control-input" value="160" step="1" oninput="calcularNDF()" /></div>
+        </div>
+        <div class="cards-grid-2" id="grid-resultado-ndf"></div>
+      </section>
+
+      <section id="aba-base" class="tab-panel">
+        <div class="section-divider-title">Pílula de Inteligência de Mercado</div>
+        <div id="container-mentoria" style="margin-bottom: 24px;"></div>
+        <div class="section-divider-title">Matriz de Projeções Auditáveis</div>
+        <div class="table-wrapper">
+          <table id="tabela-projecoes">
+            <thead><tr><th>Ativo / Commodity</th><th>Base Atual</th><th>Alvo Curto Prazo / Auditoria</th><th>Cenário Mês</th><th>Altista / Baixista</th><th>Gatilho / Logística</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ABA FONTES & QUALIDADE (gerada pelo agente automático) -->
+      <section id="aba-fontes" class="tab-panel">
+        <div class="section-divider-title">Qualidade dos Dados deste Boletim</div>
+        <div class="cards-grid-3" id="grid-qualidade"></div>
+
+        <div class="section-divider-title">Conferência de Cada Cotação</div>
+        <div class="table-wrapper" style="margin-bottom: 22px;">
+          <table id="tabela-status-indicadores">
+            <thead><tr><th>Indicador</th><th>Valor</th><th>Data</th><th>Fonte</th><th>Status</th><th>Conferência</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="section-divider-title">Fontes Confiáveis</div>
+        <div class="nutre-card" style="margin-bottom: 18px;">
+          <div class="card-top-label" style="font-weight: 700; color: var(--orange-bright);">➕ Adicionar nova fonte</div>
+          <div class="card-desc" style="margin-bottom: 10px;">Preencha e clique em <strong>Enviar pelo GitHub</strong>: abre o formulário já preenchido no seu repositório. Ao enviar, o robô inclui o site em <code>config/fontes.yaml</code> (o feed RSS é descoberto sozinho) e ele passa a ser usado na próxima execução.</div>
+          <div class="form-grid">
+            <div><label class="card-top-label">Nome do site</label><input id="nf-nome" class="control-input" placeholder="Ex.: Notícias Agrícolas" /></div>
+            <div><label class="card-top-label">URL</label><input id="nf-url" class="control-input" placeholder="https://..." /></div>
+            <div><label class="card-top-label">Região</label>
+              <select id="nf-regiao" class="control-input"><option>Brasil</option><option>Argentina</option><option>Internacional</option><option>China</option><option>Outra</option></select></div>
+            <div><label class="card-top-label">Tipo</label>
+              <select id="nf-tipo" class="control-input"><option>Notícias</option><option>Cotações</option><option>Notícias e Cotações</option><option>Relatório oficial</option><option>API oficial</option></select></div>
+            <button class="btn-laranja" onclick="enviarNovaFonte()">Enviar pelo GitHub</button>
+          </div>
+          <div class="card-footer" style="margin-top: 12px; flex-wrap: wrap;" id="nf-links"></div>
+        </div>
+        <div id="container-fontes"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    let dadosBoletim = null;
+    let chartSemanal = null, chartMensal = null;
+    let modoGraficoMensal = 'absoluto';
+
+    function limparJSON(texto) {
+      let t = texto.trim();
+      if (t.startsWith("```json")) t = t.slice(7);
+      else if (t.startsWith("```")) t = t.slice(3);
+      if (t.endsWith("```")) t = t.slice(0, -3);
+      return JSON.parse(t.trim());
+    }
+
+    async function carregarBoletim() {
+      try {
+        const res = await fetch(`./boletim_atual.json?t=${new Date().getTime()}`);
+        if (!res.ok) throw new Error("Ficheiro boletim_atual.json não encontrado.");
+        const texto = await res.text();
+        dadosBoletim = limparJSON(texto);
+        inicializarInterface();
+      } catch (err) {
+        document.getElementById('caixa-resumo-falado').innerHTML = `<strong>Aviso:</strong> ${err.message}`;
+      }
+    }
+
+    function inicializarInterface() {
+      const meta = dadosBoletim.metadata || {};
+      document.getElementById('subtitulo-turno').textContent = `Monitoramento Pro — ${meta.target_regions || ''} | ${meta.timestamp || ''} | ${meta.analyst || ''}`;
+      
+      if (meta.target_regions) {
+        const pracasArray = meta.target_regions.split('/').map(p => p.trim()).filter(Boolean);
+        document.getElementById('top-config-pracas').innerHTML = pracasArray.map(p => `<span class="praca-pill">📍 ${p}</span>`).join('');
+        document.getElementById('titulo-praca-panorama').textContent = `Análise Económica e Fecho — Praças: ${meta.target_regions}`;
+      }
+      if (meta.scope) {
+        document.getElementById('top-config-escopo').textContent = meta.scope;
+      }
+
+      const exec = dadosBoletim.executive_summary || {};
+      let resumoPartes = [];
+      if (exec.cambio_energia_frete) resumoPartes.push(`<strong>💵 Câmbio, Energia & Portos:</strong> ${exec.cambio_energia_frete}`);
+      if (exec.complexo_soja) resumoPartes.push(`<strong>🌱 Complexo Soja (Grão, Farelo e Óleo):</strong> ${exec.complexo_soja}`);
+      if (exec.complexo_milho_etanol_ddgs) resumoPartes.push(`<strong>🌽 Complexo Milho, Etanol & DDGS:</strong> ${exec.complexo_milho_etanol_ddgs}`);
+      if (exec.complexo_algodao) resumoPartes.push(`<strong>☁️ Complexo Algodão & Coprodutos:</strong> ${exec.complexo_algodao}`);
+      if (exec.complexo_cafe) resumoPartes.push(`<strong>☕ Complexo Café (Arábica & Robusta):</strong> ${exec.complexo_cafe}`);
+      document.getElementById('caixa-resumo-falado').innerHTML = resumoPartes.join('<br><br>');
+
+      const quotesContainer = document.getElementById('tab-quotes-container');
+      quotesContainer.innerHTML = '';
+      const indicadores = dadosBoletim.market_indicators || {};
+      
+      const preencherAbaCotacoes = (tituloBloco, grupo) => {
+        let cardsHtml = '';
+        for (const [chave, valor] of Object.entries(grupo)) {
+          let tituloFormatado = (nomesIndicadores()[chave] || chave.replace(/_/g, ' ')).toUpperCase();
+          cardsHtml += `
+            <div class="quote-fixed-card">
+              <div class="quote-fixed-label">${tituloFormatado}</div>
+              <div class="quote-fixed-value">${valor}</div>
+            </div>`;
+        }
+        quotesContainer.innerHTML += `
+          <div class="sub-group-title">${tituloBloco}</div>
+          <div class="cards-grid-3">${cardsHtml}</div>`;
+      };
+      
+      if(indicadores.cambio_e_energia) preencherAbaCotacoes("💵 CÂMBIO, ENERGIA & FRETE", indicadores.cambio_e_energia);
+      if(indicadores.complexo_soja) preencherAbaCotacoes("🌱 COMPLEXO SOJA (GRÃO, FARELO E ÓLEO)", indicadores.complexo_soja);
+      if(indicadores.complexo_milho_e_ddgs) preencherAbaCotacoes("🌽 COMPLEXO MILHO, ETANOL & DDGS", indicadores.complexo_milho_e_ddgs);
+      if(indicadores.complexo_algodao) preencherAbaCotacoes("☁️ COMPLEXO ALGODÃO & CAROÇO", indicadores.complexo_algodao);
+      if(indicadores.complexo_cafe) preencherAbaCotacoes("☕ COMPLEXO CAFÉ (ARÁBICA & ROBUSTA)", indicadores.complexo_cafe);
+
+      const qd = dadosBoletim.data_quality || {};
+      if (qd.modo_atualizacao === 'cotacoes' && qd.analise_gerada_em) {
+        const h = iso => new Date(iso).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+        document.getElementById('caixa-resumo-falado').innerHTML =
+          `<div style="font-size:12.5px;color:#a3a3a3;margin-bottom:10px;">📝 Texto da análise escrito às ${h(qd.analise_gerada_em)}. ` +
+          `📈 Os números das abas Cotações, Panorama, Semanal, Mensal e Projeções foram atualizados pelo monitor às ${h(qd.cotacoes_atualizadas_em)}.</div>` +
+          document.getElementById('caixa-resumo-falado').innerHTML;
+      }
+      if (dadosBoletim.audio_script) {
+        document.getElementById('caixa-resumo-falado').innerHTML =
+          `<div style="margin-bottom:10px;"><button class="btn-contorno" style="margin-left:0;" id="btn-ouvir" onclick="ouvirResumo()">🎧 Ouvir resumo do turno</button></div>` +
+          document.getElementById('caixa-resumo-falado').innerHTML;
+      }
+      preencherNDFDoBoletim();
+
+      renderizarPanoramaCards();
+      renderizarAnaliseCulturas();
+      renderizarNoticiasGerais();
+      calcularNDF();
+      renderizarMentoriaEProjecoes();
+      renderizarQualidadeEFontes();
+      if (!atualizando && !document.getElementById('status-atualizacao').innerHTML) mostrarStatus(textoUltimaAtualizacao());
+      try {
+        renderizarGraficosEvolucao();
+      } catch (e) {
+        console.error('Gráficos indisponíveis (Chart.js não carregou?)', e);
+      }
+    }
+
+    // Série diária do JSON. Pregões sem cotação ficam em branco (null) — NADA é interpolado/inventado.
+    function obterSerieDiariaAtivo(ativo, totalDias) {
+      const h = Array.isArray(ativo.daily_history) ? ativo.daily_history.slice(-totalDias) : [];
+      while (h.length < totalDias) h.unshift(null);
+      return h.map(v => (v === null || v === undefined || v === '') ? null : Number(v));
+    }
+
+    function alternarModoGraficoMensal(novoModo) {
+      modoGraficoMensal = novoModo;
+      document.getElementById('btn-modo-absoluto').classList.toggle('active', novoModo === 'absoluto');
+      document.getElementById('btn-modo-percentual').classList.toggle('active', novoModo === 'percentual');
+      document.getElementById('titulo-grafico-mensal').textContent = novoModo === 'absoluto'
+        ? 'Curva de Tendência Diária no Mês Atual (Valores Diários até a Data Atual)'
+        : 'Curva de Variação Acumulada na Janela (% desde o 1º pregão exibido)';
+      renderizarGraficoMensalDiario();
+    }
+
+    function renderizarGraficoMensalDiario() {
+      const dMensal = dadosBoletim.monthly_evolution_mtd;
+      const totalDias = Number(dMensal.days_elapsed) || 26;
+      const mesStr = (dMensal.month_start || '2026-10-01').split('-')[1] || '10';
+
+      // Cria os rótulos diários: 01/10, 02/10, 03/10 ... até o dia mais atual (ex: 26/10)
+      const labelsDiarios = Array.isArray(dMensal.daily_dates) && dMensal.daily_dates.length === totalDias
+        ? dMensal.daily_dates
+        : Array.from({ length: totalDias }, (_, idx) => `${String(idx + 1).padStart(2, '0')}/${mesStr}`);
+
+      const cores = ['#ff7a00', '#00e676', '#2196f3', '#e91e63', '#ffd600', '#ab47bc', '#00bcd4'];
+
+      const datasetsDiarios = dMensal.assets.map((a, i) => {
+        const serieBruta = obterSerieDiariaAtivo(a, totalDias, mesStr);
+        const baseInicial = serieBruta.find(v => v !== null) || 1;
+        const dadosPlot = modoGraficoMensal === 'absoluto'
+          ? serieBruta
+          : serieBruta.map(v => v === null ? null : Number((((v - baseInicial) / baseInicial) * 100).toFixed(2)));
+
+        return {
+          label: a.asset,
+          data: dadosPlot,
+          rawValues: serieBruta,
+          unit: a.unit || '',
+          borderColor: cores[i % cores.length],
+          backgroundColor: cores[i % cores.length],
+          borderWidth: 2.3,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+          tension: 0.25,
+          spanGaps: true,
+          fill: false
+        };
+      });
+
+      const ctxMensal = document.getElementById('grafico-mensal').getContext('2d');
+      if (chartMensal) chartMensal.destroy();
+      chartMensal = new Chart(ctxMensal, {
+        type: 'line',
+        data: { labels: labelsDiarios, datasets: datasetsDiarios },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              labels: { color: '#d4d4d4', font: { family: 'Inter', size: 12 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const ds = context.dataset;
+                  const idx = context.dataIndex;
+                  const valReal = ds.rawValues[idx];
+                  if (valReal === null || valReal === undefined) return `${ds.label}: sem cotação neste pregão`;
+                  const valIni = ds.rawValues.find(v => v !== null) || 1;
+                  const varPct = (((valReal - valIni) / valIni) * 100).toFixed(2);
+                  const sinal = varPct >= 0 ? '+' : '';
+                  return `${ds.label}: ${valReal} ${ds.unit} (${sinal}${varPct}% no mês)`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              grid: { color: '#242424' },
+              ticks: {
+                color: '#9e9e9e',
+                callback: function(value) {
+                  return modoGraficoMensal === 'percentual' ? value + '%' : value;
+                }
+              }
+            },
+            x: {
+              grid: { color: '#1c1c1c' },
+              ticks: { color: '#b0b0b0', maxRotation: 45, minRotation: 0 }
+            }
+          }
+        }
+      });
+    }
+
+    function renderizarGraficosEvolucao() {
+      const dSemanal = dadosBoletim.weekly_evolution_wtd;
+      const dMensal = dadosBoletim.monthly_evolution_mtd;
+
+      let txtSemanal = `Período: ${dSemanal.period_start} a ${dSemanal.period_end} (Posição: ${dSemanal.period_current})<br>`;
+      const labelsSemanais = [];
+      const dadosSemanais = [];
+      dSemanal.assets.forEach(a => {
+        labelsSemanais.push(a.asset);
+        dadosSemanais.push(a.weekly_change_pct);
+      });
+      document.getElementById('texto-resumo-semanal').innerHTML = txtSemanal;
+
+      const ctxSemanal = document.getElementById('grafico-semanal').getContext('2d');
+      if(chartSemanal) chartSemanal.destroy();
+      chartSemanal = new Chart(ctxSemanal, {
+        type: 'bar',
+        data: { labels: labelsSemanais, datasets: [{ data: dadosSemanais, backgroundColor: '#ff7a00', borderRadius: 4 }] },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { grid: { color: '#2a2a2a' }, ticks: { color: '#9e9e9e' } }, x: { grid: { display: false }, ticks: { color: '#9e9e9e' } } } }
+      });
+
+      const datasJanela = Array.isArray(dMensal.daily_dates) && dMensal.daily_dates.length ? `${dMensal.daily_dates[0]} a ${dMensal.daily_dates[dMensal.daily_dates.length - 1]}` : `${dMensal.month_start} até ${dMensal.current_date}`;
+      const inicioMes = (dMensal.month_start || '').split('-').reverse().join('/');
+      let txtMensal = `<strong>Série Diária:</strong> últimos ${dMensal.days_elapsed} pregões (${datasJanela}); o acumulado do mês (MTD) é calculado desde o último fechamento antes de ${inicioMes}. Pregões sem cotação verificada ficam em branco — nada é interpolado. Passe o rato sobre os pontos do gráfico para ver a cotação exata de cada dia.`;
+      document.getElementById('texto-resumo-mensal').innerHTML = txtMensal;
+      
+      renderizarGraficoMensalDiario();
+
+      // Renderiza também os cards explicativos do mês abaixo do gráfico
+      const gridMensal = document.getElementById('grid-mensal-cards');
+      if (gridMensal) {
+        gridMensal.innerHTML = '';
+        dMensal.assets.forEach(item => {
+          const temPct = item.mtd_change_pct !== null && item.mtd_change_pct !== undefined;
+          let cor = !temPct ? '#8c8c8c' : (item.mtd_change_pct >= 0 ? 'var(--green)' : '#ff5252');
+          let sinal = temPct && item.mtd_change_pct >= 0 ? '+' : '';
+          gridMensal.innerHTML += `
+            <div class="nutre-card">
+              <div>
+                <div class="card-top-label">${item.asset} (Ref. início do mês: ${item.month_open_value ?? '—'} ${item.unit})</div>
+                <div class="card-big-value">
+                  ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${item.unit}</span>
+                  <span style="font-size: 13px; font-weight: 600; color: ${cor}; margin-left: 6px;">(${temPct ? sinal + item.mtd_change_pct + '% no mês' : 'sem referência no mês'})</span>
+                </div>
+                <div class="card-desc">${item.monthly_narrative}</div>
+              </div>
+            </div>`;
+        });
+      }
+    }
+
+    function renderizarPanoramaCards() {
+      const grid = document.getElementById('grid-panorama-cards');
+      grid.innerHTML = '';
+      
+      dadosBoletim.weekly_evolution_wtd.assets.forEach(item => {
+        let cor = item.weekly_change_pct >= 0 ? 'var(--green)' : '#ff5252';
+        let sinal = item.weekly_change_pct >= 0 ? '+' : '';
+
+        grid.innerHTML += `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">${item.asset}</div>
+              <div class="card-big-value">
+                ${item.current_value} <span style="font-size: 14px; font-weight: 500; color: #b0b0b0;">${item.unit}</span>
+                <span style="font-size: 13px; font-weight: 600; color: ${cor}; margin-left: 6px;">(${sinal}${item.weekly_change_pct}%)</span>
+              </div>
+              <div class="card-desc">${item.weekly_driver}</div>
+            </div>
+          </div>`;
+      });
+    }
+
+    function renderizarAnaliseCulturas() {
+      const container = document.getElementById('container-analise-culturas');
+      container.innerHTML = '';
+
+      const blocosCulturas = dadosBoletim.detailed_blocks_and_news || [];
+
+      if (blocosCulturas.length > 0) {
+        blocosCulturas.forEach(bloco => {
+          let elosLista = bloco.strategic_directions_by_elo || [];
+
+          if (elosLista.length === 0 && bloco.consulting_and_trader_strategy) {
+            const strat = bloco.consulting_and_trader_strategy;
+            const linksPadrao = (bloco.news_sources || []).map(n => ({ label: n.headline, url: n.url }));
+            if (strat.producer) elosLista.push({ elo: "Elo: Produtores Rurais", direction: strat.producer, reference_links: linksPadrao });
+            if (strat.cooperative) elosLista.push({ elo: "Elo: Cooperativas e Revendas", direction: strat.cooperative, reference_links: linksPadrao });
+            if (strat.industry_nutrition) elosLista.push({ elo: "Elo: Indústrias e Confinamentos", direction: strat.industry_nutrition, reference_links: linksPadrao });
+            if (strat.trading_desk || strat.trader_long_short_fx) {
+              elosLista.push({
+                elo: "Elo: Tradings, Exportadores e Trader",
+                direction: `${strat.trading_desk ? 'Mesa Física: ' + strat.trading_desk + ' | ' : ''}${strat.trader_long_short_fx ? 'Derivativos/Câmbio: ' + strat.trader_long_short_fx : ''}`,
+                reference_links: linksPadrao
+              });
+            }
+          }
+
+          if (elosLista.length === 0) return;
+
+          let elosHtml = elosLista.map(item => {
+            let fontesHtml = '';
+            if (item.reference_links && item.reference_links.length > 0) {
+              let listaLinks = item.reference_links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer">🔗 ${l.label}</a>`).join('');
+              fontesHtml = `
+                <details class="sources-box">
+                  <summary>📚 Ver fontes e notícias de base (${item.reference_links.length})</summary>
+                  <div class="sources-list">${listaLinks}</div>
+                </details>`;
+            }
+
+            return `
+              <div style="margin-bottom: 20px;">
+                <div class="sub-group-title">${item.elo}</div>
+                <div class="nutre-card" style="margin-bottom: 8px;">
+                  <div class="card-top-label">Direcionamento Estratégico</div>
+                  <div class="card-desc" style="color: #fff; font-size: 14px; margin-top: 4px; margin-bottom: 0; line-height: 1.6;">${item.direction}</div>
+                </div>
+                ${fontesHtml}
+              </div>
+            `;
+          }).join('');
+
+          let noticiasBlocoHtml = '';
+          if (bloco.news_sources && bloco.news_sources.length > 0) {
+            let linksBloco = bloco.news_sources.map(n => `<a href="${n.url}" target="_blank" rel="noopener noreferrer">📰 ${n.headline}</a>`).join('');
+            noticiasBlocoHtml = `
+              <details class="sources-box" style="margin-bottom: 18px; border-color: #2c2c2c;">
+                <summary>🌐 Todas as Notícias Diretas deste Complexo (${bloco.news_sources.length})</summary>
+                <div class="sources-list">${linksBloco}</div>
+              </details>`;
+          }
+
+          container.innerHTML += `
+            <div class="culture-block-card">
+              <div class="culture-block-title">${bloco.title}</div>
+              <div class="culture-bias-badge"><strong>Viés de Mercado & Atenção:</strong> ${bloco.market_bias}</div>
+              <div class="ref-box" style="margin-bottom: 14px;">
+                <strong>Resumo Executivo da Cultura:</strong> ${bloco.executive_summary}
+              </div>
+              ${noticiasBlocoHtml}
+              ${elosHtml}
+            </div>
+          `;
+        });
+      }
+    }
+
+    function renderizarNoticiasGerais() {
+      const gridNot = document.getElementById('grid-noticias-links');
+      gridNot.innerHTML = '';
+      
+      (dadosBoletim.detailed_blocks_and_news || []).forEach(bloco => {
+        let cardsHtml = (bloco.news_sources || []).map(not => `
+          <div class="nutre-card">
+            <div>
+              <div class="card-top-label">${bloco.title}</div>
+              <div class="card-big-value" style="font-size:15.5px;">${not.headline}</div>
+            </div>
+            <div class="card-footer">
+              <a href="${not.url}" target="_blank" rel="noopener noreferrer">🔗 Ler notícia completa na fonte</a>
+            </div>
+          </div>
+        `).join('');
+
+        gridNot.innerHTML += `
+          <div class="sub-group-title" style="margin-top: 22px; margin-bottom: 12px;">${bloco.title}</div>
+          <div class="cards-grid-2">${cardsHtml}</div>
+        `;
+      });
+    }
+
+    function calcularNDF() {
+      const spot = parseFloat(document.getElementById('calc-spot').value) || 0;
+      const sacaUsd = parseFloat(document.getElementById('calc-saca-usd').value) || 0;
+      const di = parseFloat(document.getElementById('calc-di').value) || 0;
+      const cupom = parseFloat(document.getElementById('calc-cupom').value) || 0;
+      const du = parseFloat(document.getElementById('calc-du').value) || 0;
+      const dc = parseFloat(document.getElementById('calc-dc').value) || 0;
+
+      const ndf = spot * (Math.pow(1 + (di/100), du/252) / (1 + (cupom/100)*(dc/360)));
+      const sacaNdf = sacaUsd * ndf;
+      const sacaSpot = sacaUsd * spot;
+
+      document.getElementById('grid-resultado-ndf').innerHTML = `
+        <div class="nutre-card"><div class="card-top-label">NDF Calculado</div><div class="card-big-value">R$ ${ndf.toFixed(4)}</div></div>
+        <div class="nutre-card"><div class="card-top-label">Valor da Saca (NDF vs Spot)</div><div class="card-big-value" style="color:var(--green);">R$ ${sacaNdf.toFixed(2)} <span style="font-size:13px; color:#8c8c8c;">(+R$ ${(sacaNdf - sacaSpot).toFixed(2)}/sc)</span></div></div>`;
+    }
+
+    function renderizarMentoriaEProjecoes() {
+      const p = dadosBoletim.market_intelligence_pill;
+      document.getElementById('container-mentoria').innerHTML = `
+        <div class="nutre-card">
+          <div>
+            <div class="card-top-label">Pílula Estratégica & Logística</div>
+            <div class="card-big-value" style="font-size:18px; color:var(--orange-bright);">${p.title}</div>
+            <div class="card-desc" style="white-space:pre-line; margin-top:8px;"><strong>Fórmula:</strong> ${p.formula}<br><br>${p.analysis}<br><br><strong>Conclusão Estratégica:</strong> ${p.strategic_takeaway}</div>
+          </div>
+        </div>`;
+
+      const tbody = document.querySelector('#tabela-projecoes tbody');
+      tbody.innerHTML = '';
+      (dadosBoletim.audit_panel_projections || []).forEach(proj => {
+        tbody.innerHTML += `
+          <tr>
+            <td><strong>${proj.commodity}</strong></td>
+            <td>${proj.current_base}</td>
+            <td>${proj.short_term_target_23_oct}</td>
+            <td>${proj.end_of_month_30_oct.base_case}</td>
+            <td>📈 ${proj.end_of_month_30_oct.bull_case}<br>📉 ${proj.end_of_month_30_oct.bear_case}</td>
+            <td>${proj.audit_trigger}</td>
+          </tr>`;
+      });
+    }
+
+    // ===== Funções do agente automático (Fontes & Qualidade, áudio, NDF) =====
+    function esc(t) {
+      return String(t ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+    function nomesIndicadores() {
+      const mapa = {};
+      ((dadosBoletim.data_quality || {}).lista_indicadores || []).forEach(i => { mapa[i.id] = i.nome_curto || i.nome; });
+      return Object.assign(mapa, dadosBoletim.labels || {});
+    }
+    const ROTULO_STATUS = { ok: '✓ ok', alerta: '⚠ alerta', desatualizado: '🕒 desatualizado', indisponivel: '⛔ indisponível',
+      parcial: '◐ parcial', falha: '✗ falha', robots: '🚫 bloqueia robôs', sem_itens: '∅ sem itens', desativada: '⏸ desativada',
+      nao_usada: '— não usada', inativa: '⏸ inativa', erro: '✗ erro' };
+    function chip(status) { return `<span class="chip chip-${esc(status)}">${ROTULO_STATUS[status] || esc(status)}</span>`; }
+
+    function repoGitHub() {
+      const ts = dadosBoletim.trusted_sources || {};
+      if (ts.repo) return ts.repo;
+      const host = window.location.hostname;
+      if (host.endsWith('github.io')) {
+        const dono = host.split('.')[0];
+        const repo = window.location.pathname.split('/').filter(Boolean)[0];
+        if (repo) return `${dono}/${repo}`;
+      }
+      return '';
+    }
+
+    function abrirAbaFontes() {
+      const btn = document.getElementById('btn-aba-fontes');
+      if (btn) { trocarAba('aba-fontes', btn); btn.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    }
+
+    function ouvirResumo() {
+      const btn = document.getElementById('btn-ouvir');
+      if (!('speechSynthesis' in window)) { alert('Seu navegador não suporta leitura em voz alta.'); return; }
+      if (speechSynthesis.speaking) { speechSynthesis.cancel(); btn.textContent = '🎧 Ouvir resumo do turno'; return; }
+      const fala = new SpeechSynthesisUtterance(dadosBoletim.audio_script);
+      fala.lang = 'pt-BR';
+      const voz = speechSynthesis.getVoices().find(v => v.lang && v.lang.toLowerCase().startsWith('pt-br'));
+      if (voz) fala.voice = voz;
+      fala.rate = 1.03;
+      fala.onend = () => { btn.textContent = '🎧 Ouvir resumo do turno'; };
+      speechSynthesis.speak(fala);
+      btn.textContent = '⏹ Parar leitura';
+    }
+
+    function preencherNDFDoBoletim() {
+      const p = dadosBoletim.ndf_parameters;
+      if (!p) return;
+      const pares = { 'calc-spot': p.spot, 'calc-di': p.di_aa, 'calc-cupom': p.cupom_aa, 'calc-du': p.du, 'calc-dc': p.dc, 'calc-saca-usd': p.saca_usd };
+      for (const [id, v] of Object.entries(pares)) {
+        if (v !== null && v !== undefined) document.getElementById(id).value = v;
+      }
+    }
+
+    function renderizarQualidadeEFontes() {
+      const q = dadosBoletim.data_quality;
+      const ts = dadosBoletim.trusted_sources;
+      const linha = document.getElementById('linha-qualidade');
+      if (q) {
+        const ind = q.indicadores || {};
+        const txt = q.texto || {};
+        const modo = txt.modo === 'ia_verificada' ? `texto de IA verificado (${esc(txt.modelo)})` : 'texto automático (sem IA)';
+        linha.innerHTML = `🛡️ ${chip('ok')} ${ind.ok || 0} &nbsp; ${chip('alerta')} ${ind.alerta || 0} &nbsp; ${chip('desatualizado')} ${ind.desatualizado || 0} &nbsp; ${chip('indisponivel')} ${ind.indisponivel || 0} &nbsp;·&nbsp; ${modo} &nbsp;·&nbsp; <u>ver conferência</u>`;
+
+        const tr = q.track_record || {};
+        const not = q.noticias || {};
+        const cards = [
+          ['Cotações verificadas', `${(ind.ok || 0) + (ind.alerta || 0)} / ${ind.total || 0}`, `${ind.alerta || 0} com alerta · ${ind.desatualizado || 0} desatualizadas · ${ind.indisponivel || 0} indisponíveis. Cada número vem de uma fonte e passa por checagem de faixa, variação, defasagem e divergência entre fontes.`],
+          ['Texto da análise', txt.modo === 'ia_verificada' ? 'IA verificada' : 'Automático', txt.modo === 'ia_verificada' ? `${txt.campos_verificados || 0} campos conferidos número a número · ${txt.respostas_reprovadas || 0} respostas devolvidas para correção · ${txt.campos_substituidos || 0} trocadas por texto automático.` : 'IA não configurada ou indisponível neste turno: todo o texto foi gerado a partir das cotações verificadas.'],
+          ['Notícias', `${not.usadas || 0} usadas`, `${not.coletadas || 0} coletadas nas fontes da lista · ${not.fontes_ok || 0} fontes responderam · ${not.fontes_com_falha || 0} falharam ou bloquearam robôs.`],
+          ['Track record das projeções', tr.auditadas ? `${tr.taxa_pct}%` : 'em formação', tr.auditadas ? `${tr.acertos} de ${tr.auditadas} bandas de curto prazo acertadas${tr.direcao_avaliadas ? ` · viés certo em ${tr.direcao_acertos}/${tr.direcao_avaliadas}` : ''}.` : 'As primeiras aferições acontecem 5 pregões após o primeiro registro.'],
+        ];
+        document.getElementById('grid-qualidade').innerHTML = cards.map(c => `
+          <div class="nutre-card"><div><div class="card-top-label">${c[0]}</div><div class="card-big-value">${c[1]}</div><div class="card-desc" style="margin-bottom:0;">${c[2]}</div></div></div>`).join('');
+
+        const tbody = document.querySelector('#tabela-status-indicadores tbody');
+        tbody.innerHTML = (q.lista_indicadores || []).map(i => {
+          const data = i.data ? i.data.split('-').reverse().slice(0, 2).join('/') : '—';
+          const fonte = i.url ? `<a href="${esc(i.url)}" target="_blank" rel="noopener noreferrer" style="color:#3399ff;text-decoration:none;">${esc(i.fonte)}</a>` : esc(i.fonte || '—');
+          const conf = (i.mensagens && i.mensagens.length) ? esc(i.mensagens.join(' · ')) :
+            ((i.fontes || []).filter(f => f.status !== 'ok' && f.status !== 'inativa').map(f => `${esc(f.fonte)}: ${esc(f.mensagem)}`).join(' · ') || 'conferido');
+          return `<tr><td><strong>${esc(i.nome_curto || i.nome)}</strong></td><td>${esc(i.valor || '—')}</td><td>${data}</td><td>${fonte}</td><td>${chip(i.status)}</td><td style="font-size:12px;color:#a3a3a3;">${conf}</td></tr>`;
+        }).join('');
+      }
+
+      const cont = document.getElementById('container-fontes');
+      if (ts && ts.regioes) {
+        cont.innerHTML = ts.regioes.map(r => `
+          <div class="sub-group-title">${esc(r.regiao)} <span style="font-weight:500;color:#8c8c8c;font-size:12.5px;">(${r.fontes.filter(f => f.ativa).length} ativas de ${r.fontes.length})</span></div>
+          <div class="table-wrapper" style="margin-bottom:14px;">${r.fontes.map(f => `
+            <div class="fonte-linha">
+              <div><a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer">${esc(f.nome)}</a>
+                <div class="fonte-meta">${esc(f.tipo).replace(/_/g, ' ')} · ${esc(f.idioma)} · prioridade ${esc(f.prioridade)}</div></div>
+              <div>${chip(f.status)}</div>
+              <div class="fonte-meta" style="margin-top:0;">${esc(f.detalhe)}${f.observacao ? `<br><em>${esc(f.observacao)}</em>` : ''}</div>
+            </div>`).join('')}</div>`).join('');
+      }
+      const repo = repoGitHub();
+      const links = document.getElementById('nf-links');
+      if (repo) {
+        links.innerHTML = `<a href="https://github.com/${esc(repo)}/edit/main/${esc((ts && ts.arquivo) || 'config/fontes.yaml')}" target="_blank" rel="noopener noreferrer">✏️ Editar a lista direto no GitHub</a>
+          <a href="https://github.com/${esc(repo)}/actions/workflows/checar-fontes.yml" target="_blank" rel="noopener noreferrer">🔎 Rodar "Checar fontes"</a>
+          <a href="https://github.com/${esc(repo)}/actions/workflows/relatorio.yml" target="_blank" rel="noopener noreferrer">▶️ Gerar boletim agora</a>`;
+      } else {
+        links.innerHTML = '<span style="color:#8c8c8c;">Publique o painel no GitHub Pages do repositório do agente para ativar os atalhos.</span>';
+      }
+    }
+
+    function enviarNovaFonte() {
+      const nome = document.getElementById('nf-nome').value.trim();
+      const url = document.getElementById('nf-url').value.trim();
+      if (!nome) { alert('Informe o nome do site.'); return; }
+      if (!/^https?:\/\/[^\s"'<>`]+$/.test(url)) { alert('Informe uma URL começando com https://'); return; }
+      const repo = repoGitHub();
+      if (!repo) { alert('Repositório não identificado. Abra o painel pelo GitHub Pages do repositório do agente.'); return; }
+      const p = new URLSearchParams({ template: 'nova-fonte.yml', title: `Nova fonte: ${nome}`, nome, url,
+        regiao: document.getElementById('nf-regiao').value, tipo: document.getElementById('nf-tipo').value });
+      window.open(`https://github.com/${repo}/issues/new?${p.toString()}`, '_blank', 'noopener');
+    }
+
+    // ===== Botão "Atualizar agora" (GitHub Actions sob demanda) =====
+    const CHAVE_TOKEN = 'agro_intel_github_token';
+    let atualizando = false;
+    const esperar = ms => new Promise(r => setTimeout(r, ms));
+
+    function lerToken() { try { return localStorage.getItem(CHAVE_TOKEN) || ''; } catch (e) { return ''; } }
+    function mostrarStatus(html) { document.getElementById('status-atualizacao').innerHTML = html; }
+    function abrirConfigToken() {
+      const p = document.getElementById('painel-token');
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
+    }
+    function salvarToken() {
+      const t = document.getElementById('input-token').value.trim();
+      if (!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(t)) { alert('Isso não parece uma chave do GitHub (começa com github_pat_).'); return; }
+      try { localStorage.setItem(CHAVE_TOKEN, t); } catch (e) { alert('Este navegador não permitiu salvar a chave.'); return; }
+      document.getElementById('input-token').value = '';
+      document.getElementById('painel-token').style.display = 'none';
+      mostrarStatus('🔑 Acesso salvo neste navegador. Clique em “Atualizar agora”.');
+    }
+    function esquecerToken() {
+      try { localStorage.removeItem(CHAVE_TOKEN); } catch (e) {}
+      mostrarStatus('Chave removida deste navegador.');
+    }
+
+    async function gh(caminho, opcoes = {}) {
+      const r = await fetch(`https://api.github.com${caminho}`, { ...opcoes, cache: 'no-store', headers: {
+        'Accept': 'application/vnd.github+json', 'Authorization': `Bearer ${lerToken()}`,
+        'X-GitHub-Api-Version': '2022-11-28', ...(opcoes.headers || {}) } });
+      if (!r.ok) {
+        const msg = { 401: 'chave inválida ou expirada', 403: 'a chave não tem a permissão Actions: Read and write', 404: 'repositório ou workflow não encontrado (confira o repositório escolhido na chave)' }[r.status];
+        throw new Error(msg || `GitHub respondeu ${r.status}`);
+      }
+      return r;
+    }
+
+    function textoUltimaAtualizacao() {
+      const q = (dadosBoletim && dadosBoletim.data_quality) || {};
+      const cot = q.cotacoes_atualizadas_em || q.gerado_em;
+      if (!cot) return '';
+      const fmtH = iso => new Date(iso).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+      const min = Math.max(0, Math.round((Date.now() - new Date(cot).getTime()) / 60000));
+      const quando = min < 1 ? 'agora há pouco' : (min < 60 ? `há ${min} min` : (min < 1440 ? `há ${Math.floor(min / 60)} h ${min % 60} min` : `há ${Math.floor(min / 1440)} dia(s)`));
+      let t = `📈 Cotações conferidas ${quando} (${fmtH(cot)})`;
+      if (q.analise_gerada_em && q.analise_gerada_em !== cot) t += ` · 📝 análise escrita em ${fmtH(q.analise_gerada_em)}`;
+      return t + ' · o painel se atualiza sozinho';
+    }
+
+    async function atualizarAgora() {
+      const repo = repoGitHub();
+      if (!repo) { alert('Abra o painel pelo GitHub Pages do repositório do agente para usar o botão.'); return; }
+      if (!lerToken()) { document.getElementById('painel-token').style.display = 'block'; mostrarStatus('Configure o acesso abaixo (só uma vez).'); return; }
+      if (atualizando) return;
+      atualizando = true;
+      const btn = document.getElementById('btn-atualizar');
+      btn.disabled = true;
+      const rapido = document.getElementById('modo-atualizacao').value === 'rapido';
+      const wf = rapido ? 'monitor.yml' : 'relatorio.yml';     // rápido = monitor de cotações (sem IA)
+      const anterior = (dadosBoletim.data_quality || {}).gerado_em;
+      const inicio = Date.now();
+      try {
+        const info = await (await gh(`/repos/${repo}`)).json();
+        const ramo = info.default_branch || 'main';
+        await gh(`/repos/${repo}/actions/workflows/${wf}/dispatches`, { method: 'POST',
+          body: JSON.stringify(rapido ? { ref: ramo } : { ref: ramo, inputs: { sem_ia: 'false' } }) });
+        mostrarStatus('⏳ Pedido enviado ao GitHub… aguardando a execução começar');
+        let run = null;
+        for (let i = 0; i < 30 && !run; i++) {
+          await esperar(4000);
+          const dados = await (await gh(`/repos/${repo}/actions/workflows/${wf}/runs?event=workflow_dispatch&per_page=5`)).json();
+          run = (dados.workflow_runs || []).find(x => new Date(x.created_at).getTime() >= inicio - 90000);
+        }
+        if (!run) throw new Error('a execução não apareceu no GitHub — veja a aba Actions do repositório');
+        while (true) {
+          run = await (await gh(`/repos/${repo}/actions/runs/${run.id}`)).json();
+          const s = Math.round((Date.now() - inicio) / 1000);
+          const fase = run.status === 'queued' ? 'na fila do GitHub' : 'coletando, conferindo e escrevendo';
+          mostrarStatus(`⏳ ${fase}… ${Math.floor(s / 60)} min ${s % 60} s · <a href="${esc(run.html_url)}" target="_blank" rel="noopener noreferrer">acompanhar</a>`);
+          if (run.status === 'completed') break;
+          await esperar(8000);
+        }
+        if (run.conclusion !== 'success') {
+          throw new Error(`a execução terminou como “${run.conclusion}”; o boletim anterior foi mantido (nada inventado foi publicado)`);
+        }
+        // lê o boletim novo direto do repositório (não espera o GitHub Pages republicar)
+        const r = await gh(`/repos/${repo}/contents/boletim_atual.json?ref=${encodeURIComponent(ramo)}`,
+                           { headers: { 'Accept': 'application/vnd.github.raw+json' } });
+        dadosBoletim = limparJSON(await r.text());
+        inicializarInterface();
+        const novo = (dadosBoletim.data_quality || {}).gerado_em !== anterior;
+        mostrarStatus(novo
+          ? `✅ Dados atualizados às ${new Date().toLocaleTimeString('pt-BR')} · ${textoUltimaAtualizacao()}`
+          : `✅ Conferido às ${new Date().toLocaleTimeString('pt-BR')}: nenhuma cotação nova desde a última atualização`);
+      } catch (e) {
+        mostrarStatus(`⚠️ Não foi possível atualizar: ${esc(e.message)}`);
+      } finally {
+        atualizando = false;
+        btn.disabled = false;
+      }
+    }
+
+    // A cada 5 min, se saiu boletim novo (horário agendado ou outra pessoa), o painel recarrega sozinho
+    async function checarBoletimNovo() {
+      if (atualizando || !dadosBoletim) return;
+      try {
+        const res = await fetch(`./boletim_atual.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        const novo = limparJSON(await res.text());
+        const atual = (dadosBoletim.data_quality || {}).gerado_em;
+        const chegou = (novo.data_quality || {}).gerado_em;
+        if (chegou && chegou !== atual) {
+          dadosBoletim = novo;
+          inicializarInterface();
+          mostrarStatus(`🆕 Boletim novo carregado automaticamente · ${textoUltimaAtualizacao()}`);
+        } else if (!document.getElementById('status-atualizacao').innerHTML.startsWith('✅')) {
+          mostrarStatus(textoUltimaAtualizacao());
+        }
+      } catch (e) { /* sem conexão: tenta de novo no próximo ciclo */ }
+    }
+    setInterval(checarBoletimNovo, 5 * 60 * 1000);
+
+    function trocarAba(idAba, btn) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(idAba).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => carregarBoletim());
+  </script>
+</body>
+</html>
