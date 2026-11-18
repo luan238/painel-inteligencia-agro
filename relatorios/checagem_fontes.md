@@ -1,35 +1,35 @@
-# Checagem de fontes — 18/11/2026 10:07
+# Checagem de fontes — 18/11/2026 10:14
 
 ## Cotações
 
 | Indicador | Fonte | Status | Detalhe |
 |---|---|---|---|
-| dolar_ptax | Banco Central do Brasil | ✅ ok | 40 valor(es); último 5.7851 em 17/11/2026 |
+| dolar_ptax | Banco Central do Brasil | ✅ ok | 40 valor(es); último 5.7851 em 17/11/2026 · PTAX venda — boletim de fechamento 17/11/2026 13:07 (API olinda.bcb.gov.br) |
 | dolar_ptax | Yahoo Finance (checagem) | ⏸️ inativa | fonte desativada na configuração |
-| dolar_futuro_b3 | B3 Agro | ✅ ok | 1 valor(es); último 5786.407 em 17/11/2026 |
-| selic_meta | Banco Central do Brasil | ✅ ok | 61 valor(es); último 13.75 em 18/11/2026 |
+| dolar_futuro_b3 | B3 Agro | ✅ ok | 1 valor(es); último 5786.407 em 17/11/2026 · DOLZ26 · preço de ajuste (boletim oficial da B3) |
+| selic_meta | Banco Central do Brasil | ✅ ok | 61 valor(es); último 13.75 em 18/11/2026 · SGS série 432 (API api.bcb.gov.br) |
 | petroleo_wti | EIA (governo dos EUA) | ⏸️ inativa | opcional — defina o secret EIA_API_KEY no GitHub para ativar |
 | petroleo_brent | EIA (governo dos EUA) | ⏸️ inativa | opcional — defina o secret EIA_API_KEY no GitHub para ativar |
-| soja_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 0.108862 em 18/11/2026 |
-| farelo_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 5.443108 em 18/11/2026 |
-| oleo_soja_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 0.226796 em 18/11/2026 |
-| soja_paranagua | Canal Rural | ✅ ok | 1 valor(es); último 169.0 em 17/11/2026 |
-| soja_parana | Canal Rural | ✅ ok | 1 valor(es); último 158.0 em 17/11/2026 |
-| soja_uberlandia | Agrolink | ✅ ok | 1 valor(es); último 155.0 em 18/11/2026 |
-| soja_b3 | B3 Agro | ✅ ok | 1 valor(es); último 27.0172 em 17/11/2026 |
-| soja_rosario | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 545000.0 em 18/11/2026 |
-| milho_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 0.076204 em 18/11/2026 |
-| milho_campinas | Canal Rural | ✅ ok | 1 valor(es); último 67.5 em 17/11/2026 |
-| milho_b3 | B3 Agro | ✅ ok | 1 valor(es); último 71.1 em 17/11/2026 |
-| milho_b3_2 | B3 Agro | ✅ ok | 1 valor(es); último 75.45 em 17/11/2026 |
-| trigo_cbot | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 0.027216 em 18/11/2026 |
-| trigo_parana | Canal Rural | ✅ ok | 1 valor(es); último 1550.0 em 17/11/2026 |
-| trigo_rs | Canal Rural | ✅ ok | 1 valor(es); último 1630.0 em 17/11/2026 |
-| algodao_cepea | Canal Rural | ✅ ok | 1 valor(es); último 396.0 em 17/11/2026 |
-| cafe_arabica_cepea | Canal Rural | ✅ ok | 1 valor(es); último 1830.0 em 17/11/2026 |
-| cafe_manhuacu | Agrolink | ✅ ok | 1 valor(es); último 1688.0 em 18/11/2026 |
-| boi_gordo_cepea | Canal Rural | ✅ ok | 1 valor(es); último 395.0 em 17/11/2026 |
-| boi_b3 | B3 Agro | ✅ ok | 1 valor(es); último 398.5 em 17/11/2026 |
+| soja_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| farelo_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| oleo_soja_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| soja_paranagua | Canal Rural | ✅ ok | 1 valor(es); último 169.0 em 17/11/2026 · regex 'Paranagu[aá]\s+PR\s+[^$]{0,40}?R\$\s*([\' |
+| soja_parana | Canal Rural | ✅ ok | 1 valor(es); último 158.0 em 17/11/2026 · regex 'Cascavel\s+PR\s+[^$]{0,40}?R\$\s*([\d.]+' |
+| soja_uberlandia | Agrolink | ✅ ok | 1 valor(es); último 155.0 em 18/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)' · data não informada na página |
+| soja_b3 | B3 Agro | ✅ ok | 1 valor(es); último 27.0172 em 17/11/2026 · SJCF27 · preço de ajuste (boletim oficial da B3) |
+| soja_rosario | BCR – Bolsa de Comercio de Rosario | ✅ ok | 1 valor(es); último 550000.0 em 18/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* / Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica'  |
+| milho_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| milho_campinas | Canal Rural | ✅ ok | 1 valor(es); último 67.5 em 17/11/2026 · regex 'Campinas\s+SP\s+[^$]{0,40}?R\$\s*([\d.]+' |
+| milho_b3 | B3 Agro | ✅ ok | 1 valor(es); último 71.1 em 17/11/2026 · CCMF27 · preço de ajuste (boletim oficial da B3) |
+| milho_b3_2 | B3 Agro | ✅ ok | 1 valor(es); último 75.45 em 17/11/2026 · CCMH27 · preço de ajuste (boletim oficial da B3) |
+| trigo_cbot | BCR – Bolsa de Comercio de Rosario | ❌ erro | a tabela mudou: 13 colunas em vez de 7 · cabeçalhos=['Precios de cierr', '', '17/11/2026'] · linhas=[['Dic-26', '218,72', '2,94', '232,59', '5,14', '175,88', '- |
+| trigo_parana | Canal Rural | ✅ ok | 1 valor(es); último 1550.0 em 17/11/2026 · regex 'Ponta Grossa\s+PR\s+[^$]{0,40}?R\$\s*([\' |
+| trigo_rs | Canal Rural | ✅ ok | 1 valor(es); último 1630.0 em 17/11/2026 · regex 'Porto Alegre\s+RS\s+[^$]{0,40}?R\$\s*([\' |
+| algodao_cepea | Canal Rural | ✅ ok | 1 valor(es); último 396.0 em 17/11/2026 · regex 'Rondon[oó]polis\s+MT\s+[^$]{0,40}?R\$\s*' · convertido de R$/lb (×100) |
+| cafe_arabica_cepea | Canal Rural | ✅ ok | 1 valor(es); último 1830.0 em 17/11/2026 · regex 'Sul de Minas\s+MG\s+[^$]{0,40}?R\$\s*([\' |
+| cafe_manhuacu | Agrolink | ✅ ok | 1 valor(es); último 1688.0 em 18/11/2026 · tabela '' · linha '' · coluna '1ª coluna numérica' · data não informada na página |
+| boi_gordo_cepea | Canal Rural | ✅ ok | 1 valor(es); último 395.0 em 17/11/2026 · regex 'S[aã]o Paulo\s+SP\s+arroba\s+R\$\s*([\d.' |
+| boi_b3 | B3 Agro | ✅ ok | 1 valor(es); último 398.5 em 17/11/2026 · BGIX26 · preço de ajuste (boletim oficial da B3) |
 
 ## Notícias
 
