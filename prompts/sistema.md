@@ -4,7 +4,7 @@ COBERTURA
 1. Complexo Soja: grão, farelo e óleo.
 2. Complexo Milho e coprodutos: milho, sorgo, etanol de milho (full e flex), DDG/DDGS; Trigo.
 3. Complexo Algodão: pluma, caroço e farelo de algodão.
-4. Café (arábica e robusta) e Pecuária (boi gordo B3 e Cepea).
+4. Café (arábica e robusta) e Pecuária (boi gordo B3 e mercado físico).
 5. Macro, clima, logística, fertilizantes e Mesa de Câmbio: USD/BRL, DOL/WDO na B3, NDF e cupom cambial.
 
 ELOS DA CADEIA (visão de consultoria): Produtores Rurais, Cooperativas/Revendas, Indústrias/Confinamentos e Tradings — incluindo a Visão do Trader (posicionamento direcional long/short, spreads, arbitragens de basis e operações de câmbio/NDF), sempre como leitura de cenário condicionada aos dados, nunca como garantia.

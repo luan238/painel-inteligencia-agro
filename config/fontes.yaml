@@ -30,9 +30,9 @@ fontes:
     regiao: Brasil
     tipo: noticias_e_cotacoes
     idioma: pt
-    ativa: true
+    ativa: false
     prioridade: 1
-    observacao: "Principal fonte de cotações físicas (republica indicadores Cepea/Esalq), Chicago, NY e B3."
+    observacao: "Desligada em 18/11/2026: o site recusa robôs (HTTP 403) em todas as páginas. Para tentar de novo, troque para ativa: true e rode Checar fontes."
 
   - nome: Farmnews
     url: https://www.farmnews.com.br/
@@ -52,11 +52,13 @@ fontes:
 
   - nome: Canal Rural
     url: https://www.canalrural.com.br/
+    url_dados: https://www.canalrural.com.br/cotacoes/
     regiao: Brasil
-    tipo: noticias
+    tipo: noticias_e_cotacoes
     idioma: pt
     ativa: true
-    prioridade: 2
+    prioridade: 1
+    observacao: "Cotações físicas por praça (soja, milho, trigo, algodão, café, boi), com dados da CMA."
 
   - nome: Globo Rural
     url: https://globorural.globo.com/
@@ -95,13 +97,13 @@ fontes:
 
   - nome: B3 Agro
     url: https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/cotacoes-derivativos.htm
-    url_dados: https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp
+    url_dados: https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/
     regiao: Brasil
     tipo: cotacoes
     idioma: pt
     ativa: true
     prioridade: 1
-    observacao: "O agente lê a página oficial 'Ajustes do Pregão' da B3 (dólar, milho, boi, café, soja)."
+    observacao: "O agente baixa o arquivo oficial e gratuito de preços do pregão (Pesquisa por pregão) e lê o preço de ajuste de dólar, milho, boi e soja."
 
   - nome: Banco Central do Brasil
     url: https://www.bcb.gov.br/
@@ -132,11 +134,13 @@ fontes:
 
   - nome: BCR – Bolsa de Comercio de Rosario
     url: https://www.bcr.com.ar/
+    url_dados: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
     regiao: Argentina
     tipo: noticias_e_cotacoes
     idioma: es
     ativa: true
     prioridade: 1
+    observacao: "Pizarra de Rosario e fechamento de Chicago (soja, farelo, óleo, milho, trigo) em US$/t."
 
   - nome: Infobae Campo
     url: https://www.infobae.com/campo/

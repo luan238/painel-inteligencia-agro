@@ -4,11 +4,11 @@ from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
-from agente.coletores import b3_ajustes, bcb, tabela_html
+from agente.coletores import b3_ajustes, b3_boletim, bcb, coletar_indicador, outros, tabela_html
 from agente.coletores.noticias import (ColetorNoticias, descobrir_feed, ler_feed, links_de_materias,
                                        metadados_materia, selecionar)
 from agente.rede import BloqueadoPorRobots, Cliente, Resposta
-from web_falsa import AGORA, paginas_cotacoes
+from web_falsa import AGORA, paginas_cotacoes, paginas_legado
 
 HOJE = date(2026, 11, 17)
 IND = {"id": "t", "nome": "teste", "unidade": "R$", "faixa": [0, 1e9]}
@@ -39,7 +39,7 @@ def test_sgs_ignora_datas_futuras():
 
 
 def test_tabela_por_titulo_linha_e_coluna():
-    html = paginas_cotacoes()["https://www.noticiasagricolas.com.br/cotacoes/soja"]
+    html = paginas_legado()["na_soja"]
     # Paraná, mas NÃO Paranaguá
     obs = tabela_html.extrair(html, {"titulo_contem": ["soja", "paran"], "titulo_nao_contem": ["paranagu"],
                                      "coluna_valor": ["vista"], "coluna_data": ["data"]}, IND, HOJE)
@@ -55,7 +55,7 @@ def test_tabela_por_titulo_linha_e_coluna():
 
 
 def test_b3_ajustes_mercadoria_e_vencimento():
-    html = paginas_cotacoes()["https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp"]
+    html = paginas_legado()["b3_ajustes"]
     c1 = b3_ajustes.extrair(html, {"mercadoria": "CCM", "vencimento": 1}, IND, HOJE)[0]
     c2 = b3_ajustes.extrair(html, {"mercadoria": "CCM", "vencimento": "F27"}, IND, HOJE)[0]
     assert c1.valor == pytest.approx(66.88) and c2.valor == pytest.approx(71.35) and c1.data == HOJE
@@ -114,3 +114,91 @@ def test_site_sem_feed_e_lembrado(cfg, web):
     c2 = ColetorNoticias(cfg, Cliente(cfg.geral["coleta"]), AGORA, c1.feeds)
     assert len(c2.coletar_fonte(cfg.fonte("Agrolink"))) == 2
     assert not any(u.endswith(("/feed/", "/rss", "/rss.xml", "/feed.xml")) for u in web.acessos)
+
+
+# ------------------------------------------------------------ fontes novas (18/11/2026)
+def _fontes_reais(ind_id):
+    """A configuração DE VERDADE do repositório: o teste falha se o arquivo for mexido sem querer."""
+    import yaml
+    from conftest import RAIZ
+    dados = yaml.safe_load((RAIZ / "config" / "indicadores.yaml").read_text(encoding="utf-8"))
+    return next(i for i in dados["indicadores"] if i["id"] == ind_id)
+
+
+def test_canal_rural_praca_certa_e_nao_a_lista_de_altas():
+    from web_falsa import _ultimo
+    paginas = paginas_cotacoes()
+    casos = [("soja_paranagua", "soja", _ultimo("paranagua")), ("soja_parana", "soja", _ultimo("parana")),
+             ("milho_campinas", "milho", _ultimo("campinas")), ("trigo_parana", "trigo", _ultimo("trigo_pr")),
+             ("trigo_rs", "trigo", _ultimo("trigo_rs")), ("cafe_arabica_cepea", "cafe", _ultimo("cafe_cepea")),
+             ("boi_gordo_cepea", "boi", _ultimo("boi")), ("algodao_cepea", "algodao", _ultimo("algodao_cepea") / 100)]
+    for ind_id, pagina_cr, esperado in casos:
+        fonte = _fontes_reais(ind_id)["fontes"][0]
+        html = paginas[f"https://www.canalrural.com.br/cotacoes/{pagina_cr}/"]
+        o = outros.coletar_regex(fonte, {"id": ind_id}, ClienteFixo(html), HOJE)[0]
+        assert o.valor == pytest.approx(round(esperado, 2)), ind_id      # nunca o 999,00 da lista "Maiores altas"
+        assert o.data == HOJE and not o.incerta, ind_id
+
+
+def test_bcr_chicago_primeira_posicao_com_valor_e_conversao(cfg):
+    from web_falsa import _ultimo
+    html = paginas_cotacoes()["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"]
+
+    class Cli(ClienteFixo):
+        log = []
+    for ind_id, base, casas in (("soja_cbot", _ultimo("soja_cbot") / 100, 3), ("milho_cbot", _ultimo("milho_cbot") / 100, 3),
+                                ("trigo_cbot", _ultimo("trigo_cbot") / 100, 3), ("oleo_soja_cbot", _ultimo("oleo"), 2),
+                                ("farelo_cbot", _ultimo("farelo"), 1)):
+        ind = _fontes_reais(ind_id)
+        obs, rel = coletar_indicador(ind, cfg, Cli(html), HOJE)
+        assert rel[0]["status"] == "ok", rel
+        assert obs[0].valor == pytest.approx(base, abs=10 ** -casas), ind_id
+        assert "convertido de US$/t" in obs[0].detalhe and obs[0].data == HOJE
+    soja = coletar_indicador(_fontes_reais("soja_cbot"), cfg, Cli(html), HOJE)[0][0]
+    assert "Ene-27" in soja.detalhe                       # Dic-26 tem 0,00 na soja: pula para a 1ª posição cotada
+
+
+def test_boletim_oficial_da_b3_vencimentos_e_dia_anterior():
+    from web_falsa import _ultimo, boletim_b3_zip
+
+    class Cli:
+        def __init__(self):
+            self.urls = []
+
+        def obter(self, url, **kw):
+            self.urls.append(url)
+            if url.endswith("PR261117.zip"):
+                return Resposta(url, 200, boletim_b3_zip())
+            return Resposta(url, 200, b"<html>arquivo indisponivel</html>")
+
+    cli = Cli()
+    ccm1 = b3_boletim.coletar({"mercadoria": "CCM", "vencimento": 1}, IND, cli, date(2026, 11, 18))[0]
+    ccm2 = b3_boletim.coletar({"mercadoria": "CCM", "vencimento": 2}, IND, cli, date(2026, 11, 18))[0]
+    assert ccm1.valor == pytest.approx(_ultimo("ccm1"), abs=1e-3) and "CCMX26" in ccm1.detalhe
+    assert ccm2.valor == pytest.approx(_ultimo("ccm2"), abs=1e-3) and ccm1.data == date(2026, 11, 17)
+    assert sum("PR261118" in u for u in cli.urls) == 1    # o arquivo de 18/11 ainda não saiu: usa o de 17/11 (1 download)
+    assert b3_boletim.coletar({"mercadoria": "DOL"}, IND, cli, date(2026, 11, 18))[0].valor == pytest.approx(_ultimo("dol"), abs=1e-3)
+    with pytest.raises(Exception, match="vencimento"):
+        b3_boletim.coletar({"mercadoria": "SJC", "vencimento": 2}, IND, cli, date(2026, 11, 18))
+    assert b3_boletim.contratos(b3_boletim.ler_zip(boletim_b3_zip()), "BGI") == ["BGIX26", "BGIZ26"]
+
+
+def test_boletim_da_b3_baixado_uma_vez_so(tmp_path):
+    """O arquivo da B3 é grande: os ajustes ficam em data/b3_ajustes.json e o monitor não baixa de novo."""
+    from web_falsa import boletim_b3_zip
+
+    class Cli:
+        downloads = 0
+
+        def obter(self, url, **kw):
+            if url.endswith("PR261117.zip"):
+                Cli.downloads += 1
+                return Resposta(url, 200, boletim_b3_zip())
+            return Resposta(url, 404, b"")
+
+    b3_boletim.usar_cache(tmp_path / "data" / "b3_ajustes.json")
+    primeiro = b3_boletim.coletar({"mercadoria": "BGI"}, IND, Cli(), HOJE)[0]
+    b3_boletim._cache.clear()                                  # nova execução (outro processo)
+    segundo = b3_boletim.coletar({"mercadoria": "BGI"}, IND, Cli(), HOJE)[0]
+    assert Cli.downloads == 1 and primeiro.valor == segundo.valor and segundo.data == HOJE
+    assert "BGIX26" in (tmp_path / "data" / "b3_ajustes.json").read_text(encoding="utf-8")

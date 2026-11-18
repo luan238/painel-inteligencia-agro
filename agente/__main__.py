@@ -29,13 +29,14 @@ from .llm import ClienteLLM
 from .montador import NOME_TURNO, Montador, link_seguro, salvar_json
 from .numeros import fmt_valor
 from .projecoes import RegistroProjecoes, calcular_bandas
+from .coletores import b3_boletim
 from .rede import Cliente
 from .redator import Redator
 from .validacao import validar
 
 ESQUEMA = Path(__file__).parent / "esquema_boletim.json"
 CHAVES_FECHAMENTO = ["dolar_ptax", "selic_meta", "petroleo_wti", "soja_paranagua", "soja_cbot", "milho_campinas",
-                     "trigo_parana", "algodao_ice", "cafe_arabica_cepea", "cafe_manhuacu", "boi_gordo_cepea"]
+                     "trigo_parana", "algodao_cepea", "cafe_arabica_cepea", "cafe_manhuacu", "boi_gordo_cepea"]
 
 
 def turno_de(agora: datetime) -> str:
@@ -138,6 +139,7 @@ def status_das_fontes(cfg: Config, status_noticias: list, relatorio_coleta: dict
 
 # ------------------------------------------------------------ etapas comuns
 def _coletar_cotacoes(cfg: Config, cliente, hist, hoje):
+    b3_boletim.usar_cache(cfg.raiz / "data" / "b3_ajustes.json")
     resultados, relatorio_coleta = {}, {}
     for ind in cfg.indicadores:
         obs, rel = coletar_indicador(ind, cfg, cliente, hoje)
@@ -413,6 +415,7 @@ def checar_fontes(cfg: Config) -> int:
     agora = cfg.agora()
     hoje = agora.date()
     cliente = Cliente(cfg.geral["coleta"])
+    b3_boletim.usar_cache(cfg.raiz / "data" / "b3_ajustes.json")
     linhas_ind, rel_total = [], {}
     for ind in cfg.indicadores:
         obs, rel = coletar_indicador(ind, cfg, cliente, hoje)
@@ -439,6 +442,7 @@ def checar_fontes(cfg: Config) -> int:
     checagem = _ler_json(cfg.caminho("checagem_fontes"))
     checagem.update({"gerado_em": agora.isoformat(timespec="minutes"), "indicadores": rel_total,
                      "noticias": coletor.status, "feeds": {**checagem.get("feeds", {}), **coletor.feeds}})
+    cfg.caminho("checagem_fontes").parent.mkdir(parents=True, exist_ok=True)   # repositório sem a pasta data/
     cfg.caminho("checagem_fontes").write_text(json.dumps(checagem, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n".join(md))
     return 0

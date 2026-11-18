@@ -5,13 +5,14 @@ import os
 from datetime import date
 
 from ..rede import BloqueadoPorRobots, ErroColeta
-from . import b3_ajustes, bcb, outros, tabela_html
+from . import b3_ajustes, b3_boletim, bcb, outros, tabela_html
 from .base import Observacao
 
 COLETORES = {
     "bcb_ptax": lambda f, i, c, h, r: bcb.coletar_ptax(f, i, c, h),
     "bcb_sgs": lambda f, i, c, h, r: bcb.coletar_sgs(f, i, c, h),
     "b3_ajustes": b3_ajustes.coletar,
+    "b3_boletim": b3_boletim.coletar,
     "tabela_html": tabela_html.coletar,
     "regex_pagina": outros.coletar_regex,
     "json_api": outros.coletar_json,
@@ -41,10 +42,14 @@ def coletar_indicador(ind: dict, cfg, cliente, hoje: date):
             continue
         try:
             obs = COLETORES[fonte["tipo"]](fonte, ind, cliente, hoje, registro)
+            fator = fonte.get("fator")
             for o in obs:
                 o.indicador = ind["id"]
                 o.fonte = nome
                 setattr(o, "prioridade", prioridade)
+                if fator:                            # conversão de unidade declarada na config
+                    o.valor = round(o.valor * float(fator), 6)
+                    o.detalhe += f" · convertido de {fonte.get('unidade_origem', 'outra unidade')} (×{fator})"
             observacoes.extend(obs)
             ultima = max(obs, key=lambda o: o.data)
             relatorio.append({**linha, "status": "ok", "mensagem": f"{len(obs)} valor(es); último {ultima.valor} em {ultima.data:%d/%m/%Y}"})

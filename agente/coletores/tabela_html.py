@@ -21,6 +21,23 @@ _TAGS_TITULO = {"h1", "h2", "h3", "h4", "h5", "h6", "caption", "strong", "b", "l
 _RE_CLASSE_TITULO = re.compile(r"tit|title|cabec|header|info|nome|label", re.I)
 _RE_FECHAMENTO = re.compile(r"(?:fechamento|atualizad[oa]|data|cota[cç][aã]o)\D{0,15}(\d{1,2}/\d{1,2}/\d{2,4})", re.I)
 _RE_QUALQUER_DATA = re.compile(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b")
+_RE_NUMERO = re.compile(r"-?\d{1,3}(?:[.\s]\d{3})+(?:,\d+)?|-?\d+(?:[.,]\d+)?")
+
+
+_RE_CELULA_NUMERICA = re.compile(r"[^\w]*(?:R\$|US\$|U\$S)?\s*-?[\d.,]+(?:\s*\(\s*-?[\d.,]+\s*\))?\s*%?")
+
+
+def _parece_numero(celula: str) -> bool:
+    return bool(_RE_CELULA_NUMERICA.fullmatch((celula or "").strip()))
+
+
+def numero_da_celula(celula: str, estilo: str):
+    """Número da célula; se ela tiver mais de um (ex.: '450,30 (-1,29)'), vale o primeiro."""
+    v = ler_numero(celula, estilo)
+    if v is not None:
+        return v
+    m = _RE_NUMERO.search(celula or "")
+    return ler_numero(m.group(0), estilo) if m else None
 
 
 @dataclass
@@ -52,6 +69,9 @@ def tabelas_da_pagina(html: str) -> list[Tabela]:
                 cabecalhos = textos
             else:
                 linhas.append(textos)
+        if not cabecalhos and len(linhas) > 1 and len(linhas[0]) > 1 and \
+                not any(_parece_numero(c) for c in linhas[0][1:]):
+            cabecalhos = linhas.pop(0)                # cabeçalho escrito com <td> na 1ª linha
         # contexto: títulos e textos entre a tabela anterior e esta
         titulos, textos_antes = [], []
         ancestrais = {id(p) for p in t.parents}
@@ -154,6 +174,15 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
                     break
         if linha is None:
             raise ErroColeta(f"linha com {fonte['linha_contem']} não encontrada na tabela '{tab.contexto[:50]}'")
+    elif fonte.get("primeira_linha_com_valor"):
+        for l in tab.linhas:
+            if col_valor is not None and col_valor < len(l):
+                v = numero_da_celula(l[col_valor], estilo)
+                if v:                                   # vazio, traço ou 0,00 = sem cotação nessa posição
+                    linha = l
+                    break
+        if linha is None:
+            raise ErroColeta(f"nenhuma linha com valor na coluna {fonte.get('coluna_valor')} da tabela '{tab.contexto[:50]}'")
     else:
         n = int(fonte.get("linha", 1))
         if len(tab.linhas) < n:
@@ -162,7 +191,7 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
 
     valor = None
     if col_valor is not None and col_valor < len(linha):
-        valor = ler_numero(linha[col_valor], estilo)
+        valor = numero_da_celula(linha[col_valor], estilo)
     if valor is None:                              # sem cabeçalho reconhecível: 1ª célula numérica
         for celula in linha[1:]:
             if "%" in celula:

@@ -66,14 +66,14 @@ blocos:
 
 # Ativos que aparecem nos cards do "Panorama Geral" e no gráfico semanal
 painel_semanal: [dolar_ptax, petroleo_wti, soja_paranagua, soja_cbot, milho_campinas, trigo_parana,
-  algodao_ice, cafe_arabica_cepea, boi_gordo_cepea]
+  algodao_cepea, cafe_arabica_cepea, boi_gordo_cepea]
 
 # Ativos do gráfico mensal (daily_history)
 painel_mensal: [dolar_ptax, petroleo_wti, soja_paranagua, soja_uberlandia, milho_campinas, trigo_parana,
   cafe_manhuacu, boi_gordo_cepea]
 
 # Ativos da "Matriz de Projeções Auditáveis"
-projecoes: [dolar_ptax, petroleo_wti, soja_paranagua, milho_campinas, trigo_parana, algodao_ice,
+projecoes: [dolar_ptax, petroleo_wti, soja_paranagua, milho_campinas, trigo_parana, algodao_cepea,
   cafe_arabica_cepea, boi_gordo_cepea]
 
 # Spreads calculados pelo código (nunca pela IA). operacao: diferenca | razao
@@ -103,7 +103,7 @@ spreads:
     unidade: "R$/sc"
     casas: 2
   - id: spread_cafe_cepea_manhuacu
-    nome: "Diferencial Café Cepea − Manhuaçu"
+    nome: "Diferencial Café Sul de Minas − Manhuaçu"
     bloco: complexo_cafe
     a: cafe_arabica_cepea
     b: cafe_manhuacu

@@ -105,7 +105,7 @@ class Config:
         return erros
 
 
-TIPOS_COLETOR = {"bcb_ptax", "bcb_sgs", "b3_ajustes", "tabela_html", "regex_pagina", "json_api", "yahoo"}
+TIPOS_COLETOR = {"bcb_ptax", "bcb_sgs", "b3_ajustes", "b3_boletim", "tabela_html", "regex_pagina", "json_api", "yahoo"}
 
 
 def carregar_config(raiz: Path | None = None) -> Config:

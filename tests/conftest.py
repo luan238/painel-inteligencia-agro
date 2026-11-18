@@ -35,3 +35,12 @@ def web():
     rede.definir_transporte(w)
     yield w
     rede.definir_transporte(None)
+
+
+@pytest.fixture(autouse=True)
+def chave_eia_de_teste(monkeypatch):
+    """A fonte da EIA só roda com chave; nos testes a EIA é simulada pela WebFalsa."""
+    monkeypatch.setenv("EIA_API_KEY", "chave-de-teste")
+    from agente.coletores import b3_boletim
+    b3_boletim._cache.clear()
+    b3_boletim.usar_cache(None)

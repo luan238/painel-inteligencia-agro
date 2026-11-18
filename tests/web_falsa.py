@@ -88,10 +88,107 @@ def pagina(*blocos) -> str:
     return "<html><head><meta charset='utf-8'><title>Cotações</title></head><body>" + "".join(blocos) + "</body></html>"
 
 
+def _canal_rural(produto: str, titulo: str, linhas: list[tuple[str, str, str, float]], decoy: str, data: date = HOJE) -> str:
+    """Imita a página de cotações do Canal Rural: lista 'Maiores altas' (com outro valor, de propósito)
+    e a tabela 'Praças de …' com Praça | UF | Unidade | Preço | Variação."""
+    trs = "".join(f"<tr><td><a href='?praca=x'>{praca}</a></td><td>{uf}</td><td>{un}</td><td>R$ {fmt(v, 2)}</td>"
+                  f"<td>+0,50% alta de 0,50%</td></tr>" for praca, uf, un, v in linhas)
+    return pagina(
+        f"<h1>Cotação do {produto}</h1><section><h3>Maiores altas</h3><ul><li>{decoy} <span>+3,05%</span> "
+        f"<span>R$ 999,00</span></li></ul></section>",
+        f"<h2>{titulo}</h2><p>Fechamento de {data:%d/%m/%Y}</p>",
+        "<table><thead><tr><th>Praça</th><th>UF</th><th>Unidade</th><th>Preço</th><th>Variação</th></tr></thead>"
+        f"<tbody>{trs}</tbody></table><p>Fonte: CMA · Atualizado em {data:%d/%m/%Y} 15:27</p>")
+
+
+def _bcr_chicago() -> str:
+    """Imita 'Precios Chicago/Kansas' da BCR: US$/t, cabeçalho em <td>, 0,00 = posição sem contrato."""
+    soja_t = _ultimo("soja_cbot") / 100 / 0.0272155
+    milho_t = _ultimo("milho_cbot") / 100 / 0.0254012
+    trigo_t = _ultimo("trigo_cbot") / 100 / 0.0272155
+    oleo_t = _ultimo("oleo") / 0.0453592
+    farelo_t = _ultimo("farelo") / 0.90718474
+    linhas = [
+        ["Dic-26", f"{fmt(trigo_t, 2)} (2,94)", "232,59 (5,14)", f"{fmt(milho_t, 2)} (-0,79)", "0,00",
+         f"{fmt(oleo_t, 2)} (-1,54)", f"{fmt(farelo_t, 2)} (0,77)"],
+        ["Ene-27", "0,00", "0,00", "0,00", f"{fmt(soja_t, 2)} (-1,29)", "1.375,44 (-2,87)", "367,28 (0,99)"],
+        ["Mar-27", "224,23 (3,40)", "236,82 (5,60)", "180,80 (0,20)", "452,42 (-0,64)", "1.387,35 (-3,09)", "368,39 (1,87)"],
+    ]
+    cab = ["Posición", "Trigo Chicago", "Trigo Chicago/2", "Maíz", "Soja", "Aceite de soja", "Harina de soja"]
+    trs = "<tr>" + "".join(f"<td>{c}</td>" for c in cab) + "</tr>"
+    trs += "".join("<tr>" + "".join(f"<td>{c}</td>" for c in l) + "</tr>" for l in linhas)
+    return pagina("<h2>Precios Chicago/Kansas</h2><p>17/11/2026</p><p>U$S / TN</p>", f"<table>{trs}</table>")
+
+
+def boletim_b3_zip(dia: date = HOJE) -> bytes:
+    """Imita o arquivo PRaammdd.zip da B3: zip com outro zip dentro e o XML BVBG.086 (Price Report)."""
+    import io
+    import zipfile
+    itens = [("BGIX26", "bgi"), ("BGIZ26", None), ("CCMX26", "ccm1"), ("CCMF27", "ccm2"), ("DOLZ26", "dol"),
+             ("DOLF27", None), ("SJCF27", "sjc"), ("CCMF27C070", None), ("PETR4", None)]
+    rel = ""
+    for ticker, nome in itens:
+        v = _ultimo(nome) if nome else 1.0
+        rel += (f"<PricRpt><TradDt><Dt>{dia:%Y-%m-%d}</Dt></TradDt><SctyId><TckrSymb>{ticker}</TckrSymb></SctyId>"
+                f"<FinInstrmAttrbts><LastPric>{v * 1.001:.3f}</LastPric><AdjstdQt>{v:.3f}</AdjstdQt>"
+                f"<PrvsAdjstdQt>{v * 0.998:.3f}</PrvsAdjstdQt></FinInstrmAttrbts></PricRpt>")
+    xml = ('<?xml version="1.0" encoding="UTF-8"?><Document xmlns="urn:bvmf.052.01.xsd"><BizGrp>'
+           f'<Document xmlns="urn:bvmf.217.01.xsd">{rel}</Document></BizGrp></Document>').encode()
+    interno = io.BytesIO()
+    with zipfile.ZipFile(interno, "w") as z:
+        z.writestr(f"BVBG.086.01_BV000328{dia:%Y%m%d}0328000001.xml", xml)
+    externo = io.BytesIO()
+    with zipfile.ZipFile(externo, "w") as z:
+        z.writestr(f"PR{dia:%y%m%d}.zip", interno.getvalue())
+    return externo.getvalue()
+
+
 def paginas_cotacoes() -> dict[str, str]:
-    na = "https://www.noticiasagricolas.com.br/cotacoes/"
+    cr = "https://www.canalrural.com.br/cotacoes/"
     p = {}
-    p[na + "soja"] = pagina(
+    sc = "saca de 60 kg"
+    p[cr + "soja/"] = _canal_rural("soja", "Praças de Soja", [
+        ("Sorriso", "MT", sc, 136.0), ("Paranaguá", "PR", sc, _ultimo("paranagua")),
+        ("Cascavel", "PR", sc, _ultimo("parana")), ("Paranaguá (PRI)", "PR", sc, 141.0)], "Paranaguá · PR")
+    p[cr + "milho/"] = _canal_rural("milho", "Praças de Milho", [
+        ("Campinas", "SP", sc, _ultimo("campinas")), ("CIF · Santos", "SP", sc, 71.0)], "Campinas · SP")
+    p[cr + "trigo/"] = _canal_rural("trigo", "Praças de Trigo", [
+        ("FOB · Ponta Grossa", "PR", "tonelada", _ultimo("trigo_pr")),
+        ("CIF · Porto Alegre", "RS", "tonelada", _ultimo("trigo_rs"))], "Ponta Grossa · PR")
+    p[cr + "algodao/"] = _canal_rural("algodão", "Praças de Algodão", [
+        ("Em pluma · Rondonópolis", "MT", "libra-peso", _ultimo("algodao_cepea") / 100),
+        ("Em pluma · Barreiras", "BA", "libra-peso", 3.98)], "Rondonópolis · MT")
+    p[cr + "cafe/"] = _canal_rural("café", "Praças de Café", [
+        ("Arábica · Sul de Minas", "MG", sc, _ultimo("cafe_cepea")),
+        ("Conilon · Vitória", "ES", sc, 1610.0)], "Sul de Minas · MG")
+    p[cr + "boi/"] = _canal_rural("boi gordo", "Praças de Boi gordo", [
+        ("São Paulo", "SP", "arroba", _ultimo("boi")), ("Cuiabá", "MT", "arroba", 375.0),
+        ("Indsaf Boi SP AP · São Paulo", "SP", "—", 397.82)], "São Paulo · SP")
+    p["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"] = _bcr_chicago()
+    p["https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"] = pagina(
+        "<h1>Café Arábica Bebida Dura Tipo 6 — Saca 60 kg</h1><p>Atualizado em 17/11/2026</p>",
+        "<table><thead><tr><th>Praça</th><th>Preço (R$)</th><th>Variação</th></tr></thead><tbody>"
+        f"<tr><td>Manhuaçu/MG</td><td>{fmt(_ultimo('manhuacu'), 2)}</td><td>+0,10%</td></tr>"
+        "<tr><td>Varginha/MG</td><td>1.660,00</td><td>+0,60%</td></tr></tbody></table>")
+    p["https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes"] = pagina(
+        "<h1>Cotações — Uberlândia (MG)</h1>",
+        "<table><thead><tr><th>Produto</th><th>Local</th><th>Preço (R$)</th><th>Última Atualização</th><th>Freq.</th>"
+        "</tr></thead><tbody><tr><td>Boi Gordo 15Kg</td><td>Uberlândia (MG)</td><td>380,00</td><td>17/11/2026</td><td>Diário</td></tr>"
+        f"<tr><td>Soja em Grão Sc 60Kg</td><td>Uberlândia (MG)</td><td>{fmt(_ultimo('uberlandia'), 2)}</td>"
+        "<td>17/11/2026</td><td>Diário</td></tr></tbody></table>")
+    p["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0"] = pagina(
+        "<h2>Precios Pizarra — Cámara Arbitral de Cereales de Rosario</h2><p>17/11/2026</p>",
+        "<table><thead><tr><th>Producto</th><th>$/Tn</th><th>Var.</th></tr></thead><tbody>"
+        f"<tr><td>Trigo</td><td>230.000,00</td><td>0</td></tr><tr><td>Soja</td><td>{fmt(_ultimo('rosario'), 2)}</td><td>+1.500</td></tr>"
+        "</tbody></table>")
+    return p
+
+
+def paginas_legado() -> dict[str, str]:
+    """Leiautes antigos (Notícias Agrícolas e página 'Ajustes do Pregão' da B3), mantidos só para
+    testar os coletores genéricos de tabela; os sites reais deixaram de atender o robô."""
+    p = {}
+    p["na_soja"] = pagina(
         _serie_tab("Indicador da Soja Cepea/Esalq - Paranaguá", "paranagua", "À vista R$"),
         _serie_tab("Indicador da Soja Cepea/Esalq - Paraná", "parana", "À vista R$"),
         _cot("Soja - Mercado Físico (Sindicatos e Cooperativas)", ["Praça", "Preço (R$/sc)", "Variação (%)"],
@@ -99,59 +196,7 @@ def paginas_cotacoes() -> dict[str, str]:
               ["Sorriso/MT", "131,50", "-0,38"]]),
         _cot("Soja - Bolsa de Chicago (CME Group)", ["Contrato", "Fechamento (US$ cents/bu)", "Variação (cents)"],
              [["Jan/27", fmt(_ultimo("soja_cbot"), 2), "-11,75"], ["Mar/27", "1.208,25", "+2,00"]]),
-        _cot("Farelo de Soja - Bolsa de Chicago", ["Contrato", "Fechamento (US$/t curta)", "Variação"],
-             [["Dez/26", fmt(_ultimo("farelo"), 2), "+0,70"]]),
-        _cot("Óleo de Soja - Bolsa de Chicago", ["Contrato", "Fechamento (cents/lb)", "Variação"],
-             [["Dez/26", fmt(_ultimo("oleo"), 2), "+0,35"]]),
     )
-    p[na + "milho"] = pagina(
-        _serie_tab("Indicador do Milho Esalq/B3 - Campinas", "campinas", "À vista R$"),
-        _cot("Milho - Bolsa de Chicago (CME Group)", ["Contrato", "Fechamento (US$ cents/bu)", "Variação"],
-             [["Dez/26", fmt(_ultimo("milho_cbot"), 2), "+1,50"]]),
-    )
-    p[na + "trigo"] = pagina(
-        _cot("Preço Médio do Trigo Cepea/Esalq", ["Estado", "Valor (R$/t)", "Variação (%)"],
-             [["Paraná", fmt(_ultimo("trigo_pr"), 2), fmt(_var("trigo_pr"), 2)],
-              ["Rio Grande do Sul", fmt(_ultimo("trigo_rs"), 2), fmt(_var("trigo_rs"), 2)]]),
-        _cot("Trigo - Bolsa de Chicago (CME Group)", ["Contrato", "Fechamento (US$ cents/bu)", "Variação"],
-             [["Dez/26", fmt(_ultimo("trigo_cbot"), 2), "-3,25"]]),
-    )
-    p[na + "algodao"] = pagina(
-        _cot("Algodão - Bolsa de Nova York (ICE Futures)", ["Contrato", "Fechamento (cents/lb)", "Variação"],
-             [["Dez/26", fmt(_ultimo("algodao_ice"), 2), "+1,32"]]),
-        _serie_tab("Indicador do Algodão em Pluma Cepea/Esalq", "algodao_cepea", "Valor (centavos de R$/lb)"),
-        _cot("Caroço de Algodão", ["Praça", "Preço (R$/t)", "Variação (%)"],
-             [["Mato Grosso", fmt(_ultimo("caroco_mt"), 2), fmt(_var("caroco_mt"), 2)],
-              ["Oeste da Bahia", fmt(_ultimo("caroco_ba"), 2), fmt(_var("caroco_ba"), 2)]]),
-    )
-    p[na + "cafe"] = pagina(
-        _cot("Café Arábica - Bolsa de Nova York (ICE Futures)", ["Contrato", "Fechamento (cents/lb)", "Variação"],
-             [["Dez/26", fmt(_ultimo("cafe_ny"), 2), "-4,20"]]),
-        _cot("Café Robusta - Bolsa de Londres (ICE Europe)", ["Contrato", "Fechamento (US$/t)", "Variação"],
-             [["Jan/27", fmt(_ultimo("robusta"), 0), "+38"]]),
-        _serie_tab("Indicador do Café Arábica Cepea/Esalq", "cafe_cepea", "À vista R$"),
-        _cot("Café - Mercado Físico (Tipo 6, Bebida Dura)", ["Praça", "Preço (R$/sc)", "Variação (%)"],
-             [["Guaxupé/MG", "1.702,00", "-1,73"], ["Manhuaçu/MG", fmt(_ultimo("manhuacu") + 2, 2), "+0,13"]]),
-    )
-    p[na + "boi-gordo"] = pagina(
-        _serie_tab("Indicador do Boi Gordo Cepea/Esalq (Estado de São Paulo)", "boi", "À vista R$"),
-        _cot("Boi Magro - São Paulo", ["Categoria", "Preço (R$/cab)", "Variação"], [["Boi magro", "5.467,50", "+0,30"]]),
-    )
-    p[na + "petroleo"] = pagina(
-        _cot("Petróleo WTI - NYMEX", ["Contrato", "Fechamento (US$/barril)", "Variação"],
-             [["Dez/26", fmt(_ultimo("wti"), 2), "+0,51"]]),
-        _cot("Petróleo Brent - ICE Londres", ["Contrato", "Fechamento (US$/barril)", "Variação"],
-             [["Jan/27", fmt(_ultimo("brent"), 2), "+0,42"]]),
-    )
-    p["https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"] = pagina(
-        "<h1>Café Arábica Bebida Dura Tipo 6 — Saca 60 kg</h1><p>Atualizado em 17/11/2026</p>",
-        "<table><thead><tr><th>Praça</th><th>Preço (R$)</th><th>Variação</th></tr></thead><tbody>"
-        f"<tr><td>Manhuaçu/MG</td><td>{fmt(_ultimo('manhuacu'), 2)}</td><td>+0,10%</td></tr>"
-        "<tr><td>Varginha/MG</td><td>1.660,00</td><td>+0,60%</td></tr></tbody></table>")
-    p["https://www.agrolink.com.br/cotacoes/graos/soja"] = pagina(
-        "<h1>Soja em grão — Saca 60 kg</h1><p>Atualizado em 17/11/2026</p>",
-        "<table><thead><tr><th>Praça</th><th>Preço (R$)</th><th>Variação</th></tr></thead><tbody>"
-        f"<tr><td>Uberlândia/MG</td><td>{fmt(_ultimo('uberlandia') * 1.001, 2)}</td><td>+0,50%</td></tr></tbody></table>")
     linhas_b3 = [("BGI - Boi gordo", "X26", "bgi"), ("", "Z26", None), ("CCM - Milho", "X26", "ccm1"),
                  ("", "F27", "ccm2"), ("DOL - Dólar comercial", "Z26", "dol"), ("", "F27", None),
                  ("SJC - Soja CME", "F27", "sjc")]
@@ -159,16 +204,11 @@ def paginas_cotacoes() -> dict[str, str]:
     for merc, venc, nome in linhas_b3:
         v = _ultimo(nome) if nome else 1.0
         trs += f"<tr><td>{merc}</td><td>{venc}</td><td>{fmt(v * 0.998, 3)}</td><td>{fmt(v, 3)}</td><td>0,1</td><td>10,00</td></tr>"
-    p["https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp"] = pagina(
+    p["b3_ajustes"] = pagina(
         "<p>Atualizado em : 17/11/2026</p>",
         "<table id='tblDadosAjustes'><thead><tr><th>Mercadoria</th><th>Vencimento</th><th>Preço de ajuste anterior</th>"
         "<th>Preço de ajuste Atual</th><th>Variação</th><th>Valor do ajuste por contrato (R$)</th></tr></thead>"
         f"<tbody>{trs}</tbody></table>")
-    p["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0"] = pagina(
-        "<h2>Precios Pizarra — Cámara Arbitral de Cereales de Rosario</h2><p>17/11/2026</p>",
-        "<table><thead><tr><th>Producto</th><th>$/Tn</th><th>Var.</th></tr></thead><tbody>"
-        f"<tr><td>Trigo</td><td>230.000,00</td><td>0</td></tr><tr><td>Soja</td><td>{fmt(_ultimo('rosario'), 2)}</td><td>+1.500</td></tr>"
-        "</tbody></table>")
     return p
 
 
@@ -241,6 +281,7 @@ class WebFalsa:
 
     def __init__(self, falhar_tudo: bool = False):
         self.paginas = {**paginas_cotacoes(), **paginas_noticias()}
+        self.boletim_b3 = boletim_b3_zip()
         self.falhar_tudo = falhar_tudo
         self.acessos: list[str] = []
         ptax = serie("ptax")
@@ -258,8 +299,17 @@ class WebFalsa:
             if "reuters.com" in url:
                 return Resposta(url, 200, b"User-agent: *\nDisallow: /")
             return Resposta(url, 200, b"User-agent: *\nAllow: /")
-        if "bloomberg.com" in url:
+        if "bloomberg.com" in url or "noticiasagricolas.com.br/cotacoes" in url:    # como os sites reais
             return Resposta(url, 403, b"forbidden")
+        if "b3.com.br/pesquisapregao/download" in url:
+            if url.endswith(f"PR{HOJE:%y%m%d}.zip"):
+                return Resposta(url, 200, self.boletim_b3, headers={"Content-Type": "application/zip"})
+            return Resposta(url, 200, b"<html>arquivo indisponivel</html>")
+        if "api.eia.gov" in url:
+            nome = "wti" if "RWTC" in url else "brent"
+            dados = [{"period": f"{d:%Y-%m-%d}", "value": round(v, 2)} for d, v in sorted(serie(nome).items())[-30:]
+                     if d <= HOJE - timedelta(days=2)]
+            return Resposta(url, 200, json.dumps({"response": {"data": dados[::-1]}}).encode(), encoding="utf-8")
         if "olinda.bcb.gov.br" in url and "CotacaoDolarPeriodo" in url:
             return Resposta(url, 200, self.ptax_json.encode(), encoding="utf-8")
         if "api.bcb.gov.br" in url and "sgs.432" in url:

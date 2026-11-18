@@ -167,3 +167,16 @@ def test_fila_de_ias_real_remonta_prompt_enxuto_e_publica(cfg, web, monkeypatch)
     assert q["modelo"].startswith("nvidia/nemotron-3-super-120b-a12b @ NVIDIA ×2 → qwen2.5:7b @ IA local ×4")
     assert vistos[0] == ("nvidia", False) and all(enx for _, enx in vistos[1:])    # 1 recusa e só prompt enxuto depois
     assert any("cota do dia" in e for e in q["erros_llm"])
+
+
+def test_checar_fontes_e_boletim_sem_as_pastas_data_e_relatorios(cfg, web):
+    """O envio pelo navegador do GitHub pula pastas só com .gitkeep: o agente cria o que faltar."""
+    import shutil
+    from agente.__main__ import checar_fontes
+    for pasta in ("data", "relatorios"):
+        shutil.rmtree(cfg.raiz / pasta, ignore_errors=True)
+    assert checar_fontes(cfg) == 0
+    assert (cfg.raiz / "data" / "checagem_fontes.json").exists()
+    assert (cfg.raiz / "relatorios" / "checagem_fontes.md").exists()
+    shutil.rmtree(cfg.raiz / "data")
+    assert executar(cfg, agora=AGORA, turno="fechamento", llm=LLMFalso(errar_em=())) == 0

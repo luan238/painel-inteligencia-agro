@@ -38,7 +38,9 @@ jobs:
         run: |
           git config user.name "agro-intel-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add relatorios/checagem_fontes.md data/checagem_fontes.json
+          for p in relatorios/checagem_fontes.md data/checagem_fontes.json; do
+            if [ -e "$p" ]; then git add "$p"; fi
+          done
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Checagem de fontes $(date +'%d/%m/%Y %H:%M')"
           git pull --rebase -X theirs

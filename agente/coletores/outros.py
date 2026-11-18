@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+import html
 import re
 from urllib.parse import quote
 from datetime import date, datetime, timezone
@@ -32,7 +33,8 @@ def _url_publica(url: str) -> str:
 def coletar_regex(fonte: dict, ind: dict, cliente, hoje: date, registro: dict | None = None) -> list[Observacao]:
     url = fonte["url"]
     texto = cliente.obter(url, ignorar_robots=bool(fonte.get("ignorar_robots"))).texto
-    texto = re.sub(r"<[^>]+>", " ", texto)
+    texto = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", texto)
+    texto = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", texto)))
     m = re.search(fonte["regex"], texto, re.I | re.S)
     if not m:
         raise ErroColeta(f"padrão não encontrado na página: {fonte['regex'][:60]}")
