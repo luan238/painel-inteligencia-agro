@@ -14,5 +14,708 @@
   "World Grain": "pagina",
   "eFeedLink": "https://www.efeedlink.com/rss.xml",
   "SunSirs": "pagina"
- }
+ },
+ "gerado_em": "2026-11-18T08:15-03:00",
+ "indicadores": {
+  "dolar_ptax": [
+   {
+    "fonte": "Banco Central do Brasil",
+    "tipo": "bcb_ptax",
+    "prioridade": 1,
+    "url": "https://www.bcb.gov.br/",
+    "status": "ok",
+    "mensagem": "40 valor(es); último 5.7851 em 17/11/2026"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "dolar_futuro_b3": [
+   {
+    "fonte": "B3 Agro",
+    "tipo": "b3_ajustes",
+    "prioridade": 1,
+    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+    "status": "erro",
+    "mensagem": "tabela de ajustes não encontrada na página da B3"
+   }
+  ],
+  "selic_meta": [
+   {
+    "fonte": "Banco Central do Brasil",
+    "tipo": "bcb_sgs",
+    "prioridade": 1,
+    "url": "https://www.bcb.gov.br/",
+    "status": "ok",
+    "mensagem": "61 valor(es); último 13.75 em 18/11/2026"
+   }
+  ],
+  "petroleo_wti": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/petroleo",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/petroleo"
+   },
+   {
+    "fonte": "EIA (governo dos EUA)",
+    "tipo": "json_api",
+    "prioridade": 2,
+    "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RWTC&sort[0][column]=period&sort[0][direction]=desc&length=30",
+    "status": "inativa",
+    "mensagem": "opcional — defina o secret EIA_API_KEY no GitHub para ativar"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 3,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "petroleo_brent": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/petroleo",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/petroleo"
+   },
+   {
+    "fonte": "EIA (governo dos EUA)",
+    "tipo": "json_api",
+    "prioridade": 2,
+    "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RBRTE&sort[0][column]=period&sort[0][direction]=desc&length=30",
+    "status": "inativa",
+    "mensagem": "opcional — defina o secret EIA_API_KEY no GitHub para ativar"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 3,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "soja_cbot": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "farelo_cbot": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "oleo_soja_cbot": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "soja_paranagua": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+   }
+  ],
+  "soja_parana": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+   }
+  ],
+  "soja_uberlandia": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/soja",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/soja"
+   },
+   {
+    "fonte": "Agrolink",
+    "tipo": "tabela_html",
+    "prioridade": 2,
+    "url": "https://www.agrolink.com.br/cotacoes/graos/soja",
+    "status": "erro",
+    "mensagem": "linha com ['uberl'] não encontrada na tabela ''"
+   }
+  ],
+  "soja_b3": [
+   {
+    "fonte": "B3 Agro",
+    "tipo": "b3_ajustes",
+    "prioridade": 1,
+    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+    "status": "erro",
+    "mensagem": "tabela de ajustes não encontrada na página da B3"
+   }
+  ],
+  "soja_rosario": [
+   {
+    "fonte": "BCR – Bolsa de Comercio de Rosario",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 545000.0 em 18/11/2026"
+   }
+  ],
+  "milho_cbot": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/milho",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/milho"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "milho_campinas": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/milho",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/milho"
+   }
+  ],
+  "milho_b3": [
+   {
+    "fonte": "B3 Agro",
+    "tipo": "b3_ajustes",
+    "prioridade": 1,
+    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+    "status": "erro",
+    "mensagem": "tabela de ajustes não encontrada na página da B3"
+   }
+  ],
+  "milho_b3_2": [
+   {
+    "fonte": "B3 Agro",
+    "tipo": "b3_ajustes",
+    "prioridade": 1,
+    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+    "status": "erro",
+    "mensagem": "tabela de ajustes não encontrada na página da B3"
+   }
+  ],
+  "trigo_cbot": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "trigo_parana": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo"
+   }
+  ],
+  "trigo_rs": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/trigo",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/trigo"
+   }
+  ],
+  "algodao_ice": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "algodao_cepea": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
+   }
+  ],
+  "caroco_algodao_mt": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
+   }
+  ],
+  "caroco_algodao_ba": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/algodao",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/algodao"
+   }
+  ],
+  "cafe_arabica_ice": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
+   },
+   {
+    "fonte": "Yahoo Finance (checagem)",
+    "tipo": "yahoo",
+    "prioridade": 2,
+    "url": "",
+    "status": "inativa",
+    "mensagem": "fonte desativada na configuração"
+   }
+  ],
+  "cafe_robusta_londres": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
+   }
+  ],
+  "cafe_arabica_cepea": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
+   }
+  ],
+  "cafe_manhuacu": [
+   {
+    "fonte": "Agrolink",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
+    "status": "ok",
+    "mensagem": "1 valor(es); último 1688.0 em 18/11/2026"
+   },
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 2,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/cafe",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/cafe"
+   }
+  ],
+  "boi_gordo_cepea": [
+   {
+    "fonte": "Notícias Agrícolas",
+    "tipo": "tabela_html",
+    "prioridade": 1,
+    "url": "https://www.noticiasagricolas.com.br/cotacoes/boi-gordo",
+    "status": "erro",
+    "mensagem": "HTTP 403 em https://www.noticiasagricolas.com.br/cotacoes/boi-gordo"
+   }
+  ],
+  "boi_b3": [
+   {
+    "fonte": "B3 Agro",
+    "tipo": "b3_ajustes",
+    "prioridade": 1,
+    "url": "https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-ajustes-do-pregao-ptBR.asp",
+    "status": "erro",
+    "mensagem": "tabela de ajustes não encontrada na página da B3"
+   }
+  ]
+ },
+ "noticias": [
+  {
+   "nome": "Notícias Agrícolas",
+   "regiao": "Brasil",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "Farmnews",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.farmnews.com.br/feed/",
+   "itens_lidos": 7,
+   "itens_na_janela": 6,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "AgFeed",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://agfeed.com.br/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 8,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Canal Rural",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.canalrural.com.br/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Globo Rural",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://globorural.globo.com/rss/globorural",
+   "itens_lidos": 30,
+   "itens_na_janela": 29,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Agrolink",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.agrolink.com.br/rss/noticias.rss",
+   "itens_lidos": 30,
+   "itens_na_janela": 30,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Money Times Agro",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.moneytimes.com.br/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "CONAB",
+   "regiao": "Brasil",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 2,
+   "itens_na_janela": 0,
+   "sem_data": 1,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Bolsa de Cereales de Buenos Aires",
+   "regiao": "Argentina",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "BCR – Bolsa de Comercio de Rosario",
+   "regiao": "Argentina",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "sem_itens",
+   "mensagem": "nenhuma matéria reconhecida na página"
+  },
+  {
+   "nome": "Infobae Campo",
+   "regiao": "Argentina",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 10,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Clarín Rural",
+   "regiao": "Argentina",
+   "modo": "rss",
+   "feed": "https://www.clarin.com/rss",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Pro Farmer",
+   "regiao": "Internacional",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 8,
+   "itens_na_janela": 6,
+   "sem_data": 1,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Barchart Grains",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "Reuters Commodities",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/markets/commodities/"
+  },
+  {
+   "nome": "Bloomberg Agriculture",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "USDA WASDE",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.usda.gov não permite ler https://www.usda.gov/oce/commodity/wasde"
+  },
+  {
+   "nome": "USDA FAS",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.fas.usda.gov não permite ler https://www.fas.usda.gov/"
+  },
+  {
+   "nome": "Grain Central",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.graincentral.com não permite ler https://www.graincentral.com/"
+  },
+  {
+   "nome": "Successful Farming",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "AgWeb",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "World Grain",
+   "regiao": "Internacional",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 10,
+   "itens_na_janela": 5,
+   "sem_data": 1,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "eFeedLink",
+   "regiao": "China",
+   "modo": "rss",
+   "feed": "https://www.efeedlink.com/rss.xml",
+   "itens_lidos": 30,
+   "itens_na_janela": 30,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "CZ App / China Agri",
+   "regiao": "China",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "SunSirs",
+   "regiao": "China",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "sem_itens",
+   "mensagem": "nenhuma matéria reconhecida na página"
+  },
+  {
+   "nome": "Reuters China Agri",
+   "regiao": "China",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/world/china/"
+  }
+ ]
 }
