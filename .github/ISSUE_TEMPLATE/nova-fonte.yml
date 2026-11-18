@@ -1,0 +1,56 @@
+name: "➕ Nova fonte confiável"
+description: "Adiciona um site à lista de fontes do agente (config/fontes.yaml)"
+title: "Nova fonte: "
+labels: ["nova-fonte"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Preencha e clique em **Submit new issue**. Em cerca de 1 minuto o robô inclui o site em
+        `config/fontes.yaml`, comenta aqui e fecha a issue. O agente descobre o feed RSS sozinho.
+  - type: input
+    id: nome
+    attributes:
+      label: Nome do site
+      placeholder: "Ex.: Notícias Agrícolas"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: "Página principal ou página de notícias/cotações (começando com https://)"
+      placeholder: "https://www.exemplo.com.br/"
+    validations:
+      required: true
+  - type: dropdown
+    id: regiao
+    attributes:
+      label: Região
+      options: [Brasil, Argentina, Internacional, China, Outra]
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de conteúdo
+      options: [Notícias, Cotações, Notícias e Cotações, Relatório oficial, API oficial]
+    validations:
+      required: true
+  - type: dropdown
+    id: idioma
+    attributes:
+      label: Idioma
+      options: [Português, Espanhol, Inglês, Chinês]
+    validations:
+      required: true
+  - type: input
+    id: rss
+    attributes:
+      label: Feed RSS (opcional)
+      description: "Se souber o endereço do RSS, cole aqui; senão deixe em branco"
+  - type: textarea
+    id: observacao
+    attributes:
+      label: Observação
+      description: "Opcional — ex.: por que a fonte é confiável, o que usar dela"
