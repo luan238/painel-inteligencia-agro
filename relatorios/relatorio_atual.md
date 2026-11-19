@@ -1,10 +1,11 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Fechamento de Quinta-Feira — 19/11/2026**
 
-- **Data e hora da varredura:** 19/11/2026 16:38 BRT
+- **Data e hora da varredura:** 19/11/2026 17:28 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Fechamento de Mercado em 19/11/2026: Dólar PTAX a R$ 5,8889 com 6 altas seguidas e mercados mistos nas commodities.
+- **Atualização do monitor:** cotações conferidas às 17:28; o texto da análise foi escrito às 16:38 (turno Fechamento).
 - **Qualidade dos dados:** 21 ok · 2 com alerta · 0 desatualizados · 7 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×9)
 
 ---
@@ -24,19 +25,19 @@ Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta quarta-feir
 | Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (19/11) | ok |
 | Petróleo WTI | — | — | — | — | — | ⛔ indisponivel |
 | Petróleo Brent | — | — | — | — | — | ⛔ indisponivel |
-| Soja CBOT | US$ 12,1678/bu | -0,71% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (18/11) | ok |
-| Farelo CBOT | US$ 335,89/t curta | +0,21% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (18/11) | ok |
-| Óleo de Soja CBOT | 59,88 ¢/lb | -3,62% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (18/11) | ok |
+| Soja CBOT | US$ 12,0752/bu | -0,76% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (19/11) | ok |
+| Farelo CBOT | US$ 332,29/t curta | -1,07% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (19/11) | ok |
+| Óleo de Soja CBOT | 60,09 ¢/lb | +0,35% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (19/11) | ok |
 | Soja Paranaguá-PR | R$ 169,00/sc | 0,00% | — | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (19/11) | ok |
 | Soja Cascavel-PR | R$ 158,00/sc | 0,00% | — | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (19/11) | ok |
 | Soja Uberlândia-MG | R$ 156,50/sc | +0,32% | — | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (19/11) | ok |
 | Soja B3 | US$ 26,82/sc | -0,71% | — | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (18/11) | ok |
 | Soja Rosario (BCR) | ARS 550.000/t | 0,00% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (18/11) | ⚠️ alerta |
-| Milho CBOT | US$ 4,3550/bu | -2,52% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (18/11) | ok |
+| Milho CBOT | US$ 4,3901/bu | +0,80% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (19/11) | ok |
 | Milho Campinas-SP | R$ 68,00/sc | +0,74% | — | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/) (19/11) | ok |
 | Milho B3 | R$ 71,21/sc | +0,15% | — | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (18/11) | ok |
 | Milho B3 (2º venc.) | R$ 75,95/sc | +0,66% | — | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (18/11) | ok |
-| Trigo CBOT | US$ 5,7000/bu | -4,24% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (18/11) | ok |
+| Trigo CBOT | US$ 5,7825/bu | +1,45% | — | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (19/11) | ok |
 | Trigo Ponta Grossa-PR | R$ 1.550,00/t | 0,00% | — | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (19/11) | ok |
 | Trigo Porto Alegre-RS | R$ 1.630,00/t | 0,00% | — | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (19/11) | ok |
 | Algodão NY (ICE) | — | — | — | — | — | ⛔ indisponivel |
@@ -98,9 +99,9 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** A sessão foi marcada por ajustes mistos nas cotações internacionais da soja na CBOT, onde o primeiro vencimento da soja grão recuou 0,71% para US$ 12,1678/bu e o óleo de soja despencou 3,62%, ao passo que o farelo avançou 0,21% para US$ 335,89/t curta [soja_cbot, farelo_cbot, oleo_soja_cbot]. No mercado doméstico, o avanço expressivo do Dólar PTAX (+1,35% a R$ 5,8889) deu suporte aos preços físicos, mantendo Paranaguá a R$ 169,00/sc e Uberlândia a R$ 156,50/sc [soja_paranagua, soja_uberlandia, dolar_ptax]. No Paraná, o plantio da oleaginosa atingiu 89% da área, impulsionado pela melhora climática, embora alertas sobre os efeitos do El Niño exijam atenção ao manejo [N15, N18]. Além disso, operações policiais investigam esquemas de adulteração de cargas na região sul [[Agrolink]](https://www.agrolink.com.br/noticias/operacao-investiga-esquema-de-adulteracao-de-soja-e-fertilizantes-no-parana--santa-catarina-e-rio-grande-do-sul_521302.html).
 
 **B. Detalhamento com dados e links**
-- **Soja CBOT — 1º vencimento:** US$ 12,1678/bu em 18/11 (-0,71% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
-- **Farelo de Soja CBOT — 1º vencimento:** US$ 335,89/t curta em 18/11 (+0,21% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
-- **Óleo de Soja CBOT — 1º vencimento:** 59,88 ¢/lb em 18/11 (-3,62% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Soja CBOT — 1º vencimento:** US$ 12,0752/bu em 19/11 (-0,76% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Farelo de Soja CBOT — 1º vencimento:** US$ 332,29/t curta em 19/11 (-1,07% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Óleo de Soja CBOT — 1º vencimento:** 60,09 ¢/lb em 19/11 (+0,35% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Soja — Porto de Paranaguá-PR (mercado físico):** R$ 169,00/sc em 19/11 (0,00% no dia; — na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Cascavel-PR (mercado físico):** R$ 158,00/sc em 19/11 (0,00% no dia; — na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Uberlândia-MG (mercado físico):** R$ 156,50/sc em 19/11 (+0,32% no dia; — na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
@@ -132,11 +133,11 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** O complexo de grãos registrou volatilidade nas bolsas internacionais e firmeza no mercado físico nacional. O milho na CBOT recuou para US$ 4,3550/bu, mas o físico em Campinas avançou para R$ 68,00/sc [milho_cbot, milho_campinas]. No cenário interno, a expansão das usinas de etanol de milho altera a competitividade do Brasil e sustenta preços firmes, além de ampliar a oferta de DDG para confinamentos [N20, N26]. O trigo na CBOT caiu para US$ 5,7000/bu, pressionado por fatores externos, enquanto os preços no Paraná e Rio Grande do Sul permaneceram estáveis em R$ 1.550,00/t e R$ 1.630,00/t, com alertas para os riscos de umidade na colheita e pós-colheita [trigo_cbot, trigo_parana, trigo_rs, N21, N22].
 
 **B. Detalhamento com dados e links**
-- **Milho CBOT — 1º vencimento:** US$ 4,3550/bu em 18/11 (-2,52% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Milho CBOT — 1º vencimento:** US$ 4,3901/bu em 19/11 (+0,80% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Milho — Campinas-SP (mercado físico):** R$ 68,00/sc em 19/11 (+0,74% no dia; — na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/)
 - **Milho B3 (CCM) — 1º vencimento:** R$ 71,21/sc em 18/11 (+0,15% no dia; — na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Milho B3 (CCM) — 2º vencimento:** R$ 75,95/sc em 18/11 (+0,66% no dia; — na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Trigo CBOT — 1º vencimento:** US$ 5,7000/bu em 18/11 (-4,24% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Trigo CBOT — 1º vencimento:** US$ 5,7825/bu em 19/11 (+1,45% no dia; — na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Trigo — Ponta Grossa-PR (FOB):** R$ 1.550,00/t em 19/11 (0,00% no dia; — na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 - **Trigo — Porto Alegre-RS (CIF):** R$ 1.630,00/t em 19/11 (0,00% no dia; — na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 
@@ -293,4 +294,4 @@ O JSON completo deste boletim (7 séries diárias, 5 blocos, 8 projeções) est�
 - ⚠️ Café Arábica tipo 6 bebida dura — Manhuaçu-MG — alerta: leitura incerta (data presumida)
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 19/11/2026 16:38 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 19/11/2026 17:28 BRT._
