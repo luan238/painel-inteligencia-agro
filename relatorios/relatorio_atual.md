@@ -1,11 +1,12 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Fechamento de Terça-Feira — 24/11/2026**
 
-- **Data e hora da varredura:** 24/11/2026 18:31 BRT
+- **Data e hora da varredura:** 24/11/2026 19:19 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Câmbio está instável, pressionando commodities; soja e milho em alta, café e boi gordo movimentam mercados.
-- **Qualidade dos dados:** 21 ok · 2 com alerta · 0 desatualizados · 7 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×1 → qwen2.5:7b @ IA local ×5)
+- **Atualização do monitor:** cotações conferidas às 19:19; o texto da análise foi escrito às 18:31 (turno Fechamento).
+- **Qualidade dos dados:** 16 ok · 1 com alerta · 6 desatualizados · 7 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×1 → qwen2.5:7b @ IA local ×5)
 
 ---
 
@@ -20,23 +21,23 @@ Bom dia, senhores operadores. Hoje, 24/11/2026, às 18:31 BRT, o cenário econô
 | Ativo / Indicador | Cotação | Dia | Semana | Mês | Fonte (data) | Status |
 |---|---|---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,8573 | -1,90% | -0,54% | +8,04% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (24/11) | ok |
-| Dólar Futuro B3 | 5.936,09 pts | +0,20% | +0,20% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
+| Dólar Futuro B3 | 5.905,21 pts | -0,52% | -0,32% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
 | Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (24/11) | ok |
 | Petróleo WTI | — | — | — | — | — | ⛔ indisponivel |
 | Petróleo Brent | — | — | — | — | — | ⛔ indisponivel |
-| Soja CBOT | US$ 12,3403/bu | +1,09% | +1,09% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
-| Farelo CBOT | US$ 352,99/t curta | +3,52% | +3,52% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
-| Óleo de Soja CBOT | 58,11 ¢/lb | -2,84% | -2,84% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
+| Soja CBOT | US$ 12,3403/bu | +1,09% | +1,09% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | 🕒 desatualizado |
+| Farelo CBOT | US$ 352,99/t curta | +3,52% | +3,52% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | 🕒 desatualizado |
+| Óleo de Soja CBOT | 58,11 ¢/lb | -2,84% | -2,84% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | 🕒 desatualizado |
 | Soja Paranaguá-PR | R$ 172,00/sc | +1,18% | +1,18% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (24/11) | ok |
 | Soja Cascavel-PR | R$ 161,00/sc | +1,26% | +1,26% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (24/11) | ok |
 | Soja Uberlândia-MG | R$ 159,00/sc | +1,60% | +1,60% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (24/11) | ok |
-| Soja B3 | US$ 27,09/sc | +1,76% | +1,76% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
-| Soja Rosario (BCR) | ARS 560.000/t | +1,82% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (20/11) | ⚠️ alerta |
-| Milho CBOT | US$ 4,3400/bu | -0,12% | -0,12% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
+| Soja B3 | US$ 27,20/sc | +0,43% | +2,19% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Soja Rosario (BCR) | ARS 560.000/t | +1,82% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (20/11) | 🕒 desatualizado |
+| Milho CBOT | US$ 4,3400/bu | -0,12% | -0,12% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | 🕒 desatualizado |
 | Milho Campinas-SP | R$ 68,50/sc | +0,74% | +0,74% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/) (24/11) | ok |
-| Milho B3 | R$ 72,15/sc | +0,94% | +0,94% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
-| Milho B3 (2º venc.) | R$ 77,90/sc | +1,26% | +1,26% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
-| Trigo CBOT | US$ 5,6976/bu | -0,78% | -0,78% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
+| Milho B3 | R$ 71,54/sc | -0,85% | +0,08% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Milho B3 (2º venc.) | R$ 77,21/sc | -0,89% | +0,36% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Trigo CBOT | US$ 5,6976/bu | -0,78% | -0,78% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | 🕒 desatualizado |
 | Trigo Ponta Grossa-PR | R$ 1.560,00/t | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (24/11) | ok |
 | Trigo Porto Alegre-RS | R$ 1.480,00/t | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (24/11) | ok |
 | Algodão NY (ICE) | — | — | — | — | — | ⛔ indisponivel |
@@ -48,12 +49,12 @@ Bom dia, senhores operadores. Hoje, 24/11/2026, às 18:31 BRT, o cenário econô
 | Café Sul de Minas | R$ 1.840,00/sc | -0,54% | -0,54% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/) (24/11) | ok |
 | Café Manhuaçu-MG (Matas de Minas) | R$ 1.694,00/sc | -0,59% | +0,95% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (24/11) | ⚠️ alerta |
 | Boi gordo SP | R$ 395,00/@ | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/) (24/11) | ok |
-| Boi Gordo B3 | R$ 399,00/@ | -0,01% | -0,01% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
+| Boi Gordo B3 | R$ 397,50/@ | -0,38% | -0,39% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
 
 **Spreads calculados:**
 
 - Diferencial Soja Paranaguá − Uberlândia: **R$ 13,00/sc** — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11)
-- Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,75/sc** — Milho B3 (2º venc.) 77,90 − Milho B3 72,15 (23/11)
+- Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,67/sc** — Milho B3 (2º venc.) 77,21 − Milho B3 71,54 (24/11)
 - Diferencial Café Sul de Minas − Manhuaçu: **R$ 146,00/sc** — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11)
 
 ---
@@ -68,7 +69,7 @@ Bom dia, senhores operadores. Hoje, 24/11/2026, às 18:31 BRT, o cenário econô
 
 **B. Detalhamento com dados e links**
 - **Dólar PTAX (venda) — Banco Central:** R$ 5,8573 em 24/11 (-1,90% no dia; -0,54% na semana; +8,04% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
-- **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.936,09 pts em 23/11 (+0,20% no dia; +0,20% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.905,21 pts em 24/11 (-0,52% no dia; -0,32% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Taxa Selic meta — Banco Central:** 13,75% a.a. em 24/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
 - ⛔ **Petróleo WTI — NYMEX (1º vencimento):** indisponível _(nenhuma fonte retornou valor válido)_
 - ⛔ **Petróleo Brent — ICE Londres (1º vencimento):** indisponível _(nenhuma fonte retornou valor válido)_
@@ -98,14 +99,14 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** A soja e o farelo de soja apresentaram duas altas seguidas, refletindo a demanda robusta das usinas de biocombustíveis, conforme noticiado em [[Agrolink]](https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html) e [[Globo Rural]](https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml). O óleo de soja, no entanto, registrou duas quedas consecutivas, em linha com a notícia sobre a sobra de oferta, conforme [[Agrolink]](https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html). O dólar teve uma queda significativa, pressionando a cotação da soja em B3, que também registrou alta, conforme noticiado em [[Globo Rural]](https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml).
 
 **B. Detalhamento com dados e links**
-- **Soja CBOT — 1º vencimento:** US$ 12,3403/bu em 24/11 (+1,09% no dia; +1,09% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
-- **Farelo de Soja CBOT — 1º vencimento:** US$ 352,99/t curta em 24/11 (+3,52% no dia; +3,52% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
-- **Óleo de Soja CBOT — 1º vencimento:** 58,11 ¢/lb em 24/11 (-2,84% no dia; -2,84% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- 🕒 **Soja CBOT — 1º vencimento:** US$ 12,3403/bu em 24/11 (+1,09% no dia; +1,09% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 24/11/2026)_
+- 🕒 **Farelo de Soja CBOT — 1º vencimento:** US$ 352,99/t curta em 24/11 (+3,52% no dia; +3,52% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 24/11/2026)_
+- 🕒 **Óleo de Soja CBOT — 1º vencimento:** 58,11 ¢/lb em 24/11 (-2,84% no dia; -2,84% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 24/11/2026)_
 - **Soja — Porto de Paranaguá-PR (mercado físico):** R$ 172,00/sc em 24/11 (+1,18% no dia; +1,18% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Cascavel-PR (mercado físico):** R$ 161,00/sc em 24/11 (+1,26% no dia; +1,26% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Uberlândia-MG (mercado físico):** R$ 159,00/sc em 24/11 (+1,60% no dia; +1,60% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
-- **Soja B3 (SJC) — 1º vencimento:** US$ 27,09/sc em 23/11 (+1,76% no dia; +1,76% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- ⚠️ **Soja — Pizarra Rosario (BCR, Argentina):** ARS 560.000/t em 20/11 (+1,82% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) _(leitura incerta (coluna por posição))_
+- **Soja B3 (SJC) — 1º vencimento:** US$ 27,20/sc em 24/11 (+0,43% no dia; +2,19% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- 🕒 **Soja — Pizarra Rosario (BCR, Argentina):** ARS 560.000/t em 20/11 (+1,82% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) _(sem cotação nova válida; último valor confiável é de 20/11/2026)_
 
 Notícias que embasam a análise:
 - [Óleo de soja sobe 35,37% com demanda por biocombustíveis](https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html) — Agrolink (24/11 14:55)
@@ -132,11 +133,11 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** O milho registra variações positivas em Campinas e na B3, com três altas seguidas, enquanto o trigo mantém queda. A pressão do dólar, que atingiu seu maior patamar em meses, pressiona os preços internos, especialmente do trigo. Notícias sobre a safrinha de milho e a importação de trigo refletem a dinâmica atual da cadeia agrícola. O farelo de soja mais barato melhora o poder de compra do insumo, pressionando os produtores de suínos.
 
 **B. Detalhamento com dados e links**
-- **Milho CBOT — 1º vencimento:** US$ 4,3400/bu em 24/11 (-0,12% no dia; -0,12% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- 🕒 **Milho CBOT — 1º vencimento:** US$ 4,3400/bu em 24/11 (-0,12% no dia; -0,12% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 24/11/2026)_
 - **Milho — Campinas-SP (mercado físico):** R$ 68,50/sc em 24/11 (+0,74% no dia; +0,74% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/)
-- **Milho B3 (CCM) — 1º vencimento:** R$ 72,15/sc em 23/11 (+0,94% no dia; +0,94% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Milho B3 (CCM) — 2º vencimento:** R$ 77,90/sc em 23/11 (+1,26% no dia; +1,26% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Trigo CBOT — 1º vencimento:** US$ 5,6976/bu em 24/11 (-0,78% no dia; -0,78% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Milho B3 (CCM) — 1º vencimento:** R$ 71,54/sc em 24/11 (-0,85% no dia; +0,08% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Milho B3 (CCM) — 2º vencimento:** R$ 77,21/sc em 24/11 (-0,89% no dia; +0,36% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- 🕒 **Trigo CBOT — 1º vencimento:** US$ 5,6976/bu em 24/11 (-0,78% no dia; -0,78% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 24/11/2026)_
 - **Trigo — Ponta Grossa-PR (FOB):** R$ 1.560,00/t em 24/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 - **Trigo — Porto Alegre-RS (CIF):** R$ 1.480,00/t em 24/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 
@@ -193,7 +194,7 @@ Notícias que embasam a análise:
 - **Café arábica — Sul de Minas-MG:** R$ 1.840,00/sc em 24/11 (-0,54% no dia; -0,54% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/)
 - ⚠️ **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.694,00/sc em 24/11 (-0,59% no dia; +0,95% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) _(leitura incerta (data presumida))_
 - **Boi gordo — São Paulo-SP:** R$ 395,00/@ em 24/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/)
-- **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 399,00/@ em 23/11 (-0,01% no dia; -0,01% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 397,50/@ em 24/11 (-0,38% no dia; -0,39% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 
 Notícias que embasam a análise:
 - [Expectativa de boas safras no Vietnã e Brasil pressiona preços do café](https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml) — Globo Rural (24/11 16:42)
@@ -284,14 +285,19 @@ O JSON completo deste boletim (7 séries diárias, 5 blocos, 8 projeções) est�
 
 ## 🛡️ Qualidade dos dados e auditoria
 
-- **Indicadores:** 21 ok, 2 com alerta, 0 desatualizados, 7 indisponíveis (de 30).
+- **Indicadores:** 16 ok, 1 com alerta, 6 desatualizados, 7 indisponíveis (de 30).
 - **Texto:** gerado por IA (gemini-flash-lite-latest @ Google Gemini ×1 → qwen2.5:7b @ IA local ×5) e conferido pelo verificador — campos verificados: 127; respostas reprovadas e devolvidas à IA: 0; campos trocados por texto automático: 0.
 - **Notícias:** 38 usadas de 148 coletadas; 10 fontes responderam, 12 falharam.
 
 **Indicadores com ressalva:**
 - ⛔ Petróleo WTI — NYMEX (1º vencimento) — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Petróleo Brent — ICE Londres (1º vencimento) — indisponivel: nenhuma fonte retornou valor válido
-- ⚠️ Soja — Pizarra Rosario (BCR, Argentina) — alerta: leitura incerta (coluna por posição)
+- 🕒 Soja CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 24/11/2026
+- 🕒 Farelo de Soja CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 24/11/2026
+- 🕒 Óleo de Soja CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 24/11/2026
+- 🕒 Soja — Pizarra Rosario (BCR, Argentina) — desatualizado: sem cotação nova válida; último valor confiável é de 20/11/2026
+- 🕒 Milho CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 24/11/2026
+- 🕒 Trigo CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 24/11/2026
 - ⛔ Algodão ICE Nova York — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Caroço de Algodão — Mato Grosso — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Caroço de Algodão — Oeste da Bahia — indisponivel: nenhuma fonte retornou valor válido
@@ -300,4 +306,4 @@ O JSON completo deste boletim (7 séries diárias, 5 blocos, 8 projeções) est�
 - ⚠️ Café Arábica tipo 6 bebida dura — Manhuaçu-MG — alerta: leitura incerta (data presumida)
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 24/11/2026 18:31 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 24/11/2026 19:19 BRT._
