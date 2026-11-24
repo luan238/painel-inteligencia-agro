@@ -1,17 +1,17 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
-**Fechamento de Segunda-Feira — 23/11/2026**
+**Abertura de Terça-Feira — 24/11/2026**
 
-- **Data e hora da varredura:** 23/11/2026 23:56 BRT
+- **Data e hora da varredura:** 24/11/2026 03:24 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
-- **Escopo do turno:** Fechamento Germinare Agro: Dólar PTAX a R$ 5,9708, soja em alta na CBOT e mercados firmes em todos os complexos.
-- **Qualidade dos dados:** 20 ok · 1 com alerta · 2 desatualizados · 7 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×7)
+- **Escopo do turno:** Dólar em alta pressiona preços agrícolas, com 7 altas seguidas.
+- **Qualidade dos dados:** 21 ok · 2 com alerta · 0 desatualizados · 7 indisponíveis — texto: IA verificada (qwen2.5:7b @ IA local ×10)
 
 ---
 
 ## 🎧 1. Versão para Ouvir (roteiro falado — 2 a 3 min)
 
-Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta segunda-feira, 23/11/2026, às 23:56. Iniciamos pelo cenário macroeconômico e cambial. O Dólar PTAX encerrou cotado a R$ 5,9708, registrando alta de +1,39% na semana e avanço de +10,14% no mês, acumulando 7 altas seguidas. Esse movimento pressiona diretamente os custos agrícolas, enquanto a taxa Selic permanece inalterada em 13,75% a.a. No complexo soja, o grão na CBOT (1º vencimento) marcou US$ 12,2078/bu em 20/11, alta diária de +1,10%. No mercado físico brasileiro, o Porto de Paranaguá fechou a R$ 170,00/sc em 23/11, mantendo-se estável na variação semanal. Passando para o complexo milho e coprodutos, a B3 registrou três altas seguidas, com o 1º vencimento a R$ 72,15/sc e o 2º a R$ 77,90/sc. O milho em Campinas-SP ficou cotado a R$ 68,00/sc e o trigo FOB em Ponta Grossa-PR a R$ 1.560,00/t. No setor de etanol de milho, destaca-se a compra de 42% da Neomille pela Petrobras por R$ 2,8 bilhões. No complexo algodão, a pluma em Rondonópolis-MT fechou a 406,00 ¢R$/lb, com variação de 0,00% no dia e na semana, sustentada pela alta do Dólar PTAX. As referências na ICE Nova York continuam indisponíveis. Nos demais mercados, o café arábica no Sul de Minas encerrou a R$ 1.850,00/sc e o boi gordo em São Paulo a R$ 395,00/@, ambos estáveis no comparativo semanal. Vamos às tabelas e ao painel.
+Bom dia, senhores e senhoras, estamos em 23 de novembro de 2026, às 03:24 horas. Hoje, o cenário econômico está marcado pela pressão do dólar, que registra 7 altas seguidas, elevando os custos de fertilizantes e insumos agrícolas. Vamos analisar os principais mercados. Na soja, o grão e o farelo estão em alta, enquanto o óleo soja sofre uma baixa, pressionados pelo dólar. O milho B3 registra 3 altas seguidas, enquanto o trigo mantém-se estável. O algodão, em pluma, está em estagnação, pressionado pela moeda. O café arábica mantém-se estável, enquanto o boi gordo segue em queda. A pressão cambial deve ser monitorada de perto. Vamos às tabelas e ao painel.
 
 ---
 
@@ -21,7 +21,7 @@ Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta segunda-fei
 |---|---|---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,9708 | +1,39% | +1,39% | +10,14% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (23/11) | ok |
 | Dólar Futuro B3 | 5.936,09 pts | +0,20% | +0,20% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
-| Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (23/11) | ok |
+| Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (24/11) | ok |
 | Petróleo WTI | — | — | — | — | — | ⛔ indisponivel |
 | Petróleo Brent | — | — | — | — | — | ⛔ indisponivel |
 | Soja CBOT | US$ 12,2078/bu | +1,10% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (20/11) | ok |
@@ -29,7 +29,7 @@ Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta segunda-fei
 | Óleo de Soja CBOT | 59,81 ¢/lb | -0,47% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (20/11) | ok |
 | Soja Paranaguá-PR | R$ 170,00/sc | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (23/11) | ok |
 | Soja Cascavel-PR | R$ 159,00/sc | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (23/11) | ok |
-| Soja Uberlândia-MG | R$ 156,50/sc | 0,00% | 0,00% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (23/11) | 🕒 desatualizado |
+| Soja Uberlândia-MG | R$ 156,50/sc | 0,00% | 0,00% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (24/11) | ok |
 | Soja B3 | US$ 27,09/sc | +1,76% | +1,76% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
 | Soja Rosario (BCR) | ARS 550.000/t | 0,00% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (19/11) | ⚠️ alerta |
 | Milho CBOT | US$ 4,3451/bu | -1,02% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (20/11) | ok |
@@ -46,30 +46,30 @@ Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta segunda-fei
 | Café Arábica NY (ICE) | — | — | — | — | — | ⛔ indisponivel |
 | Café Robusta Londres | — | — | — | — | — | ⛔ indisponivel |
 | Café Sul de Minas | R$ 1.850,00/sc | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/) (23/11) | ok |
-| Café Manhuaçu-MG (Matas de Minas) | R$ 1.704,00/sc | +1,55% | +1,55% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (23/11) | 🕒 desatualizado |
+| Café Manhuaçu-MG (Matas de Minas) | R$ 1.704,00/sc | 0,00% | +1,55% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (24/11) | ⚠️ alerta |
 | Boi gordo SP | R$ 395,00/@ | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/) (23/11) | ok |
 | Boi Gordo B3 | R$ 399,00/@ | -0,01% | -0,01% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (23/11) | ok |
 
 **Spreads calculados:**
 
-- Diferencial Soja Paranaguá − Uberlândia: **R$ 13,50/sc** — Soja Paranaguá-PR 170,00 − Soja Uberlândia-MG 156,50 (23/11)
+- Diferencial Soja Paranaguá − Uberlândia: **R$ 13,50/sc** — Soja Paranaguá-PR 170,00 − Soja Uberlândia-MG 156,50 (23/11 vs 24/11)
 - Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,75/sc** — Milho B3 (2º venc.) 77,90 − Milho B3 72,15 (23/11)
-- Diferencial Café Sul de Minas − Manhuaçu: **R$ 146,00/sc** — Café Sul de Minas 1.850,00 − Café Manhuaçu-MG (Matas de Minas) 1.704,00 (23/11)
+- Diferencial Café Sul de Minas − Manhuaçu: **R$ 146,00/sc** — Café Sul de Minas 1.850,00 − Café Manhuaçu-MG (Matas de Minas) 1.704,00 (23/11 vs 24/11)
 
 ---
 
 ## 🌱 3. Análise Detalhada por Complexo
 
-### 🏛️🛢️ Cenário Político, Macro, Câmbio & Energia — Dólar PTAX atinge R$ 5,9708 e pressiona custos agrícolas
+### 🏛️🛢️ Cenário Político, Macro, Câmbio & Energia — Dólar em alta pressiona preços agrícolas
 
-**Viés de mercado:** Viés de alta para o câmbio com foco nos impactos sobre custos de fertilizantes e diesel.
+**Viés de mercado:** Viés de alta para o dólar, com riscos de reversão se houver sinalização de política monetária mais moderada.
 
-**A. Resumo executivo.** O mercado cambial registrou forte volatilidade, com a PTAX atingindo R$ 5,9708 em alta de +1,39% na semana e +10,14% no mês, acumulando sete altas seguidas. O dólar futuro B3 encerrou a 5.936,09 pts (+0,20%). A alta da moeda norte-americana pressionou os custos de fertilizantes no Brasil, encarecendo produtos como o MAP e mantendo preços elevados mesmo com quedas internacionais [[Globo Rural]](https://globorural.globo.com/insumos/noticia/2026/11/dolar-pressiona-precos-dos-fertilizantes-no-brasil.ghtml). Além disso, a valorização cambial ajudou a sustentar os preços internos de commodities como a soja e o milho [N3, N6]. Enquanto isso, a taxa Selic foi mantida em 13,75% a.a. [selic_meta], e o mercado segue atento às discussões sobre crédito rural [[Globo Rural]](https://globorural.globo.com/credito-e-investimento/noticia/2026/11/tcu-deve-votar-relatorio-sobre-irregularidades-no-credito-rural.ghtml) e aos custos de combustíveis com o encerramento de subsídios [[Agrolink]](https://www.agrolink.com.br/noticias/diesel-e-biodiesel--o-que-muda-para-o-produtor_521376.html).
+**A. Resumo executivo.** O dólar registrou 7 altas seguidas, encerrando a R$ 5,9708, pressionando os preços dos fertilizantes no Brasil, conforme relatório Nobel Agro Report [[Globo Rural]](https://globorural.globo.com/insumos/noticia/2026/11/dolar-pressiona-precos-dos-fertilizantes-no-brasil.ghtml). A valorização do câmbio também favoreceu os preços da soja, apesar das perdas na Bolsa de Chicago, segundo Grão Direto [[Agrolink]](https://www.agrolink.com.br/noticias/dolar-sobe-mais-de-4--e-favorece-precos-da-soja_521391.html). O NDF teórico aponta para uma alta de R$ 0,2008, refletindo a tendência de fortalecimento da moeda americana. O petróleo WTI e Brent permanecem indisponíveis.
 
 **B. Detalhamento com dados e links**
 - **Dólar PTAX (venda) — Banco Central:** R$ 5,9708 em 23/11 (+1,39% no dia; +1,39% na semana; +10,14% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
 - **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.936,09 pts em 23/11 (+0,20% no dia; +0,20% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Taxa Selic meta — Banco Central:** 13,75% a.a. em 23/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
+- **Taxa Selic meta — Banco Central:** 13,75% a.a. em 24/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
 - ⛔ **Petróleo WTI — NYMEX (1º vencimento):** indisponível _(nenhuma fonte retornou valor válido)_
 - ⛔ **Petróleo Brent — ICE Londres (1º vencimento):** indisponível _(nenhuma fonte retornou valor válido)_
 
@@ -86,16 +86,16 @@ Notícias que embasam a análise:
 - [After the Bell | Winter wheat futures mixed in face of firming U.S. dollar](https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar) — Pro Farmer (23/11 16:52)
 
 **C. Visão de consultoria e indicações estratégicas**
-- **Elo: Produtores Rurais (Gestão de Custos, Insumos e Crédito):** A valorização do dólar a R$ 5,9708 encareceu insumos essenciais como o MAP e a ureia, exigindo cautela na gestão de custos [[Globo Rural]](https://globorural.globo.com/insumos/noticia/2026/11/dolar-pressiona-precos-dos-fertilizantes-no-brasil.ghtml). Produtores também devem acompanhar a auditoria do TCU sobre o crédito rural e o impacto do fim dos subsídios ao diesel [N4, N7].
-- **Elo: Cooperativas e Revendas (Barter e Políticas de Crédito):** O cenário de dólar forte impacta as operações de barter e a precificação de fertilizantes, que subiram no mercado interno apesar das quedas externas [[Globo Rural]](https://globorural.globo.com/insumos/noticia/2026/11/dolar-pressiona-precos-dos-fertilizantes-no-brasil.ghtml). Cooperativas devem monitorar o cenário de inadimplência e renegociações de dívidas no campo [[Globo Rural]](https://globorural.globo.com/credito-e-investimento/noticia/2026/11/tcu-deve-votar-relatorio-sobre-irregularidades-no-credito-rural.ghtml).
-- **Elo: Indústrias, Usinas e Logística (Diesel, Frete e Energia):** O encerramento de subsídios federais ao diesel traz novas preocupações com os custos de transporte e produção agrícola [[Agrolink]](https://www.agrolink.com.br/noticias/diesel-e-biodiesel--o-que-muda-para-o-produtor_521376.html). As indústrias monitoram a competitividade frente às variações de custos logísticos e energéticos.
-- **Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF):** Com o dólar PTAX em R$ 5,9708 e alta de +10,14% no mês, as mesas operam com foco na proteção cambial e nas projeções de NDF a R$ 6,1716. A sequência de altas na PTAX exige rigor no gerenciamento de posições direcionais e basis [dolar_ptax].
+- **Elo: Produtores Rurais (Gestão de Custos, Insumos e Crédito):** Aumento de custos com fertilizantes deve ser gerenciado, considerando a alta do dólar. Oportunidades de crédito podem ser exploradas com a valorização do câmbio.
+- **Elo: Cooperativas e Revendas (Barter e Políticas de Crédito):** Revendas devem ajustar suas políticas de crédito, considerando a pressão de custos com insumos. Barter pode ser uma estratégia para mitigar impactos.
+- **Elo: Indústrias, Usinas e Logística (Diesel, Frete e Energia):** Monitorar os custos de diesel e frete, considerando a redução dos subsídios federais. A valorização do dólar pode impactar custos de importação de insumos.
+- **Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF):** Traders devem ajustar suas posições, considerando o NDF teórico de R$ 6,1716. O viés de alta do dólar deve ser mantido, mas gatilhos como sinalização de política monetária mais moderada podem inviabilizar essa tendência.
 
-### 🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo) — Soja avança em Chicago impulsionada por ajustes técnicos e farelo
+### 🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo) — Soja e farelo em alta, óleo em baixa, dólar pressiona preços
 
-**Viés de mercado:** Viés altista sustentado pela demanda externa e câmbio elevado, com atenção aos riscos climáticos.
+**Viés de mercado:** Viés de alta para soja e farelo, com dólar como fator de pressão.
 
-**A. Resumo executivo.** A soja na CBOT fechou a US$ 12,2078/bu em 20/11 [soja_cbot], impulsionada pela valorização do farelo de soja, que subiu +2,62% para US$ 340,99/t curta [farelo_cbot]. No mercado físico brasileiro, o preço em Paranaguá permaneceu estável a R$ 170,00/sc em 23/11 [soja_paranagua], sustentado pelo patamar elevado do dólar PTAX, cotado a R$ 5,9708 [dolar_ptax]. Notícias apontam que a demanda internacional equilibra o impacto de uma maior produção mundial [[Globo Rural]](https://globorural.globo.com/cotacoes/noticia/2026/11/soja-sobe-na-bolsa-de-chicago-com-ajustes-tecnicos-e-valorizacao-do-farelo.ghtml), enquanto tempestades no Rio Grande do Sul trouxeram perdas pontuais em lavouras [[Globo Rural]](https://globorural.globo.com/clima/noticia/2026/11/temporal-provoca-perdas-de-ate-97percent-em-lavouras-e-atinge-35-mil-hectares-em-tupancireta.ghtml).
+**A. Resumo executivo.** A soja e o farelo de soja apresentaram movimentos de alta, com a soja CBOT avançando 1,10% e o farelo em 2,62% na semana, enquanto o óleo de soja recuou 0,47%. A alta da soja é impulsionada por fatores técnicos e fundamentais, conforme [[Globo Rural]](https://globorural.globo.com/cotacoes/noticia/2026/11/soja-sobe-na-bolsa-de-chicago-com-ajustes-tecnicos-e-valorizacao-do-farelo.ghtml). O dólar fortalecido pressiona preços no Brasil, com a moeda avançando 10,14% no mês, conforme [[Pro Farmer]](https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar) e [[Agrolink]](https://www.agrolink.com.br/noticias/calcario-em-superficie-entrega-mais-produtividade-na-soja--aponta-estudo-da-ufmt_521396.html).
 
 **B. Detalhamento com dados e links**
 - **Soja CBOT — 1º vencimento:** US$ 12,2078/bu em 20/11 (+1,10% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
@@ -103,7 +103,7 @@ Notícias que embasam a análise:
 - **Óleo de Soja CBOT — 1º vencimento:** 59,81 ¢/lb em 20/11 (-0,47% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Soja — Porto de Paranaguá-PR (mercado físico):** R$ 170,00/sc em 23/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Cascavel-PR (mercado físico):** R$ 159,00/sc em 23/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
-- 🕒 **Soja — Uberlândia-MG (mercado físico):** R$ 156,50/sc em 23/11 (0,00% no dia; 0,00% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) _(Agrolink: data no futuro (24/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 23/11/2026)_
+- **Soja — Uberlândia-MG (mercado físico):** R$ 156,50/sc em 24/11 (0,00% no dia; 0,00% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
 - **Soja B3 (SJC) — 1º vencimento:** US$ 27,09/sc em 23/11 (+1,76% no dia; +1,76% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - ⚠️ **Soja — Pizarra Rosario (BCR, Argentina):** ARS 550.000/t em 19/11 (0,00% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) _(leitura incerta (coluna por posição))_
 
@@ -111,25 +111,25 @@ Notícias que embasam a análise:
 - [Cacau e café arábica puxam alta de índice agrícola](https://www.agrolink.com.br/noticias/cacau-e-cafe-arabica-puxam-alta-de-indice-agricola_521377.html) — Agrolink (23/11 11:01)
 - [Soja sobe na bolsa de Chicago com ajustes técnicos e valorização do farelo](https://globorural.globo.com/cotacoes/noticia/2026/11/soja-sobe-na-bolsa-de-chicago-com-ajustes-tecnicos-e-valorizacao-do-farelo.ghtml) — Globo Rural (23/11 19:58)
 - [After the Bell | Winter wheat futures mixed in face of firming U.S. dollar](https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar) — Pro Farmer (23/11 16:52)
+- [Plantio da soja avança e exportações chegam a 106,5 mi t](https://www.agrolink.com.br/noticias/plantio-da-soja-avanca-e-exportacoes-chegam-a-106-5-mi-t_521408.html) — Agrolink (24/11 02:45)
 - [Indonesia to require permits and inspections for whole soybean imports from 2027](https://www.efeedlink.com/articles/indonesia-to-require-permits-and-inspections-for-whole-soybean-imports-from-2027) — eFeedLink (23/11 23:08)
 - [Calcário em superfície entrega mais produtividade na soja, aponta estudo da UFMT](https://www.agrolink.com.br/noticias/calcario-em-superficie-entrega-mais-produtividade-na-soja--aponta-estudo-da-ufmt_521396.html) — Agrolink (23/11 16:04)
 - [Dólar sobe mais de 4% e favorece preços da soja](https://www.agrolink.com.br/noticias/dolar-sobe-mais-de-4--e-favorece-precos-da-soja_521391.html) — Agrolink (23/11 15:26)
-- [Soja chega a R$ 174,68 em Santos após nova alta](https://www.agrolink.com.br/noticias/soja-chega-a-r--174-68-em-santos-apos-nova-alta_521389.html) — Agrolink (23/11 14:51)
 - [Petrobras prevê US$ 13,1 bilhões para transição energética no plano 2027-2031](https://www.canalrural.com.br/economia/petrobras-preve-us-131-bilhoes-para-transicao-energetica-no-plano-2027-2031/) — Canal Rural (23/11 20:52)
 - [Grãos abrem semana em alta na bolsa de Chicago](https://globorural.globo.com/cotacoes/noticia/2026/11/graos-abrem-semana-em-alta-na-bolsa-de-chicago.ghtml) — Globo Rural (23/11 14:56)
 - [Temporal provoca perdas de até 97% em lavouras e atinge 35 mil hectares em Tupanciretã (RS)](https://globorural.globo.com/clima/noticia/2026/11/temporal-provoca-perdas-de-ate-97percent-em-lavouras-e-atinge-35-mil-hectares-em-tupancireta.ghtml) — Globo Rural (23/11 14:58)
 
 **C. Visão de consultoria e indicações estratégicas**
-- **Elo: Produtores Rurais (Comercialização e Hedge):** Aproveitar patamares firmes nos portos, como R$ 170,00/sc em Paranaguá [soja_paranagua] e R$ 174,55/sc em Rio Grande [[Agrolink]](https://www.agrolink.com.br/noticias/soja-chega-a-r--174-68-em-santos-apos-nova-alta_521389.html), para travar custos e garantir margens frente à volatilidade climática e cambial.
-- **Elo: Cooperativas e Recebimento de Grãos:** Monitorar a capacidade de armazenamento e os impactos de eventos climáticos extremos regionais, como perdas em lavouras no Rio Grande do Sul [[Globo Rural]](https://globorural.globo.com/clima/noticia/2026/11/temporal-provoca-perdas-de-ate-97percent-em-lavouras-e-atinge-35-mil-hectares-em-tupancireta.ghtml), ajustando o planejamento logístico para a safra.
-- **Elo: Indústrias Esmagadoras e Confinamentos (Farelo e Óleo):** Acompanhar a forte valorização do farelo de soja na CBOT (+2,62% a US$ 340,99/t curta) [farelo_cbot] e a pressão de baixa no óleo de soja (-0,47% a 59,81 ¢/lb) [oleo_soja_cbot], ajustando margens de esmagamento.
-- **Elo: Tradings e Visão do Trader (Basis, Spreads & CBOT):** Explorar oportunidades de arbitragem com a Soja B3 a US$ 27,09/sc [soja_b3] e o câmbio a R$ 5,9708 [dolar_ptax], de olho em ajustes técnicos e na demanda internacional por farelo.
+- **Elo: Produtores Rurais (Comercialização e Hedge):** Com a soja em alta, produtores devem buscar oportunidades de comercialização, mas também considerar hedge para proteger-se contra eventuais quedas.
+- **Elo: Cooperativas e Recebimento de Grãos:** Cooperativas devem monitorar o movimento do dólar, pois a valorização pode afetar a recepção de grãos, especialmente se a moeda continuar a subir.
+- **Elo: Indústrias Esmagadoras e Confinamentos (Farelo e Óleo):** Indústrias devem se preparar para a alta do farelo, o que pode impactar custos de produção, enquanto o óleo de soja em queda pode ser visto como uma oportunidade para reduzir custos de produção de ração.
+- **Elo: Tradings e Visão do Trader (Basis, Spreads & CBOT):** Tradings devem monitorar o spread entre Paranaguá e Uberlândia, que se manteve estável, e considerar posições direcionais no CBOT, com viés de alta para soja e farelo.
 
-### 🌽🌾 Complexo Milho, Sorgo, Trigo e Coprodutos (Etanol e DDG/DDGS) — Milho B3 avança com dólar forte e Petrobras compra Neomille
+### 🌽🌾 Complexo Milho, Sorgo, Trigo e Coprodutos (Etanol e DDG/DDGS) — Milho B3 em alta, trigo estável, dólar fortalecido
 
-**Viés de mercado:** Viés altista no mercado doméstico sustentado pela valorização cambial, exigindo monitoramento rigoroso de pragas nas lavouras.
+**Viés de mercado:** Aumento no preço do milho B3 e do dólar preocupa produtores e tradings.
 
-**A. Resumo executivo.** O mercado futuro de milho na B3 encerrou com valorização, acumulando três altas seguidas e registrando R$ 72,15/sc no 1º vencimento e R$ 77,90/sc no 2º vencimento, amparado pela alta do dólar PTAX a R$ 5,9708 [[Agrolink]](https://www.agrolink.com.br/noticias/milho-fecha-a-r--71-45-na-b3_521392.html). Em Chicago, o milho recuou para US$ 4,3451/bu [milho_cbot]. No setor de coprodutos, a Petrobras anunciou a compra de 42% da Neomille por R$ 2,8 bilhões, marcando o retorno da estatal ao etanol de milho [N20, N22]. No campo, alertas indicam riscos fitossanitários com o ataque precoce de lagarta-do-cartucho e perdas históricas associadas aos enfezamentos transmitidos pela cigarrinha-do-milho [N21, N23].
+**A. Resumo executivo.** O milho B3 (CCM) registra três altas seguidas, com variação diária positiva de +0,94% e +1,26% para os vencimentos 1º e 2º, respectivamente. Esta tendência é impulsionada pela notícia [N19/N20] de que a Petrobras comprou 42% da Neomille, um produtor de etanol de milho, indicando um aumento na demanda para o grão. O trigo, por outro lado, mantém-se estável, com variação diária de 0,00%. O dólar, por sua vez, atinge sete altas seguidas, com variação diária de +1,39%, pressionando os preços dos grãos no mercado físico e na B3.
 
 **B. Detalhamento com dados e links**
 - **Milho CBOT — 1º vencimento:** US$ 4,3451/bu em 20/11 (-1,02% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
@@ -147,22 +147,22 @@ Notícias que embasam a análise:
 - [After the Bell | Winter wheat futures mixed in face of firming U.S. dollar](https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar) — Pro Farmer (23/11 16:52)
 - [Grãos abrem semana em alta na bolsa de Chicago](https://globorural.globo.com/cotacoes/noticia/2026/11/graos-abrem-semana-em-alta-na-bolsa-de-chicago.ghtml) — Globo Rural (23/11 14:56)
 - [Milho fecha a R$ 71,45 na B3](https://www.agrolink.com.br/noticias/milho-fecha-a-r--71-45-na-b3_521392.html) — Agrolink (23/11 15:28)
-- [Ataque precoce de lagarta aumenta riscos para o milho](https://www.agrolink.com.br/noticias/ataque-precoce-de-lagarta-aumenta-riscos-para-o-milho_521387.html) — Agrolink (23/11 14:22)
 - [Petrobras retorna ao setor de etanol com aquisição de fatia na Neomille](https://globorural.globo.com/biocombustiveis/noticia/2026/11/petrobras-retorna-ao-setor-de-etanol-com-aquisicao-de-fatia-na-neomille.ghtml) — Globo Rural (24/11 00:54)
-- [Doenças do milho geram prejuízo de US$ 25,8 bilhões em cinco anos](https://www.agrolink.com.br/noticias/doencas-do-milho-geram-prejuizo-de-us--25-8-bilhoes-em-cinco-anos_521386.html) — Agrolink (23/11 13:54)
+- [Crédito restrito pesa sobre a safra apesar da alta dos grãos](https://www.agrolink.com.br/noticias/credito-restrito-pesa-sobre-a-safra-apesar-da-alta-dos-graos_521409.html) — Agrolink (24/11 02:59)
+- [Ataque precoce de lagarta aumenta riscos para o milho](https://www.agrolink.com.br/noticias/ataque-precoce-de-lagarta-aumenta-riscos-para-o-milho_521387.html) — Agrolink (23/11 14:22)
 - [Thailand's cane and cassava growers push to keep US ethanol import barriers](https://www.efeedlink.com/articles/thailand-s-cane-and-cassava-growers-push-to-keep-us-ethanol-import-barriers) — eFeedLink (23/11 23:11)
 
 **C. Visão de consultoria e indicações estratégicas**
-- **Elo: Produtores de Milho, Sorgo e Trigo:** Devem intensificar o monitoramento fitossanitário nas lavouras devido ao ataque precoce de lagarta-do-cartucho e aos riscos de enfezamentos transmitidos pela cigarrinha-do-milho. A alta do dólar e os patamares de preços na B3 oferecem oportunidades de comercialização.
-- **Elo: Cooperativas e Sementeiras:** Atentar para a demanda por defensivos e sementes resistentes, visto que o manejo de pragas e doenças é crítico para preservar o potencial produtivo das lavouras nesta safra.
-- **Elo: Moinhos, Granjas (Frango, Ovos, Suínos) e Confinamentos:** Monitorar a volatilidade dos custos de insumos diante da firmeza dos preços domésticos do milho e do trigo, ajustando as estratégias de hedge para proteção de margens.
-- **Elo: Tradings e Visão do Trader (B3 vs. CBOT):** Acompanhar o spread entre a B3 e a CBOT, influenciado diretamente pela forte valorização do dólar PTAX a R$ 5,9708 e pelo avanço do setor de etanol de milho com o aporte da Petrobras na Neomille.
+- **Elo: Produtores de Milho, Sorgo e Trigo:** Aumento nas cotações de milho e trigo pode pressionar custos de produção, mas trigo está estável
+- **Elo: Cooperativas e Sementeiras:** Aumento nas cotações de milho pode beneficiar produtores e cooperativas, enquanto trigo está estável
+- **Elo: Moinhos, Granjas (Frango, Ovos, Suínos) e Confinamentos:** Aumento nas cotações de milho e trigo pode aumentar custos de produção, pressionando margens
+- **Elo: Tradings e Visão do Trader (B3 vs. CBOT):** Milho B3 em alta, com variação diária positiva, enquanto milho CBOT está estável
 
-### ☁️ Complexo Algodão e Coprodutos (Pluma, Caroço e Farelo) — Algodão estável em MT com suporte do Dólar PTAX em alta
+### ☁️ Complexo Algodão e Coprodutos (Pluma, Caroço e Farelo) — Algodão em estagnação, dólar em alta pressiona exportações
 
-**Viés de mercado:** Viés neutro para a pluma no mercado interno, com atenção redobrada ao planejamento operacional e à volatilidade cambial.
+**Viés de mercado:** Viés neutro, com pressão de dólar e incertezas de produtividade.
 
-**A. Resumo executivo.** O mercado físico do algodão em pluma em Rondonópolis-MT manteve-se cotado a 406,00 ¢R$/lb em 23/11, com variação de 0,00% na semana. Enquanto o contrato da ICE Nova York permaneceu com cotação indisponível, o cenário macroeconômico foi marcado pelo avanço do Dólar PTAX (venda) a R$ 5,9708, registrando alta de +1,39% na semana e acumulando +10,14% desde 30/10, na 7ª alta seguida. No âmbito produtivo e industrial, debates recentes apontam que a eficiência na semeadura e no manejo impactam diretamente a produtividade e a qualidade da fibra na Bahia e em Mato Grosso [[Agrolink]](https://www.agrolink.com.br/noticias/da-semeadura-a-colheita--algodao-exige-planejamento_521394.html), ao passo que movimentos estratégicos em bioinsumos envolvem grandes grupos produtores da região [[AgFeed]](https://agfeed.com.br/negocios/exclusivo-scheffer-e-mosaic-se-unem-nos-bioinsumos-de-olho-em-mercado-de-r-3-bi). Ademais, relatórios setoriais indicam que os contratos futuros de algodão recuaram em período recente de análise global [[Agrolink]](https://www.agrolink.com.br/noticias/cacau-e-cafe-arabica-puxam-alta-de-indice-agricola_521377.html).
+**A. Resumo executivo.** O algodão em pluma em Rondonópolis-MT se manteve estável em R$ 406,00/lb, sem mudanças significativas na semana. O dólar, por outro lado, registrou sete altas seguidas, atingindo R$ 5,9708, pressionando as exportações de algodão. Nota [[Agrolink]](https://www.agrolink.com.br/noticias/da-semeadura-a-colheita--algodao-exige-planejamento_521394.html) destaca a importância do planejamento na produção, com atrasos potencialmente impactando a qualidade da fibra. O cenário de alta do dólar [[Agrolink]](https://www.agrolink.com.br/noticias/cacau-e-cafe-arabica-puxam-alta-de-indice-agricola_521377.html) e a incerteza sobre a produtividade agrícola [[Agrolink]](https://www.agrolink.com.br/noticias/da-semeadura-a-colheita--algodao-exige-planejamento_521394.html) são pontos de atenção.
 
 **B. Detalhamento com dados e links**
 - ⛔ **Algodão ICE Nova York — 1º vencimento:** indisponível _(nenhuma fonte retornou valor válido)_
@@ -176,22 +176,22 @@ Notícias que embasam a análise:
 - [EXCLUSIVO: Scheffer e Mosaic se unem nos bioinsumos de olho em mercado de R$ 3 bi](https://agfeed.com.br/negocios/exclusivo-scheffer-e-mosaic-se-unem-nos-bioinsumos-de-olho-em-mercado-de-r-3-bi) — AgFeed (23/11 07:42)
 
 **C. Visão de consultoria e indicações estratégicas**
-- **Elo: Produtores Rurais (Cotonicultores):** O planejamento rigoroso das operações agrícolas, como plantio e controle de pragas, é determinante para evitar perdas de produtividade e garantir a qualidade da fibra nas regiões de Mato Grosso e Bahia [[Agrolink]](https://www.agrolink.com.br/noticias/da-semeadura-a-colheita--algodao-exige-planejamento_521394.html). A aliança entre grandes produtores e fornecedores de insumos reforça a busca por eficiência em mercados expressivos [[AgFeed]](https://agfeed.com.br/negocios/exclusivo-scheffer-e-mosaic-se-unem-nos-bioinsumos-de-olho-em-mercado-de-r-3-bi). Monitore os custos operacionais diante do patamar cambial.
-- **Elo: Algodoeiras e Cooperativas:** Com a pluma cotada a 406,00 ¢R$/lb em Rondonópolis-MT e estabilidade semanal, as beneficiadoras devem atentar para a qualidade do produto recebido do campo [[Agrolink]](https://www.agrolink.com.br/noticias/da-semeadura-a-colheita--algodao-exige-planejamento_521394.html). O cenário de alta do Dólar PTAX a R$ 5,9708 impacta a formação de paridades de exportação e custos de insumos vinculados à moeda americana. Gerencie estoques de forma a mitigar oscilações futuras.
-- **Elo: Indústrias e Confinamentos (Caroço e Farelo de Algodão):** As cotações para o caroço de algodão no Mato Grosso e no Oeste da Bahia encontram-se indisponíveis por falta de retorno válido nas fontes. As indústrias consumidoras de coprodutos para ração animal devem buscar alternativas locais de suprimento enquanto aguardam a normalização das cotações regionais.
-- **Elo: Tradings e Visão do Trader (ICE NY & Câmbio):** As cotações do algodão na ICE Nova York estão indisponíveis, limitando o balizamento direcional externo. No câmbio, o Dólar PTAX (venda) encerrou a R$ 5,9708, registrando alta de +1,39% na semana e +10,14% no mês, completando 7 altas seguidas, o que favorece estratégias de exportação e operações de NDF e câmbio para tradings.
+- **Elo: Produtores Rurais (Cotonicultores):** Atenção ao planejamento e controle de operações agrícolas para evitar atrasos que possam comprometer a qualidade da fibra.
+- **Elo: Algodoeiras e Cooperativas:** Monitorar a qualidade da fibra e a produtividade, considerando o impacto do dólar em exportações.
+- **Elo: Indústrias e Confinamentos (Caroço e Farelo de Algodão):** Aumentar a vigilância sobre a qualidade do caroço e farelo devido à pressão do dólar, ajustando estratégias de produção e custos.
+- **Elo: Tradings e Visão do Trader (ICE NY & Câmbio):** Preparar posições direcionais longas no ICE NY, considerando a estabilidade do algodão e a pressão do dólar, além de monitorar oportunidades de arbitragem de basis.
 
-### ☕🐂 Complexo Café (Arábica & Robusta) e Pecuária — Café e pecuária sustentam patamares elevados com foco na demanda
+### ☕🐂 Complexo Café (Arábica & Robusta) e Pecuária — Café arábica estagnado, boi gordo em queda, dólar em alta
 
-**Viés de mercado:** Viés neutro para o mercado físico com atenção à demanda de fim de ano e volatilidade cambial.
+**Viés de mercado:** Café arábica mantém estagnação, enquanto boi gordo segue em baixa, pressionado pela moeda.
 
-**A. Resumo executivo.** O mercado de café arábica mantém patamares elevados, com o indicador Cepea no Sul de Minas a R$ 1.850,00/sc, enquanto em Manhuaçu o valor ficou em R$ 1.704,00/sc [[Globo Rural]](https://globorural.globo.com/agricultura/cafe/noticia/2026/11/saca-de-cafe-supera-recorde-ao-ser-vendida-por-r-220-mil-em-leilao.ghtml). Na pecuária, o boi gordo em São Paulo registra R$ 395,00/@ e o contrato futuro na B3 opera a R$ 399,00/@, apoiados pela expectativa de fortalecimento do consumo doméstico com a entrada do décimo terceiro salário [[Canal Rural]](https://www.canalrural.com.br/pecuaria/arroba-do-boi-gordo-abre-a-semana-de-olho-no-pico-de-demanda-em-dezembro/). O dólar PTAX em R$ 5,9708 impulsiona a paridade de exportação, influenciando os custos e margens em toda a cadeia.
+**A. Resumo executivo.** O café arábica mantém-se estável, com a saca de Manhuaçu-MG em R$ 1.704,00/sc, sem alterações significativas desde 20/11. O café arábica de Sul de Minas, porém, segue sem movimento, refletindo a estagnação do mercado. O boi gordo, por outro lado, registra duas quedas seguidas, com a arroba de São Paulo-SP em R$ 395,00/@, após alta no mês. O dólar, por sua vez, registra sete altas seguidas, com a PTAX em R$ 5,9708, pressionando os preços internos. As notícias [[Agrolink]](https://www.agrolink.com.br/noticias/cacau-e-cafe-arabica-puxam-alta-de-indice-agricola_521377.html) e [[Canal Rural]](https://www.canalrural.com.br/pecuaria/arroba-do-boi-gordo-abre-a-semana-de-olho-no-pico-de-demanda-em-dezembro/) destacam a estabilidade do café e a expectativa de fortalecimento do consumo do boi gordo.
 
 **B. Detalhamento com dados e links**
 - ⛔ **Café Arábica ICE Nova York — 1º vencimento:** indisponível _(nenhuma fonte retornou valor válido)_
 - ⛔ **Café Robusta ICE Londres — 1º vencimento:** indisponível _(nenhuma fonte retornou valor válido)_
 - **Café arábica — Sul de Minas-MG:** R$ 1.850,00/sc em 23/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/)
-- 🕒 **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.704,00/sc em 23/11 (+1,55% no dia; +1,55% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) _(Agrolink: data no futuro (24/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 23/11/2026)_
+- ⚠️ **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.704,00/sc em 24/11 (0,00% no dia; +1,55% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) _(leitura incerta (data presumida))_
 - **Boi gordo — São Paulo-SP:** R$ 395,00/@ em 23/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/)
 - **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 399,00/@ em 23/11 (-0,01% no dia; -0,01% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 
@@ -208,33 +208,33 @@ Notícias que embasam a análise:
 - [New H5N1 detections in US dairy herds as state officials press USDA on cattle vaccine](https://www.efeedlink.com/articles/new-h5n1-detections-in-us-dairy-herds-as-state-officials-press-usda-on-cattle-vaccine) — eFeedLink (23/11 23:11)
 
 **C. Visão de consultoria e indicações estratégicas**
-- **Elo: Cafeicultores (Matas de Minas, Cerrado e Sul de Minas):** Aproveite a firmeza nos preços físicos, como os R$ 1.850,00/sc no Sul de Minas e R$ 1.704,00/sc em Manhuaçu, para avaliar estratégias de comercialização. Monitore os custos operacionais e as oscilações cambiais que impactam a rentabilidade.
-- **Elo: Cooperativas de Café e Exportadores:** Gerencie o fluxo de recebimento e os diferenciais de base diante da valorização do câmbio (PTAX a R$ 5,9708). Acompanhe os desdobramentos da oferta global e o impacto nas negociações de contratos futuros.
-- **Elo: Pecuaristas e Confinamentos:** Mantenha o planejamento de lotes de olho no pico de demanda em dezembro, sustentado pelo patamar de R$ 395,00/@ em São Paulo. Fique atento à relação de troca com o bezerro no período [[Farmnews]](https://www.farmnews.com.br/mercado/arrobas-de-boi-gordo-por-bezerro-em-novembro-na-minima-de-2026-mas-atencao/).
-- **Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café):** Monitore o posicionamento direcional na B3 (boi a R$ 399,00/@) e a volatilidade cambial. Ajuste as estratégias de hedge considerando a variação semanal e a liquidez nos mercados futuros.
+- **Elo: Cafeicultores (Matas de Minas, Cerrado e Sul de Minas):** Café arábica em estagnação, pressionando os preços dos produtores.
+- **Elo: Cooperativas de Café e Exportadores:** Café arábica em estagnação, pressionando as exportações.
+- **Elo: Pecuaristas e Confinamentos:** Boi gordo em queda, pressionando os custos de produção.
+- **Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café):** Boi gordo em queda, pressionando as operações de traders; café arábica em estagnação, mantendo a volatilidade.
 
 ---
 
-## 📅 4. Evolução Semanal — Semana corrente (WTD — domingo 22/11 a segunda-feira 23/11)
+## 📅 4. Evolução Semanal — Semana corrente (WTD — domingo 22/11 a terça-feira 24/11)
 
 | Ativo | Ref. abertura da semana | Atual | Variação (WTD) | Destaque |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,9708 | +1,39% | O dólar PTAX acumulou alta de +1,39% (+R$ 0,0819) na semana, registrando sete altas seguidas e fechando a R$ 5,9708. |
-| Soja Paranaguá-PR | R$ 170,00/sc | R$ 170,00/sc | 0,00% | A variação semanal da soja em Paranaguá foi de 0,00% (R$ 0,00/sc) desde 19/11. |
-| Soja CBOT | US$ 12,2078/bu | US$ 12,2078/bu | 0,00% | A variação semanal da soja na CBOT foi de 0,00% (US$ 0,0000/bu) desde 20/11. |
-| Milho Campinas-SP | R$ 68,00/sc | R$ 68,00/sc | 0,00% | O mercado físico em Campinas registrou variação de 0,00% (R$ 0,00/sc) desde 19/11, cotado a R$ 68,00/sc. |
-| Trigo Ponta Grossa-PR | R$ 1.560,00/t | R$ 1.560,00/t | 0,00% | O trigo em Ponta Grossa apresentou variação de 0,00% (R$ 0,00/t) desde 19/11, fechando a R$ 1.560,00/t. |
-| Algodão pluma MT | 406,00 ¢R$/lb | 406,00 ¢R$/lb | 0,00% | O algodão em pluma em Rondonópolis-MT registrou variação de 0,00% (0,00 ¢R$/lb) desde 19/11, mantendo-se estável em 406,00 ¢R$/lb. |
-| Café Sul de Minas | R$ 1.850,00/sc | R$ 1.850,00/sc | 0,00% | O café arábica no Sul de Minas registrou variação semanal de 0,00% (R$ 0,00/sc), mantendo-se estável em R$ 1.850,00/sc. |
-| Boi gordo SP | R$ 395,00/@ | R$ 395,00/@ | 0,00% | O boi gordo em São Paulo apresentou variação semanal de 0,00% (R$ 0,00/@), firmado no patamar de R$ 395,00/@. |
+| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,9708 | +1,39% | 7 altas seguidas, com var_semana de +1,39%. |
+| Soja Paranaguá-PR | R$ 170,00/sc | R$ 170,00/sc | 0,00% | Soja Paranaguá em estabilidade, com variação de 0,00% na semana. |
+| Soja CBOT | US$ 12,2078/bu | US$ 12,2078/bu | 0,00% | Soja CBOT em alta, com 1ª alta seguida na semana. |
+| Milho Campinas-SP | R$ 68,00/sc | R$ 68,00/sc | 0,00% | Variação diária de 0,00% desde 19/11 |
+| Trigo Ponta Grossa-PR | R$ 1.560,00/t | R$ 1.560,00/t | 0,00% | De R$ 1.560,00/t (19/11) para R$ 1.560,00/t (0,00% na semana). |
+| Algodão pluma MT | 406,00 ¢R$/lb | 406,00 ¢R$/lb | 0,00% | Variação semanal de 0,00% indica estabilidade no mercado. |
+| Café Sul de Minas | R$ 1.850,00/sc | R$ 1.850,00/sc | 0,00% | Café arábica em estagnação, com var_semana de 0,00%. |
+| Boi gordo SP | R$ 395,00/@ | R$ 395,00/@ | 0,00% | Boi gordo em queda, com var_semana de -0,01%. |
 
 ---
 
-## 🗓️ 5. Evolução Mensal Acumulada (MTD) — 01/11/2026 até 23/11/2026
+## 🗓️ 5. Evolução Mensal Acumulada (MTD) — 01/11/2026 até 24/11/2026
 
 | Ativo | Ref. início do mês | Atual | Variação (MTD) | Leitura |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,9708 | +10,14% | A moeda norte-americana acumula alta de +10,14% (+R$ 0,5496) desde o dia 30/10, impulsionada por ajustes no mercado de câmbio. |
+| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,9708 | +10,14% | Variação de +10,14% desde outubro, refletindo pressões externas e políticas monetárias. |
 | Soja Paranaguá-PR | — | R$ 170,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Soja Uberlândia-MG | — | R$ 156,50/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Milho Campinas-SP | — | R$ 68,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
@@ -252,27 +252,27 @@ As faixas são calculadas pelo sistema a partir da volatilidade recente (bandas 
 
 | Ativo | Base atual | Alvo curto prazo / auditoria | Cenário base (mês) | Altista / Baixista | Gatilho |
 |---|---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,9708 (Banco Central do Brasil, 23/11) · Track record em formação (1ª aferição em 26/11) | R$ 5,8338 – R$ 6,4013 até 30/11 (banda ±1,0σ, viés de alta) | R$ 6,1110 (30/11) | 📈 R$ 6,4013 (+1,0σ) / 📉 R$ 5,8338 (−1,0σ) | Uma reversão na tendência de alta do dólar ou forte intervenção do Banco Central invalidaria o cenário atual de valorização contínua. · Método: banda de volatilidade (σ diário 2,08%, 43 pregões no histórico). |
+| Dólar PTAX (USD/BRL) | R$ 5,9708 (Banco Central do Brasil, 23/11) · Track record em formação (1ª aferição em 26/11) | R$ 5,8338 – R$ 6,4013 até 30/11 (banda ±1,0σ, viés de alta) | R$ 6,1110 (30/11) | 📈 R$ 6,4013 (+1,0σ) / 📉 R$ 5,8338 (−1,0σ) | Sinalização de política monetária mais moderada do Banco Central do Brasil. · Método: banda de volatilidade (σ diário 2,08%, 43 pregões no histórico). |
 | Petróleo WTI | indisponível · Track record em formação | — (sem cotação válida) | — | 📈 — / 📉 — | — |
-| Soja Paranaguá-PR | R$ 170,00/sc (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Inversão abrupta no fluxo cambial ou queda expressiva nos prêmios de exportação nos portos. |
-| Milho Campinas-SP | R$ 68,00/sc (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Reversão na tendência de alta do dólar ou queda abrupta na demanda interna por milho físico. |
-| Trigo Ponta Grossa-PR | R$ 1.560,00/t (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Oscilações expressivas na paridade de importação ou alteração drástica na oferta regional de trigo. |
-| Algodão pluma MT | 406,00 ¢R$/lb (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Retomada das cotações internacionais na ICE NY ou alteração expressiva na paridade de exportação influenciada pelo câmbio. |
-| Café Sul de Minas | R$ 1.850,00/sc (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Alterações expressivas na oferta global ou reversão acentuada nas cotações internacionais de Nova York. |
-| Boi gordo SP | R$ 395,00/@ (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Mudanças repentinas no ritmo de abate dos frigoríficos ou retração drástica no consumo interno de carne bovina. |
+| Soja Paranaguá-PR | R$ 170,00/sc (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Variação do dólar, que pode afetar a competitividade do grão no mercado interno. |
+| Milho Campinas-SP | R$ 68,00/sc (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Se a tendência de estabilidade se romper, pode indicar mudanças na demanda ou oferta |
+| Trigo Ponta Grossa-PR | R$ 1.560,00/t (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Variação mensal estável, mas qualquer mudança pode indicar novos fatores de demanda ou oferta |
+| Algodão pluma MT | 406,00 ¢R$/lb (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Atrasos significativos no planejamento agrícola ou mudanças drásticas no clima podem alterar a tendência. |
+| Café Sul de Minas | R$ 1.850,00/sc (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Qualquer movimento significativo no mercado global pode alterar a estagnação do café arábica. |
+| Boi gordo SP | R$ 395,00/@ (Canal Rural, 23/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | A estabilidade do dólar pode alterar a tendência de queda do boi gordo. |
 
 **Track record geral:** em formação — as primeiras aferições acontecem 5 pregões após o primeiro registro.
 
 
 ---
 
-## 💡 7. Pílula de Inteligência de Mercado — Impacto cambial e precificação de derivativos cambiais (NDF)
+## 💡 7. Pílula de Inteligência de Mercado — Dólar em alta pressiona preços agrícolas
 
 **Fórmula:** `NDF (160 dias) = 5,9708 × (1 + 0,1375)^(106/252) ÷ [1 + 0,0480 × (160/360)] = R$ 6,1716`
 
-O conceito de NDF (Non-Deliverable Forward) é fundamental para a gestão de risco cambial na cadeia de commodities agrícolas. Com o Dólar PTAX cotado a R$ 5,9708 e a taxa Selic mantida em 13,75% a.a., a precificação do contrato a termo de 160 dias resulta em R$ 6,1716. Esse cálculo reflete o diferencial de juros entre o Brasil e o mercado internacional ao longo de 106 dias úteis, demonstrando o custo de carrego cambial embutido nas operações estruturadas para tradings e produtores rurais.
+O dólar, com 7 altas seguidas, está pressionando os preços de fertilizantes e insumos agrícolas, impactando diretamente os custos de produção. O NDF teórico aponta para uma alta, refletindo a tendência cambial. A volatilidade cambial deve ser monitorada de perto pelos produtores e tradings.
 
-**Conclusão estratégica:** A alta do PTAX e o patamar do NDF exigem atenção redobrada das tradings e indústrias na proteção de margens de importação e custos de insumos.
+**Conclusão estratégica:** A pressão cambial deve ser considerada na tomada de decisões estratégicas.
 
 ---
 
@@ -284,21 +284,20 @@ O JSON completo deste boletim (7 séries diárias, 5 blocos, 8 projeções) est�
 
 ## 🛡️ Qualidade dos dados e auditoria
 
-- **Indicadores:** 20 ok, 1 com alerta, 2 desatualizados, 7 indisponíveis (de 30).
-- **Texto:** gerado por IA (gemini-flash-lite-latest @ Google Gemini ×7) e conferido pelo verificador — campos verificados: 141; respostas reprovadas e devolvidas à IA: 1; campos trocados por texto automático: 0.
-- **Notícias:** 34 usadas de 144 coletadas; 10 fontes responderam, 12 falharam.
+- **Indicadores:** 21 ok, 2 com alerta, 0 desatualizados, 7 indisponíveis (de 30).
+- **Texto:** gerado por IA (qwen2.5:7b @ IA local ×10) e conferido pelo verificador — campos verificados: 126; respostas reprovadas e devolvidas à IA: 4; campos trocados por texto automático: 0.
+- **Notícias:** 35 usadas de 143 coletadas; 10 fontes responderam, 12 falharam.
 
 **Indicadores com ressalva:**
 - ⛔ Petróleo WTI — NYMEX (1º vencimento) — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Petróleo Brent — ICE Londres (1º vencimento) — indisponivel: nenhuma fonte retornou valor válido
-- 🕒 Soja — Uberlândia-MG (mercado físico) — desatualizado: Agrolink: data no futuro (24/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 23/11/2026
 - ⚠️ Soja — Pizarra Rosario (BCR, Argentina) — alerta: leitura incerta (coluna por posição)
 - ⛔ Algodão ICE Nova York — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Caroço de Algodão — Mato Grosso — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Caroço de Algodão — Oeste da Bahia — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Café Arábica ICE Nova York — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Café Robusta ICE Londres — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
-- 🕒 Café Arábica tipo 6 bebida dura — Manhuaçu-MG — desatualizado: Agrolink: data no futuro (24/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 23/11/2026
+- ⚠️ Café Arábica tipo 6 bebida dura — Manhuaçu-MG — alerta: leitura incerta (data presumida)
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 23/11/2026 23:56 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 24/11/2026 03:24 BRT._
