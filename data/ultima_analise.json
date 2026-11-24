@@ -1,161 +1,173 @@
 {
- "gerado_em": "2026-11-23T19:55-03:00",
+ "gerado_em": "2026-11-23T23:56-03:00",
  "turno": "fechamento",
  "blocos_txt": {
   "cambio_e_energia": {
-   "resumo_curto": "Dólar em alta com 7 altas seguidas, pressionando preços de fertilizantes e insumos. Petróleo sem atualização.",
-   "manchete": "Dólar em alta pressiona preços de fertilizantes e insumos",
-   "vies": "Viés de alta para o dólar, com atenção para a estabilidade da Selic.",
-   "resumo_executivo": "A valorização do dólar, com 7 altas seguidas, pressionou os preços dos fertilizantes no Brasil, conforme relatório Nobel Agro Report [N1]. O dólar encerrou a R$ 5,9708, com 3 altas consecutivas, influenciando positivamente os preços da soja e outros insumos agrícolas, apesar das perdas na Bolsa de Chicago [N3]. O NDF teórico calculado foi de R$ 6,1716, refletindo a pressão cambial. O petróleo não apresentou atualização.",
+   "resumo_curto": "O dólar PTAX fechou em R$ 5,9708 com alta acumulada de +1,39% na semana e +10,14% no mês, impulsionando os preços de insumos e grãos no mercado interno. A taxa Selic permaneceu em 13,75% a.a. enquanto o mercado monitora os impactos cambiais na cadeia agrícola.",
+   "manchete": "Dólar PTAX atinge R$ 5,9708 e pressiona custos agrícolas",
+   "vies": "Viés de alta para o câmbio com foco nos impactos sobre custos de fertilizantes e diesel.",
+   "resumo_executivo": "O mercado cambial registrou forte volatilidade, com a PTAX atingindo R$ 5,9708 em alta de +1,39% na semana e +10,14% no mês, acumulando sete altas seguidas. O dólar futuro B3 encerrou a 5.936,09 pts (+0,20%). A alta da moeda norte-americana pressionou os custos de fertilizantes no Brasil, encarecendo produtos como o MAP e mantendo preços elevados mesmo com quedas internacionais [N1]. Além disso, a valorização cambial ajudou a sustentar os preços internos de commodities como a soja e o milho [N3, N6]. Enquanto isso, a taxa Selic foi mantida em 13,75% a.a. [selic_meta], e o mercado segue atento às discussões sobre crédito rural [N7] e aos custos de combustíveis com o encerramento de subsídios [N4].",
    "noticias_destaque": [
     "N1",
-    "N3"
+    "N3",
+    "N4",
+    "N6"
    ],
    "elos": [
     {
      "elo": "Elo: Produtores Rurais (Gestão de Custos, Insumos e Crédito)",
-     "direcionamento": "Monitorar custos de fertilizantes e outros insumos devido à pressão cambial. Considerar opções de hedging com NDF.",
+     "direcionamento": "A valorização do dólar a R$ 5,9708 encareceu insumos essenciais como o MAP e a ureia, exigindo cautela na gestão de custos [N1]. Produtores também devem acompanhar a auditoria do TCU sobre o crédito rural e o impacto do fim dos subsídios ao diesel [N4, N7].",
      "referencias": [
       "N1",
-      "N3"
+      "N4",
+      "N7"
      ]
     },
     {
      "elo": "Elo: Cooperativas e Revendas (Barter e Políticas de Crédito)",
-     "direcionamento": "Estudar barter e políticas de crédito para mitigar impacto do dólar elevado. Avaliar oportunidades de exportação.",
+     "direcionamento": "O cenário de dólar forte impacta as operações de barter e a precificação de fertilizantes, que subiram no mercado interno apesar das quedas externas [N1]. Cooperativas devem monitorar o cenário de inadimplência e renegociações de dívidas no campo [N7].",
      "referencias": [
-      "N1"
+      "N1",
+      "N7"
      ]
     },
     {
      "elo": "Elo: Indústrias, Usinas e Logística (Diesel, Frete e Energia)",
-     "direcionamento": "Preparar-se para aumentos no diesel e frete devido à pressão cambial. Avaliar alternativas de logística.",
+     "direcionamento": "O encerramento de subsídios federais ao diesel traz novas preocupações com os custos de transporte e produção agrícola [N4]. As indústrias monitoram a competitividade frente às variações de custos logísticos e energéticos.",
      "referencias": [
-      "N6"
+      "N4"
      ]
     },
     {
      "elo": "Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF)",
-     "direcionamento": "Manter posição longa no NDF devido à tendência de alta do dólar. Avaliar oportunidades de spreads.",
+     "direcionamento": "Com o dólar PTAX em R$ 5,9708 e alta de +10,14% no mês, as mesas operam com foco na proteção cambial e nas projeções de NDF a R$ 6,1716. A sequência de altas na PTAX exige rigor no gerenciamento de posições direcionais e basis [dolar_ptax].",
      "referencias": [
+      "N1",
       "N3"
      ]
     }
    ],
    "drivers_semana": {
-    "dolar_ptax": "7 altas seguidas no dólar PTAX pressionaram preços de fertilizantes."
+    "dolar_ptax": "O dólar PTAX acumulou alta de +1,39% (+R$ 0,0819) na semana, registrando sete altas seguidas e fechando a R$ 5,9708."
    },
    "narrativas_mes": {
-    "dolar_ptax": "Dólar PTAX teve alta de 10,14% desde outubro, influenciando preços de insumos e commodities agrícolas."
+    "dolar_ptax": "A moeda norte-americana acumula alta de +10,14% (+R$ 0,5496) desde o dia 30/10, impulsionada por ajustes no mercado de câmbio."
    },
    "gatilhos": {
-    "dolar_ptax": "Qualquer sinal de desaceleração na alta do dólar ou mudanças na política monetária poderiam invalidar o cenário atual."
+    "dolar_ptax": "Uma reversão na tendência de alta do dólar ou forte intervenção do Banco Central invalidaria o cenário atual de valorização contínua."
    },
    "vieses_projecao": {
     "dolar_ptax": "alta"
    }
   },
   "complexo_soja": {
-   "resumo_curto": "Soja CBOT e SJC subiram 1,10% e 1,76% respectivamente, enquanto o farelo de soja teve alta de 2,62%. O dólar subiu 1,39% e pressionou o óleo de soja.",
-   "manchete": "Soja e farelo em alta, pressionando óleo e dólar",
-   "vies": "Viés de alta para soja e farelo, com atenção para a pressão do óleo e do dólar.",
-   "resumo_executivo": "A soja CBOT e SJC subiram 1,10% e 1,76% respectivamente, impulsionadas por fatores técnicos e fundamentais, conforme [N12] e [N13]. O farelo de soja também teve alta de 2,62%, enquanto o óleo de soja recuou 0,47%. O dólar subiu 1,39% e pressionou os preços internos, conforme [N5].",
+   "resumo_curto": "A soja na CBOT (1º vencimento) registrou US$ 12,2078/bu em 20/11, com alta diária de +1,10%. No mercado físico brasileiro, o Porto de Paranaguá marcou R$ 170,00/sc em 23/11, enquanto o Dólar PTAX atingiu R$ 5,9708.",
+   "manchete": "Soja avança em Chicago impulsionada por ajustes técnicos e farelo",
+   "vies": "Viés altista sustentado pela demanda externa e câmbio elevado, com atenção aos riscos climáticos.",
+   "resumo_executivo": "A soja na CBOT fechou a US$ 12,2078/bu em 20/11 [soja_cbot], impulsionada pela valorização do farelo de soja, que subiu +2,62% para US$ 340,99/t curta [farelo_cbot]. No mercado físico brasileiro, o preço em Paranaguá permaneceu estável a R$ 170,00/sc em 23/11 [soja_paranagua], sustentado pelo patamar elevado do dólar PTAX, cotado a R$ 5,9708 [dolar_ptax]. Notícias apontam que a demanda internacional equilibra o impacto de uma maior produção mundial [N12], enquanto tempestades no Rio Grande do Sul trouxeram perdas pontuais em lavouras [N18].",
    "noticias_destaque": [
     "N12",
-    "N5"
+    "N3",
+    "N18"
    ],
    "elos": [
     {
      "elo": "Elo: Produtores Rurais (Comercialização e Hedge)",
-     "direcionamento": "Com o dólar em alta, produtores devem buscar oportunidades de hedge para protegerem suas receitas, conforme [N5].",
+     "direcionamento": "Aproveitar patamares firmes nos portos, como R$ 170,00/sc em Paranaguá [soja_paranagua] e R$ 174,55/sc em Rio Grande [N15], para travar custos e garantir margens frente à volatilidade climática e cambial.",
      "referencias": [
-      "N5"
+      "N3",
+      "N15",
+      "N18"
      ]
     },
     {
      "elo": "Elo: Cooperativas e Recebimento de Grãos",
-     "direcionamento": "Cooperativas devem monitorar as cotações internas e internacionais para ajustar os preços de recebimento, conforme [N12].",
+     "direcionamento": "Monitorar a capacidade de armazenamento e os impactos de eventos climáticos extremos regionais, como perdas em lavouras no Rio Grande do Sul [N18], ajustando o planejamento logístico para a safra.",
      "referencias": [
-      "N12"
+      "N18"
      ]
     },
     {
      "elo": "Elo: Indústrias Esmagadoras e Confinamentos (Farelo e Óleo)",
-     "direcionamento": "Indústrias devem ajustar suas compras de farelo e óleo com base nas cotações internacionais e domésticas, conforme [N12] e [N13].",
+     "direcionamento": "Acompanhar a forte valorização do farelo de soja na CBOT (+2,62% a US$ 340,99/t curta) [farelo_cbot] e a pressão de baixa no óleo de soja (-0,47% a 59,81 ¢/lb) [oleo_soja_cbot], ajustando margens de esmagamento.",
      "referencias": [
-      "N12",
-      "N13"
+      "N10",
+      "N12"
      ]
     },
     {
      "elo": "Elo: Tradings e Visão do Trader (Basis, Spreads & CBOT)",
-     "direcionamento": "Tradings devem manter atenção aos spreads e basis, aproveitando as oportunidades de compra em CBOT e venda interna, conforme [N12] e [N13].",
+     "direcionamento": "Explorar oportunidades de arbitragem com a Soja B3 a US$ 27,09/sc [soja_b3] e o câmbio a R$ 5,9708 [dolar_ptax], de olho em ajustes técnicos e na demanda internacional por farelo.",
      "referencias": [
-      "N12",
-      "N13"
+      "N10",
+      "N12"
      ]
     }
    ],
    "drivers_semana": {
-    "soja_paranagua": "Sem movimento semanal.",
-    "soja_cbot": "1 alta seguida."
+    "soja_paranagua": "A variação semanal da soja em Paranaguá foi de 0,00% (R$ 0,00/sc) desde 19/11.",
+    "soja_cbot": "A variação semanal da soja na CBOT foi de 0,00% (US$ 0,0000/bu) desde 20/11."
    },
    "narrativas_mes": {},
    "gatilhos": {
-    "soja_paranagua": "Se o dólar se estabilizar ou cair, pode pressionar os preços internos."
+    "soja_paranagua": "Inversão abrupta no fluxo cambial ou queda expressiva nos prêmios de exportação nos portos."
    },
    "vieses_projecao": {
-    "soja_paranagua": "neutro"
+    "soja_paranagua": "alta"
    }
   },
   "complexo_milho_e_ddgs": {
-   "resumo_curto": "Milho B3 registra 3 altas seguidas, com variação diária de +0,94% e +1,26% nos vencimentos. Trigo segue estável, enquanto dólar atinge 7ª alta seguida, pressionando commodities.",
-   "manchete": "Milho B3 em alta, trigo estável, dólar pressiona",
-   "vies": "Aumento nas cotações do milho B3, com riscos de pressão do dólar sobre as commodities.",
-   "resumo_executivo": "O complexo milho registrou fortes altas nos vencimentos da B3, com variações diárias de +0,94% e +1,26%, refletindo a valorização do dólar. O milho CBOT também apresentou queda, mas o mercado físico de Campinas manteve-se estável. O trigo, por outro lado, permaneceu estável, com variações mínimas. As notícias [N11] e [N19] indicam a pressão do dólar e a valorização do milho na B3, respectivamente. O dólar, por sua vez, atingiu 7ª alta seguida, pressionando as commodities.",
+   "resumo_curto": "O mercado de milho na B3 registrou três altas seguidas, com o 1º vencimento a R$ 72,15/sc e o 2º a R$ 77,90/sc. Em Chicago, o milho fechou a US$ 4,3451/bu. No setor de etanol de milho, a Petrobras anunciou a compra de 42% da Neomille por R$ 2,8 bilhões.",
+   "manchete": "Milho B3 avança com dólar forte e Petrobras compra Neomille",
+   "vies": "Viés altista no mercado doméstico sustentado pela valorização cambial, exigindo monitoramento rigoroso de pragas nas lavouras.",
+   "resumo_executivo": "O mercado futuro de milho na B3 encerrou com valorização, acumulando três altas seguidas e registrando R$ 72,15/sc no 1º vencimento e R$ 77,90/sc no 2º vencimento, amparado pela alta do dólar PTAX a R$ 5,9708 [N8]. Em Chicago, o milho recuou para US$ 4,3451/bu [milho_cbot]. No setor de coprodutos, a Petrobras anunciou a compra de 42% da Neomille por R$ 2,8 bilhões, marcando o retorno da estatal ao etanol de milho [N20, N22]. No campo, alertas indicam riscos fitossanitários com o ataque precoce de lagarta-do-cartucho e perdas históricas associadas aos enfezamentos transmitidos pela cigarrinha-do-milho [N21, N23].",
    "noticias_destaque": [
-    "N11",
-    "N19"
+    "N20",
+    "N22",
+    "N23"
    ],
    "elos": [
     {
      "elo": "Elo: Produtores de Milho, Sorgo e Trigo",
-     "direcionamento": "Produtoras devem monitorar o movimento do dólar, que pode impactar a rentabilidade.",
+     "direcionamento": "Devem intensificar o monitoramento fitossanitário nas lavouras devido ao ataque precoce de lagarta-do-cartucho e aos riscos de enfezamentos transmitidos pela cigarrinha-do-milho. A alta do dólar e os patamares de preços na B3 oferecem oportunidades de comercialização.",
      "referencias": [
-      "N19"
+      "N21",
+      "N23"
      ]
     },
     {
      "elo": "Elo: Cooperativas e Sementeiras",
-     "direcionamento": "Sementeiras devem ajustar suas estratégias de venda com base nas altas recentes do milho.",
+     "direcionamento": "Atentar para a demanda por defensivos e sementes resistentes, visto que o manejo de pragas e doenças é crítico para preservar o potencial produtivo das lavouras nesta safra.",
      "referencias": [
-      "N11"
+      "N21",
+      "N23"
      ]
     },
     {
      "elo": "Elo: Moinhos, Granjas (Frango, Ovos, Suínos) e Confinamentos",
-     "direcionamento": "Estas empresas devem se preparar para possíveis aumentos de custos de insumos, especialmente do milho.",
+     "direcionamento": "Monitorar a volatilidade dos custos de insumos diante da firmeza dos preços domésticos do milho e do trigo, ajustando as estratégias de hedge para proteção de margens.",
      "referencias": [
-      "N11"
+      "N8"
      ]
     },
     {
      "elo": "Elo: Tradings e Visão do Trader (B3 vs. CBOT)",
-     "direcionamento": "Tradings devem ajustar suas posições em milho, considerando o desempenho diferenciado entre B3 e CBOT.",
+     "direcionamento": "Acompanhar o spread entre a B3 e a CBOT, influenciado diretamente pela forte valorização do dólar PTAX a R$ 5,9708 e pelo avanço do setor de etanol de milho com o aporte da Petrobras na Neomille.",
      "referencias": [
-      "N11",
-      "N19"
+      "N8",
+      "N20",
+      "N22"
      ]
     }
    ],
    "drivers_semana": {
-    "milho_campinas": "Variação semanal de 0,00% indica estabilidade no mercado físico de Campinas.",
-    "trigo_parana": "De R$ 1.560,00/t (19/11) para R$ 1.560,00/t (0,00% na semana)."
+    "milho_campinas": "O mercado físico em Campinas registrou variação de 0,00% (R$ 0,00/sc) desde 19/11, cotado a R$ 68,00/sc.",
+    "trigo_parana": "O trigo em Ponta Grossa apresentou variação de 0,00% (R$ 0,00/t) desde 19/11, fechando a R$ 1.560,00/t."
    },
    "narrativas_mes": {},
    "gatilhos": {
-    "milho_campinas": "Se o dólar se desvalorizar significativamente, pode haver reversão das altas recentes no milho.",
-    "trigo_parana": "Qualquer sinal de variação no mercado internacional pode impactar o trigo."
+    "milho_campinas": "Reversão na tendência de alta do dólar ou queda abrupta na demanda interna por milho físico.",
+    "trigo_parana": "Oscilações expressivas na paridade de importação ou alteração drástica na oferta regional de trigo."
    },
    "vieses_projecao": {
     "milho_campinas": "alta",
@@ -163,125 +175,122 @@
    }
   },
   "complexo_algodao": {
-   "resumo_curto": "Pluma do algodão em R$ 406,00/lb, sem movimento relevante na semana. Dólar PTAX subiu 10,14% no mês, pressionando exportações.",
-   "manchete": "Pluma estável, dólar pressiona exportações",
-   "vies": "Alta no dólar PTAX, pressionando exportações de algodão.",
-   "resumo_executivo": "A pluma do algodão manteve-se estável em R$ 406,00/lb, sem alterações significativas na semana. O dólar PTAX, por outro lado, teve uma sequência de altas seguidas, subindo 10,14% no mês, o que pode impactar a competitividade das exportações brasileiras. Notícias sobre a importância do planejamento na cotonicultura [N26] e a união entre Scheffer e Mosaic nos bioinsumos [N27] destacam a complexidade do setor, mas não indicam mudanças imediatas na cotação do algodão.",
+   "resumo_curto": "O algodão em pluma em Rondonópolis-MT fechou cotado a 406,00 ¢R$/lb em 23/11, registrando estabilidade na variação diária e semanal de 0,00% (0,00 ¢R$/lb). No câmbio, o Dólar PTAX (venda) encerrou a R$ 5,9708 em 23/11, acumulando alta de +1,39% (+R$ 0,0819) na semana e de +10,14% (+R$ 0,5496) desde 30/10, na 7ª alta seguida. As referências internacionais para o algodão na ICE Nova York encontram-se indisponíveis.",
+   "manchete": "Algodão estável em MT com suporte do Dólar PTAX em alta",
+   "vies": "Viés neutro para a pluma no mercado interno, com atenção redobrada ao planejamento operacional e à volatilidade cambial.",
+   "resumo_executivo": "O mercado físico do algodão em pluma em Rondonópolis-MT manteve-se cotado a 406,00 ¢R$/lb em 23/11, com variação de 0,00% na semana. Enquanto o contrato da ICE Nova York permaneceu com cotação indisponível, o cenário macroeconômico foi marcado pelo avanço do Dólar PTAX (venda) a R$ 5,9708, registrando alta de +1,39% na semana e acumulando +10,14% desde 30/10, na 7ª alta seguida. No âmbito produtivo e industrial, debates recentes apontam que a eficiência na semeadura e no manejo impactam diretamente a produtividade e a qualidade da fibra na Bahia e em Mato Grosso [N25], ao passo que movimentos estratégicos em bioinsumos envolvem grandes grupos produtores da região [N26]. Ademais, relatórios setoriais indicam que os contratos futuros de algodão recuaram em período recente de análise global [N11].",
    "noticias_destaque": [
-    "N26",
-    "N27"
+    "N25",
+    "N11",
+    "N26"
    ],
    "elos": [
     {
      "elo": "Elo: Produtores Rurais (Cotonicultores)",
-     "direcionamento": "Manter atenção ao planejamento agrícola, especialmente no controle de pragas e colheita.",
+     "direcionamento": "O planejamento rigoroso das operações agrícolas, como plantio e controle de pragas, é determinante para evitar perdas de produtividade e garantir a qualidade da fibra nas regiões de Mato Grosso e Bahia [N25]. A aliança entre grandes produtores e fornecedores de insumos reforça a busca por eficiência em mercados expressivos [N26]. Monitore os custos operacionais diante do patamar cambial.",
      "referencias": [
+      "N25",
       "N26"
      ]
     },
     {
      "elo": "Elo: Algodoeiras e Cooperativas",
-     "direcionamento": "Monitorar o comportamento do dólar, pois influencia a competitividade exportadora.",
+     "direcionamento": "Com a pluma cotada a 406,00 ¢R$/lb em Rondonópolis-MT e estabilidade semanal, as beneficiadoras devem atentar para a qualidade do produto recebido do campo [N25]. O cenário de alta do Dólar PTAX a R$ 5,9708 impacta a formação de paridades de exportação e custos de insumos vinculados à moeda americana. Gerencie estoques de forma a mitigar oscilações futuras.",
      "referencias": [
-      "N26"
+      "N25"
      ]
     },
     {
      "elo": "Elo: Indústrias e Confinamentos (Caroço e Farelo de Algodão)",
-     "direcionamento": "Aumentar a vigilância sobre o dólar, que pode afetar custos de produção e exportação.",
-     "referencias": [
-      "N26",
-      "N27"
-     ]
+     "direcionamento": "As cotações para o caroço de algodão no Mato Grosso e no Oeste da Bahia encontram-se indisponíveis por falta de retorno válido nas fontes. As indústrias consumidoras de coprodutos para ração animal devem buscar alternativas locais de suprimento enquanto aguardam a normalização das cotações regionais.",
+     "referencias": []
     },
     {
      "elo": "Elo: Tradings e Visão do Trader (ICE NY & Câmbio)",
-     "direcionamento": "Manter posicionamento neutro, considerando a pressão do dólar PTAX.",
-     "referencias": [
-      "N26",
-      "N27"
-     ]
+     "direcionamento": "As cotações do algodão na ICE Nova York estão indisponíveis, limitando o balizamento direcional externo. No câmbio, o Dólar PTAX (venda) encerrou a R$ 5,9708, registrando alta de +1,39% na semana e +10,14% no mês, completando 7 altas seguidas, o que favorece estratégias de exportação e operações de NDF e câmbio para tradings.",
+     "referencias": []
     }
    ],
    "drivers_semana": {
-    "algodao_cepea": "Variação sem movimento relevante na semana."
+    "algodao_cepea": "O algodão em pluma em Rondonópolis-MT registrou variação de 0,00% (0,00 ¢R$/lb) desde 19/11, mantendo-se estável em 406,00 ¢R$/lb."
    },
    "narrativas_mes": {},
    "gatilhos": {
-    "algodao_cepea": "Aumento de custos de produção ou alterações significativas no câmbio."
+    "algodao_cepea": "Retomada das cotações internacionais na ICE NY ou alteração expressiva na paridade de exportação influenciada pelo câmbio."
    },
    "vieses_projecao": {
     "algodao_cepea": "neutro"
    }
   },
   "complexo_cafe": {
-   "resumo_curto": "Café arábica sul de Minas registra alta de 1,55% na semana, enquanto boi gordo mantém tendência de queda. Dólar avança 10,14% no mês.",
-   "manchete": "Café arábica sobe, boi gordo cai, dólar em alta",
-   "vies": "Café arábica apresenta sinalização de recuperação, enquanto boi gordo mantém pressão de baixa.",
-   "resumo_executivo": "O café arábica sul de Minas registrou uma alta de 1,55% na semana, refletindo a demanda robusta e a valorização do café arábica tipo 6 bebida dura em Manhuaçu-MG, conforme notícias [N28] e [N29]. Por outro lado, o boi gordo seguiu uma tendência de queda, com a arroba abrindo a semana em R$ 395,00/@, refletindo a pressão de oferta e a expectativa de desaceleração da demanda, conforme [N30] e [N31]. O dólar, por sua vez, avançou 10,14% no mês, pressionando o custo de produção no setor agropecuário, conforme [N32].",
+   "resumo_curto": "O complexo de café e a pecuária encerram o turno com preços firmes e estabilidade em indicadores referenciais. O café arábica no Sul de Minas cotado a R$ 1.850,00/sc e o boi gordo em São Paulo a R$ 395,00/@ refletem a sustentação das cotações físicas. O mercado monitora o pico de demanda para dezembro e a alta do câmbio com o dólar PTAX a R$ 5,9708.",
+   "manchete": "Café e pecuária sustentam patamares elevados com foco na demanda",
+   "vies": "Viés neutro para o mercado físico com atenção à demanda de fim de ano e volatilidade cambial.",
+   "resumo_executivo": "O mercado de café arábica mantém patamares elevados, com o indicador Cepea no Sul de Minas a R$ 1.850,00/sc, enquanto em Manhuaçu o valor ficou em R$ 1.704,00/sc [N27]. Na pecuária, o boi gordo em São Paulo registra R$ 395,00/@ e o contrato futuro na B3 opera a R$ 399,00/@, apoiados pela expectativa de fortalecimento do consumo doméstico com a entrada do décimo terceiro salário [N28]. O dólar PTAX em R$ 5,9708 impulsiona a paridade de exportação, influenciando os custos e margens em toda a cadeia.",
    "noticias_destaque": [
+    "N27",
     "N28",
     "N29",
-    "N30"
+    "N32"
    ],
    "elos": [
     {
      "elo": "Elo: Cafeicultores (Matas de Minas, Cerrado e Sul de Minas)",
-     "direcionamento": "Café arábica sul de Minas registrou alta de 1,55% na semana, refletindo a valorização do café arábica tipo 6 bebida dura em Manhuaçu-MG, conforme [N28] e [N29].",
+     "direcionamento": "Aproveite a firmeza nos preços físicos, como os R$ 1.850,00/sc no Sul de Minas e R$ 1.704,00/sc em Manhuaçu, para avaliar estratégias de comercialização. Monitore os custos operacionais e as oscilações cambiais que impactam a rentabilidade.",
      "referencias": [
-      "N28",
-      "N29"
+      "N27",
+      "N32"
      ]
     },
     {
      "elo": "Elo: Cooperativas de Café e Exportadores",
-     "direcionamento": "Café arábica sul de Minas registrou alta de 1,55% na semana, refletindo a valorização do café arábica tipo 6 bebida dura em Manhuaçu-MG, conforme [N28] e [N29].",
+     "direcionamento": "Gerencie o fluxo de recebimento e os diferenciais de base diante da valorização do câmbio (PTAX a R$ 5,9708). Acompanhe os desdobramentos da oferta global e o impacto nas negociações de contratos futuros.",
      "referencias": [
-      "N28",
-      "N29"
+      "N27",
+      "N32"
      ]
     },
     {
      "elo": "Elo: Pecuaristas e Confinamentos",
-     "direcionamento": "Boi gordo seguiu uma tendência de queda, com a arroba abrindo a semana em R$ 395,00/@, refletindo a pressão de oferta e a expectativa de desaceleração da demanda, conforme [N30] e [N31].",
-     "referencias": [
-      "N30",
-      "N31"
-     ]
-    },
-    {
-     "elo": "Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café)",
-     "direcionamento": "Café arábica sul de Minas registrou alta de 1,55% na semana, refletindo a valorização do café arábica tipo 6 bebida dura em Manhuaçu-MG, conforme [N28] e [N29]. Boi gordo seguiu uma tendência de queda, com a arroba abrindo a semana em R$ 395,00/@, refletindo a pressão de oferta e a expectativa de desaceleração da demanda, conforme [N30] e [N31].",
+     "direcionamento": "Mantenha o planejamento de lotes de olho no pico de demanda em dezembro, sustentado pelo patamar de R$ 395,00/@ em São Paulo. Fique atento à relação de troca com o bezerro no período [N30].",
      "referencias": [
       "N28",
       "N29",
       "N30"
      ]
+    },
+    {
+     "elo": "Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café)",
+     "direcionamento": "Monitore o posicionamento direcional na B3 (boi a R$ 399,00/@) e a volatilidade cambial. Ajuste as estratégias de hedge considerando a variação semanal e a liquidez nos mercados futuros.",
+     "referencias": [
+      "N28",
+      "N32"
+     ]
     }
    ],
    "drivers_semana": {
-    "cafe_arabica_cepea": "Café arábica sul de Minas registrou alta de 1,55% na semana, refletindo a valorização do café arábica tipo 6 bebida dura em Manhuaçu-MG, conforme [N28] e [N29].",
-    "boi_gordo_cepea": "Boi gordo seguiu uma tendência de queda, com a arroba abrindo a semana em R$ 395,00/@, refletindo a pressão de oferta e a expectativa de desaceleração da demanda, conforme [N30] e [N31]."
+    "cafe_arabica_cepea": "O café arábica no Sul de Minas registrou variação semanal de 0,00% (R$ 0,00/sc), mantendo-se estável em R$ 1.850,00/sc.",
+    "boi_gordo_cepea": "O boi gordo em São Paulo apresentou variação semanal de 0,00% (R$ 0,00/@), firmado no patamar de R$ 395,00/@."
    },
    "narrativas_mes": {},
    "gatilhos": {
-    "cafe_arabica_cepea": "Café arábica sul de Minas pode perder a tendência de alta se o café robusta começar a se valorizar, conforme notícias [N11].",
-    "boi_gordo_cepea": "Boi gordo pode reverter a tendência de queda se a demanda doméstica for mais forte do que o esperado, conforme notícias [N29] e [N30]."
+    "cafe_arabica_cepea": "Alterações expressivas na oferta global ou reversão acentuada nas cotações internacionais de Nova York.",
+    "boi_gordo_cepea": "Mudanças repentinas no ritmo de abate dos frigoríficos ou retração drástica no consumo interno de carne bovina."
    },
    "vieses_projecao": {
-    "cafe_arabica_cepea": "alta",
-    "boi_gordo_cepea": "baixa"
+    "cafe_arabica_cepea": "neutro",
+    "boi_gordo_cepea": "neutro"
    }
   }
  },
  "fech": {
-  "escopo": "Dólar em alta pressiona preços, com 7ª alta seguida; soja e milho em forte tendência.",
+  "escopo": "Fechamento Germinare Agro: Dólar PTAX a R$ 5,9708, soja em alta na CBOT e mercados firmes em todos os complexos.",
   "pilula": {
-   "titulo": "Dólar em alta pressiona preços",
-   "analise": "O dólar, com 7 altas seguidas, está em forte tendência de alta, pressionando preços de commodities e fertilizantes. O NDF (160 dias) calculado é R$ 6,1716, refletindo essa pressão cambial. A atenção deve estar voltada para a estabilidade da Selic e a continuidade dessa tendência.",
-   "conclusao": "A pressão cambial deve ser monitorada de perto, especialmente em commodities importadas."
+   "titulo": "Impacto cambial e precificação de derivativos cambiais (NDF)",
+   "analise": "O conceito de NDF (Non-Deliverable Forward) é fundamental para a gestão de risco cambial na cadeia de commodities agrícolas. Com o Dólar PTAX cotado a R$ 5,9708 e a taxa Selic mantida em 13,75% a.a., a precificação do contrato a termo de 160 dias resulta em R$ 6,1716. Esse cálculo reflete o diferencial de juros entre o Brasil e o mercado internacional ao longo de 106 dias úteis, demonstrando o custo de carrego cambial embutido nas operações estruturadas para tradings e produtores rurais.",
+   "conclusao": "A alta do PTAX e o patamar do NDF exigem atenção redobrada das tradings e indústrias na proteção de margens de importação e custos de insumos."
   },
-  "roteiro_audio": "Boa tarde, senhores e senhoras, estamos em 23 de novembro às 19:55 BRT. Vamos analisar o cenário atual. O dólar, com 7 altas seguidas, está em forte tendência de alta, pressionando preços de commodities e fertilizantes. A taxa NDF (160 dias) calculada é R$ 6,1716, refletindo essa pressão cambial. A atenção deve estar voltada para a estabilidade da Selic e a continuidade dessa tendência. No Complexo Soja, a soja CBOT e SJC subiram 1,10% e 1,76% respectivamente, enquanto o farelo de soja teve alta de 2,62%. O dólar subiu 1,39% e pressionou o óleo de soja. No Complexo Milho, o milho B3 registra 3 altas seguidas, com variação diária de +0,94% e +1,26% nos vencimentos. O trigo segue estável, enquanto o dólar atinge 7ª alta seguida, pressionando commodities. No Complexo Algodão, a pluma do algodão em R$ 406,00/lb, sem movimento relevante na semana. O dólar PTAX subiu 10,14% no mês, pressionando exportações. No Complexo Café, o café arábica sul de Minas registra alta de 1,55% na semana, enquanto o boi gordo mantém tendência de queda. O dólar avança 10,14% no mês. A pressão cambial deve ser monitorada de perto, especialmente em commodities importadas. Vamos às tabelas e ao painel."
+  "roteiro_audio": "Olá, equipe da Germinare Agro. Vamos ao fechamento de mercado desta segunda-feira, 23/11/2026, às 23:56. Iniciamos pelo cenário macroeconômico e cambial. O Dólar PTAX encerrou cotado a R$ 5,9708, registrando alta de +1,39% na semana e avanço de +10,14% no mês, acumulando 7 altas seguidas. Esse movimento pressiona diretamente os custos agrícolas, enquanto a taxa Selic permanece inalterada em 13,75% a.a. No complexo soja, o grão na CBOT (1º vencimento) marcou US$ 12,2078/bu em 20/11, alta diária de +1,10%. No mercado físico brasileiro, o Porto de Paranaguá fechou a R$ 170,00/sc em 23/11, mantendo-se estável na variação semanal. Passando para o complexo milho e coprodutos, a B3 registrou três altas seguidas, com o 1º vencimento a R$ 72,15/sc e o 2º a R$ 77,90/sc. O milho em Campinas-SP ficou cotado a R$ 68,00/sc e o trigo FOB em Ponta Grossa-PR a R$ 1.560,00/t. No setor de etanol de milho, destaca-se a compra de 42% da Neomille pela Petrobras por R$ 2,8 bilhões. No complexo algodão, a pluma em Rondonópolis-MT fechou a 406,00 ¢R$/lb, com variação de 0,00% no dia e na semana, sustentada pela alta do Dólar PTAX. As referências na ICE Nova York continuam indisponíveis. Nos demais mercados, o café arábica no Sul de Minas encerrou a R$ 1.850,00/sc e o boi gordo em São Paulo a R$ 395,00/@, ambos estáveis no comparativo semanal. Vamos às tabelas e ao painel."
  },
  "noticias": {
   "cambio_e_energia": [
@@ -296,7 +305,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 11.49,
+    "pontuacao": 11.15,
     "id": "N1"
    },
    {
@@ -310,7 +319,7 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 9.47,
+    "pontuacao": 9.14,
     "id": "N2"
    },
    {
@@ -325,37 +334,8 @@
      "cambio_e_energia",
      "complexo_soja"
     ],
-    "pontuacao": 9.23,
+    "pontuacao": 8.89,
     "id": "N3"
-   },
-   {
-    "titulo": "Petróleo fecha em queda de mais de 3% com aumento do fluxo no Oriente Médio",
-    "url": "https://www.moneytimes.com.br/petroleo-23-11-2026-davs/",
-    "fonte": "Money Times Agro",
-    "regiao": "Brasil",
-    "idioma": "pt",
-    "publicado_em": "2026-11-23T17:20-03:00",
-    "resumo": "Os contratos futuros de petróleo fecharam em queda de mais de 3% nesta segunda-feira (23), com o Brent encerrando abaixo dos US$ 90 pela primeira vez em duas semanas. A desvalorização ocorreu por conta do aumento do fluxo da commodity do Oriente Médio, apesar de ataques persistentes a navios e refinarias na região. Negociado na [&#8230;]",
-    "blocos": [
-     "cambio_e_energia"
-    ],
-    "pontuacao": 7.58,
-    "id": "N4"
-   },
-   {
-    "titulo": "Dólar se aproxima de R$ 6 e impulsiona preços de soja e negócios no Brasil",
-    "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/dolar-se-aproxima-de-r-6-e-impulsiona-precos-e-negocios-no-brasil/",
-    "fonte": "Canal Rural",
-    "regiao": "Brasil",
-    "idioma": "pt",
-    "publicado_em": "2026-11-23T19:10-03:00",
-    "resumo": "Moeda norte-americana protagoniza alta durante a sessão, enquanto ganhos em Chicago favoreceram as cotações nas principais praças brasileiras O post Dólar se aproxima de R$ 6 e impulsiona preços de soja e negócios no Brasil apareceu primeiro em Canal Rural .",
-    "blocos": [
-     "cambio_e_energia",
-     "complexo_soja"
-    ],
-    "pontuacao": 7.54,
-    "id": "N5"
    },
    {
     "titulo": "Diesel e biodiesel: o que muda para o produtor",
@@ -369,8 +349,8 @@
      "cambio_e_energia",
      "complexo_soja"
     ],
-    "pontuacao": 6.84,
-    "id": "N6"
+    "pontuacao": 6.5,
+    "id": "N4"
    },
    {
     "titulo": "Açúcar dispara em Nova York após reposicionamento dos investidores",
@@ -383,8 +363,8 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 6.78,
-    "id": "N7"
+    "pontuacao": 6.45,
+    "id": "N5"
    },
    {
     "titulo": "Dólar valorizado e oferta restrita sustentam altas do preço do milho",
@@ -398,8 +378,8 @@
      "cambio_e_energia",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 6.21,
-    "id": "N8"
+    "pontuacao": 5.88,
+    "id": "N6"
    },
    {
     "titulo": "TCU deve votar relatório sobre irregularidades no crédito rural",
@@ -412,21 +392,52 @@
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 5.8,
-    "id": "N9"
+    "pontuacao": 5.49,
+    "id": "N7"
    },
    {
-    "titulo": "Juros futuros caem com sinalização sobre diretorias no BC",
-    "url": "https://www.canalrural.com.br/economia/juros-futuros-caem-com-sinalizacao-sobre-diretorias-no-bc/",
+    "titulo": "Milho fecha a R$ 71,45 na B3",
+    "url": "https://www.agrolink.com.br/noticias/milho-fecha-a-r--71-45-na-b3_521392.html",
+    "fonte": "Agrolink",
+    "regiao": "Brasil",
+    "idioma": "pt",
+    "publicado_em": "2026-11-23T15:28-03:00",
+    "resumo": "O mercado de milho encerrou a última semana com movimentos diferentes no Brasil e nos Estados Unidos. Enquanto os contratos negociados na Bolsa de Chicago registraram queda, os preços futuros brasileiros avançaram com o apoio da valorização do dólar. Segundo análise feita pela Grão Direto, o contrato de milho com vencimento em dezembro de 2026 recuou 2,58% em Chicago, fechando a US$ 4,345 por bushel. Na B3, o vencimento janeiro de 2027 subiu 0,90%, encerrando a semana cotado a R$ 71,45 por saca.",
+    "blocos": [
+     "cambio_e_energia",
+     "complexo_milho_e_ddgs"
+    ],
+    "pontuacao": 4.89,
+    "id": "N8"
+   },
+   {
+    "titulo": "Petrobras projeta ampliar capacidade de refino para 2,173 milhões de bpd até 2031",
+    "url": "https://www.canalrural.com.br/economia/petrobras-projeta-ampliar-capacidade-de-refino-para-2173-milhoes-de-bpd-ate-2031/",
     "fonte": "Canal Rural",
     "regiao": "Brasil",
     "idioma": "pt",
-    "publicado_em": "2026-11-23T18:37-03:00",
-    "resumo": "Declarações de Gabriel Galípolo e Nilton David, além de notícia sobre indicações para vagas abertas, deram suporte ao recuo das taxas nesta segunda-feira (23). O post Juros futuros caem com sinalização sobre diretorias no BC apareceu primeiro em Canal Rural .",
+    "publicado_em": "2026-11-23T20:18-03:00",
+    "resumo": "Plano de Negócios 2027-2031 também prevê expansão da produção de diesel S-10 e US$ 13,5 bilhões em transição energética O post Petrobras projeta ampliar capacidade de refino para 2,173 milhões de bpd até 2031 apareceu primeiro em Canal Rural .",
     "blocos": [
      "cambio_e_energia"
     ],
-    "pontuacao": 5.49,
+    "pontuacao": 4.3,
+    "id": "N9"
+   },
+   {
+    "titulo": "After the Bell | Winter wheat futures mixed in face of firming U.S. dollar",
+    "url": "https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar",
+    "fonte": "Pro Farmer",
+    "regiao": "Internacional",
+    "idioma": "en",
+    "publicado_em": "2026-11-23T16:52-03:00",
+    "resumo": "Nov. 23, 2026 Corn: March corn rose 1 cent to $4.49 3/4, nearer the daily low. The corn futures market today saw tepid short covering and perceived bargain buying. Soybeans: January soybeans rose 8 cents to $12.28 3/4, near mid-range. March soybean meal gained $4.40 to $345.20, near the daily high and hit a four-week high. March soybean oil lost 47 points to 60.05 cents, nearer the daily low and hit an eight-month low. The soybean and meal markets today saw short covering and bargain hunting from the speculators, amid a markedly improved risk appetite in the general marketplace. Bean oil was pressured by the sell off in crude oil prices recently. Wheat: March SRW rose 3 1/2 cents to $5.95 1/2, nearer the daily high. March HRW lost 2 3/4 cents to $6.37 1/2, nearer the daily low. March spring wheat futures rose 1 3/4 cents to $6.40, nearer the daily high. The winter wheat futures markets s",
+    "blocos": [
+     "complexo_soja",
+     "complexo_milho_e_ddgs",
+     "cambio_e_energia"
+    ],
+    "pontuacao": 6.21,
     "id": "N10"
    }
   ],
@@ -445,7 +456,7 @@
      "complexo_milho_e_ddgs",
      "complexo_algodao"
     ],
-    "pontuacao": 11.86,
+    "pontuacao": 11.52,
     "id": "N11"
    },
    {
@@ -459,7 +470,7 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 6.8,
+    "pontuacao": 6.47,
     "id": "N12"
    },
    {
@@ -475,23 +486,22 @@
      "complexo_milho_e_ddgs",
      "cambio_e_energia"
     ],
-    "pontuacao": 6.55,
-    "id": "N13"
+    "pontuacao": 6.21,
+    "id": "N10"
    },
    {
-    "titulo": "Dólar se aproxima de R$ 6 e impulsiona preços de soja e negócios no Brasil",
-    "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/dolar-se-aproxima-de-r-6-e-impulsiona-precos-e-negocios-no-brasil/",
-    "fonte": "Canal Rural",
-    "regiao": "Brasil",
-    "idioma": "pt",
-    "publicado_em": "2026-11-23T19:10-03:00",
-    "resumo": "Moeda norte-americana protagoniza alta durante a sessão, enquanto ganhos em Chicago favoreceram as cotações nas principais praças brasileiras O post Dólar se aproxima de R$ 6 e impulsiona preços de soja e negócios no Brasil apareceu primeiro em Canal Rural .",
+    "titulo": "Indonesia to require permits and inspections for whole soybean imports from 2027",
+    "url": "https://www.efeedlink.com/articles/indonesia-to-require-permits-and-inspections-for-whole-soybean-imports-from-2027",
+    "fonte": "eFeedLink",
+    "regiao": "China",
+    "idioma": "en",
+    "publicado_em": "2026-11-23T23:08-03:00",
+    "resumo": "Jakarta will add import permits and mandatory inspections for whole soybeans from 1 January 2027, a change that could complicate supply to a market where US-origin beans hold about 85% share. Jakarta will add import permits and mandatory inspections for whole soybeans from 1 January 2027, a change that could complicate supply to a market where US-origin beans hold about 85% share.",
     "blocos": [
-     "cambio_e_energia",
      "complexo_soja"
     ],
-    "pontuacao": 7.54,
-    "id": "N5"
+    "pontuacao": 5.73,
+    "id": "N13"
    },
    {
     "titulo": "Calcário em superfície entrega mais produtividade na soja, aponta estudo da UFMT",
@@ -504,7 +514,7 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 5.28,
+    "pontuacao": 4.94,
     "id": "N14"
    },
    {
@@ -519,7 +529,7 @@
      "cambio_e_energia",
      "complexo_soja"
     ],
-    "pontuacao": 9.23,
+    "pontuacao": 8.89,
     "id": "N3"
    },
    {
@@ -533,8 +543,22 @@
     "blocos": [
      "complexo_soja"
     ],
-    "pontuacao": 5.18,
+    "pontuacao": 4.84,
     "id": "N15"
+   },
+   {
+    "titulo": "Petrobras prevê US$ 13,1 bilhões para transição energética no plano 2027-2031",
+    "url": "https://www.canalrural.com.br/economia/petrobras-preve-us-131-bilhoes-para-transicao-energetica-no-plano-2027-2031/",
+    "fonte": "Canal Rural",
+    "regiao": "Brasil",
+    "idioma": "pt",
+    "publicado_em": "2026-11-23T20:52-03:00",
+    "resumo": "Companhia mantém volume próximo ao plano anterior, com redução nos recursos para bioprodutos, biodiesel e biometano. O post Petrobras prevê US$ 13,1 bilhões para transição energética no plano 2027-2031 apareceu primeiro em Canal Rural .",
+    "blocos": [
+     "complexo_soja"
+    ],
+    "pontuacao": 4.34,
+    "id": "N16"
    },
    {
     "titulo": "Grãos abrem semana em alta na bolsa de Chicago",
@@ -548,8 +572,8 @@
      "complexo_milho_e_ddgs",
      "complexo_soja"
     ],
-    "pontuacao": 5.38,
-    "id": "N16"
+    "pontuacao": 5.05,
+    "id": "N17"
    },
    {
     "titulo": "Temporal provoca perdas de até 97% em lavouras e atinge 35 mil hectares em Tupanciretã (RS)",
@@ -564,26 +588,39 @@
      "complexo_soja",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 3.39,
-    "id": "N17"
-   },
-   {
-    "titulo": "Vietnam's corn import bill rises 26.5% to US$3.01 billion in 10 months as soybean imports jump 43.6%",
-    "url": "https://www.efeedlink.com/articles/vietnams-corn-import-bill-rises-26-5-to-us-3-01-billion-in-10-months-as-soybean-imports-jump-43-6",
-    "fonte": "eFeedLink",
-    "regiao": "China",
-    "idioma": "en",
-    "publicado_em": "2026-11-23T01:05-03:00",
-    "resumo": "A weaker dong, at its softest central rate of 2026, is adding to the cost of imported feed ingredients even as livestock herds expand. A weaker dong, at its softest central rate of 2026, is adding to the cost of imported feed ingredients even as livestock herds expand.",
-    "blocos": [
-     "complexo_soja",
-     "complexo_milho_e_ddgs"
-    ],
-    "pontuacao": 3.23,
+    "pontuacao": 3.05,
     "id": "N18"
    }
   ],
   "complexo_milho_e_ddgs": [
+   {
+    "titulo": "Petrobras buys 42% of Brazil corn ethanol maker Neomille for R$2.8 billion as corn grind set to nearly double",
+    "url": "https://www.efeedlink.com/articles/petrobras-buys-42-of-brazil-corn-ethanol-maker-neomille-for-r-2-8-billion-as-corn-grind-set-to-nearly-double",
+    "fonte": "eFeedLink",
+    "regiao": "China",
+    "idioma": "en",
+    "publicado_em": "2026-11-23T23:17-03:00",
+    "resumo": "Brazil's state oil company joins CerradinhoBio in a corn-based ethanol business that also produces corn oil and an animal feed ingredient at plants in Goias and Mato Grosso do Sul. Brazil's state oil company joins CerradinhoBio in a corn-based ethanol business that also produces corn oil and an animal feed ingredient at plants in Goias and Mato Grosso do Sul.",
+    "blocos": [
+     "complexo_milho_e_ddgs"
+    ],
+    "pontuacao": 6.74,
+    "id": "N19"
+   },
+   {
+    "titulo": "Petrobras compra participação da Neomille por R$ 2,8 bi e põe os pés no etanol de milho",
+    "url": "https://agfeed.com.br/negocios/petrobras-compra-participacao-da-neomille-por-r-28-bi-e-poe-os-pes-no-etanol-de-milho",
+    "fonte": "AgFeed",
+    "regiao": "Brasil",
+    "idioma": "pt",
+    "publicado_em": "2026-11-23T20:55-03:00",
+    "resumo": "A Petrobras anunciou nesta segunda-feira, 23 de novembro, a compra de 42% da Neomille, produtora de etanol de milho controlada pela Cerradinho Bioenergia, por R$ 2,8 bilhões. A operação marca o retorno da estatal à produção de etanol, setor do qual saiu ao vender ativos nos governos de Michel Temer e Jair Bolsonaro, e foi […] O post Petrobras compra participação da Neomille por R$ 2,8 bi e põe os pés no etanol de milho apareceu primeiro em AgFeed .",
+    "blocos": [
+     "complexo_milho_e_ddgs"
+    ],
+    "pontuacao": 6.55,
+    "id": "N20"
+   },
    {
     "titulo": "Cacau e café arábica puxam alta de índice agrícola",
     "url": "https://www.agrolink.com.br/noticias/cacau-e-cafe-arabica-puxam-alta-de-indice-agricola_521377.html",
@@ -598,7 +635,7 @@
      "complexo_milho_e_ddgs",
      "complexo_algodao"
     ],
-    "pontuacao": 11.86,
+    "pontuacao": 11.52,
     "id": "N11"
    },
    {
@@ -614,8 +651,8 @@
      "complexo_milho_e_ddgs",
      "cambio_e_energia"
     ],
-    "pontuacao": 6.55,
-    "id": "N13"
+    "pontuacao": 6.21,
+    "id": "N10"
    },
    {
     "titulo": "Grãos abrem semana em alta na bolsa de Chicago",
@@ -629,8 +666,8 @@
      "complexo_milho_e_ddgs",
      "complexo_soja"
     ],
-    "pontuacao": 5.38,
-    "id": "N16"
+    "pontuacao": 5.05,
+    "id": "N17"
    },
    {
     "titulo": "Milho fecha a R$ 71,45 na B3",
@@ -644,8 +681,8 @@
      "cambio_e_energia",
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 5.23,
-    "id": "N19"
+    "pontuacao": 4.89,
+    "id": "N8"
    },
    {
     "titulo": "Ataque precoce de lagarta aumenta riscos para o milho",
@@ -658,8 +695,22 @@
     "blocos": [
      "complexo_milho_e_ddgs"
     ],
-    "pontuacao": 5.14,
-    "id": "N20"
+    "pontuacao": 4.8,
+    "id": "N21"
+   },
+   {
+    "titulo": "Petrobras retorna ao setor de etanol com aquisição de fatia na Neomille",
+    "url": "https://globorural.globo.com/biocombustiveis/noticia/2026/11/petrobras-retorna-ao-setor-de-etanol-com-aquisicao-de-fatia-na-neomille.ghtml",
+    "fonte": "Globo Rural",
+    "regiao": "Brasil",
+    "idioma": "pt",
+    "publicado_em": "2026-11-24T00:54-03:00",
+    "resumo": "A Petrobras informou nesta segunda-feira (23/11) que fechou acordo para aquisição de 42% da empresa de produção de etanol de milho Neomille, do Grupo CerradinhoBio. O valor total da aquisição é de R$ 2,8 bilhões, sendo R$ 1,8 bilhão em aporte primário de recursos na Neomille, mediante subscrição de novas ações. Os valores estarão sujeitos aos ajustes de preço previstos nos documentos da operação, e a conclusão da transação depende de aval do Conselho Administrativo de Defesa Econômica (Cade). Segundo a estatal, a parcela remanescente corresponde à aquisição secundária de ações detidas pelos atuais acionistas e inclui pagamento contingente de até R$ 397 milhões a título de “earn-out” (pagamento contingente). Os valores estarão sujeitos aos ajustes de preço previstos no contrato, disse a Petrobras em fato relevante. “A transação está alinhada à estratégia de diversificação rentável do port",
+    "blocos": [
+     "complexo_milho_e_ddgs"
+    ],
+    "pontuacao": 4.8,
+    "id": "N22"
    },
    {
     "titulo": "Doenças do milho geram prejuízo de US$ 25,8 bilhões em cinco anos",
@@ -673,66 +724,23 @@
      "complexo_milho_e_ddgs",
      "complexo_cafe"
     ],
-    "pontuacao": 5.1,
-    "id": "N21"
-   },
-   {
-    "titulo": "Ahead of the Open | Corn still rangebound",
-    "url": "https://www.profarmer.com/news/ahead-open/ahead-open-corn-still-rangebound",
-    "fonte": "Pro Farmer",
-    "regiao": "Internacional",
-    "idioma": "en",
-    "publicado_em": "2026-11-23T11:03-03:00",
-    "resumo": "Corn and wheat still trading within Thursday's range. GENERAL COMMENTS: Corn, soybeans and wheat each favored the upside in overnight trade. Soybeans continue to wrestle against 20-day moving average resistance while corn and wheat struggle to break out of last Thursday’s range. Outside markets are unfavorable this morning as front-month crude oil futures broke to fresh lows while the U.S. dollar index is around 300 points higher. USDA reported daily export sales of 110,000 MT of white wheat for delivery to unknown destinations during the 2026-27 marketing year. The U.S. Army plans to invoke emergency provisions to bypass a court order blocking the detonation of 68 barrels of unstable lead azide in Middletown, Iowa, the Associated Press reported . Officials argue that dropping temperatures increase the risk of an accidental explosion, necessitating a Wednesday blast. However, environment",
-    "blocos": [
-     "complexo_milho_e_ddgs",
-     "cambio_e_energia",
-     "complexo_soja"
-    ],
-    "pontuacao": 5.06,
-    "id": "N22"
-   },
-   {
-    "titulo": "India reaches ethanol blending milestone",
-    "url": "https://www.world-grain.com/articles/23483-india-reaches-ethanol-blending-milestone",
-    "fonte": "World Grain",
-    "regiao": "Internacional",
-    "idioma": "en",
-    "publicado_em": "2026-11-23T09:50-03:00",
-    "resumo": "Maize accounts for nearly half of country’s ethanol feedstocks",
-    "blocos": [
-     "complexo_milho_e_ddgs"
-    ],
-    "pontuacao": 4.96,
+    "pontuacao": 4.76,
     "id": "N23"
    },
    {
-    "titulo": "CEO da MBRF não vê motivo para UE manter bloqueio a frango do Brasil em dezembro",
-    "url": "https://globorural.globo.com/pecuaria/aves/noticia/2026/11/ceo-da-mbrf-nao-ve-motivo-para-ue-manter-bloqueio-a-frango-do-brasil-em-dezembro.ghtml",
-    "fonte": "Globo Rural",
-    "regiao": "Brasil",
-    "idioma": "pt",
-    "publicado_em": "2026-11-23T21:45-03:00",
-    "resumo": "O CEO da MBRF, Miguel Gularte, disse à reportagem que a companhia já trabalhava com expectativa de que a União Europeia votasse sobre a reinclusão do Brasil na lista de fornecedores de carne de frango e mel do bloco apenas em dezembro - e não em novembro, como esperava parte da indústria. No dia 17 de novembro, o Comitê Permanente de Plantas, Animais, Alimentos e Rações (Scopaff), da União Europeia adiou para o início de dezembro a votação que estava prevista para aquele dia, alegando que representantes de alguns Estados-membros solicitaram esclarecimentos adicionais. Na ocasião, o Ministério da Agricultura do Brasil manifestou “preocupação” com o adiamento e a Associação Brasileira de Proteína Animal (ABPA) falou em “descontentamento” com a postergação. As exportações brasileiras de produtos de origem animal para o bloco estão suspensas desde 3 de setembro, em razão de regras europeias ",
-    "blocos": [
-     "complexo_milho_e_ddgs"
-    ],
-    "pontuacao": 4.8,
-    "id": "N24"
-   },
-   {
-    "titulo": "Wheat conditions improve for the third consecutive week",
-    "url": "https://www.profarmer.com/news/wheat-conditions-improve-third-consecutive-week",
-    "fonte": "Pro Farmer",
-    "regiao": "Internacional",
+    "titulo": "Thailand's cane and cassava growers push to keep US ethanol import barriers",
+    "url": "https://www.efeedlink.com/articles/thailand-s-cane-and-cassava-growers-push-to-keep-us-ethanol-import-barriers",
+    "fonte": "eFeedLink",
+    "regiao": "China",
     "idioma": "en",
-    "publicado_em": "2026-11-23T18:48-03:00",
-    "resumo": "Wheat ratings look strong as the Crop Progress season nears a close USDA’s weekly Crop Progress and Condition report on Monday showed winter wheat conditions improve for the third consecutive week. State-level breakdowns of the Pro Farmer Crop Condition Index, which compresses the USDA’s weekly crop progress report into a single, weighted, easy-to-track number that’s widely used to monitor the health and potential of U.S. crops during the growing season and more details around USDA ratings, are below. USDA placed its estimates for winter wheat conditions at 12% very poor to poor, 34% fair, and 54% good to excellent. The good to excellent categories improved 1% from the week prior. The past week saw spotty rains in Missouri and further east into SRW country that helped alleviate some impacts of the recent dry spell in the lower Midwest. The CCI index for SRW was up 3.32 points to 374.15, ",
+    "publicado_em": "2026-11-23T23:11-03:00",
+    "resumo": "Farm groups want Bangkok to retain non-tariff barriers on US ethanol and clarify its commitments under the proposed Agreement on Reciprocal Trade. Farm groups want Bangkok to retain non-tariff barriers on US ethanol and clarify its commitments under the proposed Agreement on Reciprocal Trade.",
     "blocos": [
-     "complexo_milho_e_ddgs"
+     "complexo_milho_e_ddgs",
+     "cambio_e_energia"
     ],
-    "pontuacao": 4.71,
-    "id": "N25"
+    "pontuacao": 4.74,
+    "id": "N24"
    }
   ],
   "complexo_algodao": [
@@ -747,8 +755,8 @@
     "blocos": [
      "complexo_algodao"
     ],
-    "pontuacao": 7.25,
-    "id": "N26"
+    "pontuacao": 6.92,
+    "id": "N25"
    },
    {
     "titulo": "Cacau e café arábica puxam alta de índice agrícola",
@@ -764,7 +772,7 @@
      "complexo_milho_e_ddgs",
      "complexo_algodao"
     ],
-    "pontuacao": 11.86,
+    "pontuacao": 11.52,
     "id": "N11"
    },
    {
@@ -779,8 +787,8 @@
      "complexo_algodao",
      "complexo_soja"
     ],
-    "pontuacao": 3.78,
-    "id": "N27"
+    "pontuacao": 3.45,
+    "id": "N26"
    }
   ],
   "complexo_cafe": [
@@ -798,7 +806,7 @@
      "complexo_milho_e_ddgs",
      "complexo_algodao"
     ],
-    "pontuacao": 11.86,
+    "pontuacao": 11.52,
     "id": "N11"
    },
    {
@@ -812,8 +820,8 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 9.66,
-    "id": "N28"
+    "pontuacao": 9.32,
+    "id": "N27"
    },
    {
     "titulo": "Arroba do boi gordo abre a semana de olho no pico de demanda em dezembro",
@@ -826,8 +834,8 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 9.55,
-    "id": "N29"
+    "pontuacao": 9.22,
+    "id": "N28"
    },
    {
     "titulo": "Preço do bezerro e do boi gordo: descolamento permanece em novembro",
@@ -840,8 +848,8 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 8.08,
-    "id": "N30"
+    "pontuacao": 7.74,
+    "id": "N29"
    },
    {
     "titulo": "Arrobas de boi gordo por bezerro em novembro na mínima de 2026, mas atenção!",
@@ -854,8 +862,8 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 7.59,
-    "id": "N31"
+    "pontuacao": 7.26,
+    "id": "N30"
    },
    {
     "titulo": "Carlos Arturo Mallorquin Junior impulsiona confinamento com IA no agro",
@@ -868,8 +876,8 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 6.5,
-    "id": "N32"
+    "pontuacao": 6.17,
+    "id": "N31"
    },
    {
     "titulo": "Café abre semana em alta na bolsa de Nova York",
@@ -883,8 +891,8 @@
      "complexo_cafe",
      "cambio_e_energia"
     ],
-    "pontuacao": 6.3,
-    "id": "N33"
+    "pontuacao": 5.96,
+    "id": "N32"
    },
    {
     "titulo": "Pasture or Processing Power? What Big Tech’s Rural Data Center Boom Means for Cattle Country",
@@ -897,8 +905,8 @@
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 5.58,
-    "id": "N34"
+    "pontuacao": 5.25,
+    "id": "N33"
    },
    {
     "titulo": "Doenças do milho geram prejuízo de US$ 25,8 bilhões em cinco anos",
@@ -912,22 +920,22 @@
      "complexo_milho_e_ddgs",
      "complexo_cafe"
     ],
-    "pontuacao": 5.1,
-    "id": "N21"
+    "pontuacao": 4.76,
+    "id": "N23"
    },
    {
-    "titulo": "Brasil precisa avançar na restrição ao confinamento de porcas durante a gestação, diz entidade",
-    "url": "https://globorural.globo.com/pecuaria/suinos/noticia/2026/11/brasil-precisa-avancar-na-restricao-ao-confinamento-de-porcas-durante-a-gestacao-diz-entidade.ghtml",
-    "fonte": "Globo Rural",
-    "regiao": "Brasil",
-    "idioma": "pt",
-    "publicado_em": "2026-11-23T20:39-03:00",
-    "resumo": "Diferentemente de outros países, o Brasil ainda está distante das normas de bem-estar animal quando o assunto é restrição ao confinamento de porcas durante a gestação. Internamente, o país tem até 1º de janeiro de 2045 para que granjas existentes adaptem suas instalações aos requisitos nacionais de alojamento coletivo. Por outro lado, na União Europeia, desde 2013, as normas exigem alojamento coletivo das porcas durante parte da gestação, restringindo o período em que podem permanecer individualmente confinadas. A diferença entre padrões regulatórios e práticas empresariais foi apontada pelo estuado \"Porcos em Foco: Monitor da Indústria Suína Brasileira\", divulgado pela Sinergia Animal, organização internacional de proteção animal que atua em oito países da América Latina e do Sudeste Asiático. De acordo com a entidade, a Instrução Normativa nº 113/2020, do Ministério da Agricultura, det",
+    "titulo": "New H5N1 detections in US dairy herds as state officials press USDA on cattle vaccine",
+    "url": "https://www.efeedlink.com/articles/new-h5n1-detections-in-us-dairy-herds-as-state-officials-press-usda-on-cattle-vaccine",
+    "fonte": "eFeedLink",
+    "regiao": "China",
+    "idioma": "en",
+    "publicado_em": "2026-11-23T23:11-03:00",
+    "resumo": "Seven states recorded new H5N1 detections in dairy cattle over the past month, as state agriculture and animal health officials urge USDA to authorise an emergency vaccination framework. Seven states recorded new H5N1 detections in dairy cattle over the past month, as state agriculture and animal health officials urge USDA to authorise an emergency vaccination framework.",
     "blocos": [
      "complexo_cafe"
     ],
-    "pontuacao": 4.8,
-    "id": "N35"
+    "pontuacao": 4.74,
+    "id": "N34"
    }
   ]
  },
@@ -938,7 +946,7 @@
    "modo": "rss",
    "feed": "https://www.farmnews.com.br/feed/",
    "itens_lidos": 7,
-   "itens_na_janela": 5,
+   "itens_na_janela": 6,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -949,7 +957,7 @@
    "modo": "rss",
    "feed": "https://agfeed.com.br/feed/",
    "itens_lidos": 10,
-   "itens_na_janela": 7,
+   "itens_na_janela": 10,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -971,7 +979,7 @@
    "modo": "rss",
    "feed": "https://globorural.globo.com/rss/globorural",
    "itens_lidos": 30,
-   "itens_na_janela": 30,
+   "itens_na_janela": 27,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -1210,21 +1218,19 @@
  ],
  "texto_stats": {
   "modo": "ia_verificada",
-  "modelo": "gemini-flash-lite-latest @ Google Gemini ×1 → qwen2.5:7b @ IA local ×6",
+  "modelo": "gemini-flash-lite-latest @ Google Gemini ×7",
   "chamadas": 7,
   "respostas_reprovadas": 1,
   "corrigidos_pela_ia": 1,
-  "campos_verificados": 130,
+  "campos_verificados": 141,
   "campos_substituidos": 0,
   "blocos_com_ia": 6,
-  "erros_llm": [
-   "gemini-flash-lite-latest @ Google Gemini: instabilidade no servidor (HTTP 503) — fora da fila nesta execução"
-  ],
+  "erros_llm": [],
   "detalhes": []
  },
  "noticias_stats": {
-  "coletadas": 143,
-  "usadas": 35,
+  "coletadas": 144,
+  "usadas": 34,
   "fontes_ok": 10,
   "fontes_com_falha": 12
  },
