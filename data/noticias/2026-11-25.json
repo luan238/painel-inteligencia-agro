@@ -1,0 +1,2200 @@
+{
+ "gerado_em": "2026-11-25T02:02:06.183384-03:00",
+ "status_fontes": [
+  {
+   "nome": "Farmnews",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.farmnews.com.br/feed/",
+   "itens_lidos": 7,
+   "itens_na_janela": 7,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "AgFeed",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://agfeed.com.br/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Canal Rural",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.canalrural.com.br/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Globo Rural",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://globorural.globo.com/rss/globorural",
+   "itens_lidos": 30,
+   "itens_na_janela": 30,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Agrolink",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.agrolink.com.br/rss/noticias.rss",
+   "itens_lidos": 30,
+   "itens_na_janela": 30,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Money Times Agro",
+   "regiao": "Brasil",
+   "modo": "rss",
+   "feed": "https://www.moneytimes.com.br/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "CONAB",
+   "regiao": "Brasil",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "Bolsa de Cereales de Buenos Aires",
+   "regiao": "Argentina",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "BCR – Bolsa de Comercio de Rosario",
+   "regiao": "Argentina",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 10,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Infobae Campo",
+   "regiao": "Argentina",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 10,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Clarín Rural",
+   "regiao": "Argentina",
+   "modo": "rss",
+   "feed": "https://www.clarin.com/rss",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Pro Farmer",
+   "regiao": "Internacional",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 8,
+   "itens_na_janela": 7,
+   "sem_data": 1,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Barchart Grains",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "Reuters Commodities",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/markets/commodities/"
+  },
+  {
+   "nome": "Bloomberg Agriculture",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "USDA WASDE",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.usda.gov não permite ler https://www.usda.gov/oce/commodity/wasde"
+  },
+  {
+   "nome": "USDA FAS",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.fas.usda.gov não permite ler https://www.fas.usda.gov/"
+  },
+  {
+   "nome": "Grain Central",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.graincentral.com não permite ler https://www.graincentral.com/"
+  },
+  {
+   "nome": "Successful Farming",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "AgWeb",
+   "regiao": "Internacional",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "World Grain",
+   "regiao": "Internacional",
+   "modo": "pagina",
+   "feed": "",
+   "itens_lidos": 10,
+   "itens_na_janela": 5,
+   "sem_data": 2,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "eFeedLink",
+   "regiao": "China",
+   "modo": "rss",
+   "feed": "https://www.efeedlink.com/rss.xml",
+   "itens_lidos": 30,
+   "itens_na_janela": 30,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "CZ App / China Agri",
+   "regiao": "China",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "SunSirs",
+   "regiao": "China",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis"
+  },
+  {
+   "nome": "Reuters China Agri",
+   "regiao": "China",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "robots",
+   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/world/china/"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Preço do boi gordo: o que esperar no final de 2026?",
+   "url": "https://www.farmnews.com.br/mercado/preco-do-boi-gordo-no-final-de-2026/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T21:18-03:00",
+   "resumo": "O preço do boi gordo voltou a ficar mais estável ao longo da segunda metade de novembro. O valor do animal pronto para o abate segue próximo da máxima nominal (primeira Figura), mas ficou mais estável ao longo de novembro? O mercado perdeu força? O mercado futuro do boi gordo, por outro lado, renovou a […] O post Preço do boi gordo: o que esperar no final de 2026? apareceu primeiro em Farmnews .",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 6.41,
+   "id": "N30"
+  },
+  {
+   "titulo": "Preço da soja recupera patamar perdido no início de 2023",
+   "url": "https://www.farmnews.com.br/mercado/preco-da-soja-recupera-patamar-perdido-no-inicio-de-2023/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:00-03:00",
+   "resumo": "O preço da soja renovou a máxima de 2026 em novembro, cotado novamente acima de R$170,0 por saca, patamar não alcançado desde o início de 2023. O preço da soja (Cepea, Paranaguá) foi cotado a R$170,7 por saca em novembro (23), alta de 7,5% frente aos R$158,8 registrados no fechamento de outubro de 2026. O […] O post Preço da soja recupera patamar perdido no início de 2023 apareceu primeiro em Farmnews .",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Preço do milho se recupera em novembro, mas segue próximo de 2025!",
+   "url": "https://www.farmnews.com.br/mercado/preco-do-milho-segue-em-recuperacao-em-novembro/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:03-03:00",
+   "resumo": "O preço do milho sobe 2,5% frente ao fechamento de outubro na parcial de novembro (23), mas segue cotado em patamares próximos de 2025. O preço do milho (Cepea) alcançou R$67,8 por saca em novembro (23), alta de 2,5% frente ao valor de R$66,2 praticado no final de outubro. O avanço nominal foi de R$1,7 […] O post Preço do milho se recupera em novembro, mas segue próximo de 2025! apareceu primeiro em Farmnews .",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Com o mercado futuro do boi gordo na máxima, o que esperar?",
+   "url": "https://www.farmnews.com.br/mercado/com-o-mercado-futuro-do-boi-gordo-na-maxima-o-que-esperar/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T09:03-03:00",
+   "resumo": "O mercado futuro do boi gordo renovou a máxima em novembro (23), com os contratos com vencimento entre dezembro e março de 2027 cotados acima de R$410,0 por arroba. O movimento de alta na B3 era esperado e no físico ainda é aguardado um movimento de valorização ainda mais robusto para que a referência no […] O post Com o mercado futuro do boi gordo na máxima, o que esperar? apareceu primeiro em Farmnews .",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 6.38,
+   "id": "N31"
+  },
+  {
+   "titulo": "Preço futuro do boi gordo na máxima entre dezembro e março de 2027",
+   "url": "https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T08:08-03:00",
+   "resumo": "O preço futuro do boi gordo para os contratos com vencimento entre dezembro de 2026 e março de 2027 renovaram a máxima. O contrato para dezembro de 2026 foi cotado a R$414,0 por arroba (B3, valor de ajuste), além do patamar mais alto para o vencimento, precificando alta de quase R$20,0 por arroba frente a […] O post Preço futuro do boi gordo na máxima entre dezembro e março de 2027 apareceu primeiro em Farmnews .",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 6.31,
+   "id": "N32"
+  },
+  {
+   "titulo": "Exportação de carne bovina: dados até terceira parcial de novembro de 2026",
+   "url": "https://www.farmnews.com.br/mercado/exportacao-de-carne-bovina-dados-ate-terceira-parcial-de-novembro-de-2026/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-23T20:48-03:00",
+   "resumo": "Os dados da exportação de carne bovina do Brasil mostraram leve queda no ritmo de embarque na terceira parcial de novembro. Vale lembrar que na primeira parcial do mês, ou seja, nos primeiros 4 dias úteis de novembro de 2026, a média diária de embarque de carne bovina in natura do Brasil foi de 16,72 […] O post Exportação de carne bovina: dados até terceira parcial de novembro de 2026 apareceu primeiro em Farmnews .",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Da venda à criação de demanda: a transformação comercial do agronegócio",
+   "url": "https://www.farmnews.com.br/gestao/de-vender-produtos-a-criacao-de-demanda-a-transformacao-comercial-do-agronegocio/",
+   "fonte": "Farmnews",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-23T15:51-03:00",
+   "resumo": "Vender produtos é gerar transações. A criação de demanda se refere a desenvolver um mercado. Para muitas empresas do agronegócio, o sucesso comercial ainda é medido por um conjunto conhecido de atividades: Nomear distribuidores; Ampliar a cobertura geográfica; Estabelecer metas de vendas; Aumentar os embarques de produtos. Essas atividades são importantes. Mas levantam uma questão […] O post Da venda à criação de demanda: a transformação comercial do agronegócio apareceu primeiro em Farmnews .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Os projetos da Petrobras para os fertilizantes no plano de R$ 720 bilhões",
+   "url": "https://agfeed.com.br/negocios/os-projetos-da-petrobras-para-os-fertilizantes-no-plano-de-r-720-bilhoes",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:54-03:00",
+   "resumo": "O Plano de Negócios da Petrobras 2027-2031 prevê investimentos superlativos, quase R$ 720 bilhões, e um escopo mais modesto, apesar de relevante, para o setor de fertilizantes. De acordo com a divulgação realizada ontem, dia 23 de novembro, a estatal visa consolidar sua retomada no mercado de insumos agrícolas com aportes em quatro unidades industriais […] O post Os projetos da Petrobras para os fertilizantes no plano de R$ 720 bilhões apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Basf põe um número na rota do IPO da divisão agrícola: € 15 bi em potencial de vendas. O que ele indica?",
+   "url": "https://agfeed.com.br/negocios/basf-poe-um-numero-na-rota-do-ipo-da-divisao-agricola-e-15-bi-em-potencial-de-vendas-o-que-ele-indica",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T15:58-03:00",
+   "resumo": "A Basf entregou ao mercado, nesta terça-feira, 24 de novembro, o número que vai usar para sustentar a avaliação da sua divisão agrícola no IPO previsto para o ano que vem: € 15 bilhões, ou o equivalente a mais de R$ 97 bilhões ao câmbio do dia. É esse o valor anual em vendas que […] O post Basf põe um número na rota do IPO da divisão agrícola: € 15 bi em potencial de vendas. O que ele indica? apareceu primeiro em AgFeed .",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 3.96,
+   "id": "N7"
+  },
+  {
+   "titulo": "Corteva reforça foco na proteção de culturas e inicia “década de ouro”",
+   "url": "https://agfeed.com.br/agro-brands/apresentado-por-corteva/corteva-reforca-foco-na-protecao-de-culturas-e-inicia-decada-de-ouro",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:32-03:00",
+   "resumo": "Em outubro passado, a unidade comercial brasileira da gigante dos insumos agrícolas Corteva reuniu, em um jantar em São Paulo, mais de 1.500 produtores rurais. Batizado de Continnum, o encontro foi cheio de simbolismo. Além de mostrar, de uma vez, sete produtos lançados ao longo do ano, a ocasião foi um marco para a história […] O post Corteva reforça foco na proteção de culturas e inicia “década de ouro” apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Sem Ometto, mas com caixa acima do esperado, Raízen vai antecipar pagamentos de R$ 3 bilhões em dívidas",
+   "url": "https://agfeed.com.br/negocios/sem-ometto-mas-com-caixa-acima-do-esperado-raizen-vai-antecipar-pagamentos-de-r-3-bilhoes-em-dividas",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T12:10-03:00",
+   "resumo": "Em meio à maior recuperação extrajudicial da história do Brasil, a Raízen aprovou a antecipação do pagamento de R$ 3 bilhões em dívidas financeiras reestruturadas, com vencimento previsto para 2033. A decisão, anunciada nesta segunda-feira, 23 de novembro, ocorre paralelamente às perspectivas de que a capitalização da companhia se aproxime do limite máximo de R$ […] O post Sem Ometto, mas com caixa acima do esperado, Raízen vai antecipar pagamentos de R$ 3 bilhões em dívidas apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Fundecitrus prepara “domo digital” como estratégia na guerra bilionária contra o greening",
+   "url": "https://agfeed.com.br/agtech/fundecitrus-prepara-domo-digital-como-estrategia-na-guerra-bilionaria-contra-o-greening",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T10:36-03:00",
+   "resumo": "Na guerra contra o greening, a citricultura brasileira prepara uma espécie de “domo digital” para elevar a proteção de seus pomares. Inspirada na lógica dos sistemas de defesa que identificam ameaças antes que atinjam seus alvos, a estratégia pretende rastrear diariamente os movimentos do psilídeo, inseto transmissor da doença. Mesmo tendo poucos milímetros, esse vetor […] O post Fundecitrus prepara “domo digital” como estratégia na guerra bilionária contra o greening apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Italiana SICIT, de bioinsumos, abre fábrica no México – de olho no Brasil",
+   "url": "https://agfeed.com.br/negocios/italiana-sicit-de-bioinsumos-abre-fabrica-no-mexico-de-olho-no-brasil",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T07:29-03:00",
+   "resumo": "Léon (México) – Os calçados italianos estão entre os mais famosos do mundo, pelo luxo e pela qualidade, mas o que pouca gente sabe é que o resíduo que sobra desta indústria foi o ponto de partida para uma “revolução sustentável” na área de insumos agrícolas. No final da década de 1950 curtumes italianos desenvolveram […] O post Italiana SICIT, de bioinsumos, abre fábrica no México – de olho no Brasil apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Petrobras compra participação da Neomille por R$ 2,8 bi e põe os pés no etanol de milho",
+   "url": "https://agfeed.com.br/negocios/petrobras-compra-participacao-da-neomille-por-r-28-bi-e-poe-os-pes-no-etanol-de-milho",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-23T20:55-03:00",
+   "resumo": "A Petrobras anunciou nesta segunda-feira, 23 de novembro, a compra de 42% da Neomille, produtora de etanol de milho controlada pela Cerradinho Bioenergia, por R$ 2,8 bilhões. A operação marca o retorno da estatal à produção de etanol, setor do qual saiu ao vender ativos nos governos de Michel Temer e Jair Bolsonaro, e foi […] O post Petrobras compra participação da Neomille por R$ 2,8 bi e põe os pés no etanol de milho apareceu primeiro em AgFeed .",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 4.8,
+   "id": "N23"
+  },
+  {
+   "titulo": "A bioparceria de Scheffer e Mosaic",
+   "url": "https://agfeed.com.br/videos/agfeed-cnn-money/a-bioparceria-de-scheffer-e-mosaic",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-23T20:07-03:00",
+   "resumo": "O post A bioparceria de Scheffer e Mosaic apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "John Deere compra Orchard Robotics e reforça sua visão sobre o futuro do negócio de máquinas agrícolas",
+   "url": "https://agfeed.com.br/negocios/john-deere-compra-orchard-robotics-e-reforca-sua-visao-sobre-o-futuro-do-negocio-de-maquinas-agricolas",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-23T20:00-03:00",
+   "resumo": "Na última década, a fabricante de máquinas agrícolas americana John Deere investiu mais de US$ 1,25 bilhão em uma aposta para o seu futuro. Desde 20217, foram pelo menos cinco grandes aquisições – a última delas anunciada no fim da semana passada. O cheque da vez foi parar nas mãos dos acionistas da Orchard Robotics, […] O post John Deere compra Orchard Robotics e reforça sua visão sobre o futuro do negócio de máquinas agrícolas apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Três séculos de leite em família",
+   "url": "https://agfeed.com.br/videos/agfeed-cnn-money/tres-seculos-de-leite-em-familia",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-23T17:54-03:00",
+   "resumo": "O post Três séculos de leite em família apareceu primeiro em AgFeed .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Máximas devem chegar a 36 °C em três municípios de Roraima",
+   "url": "https://www.canalrural.com.br/previsao-do-tempo/rr/maximas-devem-chegar-a-36-c-em-tres-municipios-de-roraima/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T22:58-03:00",
+   "resumo": "Climatempo prevê máximas nesse patamar por três dias seguidos em Caroebe, São Luiz e São João da Baliza. O post Máximas devem chegar a 36 °C em três municípios de Roraima apareceu primeiro em Canal Rural .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Boi gordo: altas perdem força com escalas de abate mais confortáveis",
+   "url": "https://www.canalrural.com.br/pecuaria/boi-gordo-altas-perdem-forca-com-escalas-de-abate-mais-confortaveis/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:26-03:00",
+   "resumo": "Preços apresentam estabilidade predominante nas principais praças pecuárias do país Preços apresentam estabilidade predominante nas principais praças pecuárias do país O mercado físico do boi gordo apresentou acomodação nos preços nesta terça-feira (24). O movimento de alta perdeu força diante de escalas de abate mais confortáveis entre os frigoríficos de maior porte, que encontram maior tranquilidade para programar as compras de animais. Segundo o analista da Consultoria Safras & Mercado , Fernando Henrique Iglesias, as escalas de abate variam entre cinco e oito dias úteis nas praças pesquisadas. Já os frigoríficos de menor porte enfrentam maior dificuldade para completar suas programações. Nesse cenário, predominam as indicações estáveis, embora ocorram ajustes pontuais de alta e de baixa entre as regiões.",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 7.05,
+   "id": "N29"
+  },
+  {
+   "titulo": "FPA recebe novos parlamentares e inicia articulação para comando em 2027",
+   "url": "https://www.canalrural.com.br/politica/fpa-recebe-novos-parlamentares-e-inicia-articulacao-para-comando-em-2027/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:21-03:00",
+   "resumo": "Encontro em Brasília reuniu eleitos para a legislatura 2027-2030 e apresentou prioridades da bancada do agro no Congresso O post FPA recebe novos parlamentares e inicia articulação para comando em 2027 apareceu primeiro em Canal Rural .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Mineradora é multada em R$ 16,9 milhões por poluição de rios no Pará",
+   "url": "https://www.canalrural.com.br/diversos/mineradora-e-multada-em-r-169-milhoes-por-poluicao-de-rios-no-para/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:07-03:00",
+   "resumo": "Semas interditou extração e beneficiamento de cobre em Tucumã após fiscalização em área atingida por extravasamento O post Mineradora é multada em R$ 16,9 milhões por poluição de rios no Pará apareceu primeiro em Canal Rural .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Lei antidesmatamento da UE: Aprosoja alerta para risco de ‘transtornos e multas’ na comercialização de soja",
+   "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/lei-antidesmatamento-da-ue-aprosoja-alerta-para-risco-de-transtornos-e-multas-na-comercializacao-de-soja/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:37-03:00",
+   "resumo": "Entidade orienta sojicultores a redobrar a atenção com contratos, documentação e origem da produção diante das novas exigências do mercado europeu O post Lei antidesmatamento da UE: Aprosoja alerta para risco de ‘transtornos e multas’ na comercialização de soja apareceu primeiro em Canal Rural .",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 4.98,
+   "id": "N14"
+  },
+  {
+   "titulo": "Fazenda reduz projeção do PIB para 1,9% em 2026 e 1,8% em 2027",
+   "url": "https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:31-03:00",
+   "resumo": "Revisão do Boletim MacroFiscal considera perda de ritmo em serviços e indústria, com compensação parcial da agropecuária; projeção do IPCA também foi elevada O post Fazenda reduz projeção do PIB para 1,9% em 2026 e 1,8% em 2027 apareceu primeiro em Canal Rural .",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 3.97,
+   "id": "N6"
+  },
+  {
+   "titulo": "Pra cima! Preços de soja sobem e seguem nos melhores níveis do ano; confira o fechamento de mercado",
+   "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/subiu-precos-de-soja-sobem-e-seguem-nos-melhores-niveis-do-ano-confira-o-fechamento-de-mercado/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:25-03:00",
+   "resumo": "Preços avançam em praças do Sul e nos portos brasileiros, enquanto contratos futuros registram valorização na Bolsa de Chicago O post Pra cima! Preços de soja sobem e seguem nos melhores níveis do ano; confira o fechamento de mercado apareceu primeiro em Canal Rural .",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 4.97,
+   "id": "N15"
+  },
+  {
+   "titulo": "Ministro critica adiamento da UE sobre retorno do Brasil em aves e mel",
+   "url": "https://www.canalrural.com.br/economia/ministro-critica-adiamento-da-ue-sobre-retorno-do-brasil-em-aves-e-mel/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:17-03:00",
+   "resumo": "União Europeia adiou para dezembro a decisão sobre a reinclusão do Brasil na lista de fornecedores autorizados de frango e mel. O post Ministro critica adiamento da UE sobre retorno do Brasil em aves e mel apareceu primeiro em Canal Rural .",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "CNI critica ajuste fiscal e vê impacto sobre investimento das empresas",
+   "url": "https://www.canalrural.com.br/economia/cni-critica-ajuste-fiscal-e-ve-impacto-sobre-investimento-das-empresas/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:44-03:00",
+   "resumo": "Entidade afirma que restrições a compensações tributárias e mudanças em incentivos elevam a pressão sobre o caixa do setor produtivo O post CNI critica ajuste fiscal e vê impacto sobre investimento das empresas apareceu primeiro em Canal Rural .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Portaria atualiza regras para peixe congelado e inclui filé com aditivos",
+   "url": "https://www.canalrural.com.br/politica/portaria-atualiza-regras-para-peixe-congelado-e-inclui-file-com-aditivos/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:42-03:00",
+   "resumo": "Norma assinada por Mapa e MPA substitui regulamentação de 2017 e define critérios para qualidade, controle, fiscalização e rotulagem de produtos nacionais e importados. O post Portaria atualiza regras para peixe congelado e inclui filé com aditivos apareceu primeiro em Canal Rural .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Ministro fala em 'indignação' após UE adiar decisão sobre compra de carnes e mel do Brasil",
+   "url": "https://globorural.globo.com/pecuaria/noticia/2026/11/ministro-fala-em-indignacao-apos-ue-adiar-decisao-sobre-compra-de-carnes-e-mel-do-brasil.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T21:13-03:00",
+   "resumo": "O ministro da Agricultura, André de Paula, afirmou que ficou \"indignado\" com o adiamento da decisão da União Europeia sobre a retomada das importações de carne de aves e mel do Brasil. Membros do bloco pediram mais informações ao comitê técnico que analisa o caso sobre a capacidade brasileira de cumprir as exigências relacionadas à ausência de antimicrobianos nessas cadeias. \"Ficamos muito frustrados com a reunião. No meu caso, eu diria que nós ficamos indignados com o resultado das últimas da última reunião lá porque nós recebemos uma auditoria que confirmou aquilo que todos nós já sabíamos e propagávamos, que, do ponto de vista técnico, não havia nada que pudesse justificar o não restabelecimento do Brasil no que diz respeito a aves de a mel\", afirmou a jornalistas na sede da Pasta nesta terça-feira (24/11). Ele enfatizou que a diplomacia brasileira e o presidente Luiz Inácio Lula da S",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Ciclone extratropical aumenta risco de temporais no Sul do país; veja a previsão",
+   "url": "https://globorural.globo.com/clima/noticia/2026/11/ciclone-extratropical-aumenta-risco-de-temporais-no-sul-do-pais-veja-a-previsao.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T20:57-03:00",
+   "resumo": "A formação de um ciclone extratropical próximo à costa de Santa Catarina deve reforçar as instabilidades no Sul nesta quarta-feira (25/11). A previsão indica chuva forte, trovoadas e risco de temporais, principalmente no norte do Rio Grande do Sul, em Santa Catarina e no sudoeste do Paraná, segundo o Instituto Nacional de Meteorologia (Inmet). No Sudeste, as precipitações continuam concentradas em Minas Gerais, no Espírito Santo e em áreas de São Paulo e do Rio de Janeiro. No Centro-Oeste, as pancadas persistem, sobretudo no sul e leste de Mato Grosso do Sul e no leste de Goiás. No Norte, as chuvas ficam mais concentradas no sudoeste da região, enquanto o Nordeste tem predomínio de sol e calor, com alertas de baixa umidade do ar. Sul A chuva continua forte em áreas do Sul, principalmente no norte do Rio Grande do Sul, em Santa Catarina e no sudoeste do Paraná. As precipitações vêm acompa",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Ministro da Agricultura confia na retomada das exportações de carne suína às Filipinas",
+   "url": "https://globorural.globo.com/pecuaria/suinos/noticia/2026/11/ministro-da-agricultura-confia-na-retomada-das-exportacoes-de-carne-suina-as-filipinas.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T20:52-03:00",
+   "resumo": "O ministro da Agricultura, André de Paula, afirmou nesta terça-feira (24/11) que mantém o otimismo em relação à retomada das exportações de carne suína para as Filipinas. Segundo ele, houve garantia do presidente filipino, Ferdinando Marcos Jr., de que a suspensão temporária do comércio, de 60 dias, não seria prorrogada. Nesta terça-feira, no entanto, o governo filipino abriu formalmente uma investigação para eventual aplicação de salvaguarda definitiva na importação de carne suína. O Brasil é o principal fornecedor da proteína ao país e responde por quase metade de todas as importações. O ministro ainda disse que as declarações do presidente americano Donald Trump, de que teria pedido às Filipinas para deixarem de comprar produtos agrícolas do Brasil, \"não abala\" as tratativas entre Brasília e Manila. \"Tudo o que nós estabelecemos lá [nas Filipinas] com as nossas equipes técnicas está t",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Chuvas destroem 2,5 mil hectares de soja e milho em propriedade no RS",
+   "url": "https://globorural.globo.com/clima/noticia/2026/11/chuvas-destroem-25-mil-hectares-de-soja-e-milho-em-propriedade-no-rs.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T20:36-03:00",
+   "resumo": "As fortes chuvas que atingiram o Rio Grande do Sul provocaram perdas expressivas nas lavouras do produtor rural Marcelo Chelotti, de Tupanciretã (RS). Ao todo, ele possui uma área de 2,5 mil hectares, sendo 2,1 mil hectares destinados à soja e 400 hectares ao milho. Segundo o produtor, toda a área cultivada com milho foi perdida, enquanto os 1,9 mil hectares de soja que já haviam sido plantados precisarão ser reimplantados. Chelotti explica que faltavam apenas 200 hectares para concluir o plantio da soja, trabalho que estava previsto para ser finalizado nesta semana. Com os estragos provocados pelas chuvas, além de retomar o plantio dessa área, será necessário recomeçar o cultivo nos 1,9 mil hectares já semeados. \"Os 1.900 hectares são totalmente para replantio. Não sobrou nada\", relata. Os prejuízos também atingiram a estrutura das propriedades rurais e imóveis do produtor na cidade, qu",
+   "blocos": [
+    "complexo_soja",
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 4.35,
+   "id": "N25"
+  },
+  {
+   "titulo": "Hidrolabor Maringá renova Credenciamento MAPA e permanece entre seleto grupo de laboratórios habilitados no Brasil",
+   "url": "https://globorural.globo.com/conteudo-de-marca/pressworks/noticia/2026/11/hidrolabor-maringa-renova-credenciamento-mapa-e-permanece-entre-seleto-grupo-de-laboratorios-habilitados-no-brasil-1.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T20:33-03:00",
+   "resumo": "O Hidrolabor, laboratório do Grupo DB especializado em análises de alimentos, água, solo e outros materiais, acaba de renovar o Credenciamento junto ao Ministério da Agricultura e Pecuária (MAPA) para sua unidade de Maringá (PR). Com a renovação, o Hidrolabor passa a contar com duas unidades credenciadas pelo órgão, em Maringá e Sorocaba (SP), e integra um grupo restrito de laboratórios no Brasil com esse reconhecimento. \"Renovar o credenciamento em Maringá mostra que o compromisso com a qualidade é algo que sustentamos todos os dias, e não apenas no momento da avaliação. Estar entre este seleto grupo de laboratórios do país com esse reconhecimento traz uma grande responsabilidade, mas também demonstra que estamos no caminho certo para seguir evoluindo\", afirma Keila Pinzan, gerente de Qualidade do Hidrolabor. Mas o que, na prática, significa ser um laboratório credenciado pelo MAPA? Par",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Chuva isola Porto Murtinho (MS) e destrói estradas e pontes em fazendas de gado",
+   "url": "https://globorural.globo.com/clima/noticia/2026/11/chuva-isola-porto-murtinho-ms-e-destroi-estradas-e-pontes-em-fazendas-de-gado.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T20:14-03:00",
+   "resumo": "As chuvas que atingiram Porto Murtinho (MS), na fronteira com o Paraguai, entre a quinta-feira (19) e o sábado (21/11) destruíram estradas internas, pontes e curvas de nível em fazendas de gado e deixaram propriedades rurais isoladas. Segundo o prefeito Nelson Cintra, foram cerca de 400 milímetros de chuva em cinco dias. Antes do temporal de sábado (21), o Centro de Monitoramento do Tempo e do Clima de Mato Grosso do Sul (Cemtec) já registrava 429,6 milímetros em novembro, 2,6 vezes a média histórica do mês, de 165 milímetros. O município decretou situação de emergência. De acordo com o prefeito, a água entrou em 40% a 50% das casas da cidade, e cerca de 700 pessoas perderam bens como camas, sofás e geladeiras. Leia também: Temporal provoca perdas de até 97% em lavouras e atinge 35 mil hectares em Tupanciretã (RS) Na área urbana, protegida por um dique de cerca de 11 quilômetros contra a",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Cacau avança em Nova York com ritmo menor de exportações na Costa do Marfim",
+   "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/cacau-avanca-em-nova-york-com-ritmo-menor-de-exportacoes-na-costa-do-marfim.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:50-03:00",
+   "resumo": "O preço do cacau subiu de forma expressiva na bolsa de Nova York, devido a resultados fracos para as exportações do maior produtor mundial, a Costa do Marfim. Os papéis da amêndoa para março de 2027 fecharam a sessão desta terça-feira (24/11) em alta de 2,15%, negociados a US$ 5.413 a tonelada. Citando informações da Bloomberg, a consultoria Barchart disse os futuros do cacau chegaram ao maior patamar em duas semanas em meio à redução das exportações da Costa do Marfim. Segundo dados do governo marfinense, os produtores locais entregaram 53,7 mil toneladas de cacau aos portos na semana encerrada em 22 de novembro, bem abaixo das 102,1 mil toneladas registradas na mesma semana do ano anterior. Na temporada de comercialização de 2026/27 até o momento, as chegadas de cacau aos portos da Costa do Marfim caíram 47% em relação ao ano anterior, para 330,8 mil toneladas. Café O café registrou no",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Preço da soja sobe em Chicago após valorização do farelo",
+   "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:40-03:00",
+   "resumo": "O preço da soja subiu por mais uma sessão na bolsa de Chicago, e novamente foi direcionado pelo movimento dos subprodutos. Os lotes da soja com entrega para janeiro fecharam em alta de 0,43% nesta terça-feira (24/11), para US$ 12,34 o bushel. De acordo com a consultoria Granar, a soja se valorizou com os fundos de investimento buscando proteção após as recentes quedas e com o fim da colheita da safra nos EUA. Além disso, segue a consultoria, o farelo de soja continua sendo um importante suporte de alta para as cotações, “na expectativa de aumento das exportações após a implementação do Regulamento de Desmatamento da União Europeia no final do próximo mês , que pode restringir a entrada da soja brasileira no bloco comercial”. Hoje, o farelo avançou quase 2% no pregão em Chicago. Com a colheita de soja finalizada em solos americanos, também há preocupações com o clima no país. Análise da T",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 6.27,
+   "id": "N13"
+  },
+  {
+   "titulo": "Chef Jacquin faz 'despedida' do foie gras antes de proibição; saiba quanto custa",
+   "url": "https://globorural.globo.com/pecuaria/aves/noticia/2026/11/chef-jacquin-faz-despedida-do-foie-gras-antes-de-proibicao-saiba-quanto-custa.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:32-03:00",
+   "resumo": "O chef Erick Jacquin está se despedindo de um dos ingredientes que marcaram sua trajetória na gastronomia. Até esta terça-feira (24/11), o restaurante Les Présidents, em São Paulo, promove uma semana especial dedicada ao foie gras, iguaria francesa feita a partir do fígado gordo de pato ou ganso. A despedida ocorre poucos meses após o presidente Luiz Inácio Lula da Silva sancionar uma lei que proíbe a produção e a comercialização de produtos obtidos por alimentação forçada de animais. A medida foi oficializada em 23 de julho de 2026, com publicação no Diário Oficial da União no dia seguinte, e passa a valer em 20 de janeiro de 2027. Para dizer adeus à iguaria, o restaurante oferece a Grande Dégustation de Foie Gras de Canard, por R$ 440, uma degustação de foie gras de pato com “lembranças da França”. Os pratos quentes custam R$ 470 e incluem opções como foie gras de pato na cocotte com t",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima irregular ameaça próxima safra de café no Brasil; ouça o comentário",
+   "url": "https://globorural.globo.com/podcasts/cbn-agro/noticia/2026/11/clima-irregular-ameaca-proxima-safra-de-cafe-no-brasil-ouca-o-comentario.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:17-03:00",
+   "resumo": "Cassiano Ribeiro destaca que as duas maiores cooperativas de café do país projetam queda na produção da safra 2027/2028 por causa das condições climáticas. Segundo ele, o excesso de chuva e a falta do estresse hídrico necessário provocaram floradas irregulares, o que pode reduzir a produtividade e afetar a qualidade dos grãos. Dê o play e ouça o comentário Saiba mais: Produtor de café vê safra e renda menores em 2027 *Ouça o CBN Agro de segunda a sexta-feira, por volta de 5h50, no CBN Primeiras Notícias, e às terças-feiras, por volta de 13h10, no CBN Brasil.",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 6.24,
+   "id": "N33"
+  },
+  {
+   "titulo": "Pedidos do agro para o orçamento federal de 2027; ouça o comentário",
+   "url": "https://globorural.globo.com/podcasts/cbn-agro/noticia/2026/11/pedidos-do-agro-para-o-orcamento-federal-de-2027-ouca-o-comentario.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:52-03:00",
+   "resumo": "Cassiano Ribeiro destaca que o setor agropecuário reivindica um reforço de quase R$ 1 bilhão no orçamento federal de 2027 para programas considerados prioritários como pesquisa, defesa agropecuária, irrigação e infraestrutura. Entidades representativas do setor também defendem ampliar para até R$ 4 bilhões os recursos destinados ao seguro rural para evitar cortes ou contingenciamentos ao longo do ano. Ouça. Dê o play e ouça o comentário Saiba mais: Agro quer R$ 1 bi a mais no orçamento e proteção contra cortes de verba *Ouça o CBN Agro de segunda a sexta-feira, por volta de 5h50, no CBN Primeiras Notícias, e às terças-feiras, por volta de 13h10, no CBN Brasil.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Expectativa de boas safras no Vietnã e Brasil pressiona preços do café",
+   "url": "https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:42-03:00",
+   "resumo": "Os preços futuros do café estão pressionados desde a semana passada devido à boa perspectiva de safras no Brasil e no Vietnã, maiores produtores do grão. O preço do café arábica recuou 1,8% na última semana em Nova York, enquanto o café robusta negociado em Londres teve queda intensa, de 9,9%. Leonardo Rossetti, especialista de Inteligência de Mercado da Stonex, cita entre os principais fundamentos as boas condições das lavouras brasileiras de café arábica e as expectativa positivas para a safra de robusta do Vietnã. “Uma boa perspectiva que as floradas apresentaram com chuvas acima da média em setembro e outubro, ao longo de todo o cinturão cafeeiro, gerando um bom vigor vegetativo”, afirmou o analista, sobre a safra brasileira de café arábica. Ele observou que há relatos de floradas atrasadas e desuniformes, o que pode eventualmente gerar alguma dificuldade na colheita e perda de quali",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 9.02,
+   "id": "N28"
+  },
+  {
+   "titulo": "Mosaic estende paralisação temporária de operações no Brasil por falta de enxofre",
+   "url": "https://globorural.globo.com/insumos/noticia/2026/11/mosaic-estende-paralisacao-temporaria-de-operacoes-no-brasil-por-falta-de-enxofre.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:38-03:00",
+   "resumo": "A Mosaic, gigante do setor de fertilizantes fosfatados, anunciou nesta terça-feira (24/11) que irá estender, por tempo indeterminado, a paralisação temporária dos complexos de Catalão (GO), Tapira (MG) e Uberaba (MG). O movimento, segundo a empresa, é devido à restrição de disponibilidade e o alto preço do enxofre, matéria-prima essencial para a produção de fosfatados. Em comunicado, a companhia informou que atuou nos últimos meses para viabilizar a retomada gradual de sua produção, avaliando alternativas de suprimento e revisando suas operações. \"A companhia tem acompanhado de perto a evolução do mercado global de enxofre, buscando todas as alternativas possíveis para manter as unidades em atividade\", informou. A empresa também comunicou que, nos próximos dias, irá iniciar uma nova rodada de reuniões com os sindicatos locais para avaliar alternativas que permitam atravessar esse período",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Soja abre sessão em alta na bolsa de Chicago após fim da colheita nos EUA",
+   "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/soja-abre-sessao-em-alta-na-bolsa-de-chicago-apos-fim-da-colheita-nos-eua.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T15:08-03:00",
+   "resumo": "O preço da soja opera em alta na bolsa de Chicago nesta terça-feira (24/11). Os contratos com entrega para janeiro de 2027 sobem 0,31%, cotados a US$ 12,3175 o bushel. De acordo com análise da Granar, fundos de investimento estão realizando operações de hedge após a finalização da colheita nos Estados Unidos, o que sustenta os preços da oleaginosa. Milho O milho recua levemente com a chegada da nova safra americana. Os contratos com entrega para março de 2027 caem 0,22%, cotados a US$ 4,4875 o bushel. Trigo Por fim, o preço do trigo também cai diante da força do dólar em relação ao euro. Os contratos para março de 2027 recuam 1,18%, cotados a US$ 5,8850 o bushel. +Veja mais cotações na ferramenta da Globo Rural",
+   "blocos": [
+    "complexo_milho_e_ddgs",
+    "cambio_e_energia",
+    "complexo_soja"
+   ],
+   "pontuacao": 4.89,
+   "id": "N8"
+  },
+  {
+   "titulo": "Faesp Show reúne 15 mil pessoas e movimenta R$ 700 mil",
+   "url": "https://globorural.globo.com/conteudo-de-marca/a-forca-do-campo/noticia/2026/11/faesp-show-reune-15-mil-pessoas-e-movimenta-r-700-mil.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:55-03:00",
+   "resumo": "Com 15 mil visitantes, R$ 700 mil movimentados em negócios e seis toneladas de alimentos arrecadadas, a primeira edição da Faesp Show encerrou seus três dias de programação com resultados que reforçam o potencial de iniciativas voltada a pequenos e médios produtores rurais. Realizado entre 12 e 14 de novembro, no Parque de Exposições Dr. Fernando Cruz Pimentel (Emapa), em Avaré (SP), o encontro também contabilizou três mil exames realizados no espaço dedicado à saúde feminina. Distribuídos por uma área de 91 mil metros quadrados, mais de 150 pontos de exposição e comercialização reuniram empreendedores, empresas e representantes do agronegócio. O volume de negócios inclui vendas de produtos dos expositores, de pequenos empreendedores e do setor gastronômico. A programação combinou máquinas e implementos agrícolas, palestras, fóruns técnicos, oficinas e atrações culturais, aproximando o p",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Mosaic vende fábrica de amônia nos EUA à CF Industries por US$ 600 milhões",
+   "url": "https://globorural.globo.com/negocios/noticia/2026/11/mosaic-vende-fbrica-de-amnia-nos-eua-cf-industries-por-us-600-milhes.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:09-03:00",
+   "resumo": "A Mosaic, multinacional do setor de fertilizantes, anunciou nesta terça-feira (24) um acordo definitivo com a CF Industries Holdings para vender sua fábrica de amônia em Faustina, no estado da Louisiana, Estados Unidos, por aproximadamente US$ 600 milhões. Do total, cerca de US$ 360 milhões serão pagos em dinheiro no fechamento do negócio. O restante está associado a um contrato de fornecimento de amônia de 20 anos, com volume de 200 mil toneladas e condições favoráveis ao produtor, para abastecer as operações de fosfato da Mosaic, de acordo com comunicado da empresa. A conclusão da transação está prevista para o primeiro semestre de 2027 e depende do cumprimento das condições habituais de fechamento e da aprovação de órgãos reguladores. O novo acordo complementa o contrato de fornecimento de amônia já existente entre as duas companhias, que será prorrogado por dois anos, até 2031. “A un",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Filipinas estudam medidas de salvaguarda contra importações de carne suína",
+   "url": "https://globorural.globo.com/pecuaria/suinos/noticia/2026/11/filipinas-estuda-medidas-de-salvaguarda-contra-importacoes-de-carne-suina.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:05-03:00",
+   "resumo": "O governo das Filipinas abriu uma investigação formal para possível aplicação de medidas de salvaguardas definitivas contra as importações de carne suína, miúdos suínos e gordura suína de todos os fornecedores. A decisão foi anunciada oficialmente nesta terça-feira (24/11) pela Comissão Tarifária do país. A medida pode significar uma dificuldade a mais para os exportadores brasileiros de carne suína, como o aumento da tarifa de importação, atualmente em 15%, ao fim da investigação. As vendas para lá estão suspensas, de forma provisória, por 60 dias. Mesmo assim, a expectativa era que o comércio pudesse ser normalizado a partir de janeiro de 2027, sem novas barreiras. O tema foi tratado pelo ministro da Agricultura, André de Paula, em reunião com autoridades filipinas na semana passada. A ele, foi dito que a investigação não iria prosperar. Exportadores brasileiros demonstraram preocupaçã",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Custo de produção de soja 2027/28 em Mato Grosso está 2,24% menor",
+   "url": "https://globorural.globo.com/agricultura/noticia/2026/11/custo-de-producao-de-soja-202728-em-mato-grosso-esta-224percent-menor.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:54-03:00",
+   "resumo": "A primeira estimativa do custo de produção da soja para a safra 2027/28 aponta recuo de 2,24% no Custo Total (CT), para R$ 8.026,68 por hectare, em Mato Grosso. Em novembro de 2026, o indicador ficou abaixo dos R$ 8.210,31 por hectare projetados para a temporada 2026/27, segundo levantamento do Projeto Custo de Produção Agropecuário (CPA-MT), realizado pelo Senar-MT e pelo Instituto Mato-grossense de Economia Agropecuária (Imea). Após uma temporada de custos elevados, o resultado reflete a busca dos produtores por reduzir os gastos na lavoura, principalmente com despesas financeiras e defensivos. O custo de custeio foi estimado em R$ 4.187,98 por hectare, queda de 3,17%. A redução de 18,07% nos gastos com defensivos compensou a alta nas despesas com fertilizantes e corretivos e operações mecanizadas. As despesas financeiras também recuaram 23,93%, para R$ 366,70 por hectare, devido à red",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Café cai em Nova York com vendas brasileiras em alta",
+   "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/cafe-cai-em-nova-york-com-vendas-brasileiras-em-alta.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:49-03:00",
+   "resumo": "O café opera em queda nesta manhã de terça-feira (24/11) na bolsa de Nova York. Os lotes com entrega para dezembro de 2026 caem 1,4%, cotados a 2,6395 centavos de dólar a libra-peso. A baixa nas cotações seguem a desvalorização do real frente ao dólar. A Barchart lembra que um real mais fraco incentiva os exportadores brasileiros a venderem mais café para conseguirem preços mais altos neste momento de dólar valorizado. Cacau O cacau opera em alta com a redução nos embarques de cacau da Costa do Marfim. Os contratos da amêndoa com vencimento em março de 2027 sobem 2,62%, cotados a US$ 5.433 a tonelada. Açúcar O açúcar avança impulsionado por alguma cobertura de posições vendidas depois da queda recente. Os contratos com vencimento em março de 2027 sobem 0,51%, negociados a US$ 17,68 a libra-peso. Algodão O algodão opera em queda. Os papéis da pluma com entrega para março de 2027 caem 0,32",
+   "blocos": [
+    "complexo_cafe",
+    "cambio_e_energia"
+   ],
+   "pontuacao": 5.78,
+   "id": "N9"
+  },
+  {
+   "titulo": "Entidade pede renegociação de dívidas e crédito para produtores atingidos por tornado no RS",
+   "url": "https://globorural.globo.com/clima/noticia/2026/11/entidade-pede-renegociacao-de-dividas-e-credito-para-produtores-atingidos-por-tornado-no-rs.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:17-03:00",
+   "resumo": "A Federação da Agricultura do Estado do Rio Grande do Sul (Farsul) enviou uma carta a instituições financeiras para solicitar medidas de apoio aos produtores rurais de Tupanciretã atingidos por um tornado na madrugada de 20 de novembro. O município é o segundo maior produtor de soja do Estado. A entidade propõe quatro frentes de ação, “para que a reconstrução comece antes que a inadimplência se instale”, como diz a correspondência assinada pelo presidente Domingos Velho Lopes, segundo comunicado divulgado pela Federação. A primeira medida prevê a prorrogação e a reprogramação das operações de crédito rural vincendas, vencidas e inadimplentes dos produtores atingidos. O pedido tem como base o Manual de Crédito Rural (MCR 2-6-4), que autoriza a prorrogação com os mesmos encargos quando fatores adversos provocam frustração de safra. A Farsul também solicita uma linha de investimento para re",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Dólar e oferta limitada de grãos de qualidade sustentam preços do trigo",
+   "url": "https://globorural.globo.com/agricultura/trigo/noticia/2026/11/dolar-e-oferta-limitada-de-graos-de-qualidade-sustentam-precos-do-trigo.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T12:57-03:00",
+   "resumo": "O trigo em grão e as farinhas continuam se valorizando na maioria das regiões acompanhadas pelo Centro de Estudos Avançados em Economia Aplicada (Cepea). Além da escassez de cereal de qualidade, a forte valorização do dólar frente ao real, que atingiu o maior patamar desde abril de 2025, também deu suporte às cotações domésticas. Nesta segunda-feira (23/11), no Paraná, o indicador Cepea/Esalq para o trigo pão ou melhorador registrou a cotação de R$ 1.588, a tonelada, uma alta de 1,21% no acumulado de novembro. De acordo com pesquisadores do Cepea, a disponibilidade de trigo tipo 1, de melhor qualidade, permanece baixa no mercado interno, e parte dos lotes já está comprometida com contratos antecipados. Para atender à demanda, moinhos têm intensificado as importações, mesmo a preços mais elevados, e seguem repassando a alta da matéria-prima às farinhas. Dados da Secretaria de Comércio Ext",
+   "blocos": [
+    "cambio_e_energia",
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 5.71,
+   "id": "N3"
+  },
+  {
+   "titulo": "Preços do tomate recuam após sequência de altas nos atacados",
+   "url": "https://globorural.globo.com/agricultura/hortifruti/noticia/2026/11/precos-do-tomate-recuam-apos-sequencia-de-altas-nos-atacados.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T12:48-03:00",
+   "resumo": "Após uma longa sequência de altas, os preços do tomate longa vida 3A recuaram na maior parte dos atacados acompanhados pelo Centro de Estudos Avançados em Economia Aplicada (Cepea). A desvalorização é resultado do avanço da maturação dos frutos e do consequente aumento da oferta, em função das temperaturas mais elevadas. Na última semana, o tomate longa vida 3A registrou média de R$ 251,66/cx (-8,2%) no atacado de São Paulo, R$ 248,33/cx (+2,3%) em Belo Horizonte, R$ 261,11/cx (-5,6%) no Rio de Janeiro e R$ 261,00/cx (-6,8%) em Campinas (SP). De acordo com relatos de colaboradores do Cepea, os tomates comercializados apresentam, em geral, boa qualidade, embora sejam observadas diferenças entre os lotes. Segundo a equipe de Hortifrúti do Cepea, com a previsão de queda das temperaturas, a tendência é de que a maturação dos frutos volte a desacelerar. Porém, caso haja impacto na oferta, a t",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Chuvas elevam doenças na produção de tomate no norte do Paraná",
+   "url": "https://globorural.globo.com/agricultura/hortifruti/noticia/2026/11/chuvas-elevam-doencas-na-producao-de-tomate-no-norte-do-parana.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T12:45-03:00",
+   "resumo": "A partir de agosto, o maior volume de chuvas no norte do Paraná favoreceu o aumento da incidência de doenças bacterianas e fúngicas nas lavouras de tomate, com destaque para a septoriose e a pinta-preta, segundo o Centro de Estudos Avançados em Economia Aplicada (Cepea). Em setembro, a continuidade das chuvas manteve elevada a pressão dessas doenças. Diante dos problemas, produtores de tomate intensificaram as pulverizações com fungicidas. Em outubro, houve intensificação das chuvas, sendo esse o mês com maior volume de precipitações na região, permitindo o avanço de doenças e prejudicou o desenvolvimento dos tomateiros. Além disso, o excesso de umidade também dificultou a absorção de nutrientes pelas plantas, impactando a adubação e, consequentemente, a produtividade das lavouras. Em outubro, as áreas transplantadas em julho começaram a ser colhidas, porém as produtividades em campo abe",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Preços do etanol e do açúcar sobem no mercado brasileiro",
+   "url": "https://globorural.globo.com/agricultura/cana/noticia/2026/11/precos-do-etanol-e-do-acucar-sobem-no-mercado-brasileiro.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T12:25-03:00",
+   "resumo": "Os principais derivados da cana-de-açúcar registraram altas nos preços nos últimos dias no mercado brasileiro, informa o Centro de Estudos Avançados em Economia Aplicada (Cepea). Tanto o etanol quanto o açúcar registraram avanços nas cotações, enquanto no campo as chuvas voltaram a impactar algumas regiões canavieiras do Centro-Sul, prejudicando o andamento das atividades e causando a interrupção temporária da moagem de algumas usinas. Os valores do etanol seguem impulsionados pela demanda aquecida e por expectativas de novos avanços nos próximos meses. Segundo o Cepea, o preço do hidratado registra a sétima semana consecutiva de aumento, enquanto as cotações do anidro voltaram a subir. Entre 16 e 19 de novembro, o indicador Cepea/Esalq registrou, para o etanol hidratado, a cotação de R$ 2,9806 o litro (sem frete, ICMS e PIS/Cofins), alta semanal de 1,83%. Para o anidro, o preço estava e",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Globo Rural premia as melhores empresas do agronegócio",
+   "url": "https://globorural.globo.com/especiais/melhores-do-agronegocio/noticia/2026/11/globo-rural-premia-as-melhores-empresas-do-agronegocio.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:06-03:00",
+   "resumo": "A Globo Rural realiza na próxima quarta-feira (25/11), em São Paulo (SP), a cerimônia de entrega do prêmio Melhores do Agronegócio, que contempla as melhores empresas de 21 segmentos do setor e mais cinco categorias especiais: sustentabilidade, melhor entre pequenas e médias, maior entre as 500, melhor grupo econômico e a campeã das campeãs. Na ocasião será lançada a 22ª edição do Anuário Melhores do Agronegócio, a mais tradicional publicação sobre o setor e seu ecossistema. Além dos indicadores financeiros de 500 maiores empresas, relativos ao exercício de 2025, o anuário destaca, em reportagens, o desempenho das companhias vencedoras. A escolha das campeãs leva em conta os resultados como receita líquida, endividamento, liquidez e margem Ebitda, que representam 70% da pontuação, e os indicadores de responsabilidade socioambiental, que têm peso de 30% na nota final. A Serasa Experian, e",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Funrural: quem pode rever dívidas e pedir devolução",
+   "url": "https://globorural.globo.com/opiniao/vozes-do-agro/noticia/2026/11/funrural-quem-pode-rever-dividas-e-pedir-devolucao.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T10:00-03:00",
+   "resumo": "O Supremo Tribunal Federal (STF) decidiu, em 15 de outubro de 2026, que a contribuição ao Funrural cobrada do empregador rural pessoa física sobre a receita de venda da produção era inconstitucional antes de 1º de janeiro de 2018. A decisão, tomada na Ação Direta de Inconstitucionalidade (ADI) 4.395, também alcança a chamada sub-rogação: a obrigação de frigoríficos, cooperativas e outras empresas compradoras de recolher esse valor em nome do produtor naquele período. Mas o que muda para quem tem dívidas ou já pagou? A decisão não extingue a contribuição (Funrural). O STF considerou válida a cobrança a partir de 2018, sob as regras da Lei nº 13.606/2018. Portanto, a decisão não autoriza interromper os recolhimentos referentes às vendas atuais, nem dispensa as empresas compradoras das retenções legalmente exigidas. Também permanecem pendentes de definição os efeitos do julgamento sobre val",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Mercado do boi gordo abre a semana com poucos negócios e preços estáveis",
+   "url": "https://globorural.globo.com/pecuaria/boi/noticia/2026/11/mercado-do-boi-gordo-abre-a-semana-com-poucos-negocios-e-precos-estaveis.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T09:50-03:00",
+   "resumo": "Com poucos negócios após o feriadão do Dia da Consciência Negra (20/11), o mercado pecuário começou a semana sem mudança nas cotações na maior parte do Brasil. Nesta segunda-feira (23/11), das 33 regiões monitoradas pela Scot Consultoria, 24 não tiveram alterações no preço do boi gordo na comparação com o encerramento da semana passada. Houve altas no sul de Minas Gerais, oeste da Bahia, norte e sudoeste de Mato Grosso, Santa Catarina, oeste do Maranhão, Marabá (PA), Espírito Santo e Roraima. Nas praças de Araçatuba (SP) e Barretos (SP), referências para o mercado, o preço do boi gordo seguiu em R$ 392 a arroba para o pagamento em 30 dias. As cotações do “boi China”, da vaca e da novilha também não mudaram. A Scot destaca que o escoamento de carne bovina perdeu mais força com o avanço do mês, o que, somado a uma escala de abate mais confortável, limitou mudanças de preços. Em São Paulo, ",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 5.45,
+   "id": "N34"
+  },
+  {
+   "titulo": "Dólar sustenta preço da soja, que supera os R$ 170 em Paranaguá",
+   "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/dolar-sustenta-preco-da-soja-que-supera-os-r-170-em-paranagua.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T09:16-03:00",
+   "resumo": "A dinâmica do mercado interno de soja permanece o mesmo há semanas. O dólar em alta mantém os preços firmes no porto de Paranaguá. Nesta segunda-feira (23/11), o indicador Cepea/Esalq subiu 1,22%, com a saca a R$ 170,74, maior patamar desde março de 2023. O Cepea lembrou, em comunicado, que os preços da soja e dos derivados seguem em alta no mercado brasileiro, impulsionados pela valorização do dólar frente ao real. A moeda americana fechou a segunda em leve baixa, de 0,14%, porém, já é negociada a R$ 5,92, e muitos analistas apontam que deve superar em breve a barreira dos R$ 6. Segundo o Cepea, a alta do dólar elevou a paridade de exportação dos derivados, sustentando as pedidas dos vendedores. Os preços do farelo e do óleo de soja também avançaram no mercado doméstico, embora a valorização do óleo tenha sido menos intensa, devido à forte queda dos contratos futuros na bolsa de Chicago",
+   "blocos": [
+    "cambio_e_energia",
+    "complexo_soja"
+   ],
+   "pontuacao": 5.4,
+   "id": "N4"
+  },
+  {
+   "titulo": "Crédito do BNDES para fertilizantes deve bater recorde de R$ 4 bilhões",
+   "url": "https://globorural.globo.com/insumos/noticia/2026/11/bndes-aprova-financiamento-recorde-a-adubos.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T08:00-03:00",
+   "resumo": "O Banco Nacional de Desenvolvimento Econômico e Social (BNDES) aprovará neste ano um valor recorde de empréstimos ao setor de fertilizantes, que vem enfrentando dificuldades decorrentes da guerra no Oriente Médio e do aperto financeiro de produtores. De janeiro a outubro, o valor aprovado pelo banco ao segmento já foi recorde, de R$ 3,7 bilhões. O número é mais do que o dobro do registrado em 2025, que foi de R$ 1,5 bilhão. E há ainda mais operações em negociação com empresas interessadas em ampliar a capacidade de produção, que devem ser anunciadas ainda neste ano, afirmou José Luis Gordon, diretor de Desenvolvimento Produtivo, Inovação e Comércio Exterior do banco. Do valor aprovado até agora, cerca de R$ 3 bilhões estão vinculados ao programa Brasil Soberano, criado no ano passado pelo governo para proteger empresas brasileiras do aumento das tarifas de importação impostas pelos Estad",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "MyCarbon e LDC querem dar escala a crédito de carbono",
+   "url": "https://globorural.globo.com/especiais/fazenda-sustentavel/noticia/2026/11/mycarbon-e-ldc-querem-dar-escala-a-credito-de-carbono.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T08:00-03:00",
+   "resumo": "O que uma gigante de comercialização de commodities agrícolas tem em comum com uma exportadora de carne, além de atuarem no agronegócio? A necessidade de diminuir emissões de gases de efeito estufa. Para perseguir esse objetivo, a MyCarbon, subsidiária da Minerva Foods de créditos de carbono, fez uma parceria com a Louis Dreyfus Company (LDC). As empresas esperam expandir o alcance do BRA3C, projeto de geração de créditos de carbono criado pela MyCarbon em 2023, que oferece a produtores de soja, milho e algodão do Cerrado suporte técnico e financeiro para implementar práticas que melhoram a saúde do solo e armazenam carbono. O BRA3C segue a metodologia da certificadora Verra de “Gestão Aprimorada de Terras Agrícolas”. Atualmente, o projeto atende 16,6 mil hectares nos quatro Estados do Matopiba (Maranhão, Tocantins, Piauí e Bahia). Com a parceria, a MyCarbon espera alcançar 200 mil hecta",
+   "blocos": [
+    "complexo_algodao",
+    "complexo_soja",
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 3.3,
+   "id": "N27"
+  },
+  {
+   "titulo": "Corumbá pode chegar a 39 °C e sul de MS ter temporais isolados na quarta (25/11)",
+   "url": "https://www.agrolink.com.br/agrotempo/noticia/corumba-pode-chegar-a-39--c-e-sul-de-ms-ter-temporais-isolados-na-quarta--25-11-_521459.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:27-03:00",
+   "resumo": "A análise Agrotempo indica temporais isolados no oeste e no sul de Mato Grosso do Sul na quarta (25/11), com chuva de até 37 mm. Corumbá, no Pantanal, pode chegar a 39 °C. No norte de Mato Grosso, a chuva fica fraca e irregular.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Paraná e SC têm aviso de tempestade do Inmet e chuva forte na quarta (25/11)",
+   "url": "https://www.agrolink.com.br/agrotempo/noticia/parana-e-sc-tem-aviso-de-tempestade-do-inmet-e-chuva-forte-na-quarta--25-11-_521458.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:25-03:00",
+   "resumo": "A chuva pode chegar a 56 mm em pontos isolados do Paraná na quarta (25/11), segundo a análise Agrotempo. O Paraná e Santa Catarina têm risco de temporais, e o sul do Rio Grande do Sul fica com tempo firme.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Norte de Roraima tem até 39 °C e risco de incêndio na quarta (25/11)",
+   "url": "https://www.agrolink.com.br/agrotempo/noticia/norte-de-roraima-tem-ate-39--c-e-risco-de-incendio-na-quarta--25-11-_521457.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:22-03:00",
+   "resumo": "Pontos isolados do norte de Roraima podem chegar a 39 °C na quarta (25/11), com risco de propagação de incêndios, segundo a análise Agrotempo. Boa Vista, o leste do Amazonas e grande parte do Pará ficam com tempo firme e sol, enquanto o Acre e Rondônia têm pancadas isoladas.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Umidade pode cair a 21% à tarde no Vale do São Francisco na quarta (25/11)",
+   "url": "https://www.agrolink.com.br/agrotempo/noticia/umidade-pode-cair-a-21--a-tarde-no-vale-do-sao-francisco-na-quarta--25-11-_521456.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:21-03:00",
+   "resumo": "A umidade do ar pode cair a 21% na tarde de quarta (25/11) no Vale do São Francisco, segundo a análise Agrotempo. Na região, a umidade mínima fica entre 20% e 30%, com confiança alta. O tempo fica firme em quase todo o Nordeste, e Sergipe e Alagoas ficam sem chuva.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "De drones a defensivos, o que SP pesquisa para o campo",
+   "url": "https://www.agrolink.com.br/noticias/de-drones-a-defensivos--o-que-sp-pesquisa-para-o-campo_521454.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:41-03:00",
+   "resumo": "Projetos sobre o uso de tecnologia nas lavouras e a segurança dos trabalhadores rurais foram apresentados em uma visita oficial a um centro de pesquisa agrícola em Jundiaí, no interior de São Paulo",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Banco vê dólar a R$ 5,35 no fim de 2026",
+   "url": "https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:16-03:00",
+   "resumo": "O real encerrou a semana encurtada pelo feriado no nível mais baixo desde abril de 2025. Segundo o Rabobank, o dólar forte e as dúvidas sobre as contas públicas pressionaram a moeda, apesar da intervenção do Banco Central. A queda continuou no mercado futuro durante o feriado",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 6.87,
+   "id": "N1"
+  },
+  {
+   "titulo": "Quais dívidas ficam fora da recuperação judicial no agro?",
+   "url": "https://www.agrolink.com.br/noticias/quais-dividas-ficam-fora-da-recuperacao-judicial-no-agro-_521451.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:53-03:00",
+   "resumo": "A recuperação judicial pode dar fôlego ao produtor rural que enfrenta dificuldades para pagar as dívidas. Segundo Fabio Lamonica Pereira, advogado em direito bancário e do agronegócio, parte dos contratos usados para financiar a safra fica fora do plano de pagamento",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Lactalis Brasil doa mais de 14 mil litros de leite UHT a Tupanciretã",
+   "url": "https://www.agrolink.com.br/noticias/lactalis-brasil-doa-mais-de-14-mil-litros-de-leite-uht-a-tupancireta_521450.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:48-03:00",
+   "resumo": "Em apoio à população de Tupanciretã, atingida pela forte tempestade que devastou a região, a Lactalis Brasil realiza a doação de mais de 14 mil litros de leite UHT para o município. Os caminhões com as doações chegaram à EMEF Dr. Flory Druck Kruel, localizada na região central da cidade, na manhã desta terça-feira (24/11). No local, a Defesa Civil está concentrando o atendimento e organizando a assistência à população.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Forseed amplia portfólio de milho safrinha e avança com superprecoces",
+   "url": "https://www.agrolink.com.br/noticias/forseed-amplia-portfolio-de-milho-safrinha-e-avanca-com-superprecoces_521449.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:37-03:00",
+   "resumo": "Escolher o híbrido da safrinha é decidir como enfrentar três riscos ao mesmo tempo: a cigarrinha-do-milho e o complexo de enfezamentos, a falta de água no fim do ciclo e a geada. É a partir dessa leitura que a Forseed, marca de sementes da LongPing High-Tech, apresenta cinco híbridos para a safrinha 2027 e anuncia que três materiais superprecoces, em fase avançada de desenvolvimento, podem chegar ao mercado em 2028.",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 6.82,
+   "id": "N20"
+  },
+  {
+   "titulo": "Preço do milho não cobre custo operacional em Mato Grosso",
+   "url": "https://www.agrolink.com.br/noticias/preco-do-milho-nao-cobre-custo-operacional-em-mato-grosso_521448.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:28-03:00",
+   "resumo": "Os produtores de milho de Mato Grosso enfrentam um cenário de margens pressionadas para a safra 2026/27. A combinação entre o aumento dos custos de produção e os preços praticados no mercado estadual dificulta a cobertura das despesas operacionais, mesmo diante da recente valorização das cotações do cereal.",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "O horário da pulverização faz diferença para as abelhas",
+   "url": "https://www.agrolink.com.br/noticias/o-horario-da-pulverizacao-faz-diferenca-para-as-abelhas_521446.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T16:12-03:00",
+   "resumo": "Ajustar o horário e a técnica de pulverização ajuda a proteger abelhas e outros polinizadores na lavoura. Segundo o engenheiro agrônomo Décio Luiz Gazzoni, membro do Conselho Científico Agro Sustentável (CCAS) e da Academia Brasileira de Ciência Agronômica, parte dessas medidas pode ser adotada sem custo adicional",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Dinamarca fica sem ministro exclusivo do agro após 130 anos",
+   "url": "https://www.agrolink.com.br/noticias/dinamarca-fica-sem-ministro-exclusivo-do-agro-apos-130-anos_521445.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T15:22-03:00",
+   "resumo": "A divisão das responsabilidades pela política agrícola entre cinco ministérios motivou um apelo por mais coordenação na Dinamarca. A cobrança marcou a abertura de uma feira do setor nesta terça-feira (24), em Herning",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "EUA projetam uso de 143,52 milhões de t de milho em etanol",
+   "url": "https://www.agrolink.com.br/noticias/eua-projetam-uso-de-143-52-milhoes-de-t-de-milho-em-etanol_521447.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T15:09-03:00",
+   "resumo": "A expansão da produção de etanol nos Estados Unidos reforça as perspectivas de crescimento da demanda industrial por milho na safra 2026/27. Mesmo diante da previsão de redução da produção norte-americana do cereal, o consumo de grãos pelas usinas deverá avançar 1,84%, alcançando 143,52 milhões de toneladas na temporada.",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Óleo de soja sobe 35,37% com demanda por biocombustíveis",
+   "url": "https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:55-03:00",
+   "resumo": "Os Estados Unidos iniciaram a safra 2026/27 com recorde no esmagamento de soja, impulsionado pela demanda das usinas de biocombustíveis por óleo vegetal. Em outubro de 2026, o processamento da oleaginosa atingiu 6,37 milhões de toneladas, estabelecendo a maior marca histórica para o mês. Segundo o Boletim Semanal da Soja do Instituto Mato-grossense de Economia Agropecuária (Imea), divulgado em 23 de novembro, os dados da Associação Nacional de Processadores de Oleaginosas dos Estados Unidos (NOPA) apontam crescimento de 19,30% em relação ao mês anterior e de 2,87% na comparação com outubro de 2025.",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 9.67,
+   "id": "N11"
+  },
+  {
+   "titulo": "Custo de produção da soja deve cair na safra 2027/28",
+   "url": "https://www.agrolink.com.br/noticias/custo-de-producao-da-soja-deve-cair-na-safra-2027-28_521443.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:48-03:00",
+   "resumo": "Os produtores de soja de Mato Grosso poderão enfrentar custos de produção menores na safra 2027/28. A primeira estimativa para o próximo ciclo aponta um Custo Total (CT) de R$ 8.026,68 por hectare, redução de 2,24% em relação aos R$ 8.210,31 por hectare estimados para a temporada 2026/27. Os dados foram divulgados pelo Instituto Mato-grossense de Economia Agropecuária (Imea), no Boletim Semanal da Soja de 23 de novembro de 2026, e integram o Projeto CPA em MT, desenvolvido em parceria com o Serviço Nacional de Aprendizagem Rural de Mato Grosso (Senar-MT). O levantamento indica um movimento de contenção dos desembolsos após uma temporada marcada por custos elevados.",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 4.66,
+   "id": "N17"
+  },
+  {
+   "titulo": "Cana-de-açúcar: renovar cedo ou manter a soqueira?",
+   "url": "https://www.agrolink.com.br/noticias/cana-de-acucar--renovar-cedo-ou-manter-a-soqueira-_521442.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:38-03:00",
+   "resumo": "A renovação do canavial está entre as decisões de maior impacto econômico na produção de cana-de-açúcar. A operação exige investimentos em preparo do solo, corretivos, fertilizantes, mudas e mecanização, além de reduzir temporariamente a área disponível para colheita. Sem planejamento, esses fatores podem comprometer a receita e o fluxo de caixa da propriedade.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Como preservar a qualidade dos grãos de trigo",
+   "url": "https://www.agrolink.com.br/noticias/como-preservar-a-qualidade-dos-graos-de-trigo_521441.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:33-03:00",
+   "resumo": "A colheita do trigo é uma etapa decisiva para a qualidade dos grãos e a rentabilidade do produtor rural. A escolha do momento adequado para a operação, a regulagem da colhedora e os cuidados com o transporte e o armazenamento podem reduzir perdas, impurezas e danos que comprometem a classificação comercial do cereal.",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 6.64,
+   "id": "N21"
+  },
+  {
+   "titulo": "Mancha angular no algodão: prevenção começa na entressafra",
+   "url": "https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T14:22-03:00",
+   "resumo": "A mancha angular é uma doença que pode comprometer a produtividade do algodoeiro e a qualidade da fibra, especialmente em ambientes que combinam calor e alta umidade. Causada pela bactéria Xanthomonas citri subsp. malvacearum, a doença encontra condições favoráveis para infecção e multiplicação em temperaturas entre 25 °C e 30 °C.",
+   "blocos": [
+    "complexo_algodao"
+   ],
+   "pontuacao": 6.63,
+   "id": "N26"
+  },
+  {
+   "titulo": "Calor acima da média deve marcar o mês de dezembro",
+   "url": "https://www.agrolink.com.br/noticias/calor-acima-da-media-deve-marcar-o-mes-de-dezembro_521439.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:52-03:00",
+   "resumo": "As temperaturas acima da média deverão ganhar destaque nas condições meteorológicas de dezembro, com a redução da frequência de massas de ar frio mais intensas. As projeções indicam uma mudança no comportamento térmico em relação aos últimos dias de novembro, quando a passagem de uma frente fria ainda deverá provocar queda das temperaturas.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Corteva amplia portfólio de biológicos com inovações para o manejo de nematoides e doenças fúngicas",
+   "url": "https://www.agrolink.com.br/noticias/corteva-amplia-portfolio-de-biologicos-com-inovacoes-para-o-manejo-de-nematoides-e-doencas-fungicas_521438.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:38-03:00",
+   "resumo": "A Corteva amplia seu portfólio de soluções biológicas no Brasil com o lançamento de Amaná®, nematicida microbiológico voltado ao manejo do nematoide-das-lesões-radiculares (Pratylenchus brachyurus), e Arizium®, fungicida microbiológico foliar para o controle de importantes doenças que afetam culturas como soja, milho, algodão, café, cana-de-açúcar, trigo, batata, tomate, dentre outros cultivos de hortifruticultura. As duas tecnologias já foram aprovadas pelos órgãos regulatórios e chegam ao mercado brasileiro como novas soluções para o manejo integrado das lavouras.",
+   "blocos": [
+    "complexo_milho_e_ddgs",
+    "complexo_algodao",
+    "complexo_cafe",
+    "complexo_soja"
+   ],
+   "pontuacao": 5.57,
+   "id": "N22"
+  },
+  {
+   "titulo": "Alta do dólar favorece preços dos grãos no Brasil",
+   "url": "https://www.agrolink.com.br/noticias/alta-do-dolar-favorece-precos-dos-graos-no-brasil_521437.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:24-03:00",
+   "resumo": "A alta do dólar sustentou os preços dos grãos no mercado brasileiro nesta segunda-feira (23/11). Segundo análise da Grainsights, a inteligência de mercado da Grão Direto, a moeda norte-americana atingiu o maior patamar desde abril de 2025, favorecendo as cotações em Minas Gerais, Mato Grosso, São Paulo e Goiás. A região Sul, por outro lado, ficou de fora desse movimento de valorização pela segunda sessão consecutiva.",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 6.55,
+   "id": "N2"
+  },
+  {
+   "titulo": "Frente fria traz chuva de até 500 mm e frio abaixo de 10 °C",
+   "url": "https://www.agrolink.com.br/noticias/massa-de-ar-frio-vai-atingir-o-sul-e-o-sudeste-nesta-semana--saiba-o-que-esperar_521436.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T13:16-03:00",
+   "resumo": "A passagem de uma frente fria associada à formação de um ciclone deverá modificar as condições meteorológicas em diferentes estados brasileiros nesta semana. Além de favorecer a ocorrência de chuvas intensas, o sistema abrirá caminho para o avanço de uma massa de ar frio, com temperaturas até 8 °C abaixo da média e possibilidade de acumulados de precipitação entre 400 e 500 milímetros em áreas do Sudeste.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Nordeste tem alerta de baixa umidade e calor de 40 °C",
+   "url": "https://www.agrolink.com.br/noticias/nordeste-tem-alerta-de-baixa-umidade-e-calor-de-40--c_521435.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:27-03:00",
+   "resumo": "A ocorrência de chuvas com trovoadas no Sudeste, a possibilidade de precipitações mais intensas em Goiás e no Distrito Federal e a manutenção do tempo seco em parte do Nordeste estão entre os destaques da previsão meteorológica desta terça-feira (24). As temperaturas também permanecem elevadas em algumas regiões, podendo alcançar 40 °C na capital piauiense.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Câmara aprova texto-base do projeto de ajuste fiscal",
+   "url": "https://www.agrolink.com.br/noticias/camara-aprova-texto-base-do-projeto-de-ajuste-fiscal_521434.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:17-03:00",
+   "resumo": "A Câmara aprovou o texto-base do projeto de ajuste fiscal para 2027 por 353 votos a 128, com cinco abstenções. A proposta prevê medidas para economizar até R$ 56,1 bilhões e ainda terá destaques analisados pelos deputados",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Suíno cai e milho pressiona produtores",
+   "url": "https://www.agrolink.com.br/noticias/preco-do-suino-vivo-cai-em-novembro-e-alta-do-milho-pressiona-produtores_521433.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:17-03:00",
+   "resumo": "A queda do preço do suíno vivo na primeira quinzena de novembro, somada à alta do milho, pressiona os suinocultores paulistas. O farelo de soja mais barato, porém, melhora o poder de compra do insumo, segundo o Cepea",
+   "blocos": [
+    "complexo_milho_e_ddgs",
+    "complexo_soja"
+   ],
+   "pontuacao": 8.37,
+   "id": "N19"
+  },
+  {
+   "titulo": "Receita Federal dispensa produtores rurais da obrigatoriedade de CNPJ até o fim de 2028",
+   "url": "https://www.agrolink.com.br/noticias/receita-federal-dispensa-produtores-rurais-da-obrigatoriedade-de-cnpj-ate-o-fim-de-2028_521432.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:17-03:00",
+   "resumo": "Produtores rurais pessoas físicas não contribuintes do IBS e da CBS terão até 31 de dezembro de 2028 para se adaptar à exigência de inscrição no CNPJ, conforme ato conjunto da Receita Federal e do CGIBS",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Cecafé destaca RASOE em debate sobre sustentabilidade",
+   "url": "https://www.agrolink.com.br/noticias/cecafe-debate-implementacao-da-plataforma-agro-brasil---sustentavel-e-demandas-de-mercado_521431.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:13-03:00",
+   "resumo": "Na segunda-feira, 23 de novembro, o Conselho dos Exportadores de Café do Brasil (Cecafé) participou, em Brasília (DF), do workshop “Implementação da Plataforma Agro Brasil + Sustentável (AB+S) e atendimento às demandas de mercado”, realizado pela organização Proforest e pela Agência Alemã de Cooperação Internacional GIZ Brasil.",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Tupanciretã terá R$ 3 milhões para recuperar prejuízos",
+   "url": "https://www.agrolink.com.br/noticias/tupancireta-tera-r--3-milhoes-para-recuperar-prejuizos_521430.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:13-03:00",
+   "resumo": "O Ministério da Integração autorizou R$ 3 milhões para Tupanciretã recuperar danos causados por temporal que destruiu cerca de 8 mil casas e deixou três mortos",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Inoculação de rizóbios em sementes de trevos garante economia e pasto de qualidade",
+   "url": "https://www.agrolink.com.br/noticias/inoculacao-de-rizobios-em-sementes-de-trevos-garante-economia-e-pasto-de-qualidade_521429.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:13-03:00",
+   "resumo": "Pesquisa da Epagri em Santa Catarina selecionou rizóbios para inocular sementes de trevo, tecnologia que reduz custos com nitrogênio, melhora a qualidade das pastagens e favorece o desempenho animal",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Chuvas irregulares elevam custos da soja em MT",
+   "url": "https://www.agrolink.com.br/noticias/mt-clima-e-mercado--irregularidade-das-chuvas-provoca-replantio-e-eleva-custos-de-producao-na-regiao-leste_521428.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T11:12-03:00",
+   "resumo": "A Associação dos Produtores de soja e milho de Mato Grosso (Aprosoja MT) iniciou, nesta segunda-feira (23.11), a terceira semana do MT Clima e Mercado, desta vez na região Leste do estado. A iniciativa acompanha o desenvolvimento das lavouras de soja, os desafios enfrentados pelos produtores rurais durante o plantio e as expectativas para a colheita e a segunda safra.",
+   "blocos": [
+    "complexo_soja",
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3) nega decisão sobre IPOs de empresas do grupo após questionamento da CVM",
+   "url": "https://www.moneytimes.com.br/banco-do-brasil-bbas3-nega-decisao-sobre-ipos-de-empresas-do-grupo-apos-questionamento-da-cvm-rnda/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T20:09-03:00",
+   "resumo": "O Banco do Brasil (BBAS3) informou nesta terça-feira (24) que não há, até o momento, qualquer decisão de seus órgãos de governança sobre a realização de ofertas públicas iniciais de ações (IPOs) de empresas do conglomerado. O esclarecimento foi divulgado em resposta a um questionamento da Comissão de Valores Mobiliários (CVM), após pelo Money Times [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Potência fiscal: Governo prepara PEC ‘turbinada’ com revisão de pisos; veja o que está na mesa",
+   "url": "https://www.moneytimes.com.br/potencia-fiscal-governo-prepara-pec-turbinada-com-revisao-de-pisos-veja-o-que-esta-na-mesa/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T19:23-03:00",
+   "resumo": "Após aprovar o pacote fiscal que promete gerar uma economia de até R$ 56 bilhões até 2027, o governo Luiz Inácio Lula da Silva prepara uma nova ofensiva para reforçar o ajuste das contas públicas. Segundo apuração de veículos como Veja e Estadão, a equipe econômica trabalha em uma Proposta de Emenda à Constituição (PEC) [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "‘Não dá para aceitar esse tratamento’, diz ministro sobre adiamento da UE ao retorno de frango e mel brasileiros",
+   "url": "https://www.moneytimes.com.br/nao-da-para-aceitar-esse-tratamento-diz-ministro-sobre-adiamento-da-ue-ao-retorno-de-frango-e-mel-brasileiros/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:48-03:00",
+   "resumo": "O ministro da Agricultura, André de Paula, afirmou que recebeu com indignação a decisão da União Europeia (UE) de adiar a decisão sobre a reinclusão do Brasil no fornecimento de carne de aves e mel aos países europeus. &#8220;Nós ficamos muito frustrados com a reunião. Eu diria que, no meu caso, ficamos indignados com o [&#8230;]",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Bolsas de NY fecham sem direção única com pressão do setor de tecnologia",
+   "url": "https://www.moneytimes.com.br/bolsas-de-ny-fecham-sem-direcao-unica-com-pressao-do-setor-de-tecnologia-davs/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:42-03:00",
+   "resumo": "As bolsas de Nova York fecharam sem direção única nesta terça-feira (24), em correção após os fortes ganhos da véspera. As ações ligadas à tecnologia e à inteligência artificial (IA) voltaram a penalizar os índices, mesmo após o retorno de Jensen Huang à Nvidia. O Dow Jones subiu 0,85%, aos 50.018,70 pontos. O S&#38;P 500 [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "“Petrobras não é mais apenas uma petroleira”: a declaração da CEO da estatal que virou o jogo para as ações na bolsa hoje",
+   "url": "https://www.moneytimes.com.br/petrobras-nao-e-mais-apenas-uma-petroleira-a-declaracao-da-ceo-da-estatal-que-virou-o-jogo-para-as-acoes-na-bolsa-hoje-bdap/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:31-03:00",
+   "resumo": "Não é de hoje que a CEO da Petrobras (PETR4), Magda Chambriard, destaca o papel social da petroleira e o objetivo de fazer da empresa uma protagonista na transição energética do país. No entanto, sempre que o mercado vê qualquer passo nessa direção, o temor toma conta. Uma das principais questões é se a companhia [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Ibovespa fecha no vermelho após presidente da Petrobras não garantir dividendos extraordinários",
+   "url": "https://www.moneytimes.com.br/ibovespa-fecha-no-vermelho-apos-presidente-da-petrobras-nao-garantir-dividendos-extraordinarios-davs/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T18:27-03:00",
+   "resumo": "A bolsa brasileira passou boa parte do pregão desta terça-feira (24) no campo positivo, chegando a recuperar os 165 mil pontos. Porém o bom humor não resistiu às declarações da presidente da Petrobras, Magda Chambriard, e o Ibovespa (IBOV) fechou em queda de 0,43%, aos 164.089,81 mil pontos. Os investidores também reagiram à queda do [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Para CNI, governo transfere conta do ajuste fiscal ao setor produtivo e ameaça novos investimentos",
+   "url": "https://www.moneytimes.com.br/para-cni-governo-transfere-conta-do-ajuste-fiscal-ao-setor-produtivo-e-ameaca-novos-investimentos-pads/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:53-03:00",
+   "resumo": "A Confederação Nacional da Indústria (CNI) avaliou negativamente o ajuste fiscal aprovado pelo Congresso Nacional e já sancionado pelo presidente da República. Segundo a entidade, a lei complementar deverá atingir o setor produtivo e comprometer a economia brasileira e a competitividade da indústria, pois deverá impactar na capacidade de investimento do setor industrial. Apesar de [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "A ‘pedalada’ de Lula 4: o ajuste de caixa aprovado pressionará ainda mais os preços e os custos para quem produz",
+   "url": "https://www.moneytimes.com.br/a-pedalada-de-lula-4-o-ajuste-de-caixa-aprovado-pressionara-ainda-mais-os-precos-e-os-custos-para-quem-produz-pads/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:42-03:00",
+   "resumo": "O Projeto de Lei Complementar (PLP) nº 299/26, chamado de “Plano Moretti”, foi aprovado ontem à noite na Câmara dos Deputados, incólume, intocado, com o “bônus” da reeleição do presidente da República para mais um mandato de quatro anos. A votação foi expressiva, e o tal “ajuste fiscal” do governo federal passou com um placar [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Lula desconvida Milei para posse, diz jornal",
+   "url": "https://www.moneytimes.com.br/lula-desconvida-milei-para-posse-diz-jornal/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:37-03:00",
+   "resumo": "O presidente Luiz Inácio Lula da Silva desconvidou seu homólogo argentino Javier Milei para a cerimônia de posse do seu 4º mandato presidencial. A informação foi divulgada pelo jornal argentino Clarín nesta terça-feira, 24. Ainda segundo o jornal argentino, a gestão do petista decidiu que o embaixador do Brasil na Argentina, Julio Bitelli, não retornará [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Reforma tributária não muda planos da Amazon no Brasil: “Nunca pensamos em benefício fiscal”, diz diretor",
+   "url": "https://www.moneytimes.com.br/reforma-tributaria-nao-muda-planos-da-amazon-no-brasil-nunca-pensamos-em-beneficio-fiscal-diz-diretor/",
+   "fonte": "Money Times Agro",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-24T17:32-03:00",
+   "resumo": "A reforma tributária não deve exigir mudanças na estratégia logística da Amazon no Brasil. A gigante do e-commerce afirma que a localização dos centros de distribuição nunca foi definida com base em incentivos fiscais, mas pela proximidade com os consumidores. “Essa expansão vai ser por proximidade com os clientes. Todos os nossos centros de distribuição [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Homenaje a Santucho en la UBA: qué dijo el dirigente de Grabois que fue el único en votar contra la cancelación",
+   "url": "https://www.clarin.com/politica/homenaje-santucho-uba-dijo-dirigente-grabois-unico-votar-cancelacion_0_U7eHNsOGuy.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:24-03:00",
+   "resumo": "Santiago Martínez, consejero del espacio La Mella, rechazó \"cualquier tipo de intento de intromisión del gobierno nacional sobre la universidad\". Otros sectores señalaron la necesidad de crear una comisión para debatir propuestas de homenajes y reconocimientos.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Sin Cunningham, Pistons vencen 104-86 y le dan al Magic su primera derrota en la Copa NBA",
+   "url": "https://www.clarin.com/estados-unidos/sin-cunningham-pistons-vencen-104-86-y-le-dan-al-magic-su-primera-derrota-en-la-copa-nba_0_vzeFkb2kM1.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:20-03:00",
+   "resumo": "El equipo de Detroit, liderado por Joe y Jenkins, venció al conjunto de Orlando 104-86 en la Copa NBA, pese a la ausencia de su estrella. Con una sólida actuación en la segunda mitad, los Pistons aseguraron su segunda victoria en la fase de grupos, dejando al Magic en espera de resultados.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Punta Lara, Buenos Aires: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-punta-lara-buenos-aires-pronostico-tiempo-miercoles-25-noviembre-2026_0_Ss6whYUQSF.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:10-03:00",
+   "resumo": "El SMN anticipa para este miércoles temperaturas entre 13°C y 27°C. El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Valencia, Carabobo, Venezuela: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-valencia-carabobo-venezuela-pronostico-tiempo-miercoles-25-noviembre-2026_0_RmSC9ELz2m.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:10-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Maracay, Venezuela: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-maracay-venezuela-pronostico-tiempo-miercoles-25-noviembre-2026_0_6Jj9bnNQlw.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:10-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Maracaibo, Venezuela: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-maracaibo-venezuela-pronostico-tiempo-miercoles-25-noviembre-2026_0_n80I4iVqeT.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:10-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Barquisimeto, Venezuela: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-barquisimeto-venezuela-pronostico-tiempo-miercoles-25-noviembre-2026_0_iPAEnKm6Db.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:09-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Caracas, Venezuela: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-caracas-venezuela-pronostico-tiempo-miercoles-25-noviembre-2026_0_kHizPlBYRv.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:09-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Ciudad Guayana, Venezuela: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-ciudad-guayana-venezuela-pronostico-tiempo-miercoles-25-noviembre-2026_0_Dxhh82UaMq.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:09-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Clima hoy en Montevideo, Uruguay: el pronóstico del tiempo para este miércoles 25 noviembre de 2026",
+   "url": "https://www.clarin.com/informacion-general/clima-hoy-montevideo-uruguay-pronostico-tiempo-miercoles-25-noviembre-2026_0_Z9J8VOwh0E.html",
+   "fonte": "Clarín Rural",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:09-03:00",
+   "resumo": "El pronóstico extendido durante la jornada. ¿Cómo estará el cielo? ¿Cuál es la probabilidad de lluvias?",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "After the Bell | Dollar stalls after fresh high",
+   "url": "https://www.profarmer.com/news/after-bell/after-bell-dollar-stalls-after-fresh-high",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T17:13-03:00",
+   "resumo": "Nov. 24, 2026 Corn: March corn rose 1/2 cent to $4.50 1/4, near mid-range. The corn futures market today saw more tepid short covering and perceived bargain buying. The U.S. dollar sold off today, which did support mild buying interest in corn futures. Soybeans: January soybeans rose 5 1/4 cents to $12.34, nearer the daily low and hit a three-week high early on. March soybean meal gained $6.20 to $351.40, near the daily high and hit a five-week high. March soybean oil lost 125 points to 58.80 cents, near the daily low and hit another eight-month low. The soybean and meal markets today saw technical buying from the speculators, amid near-term technical postures in both markets that are turning more bullish. Wheat: March SRW fell 6 1/4 cents to $5.89 1/4, nearer the daily low. March HRW lost 5 1/4 cents to $6.32 1/4, nearer the daily low. March spring wheat futures fell 1/2 cent to $6.42 3",
+   "blocos": [
+    "complexo_soja",
+    "cambio_e_energia",
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 6.07,
+   "id": "N5"
+  },
+  {
+   "titulo": "Beef's unbreakable demand streak faces a 2027 reality check",
+   "url": "https://www.profarmer.com/news/agriculture-news/beefs-unbreakable-demand-streak-faces-2027-reality-check",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T12:41-03:00",
+   "resumo": "Ground beef kept consumers buying through a 10% price surge, but collapsing hog fundamentals and shrinking cattle placements set up a major test at the meat counter for next year. Beef demand appears to have remained remarkably inelastic in 2026, USDA forecasts indicate, after showing shocking staying power last year despite fears consumers would shift to other, less expensive proteins. Ground beef, the steady bulwark of beef demand, sees average 2026 prices on pace to rise 71 cents per pound from the year prior, the largest single year increase on records dating to 1985. That would be a 10.47% price increase, yet USDA’s estimate of per capita consumption of all beef is only set to fall 0.12% this year. That unchanging demand in the face of rising prices is an anomaly compared to both chicken and pork. Poultry continues to dominate American diets. Chicken breast prices remain nearly unch",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 4.69,
+   "id": "N35"
+  },
+  {
+   "titulo": "Ahead of the Open | More tariffs likely",
+   "url": "https://www.profarmer.com/news/ahead-open/ahead-open-more-tariffs-likely",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T11:09-03:00",
+   "resumo": "Grains continue to lead weakness while soybeans attempt to break higher. GENERAL COMMENTS: Grains continue to lead weakness while soybeans attempt to break higher. News of likely more tariffs from the Trump administration weighed on grains late this morning. Front-month crude oil futures are trading modestly higher on corrective strength this morning while the U.S. dollar index is around 431 points lower. A late morning headline stating the U.S. is preparing to raise tariffs on China took the wind out of bulls’ sails across the marketplace following what appeared to be a productive visit by U.S. President Donald Trump to China last week. The U.S. is preparing to raise tariffs on China and dozens of other countries that the Trump administration argues are harming American companies by subsidizing their own industrial production. U.S. Trade Representative Jamieson Greer is expected to unve",
+   "blocos": [
+    "cambio_e_energia",
+    "complexo_soja"
+   ],
+   "pontuacao": 3.56,
+   "id": "N10"
+  },
+  {
+   "titulo": "First Thing Today | Grains mostly higher as U.S. dollar rally takes a breather",
+   "url": "https://www.profarmer.com/news/first-thing-today/first-thing-today-corn-soybeans-tick-higher-overnight-risk-appetite-revives",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T09:17-03:00",
+   "resumo": "Sinograin tenders for soyoil, Thanskgiving week snow targets Plains and Midwest, and live cattle hit a three-week high. Corn, soybeans tick higher… As of 6 a.m. CT, March corn was ¾ cent higher. January soybeans rose 5 cents, with January meal up $1.40 and January soybean oil 41 points lower. March soft red winter wheat was 1 cent lower, while March hard red winter wheat lost 1 ½ cents. Grains were buoyed on Monday as the stock market, led by the technology sector, stormed sharply higher in volatile trade following the reinstatement of Jensen Huang as CEO of chip giant Nvidia Corp. Huang’s return, which came partly at the behest of the Trump administration, remains highly controversial, with Democratic and Republican lawmakers vowing to press ahead with investigations into whether national security was compromised by Huang’s affair with an alleged Chinese spy as well as the company’s adh",
+   "blocos": [
+    "complexo_soja",
+    "cambio_e_energia",
+    "complexo_milho_e_ddgs",
+    "complexo_cafe"
+   ],
+   "pontuacao": 4.4,
+   "id": "N18"
+  },
+  {
+   "titulo": "Wheat conditions improve for the third consecutive week",
+   "url": "https://www.profarmer.com/news/wheat-conditions-improve-third-consecutive-week",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-23T18:48-03:00",
+   "resumo": "Wheat ratings look strong as the Crop Progress season nears a close USDA’s weekly Crop Progress and Condition report on Monday showed winter wheat conditions improve for the third consecutive week. State-level breakdowns of the Pro Farmer Crop Condition Index, which compresses the USDA’s weekly crop progress report into a single, weighted, easy-to-track number that’s widely used to monitor the health and potential of U.S. crops during the growing season and more details around USDA ratings, are below. USDA placed its estimates for winter wheat conditions at 12% very poor to poor, 34% fair, and 54% good to excellent. The good to excellent categories improved 1% from the week prior. The past week saw spotty rains in Missouri and further east into SRW country that helped alleviate some impacts of the recent dry spell in the lower Midwest. The CCI index for SRW was up 3.32 points to 374.15, ",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Pasture or Processing Power? What Big Tech’s Rural Data Center Boom Means for Cattle Country",
+   "url": "https://www.profarmer.com/news/pasture-or-processing-power-what-big-techs-rural-data-center-boom-means-cattle-country",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-23T17:20-03:00",
+   "resumo": "Data centers have arrived in rural America — and they're competing with cattle producers for land, water and political power. Here's what agriculture needs to demand before it's too late. In western Kansas, generations of beef producers have lived by a familiar adage: the pungent aroma drifting off a 50,000-head feedyard isn’t a nuisance — it’s the “smell of money.” Today, a different kind of economic powerhouse is knocking on county courthouse doors — one that doesn’t smell like cattle and doesn’t track mud on the county blacktop. It arrives in the form of windowless, multi-million-square-foot concrete monoliths humming with thousands of supercomputers powering the nation’s artificial intelligence (AI) boom. Data centers have arrived in rural America. Driven by an unprecedented surge in AI development, cloud computing and a national data center vacancy rate hovering near record lows of ",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "After the Bell | Winter wheat futures mixed in face of firming U.S. dollar",
+   "url": "https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-23T16:52-03:00",
+   "resumo": "Nov. 23, 2026 Corn: March corn rose 1 cent to $4.49 3/4, nearer the daily low. The corn futures market today saw tepid short covering and perceived bargain buying. Soybeans: January soybeans rose 8 cents to $12.28 3/4, near mid-range. March soybean meal gained $4.40 to $345.20, near the daily high and hit a four-week high. March soybean oil lost 47 points to 60.05 cents, nearer the daily low and hit an eight-month low. The soybean and meal markets today saw short covering and bargain hunting from the speculators, amid a markedly improved risk appetite in the general marketplace. Bean oil was pressured by the sell off in crude oil prices recently. Wheat: March SRW rose 3 1/2 cents to $5.95 1/2, nearer the daily high. March HRW lost 2 3/4 cents to $6.37 1/2, nearer the daily low. March spring wheat futures rose 1 3/4 cents to $6.40, nearer the daily high. The winter wheat futures markets s",
+   "blocos": [
+    "complexo_soja",
+    "complexo_milho_e_ddgs",
+    "cambio_e_energia"
+   ],
+   "pontuacao": 4.8,
+   "id": "N16"
+  },
+  {
+   "titulo": "The Andersons steers toward low-CI ethanol",
+   "url": "https://www.world-grain.com/articles/23489-the-andersons-steers-toward-low-ci-ethanol",
+   "fonte": "World Grain",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T11:12-03:00",
+   "resumo": "HLCP synergies highlighted during Stephens Annual Investment Conference",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Cargill regen ag program honored at COP31",
+   "url": "https://www.world-grain.com/articles/23488-cargill-regen-ag-program-honored-at-cop31",
+   "fonte": "World Grain",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T10:35-03:00",
+   "resumo": "Combines digital data, agronomy support for Turkish farmers",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "WFP: ‘Triple chokepoint’ squeezing food supplies",
+   "url": "https://www.world-grain.com/articles/23490-wfp-triple-chokepoint-squeezing-food-supplies",
+   "fonte": "World Grain",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T11:38-03:00",
+   "resumo": "Black Sea attacks could deny 10 million tonnes of wheat to global markets",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "ADM names global VP for Feed Additives & Ingredients",
+   "url": "https://www.world-grain.com/articles/23487-adm-names-global-vp-for-feed-additives-and-ingredients",
+   "fonte": "World Grain",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T09:32-03:00",
+   "resumo": "Achyuth Iyengar brings over 20 years of feed industry experience to role",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "USA Rice visit strengthens ties in South America",
+   "url": "https://www.world-grain.com/articles/23491-usa-rice-visit-strengthens-ties-in-south-america",
+   "fonte": "World Grain",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T11:52-03:00",
+   "resumo": "Included stops at farms, mills and research facilities",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "How long does a galvanised steel silo last? Key factors determining its service life",
+   "url": "https://www.efeedlink.com/articles/how-long-does-a-galvanised-steel-silo-last-key-factors-determining-its-service-life",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T01:38-03:00",
+   "resumo": "Understanding the role played by steel protection, preventive maintenance and environmental conditions in maximising the durability of grain storage facilities.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Pet sector M&A rises 22% in 2026 as private equity deal count jumps 56%, Capstone reports",
+   "url": "https://www.efeedlink.com/articles/pet-sector-m-a-rises-22-in-2026-as-private-equity-deal-count-jumps-56-capstone-reports",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:45-03:00",
+   "resumo": "Financial sponsors drove pet deal growth while consumer industry M&A fell 24%, with pet sector valuations averaging 11.8 times EBITDA.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Smucker's US pet food profit falls 17% in fiscal Q2 as dog snack pricing weakens",
+   "url": "https://www.efeedlink.com/articles/smuckers-us-pet-food-profit-falls-17-in-fiscal-q2-as-dog-snack-pricing-weakens",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:45-03:00",
+   "resumo": "Cat food volume growth offset a decline in dog snacks, but higher costs cut the Milk-Bone and Meow Mix owner's pet segment margin by 470 basis points.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Philippines' NIA and Feedmix sign 25-year deal for 100-hectare tilapia cage farm in Pantabangan Reservoir",
+   "url": "https://www.efeedlink.com/articles/philippines-nia-and-feedmix-sign-25-year-deal-for-100-hectare-tilapia-cage-farm-in-pantabangan-reservoir",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:44-03:00",
+   "resumo": "The P95 million phased project targets up to 25,000 tonnes of tilapia a year at full operation, from 500 cages installed over five years.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "South Korea's KTR becomes first lab designated for animal-free irritation tests on veterinary drugs and pet products",
+   "url": "https://www.efeedlink.com/articles/south-koreas-ktr-becomes-first-lab-designated-for-animal-free-irritation-tests-on-veterinary-drugs-and-pet-products",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:30-03:00",
+   "resumo": "The Animal and Plant Quarantine Agency designation covers three eye and skin irritation tests using cattle corneas from slaughter or cultured human tissue models.",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Thailand's rabies deaths nearly double to 13 in 2026, with most linked to pet puppies and kittens",
+   "url": "https://www.efeedlink.com/articles/thailands-rabies-deaths-nearly-double-to-13-in-2026-with-most-linked-to-pet-puppies-and-kittens",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:29-03:00",
+   "resumo": "Thailand's Department of Disease Control says none of the victims received post-exposure vaccination and the animals involved had not been vaccinated.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Royal Canin and Harim Petfood to raise South Korean pet food prices in December",
+   "url": "https://www.efeedlink.com/articles/royal-canin-and-harim-petfood-to-raise-south-korean-pet-food-prices-in-december",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:29-03:00",
+   "resumo": "The increases follow earlier rises by Purina, Monge and Hill's this year, with pet goods prices already climbing faster than overall consumer prices.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Indonesia's Bulog corn purchases from farmers pass 250,000 tonnes under feed corn floor price",
+   "url": "https://www.efeedlink.com/articles/indonesias-bulog-corn-purchases-from-farmers-pass-250-000-tonnes-under-feed-corn-floor-price",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:28-03:00",
+   "resumo": "Purchases are about a quarter of Bulog's 1 million tonne annual target, while the subsidised SPHP feed corn allocation for 2026 has been raised to 391,900 tonnes. Purchases are about a quarter of Bulog's 1 million tonne annual target, while the subsidised SPHP feed corn allocation for 2026 has been raised to 391,900 tonnes.",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 4.67,
+   "id": "N24"
+  },
+  {
+   "titulo": "Vietnam's Ca Mau shrimp trade conference yields 14 preliminary deals and eight MoUs",
+   "url": "https://www.efeedlink.com/articles/vietnams-ca-mau-shrimp-trade-conference-yields-14-preliminary-deals-and-eight-mous",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:28-03:00",
+   "resumo": "Provincial authorities pushed tighter links between farmers, cooperatives and processors as fragmented production and limited traceability weigh on the sector.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vietnam's Ninh Binh shifts from black tiger to whiteleg shrimp as high-tech ponds top 30 tonnes/ha",
+   "url": "https://www.efeedlink.com/articles/vietnams-ninh-binh-shifts-from-black-tiger-to-whiteleg-shrimp-as-high-tech-ponds-top-30-tonnes-ha",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:28-03:00",
+   "resumo": "The northern coastal province farms about 4,500 ha of brackish-water shrimp but still relies entirely on imported whiteleg shrimp seed.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vietnam's black tiger shrimp prices come under pressure as whiteleg shrimp slump spreads",
+   "url": "https://www.efeedlink.com/articles/vietnams-black-tiger-shrimp-prices-come-under-pressure-as-whiteleg-shrimp-slump-spreads",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:27-03:00",
+   "resumo": "Falling Asian whiteleg shrimp prices and rising Indian supply are starting to erode the premium black tiger shrimp has held, with only the largest sizes still gaining.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Thai pig farmers say US pork deal puts them at near 100% disadvantage, call for talks with government",
+   "url": "https://www.efeedlink.com/articles/thai-pig-farmers-say-us-pork-deal-puts-them-at-near-100-disadvantage-call-for-talks-with-government",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:27-03:00",
+   "resumo": "National Swine Raisers Association says Thai production costs are more than double US levels and asks to meet ministers before further trade talks.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "South Korea plans animal welfare direct payments of up to KRW30 million for certified pig farms from 2027",
+   "url": "https://www.efeedlink.com/articles/south-korea-plans-animal-welfare-direct-payments-of-up-to-krw30-million-for-certified-pig-farms-from-2027",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:27-03:00",
+   "resumo": "Pilot scheme budgets KRW870 million for pigs, with a working rate of KRW6,800 per head to offset half of farms' income losses from welfare standards.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vietnam's live pig prices face continued pressure as nine-month output rises 4.4%, VCBS says",
+   "url": "https://www.efeedlink.com/articles/vietnams-live-pig-prices-face-continued-pressure-as-nine-month-output-rises-4-4-vcbs-says",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T00:26-03:00",
+   "resumo": "Securities firm warns early selling linked to ASF and flooding could add supply, while listed producers lean on feed-farm-food chains to offset weaker hog prices.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vietnam's poultry association expects 3-3.5% meat output growth in 2027 as low costs fail to lift margins",
+   "url": "https://www.efeedlink.com/articles/vietnams-poultry-association-expects-3-3-5-meat-output-growth-in-2027-as-low-costs-fail-to-lift-margins",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:26-03:00",
+   "resumo": "Vietnam produces white-feather broilers at about US$1.06/kg, among the cheapest of 18 countries compared, but earns a margin of only US$0.08/kg.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Hong Kong suspends poultry imports from Japan's Aichi and areas of US, UK and Canada over bird flu",
+   "url": "https://www.efeedlink.com/articles/hong-kong-suspends-poultry-imports-from-japans-aichi-and-areas-of-us-uk-and-canada-over-bird-flu",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:22-03:00",
+   "resumo": "The latest suspensions cover poultry meat, products and eggs from seven areas across four countries after new avian influenza outbreaks.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vietnam's Lam Dong steps up FMD vaccination as officials warn of SAT1 serotype risk",
+   "url": "https://www.efeedlink.com/articles/vietnams-lam-dong-steps-up-fmd-vaccination-as-officials-warn-of-sat1-serotype-risk",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:22-03:00",
+   "resumo": "Provincial vets say current O and A vaccines would not fully protect cattle if the new SAT1 strain reaches Vietnam, though recent sampling found no circulating virus.",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "South Korea's Haemaru Animal Hospital and NodCure partner on cancer drugs for dogs and other pets",
+   "url": "https://www.efeedlink.com/articles/south-koreas-haemaru-animal-hospital-and-nodcure-partner-on-cancer-drugs-for-dogs-and-other-pets",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:22-03:00",
+   "resumo": "The agreement targets companion animal tumours, including immuno-oncology drugs, with NodCure's pipeline led by an anti-canine PD-L1 antibody.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "China's CIPS 2026 pet trade fair logs over 100,000 visitor registrations as overseas attendance rises 23%",
+   "url": "https://www.efeedlink.com/articles/chinas-cips-2026-pet-trade-fair-logs-over-100-000-visitor-registrations-as-overseas-attendance-rises-23",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:21-03:00",
+   "resumo": "The 30th edition of the Guangzhou show expanded its floor space to 120,000 square metres and hosted more than 1,400 pet and aquarium exhibitors.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Taiwan's wholesale egg price hits NT$50 per catty, highest since 2023 shortage",
+   "url": "https://www.efeedlink.com/articles/taiwans-wholesale-egg-price-hits-nt-50-per-catty-highest-since-2023-shortage",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:21-03:00",
+   "resumo": "Moulting hens, colder weather and higher feed costs have tightened supply, and traders do not expect prices to ease before the Lunar New Year.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "South Korea's layer farmers rule out egg imports this winter as flock reaches 86.5 million",
+   "url": "https://www.efeedlink.com/articles/south-koreas-layer-farmers-rule-out-egg-imports-this-winter-as-flock-reaches-86-5-million",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:21-03:00",
+   "resumo": "Producers say contract rearing of replacement hens and higher cull compensation will keep supply steady despite an early run of bird flu cases.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Pakistan finalises shrimp farming recommendations from seven working groups, identifies 14 priority areas",
+   "url": "https://www.efeedlink.com/articles/pakistan-finalises-shrimp-farming-recommendations-from-seven-working-groups-identifies-14-priority-areas",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:20-03:00",
+   "resumo": "A consolidated report on production potential, investment and export opportunities will go to the prime minister after ministerial review.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "India's Andhra Pradesh signs MoU with Iceland Ocean Cluster to develop Bhimavaram aquaculture cluster",
+   "url": "https://www.efeedlink.com/articles/indias-andhra-pradesh-signs-mou-with-iceland-ocean-cluster-to-develop-bhimavaram-aquaculture-cluster",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:20-03:00",
+   "resumo": "The partnership targets value-added products from fish and shrimp processing waste in West Godavari, home to 26 seafood processing plants.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vietnam's Lam Dong proposes 2,000-hectare high-tech mariculture cluster targeting US$2 billion revenue by 2045",
+   "url": "https://www.efeedlink.com/articles/vietnams-lam-dong-proposes-2-000-hectare-high-tech-mariculture-cluster-targeting-us-2-billion-revenue-by-2045",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:19-03:00",
+   "resumo": "The La Gan Bay pilot would shift small-scale cage farming to industrial production and could be combined with an offshore wind survey area.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Indonesia's West Kalimantan trains goat farmers as output of 200 tonnes trails 4,480-tonne meat demand",
+   "url": "https://www.efeedlink.com/articles/indonesias-west-kalimantan-trains-goat-farmers-as-output-of-200-tonnes-trails-4-480-tonne-meat-demand",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:19-03:00",
+   "resumo": "The province still brings in goats and goat meat from Java and wants farmers to move from seasonal Eid al-Adha sales to year-round supply.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Japan's Hokuren to pay seasonal premium on Hokkaido raw milk from April 2027",
+   "url": "https://www.efeedlink.com/articles/japans-hokuren-to-pay-seasonal-premium-on-hokkaido-raw-milk-from-april-2027",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:19-03:00",
+   "resumo": "Hokkaido farmers will earn more in the July-November peak and less in the other seven months, as cooperatives try to match milk output to demand.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Indonesia's East Java lawmakers push livestock downstreaming rules as dairy farmers struggle to sell milk",
+   "url": "https://www.efeedlink.com/articles/indonesias-east-java-lawmakers-push-livestock-downstreaming-rules-as-dairy-farmers-struggle-to-sell-milk",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:18-03:00",
+   "resumo": "A draft provincial regulation would set up price protection and offtake mechanisms for dairy and egg farmers as egg prices fall below production cost.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "China's soybean meal price eases 0.4% to RMB3,132 per tonne in mid-November as corn edges up",
+   "url": "https://www.efeedlink.com/articles/chinas-soybean-meal-price-eases-0-4-to-rmb3-132-per-tonne-in-mid-november-as-corn-edges-up",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:18-03:00",
+   "resumo": "National statistics data show most grain and oilseed prices moved within a narrow band in the second ten days of November, while live hog prices rose 3.4%. National statistics data show most grain and oilseed prices moved within a narrow band in the second ten days of November, while live hog prices rose 3.4%.",
+   "blocos": [
+    "complexo_soja",
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 6.57,
+   "id": "N12"
+  },
+  {
+   "titulo": "Philippine pork producers seek four-month import ban and restoration of 30-40% tariffs",
+   "url": "https://www.efeedlink.com/articles/philippine-pork-producers-seek-four-month-import-ban-and-restoration-of-30-40-tariffs",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:17-03:00",
+   "resumo": "ProPork says the 60-day restriction on selected pork cuts that took effect on 24 November is too short, as imported shipments already en route blunt its impact.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "China's hog prices rise for 14 straight days to RMB9.88/kg as farmers hold back pigs",
+   "url": "https://www.efeedlink.com/articles/chinas-hog-prices-rise-for-14-straight-days-to-rmb9-88-kg-as-farmers-hold-back-pigs",
+   "fonte": "eFeedLink",
+   "regiao": "China",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T23:17-03:00",
+   "resumo": "Analysts say a pre-holiday cured-meat season and tighter short-term supply lifted prices, but expect a true cyclical turn only after mid-2027.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  }
+ ]
+}
