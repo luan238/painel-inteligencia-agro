@@ -2,7 +2,7 @@
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
     "scope": "Mercado abre com dólar PTAX a R$ 5,8573, soja em alta em Chicago e cautela no café.",
-    "timestamp": "25/11/2026 02:02 BRT — Abertura de Quarta-Feira",
+    "timestamp": "25/11/2026 10:45 BRT — cotações atualizadas pelo monitor · análise do Abertura das 02:02",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
@@ -17,8 +17,8 @@
       "dolar_ptax": "R$ 5,8573 (-1,90% no dia · -0,54% na semana) — Banco Central do Brasil, 24/11",
       "dolar_futuro_b3": "5.905,21 pts (-0,52% no dia · -0,32% na semana) — B3 Agro, 24/11",
       "selic_meta": "13,75% a.a. (0,00% no dia · 0,00% na semana) — Banco Central do Brasil, 25/11",
-      "petroleo_wti": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
-      "petroleo_brent": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
+      "petroleo_wti": "US$ 89,53/bbl (+0,32% no dia · 0,00% na semana) — FRED (Fed de St. Louis), 17/11",
+      "petroleo_brent": "US$ 92,94/bbl (+0,04% no dia · 0,00% na semana) — FRED (Fed de St. Louis), 17/11",
       "ndf_teorico_160d": "R$ 6,0543 (spot R$ 5,8573 · juros R$ 13,75% a.a. · cupom 4,80% a.a. · 106 d.u.)"
     },
     "complexo_soja": {
@@ -27,9 +27,9 @@
       "oleo_soja_cbot": "58,11 ¢/lb [Dic-26] (-2,84% no dia · -2,84% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
       "soja_paranagua": "R$ 172,00/sc (+1,18% no dia · +1,18% na semana) — Canal Rural, 24/11",
       "soja_parana": "R$ 161,00/sc (+1,26% no dia · +1,26% na semana) — Canal Rural, 24/11",
-      "soja_uberlandia": "R$ 159,00/sc (0,00% no dia · +1,60% na semana) — Agrolink, 25/11",
+      "soja_uberlandia": "R$ 159,00/sc [Soja em Grão Sc 60Kg] (0,00% no dia · +1,60% na semana) — Agrolink, 25/11",
       "soja_b3": "US$ 27,20/sc (+0,43% no dia · +2,19% na semana) — B3 Agro, 24/11",
-      "soja_rosario": "⚠️ ARS 560.000/t [Soja] (+1,82% no dia · 0,00% na semana) — BCR – Bolsa de Comercio de Rosario, 20/11 · leitura incerta (coluna por posição)",
+      "soja_rosario": "⚠️ ARS 570.000/t [Soja] (+1,79% no dia · +1,79% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11 · leitura incerta (coluna por posição)",
       "spread_soja_porto_uberlandia": "R$ 13,00/sc — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11 vs 25/11)"
     },
     "complexo_milho_e_ddgs": {
@@ -43,16 +43,16 @@
       "spread_milho_b3_calendario": "R$ 5,67/sc — Milho B3 (2º venc.) 77,21 − Milho B3 71,54 (24/11)"
     },
     "complexo_algodao": {
-      "algodao_ice": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "algodao_cepea": "411,00 ¢R$/lb (+1,23% no dia · +1,23% na semana) — Canal Rural, 24/11",
-      "caroco_algodao_mt": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
-      "caroco_algodao_ba": "⛔ Indisponível — nenhuma fonte retornou cotação válida"
+      "caroco_algodao_mt": "R$ 713,79/t [Cuiabá (MT)] — Agrolink, 23/11",
+      "caroco_algodao_ba": "R$ 973,33/t [Barreiras (BA)] — Agrolink, 25/11",
+      "spread_caroco_ba_mt": "R$ 259,54/t — Caroço de Algodão BA 973,33 − Caroço de Algodão MT 713,79 (25/11 vs 23/11)"
     },
     "complexo_cafe": {
-      "cafe_arabica_ice": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
-      "cafe_robusta_londres": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
+      "cafe_arabica_b3": "US$ 323,15/sc — B3 Agro, 24/11",
+      "cafe_conilon_b3": "R$ 940,42/sc — B3 Agro, 24/11",
       "cafe_arabica_cepea": "R$ 1.840,00/sc (-0,54% no dia · -0,54% na semana) — Canal Rural, 24/11",
-      "cafe_manhuacu": "⚠️ R$ 1.694,00/sc (0,00% no dia · +0,95% na semana) — Agrolink, 25/11 · leitura incerta (data presumida)",
+      "cafe_manhuacu": "⚠️ R$ 1.694,00/sc [Manhuaçu (MG)] (0,00% no dia · +0,95% na semana) — Agrolink, 25/11 · leitura incerta (data presumida)",
       "boi_gordo_cepea": "R$ 395,00/@ (0,00% no dia · 0,00% na semana) — Canal Rural, 24/11",
       "boi_b3": "R$ 397,50/@ (-0,38% no dia · -0,39% na semana) — B3 Agro, 24/11",
       "spread_cafe_cepea_manhuacu": "⚠️ R$ 146,00/sc — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11 vs 25/11)"
@@ -470,6 +470,10 @@
             {
               "label": "Cotação verificada: Algodão pluma MT — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/algodao/"
+            },
+            {
+              "label": "Cotação verificada: Caroço de Algodão MT — Agrolink (23/11)",
+              "url": "https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton"
             }
           ]
         },
@@ -484,6 +488,10 @@
             {
               "label": "Cotação verificada: Algodão pluma MT — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/algodao/"
+            },
+            {
+              "label": "Cotação verificada: Caroço de Algodão MT — Agrolink (23/11)",
+              "url": "https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton"
             }
           ]
         },
@@ -494,6 +502,10 @@
             {
               "label": "Cotação verificada: Algodão pluma MT — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/algodao/"
+            },
+            {
+              "label": "Cotação verificada: Caroço de Algodão MT — Agrolink (23/11)",
+              "url": "https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton"
             }
           ]
         }
@@ -559,8 +571,8 @@
               "url": "https://globorural.globo.com/podcasts/cbn-agro/noticia/2026/11/clima-irregular-ameaca-proxima-safra-de-cafe-no-brasil-ouca-o-comentario.ghtml"
             },
             {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+              "label": "Cotação verificada: Café Arábica B3 — B3 Agro (24/11)",
+              "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/"
             }
           ]
         },
@@ -573,12 +585,12 @@
               "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/cafe-cai-em-nova-york-com-vendas-brasileiras-em-alta.ghtml"
             },
             {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+              "label": "Cotação verificada: Café Arábica B3 — B3 Agro (24/11)",
+              "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/"
             },
             {
-              "label": "Cotação verificada: Café Manhuaçu-MG (Matas de Minas) — Agrolink (25/11)",
-              "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
+              "label": "Cotação verificada: Café Conilon B3 — B3 Agro (24/11)",
+              "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/"
             }
           ]
         },
@@ -595,8 +607,8 @@
               "url": "https://globorural.globo.com/pecuaria/boi/noticia/2026/11/mercado-do-boi-gordo-abre-a-semana-com-poucos-negocios-e-precos-estaveis.ghtml"
             },
             {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+              "label": "Cotação verificada: Café Arábica B3 — B3 Agro (24/11)",
+              "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/"
             }
           ]
         },
@@ -613,8 +625,8 @@
               "url": "https://www.farmnews.com.br/mercado/com-o-mercado-futuro-do-boi-gordo-na-maxima-o-que-esperar/"
             },
             {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+              "label": "Cotação verificada: Café Arábica B3 — B3 Agro (24/11)",
+              "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/"
             }
           ]
         }
@@ -633,6 +645,14 @@
         "current_value": 5.8573,
         "weekly_change_pct": -0.54,
         "weekly_driver": "O Dólar PTAX variou -0,54% (−R$ 0,0316) desde 19/11, refletindo ajustes após patamares elevados."
+      },
+      {
+        "asset": "Petróleo WTI",
+        "unit": "US$/bbl",
+        "sunday_open_ref": 89.53,
+        "current_value": 89.53,
+        "weekly_change_pct": 0.0,
+        "weekly_driver": "De US$ 89,53/bbl (17/11) para US$ 89,53/bbl (0,00% na semana)."
       },
       {
         "asset": "Soja Paranaguá-PR",
@@ -750,6 +770,38 @@
           5.9708,
           5.8573,
           5.8573
+        ]
+      },
+      {
+        "asset": "Petróleo WTI",
+        "unit": "US$/bbl",
+        "month_open_value": 107.56,
+        "mid_month_10_oct": 89.62,
+        "current_value": 89.53,
+        "mtd_change_pct": -16.76,
+        "monthly_narrative": "No mês: de US$ 107,56/bbl (30/10) para US$ 89,53/bbl (-16,76%).",
+        "daily_history": [
+          105.25,
+          103.37,
+          106.25,
+          105.51,
+          107.56,
+          99.64,
+          91.73,
+          94.05,
+          94.37,
+          90.4,
+          89.62,
+          89.62,
+          92.3,
+          91.96,
+          89.24,
+          89.53,
+          89.53,
+          89.53,
+          null,
+          null,
+          null
         ]
       },
       {
@@ -960,14 +1012,14 @@
     },
     {
       "commodity": "Petróleo WTI",
-      "current_base": "indisponível · Track record em formação",
-      "short_term_target_23_oct": "— (sem cotação válida)",
+      "current_base": "US$ 89,53/bbl (FRED (Fed de St. Louis), 17/11) · Track record em formação",
+      "short_term_target_23_oct": "US$ 83,13/bbl – US$ 96,42/bbl até 25/11 (banda ±1,0σ)",
       "end_of_month_30_oct": {
-        "base_case": "—",
-        "bull_case": "—",
-        "bear_case": "—"
+        "base_case": "US$ 89,53/bbl (30/11)",
+        "bull_case": "US$ 98,34/bbl (+1,0σ)",
+        "bear_case": "US$ 81,51/bbl (−1,0σ)"
       },
-      "audit_trigger": "—"
+      "audit_trigger": "Método: banda de volatilidade (σ diário 3,32%, 59 pregões no histórico)."
     },
     {
       "commodity": "Soja Paranaguá-PR",
@@ -1053,18 +1105,18 @@
     "saca_usd": 27.2
   },
   "data_quality": {
-    "gerado_em": "2026-11-25T02:02-03:00",
+    "gerado_em": "2026-11-25T10:45-03:00",
     "turno": "abertura",
     "versao_agente": "1.0.0",
-    "modo_atualizacao": "completo",
+    "modo_atualizacao": "cotacoes",
     "analise_gerada_em": "2026-11-25T02:02-03:00",
-    "cotacoes_atualizadas_em": "2026-11-25T02:02-03:00",
+    "cotacoes_atualizadas_em": "2026-11-25T10:45-03:00",
     "indicadores": {
-      "total": 30,
-      "ok": 21,
+      "total": 29,
+      "ok": 27,
       "alerta": 2,
       "desatualizado": 0,
-      "indisponivel": 7
+      "indisponivel": 0
     },
     "lista_indicadores": [
       {
@@ -1131,18 +1183,21 @@
       },
       {
         "id": "petroleo_wti",
-        "nome": "Petróleo WTI — NYMEX (1º vencimento)",
+        "nome": "Petróleo WTI — spot Cushing (EIA)",
         "nome_curto": "Petróleo WTI",
         "bloco": "cambio_e_energia",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
+        "status": "ok",
+        "valor": "US$ 89,53/bbl",
+        "data": "2026-11-17",
+        "fonte": "FRED (Fed de St. Louis)",
+        "url": "https://fred.stlouisfed.org/series/DCOILWTICO",
+        "mensagens": [],
         "fontes": [
+          {
+            "fonte": "FRED (Fed de St. Louis)",
+            "status": "ok",
+            "mensagem": "59 valor(es); último 89.53 em 17/11/2026 · CSV DCOILWTICO"
+          },
           {
             "fonte": "EIA (governo dos EUA)",
             "status": "inativa",
@@ -1152,18 +1207,21 @@
       },
       {
         "id": "petroleo_brent",
-        "nome": "Petróleo Brent — ICE Londres (1º vencimento)",
+        "nome": "Petróleo Brent — spot Europa (EIA)",
         "nome_curto": "Petróleo Brent",
         "bloco": "cambio_e_energia",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
+        "status": "ok",
+        "valor": "US$ 92,94/bbl",
+        "data": "2026-11-17",
+        "fonte": "FRED (Fed de St. Louis)",
+        "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+        "mensagens": [],
         "fontes": [
+          {
+            "fonte": "FRED (Fed de St. Louis)",
+            "status": "ok",
+            "mensagem": "59 valor(es); último 92.94 em 17/11/2026 · CSV DCOILBRENTEU"
+          },
           {
             "fonte": "EIA (governo dos EUA)",
             "status": "inativa",
@@ -1281,7 +1339,7 @@
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)' · data não informada na página"
+            "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha 'Soja em Grão Sc 60Kg' · coluna 'Preço (R$)' · data não informada na página"
           }
         ]
       },
@@ -1310,8 +1368,8 @@
         "nome_curto": "Soja Rosario (BCR)",
         "bloco": "complexo_soja",
         "status": "alerta",
-        "valor": "ARS 560.000/t",
-        "data": "2026-11-20",
+        "valor": "ARS 570.000/t",
+        "data": "2026-11-24",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0",
         "mensagens": [
@@ -1321,7 +1379,7 @@
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
             "status": "ok",
-            "mensagem": "1 valor(es); último 560000.0 em 20/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica'"
+            "mensagem": "1 valor(es); último 570000.0 em 24/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica' "
           }
         ]
       },
@@ -1459,21 +1517,6 @@
         ]
       },
       {
-        "id": "algodao_ice",
-        "nome": "Algodão ICE Nova York — 1º vencimento",
-        "nome_curto": "Algodão NY (ICE)",
-        "bloco": "complexo_algodao",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
-        "fontes": []
-      },
-      {
         "id": "algodao_cepea",
         "nome": "Algodão em pluma — Rondonópolis-MT",
         "nome_curto": "Algodão pluma MT",
@@ -1497,60 +1540,76 @@
         "nome": "Caroço de Algodão — Mato Grosso",
         "nome_curto": "Caroço de Algodão MT",
         "bloco": "complexo_algodao",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
-        "fontes": []
+        "status": "ok",
+        "valor": "R$ 713,79/t",
+        "data": "2026-11-23",
+        "fonte": "Agrolink",
+        "url": "https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Agrolink",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 713.79 em 23/11/2026 · tabela '' · linha 'Cuiabá (MT)' · coluna 'Preço (R$)'"
+          }
+        ]
       },
       {
         "id": "caroco_algodao_ba",
         "nome": "Caroço de Algodão — Oeste da Bahia",
         "nome_curto": "Caroço de Algodão BA",
         "bloco": "complexo_algodao",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
-        "fontes": []
+        "status": "ok",
+        "valor": "R$ 973,33/t",
+        "data": "2026-11-25",
+        "fonte": "Agrolink",
+        "url": "https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "Agrolink",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 973.33 em 25/11/2026 · tabela '' · linha 'Barreiras (BA)' · coluna 'Preço (R$)' · data não informada na página"
+          }
+        ]
       },
       {
-        "id": "cafe_arabica_ice",
-        "nome": "Café Arábica ICE Nova York — 1º vencimento",
-        "nome_curto": "Café Arábica NY (ICE)",
+        "id": "cafe_arabica_b3",
+        "nome": "Café Arábica B3 (ICF) — 1º vencimento",
+        "nome_curto": "Café Arábica B3",
         "bloco": "complexo_cafe",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
-        "fontes": []
+        "status": "ok",
+        "valor": "US$ 323,15/sc",
+        "data": "2026-11-24",
+        "fonte": "B3 Agro",
+        "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 323.15 em 24/11/2026 · ICFZ26 · preço de ajuste (boletim oficial da B3)"
+          }
+        ]
       },
       {
-        "id": "cafe_robusta_londres",
-        "nome": "Café Robusta ICE Londres — 1º vencimento",
-        "nome_curto": "Café Robusta Londres",
+        "id": "cafe_conilon_b3",
+        "nome": "Café Conilon B3 (CNL) — 1º vencimento",
+        "nome_curto": "Café Conilon B3",
         "bloco": "complexo_cafe",
-        "status": "indisponivel",
-        "valor": null,
-        "data": null,
-        "fonte": "",
-        "url": "",
-        "mensagens": [
-          "nenhuma fonte retornou valor válido"
-        ],
-        "fontes": []
+        "status": "ok",
+        "valor": "R$ 940,42/sc",
+        "data": "2026-11-24",
+        "fonte": "B3 Agro",
+        "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/",
+        "mensagens": [],
+        "fontes": [
+          {
+            "fonte": "B3 Agro",
+            "status": "ok",
+            "mensagem": "1 valor(es); último 940.42 em 24/11/2026 · CNLF27 · preço de ajuste (boletim oficial da B3)"
+          }
+        ]
       },
       {
         "id": "cafe_arabica_cepea",
@@ -1588,7 +1647,7 @@
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha '' · coluna '1ª coluna numérica' · data não informada na página"
+            "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha 'Manhuaçu (MG)' · coluna '1ª coluna numérica' · data não informada na página · cabeçalhos=['Favorit"
           }
         ]
       },
@@ -1678,12 +1737,11 @@
     "trigo_cbot": "Trigo CBOT",
     "trigo_parana": "Trigo Ponta Grossa-PR",
     "trigo_rs": "Trigo Porto Alegre-RS",
-    "algodao_ice": "Algodão NY (ICE)",
     "algodao_cepea": "Algodão pluma MT",
     "caroco_algodao_mt": "Caroço de Algodão MT",
     "caroco_algodao_ba": "Caroço de Algodão BA",
-    "cafe_arabica_ice": "Café Arábica NY (ICE)",
-    "cafe_robusta_londres": "Café Robusta Londres",
+    "cafe_arabica_b3": "Café Arábica B3",
+    "cafe_conilon_b3": "Café Conilon B3",
     "cafe_arabica_cepea": "Café Sul de Minas",
     "cafe_manhuacu": "Café Manhuaçu-MG (Matas de Minas)",
     "boi_gordo_cepea": "Boi gordo SP",
@@ -1697,7 +1755,7 @@
   "trusted_sources": {
     "repo": "luan238/painel-inteligencia-agro",
     "arquivo": "config/fontes.yaml",
-    "gerado_em": "2026-11-25T02:02-03:00",
+    "gerado_em": "2026-11-25T10:45-03:00",
     "regioes": [
       {
         "regiao": "Brasil",
@@ -1764,9 +1822,9 @@
             "idioma": "pt",
             "prioridade": 1,
             "ativa": true,
-            "observacao": "Cotações por praça (ex.: café em Manhuaçu-MG).",
+            "observacao": "Cotações por praça (café em Manhuaçu-MG, soja em Uberlândia-MG, caroço de algodão em Cuiabá-MT e Barreiras-BA).",
             "status": "ok",
-            "detalhe": "30 notícia(s) na janela via rss (https://www.agrolink.com.br/rss/noticias.rss) · cotações: 2/2 leituras ok"
+            "detalhe": "30 notícia(s) na janela via rss (https://www.agrolink.com.br/rss/noticias.rss) · cotações: 4/4 leituras ok"
           },
           {
             "nome": "Money Times Agro",
@@ -1797,9 +1855,9 @@
             "idioma": "pt",
             "prioridade": 1,
             "ativa": true,
-            "observacao": "O agente baixa o arquivo oficial e gratuito de preços do pregão (Pesquisa por pregão) e lê o preço de ajuste de dólar, milho, boi e soja.",
+            "observacao": "O agente baixa o arquivo oficial e gratuito de preços do pregão (Pesquisa por pregão) e lê o preço de ajuste de dólar, milho, boi, soja e café (arábica e conilon).",
             "status": "ok",
-            "detalhe": "cotações: 5/5 leituras ok"
+            "detalhe": "cotações: 7/7 leituras ok"
           },
           {
             "nome": "Banco Central do Brasil",
@@ -1877,6 +1935,17 @@
       {
         "regiao": "Internacional",
         "fontes": [
+          {
+            "nome": "FRED (Fed de St. Louis)",
+            "url": "https://fred.stlouisfed.org/",
+            "tipo": "api_oficial",
+            "idioma": "en",
+            "prioridade": 1,
+            "ativa": true,
+            "observacao": "Adicionada pelo agente — banco de dados público do Federal Reserve de St. Louis; CSV gratuito, sem chave (petróleo WTI e Brent, dados da EIA).",
+            "status": "ok",
+            "detalhe": "cotações: 2/2 leituras ok"
+          },
           {
             "nome": "Pro Farmer",
             "url": "https://www.profarmer.com/",
