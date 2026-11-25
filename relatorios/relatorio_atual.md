@@ -1,11 +1,11 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Meio do Dia de Quarta-Feira — 25/11/2026**
 
-- **Data e hora da varredura:** 25/11/2026 12:07 BRT
+- **Data e hora da varredura:** 25/11/2026 13:07 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Câmbio em queda pressiona soja, enquanto café e boi gordo mantêm altas.
-- **Atualização do monitor:** cotações conferidas às 12:07; o texto da análise foi escrito às 11:14 (turno Meio do Dia).
+- **Atualização do monitor:** cotações conferidas às 13:07; o texto da análise foi escrito às 11:14 (turno Meio do Dia).
 - **Qualidade dos dados:** 29 ok · 0 com alerta · 0 desatualizados · 0 indisponíveis — texto: IA verificada (qwen2.5:7b @ IA local ×6)
 
 ---
@@ -20,7 +20,7 @@ Bom dia, senhores operadores. Hoje, 25/11/2026, às 11:14 BRT, estamos acompanha
 
 | Ativo / Indicador | Cotação | Dia | Semana | Mês | Fonte (data) | Status |
 |---|---|---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8573 | -1,90% | -0,54% | +8,04% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (24/11) | ok |
+| Dólar PTAX (USD/BRL) | R$ 5,8825 | +0,43% | -0,11% | +8,51% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (25/11) | ok |
 | Dólar Futuro B3 | 5.905,21 pts | -0,52% | -0,32% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
 | Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (25/11) | ok |
 | Petróleo WTI | US$ 89,53/bbl | +0,32% | 0,00% | -16,76% | [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO) (17/11) | ok |
@@ -68,7 +68,7 @@ Bom dia, senhores operadores. Hoje, 25/11/2026, às 11:14 BRT, estamos acompanha
 **A. Resumo executivo.** O dólar teve uma queda de 1,90% na PTAX, mas o NDF teórico de 160 dias está em R$ 6,0543, indicando pressão alta. O petróleo WTI e Brent recuperaram parte das perdas mensais, com o WTI acumulando alta de 0,32% na semana. As notícias sobre a valorização do dólar pressionam preços de soja e algodão, enquanto o café arábica teve alta com a valorização do dólar, mas o robusta segue em queda devido à pressão da colheita no Vietnã. Estas tendências impactam diretamente os custos de insumos e a relação comercial com produtores rurais, além de influenciar as decisões de hedging nas mesas de derivativos.
 
 **B. Detalhamento com dados e links**
-- **Dólar PTAX (venda) — Banco Central:** R$ 5,8573 em 24/11 (-1,90% no dia; -0,54% na semana; +8,04% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
+- **Dólar PTAX (venda) — Banco Central:** R$ 5,8825 em 25/11 (+0,43% no dia; -0,11% na semana; +8,51% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
 - **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.905,21 pts em 24/11 (-0,52% no dia; -0,32% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Taxa Selic meta — Banco Central:** 13,75% a.a. em 25/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
 - **Petróleo WTI — spot Cushing (EIA):** US$ 89,53/bbl em 17/11 (+0,32% no dia; 0,00% na semana; -16,76% no mês) — [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO)
@@ -219,7 +219,7 @@ Notícias que embasam a análise:
 
 | Ativo | Ref. abertura da semana | Atual | Variação (WTD) | Destaque |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,8573 | -0,54% | Dólar teve queda de 1,90% na semana, mas NDF teórico está em alta. |
+| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,8825 | -0,11% | De R$ 5,8889 (19/11) para R$ 5,8825 (-0,11% na semana). |
 | Petróleo WTI | US$ 89,53/bbl | US$ 89,53/bbl | 0,00% | Petróleo WTI recuperou 0,32% na semana, após queda mensal de 16,76%. |
 | Soja Paranaguá-PR | R$ 170,00/sc | R$ 172,00/sc | +1,18% | Soja física subiu 2 altas seguidas, com destaque para Paranaguá. |
 | Soja CBOT | US$ 12,2078/bu | US$ 12,3403/bu | +1,09% | Soja CBOT subiu 2 altas seguidas, refletindo a valorização dos subprodutos. |
@@ -235,7 +235,7 @@ Notícias que embasam a análise:
 
 | Ativo | Ref. início do mês | Atual | Variação (MTD) | Leitura |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,8573 | +8,04% | Dólar teve alta de 8,04% no mês, mas vem de 3 quedas seguidas. |
+| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,8825 | +8,51% | No mês: de R$ 5,4212 (30/10) para R$ 5,8825 (+8,51%). |
 | Petróleo WTI | US$ 107,56/bbl | US$ 89,53/bbl | -16,76% | Petróleo WTI acumulou queda de 16,76% no mês, mas teve 1 alta seguida na semana. |
 | Soja Paranaguá-PR | — | R$ 172,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Soja Uberlândia-MG | — | R$ 160,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
@@ -254,7 +254,7 @@ As faixas são calculadas pelo sistema a partir da volatilidade recente (bandas 
 
 | Ativo | Base atual | Alvo curto prazo / auditoria | Cenário base (mês) | Altista / Baixista | Gatilho |
 |---|---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8573 (Banco Central do Brasil, 24/11) · Track record em formação (1ª aferição em 26/11) | R$ 5,4485 – R$ 6,0003 até 01/12 (banda ±1,0σ, viés de baixa) | R$ 5,7323 (30/11) | 📈 R$ 5,9850 (+1,0σ) / 📉 R$ 5,4902 (−1,0σ) | Se o dólar retornar a alta, pressão sobre preços agrícolas e insumos. · Método: banda de volatilidade (σ diário 2,16%, 44 pregões no histórico). |
+| Dólar PTAX (USD/BRL) | R$ 5,8825 (Banco Central do Brasil, 25/11) · Track record em formação (1ª aferição em 26/11) | R$ 5,4729 – R$ 6,0257 até 02/12 (banda ±1,0σ, viés de baixa) | R$ 5,7739 (30/11) | 📈 R$ 5,9932 (+1,0σ) / 📉 R$ 5,5626 (−1,0σ) | Se o dólar retornar a alta, pressão sobre preços agrícolas e insumos. · Método: banda de volatilidade (σ diário 2,15%, 45 pregões no histórico). |
 | Petróleo WTI | US$ 89,53/bbl (FRED (Fed de St. Louis), 17/11) · Track record em formação | US$ 80,10/bbl – US$ 92,91/bbl até 25/11 (banda ±1,0σ, viés de baixa) | US$ 85,43/bbl (30/11) | 📈 US$ 93,83/bbl (+1,0σ) / 📉 US$ 77,78/bbl (−1,0σ) | Se o petróleo WTI continuar em queda, impacto negativo no diesel e frete. · Método: banda de volatilidade (σ diário 3,32%, 59 pregões no histórico). |
 | Soja Paranaguá-PR | R$ 172,00/sc (Canal Rural, 24/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Se a soja física começar a apresentar quedas, isso pode indicar um ajuste de preços. |
 | Milho Campinas-SP | R$ 68,50/sc (Canal Rural, 24/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Ofertas de trigo no RS mais altas podem pressionar custos de produção. |
@@ -270,7 +270,7 @@ As faixas são calculadas pelo sistema a partir da volatilidade recente (bandas 
 
 ## 💡 7. Pílula de Inteligência de Mercado — Câmbio a termo sobe, pressionando preços agrícolas
 
-**Fórmula:** `NDF (160 dias) = 5,8573 × (1 + 0,1375)^(106/252) ÷ [1 + 0,0480 × (160/360)] = R$ 6,0543`
+**Fórmula:** `NDF (160 dias) = 5,8825 × (1 + 0,1375)^(106/252) ÷ [1 + 0,0480 × (160/360)] = R$ 6,0804`
 
 O NDF (160 dias) calculado em R$ 6,0543 reflete a pressão alta no câmbio a termo, impactando negativamente os preços agrícolas. O dólar, em queda no curto prazo, beneficia a soja física, mas a pressão alta no NDF mantém o câmbio a termo em alta, pressionando os preços agrícolas.
 
@@ -291,4 +291,4 @@ O JSON completo deste boletim (8 séries diárias, 5 blocos, 8 projeções) est�
 - **Notícias:** 34 usadas de 162 coletadas; 12 fontes responderam, 7 falharam.
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 25/11/2026 12:07 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 25/11/2026 13:07 BRT._
