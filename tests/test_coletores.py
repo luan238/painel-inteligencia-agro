@@ -322,3 +322,19 @@ def test_manhuacu_no_leiaute_do_agrolink(cfg):
     o = coletar_indicador(_fontes_reais("cafe_manhuacu"), cfg, ClienteFixo(html), HOJE)[0][0]
     assert o.valor == pytest.approx(round(_ultimo("manhuacu"), 2)) and o.data == HOJE and not o.incerta
     assert "data não informada" not in o.detalhe and "Preço" in o.detalhe
+
+
+def test_volatilidade_ignora_troca_de_vencimento_e_multiplica_series():
+    from agente.analise import retornos_log, vol_referencia
+    from web_falsa import dias_uteis
+    dias = dias_uteis(12)
+    serie = {d: 66.0 + 0.1 * i for i, d in enumerate(dias)}
+    serie[dias[-1]] = 71.5                                         # vencimento seguinte, mais caro
+    contratos = {d: ("CCMX26" if d != dias[-1] else "CCMF27") for d in dias}
+    assert max(abs(r) for r in retornos_log(serie, 21, contratos)) < 0.01   # o salto da troca não entra
+    assert max(abs(r) for r in retornos_log(serie, 21)) > 0.05
+    usd = {d: 20.0 * (1.01 if i % 2 else 0.99) for i, d in enumerate(dias)}
+    fx = {d: 5.0 for d in dias}
+    sig_usd, _ = vol_referencia([usd], [{}], 21)
+    sig_brl, n = vol_referencia([usd, fx], [{}, {}], 21)
+    assert sig_usd == pytest.approx(sig_brl) and n == 12                  # dólar constante: mesma σ

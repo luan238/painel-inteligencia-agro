@@ -13,14 +13,15 @@ import json
 import os
 import shutil
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import jsonschema
 import yaml
 
 from . import __version__
-from .analise import calcular_metricas, calcular_ndf, calcular_spreads, eixo_janela
+from .analise import calcular_metricas, calcular_ndf, calcular_spreads, eixo_janela, vol_referencia
+from .calendario import dia_util_anterior_ou_igual, ultimos_dias_uteis
 from .coletores import coletar_indicador
 from .coletores.noticias import TIPOS_COM_NOTICIAS, ColetorNoticias, selecionar, url_segura
 from .config import Config, carregar_config
@@ -138,7 +139,34 @@ def status_das_fontes(cfg: Config, status_noticias: list, relatorio_coleta: dict
 
 
 # ------------------------------------------------------------ etapas comuns
-def _coletar_cotacoes(cfg: Config, cliente, hist, hoje):
+def _carregar_historico_b3(cfg: Config, cliente, hist, hoje) -> int:
+    """Preenche o histórico dos contratos da B3 com os arquivos oficiais dos pregões passados,
+    para que a volatilidade (e as projeções) não dependam de semanas de coleta. Só baixa os dias
+    que faltam; depois da primeira carga não baixa mais nada."""
+    alvo = int(cfg.geral["projecoes"].get("janela_volatilidade", 21)) + 1
+    pedidos = [(ind, f) for ind in cfg.indicadores for f in ind.get("fontes", [])[:1]
+               if f.get("tipo") == "b3_boletim" and f.get("ativa", True) is not False]
+    if not pedidos:
+        return 0
+    dias = ultimos_dias_uteis(dia_util_anterior_ou_igual(hoje - timedelta(days=1)), alvo + 3)
+    series = {ind["id"]: hist.serie(ind["id"]) for ind, _ in pedidos}
+    faltando = [d for d in dias if any(d not in series[ind["id"]] for ind, _ in pedidos)]
+    if not faltando or all(sum(d in series[i] for d in dias) >= alvo for i in series):
+        return 0
+    log(f"  carga do histórico da B3: {len(faltando)} pregão(ões) a ler (arquivos oficiais)")
+    por_id = {ind["id"]: ind for ind, _ in pedidos}
+    novos = 0
+    for o in b3_boletim.historico(pedidos, cliente, faltando):
+        ind = por_id[o.indicador]
+        if o.data in series[o.indicador] or not (ind["faixa"][0] <= o.valor <= ind["faixa"][1]):
+            continue
+        hist.registrar(o, "ok", 1)
+        novos += 1
+    log(f"  carga do histórico da B3: {novos} cotação(ões) incluída(s)")
+    return novos
+
+
+def _coletar_cotacoes(cfg: Config, cliente, hist, hoje, carregar_historico: bool = False):
     b3_boletim.usar_cache(cfg.raiz / "data" / "b3_ajustes.json")
     resultados, relatorio_coleta = {}, {}
     for ind in cfg.indicadores:
@@ -148,17 +176,43 @@ def _coletar_cotacoes(cfg: Config, cliente, hist, hoje):
         r = resultados[ind["id"]]
         log(f"  {r.status:<13} {ind['id']:<22} "
             + (f"{fmt_valor(r.valor, ind['unidade'], ind.get('casas', 2))} ({r.fonte}, {r.data:%d/%m})" if r.valor is not None else "—"))
+    if carregar_historico:
+        try:
+            _carregar_historico_b3(cfg, cliente, hist, hoje)
+        except Exception as e:                       # a carga é um extra: nunca derruba o boletim
+            log(f"  carga do histórico da B3 falhou ({e}); segue sem ela")
     hist.salvar()
     return resultados, relatorio_coleta
+
+
+def _aplicar_vol_referencia(cfg: Config, metricas: dict, hist, janela_vol: int) -> None:
+    """Praça física com histórico curto: a volatilidade vem do mercado de referência indicado em
+    'vol_referencia' (ex.: milho Campinas ← milho B3). O histórico próprio passa a valer assim que
+    tiver o mínimo de pregões."""
+    minimo = int(cfg.geral["projecoes"].get("minimo_pregoes_para_banda", 10))
+    nomes = {i["id"]: i.get("nome_curto", i["nome"]) for i in cfg.indicadores}
+    for ind in cfg.indicadores:
+        ref = ind.get("vol_referencia")
+        m = metricas.get(ind["id"])
+        if not ref or not m or not m.disponivel or (m.vol_diaria is not None and m.n_obs >= minimo):
+            continue
+        ids = [ref] if isinstance(ref, str) else list(ref)
+        if not all(i in metricas for i in ids):
+            continue
+        sig, n = vol_referencia([hist.serie(i, ate=m.data) for i in ids], [hist.contratos(i) for i in ids], janela_vol)
+        if sig and n >= minimo:
+            m.vol_diaria, m.n_obs_vol, m.vol_ref = sig, n, " × ".join(nomes[i] for i in ids)
 
 
 def _calcular(cfg: Config, resultados, hist, hoje):
     g = cfg.geral
     eixo = eixo_janela(hoje, g["janela"]["pregoes"])
+    janela_vol = int(g["projecoes"].get("janela_volatilidade", 21))
     metricas = {ind["id"]: calcular_metricas(ind, resultados[ind["id"]], hist.serie(ind["id"]), hoje, eixo,
-                                             g["janela"].get("max_dias_repetidos", 2),
-                                             g["projecoes"].get("janela_volatilidade", 21))
+                                             g["janela"].get("max_dias_repetidos", 2), janela_vol,
+                                             contratos=hist.contratos(ind["id"]))
                 for ind in cfg.indicadores}
+    _aplicar_vol_referencia(cfg, metricas, hist, janela_vol)
     spreads = calcular_spreads(cfg.blocos_cfg.get("spreads", []), metricas)
     cn = g.get("ndf", {})
     spot, taxa = metricas.get(cn.get("indicador_spot")), metricas.get(cn.get("indicador_taxa_brl"))
@@ -254,7 +308,7 @@ def executar(cfg: Config, agora: datetime | None = None, turno: str | None = Non
     hist = Historico(cfg.caminho("historico_csv"))
 
     # 1-2) cotações conferidas e cálculos (código, não IA)
-    resultados, relatorio_coleta = _coletar_cotacoes(cfg, cliente, hist, hoje)
+    resultados, relatorio_coleta = _coletar_cotacoes(cfg, cliente, hist, hoje, carregar_historico=True)
     eixo, metricas, spreads, ndf, saca_usd = _calcular(cfg, resultados, hist, hoje)
 
     # 3) notícias

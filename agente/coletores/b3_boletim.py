@@ -178,3 +178,28 @@ def coletar(fonte: dict, ind: dict, cliente, hoje: date, registro: dict | None =
     return [Observacao(indicador=ind["id"], data=dia_pregao or dia_arquivo, valor=valor,
                        fonte=fonte.get("fonte", "B3"), url=PAGINA_PUBLICA,
                        detalhe=f"{ticker} · preço de ajuste (boletim oficial da B3)")]
+
+
+def historico(pedidos: list[tuple[dict, dict]], cliente, dias: list[date]) -> list[Observacao]:
+    """Carga do histórico: lê os arquivos oficiais de pregões passados.
+
+    pedidos: [(indicador, fonte b3_boletim)]. Para cada dia, o "1º vencimento" é o mais próximo
+    listado NAQUELE dia — o mesmo critério da coleta diária."""
+    obs = []
+    for dia in dias:
+        if dia.weekday() >= 5:
+            continue
+        precos = _precos_do_dia(cliente, dia, any(bool(f.get("ignorar_robots")) for _, f in pedidos))
+        if not precos:                                 # feriado ou arquivo indisponível
+            continue
+        for ind, fonte in pedidos:
+            lista = contratos(precos, str(fonte["mercadoria"]).upper())
+            venc = int(fonte.get("vencimento", 1))
+            if len(lista) < venc:
+                continue
+            ticker = lista[venc - 1]
+            valor, dia_pregao = precos[ticker]
+            obs.append(Observacao(indicador=ind["id"], data=dia_pregao or dia, valor=valor,
+                                  fonte=fonte.get("fonte", "B3"), url=PAGINA_PUBLICA,
+                                  detalhe=f"{ticker} · preço de ajuste (boletim oficial da B3) · carga do histórico"))
+    return obs

@@ -134,7 +134,7 @@ def boletim_b3_zip(dia: date = HOJE) -> bytes:
              ("ICFH27", None), ("ICFZ26", "icf"), ("CNLF27", "cnl"), ("CNLH27", None)]
     rel = ""
     for ticker, nome in itens:
-        v = _ultimo(nome) if nome else 1.0
+        v = (serie(nome).get(dia) or _ultimo(nome)) if nome else 1.0
         rel += (f"<PricRpt><TradDt><Dt>{dia:%Y-%m-%d}</Dt></TradDt><SctyId><TckrSymb>{ticker}</TckrSymb></SctyId>"
                 f"<FinInstrmAttrbts><LastPric>{v * 1.001:.3f}</LastPric><AdjstdQt>{v:.3f}</AdjstdQt>"
                 f"<PrvsAdjstdQt>{v * 0.998:.3f}</PrvsAdjstdQt></FinInstrmAttrbts></PricRpt>")
@@ -308,6 +308,7 @@ class WebFalsa:
         self.boletim_b3 = boletim_b3_zip()
         self.falhar_tudo = falhar_tudo
         self.acessos: list[str] = []
+        self.arquivos_b3_antigos = 0
         ptax = serie("ptax")
         self.ptax_json = json.dumps({"value": [
             {"cotacaoCompra": round(v - 0.0006, 4), "cotacaoVenda": round(v, 4), "dataHoraCotacao": f"{d} 13:05:11.123"}
@@ -328,6 +329,10 @@ class WebFalsa:
         if "b3.com.br/pesquisapregao/download" in url:
             if url.endswith(f"PR{HOJE:%y%m%d}.zip"):
                 return Resposta(url, 200, self.boletim_b3, headers={"Content-Type": "application/zip"})
+            for d in dias_uteis(45)[:-1]:                       # pregões passados (carga do histórico)
+                if url.endswith(f"PR{d:%y%m%d}.zip"):
+                    self.arquivos_b3_antigos += 1
+                    return Resposta(url, 200, boletim_b3_zip(d), headers={"Content-Type": "application/zip"})
             return Resposta(url, 200, b"<html>arquivo indisponivel</html>")
         if "fred.stlouisfed.org/graph/fredgraph.csv" in url:
             cod = url.split("id=")[-1]

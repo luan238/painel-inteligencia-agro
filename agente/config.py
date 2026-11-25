@@ -77,6 +77,11 @@ class Config:
                 nome = fonte.get("fonte", "")
                 if nome not in nomes_fontes and "(checagem)" not in nome and "EIA" not in nome:
                     erros.append(f"indicador {ind['id']}: fonte '{nome}' não está em fontes.yaml")
+        for ind in self.indicadores:
+            ref = ind.get("vol_referencia")
+            for r in ([ref] if isinstance(ref, str) else (ref or [])):
+                if r not in ids:
+                    erros.append(f"indicador {ind['id']}: vol_referencia '{r}' não existe")
         for lista in ("painel_semanal", "painel_mensal", "projecoes"):
             for ind_id in self.blocos_cfg.get(lista, []):
                 if ind_id not in ids:

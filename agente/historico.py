@@ -8,9 +8,11 @@ passou nas checagens.
 from __future__ import annotations
 
 import csv
+import re
 from datetime import date
 from pathlib import Path
 
+_RE_CONTRATO = re.compile(r"^([A-Z0-9]{3}[FGHJKMNQUVXZ]\d{2}) ·")   # "CCMF27 · preço de ajuste…"
 CAMPOS = ["data", "indicador", "valor", "fonte", "prioridade", "url", "coletado_em", "status", "detalhe"]
 
 
@@ -50,6 +52,20 @@ class Historico:
             if d not in melhor or r["prioridade"] < melhor[d]["prioridade"]:
                 melhor[d] = r
         return {date.fromisoformat(d): r["valor"] for d, r in sorted(melhor.items())}
+
+    def contratos(self, indicador: str) -> dict[date, str]:
+        """Contrato futuro de cada data da série (ex.: CCMF27), quando a fonte informa — serve para não
+        confundir a troca de vencimento com variação de preço."""
+        melhor: dict[str, dict] = {}
+        for (d, ind, _), r in self.linhas.items():
+            if ind == indicador and r["status"] != "rejeitado" and (d not in melhor or r["prioridade"] < melhor[d]["prioridade"]):
+                melhor[d] = r
+        saida = {}
+        for d, r in melhor.items():
+            m = _RE_CONTRATO.match(str(r.get("detalhe") or ""))
+            if m:
+                saida[date.fromisoformat(d)] = m.group(1)
+        return saida
 
     def registro(self, indicador: str, d: date) -> dict | None:
         cands = [r for (dd, ind, _), r in self.linhas.items()

@@ -23,6 +23,8 @@
 #    csv_api       → arquivo CSV público com data e valor (ex.: FRED, do Fed de St. Louis)
 #    yahoo         → Yahoo Finance (não usado: o robots.txt do Yahoo não permite robôs)
 #  fator / unidade_origem → conversão de unidade feita pelo código (ex.: US$/t → US$/bu)
+#  vol_referencia → enquanto o histórico próprio é curto, a volatilidade das projeções vem
+#                   deste mercado (ex.: milho Campinas ← milho B3); lista = produto (soja B3 × dólar)
 #  ativo: false  → desliga o indicador inteiro (some do painel e do relatório até
 #                  haver uma fonte confiável para ele)
 #
@@ -211,6 +213,7 @@ indicadores:
     faixa: [60, 450]
     var_max_dia_pct: 6
     defasagem_max_dias_uteis: 2
+    vol_referencia: [soja_b3, dolar_ptax]     # soja B3 (US$/sc) × dólar = soja em R$/sc
     fontes:
       - fonte: Canal Rural
         tipo: regex_pagina
@@ -228,6 +231,7 @@ indicadores:
     faixa: [60, 450]
     var_max_dia_pct: 6
     defasagem_max_dias_uteis: 2
+    vol_referencia: [soja_b3, dolar_ptax]
     fontes:
       - fonte: Canal Rural
         tipo: regex_pagina
@@ -245,6 +249,7 @@ indicadores:
     faixa: [60, 450]
     var_max_dia_pct: 7
     defasagem_max_dias_uteis: 3
+    vol_referencia: [soja_b3, dolar_ptax]
     fontes:
       - fonte: Agrolink
         tipo: tabela_html
@@ -322,6 +327,7 @@ indicadores:
     faixa: [25, 250]
     var_max_dia_pct: 6
     defasagem_max_dias_uteis: 2
+    vol_referencia: milho_b3                  # o contrato da B3 tem Campinas como praça de referência
     fontes:
       - fonte: Canal Rural
         tipo: regex_pagina
@@ -554,6 +560,7 @@ indicadores:
     faixa: [300, 6000]
     var_max_dia_pct: 8
     defasagem_max_dias_uteis: 2
+    vol_referencia: [cafe_arabica_b3, dolar_ptax]
     fontes:
       - fonte: Canal Rural
         tipo: regex_pagina
@@ -571,6 +578,7 @@ indicadores:
     faixa: [300, 6000]
     var_max_dia_pct: 8
     defasagem_max_dias_uteis: 3
+    vol_referencia: [cafe_arabica_b3, dolar_ptax]
     fontes:
       - fonte: Agrolink
         tipo: tabela_html
@@ -589,6 +597,7 @@ indicadores:
     faixa: [120, 800]
     var_max_dia_pct: 5
     defasagem_max_dias_uteis: 2
+    vol_referencia: boi_b3                    # o contrato da B3 liquida pelo indicador do boi em SP
     fontes:
       - fonte: Canal Rural
         tipo: regex_pagina

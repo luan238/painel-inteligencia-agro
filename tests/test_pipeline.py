@@ -180,3 +180,23 @@ def test_checar_fontes_e_boletim_sem_as_pastas_data_e_relatorios(cfg, web):
     assert (cfg.raiz / "relatorios" / "checagem_fontes.md").exists()
     shutil.rmtree(cfg.raiz / "data")
     assert executar(cfg, agora=AGORA, turno="fechamento", llm=LLMFalso(errar_em=())) == 0
+
+
+def test_projecoes_das_pracas_fisicas_com_volatilidade_de_referencia(cfg, web):
+    """Praça com histórico curto ganha banda pela volatilidade do mercado de referência (B3), e o
+    histórico dos contratos da B3 é carregado dos arquivos oficiais de pregões passados."""
+    from agente.historico import Historico
+    assert executar(cfg, agora=AGORA, turno="fechamento", llm=LLMFalso(errar_em=())) == 0
+    assert web.arquivos_b3_antigos >= 20                         # carga do histórico (uma vez)
+    hist = Historico(cfg.caminho("historico_csv"))
+    assert len(hist.serie("milho_b3")) >= 22 and "carga do histórico" in str(hist.registro("milho_b3", min(hist.serie("milho_b3"))))
+    linhas = {l["commodity"]: l for l in _boletim(cfg)["audit_panel_projections"]}
+    milho = linhas["Milho Campinas-SP"]
+    assert "histórico insuficiente" not in milho["short_term_target_23_oct"] and "R$" in milho["short_term_target_23_oct"]
+    assert "de Milho B3" in milho["audit_trigger"] and "histórico próprio ainda tem" in milho["audit_trigger"]
+    assert "Soja B3 × Dólar PTAX" in linhas["Soja Paranaguá-PR"]["audit_trigger"]
+    assert "Boi Gordo B3" in linhas["Boi gordo SP"]["audit_trigger"]
+    # a 2ª execução não baixa os arquivos antigos de novo
+    antes = web.arquivos_b3_antigos
+    assert executar(cfg, agora=AGORA, turno="fechamento", llm=LLMFalso(errar_em=())) == 0
+    assert web.arquivos_b3_antigos == antes

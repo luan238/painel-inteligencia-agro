@@ -41,6 +41,8 @@ class Metricas:
     sequencia: int = 0               # +3 = três altas seguidas; -2 = duas quedas seguidas
     vol_diaria: float | None = None  # desvio-padrão dos retornos log diários
     n_obs: int = 0
+    vol_ref: str | None = None       # σ emprestado de um mercado de referência (histórico próprio curto)
+    n_obs_vol: int = 0               # pregões usados no σ (quando vem da referência)
     janela: list = field(default_factory=list)
     preenchidos: int = 0
     minimo_janela: float | None = None
@@ -71,8 +73,52 @@ def eixo_janela(hoje: date, n: int) -> list[date]:
     return ultimos_dias_uteis(dia_util_anterior_ou_igual(hoje), n)
 
 
+def retornos_log(serie: dict, janela: int, contratos: dict | None = None) -> list[float]:
+    """Retornos log dos últimos pregões. Na troca de vencimento (contrato diferente entre dois dias)
+    a diferença de preço não é variação de mercado: esse par fica de fora."""
+    contratos = contratos or {}
+    datas = sorted(serie)[-(janela + 1):]
+    rets = []
+    for a, b in zip(datas[:-1], datas[1:]):
+        if contratos.get(a) and contratos.get(b) and contratos[a] != contratos[b]:
+            continue
+        if serie[a] > 0 and serie[b] > 0:
+            rets.append(math.log(serie[b] / serie[a]))
+    return rets
+
+
+def desvio(rets: list[float]) -> float | None:
+    if len(rets) < 5:
+        return None
+    media = sum(rets) / len(rets)
+    return math.sqrt(sum((r - media) ** 2 for r in rets) / (len(rets) - 1))
+
+
+def vol_referencia(series: list[dict], contratos: list[dict], janela: int, max_repetidos: int = 2) -> tuple[float | None, int]:
+    """σ diário de um mercado de referência — ou do produto de séries (ex.: soja B3 em US$/sc × dólar
+    PTAX = soja em R$/sc). Usa as datas da 1ª série; as demais entram com o último valor de até
+    `max_repetidos` dias úteis antes. Devolve (σ, nº de pregões usados)."""
+    if not series or not series[0]:
+        return None, 0
+    produto, contrato_dia = {}, {}
+    for d in sorted(series[0]):
+        v = series[0][d]
+        ok = True
+        for outra in series[1:]:
+            anteriores = [x for x in outra if x <= d]
+            if not anteriores or dias_uteis_entre(max(anteriores), d) > max_repetidos:
+                ok = False
+                break
+            v *= outra[max(anteriores)]
+        if ok:
+            produto[d] = v
+            contrato_dia[d] = (contratos[0] if contratos else {}).get(d)
+    rets = retornos_log(produto, janela, contrato_dia)
+    return desvio(rets), min(len(produto), janela + 1)
+
+
 def calcular_metricas(ind: dict, resultado, serie: dict, hoje: date, eixo: list[date],
-                      max_repetidos: int = 2, janela_vol: int = 21) -> Metricas:
+                      max_repetidos: int = 2, janela_vol: int = 21, contratos: dict | None = None) -> Metricas:
     m = Metricas(id=ind["id"], nome=ind["nome"], nome_curto=ind.get("nome_curto", ind["nome"]),
                  bloco=ind["bloco"], unidade=ind["unidade"], casas=ind.get("casas", 2),
                  status=resultado.status, valor=resultado.valor, data=resultado.data,
@@ -110,11 +156,7 @@ def calcular_metricas(ind: dict, resultado, serie: dict, hoje: date, eixo: list[
     m.sequencia = seq * sinal
 
     # volatilidade (desvio-padrão dos retornos log dos últimos pregões)
-    recentes = datas[-(janela_vol + 1):]
-    rets = [math.log(serie[b] / serie[a]) for a, b in zip(recentes[:-1], recentes[1:]) if serie[a] > 0 and serie[b] > 0]
-    if len(rets) >= 5:
-        media = sum(rets) / len(rets)
-        m.vol_diaria = math.sqrt(sum((r - media) ** 2 for r in rets) / (len(rets) - 1))
+    m.vol_diaria = desvio(retornos_log(serie, janela_vol, contratos))
 
     # janela alinhada ao calendário de pregões (repete o último preço por no máx. N pregões)
     valores = []

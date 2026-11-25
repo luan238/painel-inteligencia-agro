@@ -20,7 +20,8 @@ SINAL_VIES = {"alta": 1, "baixa": -1, "neutro": 0}
 
 
 def calcular_bandas(m, hoje: date, cfg: dict, vies: str = "neutro") -> dict | None:
-    if not m.disponivel or m.vol_diaria is None or m.n_obs < cfg.get("minimo_pregoes_para_banda", 10):
+    n_vol = m.n_obs_vol if getattr(m, "vol_ref", None) else m.n_obs
+    if not m.disponivel or m.vol_diaria is None or n_vol < cfg.get("minimo_pregoes_para_banda", 10):
         return None
     sig, k = m.vol_diaria, float(cfg.get("sigma", 1.0))
     desloc = float(cfg.get("deslocamento_vies_sigma", 0.5)) * SINAL_VIES.get(vies, 0)
@@ -35,7 +36,7 @@ def calcular_bandas(m, hoje: date, cfg: dict, vies: str = "neutro") -> dict | No
     c2 = m.valor * math.exp(desloc * sig * math.sqrt(h2))
     return {
         "indicador": m.id, "data_base": m.data.isoformat(), "valor_base": m.valor, "vies": vies,
-        "sigma_diario": sig, "k": k,
+        "sigma_diario": sig, "k": k, "vol_ref": getattr(m, "vol_ref", None), "n_vol": n_vol,
         "curto": {"alvo": alvo1.isoformat(), "pregoes": h1,
                   "min": c1 * math.exp(-k * sig * math.sqrt(h1)), "max": c1 * math.exp(k * sig * math.sqrt(h1))},
         "mes": {"alvo": alvo2.isoformat(), "pregoes": h2, "base": c2,
@@ -117,6 +118,14 @@ class RegistroProjecoes:
         tmp.replace(self.caminho)
 
 
+def _metodo(banda: dict, m) -> str:
+    sig = fmt_pct(banda["sigma_diario"] * 100, 2, sinal=False)
+    if banda.get("vol_ref"):
+        return (f"Método: banda de volatilidade (σ diário {sig} de {banda['vol_ref']}, {banda.get('n_vol')} pregões; "
+                f"o histórico próprio ainda tem {m.n_obs} pregão(ões)).")
+    return f"Método: banda de volatilidade (σ diário {sig}, {m.n_obs} pregões no histórico)."
+
+
 def linha_painel(m, banda: dict | None, registro: RegistroProjecoes, gatilho: str) -> dict:
     """Monta a linha da 'Matriz de Projeções Auditáveis' no formato do painel."""
     u, c = m.unidade, m.casas
@@ -155,7 +164,5 @@ def linha_painel(m, banda: dict | None, registro: RegistroProjecoes, gatilho: st
             "bull_case": f"{fmt_valor(mes['bull'], u, c)} (+{fmt(banda['k'], 1)}σ)",
             "bear_case": f"{fmt_valor(mes['bear'], u, c)} (−{fmt(banda['k'], 1)}σ)",
         },
-        "audit_trigger": (gatilho + " | " if gatilho else "") +
-                         f"Método: banda de volatilidade (σ diário {fmt_pct(banda['sigma_diario'] * 100, 2, sinal=False)}, "
-                         f"{m.n_obs} pregões no histórico).",
+        "audit_trigger": (gatilho + " | " if gatilho else "") + _metodo(banda, m),
     }
