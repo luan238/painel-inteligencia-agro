@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: relatorio
+  group: checar-fontes      # grupo próprio: na fila do relatório, um boletim pedido depois cancelava a checagem
   cancel-in-progress: false
 
 jobs:
@@ -43,5 +43,8 @@ jobs:
           done
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Checagem de fontes $(date +'%d/%m/%Y %H:%M')"
-          git pull --rebase -X theirs
-          git push
+          for tentativa in 1 2 3 4; do            # outro workflow pode ter publicado ao mesmo tempo
+            git pull --rebase -X theirs && git push && exit 0
+            sleep $((tentativa * 15))
+          done
+          exit 1
