@@ -29,7 +29,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           n=$(gh run list -R "${{ github.repository }}" --workflow relatorio.yml --limit 5 \
-                --json status --jq '[.[] | select(.status=="in_progress" or .status=="queued" or .status=="waiting")] | length')
+                --json status --jq '[.[] | select(.status=="in_progress" or .status=="queued" or .status=="waiting" or .status=="pending" or .status=="requested")] | length')
           if [ "${n:-0}" -gt 0 ]; then echo "ocupado=sim" >> "$GITHUB_OUTPUT"; else echo "ocupado=nao" >> "$GITHUB_OUTPUT"; fi
 
   monitorar:

@@ -87,13 +87,24 @@ fontes:
     prioridade: 2
 
   - nome: CONAB
-    url: https://www.conab.gov.br/info-agro/precos/boletim-semanal
+    url: https://www.gov.br/conab/pt-br
+    url_noticias: https://www.gov.br/conab/pt-br/assuntos/noticias
     regiao: Brasil
     tipo: relatorio_oficial
     idioma: pt
     ativa: true
     prioridade: 1
-    observacao: "Boletim semanal de preços (oficial)."
+    observacao: "Oficial (safras, preços, estoques). O site antigo conab.gov.br não responde mais; as notícias estão no portal gov.br."
+
+  - nome: Ministério da Agricultura (MAPA)
+    url: https://www.gov.br/agricultura/pt-br
+    url_noticias: https://www.gov.br/agricultura/pt-br/assuntos/noticias
+    regiao: Brasil
+    tipo: relatorio_oficial
+    idioma: pt
+    ativa: true
+    prioridade: 1
+    observacao: "Adicionada pelo agente — oficial: aberturas de mercado, sanidade, Plano Safra, exportações."
 
   - nome: B3 Agro
     url: https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/cotacoes-derivativos.htm
@@ -158,7 +169,36 @@ fontes:
     ativa: true
     prioridade: 3
 
+  - nome: Bichos de Campo
+    url: https://bichosdecampo.com/
+    rss: https://bichosdecampo.com/feed/
+    regiao: Argentina
+    tipo: noticias
+    idioma: es
+    ativa: true
+    prioridade: 2
+    observacao: "Adicionada pelo agente — portal de jornalismo agro argentino (mercados, política agropecuária, exportações)."
+
   # ---------------------------------------------------------- INTERNACIONAL
+  - nome: farmdoc daily (Univ. de Illinois)
+    url: https://farmdocdaily.illinois.edu/
+    rss: https://farmdocdaily.illinois.edu/feed
+    regiao: Internacional
+    tipo: relatorio_oficial
+    idioma: en
+    ativa: true
+    prioridade: 1
+    observacao: "Adicionada pelo agente — análises da Universidade de Illinois sobre mercados de grãos, biocombustíveis e política agrícola dos EUA."
+
+  - nome: Brownfield Ag News
+    url: https://www.brownfieldagnews.com/
+    rss: https://www.brownfieldagnews.com/feed/
+    regiao: Internacional
+    tipo: noticias
+    idioma: en
+    ativa: true
+    prioridade: 2
+    observacao: "Adicionada pelo agente — rede de notícias agro dos EUA (fechamento de Chicago, USDA, exportações)."
   - nome: FRED (Fed de St. Louis)
     url: https://fred.stlouisfed.org/
     regiao: Internacional
@@ -189,43 +229,45 @@ fontes:
     regiao: Internacional
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 1
-    observacao: "Costuma bloquear robôs; as matérias da Reuters também chegam via Notícias Agrícolas."
+    observacao: "robots.txt do site não permite robôs (checagem de 25/11/2026) — desativada para respeitar o site."
 
   - nome: Bloomberg Agriculture
     url: https://www.bloomberg.com/markets/commodities/futures/agriculture
     regiao: Internacional
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 2
-    observacao: "Paywall e bloqueio de robôs — pode falhar."
+    observacao: "Paywall e bloqueio de robôs (acesso sempre recusado) — desativada."
 
   - nome: USDA WASDE
     url: https://www.usda.gov/oce/commodity/wasde
     regiao: Internacional
     tipo: relatorio_oficial
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 1
+    observacao: "robots.txt do site não permite robôs (checagem de 25/11/2026) — desativada para respeitar o site."
 
   - nome: USDA FAS
     url: https://www.fas.usda.gov/
     regiao: Internacional
     tipo: relatorio_oficial
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 1
+    observacao: "robots.txt do site não permite robôs (checagem de 25/11/2026) — desativada para respeitar o site."
 
   - nome: Grain Central
     url: https://www.graincentral.com/
     regiao: Internacional
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 3
-    observacao: "Austrália."
+    observacao: "Austrália. robots.txt do site não permite robôs (checagem de 25/11/2026) — desativada para respeitar o site."
 
   - nome: Successful Farming
     url: https://www.agriculture.com/
@@ -305,5 +347,6 @@ fontes:
     regiao: China
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 2
+    observacao: "robots.txt do site não permite robôs (checagem de 25/11/2026) — desativada para respeitar o site."

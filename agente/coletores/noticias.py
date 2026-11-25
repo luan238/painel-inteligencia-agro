@@ -265,6 +265,7 @@ class ColetorNoticias:
         self.max_resumo = n.get("max_caracteres_resumo", 900)
         self.baixadas = 0
         self.feeds = dict(feeds_conhecidos or {})
+        self.erros_pagina: dict[str, str] = {}
         self.status: list[dict] = []
 
     def _abrir(self, url: str):
@@ -295,8 +296,9 @@ class ColetorNoticias:
             html_pagina = self._abrir(pagina).texto
         except BloqueadoPorRobots:
             raise
-        except ErroColeta:
+        except ErroColeta as e:
             html_pagina = ""
+            self.erros_pagina[fonte["nome"]] = str(e)[:160]
         descoberto = descobrir_feed(html_pagina, pagina) if html_pagina else None
         for url in ([descoberto] if descoberto else []) + candidatos_feed(pagina):
             try:
@@ -337,7 +339,8 @@ class ColetorNoticias:
                     brutos.append({"titulo": meta["titulo"] or titulo, "url": url, "data": meta["data"],
                                    "resumo": meta["resumo"]})
             else:
-                st["status"], st["mensagem"] = "falha", "página e feed inacessíveis"
+                motivo = self.erros_pagina.get(fonte["nome"])
+                st["status"], st["mensagem"] = "falha", "página e feed inacessíveis" + (f" ({motivo})" if motivo else "")
             st["itens_lidos"] = len(brutos)
             for b in brutos:
                 if not b["data"]:
