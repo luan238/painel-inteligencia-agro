@@ -92,9 +92,9 @@ fontes:
     regiao: Brasil
     tipo: relatorio_oficial
     idioma: pt
-    ativa: true
+    ativa: false
     prioridade: 1
-    observacao: "Oficial (safras, preços, estoques). O site antigo conab.gov.br não responde mais; as notícias estão no portal gov.br."
+    observacao: "Desativada em 25/11/2026: o portal gov.br não responde aos servidores do GitHub (falhas de conexão repetidas). Oficial (safras, preços, estoques). O site antigo conab.gov.br não responde mais; as notícias estão no portal gov.br."
 
   - nome: Ministério da Agricultura (MAPA)
     url: https://www.gov.br/agricultura/pt-br
@@ -102,9 +102,9 @@ fontes:
     regiao: Brasil
     tipo: relatorio_oficial
     idioma: pt
-    ativa: true
+    ativa: false
     prioridade: 1
-    observacao: "Adicionada pelo agente — oficial: aberturas de mercado, sanidade, Plano Safra, exportações."
+    observacao: "Desativada em 25/11/2026: o portal gov.br não responde aos servidores do GitHub (falhas de conexão repetidas). Adicionada pelo agente — oficial: aberturas de mercado, sanidade, Plano Safra, exportações."
 
   - nome: B3 Agro
     url: https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/cotacoes-derivativos.htm
@@ -140,14 +140,15 @@ fontes:
     regiao: Argentina
     tipo: noticias
     idioma: es
-    ativa: true
+    ativa: false
     prioridade: 2
+    observacao: "Desativada em 25/11/2026: o site recusa o robô (HTTP 403)."
 
   - nome: BCR – Bolsa de Comercio de Rosario
     url: https://www.bcr.com.ar/
     url_dados: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1
     regiao: Argentina
-    tipo: noticias_e_cotacoes
+    tipo: cotacoes
     idioma: es
     ativa: true
     prioridade: 1
@@ -221,8 +222,9 @@ fontes:
     regiao: Internacional
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 2
+    observacao: "Desativada em 25/11/2026: o site recusa o robô."
 
   - nome: Reuters Commodities
     url: https://www.reuters.com/markets/commodities/
@@ -274,16 +276,18 @@ fontes:
     regiao: Internacional
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 3
+    observacao: "Desativada em 25/11/2026: o site recusa o robô (HTTP 403)."
 
   - nome: AgWeb
     url: https://www.agweb.com/
     regiao: Internacional
     tipo: noticias
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 2
+    observacao: "Desativada em 25/11/2026: o site recusa o robô (HTTP 403)."
 
   - nome: World Grain
     url: https://www.world-grain.com/
@@ -331,16 +335,18 @@ fontes:
     regiao: China
     tipo: noticias
     idioma: zh
-    ativa: true
+    ativa: false
     prioridade: 3
+    observacao: "Desativada em 25/11/2026: o site não responde aos servidores do GitHub."
 
   - nome: SunSirs
     url: https://www.sunsirs.com/uk/
     regiao: China
     tipo: noticias_e_cotacoes
     idioma: en
-    ativa: true
+    ativa: false
     prioridade: 2
+    observacao: "Desativada em 25/11/2026: a página não traz matérias legíveis pelo robô."
 
   - nome: Reuters China Agri
     url: https://www.reuters.com/world/china/
