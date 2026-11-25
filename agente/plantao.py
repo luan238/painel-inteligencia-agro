@@ -214,9 +214,12 @@ def executar(api, agenda: dict, meu_id: int = 0, sucessor: bool = False,
             mon = api.execucoes(WF_MONITOR, desde=agora - timedelta(hours=2)) + disparados[WF_MONITOR]
             acoes, pela_frente = decidir(agora, rel, mon, agenda)
             for wf, inputs in acoes:
-                api.disparar(wf, inputs)
-                disparados[wf].append(Execucao(criada=agora, status="queued", conclusao=None))
-                log(f"Disparado: {wf} {inputs or ''}".rstrip())
+                disparados[wf].append(Execucao(criada=agora, status="queued", conclusao=None))  # não insiste na mesma vez
+                try:
+                    api.disparar(wf, inputs)
+                    log(f"Disparado: {wf} {inputs or ''}".rstrip())
+                except urllib.error.HTTPError as e:            # ex.: workflow desativado em Actions (pausa manual)
+                    log(f"Não consegui disparar {wf} (HTTP {e.code}) — ele está desativado em Actions?")
             erros_seguidos = 0
         except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
             erros_seguidos += 1

@@ -112,3 +112,17 @@ def test_um_plantao_por_vez():
     api.execucoes = execucoes
     motivo, _ = _rodar(h("17:00"), api, meu_id=10, sucessor=True)
     assert motivo == "fim_do_dia" and any(wf == "monitor.yml" for wf, _, _ in api.disparos)
+
+
+def test_workflow_pausado_nao_derruba_o_plantao():
+    import urllib.error
+
+    class ApiMonitorPausado(ApiFalsa):
+        def disparar(self, workflow, inputs=None):
+            if workflow == "monitor.yml":
+                raise urllib.error.HTTPError("u", 422, "Workflow is disabled", {}, None)
+            super().disparar(workflow, inputs)
+    api = ApiMonitorPausado()
+    motivo, _ = _rodar(h("15:00"), api, meu_id=10)
+    assert motivo == "fim_do_dia"                                     # seguiu até o fim do dia
+    assert [i["turno"] for wf, i, _ in api.disparos if wf == "relatorio.yml"] == ["meio_dia", "fechamento"]
