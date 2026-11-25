@@ -18,7 +18,7 @@
   "farmdoc daily (Univ. de Illinois)": "https://farmdocdaily.illinois.edu/feed",
   "Brownfield Ag News": "https://www.brownfieldagnews.com/feed/"
  },
- "gerado_em": "2026-11-25T11:14-03:00",
+ "gerado_em": "2026-11-25T11:20-03:00",
  "indicadores": {
   "dolar_ptax": [
    {
@@ -375,7 +375,7 @@
    "modo": "rss",
    "feed": "https://globorural.globo.com/rss/globorural",
    "itens_lidos": 30,
-   "itens_na_janela": 29,
+   "itens_na_janela": 30,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -401,50 +401,6 @@
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
-  },
-  {
-   "nome": "CONAB",
-   "regiao": "Brasil",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas))"
-  },
-  {
-   "nome": "Ministério da Agricultura (MAPA)",
-   "regiao": "Brasil",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas))"
-  },
-  {
-   "nome": "Bolsa de Cereales de Buenos Aires",
-   "regiao": "Argentina",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.bolsadecereales.com/)"
-  },
-  {
-   "nome": "BCR – Bolsa de Comercio de Rosario",
-   "regiao": "Argentina",
-   "modo": "pagina",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "sem_itens",
-   "mensagem": "nenhuma matéria reconhecida na página"
   },
   {
    "nome": "Infobae Campo",
@@ -513,39 +469,6 @@
    "mensagem": ""
   },
   {
-   "nome": "Barchart Grains",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis"
-  },
-  {
-   "nome": "Successful Farming",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.agriculture.com/)"
-  },
-  {
-   "nome": "AgWeb",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.agweb.com/)"
-  },
-  {
    "nome": "World Grain",
    "regiao": "Internacional",
    "modo": "pagina",
@@ -566,28 +489,6 @@
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
-  },
-  {
-   "nome": "CZ App / China Agri",
-   "regiao": "China",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis (www.cnzsmpw.com fora do alcance nesta execução (falhas de conexão repetidas))"
-  },
-  {
-   "nome": "SunSirs",
-   "regiao": "China",
-   "modo": "pagina",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "sem_itens",
-   "mensagem": "nenhuma matéria reconhecida na página"
   }
  ]
 }

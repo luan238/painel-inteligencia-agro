@@ -1,4 +1,4 @@
-# Checagem de fontes — 25/11/2026 11:14
+# Checagem de fontes — 25/11/2026 11:20
 
 ## Cotações
 
@@ -44,25 +44,16 @@
 | Farmnews | Brasil | ✅ ok | rss | 7 | 7 | https://www.farmnews.com.br/feed/ |
 | AgFeed | Brasil | ✅ ok | rss | 10 | 10 | https://agfeed.com.br/feed/ |
 | Canal Rural | Brasil | ✅ ok | rss | 10 | 10 | https://www.canalrural.com.br/feed/ |
-| Globo Rural | Brasil | ✅ ok | rss | 29 | 30 | https://globorural.globo.com/rss/globorural |
+| Globo Rural | Brasil | ✅ ok | rss | 30 | 30 | https://globorural.globo.com/rss/globorural |
 | Agrolink | Brasil | ✅ ok | rss | 30 | 30 | https://www.agrolink.com.br/rss/noticias.rss |
 | Money Times Agro | Brasil | ✅ ok | rss | 10 | 10 | https://www.moneytimes.com.br/feed/ |
-| CONAB | Brasil | ❌ falha | — | 0 | 0 | página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas)) |
-| Ministério da Agricultura (MAPA) | Brasil | ❌ falha | — | 0 | 0 | página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas)) |
-| Bolsa de Cereales de Buenos Aires | Argentina | ❌ falha | — | 0 | 0 | página e feed inacessíveis (HTTP 403 em https://www.bolsadecereales.com/) |
-| BCR – Bolsa de Comercio de Rosario | Argentina | ⚠️ sem_itens | pagina | 0 | 0 | nenhuma matéria reconhecida na página |
 | Infobae Campo | Argentina | ✅ ok | pagina | 0 | 10 |  |
 | Clarín Rural | Argentina | ✅ ok | rss | 10 | 10 | https://www.clarin.com/rss |
 | Bichos de Campo | Argentina | ✅ ok | rss | 10 | 10 | https://bichosdecampo.com/feed/ |
 | farmdoc daily (Univ. de Illinois) | Internacional | ✅ ok | rss | 1 | 10 | https://farmdocdaily.illinois.edu/feed |
 | Brownfield Ag News | Internacional | ✅ ok | rss | 0 | 20 | https://www.brownfieldagnews.com/feed/ |
 | Pro Farmer | Internacional | ✅ ok | pagina | 7 | 8 |  |
-| Barchart Grains | Internacional | ❌ falha | — | 0 | 0 | página e feed inacessíveis |
-| Successful Farming | Internacional | ❌ falha | — | 0 | 0 | página e feed inacessíveis (HTTP 403 em https://www.agriculture.com/) |
-| AgWeb | Internacional | ❌ falha | — | 0 | 0 | página e feed inacessíveis (HTTP 403 em https://www.agweb.com/) |
 | World Grain | Internacional | ✅ ok | pagina | 8 | 10 |  |
 | eFeedLink | China | ✅ ok | rss | 30 | 30 | https://www.efeedlink.com/rss.xml |
-| CZ App / China Agri | China | ❌ falha | — | 0 | 0 | página e feed inacessíveis (www.cnzsmpw.com fora do alcance nesta execução (falhas de conexão repetidas)) |
-| SunSirs | China | ⚠️ sem_itens | pagina | 0 | 0 | nenhuma matéria reconhecida na página |
 
 Legenda: ✅ ok · ❌ erro · 🚫 bloqueado pelo robots.txt do site · ⚠️ sem itens · ⏸️ desativada
