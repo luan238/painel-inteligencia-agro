@@ -21,6 +21,7 @@ _TAGS_TITULO = {"h1", "h2", "h3", "h4", "h5", "h6", "caption", "strong", "b", "l
 _RE_CLASSE_TITULO = re.compile(r"tit|title|cabec|header|info|nome|label", re.I)
 _RE_FECHAMENTO = re.compile(r"(?:fechamento|atualizad[oa]|data|cota[cç][aã]o)\D{0,15}(\d{1,2}/\d{1,2}/\d{2,4})", re.I)
 _RE_QUALQUER_DATA = re.compile(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b")
+_RE_DIA_MES = re.compile(r"\d{1,2}/\d{1,2}")
 _RE_NUMERO = re.compile(r"-?\d{1,3}(?:[.\s]\d{3})+(?:,\d+)?|-?\d+(?:[.,]\d+)?")
 
 
@@ -240,16 +241,20 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
         if _RE_QUALQUER_DATA.search(celula):
             d = ler_data(celula, hoje) or d
             break
+        if _RE_DIA_MES.fullmatch(celula.strip()):  # "13/11" sem ano (Agrolink): ano corrente, nunca no futuro
+            d = ler_data(celula, hoje) or d
+            break
     if d is None:
         d = hoje
         incerta = True
-    rotulo = linha[0] if linha else ""
+    rotulo = next((c for c in linha if c.strip()), "") if linha else ""
     nome_col = tab.cabecalhos[col_valor] if (col_valor is not None and col_valor < len(tab.cabecalhos)) else "1ª coluna numérica"
     if por_posicao:
         nome_col = f"nº {col_valor + 1}, pela posição"
     return [Observacao(indicador=ind["id"], data=d, valor=valor, fonte=nome_fonte, url=url, incerta=incerta,
                        detalhe=f"tabela '{tab.contexto[:60]}' · linha '{rotulo[:30]}' · coluna '{nome_col}'"
-                               + (" · data não informada na página" if not tab.data_contexto and d == hoje else ""))]
+                               + (" · data não informada na página" if not tab.data_contexto and d == hoje else "")
+                               + (_amostra(tab) if incerta else ""))]
 
 
 def coletar(fonte: dict, ind: dict, cliente, hoje: date, registro: dict | None = None) -> list[Observacao]:

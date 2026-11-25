@@ -76,7 +76,7 @@ fontes:
     idioma: pt
     ativa: true
     prioridade: 1
-    observacao: "Cotações por praça (ex.: café em Manhuaçu-MG)."
+    observacao: "Cotações por praça (café em Manhuaçu-MG, soja em Uberlândia-MG, caroço de algodão em Cuiabá-MT e Barreiras-BA)."
 
   - nome: Money Times Agro
     url: https://www.moneytimes.com.br/tag/agronegocio/
@@ -103,7 +103,7 @@ fontes:
     idioma: pt
     ativa: true
     prioridade: 1
-    observacao: "O agente baixa o arquivo oficial e gratuito de preços do pregão (Pesquisa por pregão) e lê o preço de ajuste de dólar, milho, boi e soja."
+    observacao: "O agente baixa o arquivo oficial e gratuito de preços do pregão (Pesquisa por pregão) e lê o preço de ajuste de dólar, milho, boi, soja e café (arábica e conilon)."
 
   - nome: Banco Central do Brasil
     url: https://www.bcb.gov.br/
@@ -159,6 +159,15 @@ fontes:
     prioridade: 3
 
   # ---------------------------------------------------------- INTERNACIONAL
+  - nome: FRED (Fed de St. Louis)
+    url: https://fred.stlouisfed.org/
+    regiao: Internacional
+    tipo: api_oficial
+    idioma: en
+    ativa: true
+    prioridade: 1
+    observacao: "Adicionada pelo agente — banco de dados público do Federal Reserve de St. Louis; CSV gratuito, sem chave (petróleo WTI e Brent, dados da EIA)."
+
   - nome: Pro Farmer
     url: https://www.profarmer.com/
     regiao: Internacional

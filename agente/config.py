@@ -1,7 +1,7 @@
 """Carrega e valida os arquivos de configuração (pasta config/)."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -23,6 +23,7 @@ class Config:
     fontes: list
     indicadores: list
     blocos_cfg: dict
+    indicadores_inativos: list = field(default_factory=list)   # "ativo: false" no indicadores.yaml
 
     # ------------------------------------------------------------ atalhos
     @property
@@ -55,7 +56,7 @@ class Config:
     def problemas(self) -> list[str]:
         """Checa a consistência entre os arquivos de configuração."""
         erros: list[str] = []
-        ids = [i["id"] for i in self.indicadores]
+        ids = [i["id"] for i in self.indicadores] + list(self.indicadores_inativos)
         duplicados = {i for i in ids if ids.count(i) > 1}
         if duplicados:
             erros.append(f"indicadores duplicados: {sorted(duplicados)}")
@@ -105,16 +106,19 @@ class Config:
         return erros
 
 
-TIPOS_COLETOR = {"bcb_ptax", "bcb_sgs", "b3_ajustes", "b3_boletim", "tabela_html", "regex_pagina", "json_api", "yahoo"}
+TIPOS_COLETOR = {"bcb_ptax", "bcb_sgs", "b3_ajustes", "b3_boletim", "tabela_html", "regex_pagina", "json_api",
+                 "csv_api", "yahoo"}
 
 
 def carregar_config(raiz: Path | None = None) -> Config:
     raiz = Path(raiz or RAIZ)
     pasta = raiz / "config"
+    todos = carregar_yaml(pasta / "indicadores.yaml").get("indicadores", [])
     return Config(
         raiz=raiz,
         geral=carregar_yaml(pasta / "configuracoes.yaml"),
         fontes=carregar_yaml(pasta / "fontes.yaml").get("fontes", []),
-        indicadores=carregar_yaml(pasta / "indicadores.yaml").get("indicadores", []),
+        indicadores=[i for i in todos if i.get("ativo", True) is not False],
         blocos_cfg=carregar_yaml(pasta / "blocos.yaml"),
+        indicadores_inativos=[i["id"] for i in todos if i.get("ativo", True) is False],
     )

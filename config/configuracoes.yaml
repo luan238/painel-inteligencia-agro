@@ -10,6 +10,18 @@ relatorio:
   fuso_horario: America/Sao_Paulo
   aviso_legal: "Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento."
 
+# Agenda — quem dispara é o "Plantão" (workflow plantao.yml), não o agendador do GitHub,
+# que atrasa e descarta execuções. Horários de Brasília, SEMPRE entre aspas.
+agenda:
+  relatorios:                       # boletim completo (notícias + IA)
+    dias_uteis: {"08:41": abertura, "13:17": meio_dia, "19:43": fechamento}
+    domingo: {"17:11": fim_de_semana}
+  monitor:                          # só cotações, sem IA (dias úteis)
+    inicio: "09:07"
+    fim: "19:47"
+    intervalo_min: 20
+  tolerancia_relatorio_min: 150     # boletim perdido ainda sai se o atraso for menor que isso
+
 saidas:
   json: boletim_atual.json                 # o index.html lê este arquivo (mesma pasta do index.html)
   relatorio_md: relatorios/relatorio_atual.md

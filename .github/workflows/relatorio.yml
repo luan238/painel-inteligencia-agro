@@ -1,12 +1,9 @@
 name: Relatório de Inteligência de Mercado
 
 on:
-  schedule:
-    # Horários em UTC (Brasília = UTC-3). Minutos "quebrados" evitam a fila do GitHub na hora cheia.
-    - cron: "41 11 * * 1-5"   # 08:41 BRT — abertura (fechamento anterior + notícias da noite)
-    - cron: "17 16 * * 1-5"   # 13:17 BRT — meio do dia (PTAX do dia já publicada)
-    - cron: "43 22 * * 1-5"   # 19:43 BRT — fechamento (Cepea, B3 e Chicago fechados)
-    - cron: "11 20 * * 0"     # domingo 17:11 BRT — balanço da semana
+  # Quem dispara nos horários é o "Plantão" (plantao.yml): 08:41, 13:17 e 19:43 em dias úteis
+  # e 17:11 no domingo (horários em config/configuracoes.yaml → agenda). O agendador do GitHub
+  # atrasava e descartava execuções. O botão "Atualizar agora" do painel também usa este disparo.
   workflow_dispatch:
     inputs:
       turno:

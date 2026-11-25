@@ -1064,6 +1064,10 @@
         const ramo = info.default_branch || 'main';
         await gh(`/repos/${repo}/actions/workflows/${wf}/dispatches`, { method: 'POST',
           body: JSON.stringify(rapido ? { ref: ramo } : { ref: ramo, inputs: { sem_ia: 'false' } }) });
+        // acorda o Plantão (agenda automática) caso o agendador do GitHub o tenha deixado parado;
+        // se ele já estiver ativo, esse chamado encerra sozinho em segundos
+        gh(`/repos/${repo}/actions/workflows/plantao.yml/dispatches`, { method: 'POST', body: JSON.stringify({ ref: ramo }) })
+          .catch(() => {});
         mostrarStatus('⏳ Pedido enviado ao GitHub… aguardando a execução começar');
         let run = null;
         for (let i = 0; i < 30 && !run; i++) {

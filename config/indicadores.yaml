@@ -20,8 +20,11 @@
 #                    a linha pelo rótulo e a coluna pelo cabeçalho
 #    regex_pagina  → captura um número no texto da página com uma expressão regular
 #    json_api      → qualquer API JSON (aceita ${VARIAVEL} de ambiente na URL)
+#    csv_api       → arquivo CSV público com data e valor (ex.: FRED, do Fed de St. Louis)
 #    yahoo         → Yahoo Finance (não usado: o robots.txt do Yahoo não permite robôs)
 #  fator / unidade_origem → conversão de unidade feita pelo código (ex.: US$/t → US$/bu)
+#  ativo: false  → desliga o indicador inteiro (some do painel e do relatório até
+#                  haver uma fonte confiável para ele)
 #
 #  "verificado: false" = configuração ainda não testada no site real. Rode a
 #  ação "Checar fontes" no GitHub para confirmar.
@@ -81,15 +84,20 @@ indicadores:
         verificado: true
 
   - id: petroleo_wti
-    nome: "Petróleo WTI — NYMEX (1º vencimento)"
+    nome: "Petróleo WTI — spot Cushing (EIA)"
     nome_curto: "Petróleo WTI"
     bloco: cambio_e_energia
     unidade: "US$/bbl"
     casas: 2
     faixa: [20, 250]
     var_max_dia_pct: 9
-    defasagem_max_dias_uteis: 7     # a EIA publica a série diária com alguns dias de atraso
+    defasagem_max_dias_uteis: 7     # EIA/FRED publicam a série diária com alguns dias de atraso
     fontes:
+      - fonte: FRED (Fed de St. Louis)
+        tipo: csv_api
+        url: "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO"
+        url_publica: "https://fred.stlouisfed.org/series/DCOILWTICO"
+        verificado: false              # série diária da EIA, sem chave; sai com alguns dias de atraso
       - fonte: EIA (governo dos EUA)
         tipo: json_api
         url: "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RWTC&sort[0][column]=period&sort[0][direction]=desc&length=30"
@@ -100,15 +108,20 @@ indicadores:
         verificado: false
 
   - id: petroleo_brent
-    nome: "Petróleo Brent — ICE Londres (1º vencimento)"
+    nome: "Petróleo Brent — spot Europa (EIA)"
     nome_curto: "Petróleo Brent"
     bloco: cambio_e_energia
     unidade: "US$/bbl"
     casas: 2
     faixa: [20, 250]
     var_max_dia_pct: 9
-    defasagem_max_dias_uteis: 7     # a EIA publica a série diária com alguns dias de atraso
+    defasagem_max_dias_uteis: 7     # EIA/FRED publicam a série diária com alguns dias de atraso
     fontes:
+      - fonte: FRED (Fed de St. Louis)
+        tipo: csv_api
+        url: "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU"
+        url_publica: "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+        verificado: false              # série diária da EIA, sem chave; sai com alguns dias de atraso
       - fonte: EIA (governo dos EUA)
         tipo: json_api
         url: "https://api.eia.gov/v2/petroleum/pri/spt/data/?api_key=${EIA_API_KEY}&frequency=daily&data[0]=value&facets[series][]=RBRTE&sort[0][column]=period&sort[0][direction]=desc&length=30"
@@ -417,7 +430,8 @@ indicadores:
     faixa: [30, 250]
     var_max_dia_pct: 7
     defasagem_max_dias_uteis: 2
-    fontes: []   # sem fonte gratuita que aceite robôs hoje (a Notícias Agrícolas recusa o acesso)
+    ativo: false   # sem fonte gratuita que aceite robôs (Notícias Agrícolas bloqueia; ICE/Barchart não permitem)
+    fontes: []
 
   - id: algodao_cepea
     nome: "Algodão em pluma — Rondonópolis-MT"
@@ -444,10 +458,17 @@ indicadores:
     bloco: complexo_algodao
     unidade: "R$/t"
     casas: 2
-    faixa: [200, 4000]
+    faixa: [200, 2500]             # algodão em caroço (com pluma) valeria bem mais: fica fora da faixa
     var_max_dia_pct: 10
     defasagem_max_dias_uteis: 5
-    fontes: []   # sem fonte gratuita que aceite robôs hoje (a Notícias Agrícolas recusa o acesso)
+    fontes:
+      - fonte: Agrolink
+        tipo: tabela_html
+        url: https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton
+        titulo_contem: []
+        linha_contem: ["cuiab"]       # 1ª linha da praça = data mais recente; vale a data de atualização da linha
+        coluna_valor: ["preco"]
+        verificado: false              # praça Cuiabá-MT, R$/t
 
   - id: caroco_algodao_ba
     nome: "Caroço de Algodão — Oeste da Bahia"
@@ -455,10 +476,17 @@ indicadores:
     bloco: complexo_algodao
     unidade: "R$/t"
     casas: 2
-    faixa: [200, 4000]
+    faixa: [200, 2500]             # algodão em caroço (com pluma) valeria bem mais: fica fora da faixa
     var_max_dia_pct: 10
     defasagem_max_dias_uteis: 5
-    fontes: []   # sem fonte gratuita que aceite robôs hoje (a Notícias Agrícolas recusa o acesso)
+    fontes:
+      - fonte: Agrolink
+        tipo: tabela_html
+        url: https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton
+        titulo_contem: []
+        linha_contem: ["barreiras"]       # 1ª linha da praça = data mais recente; vale a data de atualização da linha
+        coluna_valor: ["preco"]
+        verificado: false              # praça Barreiras-BA, R$/t
 
   # ================================================== COMPLEXO CAFÉ & PECUÁRIA
   - id: cafe_arabica_ice
@@ -470,7 +498,8 @@ indicadores:
     faixa: [60, 700]
     var_max_dia_pct: 10
     defasagem_max_dias_uteis: 2
-    fontes: []   # sem fonte gratuita que aceite robôs hoje (a Notícias Agrícolas recusa o acesso)
+    ativo: false   # sem fonte gratuita que aceite robôs; use "Café Arábica B3 (ICF)" abaixo
+    fontes: []
 
   - id: cafe_robusta_londres
     nome: "Café Robusta ICE Londres — 1º vencimento"
@@ -481,7 +510,40 @@ indicadores:
     faixa: [800, 12000]
     var_max_dia_pct: 10
     defasagem_max_dias_uteis: 2
-    fontes: []   # sem fonte gratuita que aceite robôs hoje (a Notícias Agrícolas recusa o acesso)
+    ativo: false   # sem fonte gratuita que aceite robôs; use "Café Conilon B3 (CNL)" abaixo
+    fontes: []
+
+  - id: cafe_arabica_b3
+    nome: "Café Arábica B3 (ICF) — 1º vencimento"
+    nome_curto: "Café Arábica B3"
+    bloco: complexo_cafe
+    unidade: "US$/sc"
+    casas: 2
+    faixa: [80, 1500]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_boletim
+        mercadoria: ICF
+        vencimento: 1
+        verificado: false
+
+  - id: cafe_conilon_b3
+    nome: "Café Conilon B3 (CNL) — 1º vencimento"
+    nome_curto: "Café Conilon B3"
+    bloco: complexo_cafe
+    unidade: "R$/sc"
+    casas: 2
+    faixa: [200, 5000]
+    var_max_dia_pct: 10
+    defasagem_max_dias_uteis: 2
+    fontes:
+      - fonte: B3 Agro
+        tipo: b3_boletim
+        mercadoria: CNL
+        vencimento: 1
+        verificado: false
 
   - id: cafe_arabica_cepea
     nome: "Café arábica — Sul de Minas-MG"

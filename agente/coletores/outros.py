@@ -85,6 +85,31 @@ def coletar_json(fonte: dict, ind: dict, cliente, hoje: date, registro: dict | N
     return obs
 
 
+def coletar_csv(fonte: dict, ind: dict, cliente, hoje: date, registro: dict | None = None) -> list[Observacao]:
+    """CSV público com data na 1ª coluna e valor na 2ª (ex.: FRED fredgraph.csv); "." = sem dado."""
+    import csv
+    import io
+    url = _expandir_env(fonte["url"])
+    url_pub = fonte.get("url_publica") or _url_publica(url)
+    texto = cliente.obter(url, ignorar_robots=bool(fonte.get("ignorar_robots"))).texto
+    linhas = list(csv.reader(io.StringIO(texto)))
+    if len(linhas) < 2 or len(linhas[0]) < 2:
+        raise ErroColeta(f"CSV sem colunas de data e valor: {texto[:80]!r}")
+    i_data, i_valor = int(fonte.get("coluna_data", 0)), int(fonte.get("coluna_valor", 1))
+    obs = []
+    for linha in linhas[1:][-int(fonte.get("ultimas_linhas", 60)):]:
+        if len(linha) <= max(i_data, i_valor):
+            continue
+        d = _data_iso(linha[i_data])
+        v = ler_numero(linha[i_valor], "en") if linha[i_valor].strip() not in ("", ".") else None
+        if d and v is not None and d <= hoje:
+            obs.append(Observacao(indicador=ind["id"], data=d, valor=v, fonte=fonte.get("fonte", ""), url=url_pub,
+                                  detalhe=f"CSV {linhas[0][i_valor]}"))
+    if not obs:
+        raise ErroColeta("CSV sem valores utilizáveis")
+    return obs
+
+
 def _data_iso(texto) -> date | None:
     try:
         return date.fromisoformat(str(texto)[:10])

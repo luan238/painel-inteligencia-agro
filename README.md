@@ -48,7 +48,8 @@ texto automático. O boletim nunca deixa de sair, e nada é inventado.
    secret*: `GROQ_API_KEY`, `NVIDIA_API_KEY`, `GEMINI_API_KEY` e `OPENROUTER_API_KEY` (onde pegar cada
    uma está na tabela abaixo). Pode cadastrar só algumas: chave que falta é pulada. Sem nenhuma, o
    boletim sai com a IA local (sem limite, porém mais lenta). Depois rode *Actions → Testar IAs*.
-   *(Opcional)* `EIA_API_KEY`: chave gratuita da EIA (governo dos EUA) para checagem cruzada de WTI/Brent.
+   *(Opcional)* `EIA_API_KEY`: chave gratuita da EIA (governo dos EUA) para checagem cruzada de WTI/Brent
+   (o petróleo já vem do FRED, sem chave).
 3. **Permita que o robô salve arquivos**: *Settings → Actions → General → Workflow permissions →
    Read and write permissions*. Crie também as etiquetas `nova-fonte` e `falha-boletim` em
    *Issues → Labels → New label*. O GitHub só aplica etiquetas que já existem, e o formulário de fontes depende da `nova-fonte`.
@@ -120,8 +121,8 @@ O painel fica atualizado de três formas, sem ninguém precisar colar JSON:
 
 | Como | Quando | O que faz | Tempo |
 |---|---|---|---|
-| **Monitor de cotações** (automático) | a cada 20 min, seg–sex, das 9h07 às 19h47 | Confere **só as cotações**. Se alguma mudou, republica os números. A análise escrita continua com o horário em que foi feita. Se nada mudou, não publica nada. | 1–2 min |
-| **Boletim completo** (automático) | 08:41, 13:17, 19:43 e domingo 17:11 | Cotações + notícias + análise da IA verificada | 5–40 min* |
+| **Monitor de cotações** (automático, pelo Plantão) | a cada 20 min, seg–sex, das 9h07 às 19h47 | Confere **só as cotações**. Se alguma mudou, republica os números. A análise escrita continua com o horário em que foi feita. Se nada mudou, não publica nada. | 1–2 min |
+| **Boletim completo** (automático, pelo Plantão) | 08:41, 13:17, 19:43 e domingo 17:11 | Cotações + notícias + análise da IA verificada | 5–40 min* |
 | **Botão 🔄 Atualizar agora** (no painel) | quando você quiser | **Completo**: o boletim inteiro. **Rápido**: só as cotações (monitor). Acompanha o progresso e recarrega o painel sozinho | 2–40 min* |
 
 \* 4–8 min com a fila de APIs gratuitas; 20–40 min quando a análise é escrita pela IA local (sem limite).
@@ -150,17 +151,29 @@ Para revogar, apague a chave no GitHub.
 > e, se precisar, aumente o intervalo do monitor em `.github/workflows/monitor.yml`. O GitHub Pages
 > em repositório privado exige plano pago.
 
-## Horários (fuso de Brasília)
+## Horários (fuso de Brasília) e o Plantão
 
-| Turno | Quando | Cron (UTC) em `.github/workflows/relatorio.yml` |
-|---|---|---|
-| Abertura | seg–sex 08:41 | `41 11 * * 1-5` |
-| Meio do dia | seg–sex 13:17 (PTAX publicada) | `17 16 * * 1-5` |
-| Fechamento | seg–sex 19:43 (Cepea, B3 e Chicago fechados) | `43 22 * * 1-5` |
-| Balanço da semana | domingo 17:11 | `11 20 * * 0` |
+| Turno | Quando |
+|---|---|
+| Abertura | seg–sex 08:41 |
+| Meio do dia | seg–sex 13:17 (PTAX publicada) |
+| Fechamento | seg–sex 19:43 (Cepea, B3 e Chicago fechados) |
+| Balanço da semana | domingo 17:11 |
+| Monitor de cotações | seg–sex, a cada 20 min, 09:07–19:47 |
 
-Os minutos “quebrados” evitam a fila do GitHub na hora cheia. O agendamento do GitHub pode atrasar alguns
-minutos. Para gerar fora do horário, use *Run workflow* ou o botão **▶️ Gerar boletim agora** no painel.
+O agendador do GitHub (“schedule”) atrasa execuções em horas e descarta muitas delas. Por isso quem
+cumpre a agenda é o **Plantão** (`.github/workflows/plantao.yml`):
+
+- é acordado de hora em hora (basta **um** desses chamados funcionar no dia);
+- fica ativo durante o expediente e dispara o monitor e os boletins **na hora**, pelo mesmo disparo
+  que o botão do painel usa;
+- se um boletim ficou para trás (até 2h30), ele sai atrasado em vez de não sair;
+- antes do limite de 6 h de um job do GitHub, passa o plantão para uma nova execução;
+- só existe um plantão por vez: um chamado que encontra outro ativo encerra em segundos (aparece como
+  ✅ curto na aba Actions — é normal).
+
+Os horários ficam em `config/configuracoes.yaml → agenda` (sempre entre aspas, ex.: `"13:17"`).
+O botão **🔄 Atualizar agora** do painel também acorda o Plantão, caso ele esteja parado.
 
 ---
 
@@ -248,7 +261,7 @@ python -m agente executar            # gera o boletim (turno pelo horário)
 python -m agente executar --turno fechamento --sem-ia
 python -m agente monitorar           # só cotações; republica se houver cotação nova
 python -m agente adicionar-fonte --nome "Portal X" --url https://... --regiao Brasil
-python -m pytest -q                  # 66 testes (internet e IA simuladas)
+python -m pytest -q                  # 78 testes (internet e IA simuladas)
 python tests/gerar_exemplo.py        # gera exemplos/boletim_exemplo_FICTICIO.json
 ```
 
@@ -258,10 +271,12 @@ Se o site de alguma fonte bloquear os servidores do GitHub, rode o agente no seu
 ## Limites conhecidos
 - Sites com paywall ou bloqueio de robôs (Reuters, Bloomberg) costumam falhar. A **Notícias Agrícolas** recusa
   robôs (HTTP 403) desde nov/2026 e está desligada em `config/fontes.yaml`. As cotações vêm de: Banco Central
-  (PTAX, Selic), arquivo oficial de ajustes da B3 (dólar, milho, boi, soja), Bolsa de Rosario (Chicago:
-  soja, farelo, óleo, milho, trigo), Canal Rural/CMA (praças físicas), Agrolink e EIA (petróleo, com chave grátis).
-- Sem fonte gratuita que aceite robôs hoje: algodão e café em Nova York, robusta em Londres e caroço de algodão.
-  Esses cards ficam em branco até surgir uma fonte (basta incluí-la em `config/indicadores.yaml`).
+  (PTAX, Selic), arquivo oficial de ajustes da B3 (dólar, milho, boi, soja, café arábica e conilon), Bolsa de
+  Rosario (Chicago: soja, farelo, óleo, milho, trigo), Canal Rural/CMA (praças físicas), Agrolink (Manhuaçu,
+  Uberlândia, caroço de algodão MT/BA) e FRED/EIA (petróleo WTI e Brent spot, sem chave, com alguns dias de atraso).
+- Sem fonte gratuita que aceite robôs hoje: algodão e café na ICE (Nova York) e robusta em Londres. Esses
+  indicadores estão com `ativo: false` em `config/indicadores.yaml` (saem do painel) até surgir uma fonte; no
+  lugar do café ICE entram os contratos de café da B3.
 - O agente **respeita o robots.txt** de cada site (`respeitar_robots_txt: true`). Fontes que proíbem
   robôs aparecem como 🚫 no painel. Use `ignorar_robots: true` numa fonte só se você tiver autorização do site.
 - As projeções são bandas estatísticas de volatilidade, não previsões. O track record mostra a calibração real.
@@ -273,7 +288,7 @@ agente/            código (coletores/, validacao, analise, projecoes, redator, 
 config/            fontes.yaml · indicadores.yaml · blocos.yaml · configuracoes.yaml
 prompts/           instruções da IA (sistema, bloco, fechamento)
 tests/             testes com internet e IA simuladas
-.github/           workflows (relatório, monitor, testar IAs, checar fontes, nova fonte) e formulário de nova fonte
+.github/           workflows (plantão, relatório, monitor, testar IAs, checar fontes, nova fonte) e formulário de nova fonte
 scripts/           instalação da IA local em segundo plano e inclusão de fonte via issue
 index.html         painel Germinare Market Intelligence Pro (atualizado)
 ```

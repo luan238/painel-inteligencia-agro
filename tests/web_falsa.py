@@ -19,6 +19,7 @@ from agente.rede import Resposta
 BRT = ZoneInfo("America/Sao_Paulo")
 AGORA = datetime(2026, 11, 17, 19, 40, tzinfo=BRT)
 HOJE = AGORA.date()
+FERIADO_FRED = date(2026, 11, 11)      # dia sem cotação na série do FRED (vem como ".")
 
 # (valor final, vol diária) — valores FICTÍCIOS para teste
 BASES = {
@@ -31,6 +32,7 @@ BASES = {
     "cafe_ny": (279.75, 0.018), "robusta": (4285.0, 0.015), "cafe_cepea": (1611.14, 0.01),
     "manhuacu": (1586.00, 0.011), "boi": (392.70, 0.004), "dol": (5761.5, 0.008), "ccm1": (66.88, 0.007),
     "ccm2": (71.35, 0.007), "bgi": (407.00, 0.005), "sjc": (26.34, 0.01), "rosario": (445000.0, 0.012),
+    "icf": (523.40, 0.018), "cnl": (1385.00, 0.015),
 }
 
 
@@ -128,7 +130,8 @@ def boletim_b3_zip(dia: date = HOJE) -> bytes:
     import io
     import zipfile
     itens = [("BGIX26", "bgi"), ("BGIZ26", None), ("CCMX26", "ccm1"), ("CCMF27", "ccm2"), ("DOLZ26", "dol"),
-             ("DOLF27", None), ("SJCF27", "sjc"), ("CCMF27C070", None), ("PETR4", None)]
+             ("DOLF27", None), ("SJCF27", "sjc"), ("CCMF27C070", None), ("PETR4", None),
+             ("ICFH27", None), ("ICFZ26", "icf"), ("CNLF27", "cnl"), ("CNLH27", None)]
     rel = ""
     for ticker, nome in itens:
         v = _ultimo(nome) if nome else 1.0
@@ -173,6 +176,18 @@ def paginas_cotacoes() -> dict[str, str]:
         "<table><thead><tr><th>Praça</th><th>Preço (R$)</th><th>Variação</th></tr></thead><tbody>"
         f"<tr><td>Manhuaçu/MG</td><td>{fmt(_ultimo('manhuacu'), 2)}</td><td>+0,10%</td></tr>"
         "<tr><td>Varginha/MG</td><td>1.660,00</td><td>+0,60%</td></tr></tbody></table>")
+    du = dias_uteis(4)
+    grupos = ""
+    for d in du[::-1]:
+        grupos += (f'<tr><td colspan="7"><b>{d:%d/%m/%Y}</b></td></tr>'
+                   f'<tr><td><i class="fav"></i></td><td>Barreiras (BA)</td><td>{fmt(_ultimo("caroco_ba") if d == HOJE else 966.67, 2)}</td>'
+                   f'<td>▲ 0,7%</td><td>{d:%d/%m/%y}</td><td>Diário</td><td><a href="#">Histórico</a></td></tr>'
+                   f'<tr><td><i class="fav"></i></td><td>Cuiabá (MT)</td><td>{fmt(_ultimo("caroco_mt"), 2)}</td>'
+                   f'<td>estável</td><td>{du[1]:%d/%m/%y}</td><td>Diário</td><td><a href="#">Histórico</a></td></tr>')
+    p["https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton"] = pagina(
+        "<h1>Preço de Algodão em Caroço 1ton</h1><p>Atualizado até as 18h30 (horário de Brasília)</p>",
+        "<table><thead><tr><th>Favorito</th><th>Praça</th><th>Preço (R$)</th><th>Variação</th><th>Atualização</th>"
+        f"<th>Freq.</th><th>Ver</th></tr></thead><tbody>{grupos}</tbody></table>")
     p["https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes"] = pagina(
         "<h1>Cotações — Uberlândia (MG)</h1>",
         "<table><thead><tr><th>Produto</th><th>Local</th><th>Preço (R$)</th><th>Última Atualização</th><th>Freq.</th>"
@@ -308,6 +323,12 @@ class WebFalsa:
             if url.endswith(f"PR{HOJE:%y%m%d}.zip"):
                 return Resposta(url, 200, self.boletim_b3, headers={"Content-Type": "application/zip"})
             return Resposta(url, 200, b"<html>arquivo indisponivel</html>")
+        if "fred.stlouisfed.org/graph/fredgraph.csv" in url:
+            cod = url.split("id=")[-1]
+            nome = "wti" if cod == "DCOILWTICO" else "brent"
+            linhas = [f"observation_date,{cod}"] + [f"{d:%Y-%m-%d},{'.' if d == FERIADO_FRED else f'{v:.2f}'}"
+                                                    for d, v in sorted(serie(nome).items()) if d <= HOJE - timedelta(days=2)]
+            return Resposta(url, 200, ("\n".join(linhas) + "\n").encode(), encoding="utf-8")
         if "api.eia.gov" in url:
             nome = "wti" if "RWTC" in url else "brent"
             dados = [{"period": f"{d:%Y-%m-%d}", "value": round(v, 2)} for d, v in sorted(serie(nome).items())[-30:]

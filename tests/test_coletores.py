@@ -248,3 +248,58 @@ def test_tabela_sem_texto_no_cabecalho_usa_a_posicao():
     assert tabela_html.extrair(html, sem_conferir, IND, HOJE, estilo="br")[0].incerta   # posição sem conferir = incerta
     with pytest.raises(Exception, match="a tabela mudou"):
         tabela_html.extrair(html, {**fonte, "colunas_esperadas": 8}, IND, HOJE)
+
+
+def test_cafe_da_b3_arabica_e_conilon(cfg):
+    from web_falsa import _ultimo, boletim_b3_zip
+
+    class Cli:
+        def obter(self, url, **kw):
+            return Resposta(url, 200, boletim_b3_zip() if url.endswith("PR261117.zip") else b"<html></html>")
+
+    for ind_id, base, ticker in (("cafe_arabica_b3", "icf", "ICFZ26"), ("cafe_conilon_b3", "cnl", "CNLF27")):
+        obs, rel = coletar_indicador(_fontes_reais(ind_id), cfg, Cli(), HOJE)
+        assert rel[0]["status"] == "ok", rel
+        assert obs[0].valor == pytest.approx(_ultimo(base), abs=1e-3) and ticker in obs[0].detalhe
+
+
+def test_fred_csv_sem_chave_e_sem_feriado(cfg, web):
+    from web_falsa import FERIADO_FRED, serie
+    for ind_id, nome in (("petroleo_wti", "wti"), ("petroleo_brent", "brent")):
+        ind = _fontes_reais(ind_id)
+        assert ind["fontes"][0]["tipo"] == "csv_api"
+        obs = outros.coletar_csv(ind["fontes"][0], ind, Cliente(cfg.geral["coleta"]), HOJE)
+        s = {d: v for d, v in serie(nome).items() if d <= HOJE - timedelta(days=2)}
+        assert obs[-1].data == max(s) and obs[-1].valor == pytest.approx(round(s[max(s)], 2))
+        assert FERIADO_FRED not in [o.data for o in obs]               # "." = sem dado, não vira zero
+        assert obs[-1].url == f"https://fred.stlouisfed.org/series/{ind['fontes'][0]['url'].split('id=')[1]}"
+
+
+def test_agrolink_caroco_linha_mais_recente_e_data_da_praca(cfg):
+    from web_falsa import _ultimo, dias_uteis
+    html = paginas_cotacoes()["https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton"]
+    ba = coletar_indicador(_fontes_reais("caroco_algodao_ba"), cfg, ClienteFixo(html), HOJE)[0][0]
+    mt = coletar_indicador(_fontes_reais("caroco_algodao_mt"), cfg, ClienteFixo(html), HOJE)[0][0]
+    assert ba.valor == pytest.approx(round(_ultimo("caroco_ba"), 2)) and ba.data == HOJE and not ba.incerta
+    assert mt.valor == pytest.approx(round(_ultimo("caroco_mt"), 2)) and not mt.incerta
+    assert mt.data == dias_uteis(4)[1]                  # vale a data em que a praça foi atualizada, não a do grupo
+    assert "Barreiras" in ba.detalhe and "Preço" in ba.detalhe
+
+
+def test_data_sem_ano_na_linha():
+    html = ("<h1>Café</h1><table><thead><tr><th>Praça</th><th>Preço (R$)</th><th>Data</th></tr></thead><tbody>"
+            "<tr><td>Manhuaçu/MG</td><td>1.586,00</td><td>13/11</td></tr></tbody></table>")
+    o = tabela_html.extrair(html, {"linha_contem": ["manhua"], "coluna_valor": ["preco"]}, IND, HOJE, estilo="br")[0]
+    assert o.data == date(2026, 11, 13) and not o.incerta
+    o = tabela_html.extrair(html.replace("13/11", "20/12"), {"linha_contem": ["manhua"], "coluna_valor": ["preco"]}, IND, HOJE, estilo="br")[0]
+    assert o.data == date(2025, 12, 20)                  # nunca no futuro: é do ano anterior
+
+
+def test_indicador_desligado_sai_do_agente(raiz_tmp):
+    from agente.config import carregar_config
+    cfg = carregar_config(raiz_tmp)
+    ids = [i["id"] for i in cfg.indicadores]
+    assert "cafe_arabica_ice" not in ids and "cafe_arabica_ice" in cfg.indicadores_inativos
+    assert "cafe_arabica_b3" in ids and cfg.problemas() == []
+    cfg.blocos_cfg["painel_semanal"].append("cafe_arabica_ice")   # citar um desligado não é erro de configuração
+    assert cfg.problemas() == []

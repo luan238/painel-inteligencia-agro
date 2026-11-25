@@ -16,6 +16,7 @@ COLETORES = {
     "tabela_html": tabela_html.coletar,
     "regex_pagina": outros.coletar_regex,
     "json_api": outros.coletar_json,
+    "csv_api": outros.coletar_csv,
     "yahoo": outros.coletar_yahoo,
 }
 

@@ -1,0 +1,44 @@
+name: Plantão (agenda do agente)
+
+# O agendador do GitHub ("schedule") atrasa execuções em horas e descarta muitas delas.
+# Por isso a agenda do agente fica com o PLANTÃO: ele é acordado de hora em hora (basta UM
+# desses chamados funcionar), fica ativo durante o dia e dispara o monitor de cotações e os
+# boletins completos na hora certa — horários em config/configuracoes.yaml → agenda.
+# Um job do GitHub dura no máximo 6 h: antes disso o plantão passa o turno para uma nova
+# execução. Se já houver um plantão ativo, o chamado encerra em segundos (é normal).
+on:
+  schedule:
+    - cron: "13 9-23 * * 1-5"   # de hora em hora, das 06:13 às 20:13 (Brasília), seg–sex
+    - cron: "13 18-21 * * 0"    # domingo, das 15:13 às 18:13 (boletim da semana às 17:11)
+  workflow_dispatch:
+    inputs:
+      sucessor:
+        description: "Uso interno: passagem de plantão"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  actions: write      # para disparar o monitor, o relatório e o próximo plantão
+  contents: read
+
+jobs:
+  plantao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    env:
+      TZ: America/Sao_Paulo
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install PyYAML
+
+      - name: Plantão
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m agente.plantao ${{ inputs.sucessor && '--sucessor' || '' }}
