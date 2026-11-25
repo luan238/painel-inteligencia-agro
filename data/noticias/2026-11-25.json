@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-25T10:48:44.776934-03:00",
+ "gerado_em": "2026-11-25T11:14:15.860118-03:00",
  "status_fontes": [
   {
    "nome": "Farmnews",
@@ -40,7 +40,7 @@
    "modo": "rss",
    "feed": "https://globorural.globo.com/rss/globorural",
    "itens_lidos": 30,
-   "itens_na_janela": 26,
+   "itens_na_janela": 29,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -79,6 +79,17 @@
    "mensagem": "página e feed inacessíveis"
   },
   {
+   "nome": "Ministério da Agricultura (MAPA)",
+   "regiao": "Brasil",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas))"
+  },
+  {
    "nome": "Bolsa de Cereales de Buenos Aires",
    "regiao": "Argentina",
    "modo": "",
@@ -87,7 +98,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.bolsadecereales.com/)"
   },
   {
    "nome": "BCR – Bolsa de Comercio de Rosario",
@@ -123,6 +134,39 @@
    "mensagem": ""
   },
   {
+   "nome": "Bichos de Campo",
+   "regiao": "Argentina",
+   "modo": "rss",
+   "feed": "https://bichosdecampo.com/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "farmdoc daily (Univ. de Illinois)",
+   "regiao": "Internacional",
+   "modo": "rss",
+   "feed": "https://farmdocdaily.illinois.edu/feed",
+   "itens_lidos": 10,
+   "itens_na_janela": 1,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Brownfield Ag News",
+   "regiao": "Internacional",
+   "modo": "rss",
+   "feed": "https://www.brownfieldagnews.com/feed/",
+   "itens_lidos": 20,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
    "nome": "Pro Farmer",
    "regiao": "Internacional",
    "modo": "pagina",
@@ -145,61 +189,6 @@
    "mensagem": "página e feed inacessíveis"
   },
   {
-   "nome": "Reuters Commodities",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/markets/commodities/"
-  },
-  {
-   "nome": "Bloomberg Agriculture",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis"
-  },
-  {
-   "nome": "USDA WASDE",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.usda.gov não permite ler https://www.usda.gov/oce/commodity/wasde"
-  },
-  {
-   "nome": "USDA FAS",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.fas.usda.gov não permite ler https://www.fas.usda.gov/"
-  },
-  {
-   "nome": "Grain Central",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.graincentral.com não permite ler https://www.graincentral.com/"
-  },
-  {
    "nome": "Successful Farming",
    "regiao": "Internacional",
    "modo": "",
@@ -208,7 +197,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.agriculture.com/)"
   },
   {
    "nome": "AgWeb",
@@ -219,7 +208,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.agweb.com/)"
   },
   {
    "nome": "World Grain",
@@ -227,7 +216,7 @@
    "modo": "pagina",
    "feed": "",
    "itens_lidos": 10,
-   "itens_na_janela": 7,
+   "itens_na_janela": 8,
    "sem_data": 2,
    "status": "ok",
    "mensagem": ""
@@ -252,7 +241,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (www.cnzsmpw.com fora do alcance nesta execução (falhas de conexão repetidas))"
   },
   {
    "nome": "SunSirs",
@@ -264,17 +253,6 @@
    "sem_data": 0,
    "status": "sem_itens",
    "mensagem": "nenhuma matéria reconhecida na página"
-  },
-  {
-   "nome": "Reuters China Agri",
-   "regiao": "China",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/world/china/"
   }
  ],
  "noticias": [
@@ -289,7 +267,7 @@
    "blocos": [
     "complexo_cafe"
    ],
-   "pontuacao": 7.74,
+   "pontuacao": 7.71,
    "id": "N30"
   },
   {
@@ -303,7 +281,7 @@
    "blocos": [
     "complexo_cafe"
    ],
-   "pontuacao": 6.6,
+   "pontuacao": 6.56,
    "id": "N31"
   },
   {
@@ -375,6 +353,20 @@
    ],
    "pontuacao": 5.8,
    "id": "N32"
+  },
+  {
+   "titulo": "O etanol de milho cresceu. Agora a indústria precisa extrair mais eficiência do que já construiu",
+   "url": "https://agfeed.com.br/agro-brands/apresentado-por-novonesis/o-etanol-de-milho-cresceu-agora-a-industria-precisa-extrair-mais-eficiencia-do-que-ja-construiu",
+   "fonte": "AgFeed",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-25T11:06-03:00",
+   "resumo": "A indústria brasileira de etanol de milho é jovem, mas já responde por 28% da produção nacional, com 11,5 bilhões de litros. Em 2028, segundo projeções do Bradesco BBI apresentadas no TECO — encontro da cadeia promovido pela Novonesis em São Paulo, no mês de outubro —, essa fatia deve chegar a 38%, ou 16,5 […] O post O etanol de milho cresceu. Agora a indústria precisa extrair mais eficiência do que já construiu apareceu primeiro em AgFeed .",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 6.79,
+   "id": "N21"
   },
   {
    "titulo": "A nova missão (agora pública) de Paulo Herrmann: tirar o agro gaúcho da crise e recuperar seu protagonismo",
@@ -487,6 +479,32 @@
    "id": ""
   },
   {
+   "titulo": "El Niño e exportações pressionam preço do arroz",
+   "url": "https://www.canalrural.com.br/agricultura/arroz/el-nino-e-exportacoes-pressionam-preco-do-arroz/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-25T11:05-03:00",
+   "resumo": "Eventos climáticos extremos e demanda externa aquecida têm afetado a cotação do cereal no Brasil, aponta Cepea O post El Niño e exportações pressionam preço do arroz apareceu primeiro em Canal Rural .",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Dólar perto de R$ 6 eleva custo da indústria de insumos agrícolas",
+   "url": "https://www.canalrural.com.br/economia/dolar-perto-de-r-6-eleva-custo-da-industria-de-insumos-agricolas/",
+   "fonte": "Canal Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-25T10:57-03:00",
+   "resumo": "CropLife Brasil relata pressão sobre matérias-primas importadas, margens das empresas e relação comercial com produtores rurais. O post Dólar perto de R$ 6 eleva custo da indústria de insumos agrícolas apareceu primeiro em Canal Rural .",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 7.58,
+   "id": "N2"
+  },
+  {
    "titulo": "Colheita de grãos na Ucrânia atinge 85% da área semeada",
    "url": "https://www.canalrural.com.br/agricultura/colheita-de-graos-na-ucrania-atinge-85-da-area-semeada/",
    "fonte": "Canal Rural",
@@ -521,7 +539,7 @@
    "blocos": [
     "complexo_cafe"
    ],
-   "pontuacao": 8.55,
+   "pontuacao": 8.52,
    "id": "N28"
   },
   {
@@ -572,8 +590,8 @@
     "complexo_cafe",
     "cambio_e_energia"
    ],
-   "pontuacao": 13.46,
-   "id": "N2"
+   "pontuacao": 13.43,
+   "id": "N3"
   },
   {
    "titulo": "Ajuste fiscal pode taxar LCI e LCA e encarecer o crédito rural",
@@ -586,31 +604,41 @@
    "blocos": [
     "cambio_e_energia"
    ],
-   "pontuacao": 5.45,
+   "pontuacao": 5.42,
    "id": "N9"
   },
   {
-   "titulo": "Dólar recua após aprovação do ajuste fiscal",
-   "url": "https://www.canalrural.com.br/economia/dolar-recua-apos-aprovacao-do-ajuste-fiscal/",
-   "fonte": "Canal Rural",
+   "titulo": "Demanda externa sustenta preço do arroz com menor rendimento no RS",
+   "url": "https://globorural.globo.com/agricultura/arroz/noticia/2026/11/demanda-externa-sustenta-preco-do-arroz-com-menor-rendimento-no-rs.ghtml",
+   "fonte": "Globo Rural",
    "regiao": "Brasil",
    "idioma": "pt",
-   "publicado_em": "2026-11-25T08:06-03:00",
-   "resumo": "Parceria do PicPay com o Canal Rural, o podcast Diário Econômico traz tudo o que você precisa saber sobre economia para começar bem o dia O post Dólar recua após aprovação do ajuste fiscal apareceu primeiro em Canal Rural .",
-   "blocos": [
-    "cambio_e_energia"
-   ],
-   "pontuacao": 7.37,
-   "id": "N3"
+   "publicado_em": "2026-11-25T13:10-03:00",
+   "resumo": "Exportações aquecidas seguem sustentando parte dos preços do arroz em casca no Rio Grande do Sul, sobretudo nas regiões da Zona Sul e da Fronteira Oeste, destaca o Centro de Estudos Avançados em Economia Aplicada (Cepea). Diante da disponibilidade reduzida de arroz com rendimento inferior a 57%, voltado ao mercado internacional, a maior demanda externa tem levado à comercialização de lotes com até 60% de grãos inteiros, movimento pouco comum no mercado. De acordo com pesquisadores do Cepea, nas demais microrregiões gaúchas, a maior oferta por parte de produtores que precisam fazer caixa para cobrir os custos da semeadura da safra 2026/27 pressionou as cotações. Do lado comprador, algumas indústrias permaneceram fora do mercado, enquanto outras adquiriram apenas os volumes necessários, diante das dificuldades nas vendas do arroz beneficiado. Em relação ao arroz voltado ao mercado interno ",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
   },
   {
-   "titulo": "Máximas devem chegar a 37 °C em Rondônia na sexta-feira (27)",
-   "url": "https://www.canalrural.com.br/previsao-do-tempo/ro/maximas-devem-chegar-a-37-c-em-rondonia-na-sexta-feira-27/",
-   "fonte": "Canal Rural",
+   "titulo": "Deere registra queda de 1% no lucro do quarto trimestre fiscal",
+   "url": "https://globorural.globo.com/maquinas-agricolas/noticia/2026/11/deere-registra-queda-de-1percent-no-lucro-do-quarto-trimestre-fiscal.ghtml",
+   "fonte": "Globo Rural",
    "regiao": "Brasil",
    "idioma": "pt",
-   "publicado_em": "2026-11-25T08:05-03:00",
-   "resumo": "Cujubim, Machadinho d’Oeste e Jaru têm previsão de máximas acima da normal climatológica por três dias seguidos. O post Máximas devem chegar a 37 °C em Rondônia na sexta-feira (27) apareceu primeiro em Canal Rural .",
+   "publicado_em": "2026-11-25T13:06-03:00",
+   "resumo": "A fabricante de máquinas agrícolas Deere & Company registrou lucro líquido de US$ 1,051 bilhão, ou US$ 3,89 por ação, no quarto trimestre fiscal, encerrado em 1º de novembro. O resultado representa uma queda de 1% em relação ao mesmo período do ano passado, quando a companhia lucrou US$ 1,065 bilhão, ou US$ 3,93 por ação. As vendas líquidas e receitas globais recuaram 2% no trimestre, para US$ 12,115 bilhões. Apesar disso, no acumulado do ano fiscal, cresceram 4%, para US$ 47,704 bilhões. As vendas líquidas somaram US$ 10,514 bilhões no trimestre e US$ 41,292 bilhões no ano, ante US$ 10,579 bilhões e US$ 38,917 bilhões, respectivamente, no ano fiscal de 2025. No segmento de Produção e Agricultura de Precisão, que envolve a comercialização de máquinas de grande porte, como tratores e colheitadeiras, as vendas líquidas diminuíram 15% no trimestre, para US$ 4,018 bilhões, ante US$ 4,740 bil",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Vittia anuncia conclusão de 6º programa de recompra de ações e criação de novo programa",
+   "url": "https://globorural.globo.com/negocios/noticia/2026/11/vittia-anuncia-concluso-de-6-programa-de-recompra-de-aes-e-criao-de-novo-programa.ghtml",
+   "fonte": "Globo Rural",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-25T13:01-03:00",
+   "resumo": "A Vittia, empresa de defensivos biológicos, inoculantes e nutrição especial de plantas com sede em São Joaquim da Barra (SP), informou em comunicado que concluiu seu 6º programa de recompra de ações, pelo qual adquiriu 4,5 milhões ações ordinárias, ou 2,9% do capital social da companhia. As ações recompradas serão canceladas, conforme aprovado pelo Conselho de Administração da empresa, de acordo com o comunicado. Com o cancelamento de ações, o capital social da Vittia, de R$ 618.015.707,75, passa a ser dividido em 153.089.984 ações ordinárias, todas nominativas, escriturais e sem valor nominal. A Vittia também anunciou a criação do 7º Programa de Recompra de ações ordinárias da empresa, para permanência em tesouraria, cancelamento ou posterior alienação das ações no mercado. O objetivo, segundo a empresa, é “maximizar a geração de valor para os acionistas da companhia por meio da transaç",
    "blocos": [],
    "pontuacao": 0.0,
    "id": ""
@@ -657,7 +685,7 @@
     "complexo_cafe",
     "cambio_e_energia"
    ],
-   "pontuacao": 7.72,
+   "pontuacao": 7.68,
    "id": "N7"
   },
   {
@@ -672,8 +700,8 @@
     "cambio_e_energia",
     "complexo_soja"
    ],
-   "pontuacao": 4.68,
-   "id": "N18"
+   "pontuacao": 4.64,
+   "id": "N19"
   },
   {
    "titulo": "Mesmo com El Niño forte, plantio de soja está mais rápido na safra 2026/27",
@@ -686,8 +714,8 @@
    "blocos": [
     "complexo_soja"
    ],
-   "pontuacao": 4.57,
-   "id": "N19"
+   "pontuacao": 0.0,
+   "id": ""
   },
   {
    "titulo": "Com juros altos, cresce número de falências entre empresas do agro",
@@ -751,8 +779,8 @@
     "complexo_soja",
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 3.62,
-   "id": "N27"
+   "pontuacao": 0.0,
+   "id": ""
   },
   {
    "titulo": "Hidrolabor Maringá renova Credenciamento MAPA e permanece entre seleto grupo de laboratórios habilitados no Brasil",
@@ -803,7 +831,7 @@
    "blocos": [
     "complexo_soja"
    ],
-   "pontuacao": 5.54,
+   "pontuacao": 5.5,
    "id": "N13"
   },
   {
@@ -829,7 +857,7 @@
    "blocos": [
     "complexo_cafe"
    ],
-   "pontuacao": 5.51,
+   "pontuacao": 5.47,
    "id": "N34"
   },
   {
@@ -855,7 +883,7 @@
    "blocos": [
     "complexo_cafe"
    ],
-   "pontuacao": 8.29,
+   "pontuacao": 8.26,
    "id": "N29"
   },
   {
@@ -883,8 +911,8 @@
     "cambio_e_energia",
     "complexo_soja"
    ],
-   "pontuacao": 4.16,
-   "id": "N24"
+   "pontuacao": 4.12,
+   "id": "N26"
   },
   {
    "titulo": "Faesp Show reúne 15 mil pessoas e movimenta R$ 700 mil",
@@ -968,6 +996,18 @@
    "id": ""
   },
   {
+   "titulo": "OAB SP anuncia 1ª Conferência Nacional de Direito e Agronegócio",
+   "url": "https://www.agrolink.com.br/noticias/oab-sp-anuncia-1--conferencia-nacional-de-direito-e-agronegocio_521483.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-25T10:51-03:00",
+   "resumo": "A advocacia paulista e brasileira já pode reservar as datas de 2 e 3 de setembro de 2027 para a 1ª Conferência Nacional de Direito e Agronegócio. Promovido pela OAB SP (Ordem dos Advogados do Brasil Seção São Paulo), o encontro será realizado em Ribeirão Preto, cidade que sediou as três edições da Conferência Estadual de Direito e Agronegócio, iniciativa pioneira da entidade paulista.",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
    "titulo": "Chuvas favorecem lavouras no Vale do Araguaia, mas custos de produção preocupam produtores",
    "url": "https://www.agrolink.com.br/noticias/chuvas-favorecem-lavouras-no-vale-do-araguaia--mas-custos-de-producao-preocupam-produtores_521481.html",
    "fonte": "Agrolink",
@@ -983,6 +1023,18 @@
    "id": ""
   },
   {
+   "titulo": "Pesquisa com abelhas rainhas promove a qualidade do mel catarinense",
+   "url": "https://www.agrolink.com.br/noticias/pesquisa-com-abelhas-rainhas-promove-a-qualidade-do-mel-catarinense_521480.html",
+   "fonte": "Agrolink",
+   "regiao": "Brasil",
+   "idioma": "pt",
+   "publicado_em": "2026-11-25T09:56-03:00",
+   "resumo": "Programa da Epagri seleciona rainhas de abelhas para elevar a produtividade e a qualidade do mel catarinense; a tecnologia pode aumentar a produção em cerca de 20% e gerou benefícios econômicos estimados em R$ 1,8 milhão em 2025",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
    "titulo": "Semeadura da soja é concluída em quatro regiões de Mato Grosso, aponta Imea",
    "url": "https://www.agrolink.com.br/noticias/semeadura-da-soja-e-concluida-em-quatro-regioes-de-mato-grosso--aponta-imea_521478.html",
    "fonte": "Agrolink",
@@ -993,7 +1045,7 @@
    "blocos": [
     "complexo_soja"
    ],
-   "pontuacao": 5.53,
+   "pontuacao": 5.49,
    "id": "N14"
   },
   {
@@ -1031,7 +1083,7 @@
    "blocos": [
     "complexo_soja"
    ],
-   "pontuacao": 5.49,
+   "pontuacao": 5.46,
    "id": "N15"
   },
   {
@@ -1129,7 +1181,7 @@
    "blocos": [
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 7.34,
+   "pontuacao": 7.31,
    "id": "N20"
   },
   {
@@ -1144,7 +1196,7 @@
     "cambio_e_energia",
     "complexo_soja"
    ],
-   "pontuacao": 8.31,
+   "pontuacao": 8.28,
    "id": "N1"
   },
   {
@@ -1158,7 +1210,7 @@
    "blocos": [
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 5.28,
+   "pontuacao": 5.25,
    "id": "N22"
   },
   {
@@ -1184,7 +1236,7 @@
    "blocos": [
     "complexo_soja"
    ],
-   "pontuacao": 4.95,
+   "pontuacao": 4.91,
    "id": "N17"
   },
   {
@@ -1296,7 +1348,7 @@
    "blocos": [
     "cambio_e_energia"
    ],
-   "pontuacao": 6.14,
+   "pontuacao": 6.1,
    "id": "N8"
   },
   {
@@ -1324,32 +1376,16 @@
    "id": ""
   },
   {
-   "titulo": "Forseed amplia portfólio de milho safrinha e avança com superprecoces",
-   "url": "https://www.agrolink.com.br/noticias/forseed-amplia-portfolio-de-milho-safrinha-e-avanca-com-superprecoces_521449.html",
-   "fonte": "Agrolink",
+   "titulo": "PIB dos EUA cresce 4,3% no terceiro trimestre, acima da estimativa inicial",
+   "url": "https://www.moneytimes.com.br/pib-dos-eua-cresce-43-no-terceiro-trimestre-acima-da-estimativa-inicial/",
+   "fonte": "Money Times Agro",
    "regiao": "Brasil",
    "idioma": "pt",
-   "publicado_em": "2026-11-24T16:37-03:00",
-   "resumo": "Escolher o híbrido da safrinha é decidir como enfrentar três riscos ao mesmo tempo: a cigarrinha-do-milho e o complexo de enfezamentos, a falta de água no fim do ciclo e a geada. É a partir dessa leitura que a Forseed, marca de sementes da LongPing High-Tech, apresenta cinco híbridos para a safrinha 2027 e anuncia que três materiais superprecoces, em fase avançada de desenvolvimento, podem chegar ao mercado em 2028.",
-   "blocos": [
-    "complexo_milho_e_ddgs"
-   ],
-   "pontuacao": 6.08,
-   "id": "N21"
-  },
-  {
-   "titulo": "Preço do milho não cobre custo operacional em Mato Grosso",
-   "url": "https://www.agrolink.com.br/noticias/preco-do-milho-nao-cobre-custo-operacional-em-mato-grosso_521448.html",
-   "fonte": "Agrolink",
-   "regiao": "Brasil",
-   "idioma": "pt",
-   "publicado_em": "2026-11-24T16:28-03:00",
-   "resumo": "Os produtores de milho de Mato Grosso enfrentam um cenário de margens pressionadas para a safra 2026/27. A combinação entre o aumento dos custos de produção e os preços praticados no mercado estadual dificulta a cobertura das despesas operacionais, mesmo diante da recente valorização das cotações do cereal.",
-   "blocos": [
-    "complexo_milho_e_ddgs"
-   ],
-   "pontuacao": 4.07,
-   "id": "N25"
+   "publicado_em": "2026-11-25T11:13-03:00",
+   "resumo": "O Produto Interno Bruto (PIB) dos Estados Unidos cresceu a uma taxa anualizada de 4,3% no terceiro trimestre de 2026, segundo a segunda estimativa divulgada nesta quarta-feira (25) pelo Departamento de Análise Econômica (BEA, na sigla em inglês). O resultado representa uma revisão para cima de 0,9 ponto percentual em relação à leitura preliminar, que [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
   },
   {
    "titulo": "PCE: Inflação preferida do Fed acelera e acumula alta de 3,8% no ano",
@@ -1362,7 +1398,7 @@
    "blocos": [
     "cambio_e_energia"
    ],
-   "pontuacao": 6.8,
+   "pontuacao": 6.76,
    "id": "N6"
   },
   {
@@ -1388,7 +1424,7 @@
    "blocos": [
     "cambio_e_energia"
    ],
-   "pontuacao": 4.78,
+   "pontuacao": 4.74,
    "id": "N10"
   },
   {
@@ -1462,18 +1498,6 @@
    "blocos": [
     "cambio_e_energia"
    ],
-   "pontuacao": 0.0,
-   "id": ""
-  },
-  {
-   "titulo": "Governo amplia previsão de déficit primário para 2026",
-   "url": "https://www.moneytimes.com.br/governo-amplia-previsao-de-deficit-primario-para-2026-lmrs/",
-   "fonte": "Money Times Agro",
-   "regiao": "Brasil",
-   "idioma": "pt",
-   "publicado_em": "2026-11-25T08:39-03:00",
-   "resumo": "O governo do presidente Luiz Inácio Lula da Silva ampliou na terça-feira (24) sua projeção para o déficit primário deste ano para R$ 89,3 bilhões, ante R$ 80,9 bilhões projetados em setembro. Em relatório bimestral de avaliação fiscal, os ministérios da Fazenda e do Planejamento informaram que a receita líquida passou a ser projetada em [&#8230;]",
-   "blocos": [],
    "pontuacao": 0.0,
    "id": ""
   },
@@ -1598,6 +1622,178 @@
    "id": ""
   },
   {
+   "titulo": "Biotecnología, genética, adaptación y eficiencia: Diego Grané explica la receta que está modificando los rodeos de cría",
+   "url": "https://bichosdecampo.com/biotecnologia-genetica-adaptacion-y-eficiencia-diego-grane-explica-la-receta-que-esta-modificando-los-rodeos-de-cria/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T10:55-03:00",
+   "resumo": "La ganadería de cría atraviesa un momento que combina buenos valores para la hacienda, mayores incentivos para invertir y una oportunidad para mejorar la productividad de los rodeos. Pero para aprovechar ese escenario, el desafío pasa por dejar de mirar solamente el precio del ternero y concentrarse en la eficiencia, la genética, el manejo y [&#8230;]",
+   "blocos": [
+    "cambio_e_energia"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "El presidente del INTA, Nicolás Bronzovich, predica la cooperación público-privada para desarrollar nueva tecnología para el agro, pero su gestión mantiene cerca de 90 convenios de vinculación con empresas “cajoneados” sin ninguna explicación",
+   "url": "https://bichosdecampo.com/el-presidente-del-inta-nicolas-bronzovich-predica-que-hay-que-fomentar-la-cooperacipon-publicao-privada-en/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T10:22-03:00",
+   "resumo": "Las pocas veces que se le ha escuchado alguna idea concreta sobre el futuro del organismo que preside, y que ha sido sometido estos años de gobierno libertario a un intenso proceso de ajuste presupuestario y de personal, el presidente del Instituto Nacional de Tecnología Agropecuaria, Nicolás Bronzovich, dice que el &#8220;Nuevo INTA&#8221; que quiere [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "¿Los ciervos les comen el pasto a las vacas? Una investigación realizada en Entre Ríos puso números a esa competencia y encontró que no siempre es un problema",
+   "url": "https://bichosdecampo.com/los-ciervos-les-comen-el-pasto-a-las-vacas-una-investigacion-realizada-en-entre-rios-puso-numeros-a-esa-competencia-y-encontro-que-no-siempre-es-un-problema/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T10:13-03:00",
+   "resumo": "La expansión de las especies de ciervos nativos y exóticos en los sistemas ganaderos de Sudamérica incrementa una preocupación: la de la competencia con el ganado por el uso de pastizales naturales. ¿Pero hay verdaderos motivos para alertarse? Esa pregunta fue la que motivó un estudio realizado por investigadores entrerrianos, que se propuso ponerle números [&#8230;]",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Parece una avioneta, despega sin pista y puede relevar campos, medir cultivos y hasta escanear una mina: El desarrollo alemán que sobrevuela en el agro argentino",
+   "url": "https://bichosdecampo.com/parece-una-avioneta-despega-sin-pista-y-puede-relevar-campos-medir-cultivos-y-hasta-escanear-una-mina-el-desarrollo-aleman-que-sobrevuela-en-el-agro-argentino/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T09:28-03:00",
+   "resumo": "Si hay que describir un dron, probablemente la imagen más difundida sea la del vehículo de cuatro hélices que, sobre todo en el agro, ha ganado mucho terreno durante los últimos dos años. Puede monitorear, tomar imágenes, ayudar a elaborar complejos mapas, estudiar la topografía del suelo, pulverizar y hasta sembrar al voleo. Tanto su [&#8230;]",
+   "blocos": [
+    "complexo_cafe"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Un verano más acaudalado para San Juan: Gracias al “Súper Niño”, el río traerá casi cuatro veces más agua que la temporada pasada y aliviará la presión sobre el riego",
+   "url": "https://bichosdecampo.com/un-verano-con-mucha-mas-agua-para-san-juan-gracias-al-super-nino-el-rio-traera-casi-cuatro-veces-mas-agua-que-la-temporada-pasada-y-aliviara-la-presion-sobre-el-riego/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T08:54-03:00",
+   "resumo": "“El Niño” trajo un invierno con alta acumulación de nieve en la Cordillera, lo que promete un verano de elevado caudal en los ríos que se nutren del deshielo. Uno de ellos es el San Juan que, luego de varias temporadas de escasez, sólo en diciembre y enero se espera que vea pasar más agua [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Para el cooperativista Fabián Ruggeri, “la vitivinicultura es una pasión” que las políticas oficiales van apagando: “Hace 43 meses que cobramos lo mismo”, advierte",
+   "url": "https://bichosdecampo.com/para-el-cooperativista-fabian-ruggeri-la-vitivinicultura-es-una-pasion-que-las-politicas-oficiales-van-apagando-hace-43-meses-que-cobramos-lo-mismo-advierte/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T08:15-03:00",
+   "resumo": "Desde que tiene uso de razón, Fabián Ruggeri está ligado a la vitivinicultura. De chico acompañaba a su familia a trabajar en la finca y encontró allí una pasión que terminó convirtiéndose en su profesión y en buena parte de su vida. Hoy es ingeniero agrónomo, productor mendocino y dirigente cooperativo. Y mientras sigue vinculado [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Los Grobo vende Molino Cánepa y la planta de acopio Chivilcoy por 5,50 millones de dólares para saldar parte de la deuda concursal con los bancos",
+   "url": "https://bichosdecampo.com/los-grobo-vende-molino-canepa-y-la-planta-de-acopio-chivilcoy-por-550-millones-de-dolares-para-saldar-parte-de-la-deuda-concursal-con-los-bancos/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T01:42-03:00",
+   "resumo": "Finalmente, tal como había adelantado Bichos de Campo más de un año atrás, la concursada Los Grobo Agropecuaria procedió a vender la empresa molinera Cánepa Hermanos S.A.I.C.A. para poder saldar parte de la deuda concursal con entidades bancarias. Para que la operación pueda concretarse, se requiere autorización del juez concursal. El comprador es Molinos Fénix, [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Brasil, decime qué se siente: GDM inauguró una enorme planta en el vecino país donde desarrollará 5 cultivos para abastecer al mundo con genética argentina",
+   "url": "https://bichosdecampo.com/brasil-decime-que-se-siente-gdm-inauguro-una-enorme-planta-en-el-vecino-pais-donde-desarrollara-5-cultivos-para-abastecer-al-mundo-con-genetica-argentina/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-25T00:44-03:00",
+   "resumo": "La empresa argentina GDM acaba de inaugurar una ampliación de su estación de investigación ubicada en el norte de Brasil, más precisamente en Petrolina, estado de Pernambuco. Se trata de una inversión significativa, tanto por la dimensión de la estructura como por su importancia estratégica, que consolida la expansión internacional de la compañía oriunda de [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "La paranoía no siempre es buena consejera: ¿Cuál es el verdadero papel del empresario macrista David Lacroze dentro del Visec Carnes?",
+   "url": "https://bichosdecampo.com/la-paranoia-no-siempre-es-buena-consejera-cual-es-el-verdadero-papel-del-empresario-macrista-david-lacroze-dentro-del-visec-carnes/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-24T19:39-03:00",
+   "resumo": "Días atrás, en la reunión que en la Sociedad Rural de Santa Fe mantuvieron los sectores que cuestionan las políticas ambientales de la Unión Europea (UE) y el sistema Visec (armado para evitar interrupciones al comercio de carne y soja a ese mercado), el productor de Rojas y dirigente de las sociedades rurales del norte [&#8230;]",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Nuevo bioproducto creado por INTA: El popo y el pipi de los chanchos vuelve a la agricultura, pero enriquecido con microorganismos y pelletizado",
+   "url": "https://bichosdecampo.com/nuevo-bioproducto-creado-por-inta-el-popo-y-el-pipi-de-los-chanchos-vuelve-a-la-agricultura-pero-enriquecido-con-microorganismos-y-pelletizado/",
+   "fonte": "Bichos de Campo",
+   "regiao": "Argentina",
+   "idioma": "es",
+   "publicado_em": "2026-11-24T16:39-03:00",
+   "resumo": "Sobre el proceso del biogás ya se investigó mucho: en ambientes controlados, los excrementos animales almacenados generan gas metano, que puede ser utilizado para alimentar hornallas o calefactores o para generar electricidad. Hay muchos ejemplos en el país de cómo funciona este sistema, aunque uno de los puntos flacos de este proceso son los residuos [&#8230;]",
+   "blocos": [],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Consider ARC-IC for FSA Farms Planted Entirely to Corn",
+   "url": "https://farmdocdaily.illinois.edu/2026/11/consider-arc-ic-for-fsa-farms-planted-entirely-to-corn.html",
+   "fonte": "farmdoc daily (Univ. de Illinois)",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-24T12:31-03:00",
+   "resumo": "Agriculture Risk Coverage at the individual level (ARC-IC) deserves consideration for 2026 on Farm Service Agency (FSA) farms planted entirely to corn with relatively low yields. ARC-IC bases its revenue&#8230;",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 0.0,
+   "id": ""
+  },
+  {
+   "titulo": "Portions of Western U.S. see drought conditions removed",
+   "url": "https://www.profarmer.com/news/agriculture-news/portions-western-u-s-see-drought-conditions-removed",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T11:13-03:00",
+   "resumo": "Snowpack levels in the Northern Rockies still remain below-average however The November 24th drought monitor shows 64.2% of the U.S. is experiencing abnormal dryness or drought, down 0.7% from the previous week, with 40.1% in D1 level drought or higher, down 1.9%.Currently 27% (up 2%) of corn acres are in D1-D4 drought with 36% (up 2%) of soybean acres, and 51% (up 1%) of winter wheat acres also impacted. For livestock, 34% (down 1%) of the U.S.cattle herd is in D1-D4 drought conditions with 28% (up 1%) of dairy cattle also in drought. Drought this week was eased sharply in the Mountain west, as storm systems from the Pacific brought mixed precipitation in the form of rain and snow. Snowpack looks favorable in California and areas further west, though some below-normal levels are still present in the central and northern Rockies. Areas of south Texas and Florida also received rains that ",
+   "blocos": [
+    "complexo_milho_e_ddgs",
+    "complexo_soja",
+    "complexo_cafe"
+   ],
+   "pontuacao": 4.8,
+   "id": "N23"
+  },
+  {
+   "titulo": "Ahead of the Open | Soybeans reverse recent gains",
+   "url": "https://www.profarmer.com/news/ahead-open/ahead-open-soybeans-reverse-recent-gains",
+   "fonte": "Pro Farmer",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T11:04-03:00",
+   "resumo": "Markets saw a change of tune from the past couple days, with grains seeing modest strength overnight and soybeans leading weakness. Happy Thanksgiving from Pro Farmer! Because of Friday’s abbreviated trading session, we will publish two reports that day: First Thing Today at 8 a.m. CT and After the Bell after the early close. Our regular publishing schedule resumes Monday. GENERAL COMMENTS: Markets saw a change of tune from the past couple days, with grains seeing modest strength overnight and soybeans leading weakness. It appears light holiday trade will lead to sideways price action the rest of the week. Front-month crude oil futures are modestly higher this morning while the U.S. dollar index is around 160 points higher, rebounding from recent losses. USDA reported daily sales of 132,000 MT of soybeans for delivery to China during the 2026-27 marketing year. U.S. personal consumption ",
+   "blocos": [
+    "complexo_soja"
+   ],
+   "pontuacao": 4.79,
+   "id": "N18"
+  },
+  {
    "titulo": "El Niño Effect? Winter Wheat Conditions Reach an Eight-Year High",
    "url": "https://www.profarmer.com/news/agriculture-news/el-nino-effect-winter-wheat-conditions-reach-eight-year-high",
    "fonte": "Pro Farmer",
@@ -1608,8 +1804,8 @@
    "blocos": [
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 4.73,
-   "id": "N23"
+   "pontuacao": 4.69,
+   "id": "N24"
   },
   {
    "titulo": "First Thing Today | Grain markets see pre-holiday pullback overnight with key inflation reading ahead",
@@ -1624,7 +1820,7 @@
     "cambio_e_energia",
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 5.66,
+   "pontuacao": 5.63,
    "id": "N12"
   },
   {
@@ -1640,7 +1836,7 @@
     "cambio_e_energia",
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 5.33,
+   "pontuacao": 5.3,
    "id": "N16"
   },
   {
@@ -1673,23 +1869,6 @@
    "id": ""
   },
   {
-   "titulo": "First Thing Today | Grains mostly higher as U.S. dollar rally takes a breather",
-   "url": "https://www.profarmer.com/news/first-thing-today/first-thing-today-corn-soybeans-tick-higher-overnight-risk-appetite-revives",
-   "fonte": "Pro Farmer",
-   "regiao": "Internacional",
-   "idioma": "en",
-   "publicado_em": "2026-11-24T09:17-03:00",
-   "resumo": "Sinograin tenders for soyoil, Thanskgiving week snow targets Plains and Midwest, and live cattle hit a three-week high. Corn, soybeans tick higher… As of 6 a.m. CT, March corn was ¾ cent higher. January soybeans rose 5 cents, with January meal up $1.40 and January soybean oil 41 points lower. March soft red winter wheat was 1 cent lower, while March hard red winter wheat lost 1 ½ cents. Grains were buoyed on Monday as the stock market, led by the technology sector, stormed sharply higher in volatile trade following the reinstatement of Jensen Huang as CEO of chip giant Nvidia Corp. Huang’s return, which came partly at the behest of the Trump administration, remains highly controversial, with Democratic and Republican lawmakers vowing to press ahead with investigations into whether national security was compromised by Huang’s affair with an alleged Chinese spy as well as the company’s adh",
-   "blocos": [
-    "complexo_soja",
-    "cambio_e_energia",
-    "complexo_milho_e_ddgs",
-    "complexo_cafe"
-   ],
-   "pontuacao": 0.0,
-   "id": ""
-  },
-  {
    "titulo": "US harvest wraps up, but war and trade risks remain",
    "url": "https://www.world-grain.com/articles/23493-us-harvest-wraps-up-but-war-and-trade-risks-remain",
    "fonte": "World Grain",
@@ -1712,6 +1891,20 @@
    "blocos": [],
    "pontuacao": 0.0,
    "id": ""
+  },
+  {
+   "titulo": "Canada forecast to rank second in wheat exports",
+   "url": "https://www.world-grain.com/articles/23494-canada-forecast-to-rank-second-in-wheat-exports",
+   "fonte": "World Grain",
+   "regiao": "Internacional",
+   "idioma": "en",
+   "publicado_em": "2026-11-25T09:50-03:00",
+   "resumo": "Cereals Canada reports good quality across all wheat classes",
+   "blocos": [
+    "complexo_milho_e_ddgs"
+   ],
+   "pontuacao": 4.68,
+   "id": "N25"
   },
   {
    "titulo": "The Andersons steers toward low-CI ethanol",
@@ -1862,8 +2055,8 @@
    "blocos": [
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 3.94,
-   "id": "N26"
+   "pontuacao": 3.9,
+   "id": "N27"
   },
   {
    "titulo": "Vietnam's Ca Mau shrimp trade conference yields 14 preliminary deals and eight MoUs",
@@ -2107,7 +2300,7 @@
     "complexo_soja",
     "complexo_milho_e_ddgs"
    ],
-   "pontuacao": 5.84,
+   "pontuacao": 5.81,
    "id": "N11"
   },
   {
