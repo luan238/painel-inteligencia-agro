@@ -129,7 +129,27 @@ def test_espera_longa_tira_da_fila_e_pausas_seguidas_tambem(relogio, monkeypatch
     c = llm.ClienteLLM({**CFG, "max_pausas_por_provedor": 2}, env={"GROQ_API_KEY": "g", "NVIDIA_API_KEY": "n"})
     assert c.completar(MSG, compacto=True) == '{"ok": true}'
     assert c.provedores[0].esgotado and "liberação só em 7 min" in c.erros[0]
-    assert c.provedores[1].esgotado and c.provedores[1].pausas == 3     # 3 falhas seguidas (> 2) → fora da fila
+    nv = c.provedores[1]                                    # 3 falhas seguidas (> 2) → fora da fila por 5 min
+    assert not nv.esgotado and nv.volta_em > relogio["agora"] and "fora da fila por 5 min" in c.erros[-1]
+
+
+def test_instabilidade_troca_de_modelo_e_a_api_volta_depois(relogio, monkeypatch):
+    chamadas = roteiro(monkeypatch, {
+        "generativelanguage": [Resp(503, "model is overloaded"), ok('{"de": "gemini-2"}'),
+                               Resp(503, "x"), Resp(503, "x"), Resp(503, "x"), Resp(503, "x"), Resp(503, "x"),
+                               Resp(503, "x"), Resp(503, "x"), Resp(503, "x"), Resp(503, "x"), Resp(503, "x"),
+                               ok('{"de": "gemini-de-volta"}')],
+        "localhost": [ok('{"de": "local"}')],
+    })
+    cfg = {**CFG, "max_pausas_por_provedor": 2, "provedores": [
+        {"nome": "Google Gemini", "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+         "chave_env": "GEMINI_API_KEY", "modelos": ["gemini-flash-lite-latest", "gemini-flash-latest"]}]}
+    c = llm.ClienteLLM(cfg, env={"GEMINI_API_KEY": "g"})
+    assert c.completar(MSG, compacto=True) == '{"de": "gemini-2"}'          # 503 num modelo → o outro na hora
+    assert [m for _, m, _, _ in chamadas] == ["gemini-flash-lite-latest", "gemini-flash-latest"]
+    assert c.completar(MSG, compacto=True) == '{"de": "local"}'             # instável de vez → IA local…
+    relogio["agora"] += 301
+    assert c.completar(MSG, compacto=True) == '{"de": "gemini-de-volta"}'   # …e 5 min depois a API volta
 
 
 def test_modelo_inexistente_usa_o_proximo_da_lista(relogio, monkeypatch):

@@ -87,6 +87,7 @@ llm:
   tempo_limite_s: 180
   espera_maxima_s: 90           # pausa por minuto até isso: espera a API em vez de ir para a IA local (mais lenta)
   max_pausas_por_provedor: 4    # pausas seguidas sem nenhuma resposta antes de tirar a API da fila
+  volta_apos_instabilidade_s: 300   # API tirada por instabilidade (ex.: HTTP 503) volta a ser tentada depois disso
   prompt_enxuto:                # usado pela IA local e por APIs com limite de tokens apertado
     max_noticias_por_bloco: 6
     max_caracteres_resumo: 350

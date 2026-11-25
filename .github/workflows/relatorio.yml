@@ -29,7 +29,7 @@ concurrency:
 jobs:
   gerar:
     runs-on: ubuntu-latest
-    timeout-minutes: 90          # com as APIs gratuitas sai em poucos minutos; só a IA local leva de 20 a 40 min
+    timeout-minutes: 150         # com as APIs gratuitas sai em poucos minutos; só com a IA local leva de 30 a 70 min
     env:
       TZ: America/Sao_Paulo
       # Modelo open source da IA local (gratuita e sem limite). Para trocar, crie a variável

@@ -261,7 +261,7 @@ python -m agente executar            # gera o boletim (turno pelo horário)
 python -m agente executar --turno fechamento --sem-ia
 python -m agente monitorar           # só cotações; republica se houver cotação nova
 python -m agente adicionar-fonte --nome "Portal X" --url https://... --regiao Brasil
-python -m pytest -q                  # 83 testes (internet e IA simuladas)
+python -m pytest -q                  # 84 testes (internet e IA simuladas)
 python tests/gerar_exemplo.py        # gera exemplos/boletim_exemplo_FICTICIO.json
 ```
 

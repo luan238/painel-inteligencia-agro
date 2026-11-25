@@ -109,6 +109,7 @@ class Provedor:
     json_mode: bool = True
     esgotado: bool = False
     pausado_ate: float = 0.0
+    volta_em: float = 0.0                  # fora da fila por instabilidade: volta a ser tentada depois disso
     pausas: int = 0                        # pausas seguidas sem nenhuma resposta boa
     ultima: float = 0.0
     aguardar_preparo: bool = False         # IA local ainda sendo instalada em segundo plano
@@ -193,6 +194,7 @@ class ClienteLLM:
         self.pausa = float(cfg.get("pausa_entre_chamadas_s", 2))
         self.espera_max = float(cfg.get("espera_maxima_s", 90))
         self.max_pausas = int(cfg.get("max_pausas_por_provedor", 4))
+        self.volta_s = float(cfg.get("volta_apos_instabilidade_s", 300))
         self.provedores: list[Provedor] = _provedores_api(cfg, env)
         loc = cfg.get("local", {}) or {}
         self.espera_preparo = float(loc.get("espera_preparo_s", 900))
@@ -235,7 +237,7 @@ class ClienteLLM:
     # ----------------------------------------------------------- escolha
     def _escolher(self, esperar: bool) -> Provedor | None:
         agora = time.monotonic()
-        ativos = [p for p in self.provedores if not p.esgotado]
+        ativos = [p for p in self.provedores if not p.esgotado and p.volta_em <= agora]
         if not ativos:
             return None
         for p in ativos:                                  # 1ª API livre, na ordem de preferência
@@ -274,7 +276,11 @@ class ClienteLLM:
             except _Pausa as e:
                 p.pausas += 1
                 if p.pausas > self.max_pausas or e.segundos > self.espera_max:
-                    self._tirar(p, f"{e} — fora da fila nesta execução")
+                    if p.local:
+                        self._tirar(p, f"{e} — fora da fila nesta execução")
+                    else:                                 # instabilidade passa: a API volta a ser tentada
+                        p.volta_em, p.pausas, p.pausado_ate = time.monotonic() + self.volta_s, 0, 0.0
+                        self.erros.append(f"{p.descricao}: {e} — fora da fila por {self.volta_s // 60:.0f} min")
                 else:
                     p.pausado_ate = time.monotonic() + e.segundos
                 continue
@@ -315,6 +321,7 @@ class ClienteLLM:
             cabecalhos["Authorization"] = f"Bearer {p.api_key}"
         if "openrouter.ai" in p.base_url:
             cabecalhos["X-Title"] = "Agro Intel Agent"
+        trocas_por_instabilidade = 0
         for _ in range(8):                      # ajustes automáticos: modo JSON, parâmetros extras, modelo reserva
             payload = {"model": p.modelo, "messages": mensagens, "temperature": self.temperatura,
                        "max_tokens": p.max_tokens, **p.extras}
@@ -369,6 +376,10 @@ class ClienteLLM:
                     continue
                 raise ErroLLM(f"pedido recusado (HTTP {st}): {txt[:200]}")
             if st >= 500:
+                if trocas_por_instabilidade < len(p.modelos) - 1:   # ex.: Gemini 503 "modelo sobrecarregado"
+                    trocas_por_instabilidade += 1
+                    p.modelos.append(p.modelos.pop(0))      # tenta o próximo modelo da lista na hora
+                    continue
                 raise _Pausa(15, f"instabilidade no servidor (HTTP {st})")
             if st >= 400:
                 raise ErroLLM(f"HTTP {st}: {txt[:200]}")
