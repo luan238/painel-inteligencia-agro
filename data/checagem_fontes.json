@@ -13,9 +13,12 @@
   "Pro Farmer": "pagina",
   "World Grain": "pagina",
   "eFeedLink": "https://www.efeedlink.com/rss.xml",
-  "SunSirs": "pagina"
+  "SunSirs": "pagina",
+  "Bichos de Campo": "https://bichosdecampo.com/feed/",
+  "farmdoc daily (Univ. de Illinois)": "https://farmdocdaily.illinois.edu/feed",
+  "Brownfield Ag News": "https://www.brownfieldagnews.com/feed/"
  },
- "gerado_em": "2026-11-25T10:44-03:00",
+ "gerado_em": "2026-11-25T11:14-03:00",
  "indicadores": {
   "dolar_ptax": [
    {
@@ -148,7 +151,7 @@
     "prioridade": 1,
     "url": "https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes",
     "status": "ok",
-    "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha 'Soja em Grão Sc 60Kg' · coluna 'Preço (R$)' · data não informada na página"
+    "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha 'Soja em Grão Sc 60Kg' · coluna 'Preço (R$)'"
    }
   ],
   "soja_b3": [
@@ -168,7 +171,7 @@
     "prioridade": 1,
     "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0",
     "status": "ok",
-    "mensagem": "1 valor(es); último 570000.0 em 24/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica' · cabeçalhos=['Fecha Negociació', '"
+    "mensagem": "1 valor(es); último 570000.0 em 24/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '24/11/2026'"
    }
   ],
   "milho_cbot": [
@@ -268,7 +271,7 @@
     "prioridade": 1,
     "url": "https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton",
     "status": "ok",
-    "mensagem": "1 valor(es); último 973.33 em 25/11/2026 · tabela '' · linha 'Barreiras (BA)' · coluna 'Preço (R$)' · data não informada na página"
+    "mensagem": "1 valor(es); último 973.33 em 25/11/2026 · tabela '' · linha 'Barreiras (BA)' · coluna 'Preço (R$)'"
    }
   ],
   "cafe_arabica_b3": [
@@ -308,7 +311,7 @@
     "prioridade": 1,
     "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
     "status": "ok",
-    "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha 'Manhuaçu (MG)' · coluna '1ª coluna numérica' · data não informada na página · cabeçalhos=['Favorito', 'Praça', 'Preço (R$)', 'Varia"
+    "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha 'Manhuaçu (MG)' · coluna 'Preço (R$)'"
    }
   ],
   "boi_gordo_cepea": [
@@ -350,7 +353,7 @@
    "modo": "rss",
    "feed": "https://agfeed.com.br/feed/",
    "itens_lidos": 10,
-   "itens_na_janela": 9,
+   "itens_na_janela": 10,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -372,7 +375,7 @@
    "modo": "rss",
    "feed": "https://globorural.globo.com/rss/globorural",
    "itens_lidos": 30,
-   "itens_na_janela": 26,
+   "itens_na_janela": 29,
    "sem_data": 0,
    "status": "ok",
    "mensagem": ""
@@ -408,7 +411,18 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas))"
+  },
+  {
+   "nome": "Ministério da Agricultura (MAPA)",
+   "regiao": "Brasil",
+   "modo": "",
+   "feed": "",
+   "itens_lidos": 0,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "falha",
+   "mensagem": "página e feed inacessíveis (www.gov.br fora do alcance nesta execução (falhas de conexão repetidas))"
   },
   {
    "nome": "Bolsa de Cereales de Buenos Aires",
@@ -419,18 +433,18 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.bolsadecereales.com/)"
   },
   {
    "nome": "BCR – Bolsa de Comercio de Rosario",
    "regiao": "Argentina",
-   "modo": "",
+   "modo": "pagina",
    "feed": "",
    "itens_lidos": 0,
    "itens_na_janela": 0,
    "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "status": "sem_itens",
+   "mensagem": "nenhuma matéria reconhecida na página"
   },
   {
    "nome": "Infobae Campo",
@@ -455,12 +469,45 @@
    "mensagem": ""
   },
   {
+   "nome": "Bichos de Campo",
+   "regiao": "Argentina",
+   "modo": "rss",
+   "feed": "https://bichosdecampo.com/feed/",
+   "itens_lidos": 10,
+   "itens_na_janela": 10,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "farmdoc daily (Univ. de Illinois)",
+   "regiao": "Internacional",
+   "modo": "rss",
+   "feed": "https://farmdocdaily.illinois.edu/feed",
+   "itens_lidos": 10,
+   "itens_na_janela": 1,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
+   "nome": "Brownfield Ag News",
+   "regiao": "Internacional",
+   "modo": "rss",
+   "feed": "https://www.brownfieldagnews.com/feed/",
+   "itens_lidos": 20,
+   "itens_na_janela": 0,
+   "sem_data": 0,
+   "status": "ok",
+   "mensagem": ""
+  },
+  {
    "nome": "Pro Farmer",
    "regiao": "Internacional",
    "modo": "pagina",
    "feed": "",
    "itens_lidos": 8,
-   "itens_na_janela": 6,
+   "itens_na_janela": 7,
    "sem_data": 1,
    "status": "ok",
    "mensagem": ""
@@ -477,61 +524,6 @@
    "mensagem": "página e feed inacessíveis"
   },
   {
-   "nome": "Reuters Commodities",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/markets/commodities/"
-  },
-  {
-   "nome": "Bloomberg Agriculture",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "falha",
-   "mensagem": "página e feed inacessíveis"
-  },
-  {
-   "nome": "USDA WASDE",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.usda.gov não permite ler https://www.usda.gov/oce/commodity/wasde"
-  },
-  {
-   "nome": "USDA FAS",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.fas.usda.gov não permite ler https://www.fas.usda.gov/"
-  },
-  {
-   "nome": "Grain Central",
-   "regiao": "Internacional",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.graincentral.com não permite ler https://www.graincentral.com/"
-  },
-  {
    "nome": "Successful Farming",
    "regiao": "Internacional",
    "modo": "",
@@ -540,7 +532,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.agriculture.com/)"
   },
   {
    "nome": "AgWeb",
@@ -551,7 +543,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (HTTP 403 em https://www.agweb.com/)"
   },
   {
    "nome": "World Grain",
@@ -559,7 +551,7 @@
    "modo": "pagina",
    "feed": "",
    "itens_lidos": 10,
-   "itens_na_janela": 7,
+   "itens_na_janela": 8,
    "sem_data": 2,
    "status": "ok",
    "mensagem": ""
@@ -584,7 +576,7 @@
    "itens_na_janela": 0,
    "sem_data": 0,
    "status": "falha",
-   "mensagem": "página e feed inacessíveis"
+   "mensagem": "página e feed inacessíveis (www.cnzsmpw.com fora do alcance nesta execução (falhas de conexão repetidas))"
   },
   {
    "nome": "SunSirs",
@@ -596,17 +588,6 @@
    "sem_data": 0,
    "status": "sem_itens",
    "mensagem": "nenhuma matéria reconhecida na página"
-  },
-  {
-   "nome": "Reuters China Agri",
-   "regiao": "China",
-   "modo": "",
-   "feed": "",
-   "itens_lidos": 0,
-   "itens_na_janela": 0,
-   "sem_data": 0,
-   "status": "robots",
-   "mensagem": "robots.txt de www.reuters.com não permite ler https://www.reuters.com/world/china/"
   }
  ]
 }
