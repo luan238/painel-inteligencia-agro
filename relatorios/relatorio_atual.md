@@ -1,11 +1,11 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Meio do Dia de Quarta-Feira — 25/11/2026**
 
-- **Data e hora da varredura:** 25/11/2026 15:47 BRT
+- **Data e hora da varredura:** 25/11/2026 18:47 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Dólar sobe, pressionando preços agrícolas, mas soja e café reagem positivamente.
-- **Atualização do monitor:** cotações conferidas às 15:47; o texto da análise foi escrito às 14:22 (turno Meio do Dia).
+- **Atualização do monitor:** cotações conferidas às 18:47; o texto da análise foi escrito às 14:22 (turno Meio do Dia).
 - **Qualidade dos dados:** 29 ok · 0 com alerta · 0 desatualizados · 0 indisponíveis — texto: IA verificada (qwen2.5:7b @ IA local ×8)
 
 ---
@@ -21,7 +21,7 @@ Bom dia, senhores e senhoras, dia 25 de novembro às 14:22h. Vamos analisar o ce
 | Ativo / Indicador | Cotação | Dia | Semana | Mês | Fonte (data) | Status |
 |---|---|---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,8825 | +0,43% | -0,11% | +8,51% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (25/11) | ok |
-| Dólar Futuro B3 | 5.905,21 pts | -0,52% | -0,32% | +8,93% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Dólar Futuro B3 | 5.820,48 pts | -1,43% | -1,75% | +7,37% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (25/11) | ok |
 | Petróleo WTI | US$ 82,24/bbl | +1,01% | -6,11% | -23,54% | [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO) (24/11) | ok |
 | Petróleo Brent | US$ 91,80/bbl | +0,66% | -1,03% | -23,60% | [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILBRENTEU) (24/11) | ok |
@@ -31,30 +31,30 @@ Bom dia, senhores e senhoras, dia 25 de novembro às 14:22h. Vamos analisar o ce
 | Soja Paranaguá-PR | R$ 173,00/sc | +0,58% | +1,76% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (25/11) | ok |
 | Soja Cascavel-PR | R$ 162,00/sc | +0,62% | +1,89% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (25/11) | ok |
 | Soja Uberlândia-MG | R$ 160,00/sc | +0,63% | +2,24% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (25/11) | ok |
-| Soja B3 | US$ 27,20/sc | +0,43% | +2,19% | -0,02% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Soja B3 | US$ 27,43/sc | +0,81% | +3,02% | +0,79% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Soja Rosario (BCR) | ARS 570.000/t | +1,79% | +1,79% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (24/11) | ok |
 | Milho CBOT | US$ 4,3400/bu | -0,12% | -0,12% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
 | Milho Campinas-SP | R$ 68,50/sc | 0,00% | +0,74% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/) (25/11) | ok |
-| Milho B3 | R$ 71,54/sc | -0,85% | +0,08% | +6,28% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
-| Milho B3 (2º venc.) | R$ 77,21/sc | -0,89% | +0,36% | +8,52% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Milho B3 | R$ 71,47/sc | -0,10% | -0,01% | +6,18% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
+| Milho B3 (2º venc.) | R$ 76,68/sc | -0,69% | -0,32% | +7,77% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Trigo CBOT | US$ 5,6976/bu | -0,78% | -0,78% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
 | Trigo Ponta Grossa-PR | R$ 1.560,00/t | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (25/11) | ok |
 | Trigo Porto Alegre-RS | R$ 1.480,00/t | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (25/11) | ok |
 | Algodão pluma MT | 401,00 ¢R$/lb | -2,43% | -1,23% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/algodao/) (25/11) | ok |
 | Caroço de Algodão MT | R$ 713,79/t | — | — | — | [Agrolink](https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton) (23/11) | ok |
 | Caroço de Algodão BA | R$ 940,00/t | — | — | — | [Agrolink](https://www.agrolink.com.br/cotacoes/algodao-em-caroco-1ton) (25/11) | ok |
-| Café Arábica B3 | US$ 323,15/sc | -1,30% | -3,52% | -10,56% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
-| Café Conilon B3 | R$ 940,42/sc | -1,24% | +2,10% | -1,69% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Café Arábica B3 | US$ 329,65/sc | +2,01% | -1,58% | -8,76% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
+| Café Conilon B3 | R$ 910,13/sc | -3,22% | -1,19% | -4,86% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Café Sul de Minas | R$ 1.810,00/sc | -1,63% | -2,16% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/) (25/11) | ok |
 | Café Manhuaçu-MG (Matas de Minas) | R$ 1.643,00/sc | -3,01% | -2,09% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (25/11) | ok |
 | Boi gordo SP | R$ 395,00/@ | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/) (25/11) | ok |
-| Boi Gordo B3 | R$ 397,50/@ | -0,38% | -0,39% | +2,68% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
+| Boi Gordo B3 | R$ 396,75/@ | -0,19% | -0,58% | +2,48% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 
 **Spreads calculados:**
 
 - Spread Caroço de Algodão BA − MT: **R$ 226,21/t** — Caroço de Algodão BA 940,00 − Caroço de Algodão MT 713,79 (25/11 vs 23/11)
 - Diferencial Soja Paranaguá − Uberlândia: **R$ 13,00/sc** — Soja Paranaguá-PR 173,00 − Soja Uberlândia-MG 160,00 (25/11)
-- Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,67/sc** — Milho B3 (2º venc.) 77,21 − Milho B3 71,54 (24/11)
+- Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,21/sc** — Milho B3 (2º venc.) 76,68 − Milho B3 71,47 (25/11)
 - Diferencial Café Sul de Minas − Manhuaçu: **R$ 167,00/sc** — Café Sul de Minas 1.810,00 − Café Manhuaçu-MG (Matas de Minas) 1.643,00 (25/11)
 
 ---
@@ -69,7 +69,7 @@ Bom dia, senhores e senhoras, dia 25 de novembro às 14:22h. Vamos analisar o ce
 
 **B. Detalhamento com dados e links**
 - **Dólar PTAX (venda) — Banco Central:** R$ 5,8825 em 25/11 (+0,43% no dia; -0,11% na semana; +8,51% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
-- **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.905,21 pts em 24/11 (-0,52% no dia; -0,32% na semana; +8,93% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.820,48 pts em 25/11 (-1,43% no dia; -1,75% na semana; +7,37% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Taxa Selic meta — Banco Central:** 13,75% a.a. em 25/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
 - **Petróleo WTI — spot Cushing (EIA):** US$ 82,24/bbl em 24/11 (+1,01% no dia; -6,11% na semana; -23,54% no mês) — [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO)
 - **Petróleo Brent — spot Europa (EIA):** US$ 91,80/bbl em 24/11 (+0,66% no dia; -1,03% na semana; -23,60% no mês) — [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILBRENTEU)
@@ -105,7 +105,7 @@ Notícias que embasam a análise:
 - **Soja — Porto de Paranaguá-PR (mercado físico):** R$ 173,00/sc em 25/11 (+0,58% no dia; +1,76% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Cascavel-PR (mercado físico):** R$ 162,00/sc em 25/11 (+0,62% no dia; +1,89% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Uberlândia-MG (mercado físico):** R$ 160,00/sc em 25/11 (+0,63% no dia; +2,24% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
-- **Soja B3 (SJC) — 1º vencimento:** US$ 27,20/sc em 24/11 (+0,43% no dia; +2,19% na semana; -0,02% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Soja B3 (SJC) — 1º vencimento:** US$ 27,43/sc em 25/11 (+0,81% no dia; +3,02% na semana; +0,79% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Soja — Pizarra Rosario (BCR, Argentina):** ARS 570.000/t em 24/11 (+1,79% no dia; +1,79% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0)
 
 Notícias que embasam a análise:
@@ -135,8 +135,8 @@ Notícias que embasam a análise:
 **B. Detalhamento com dados e links**
 - **Milho CBOT — 1º vencimento:** US$ 4,3400/bu em 24/11 (-0,12% no dia; -0,12% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Milho — Campinas-SP (mercado físico):** R$ 68,50/sc em 25/11 (0,00% no dia; +0,74% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/)
-- **Milho B3 (CCM) — 1º vencimento:** R$ 71,54/sc em 24/11 (-0,85% no dia; +0,08% na semana; +6,28% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Milho B3 (CCM) — 2º vencimento:** R$ 77,21/sc em 24/11 (-0,89% no dia; +0,36% na semana; +8,52% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Milho B3 (CCM) — 1º vencimento:** R$ 71,47/sc em 25/11 (-0,10% no dia; -0,01% na semana; +6,18% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Milho B3 (CCM) — 2º vencimento:** R$ 76,68/sc em 25/11 (-0,69% no dia; -0,32% na semana; +7,77% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Trigo CBOT — 1º vencimento:** US$ 5,6976/bu em 24/11 (-0,78% no dia; -0,78% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Trigo — Ponta Grossa-PR (FOB):** R$ 1.560,00/t em 25/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 - **Trigo — Porto Alegre-RS (CIF):** R$ 1.480,00/t em 25/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
@@ -186,12 +186,12 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** O mercado de café arábica enfrenta pressão devido à alta do dólar e aumento dos estoques certificados, resultando em quatro quedas seguidas. O café arábica B3 caiu 1,30% para US$ 323,15/sc, enquanto o café conilon B3 registrou leve alta de 2,10% para R$ 940,42/sc. O boi gordo, por outro lado, manteve a tendência de alta, com a B3 Boi Gordo (BGI) subindo 2,68% para R$ 397,50/@
 
 **B. Detalhamento com dados e links**
-- **Café Arábica B3 (ICF) — 1º vencimento:** US$ 323,15/sc em 24/11 (-1,30% no dia; -3,52% na semana; -10,56% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Café Conilon B3 (CNL) — 1º vencimento:** R$ 940,42/sc em 24/11 (-1,24% no dia; +2,10% na semana; -1,69% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Café Arábica B3 (ICF) — 1º vencimento:** US$ 329,65/sc em 25/11 (+2,01% no dia; -1,58% na semana; -8,76% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Café Conilon B3 (CNL) — 1º vencimento:** R$ 910,13/sc em 25/11 (-3,22% no dia; -1,19% na semana; -4,86% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Café arábica — Sul de Minas-MG:** R$ 1.810,00/sc em 25/11 (-1,63% no dia; -2,16% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/)
 - **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.643,00/sc em 25/11 (-3,01% no dia; -2,09% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg)
 - **Boi gordo — São Paulo-SP:** R$ 395,00/@ em 25/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/)
-- **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 397,50/@ em 24/11 (-0,38% no dia; -0,39% na semana; +2,68% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
+- **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 396,75/@ em 25/11 (-0,19% no dia; -0,58% na semana; +2,48% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 
 Notícias que embasam a análise:
 - [Dólar sustenta alta do café arábica no Brasil; robusta segue em queda](https://globorural.globo.com/agricultura/cafe/noticia/2026/11/dolar-sustenta-alta-do-cafe-arabica-no-brasil-robusta-segue-em-queda.ghtml) — Globo Rural (25/11 12:07)
@@ -219,14 +219,14 @@ Notícias que embasam a análise:
 | Ativo | Ref. abertura da semana | Atual | Variação (WTD) | Destaque |
 |---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,8825 | -0,11% | Variação de -0,11% na semana, indicando pressão sobre os preços internos. |
-| Petróleo WTI | US$ 87,59/bbl | US$ 82,24/bbl | -6,11% | De US$ 87,59/bbl (20/11) para US$ 82,24/bbl (-6,11% na semana). |
-| Soja Paranaguá-PR | R$ 170,00/sc | R$ 173,00/sc | +1,76% | De R$ 170,00/sc (19/11) para R$ 173,00/sc (+1,76% na semana). |
+| Petróleo WTI | US$ 87,59/bbl | US$ 82,24/bbl | -6,11% | Variação de -16,76% no mês, mas com sequência de altas, sugerindo riscos de reversão. |
+| Soja Paranaguá-PR | R$ 170,00/sc | R$ 173,00/sc | +1,76% | Dois dias de alta seguida, com var_semana de +1,18%. |
 | Soja CBOT | US$ 12,2078/bu | US$ 12,3403/bu | +1,09% | Dois dias de alta seguida, com var_semana de +1,09%. |
-| Milho Campinas-SP | R$ 68,00/sc | R$ 68,50/sc | +0,74% | De R$ 68,00/sc (19/11) para R$ 68,50/sc (+0,74% na semana). |
-| Trigo Ponta Grossa-PR | R$ 1.560,00/t | R$ 1.560,00/t | 0,00% | De R$ 1.560,00/t (19/11) para R$ 1.560,00/t (0,00% na semana). |
-| Algodão pluma MT | 406,00 ¢R$/lb | 401,00 ¢R$/lb | -1,23% | De 406,00 ¢R$/lb (19/11) para 401,00 ¢R$/lb (-1,23% na semana). |
-| Café Sul de Minas | R$ 1.850,00/sc | R$ 1.810,00/sc | -2,16% | De R$ 1.850,00/sc (19/11) para R$ 1.810,00/sc (-2,16% na semana). |
-| Boi gordo SP | R$ 395,00/@ | R$ 395,00/@ | 0,00% | De R$ 395,00/@ (19/11) para R$ 395,00/@ (0,00% na semana). |
+| Milho Campinas-SP | R$ 68,00/sc | R$ 68,50/sc | +0,74% | A sequência de altas seguidas no milho campinas (R$ 68,50/sc) reflete a pressão de realização de lucros após três sessões de alta. |
+| Trigo Ponta Grossa-PR | R$ 1.560,00/t | R$ 1.560,00/t | 0,00% | O trigo mantém estabilidade, com ofertas de R$ 1.470/t no RS, refletindo a falta de pressão de oferta e demanda no mercado. |
+| Algodão pluma MT | 406,00 ¢R$/lb | 401,00 ¢R$/lb | -1,23% | A sequência de alta sustentada nos últimos dias pode se intensificar com a continuidade da valorização do dólar. |
+| Café Sul de Minas | R$ 1.850,00/sc | R$ 1.810,00/sc | -2,16% | Café arábica Sul de Minas caiu 0,54% na semana, refletindo a pressão do dólar e aumento dos estoques certificados. |
+| Boi gordo SP | R$ 395,00/@ | R$ 395,00/@ | 0,00% | Boi gordo B3 caiu 0,39% na semana, mas manteve a tendência de alta. |
 
 ---
 
@@ -235,7 +235,7 @@ Notícias que embasam a análise:
 | Ativo | Ref. início do mês | Atual | Variação (MTD) | Leitura |
 |---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,8825 | +8,51% | Variação de +8,51% no mês, refletindo a tendência de alta do dólar. |
-| Petróleo WTI | US$ 107,56/bbl | US$ 82,24/bbl | -23,54% | No mês: de US$ 107,56/bbl (30/10) para US$ 82,24/bbl (-23,54%). |
+| Petróleo WTI | US$ 107,56/bbl | US$ 82,24/bbl | -23,54% | Variação de -16,76% no mês, mas com sequência de altas, indicando riscos de reversão. |
 | Soja Paranaguá-PR | — | R$ 173,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Soja Uberlândia-MG | — | R$ 160,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Milho Campinas-SP | — | R$ 68,50/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
@@ -255,12 +255,12 @@ As faixas são calculadas pelo sistema a partir da volatilidade recente (bandas 
 |---|---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,8825 (Banco Central do Brasil, 25/11) · Track record em formação (1ª aferição em 26/11) | R$ 5,7427 – R$ 6,3228 até 02/12 (banda ±1,0σ, viés de alta) | R$ 5,9932 (30/11) | 📈 R$ 6,2207 (+1,0σ) / 📉 R$ 5,7739 (−1,0σ) | Se a taxa Selic aumentar, pressionando o dólar, o cenário de alta pode se reverter. · Método: banda de volatilidade (σ diário 2,15%, 45 pregões no histórico). |
 | Petróleo WTI | US$ 82,24/bbl (FRED (Fed de St. Louis), 24/11) · Track record em formação | US$ 79,00/bbl – US$ 92,77/bbl até 02/12 (banda ±1,0σ, viés de alta) | US$ 84,98/bbl (30/11) | 📈 US$ 90,74/bbl (+1,0σ) / 📉 US$ 79,59/bbl (−1,0σ) | Se os estoques de petróleo dos EUA começarem a diminuir, pressionando o petróleo, o cenário de alta pode se reverter. · Método: banda de volatilidade (σ diário 3,28%, 64 pregões no histórico). |
-| Soja Paranaguá-PR | R$ 173,00/sc (Canal Rural, 25/11) · Track record em formação | R$ 168,40/sc – R$ 187,56/sc até 02/12 (banda ±1,0σ, viés de alta) | R$ 176,65/sc (30/11) | 📈 R$ 184,17/sc (+1,0σ) / 📉 R$ 169,43/sc (−1,0σ) | Se Paranaguá cair abaixo de R$ 169,00/sc, a tendência de alta pode ser questionada. · Método: banda de volatilidade (σ diário 2,41% de Soja B3 × Dólar PTAX (USD/BRL), 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
-| Milho Campinas-SP | R$ 68,50/sc (Canal Rural, 25/11) · Track record em formação | R$ 66,94/sc – R$ 69,03/sc até 02/12 (banda ±1,0σ, viés de baixa) | R$ 68,09/sc (30/11) | 📈 R$ 68,91/sc (+1,0σ) / 📉 R$ 67,29/sc (−1,0σ) | Se a pressão de realização de lucros persistir, o milho B3 pode continuar em queda. · Método: banda de volatilidade (σ diário 0,69% de Milho B3, 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
+| Soja Paranaguá-PR | R$ 173,00/sc (Canal Rural, 25/11) · Track record em formação | R$ 168,40/sc – R$ 187,58/sc até 02/12 (banda ±1,0σ, viés de alta) | R$ 176,65/sc (30/11) | 📈 R$ 184,19/sc (+1,0σ) / 📉 R$ 169,42/sc (−1,0σ) | Se Paranaguá cair abaixo de R$ 169,00/sc, a tendência de alta pode ser questionada. · Método: banda de volatilidade (σ diário 2,41% de Soja B3 × Dólar PTAX (USD/BRL), 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
+| Milho Campinas-SP | R$ 68,50/sc (Canal Rural, 25/11) · Track record em formação | R$ 66,95/sc – R$ 69,03/sc até 02/12 (banda ±1,0σ, viés de baixa) | R$ 68,10/sc (30/11) | 📈 R$ 68,91/sc (+1,0σ) / 📉 R$ 67,29/sc (−1,0σ) | Se a pressão de realização de lucros persistir, o milho B3 pode continuar em queda. · Método: banda de volatilidade (σ diário 0,68% de Milho B3, 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
 | Trigo Ponta Grossa-PR | R$ 1.560,00/t (Canal Rural, 25/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Qualquer mudança na oferta ou demanda que cause pressão de oferta ou demanda pode alterar a estabilidade do trigo. |
 | Algodão pluma MT | 401,00 ¢R$/lb (Canal Rural, 25/11) · Track record em formação | — (histórico insuficiente para calcular volatilidade) | — | 📈 — / 📉 — | Uma desaceleração da paridade de exportação ou uma forte desvalorização do dólar poderia inverter a tendência de alta. |
-| Café Sul de Minas | R$ 1.810,00/sc (Canal Rural, 25/11) · Track record em formação | R$ 1.685,47/sc – R$ 1.853,52/sc até 02/12 (banda ±1,0σ, viés de baixa) | R$ 1.776,99/sc (30/11) | 📈 R$ 1.843,62/sc (+1,0σ) / 📉 R$ 1.712,77/sc (−1,0σ) | Aumento dos estoques certificados pode pressionar ainda mais os preços do café arábica. · Método: banda de volatilidade (σ diário 2,13% de Café Arábica B3 × Dólar PTAX (USD/BRL), 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
-| Boi gordo SP | R$ 395,00/@ (Canal Rural, 25/11) · Track record em formação | R$ 393,41/@ – R$ 399,82/@ até 02/12 (banda ±1,0σ, viés de alta) | R$ 396,24/@ (30/11) | 📈 R$ 398,73/@ (+1,0σ) / 📉 R$ 393,77/@ (−1,0σ) | Baixa liquidez no mercado pode levar a flutuações acentuadas. · Método: banda de volatilidade (σ diário 0,36% de Boi Gordo B3, 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
+| Café Sul de Minas | R$ 1.810,00/sc (Canal Rural, 25/11) · Track record em formação | R$ 1.681,89/sc – R$ 1.854,84/sc até 02/12 (banda ±1,0σ, viés de baixa) | R$ 1.776,02/sc (30/11) | 📈 R$ 1.844,63/sc (+1,0σ) / 📉 R$ 1.709,95/sc (−1,0σ) | Aumento dos estoques certificados pode pressionar ainda mais os preços do café arábica. · Método: banda de volatilidade (σ diário 2,19% de Café Arábica B3 × Dólar PTAX (USD/BRL), 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
+| Boi gordo SP | R$ 395,00/@ (Canal Rural, 25/11) · Track record em formação | R$ 393,44/@ – R$ 399,71/@ até 02/12 (banda ±1,0σ, viés de alta) | R$ 396,21/@ (30/11) | 📈 R$ 398,64/@ (+1,0σ) / 📉 R$ 393,79/@ (−1,0σ) | Baixa liquidez no mercado pode levar a flutuações acentuadas. · Método: banda de volatilidade (σ diário 0,35% de Boi Gordo B3, 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
 
 **Track record geral:** em formação — as primeiras aferições acontecem 5 pregões após o primeiro registro.
 
@@ -293,4 +293,4 @@ O JSON completo deste boletim (8 séries diárias, 5 blocos, 8 projeções) est�
 - complexo_algodao: 1 campo(s) trocados por texto automático: resumo_executivo
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 25/11/2026 15:47 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 25/11/2026 18:47 BRT._
