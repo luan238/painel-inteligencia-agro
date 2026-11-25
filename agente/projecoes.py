@@ -25,8 +25,9 @@ def calcular_bandas(m, hoje: date, cfg: dict, vies: str = "neutro") -> dict | No
         return None
     sig, k = m.vol_diaria, float(cfg.get("sigma", 1.0))
     desloc = float(cfg.get("deslocamento_vies_sigma", 0.5)) * SINAL_VIES.get(vies, 0)
-    h1 = int(cfg.get("pregoes_curto_prazo", 5))
-    alvo1 = somar_dias_uteis(m.data, h1)
+    # o alvo conta a partir de HOJE; a incerteza, desde o último dado (ex.: petróleo do FRED, com dias de atraso)
+    alvo1 = somar_dias_uteis(max(m.data, hoje), int(cfg.get("pregoes_curto_prazo", 5)))
+    h1 = max(1, dias_uteis_entre(m.data, alvo1))
     c1 = m.valor * math.exp(desloc * sig * math.sqrt(h1))
     alvo2 = ultimo_dia_util_do_mes(hoje.year, hoje.month)
     if dias_uteis_entre(m.data, alvo2) < 3:
