@@ -283,10 +283,10 @@ indicadores:
       - fonte: BCR – Bolsa de Comercio de Rosario
         tipo: tabela_html
         url: https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0
-        titulo_contem: []
+        titulo_contem: ["camara arbitral"]
         linha_contem: ["soja"]
-        coluna_valor: ["$/tn", "pizarra", "precio", "$"]
-        verificado: false
+        coluna_mais_recente: true       # os cabeçalhos são as datas dos pregões: vale a mais recente com preço
+        verificado: true                # conferido na página em 25/11/2026 (Soja 24/11: $ 570.000,00)
 
   # ===================================================== MILHO, SORGO E TRIGO
   - id: milho_cbot
@@ -468,7 +468,7 @@ indicadores:
         titulo_contem: []
         linha_contem: ["cuiab"]       # 1ª linha da praça = data mais recente; vale a data de atualização da linha
         coluna_valor: ["preco"]
-        verificado: false              # praça Cuiabá-MT, R$/t
+        verificado: true               # praça Cuiabá-MT, R$/t (conferido na página em 25/11/2026)
 
   - id: caroco_algodao_ba
     nome: "Caroço de Algodão — Oeste da Bahia"
@@ -486,7 +486,7 @@ indicadores:
         titulo_contem: []
         linha_contem: ["barreiras"]       # 1ª linha da praça = data mais recente; vale a data de atualização da linha
         coluna_valor: ["preco"]
-        verificado: false              # praça Barreiras-BA, R$/t
+        verificado: true               # praça Barreiras-BA, R$/t (conferido na página em 25/11/2026)
 
   # ================================================== COMPLEXO CAFÉ & PECUÁRIA
   - id: cafe_arabica_ice
@@ -576,7 +576,8 @@ indicadores:
         tipo: tabela_html
         url: https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg
         titulo_contem: []
-        linha_contem: ["manhua"]
+        linha_contem: ["manhua"]          # 1ª linha da praça = data mais recente; vale a data de atualização da linha
+        coluna_valor: ["preco"]
         verificado: false
 
   - id: boi_gordo_cepea

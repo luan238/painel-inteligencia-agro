@@ -223,7 +223,18 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
             incerta = False                       # leiaute conferido: posição + número exato de colunas
 
     valor = None
-    if col_valor is not None and col_valor < len(linha):
+    data_coluna = None
+    if fonte.get("coluna_mais_recente"):          # cabeçalhos são datas: vale a mais recente que tem valor
+        datas = sorted(((ler_data(c, hoje), i) for i, c in enumerate(tab.cabecalhos)
+                        if _RE_QUALQUER_DATA.fullmatch(c.strip())), reverse=True)
+        for d_col, i in datas:
+            v = numero_da_celula(linha[i], estilo) if d_col and i < len(linha) else None
+            if v:
+                valor, col_valor, data_coluna = v, i, d_col
+                break
+        if valor is None:
+            raise ErroColeta("nenhuma coluna de data com valor na linha" + _amostra(tab))
+    if valor is None and col_valor is not None and col_valor < len(linha):
         valor = numero_da_celula(linha[col_valor], estilo)
     if valor is None:                              # sem cabeçalho reconhecível: 1ª célula numérica
         for celula in linha[1:]:
@@ -237,14 +248,13 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
         raise ErroColeta(f"sem valor numérico na linha {linha[:4]}")
 
     d = ler_data(tab.data_contexto, hoje)
-    for celula in linha:                           # data na própria linha tem prioridade
-        if _RE_QUALQUER_DATA.search(celula):
+    for celula in ([] if data_coluna else linha):  # data na própria linha tem prioridade
+        if _RE_QUALQUER_DATA.search(celula) or _RE_DIA_MES.fullmatch(celula.strip()):   # "13/11" sem ano: nunca no futuro
             d = ler_data(celula, hoje) or d
             break
-        if _RE_DIA_MES.fullmatch(celula.strip()):  # "13/11" sem ano (Agrolink): ano corrente, nunca no futuro
-            d = ler_data(celula, hoje) or d
-            break
-    if d is None:
+    d = data_coluna or d
+    sem_data = d is None
+    if sem_data:
         d = hoje
         incerta = True
     rotulo = next((c for c in linha if c.strip()), "") if linha else ""
@@ -253,7 +263,7 @@ def _extrair_da_tabela(tab: Tabela, fonte: dict, ind: dict, hoje: date, estilo: 
         nome_col = f"nº {col_valor + 1}, pela posição"
     return [Observacao(indicador=ind["id"], data=d, valor=valor, fonte=nome_fonte, url=url, incerta=incerta,
                        detalhe=f"tabela '{tab.contexto[:60]}' · linha '{rotulo[:30]}' · coluna '{nome_col}'"
-                               + (" · data não informada na página" if not tab.data_contexto and d == hoje else "")
+                               + (" · data não informada na página" if sem_data else "")
                                + (_amostra(tab) if incerta else ""))]
 
 

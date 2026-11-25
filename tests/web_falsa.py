@@ -172,10 +172,12 @@ def paginas_cotacoes() -> dict[str, str]:
         ("Indsaf Boi SP AP · São Paulo", "SP", "—", 397.82)], "São Paulo · SP")
     p["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"] = _bcr_chicago()
     p["https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"] = pagina(
-        "<h1>Café Arábica Bebida Dura Tipo 6 — Saca 60 kg</h1><p>Atualizado em 17/11/2026</p>",
-        "<table><thead><tr><th>Praça</th><th>Preço (R$)</th><th>Variação</th></tr></thead><tbody>"
-        f"<tr><td>Manhuaçu/MG</td><td>{fmt(_ultimo('manhuacu'), 2)}</td><td>+0,10%</td></tr>"
-        "<tr><td>Varginha/MG</td><td>1.660,00</td><td>+0,60%</td></tr></tbody></table>")
+        "<h1>Preço de Café Arábica Bebida Dura Tipo 6 Sc 60Kg</h1>",
+        "<table><thead><tr><th>Favorito</th><th>Praça</th><th>Preço (R$)</th><th>Variação</th><th>Atualização</th>"
+        f"<th>Freq.</th><th>Ver</th></tr></thead><tbody><tr><td colspan='7'><b>{HOJE:%d/%m/%Y}</b></td></tr>"
+        f"<tr><td></td><td>Manhuaçu (MG)</td><td>{fmt(_ultimo('manhuacu'), 2)}</td><td>▲ 0,1%</td><td>{HOJE:%d/%m/%y}</td>"
+        "<td>Diário</td><td>Histórico</td></tr><tr><td></td><td>Varginha (MG)</td><td>1.660,00</td><td>▲ 0,6%</td>"
+        f"<td>{HOJE:%d/%m/%y}</td><td>Diário</td><td>Histórico</td></tr></tbody></table>")
     du = dias_uteis(4)
     grupos = ""
     for d in du[::-1]:
@@ -194,11 +196,15 @@ def paginas_cotacoes() -> dict[str, str]:
         "</tr></thead><tbody><tr><td>Boi Gordo 15Kg</td><td>Uberlândia (MG)</td><td>380,00</td><td>17/11/2026</td><td>Diário</td></tr>"
         f"<tr><td>Soja em Grão Sc 60Kg</td><td>Uberlândia (MG)</td><td>{fmt(_ultimo('uberlandia'), 2)}</td>"
         "<td>17/11/2026</td><td>Diário</td></tr></tbody></table>")
+    dr = dias_uteis(5)[::-1]
+    cab = "".join(f"<th>{d:%d/%m/%Y}</th>" for d in dr)
+    soja = "".join(f"<td>$ {fmt(_ultimo('rosario') if i == 0 else 550000.0, 2)}</td>" for i in range(5))
     p["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0"] = pagina(
-        "<h2>Precios Pizarra — Cámara Arbitral de Cereales de Rosario</h2><p>17/11/2026</p>",
-        "<table><thead><tr><th>Producto</th><th>$/Tn</th><th>Var.</th></tr></thead><tbody>"
-        f"<tr><td>Trigo</td><td>230.000,00</td><td>0</td></tr><tr><td>Soja</td><td>{fmt(_ultimo('rosario'), 2)}</td><td>+1.500</td></tr>"
-        "</tbody></table>")
+        "<h2>Precios Cámara Arbitral de Cereales de Rosario</h2><p>(Pesos por Tn)</p>",
+        f"<table><thead><tr><th>Fecha Negociación</th><th>Trading date</th>{cab}</tr></thead><tbody>"
+        "<tr><td>Trigo</td><td>Wheat</td>" + "<td>$ 293.040,00</td>" * 5 + "</tr>"
+        f"<tr><td>Soja</td><td>Soybean</td>{soja}</tr>"
+        "<tr><td>Girasol</td><td>Sunseed</td>" + "<td>S/C</td>" * 5 + "</tr></tbody></table>")
     return p
 
 

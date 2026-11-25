@@ -8,6 +8,7 @@ from agente.coletores import b3_ajustes, b3_boletim, bcb, coletar_indicador, out
 from agente.coletores.noticias import (ColetorNoticias, descobrir_feed, ler_feed, links_de_materias,
                                        metadados_materia, selecionar)
 from agente.rede import BloqueadoPorRobots, Cliente, Resposta
+from agente.numeros import fmt
 from web_falsa import AGORA, paginas_cotacoes, paginas_legado
 
 HOJE = date(2026, 11, 17)
@@ -303,3 +304,21 @@ def test_indicador_desligado_sai_do_agente(raiz_tmp):
     assert "cafe_arabica_b3" in ids and cfg.problemas() == []
     cfg.blocos_cfg["painel_semanal"].append("cafe_arabica_ice")   # citar um desligado não é erro de configuração
     assert cfg.problemas() == []
+
+
+def test_pizarra_rosario_coluna_da_data_mais_recente(cfg):
+    from web_falsa import _ultimo
+    html = paginas_cotacoes()["https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0"]
+    o = coletar_indicador(_fontes_reais("soja_rosario"), cfg, ClienteFixo(html), HOJE)[0][0]
+    assert o.valor == pytest.approx(round(_ultimo("rosario"), 2)) and o.data == HOJE and not o.incerta
+    hoje_sc = html.replace(f"$ {fmt(_ultimo('rosario'), 2)}", "S/C")       # sem cotação no dia: vale o pregão anterior
+    o = coletar_indicador(_fontes_reais("soja_rosario"), cfg, ClienteFixo(hoje_sc), HOJE)[0][0]
+    assert o.valor == 550000.0 and o.data < HOJE and not o.incerta
+
+
+def test_manhuacu_no_leiaute_do_agrolink(cfg):
+    from web_falsa import _ultimo
+    html = paginas_cotacoes()["https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"]
+    o = coletar_indicador(_fontes_reais("cafe_manhuacu"), cfg, ClienteFixo(html), HOJE)[0][0]
+    assert o.valor == pytest.approx(round(_ultimo("manhuacu"), 2)) and o.data == HOJE and not o.incerta
+    assert "data não informada" not in o.detalhe and "Preço" in o.detalhe
