@@ -1,16 +1,16 @@
 {
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
-    "scope": "Câmbio está instável, pressionando commodities; soja e milho em alta, café e boi gordo movimentam mercados.",
-    "timestamp": "24/11/2026 19:19 BRT — cotações atualizadas pelo monitor · análise do Fechamento das 18:31",
+    "scope": "Fechamento de mercado em 24/11/2026: Dólar PTAX a R$ 5,8573, soja em alta em Chicago e cautela nos demais complexos.",
+    "timestamp": "24/11/2026 21:52 BRT — Fechamento de Terça-Feira",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
-    "cambio_energia_frete": "O Dólar PTAX fechou cotado a R$ 5,8573, registrando variação de -0,54% na semana e alta de +8,04% no mês. A taxa Selic permaneceu em 13,75% a.a. O cenário macroeconômico foi marcado por oscilações cambiais e debates sobre as contas públicas.",
-    "complexo_soja": "Soja e farelo subiram 2 dias seguidos, enquanto óleo de soja caiu. Dólar teve queda, pressionando a cotação de soja em B3.",
-    "complexo_milho_etanol_ddgs": "Milho e trigo seguem oscilando, com milho em alta no mercado físico e B3, enquanto trigo mantém queda. Dólar pressiona preços internos.",
-    "complexo_algodao": "O algodão em pluma em Rondonópolis-MT registrou alta de 1,23% na sessão, enquanto o dólar teve queda de 1,90% vs 23/11. O caroço e o farelo de algodão permanecem indisponíveis.",
-    "complexo_cafe": "Preços do café arábica em queda, enquanto o boi gordo mantém alta. Dólar em queda pressiona café. Boi gordo atinge máximas históricas."
+    "cambio_energia_frete": "O Dólar PTAX fechou em R$ 5,8573, registrando variação diária de -1,90% e acumulando alta de +8,04% no mês. O Dólar Futuro B3 encerrou em 5.905,21 pts, enquanto a taxa Selic meta permaneceu em 13,75% a.a. O NDF teórico ficou calculado em R$ 6,0543.",
+    "complexo_soja": "A soja na CBOT registrou 2 altas seguidas a US$ 12,3403/bu, sustentada pelo farelo, enquanto o óleo recuou. No mercado físico brasileiro, Paranaguá fechou a R$ 172,00/sc com alta de 1,18%, e o dólar PTAX encerrou em R$ 5,8573.",
+    "complexo_milho_etanol_ddgs": "O complexo milho e trigo registrou movimentações mistas na sessão de 24/11. Na B3, o milho para o 1º vencimento encerrou cotado a R$ 71,54/sc, com variação de -0,85%, enquanto em Campinas o físico atingiu R$ 68,50/sc (+0,74%). O trigo em Ponta Grossa-PR manteve-se estável em R$ 1.560,00/t.",
+    "complexo_algodao": "O algodão em pluma em Rondonópolis-MT registrou cotação de 411,00 ¢R$/lb em 24/11, com variação semanal de +1,23%. O Dólar PTAX fechou cotado a R$ 5,8573, apresentando queda diária de -1,90% e alta mensal de +8,04%. O mercado monitora o avanço de soluções biológicas e práticas de sustentabilidade.",
+    "complexo_cafe": "O mercado de café arábica em São Paulo registrou cotação de R$ 1.840,00/sc com variação diária de -0,54% em 24/11. No complexo pecuário, o boi gordo em São Paulo ficou cotado a R$ 395,00/@, com estabilidade no mercado físico e variação na B3 de -0,38%."
   },
   "market_indicators": {
     "cambio_e_energia": {
@@ -22,22 +22,22 @@
       "ndf_teorico_160d": "R$ 6,0543 (spot R$ 5,8573 · juros R$ 13,75% a.a. · cupom 4,80% a.a. · 106 d.u.)"
     },
     "complexo_soja": {
-      "soja_cbot": "🕒 US$ 12,3403/bu [Ene-27] (+1,09% no dia · +1,09% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
-      "farelo_cbot": "🕒 US$ 352,99/t curta [Dic-26] (+3,52% no dia · +3,52% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
-      "oleo_soja_cbot": "🕒 58,11 ¢/lb [Dic-26] (-2,84% no dia · -2,84% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
+      "soja_cbot": "US$ 12,3403/bu [Ene-27] (+1,09% no dia · +1,09% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
+      "farelo_cbot": "US$ 352,99/t curta [Dic-26] (+3,52% no dia · +3,52% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
+      "oleo_soja_cbot": "58,11 ¢/lb [Dic-26] (-2,84% no dia · -2,84% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
       "soja_paranagua": "R$ 172,00/sc (+1,18% no dia · +1,18% na semana) — Canal Rural, 24/11",
       "soja_parana": "R$ 161,00/sc (+1,26% no dia · +1,26% na semana) — Canal Rural, 24/11",
-      "soja_uberlandia": "R$ 159,00/sc (+1,60% no dia · +1,60% na semana) — Agrolink, 24/11",
+      "soja_uberlandia": "🕒 R$ 159,00/sc (+1,60% no dia · +1,60% na semana) — Agrolink, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
       "soja_b3": "US$ 27,20/sc (+0,43% no dia · +2,19% na semana) — B3 Agro, 24/11",
-      "soja_rosario": "🕒 ARS 560.000/t [Soja] (+1,82% no dia · 0,00% na semana) — BCR – Bolsa de Comercio de Rosario, 20/11 · sem cotação nova válida; último valor confiável é de 20/11/2026",
-      "spread_soja_porto_uberlandia": "R$ 13,00/sc — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11)"
+      "soja_rosario": "⚠️ ARS 560.000/t [Soja] (+1,82% no dia · 0,00% na semana) — BCR – Bolsa de Comercio de Rosario, 20/11 · leitura incerta (coluna por posição)",
+      "spread_soja_porto_uberlandia": "⚠️ R$ 13,00/sc — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11)"
     },
     "complexo_milho_e_ddgs": {
-      "milho_cbot": "🕒 US$ 4,3400/bu [Dic-26] (-0,12% no dia · -0,12% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
+      "milho_cbot": "US$ 4,3400/bu [Dic-26] (-0,12% no dia · -0,12% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
       "milho_campinas": "R$ 68,50/sc (+0,74% no dia · +0,74% na semana) — Canal Rural, 24/11",
       "milho_b3": "R$ 71,54/sc (-0,85% no dia · +0,08% na semana) — B3 Agro, 24/11",
       "milho_b3_2": "R$ 77,21/sc (-0,89% no dia · +0,36% na semana) — B3 Agro, 24/11",
-      "trigo_cbot": "🕒 US$ 5,6976/bu [Dic-26] (-0,78% no dia · -0,78% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
+      "trigo_cbot": "US$ 5,6976/bu [Dic-26] (-0,78% no dia · -0,78% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
       "trigo_parana": "R$ 1.560,00/t (0,00% no dia · 0,00% na semana) — Canal Rural, 24/11",
       "trigo_rs": "R$ 1.480,00/t (0,00% no dia · 0,00% na semana) — Canal Rural, 24/11",
       "spread_milho_b3_calendario": "R$ 5,67/sc — Milho B3 (2º venc.) 77,21 − Milho B3 71,54 (24/11)"
@@ -52,7 +52,7 @@
       "cafe_arabica_ice": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "cafe_robusta_londres": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "cafe_arabica_cepea": "R$ 1.840,00/sc (-0,54% no dia · -0,54% na semana) — Canal Rural, 24/11",
-      "cafe_manhuacu": "⚠️ R$ 1.694,00/sc (-0,59% no dia · +0,95% na semana) — Agrolink, 24/11 · leitura incerta (data presumida)",
+      "cafe_manhuacu": "🕒 R$ 1.694,00/sc (-0,59% no dia · +0,95% na semana) — Agrolink, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
       "boi_gordo_cepea": "R$ 395,00/@ (0,00% no dia · 0,00% na semana) — Canal Rural, 24/11",
       "boi_b3": "R$ 397,50/@ (-0,38% no dia · -0,39% na semana) — B3 Agro, 24/11",
       "spread_cafe_cepea_manhuacu": "⚠️ R$ 146,00/sc — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11)"
@@ -60,9 +60,9 @@
   },
   "detailed_blocks_and_news": [
     {
-      "title": "🏛️🛢️ Cenário Político, Macro, Câmbio &amp; Energia — Dólar PTAX fecha a R$ 5,8573 com oscilações no câmbio",
-      "market_bias": "Viés neutro para o câmbio, com atenção redobrada aos riscos fiscais e intervenções do Banco Central.",
-      "executive_summary": "O mercado cambial brasileiro apresentou volatilidade, com o Dólar PTAX cotado a R$ 5,8573, acumulando alta de +8,04% no mês [N1, N3]. A taxa Selic manteve-se inalterada em 13,75% a.a. Analistas apontam que a valorização da moeda norte-americana impacta diretamente as cotações de commodities no mercado interno, como soja e trigo, ao elevar a paridade de exportação [N2, N6, N7]. Paralelamente, o NDF teórico foi calculado em R$ 6,0543 com pontos forward de 0,1970.",
+      "title": "🏛️🛢️ Cenário Político, Macro, Câmbio &amp; Energia — Dólar PTAX recua a R$ 5,8573 com cautela macro e alta acumulada no mês",
+      "market_bias": "Viés de cautela cambial, com atenção às contas públicas e à pressão sobre o IPCA e o PIB.",
+      "executive_summary": "O cenário macroeconômico foi marcado pela variação do câmbio, com o Dólar PTAX cotado a R$ 5,8573 em 24/11, queda de -1,90% no dia e alta de +8,04% no mês [dolar_ptax]. O Dólar Futuro B3 (DOL) encerrou a 5.905,21 pts [-0,52%] [dolar_futuro_b3]. A taxa Selic manteve-se em 13,75% a.a. [selic_meta], gerando um NDF teórico de R$ 6,0543 [ndf]. O Ministério da Fazenda reduziu a projeção do PIB para 1,9% em 2026 e 1,8% em 2027, elevando também a projeção do IPCA em meio à perda de ritmo em serviços e indústria <a href=\"https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Canal Rural]</a>. O Rabobank destacou que o dólar forte e as dúvidas fiscais pressionaram a moeda <a href=\"https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, enquanto analistas apontam impactos nas cotações de grãos e derivados <a href=\"https://globorural.globo.com/cotacoes/noticia/2026/11/dolar-sustenta-preco-da-soja-que-supera-os-r-170-em-paranagua.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>.",
       "news_sources": [
         {
           "headline": "Banco vê dólar a R$ 5,35 no fim de 2026 — Agrolink (24/11 17:16)",
@@ -73,18 +73,6 @@
           "url": "https://www.agrolink.com.br/noticias/alta-do-dolar-favorece-precos-dos-graos-no-brasil_521437.html"
         },
         {
-          "headline": "Dólar fecha em queda e volta para os R$ 5,90 com redução dos riscos fiscais — Money Times Agro (24/11 17:20)",
-          "url": "https://www.moneytimes.com.br/dolar-fecha-em-queda-e-volta-para-os-r-590-com-reducao-dos-riscos-fiscais-davs/"
-        },
-        {
-          "headline": "Petróleo fecha em forte alta com aumento das tensões no Estreito de Ormuz — Money Times Agro (24/11 17:04)",
-          "url": "https://www.moneytimes.com.br/petroleo-fecha-em-forte-alta-com-aumento-das-tensoes-no-estreito-de-ormuz-davs/"
-        },
-        {
-          "headline": "Ouro fecha em queda com perspectiva de alta dos juros nos EUA — Money Times Agro (24/11 16:10)",
-          "url": "https://www.moneytimes.com.br/ouro-fecha-em-queda-com-perspectiva-de-alta-dos-juros-nos-eua-davs/"
-        },
-        {
           "headline": "Dólar e oferta limitada de grãos de qualidade sustentam preços do trigo — Globo Rural (24/11 12:57)",
           "url": "https://globorural.globo.com/agricultura/trigo/noticia/2026/11/dolar-e-oferta-limitada-de-graos-de-qualidade-sustentam-precos-do-trigo.ghtml"
         },
@@ -93,48 +81,60 @@
           "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/dolar-sustenta-preco-da-soja-que-supera-os-r-170-em-paranagua.ghtml"
         },
         {
-          "headline": "El dólar subió por sexto día seguido, llegó a los $1.615 y el Banco Central volvió a cerrar sin compras — Clarín Rural (24/11 17:50)",
-          "url": "https://www.clarin.com/economia/dolar-subio-sexto-dia-seguido-llego-1615-banco-central-volvio-cerrar-compras_0_wWKFaZjXUh.html"
-        },
-        {
           "headline": "After the Bell | Dollar stalls after fresh high — Pro Farmer (24/11 17:13)",
           "url": "https://www.profarmer.com/news/after-bell/after-bell-dollar-stalls-after-fresh-high"
         },
         {
-          "headline": "EUA bloqueiam pedido do Brasil na OMC contra tarifas de 25% e 12,5% — Money Times Agro (24/11 16:21)",
-          "url": "https://www.moneytimes.com.br/eua-bloqueiam-pedido-do-brasil-na-omc-contra-tarifas-de-25-e-125-jcav/"
+          "headline": "Fazenda reduz projeção do PIB para 1,9% em 2026 e 1,8% em 2027 — Canal Rural (24/11 18:31)",
+          "url": "https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/"
+        },
+        {
+          "headline": "Basf põe um número na rota do IPO da divisão agrícola: € 15 bi em potencial de vendas. O que ele indica? — AgFeed (24/11 15:58)",
+          "url": "https://agfeed.com.br/negocios/basf-poe-um-numero-na-rota-do-ipo-da-divisao-agricola-e-15-bi-em-potencial-de-vendas-o-que-ele-indica"
+        },
+        {
+          "headline": "Soja abre sessão em alta na bolsa de Chicago após fim da colheita nos EUA — Globo Rural (24/11 15:08)",
+          "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/soja-abre-sessao-em-alta-na-bolsa-de-chicago-apos-fim-da-colheita-nos-eua.ghtml"
+        },
+        {
+          "headline": "Café cai em Nova York com vendas brasileiras em alta — Globo Rural (24/11 13:49)",
+          "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/cafe-cai-em-nova-york-com-vendas-brasileiras-em-alta.ghtml"
+        },
+        {
+          "headline": "Ahead of the Open | More tariffs likely — Pro Farmer (24/11 11:09)",
+          "url": "https://www.profarmer.com/news/ahead-open/ahead-open-more-tariffs-likely"
         }
       ],
       "strategic_directions_by_elo": [
         {
           "elo": "Elo: Produtores Rurais (Gestão de Custos, Insumos e Crédito)",
-          "direction": "A alta acumulada do dólar no mês favorece os preços dos grãos e derivados no mercado interno, mas exige cautela na gestão de custos e fixação de margens. Produtores devem monitorar a paridade de exportação para travar vendas em momentos oportunos.",
-          "reference_links": [
-            {
-              "label": "Alta do dólar favorece preços dos grãos no Brasil — Agrolink",
-              "url": "https://www.agrolink.com.br/noticias/alta-do-dolar-favorece-precos-dos-graos-no-brasil_521437.html"
-            },
-            {
-              "label": "Dólar e oferta limitada de grãos de qualidade sustentam preços do trigo — Globo Rural",
-              "url": "https://globorural.globo.com/agricultura/trigo/noticia/2026/11/dolar-e-oferta-limitada-de-graos-de-qualidade-sustentam-precos-do-trigo.ghtml"
-            },
-            {
-              "label": "Dólar sustenta preço da soja, que supera os R$ 170 em Paranaguá — Globo Rural",
-              "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/dolar-sustenta-preco-da-soja-que-supera-os-r-170-em-paranagua.ghtml"
-            }
-          ]
-        },
-        {
-          "elo": "Elo: Cooperativas e Revendas (Barter e Políticas de Crédito)",
-          "direction": "O patamar elevado da taxa Selic em 13,75% a.a. e a volatilidade cambial demandam rigor na avaliação de risco das operações de barter. Cooperativas devem proteger posições e reavaliar linhas de crédito atreladas à variação cambial.",
+          "direction": "Acompanhe a volatilidade cambial e o impacto nos custos de produção em meio à taxa Selic em 13,75% a.a. [selic_meta]. A alta acumulada do dólar no mês (+8,04%) [dolar_ptax] influencia diretamente os preços de insumos e grãos, exigindo cautela na comercialização e gestão de caixa diante da revisão do PIB <a href=\"https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Canal Rural]</a>.",
           "reference_links": [
             {
               "label": "Banco vê dólar a R$ 5,35 no fim de 2026 — Agrolink",
               "url": "https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html"
             },
             {
-              "label": "Dólar fecha em queda e volta para os R$ 5,90 com redução dos riscos fiscais — Money Times Agro",
-              "url": "https://www.moneytimes.com.br/dolar-fecha-em-queda-e-volta-para-os-r-590-com-reducao-dos-riscos-fiscais-davs/"
+              "label": "Dólar sustenta preço da soja, que supera os R$ 170 em Paranaguá — Globo Rural",
+              "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/dolar-sustenta-preco-da-soja-que-supera-os-r-170-em-paranagua.ghtml"
+            },
+            {
+              "label": "Fazenda reduz projeção do PIB para 1,9% em 2026 e 1,8% em 2027 — Canal Rural",
+              "url": "https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Cooperativas e Revendas (Barter e Políticas de Crédito)",
+          "direction": "Monitore os riscos de crédito e as margens de barter com o câmbio em R$ 5,8573 na PTAX [dolar_ptax]. A necessidade de reavaliar garantias e limites de exposição se intensifica com a revisão das perspectivas macroeconômicas para o PIB <a href=\"https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Canal Rural]</a>.",
+          "reference_links": [
+            {
+              "label": "Banco vê dólar a R$ 5,35 no fim de 2026 — Agrolink",
+              "url": "https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html"
+            },
+            {
+              "label": "Fazenda reduz projeção do PIB para 1,9% em 2026 e 1,8% em 2027 — Canal Rural",
+              "url": "https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/"
             },
             {
               "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (24/11)",
@@ -144,11 +144,29 @@
         },
         {
           "elo": "Elo: Indústrias, Usinas e Logística (Diesel, Frete e Energia)",
-          "direction": "As variações no câmbio e os impactos globais sobre o petróleo influenciam os custos logísticos e industriais. Recomenda-se o acompanhamento estrito dos contratos de frete e custos operacionais atrelados à energia.",
+          "direction": "Ajuste o planejamento logístico considerando a pressão inflacionária e a revisão das projeções fiscais e de atividade econômica <a href=\"https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Canal Rural]</a>. O patamar atual do câmbio [dolar_ptax] afeta diretamente a paridade de importação de insumos e combustíveis.",
           "reference_links": [
             {
-              "label": "Petróleo fecha em forte alta com aumento das tensões no Estreito de Ormuz — Money Times Agro",
-              "url": "https://www.moneytimes.com.br/petroleo-fecha-em-forte-alta-com-aumento-das-tensoes-no-estreito-de-ormuz-davs/"
+              "label": "Banco vê dólar a R$ 5,35 no fim de 2026 — Agrolink",
+              "url": "https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html"
+            },
+            {
+              "label": "Fazenda reduz projeção do PIB para 1,9% em 2026 e 1,8% em 2027 — Canal Rural",
+              "url": "https://www.canalrural.com.br/economia/fazenda-reduz-projecao-do-pib-para-19-em-2026-e-18-em-2027/"
+            },
+            {
+              "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (24/11)",
+              "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF)",
+          "direction": "Opere com atenção ao NDF teórico de R$ 6,0543 [ndf] e ao Dólar Futuro B3 em 5.905,21 pts [-0,52%] [dolar_futuro_b3]. As incertezas fiscais e o comportamento da PTAX a R$ 5,8573 exigem estratégias dinâmicas de hedge e monitoramento de fluxo <a href=\"https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>.",
+          "reference_links": [
+            {
+              "label": "Banco vê dólar a R$ 5,35 no fim de 2026 — Agrolink",
+              "url": "https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html"
             },
             {
               "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (24/11)",
@@ -159,31 +177,13 @@
               "url": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/"
             }
           ]
-        },
-        {
-          "elo": "Elo: Tradings e Mesa de Câmbio / Derivativos (FX & NDF)",
-          "direction": "Com o Dólar PTAX em R$ 5,8573 e o NDF teórico em R$ 6,0543, mesas de derivativos devem operar com atenção ao spread forward e às intervenções do Banco Central. Monitorar o posicionamento direcional frente às incertezas fiscais.",
-          "reference_links": [
-            {
-              "label": "Banco vê dólar a R$ 5,35 no fim de 2026 — Agrolink",
-              "url": "https://www.agrolink.com.br/noticias/banco-ve-dolar-a-r--5-35-no-fim-de-2026_521453.html"
-            },
-            {
-              "label": "Dólar fecha em queda e volta para os R$ 5,90 com redução dos riscos fiscais — Money Times Agro",
-              "url": "https://www.moneytimes.com.br/dolar-fecha-em-queda-e-volta-para-os-r-590-com-reducao-dos-riscos-fiscais-davs/"
-            },
-            {
-              "label": "Cotação verificada: Dólar PTAX (USD/BRL) — Banco Central do Brasil (24/11)",
-              "url": "https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes"
-            }
-          ]
         }
       ]
     },
     {
-      "title": "🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo) — Soja e farelo sobem, óleo de soja recua",
-      "market_bias": "Viés positivo para soja e farelo, com atenção para a volatilidade do dólar.",
-      "executive_summary": "A soja e o farelo de soja apresentaram duas altas seguidas, refletindo a demanda robusta das usinas de biocombustíveis, conforme noticiado em <a href=\"https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a> e <a href=\"https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>. O óleo de soja, no entanto, registrou duas quedas consecutivas, em linha com a notícia sobre a sobra de oferta, conforme <a href=\"https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>. O dólar teve uma queda significativa, pressionando a cotação da soja em B3, que também registrou alta, conforme noticiado em <a href=\"https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>.",
+      "title": "🌱 Complexo Soja e Derivados (Grão, Farelo e Óleo) — Soja avança em Chicago e no físico brasileiro com suporte do farelo",
+      "market_bias": "Viés de alta sustentado pelos subprodutos e demanda por esmagamento, com atenção à volatilidade cambial e regulação europeia.",
+      "executive_summary": "A soja em grão na CBOT fechou cotada a US$ 12,3403/bu, acumulando alta de 1,09% na semana em 2 altas seguidas [soja_cbot]. O movimento foi impulsionado pelo farelo de soja, que subiu para US$ 352,99/t curta, registrando avanço semanal de 3,52% [farelo_cbot]. Em contrapartida, o óleo de soja recuou para 58,11 ¢/lb, com queda de 2,84% [oleo_soja_cbot], pressionado pela queda do petróleo e oferta robusta, embora o esmagamento nos EUA tenha atingido recorde em outubro de 2026, conforme dados da NOPA citados pelo Imea <a href=\"https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>. No mercado físico brasileiro, a soja em Paranaguá-PR atingiu R$ 172,00/sc (+1,18% no dia) [soja_paranagua], enquanto o dólar PTAX fechou a R$ 5,8573 (-1,90%) [dolar_ptax]. A proximidade da implementação do Regulamento de Desmatamento da União Europeia gera alertas da Aprosoja quanto a possíveis transtornos comerciais <a href=\"https://www.canalrural.com.br/agricultura/projeto-soja-brasil/lei-antidesmatamento-da-ue-aprosoja-alerta-para-risco-de-transtornos-e-multas-na-comercializacao-de-soja/\" target=\"_blank\" rel=\"noopener noreferrer\">[Canal Rural]</a>.",
       "news_sources": [
         {
           "headline": "Óleo de soja sobe 35,37% com demanda por biocombustíveis — Agrolink (24/11 14:55)",
@@ -198,12 +198,20 @@
           "url": "https://www.profarmer.com/news/after-bell/after-bell-dollar-stalls-after-fresh-high"
         },
         {
-          "headline": "Plantio de soja chega a 82,9% no Brasil; estado brasileiro já finaliza semeadura da safra; saiba qual — Canal Rural (24/11 15:04)",
-          "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/plantio-de-soja-chega-a-829-no-brasil-estado-brasileiro-ja-finaliza-semeadura-da-safra-saiba-qual/"
+          "headline": "Lei antidesmatamento da UE: Aprosoja alerta para risco de ‘transtornos e multas’ na comercialização de soja — Canal Rural (24/11 18:37)",
+          "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/lei-antidesmatamento-da-ue-aprosoja-alerta-para-risco-de-transtornos-e-multas-na-comercializacao-de-soja/"
+        },
+        {
+          "headline": "Pra cima! Preços de soja sobem e seguem nos melhores níveis do ano; confira o fechamento de mercado — Canal Rural (24/11 18:25)",
+          "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/subiu-precos-de-soja-sobem-e-seguem-nos-melhores-niveis-do-ano-confira-o-fechamento-de-mercado/"
         },
         {
           "headline": "Custo de produção da soja deve cair na safra 2027/28 — Agrolink (24/11 14:48)",
           "url": "https://www.agrolink.com.br/noticias/custo-de-producao-da-soja-deve-cair-na-safra-2027-28_521443.html"
+        },
+        {
+          "headline": "After the Bell | Winter wheat futures mixed in face of firming U.S. dollar — Pro Farmer (23/11 16:52)",
+          "url": "https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar"
         },
         {
           "headline": "First Thing Today | Grains mostly higher as U.S. dollar rally takes a breather — Pro Farmer (24/11 09:17)",
@@ -216,28 +224,20 @@
         {
           "headline": "Chuvas irregulares elevam custos da soja em MT — Agrolink (24/11 11:12)",
           "url": "https://www.agrolink.com.br/noticias/mt-clima-e-mercado--irregularidade-das-chuvas-provoca-replantio-e-eleva-custos-de-producao-na-regiao-leste_521428.html"
-        },
-        {
-          "headline": "After the Bell | Winter wheat futures mixed in face of firming U.S. dollar — Pro Farmer (23/11 16:52)",
-          "url": "https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar"
-        },
-        {
-          "headline": "Preço da soja recupera patamar perdido no início de 2023 — Farmnews (24/11 17:00)",
-          "url": "https://www.farmnews.com.br/mercado/preco-da-soja-recupera-patamar-perdido-no-inicio-de-2023/"
         }
       ],
       "strategic_directions_by_elo": [
         {
           "elo": "Elo: Produtores Rurais (Comercialização e Hedge)",
-          "direction": "Produtores devem buscar oportunidades de comercialização, considerando a alta recente e a expectativa de redução de custos de produção na próxima safra.",
+          "direction": "Os produtores devem monitorar os preços firmes nos portos, como os R$ 172,00/sc em Paranaguá, para travar margens atrativas diante do cenário de custos. É essencial redobrar a atenção com documentação e exigências contratuais devido às novas regras de desmatamento da União Europeia.",
           "reference_links": [
             {
-              "label": "Plantio de soja chega a 82,9% no Brasil; estado brasileiro já finaliza semeadura da safra; saiba qual — Canal Rural",
-              "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/plantio-de-soja-chega-a-829-no-brasil-estado-brasileiro-ja-finaliza-semeadura-da-safra-saiba-qual/"
+              "label": "Lei antidesmatamento da UE: Aprosoja alerta para risco de ‘transtornos e multas’ na comercialização de soja — Canal Rural",
+              "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/lei-antidesmatamento-da-ue-aprosoja-alerta-para-risco-de-transtornos-e-multas-na-comercializacao-de-soja/"
             },
             {
-              "label": "Custo de produção da soja deve cair na safra 2027/28 — Agrolink",
-              "url": "https://www.agrolink.com.br/noticias/custo-de-producao-da-soja-deve-cair-na-safra-2027-28_521443.html"
+              "label": "Pra cima! Preços de soja sobem e seguem nos melhores níveis do ano; confira o fechamento de mercado — Canal Rural",
+              "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/subiu-precos-de-soja-sobem-e-seguem-nos-melhores-niveis-do-ano-confira-o-fechamento-de-mercado/"
             },
             {
               "label": "Cotação verificada: Soja CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
@@ -247,11 +247,11 @@
         },
         {
           "elo": "Elo: Cooperativas e Recebimento de Grãos",
-          "direction": "Cooperativas devem monitorar a dinâmica de preços, especialmente no mercado físico, para ajustar suas estratégias de recebimento.",
+          "direction": "Cooperativas devem gerenciar o fluxo de recebimento e armazenamento considerando a volatilidade dos preços físicos e a necessidade de orientação aos cooperados sobre conformidade de origem. O diferencial de base entre o interior e o porto, como os R$ 13,00/sc entre Uberlândia e Paranaguá, exige cautela na logística.",
           "reference_links": [
             {
-              "label": "Plantio de soja chega a 82,9% no Brasil; estado brasileiro já finaliza semeadura da safra; saiba qual — Canal Rural",
-              "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/plantio-de-soja-chega-a-829-no-brasil-estado-brasileiro-ja-finaliza-semeadura-da-safra-saiba-qual/"
+              "label": "Lei antidesmatamento da UE: Aprosoja alerta para risco de ‘transtornos e multas’ na comercialização de soja — Canal Rural",
+              "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/lei-antidesmatamento-da-ue-aprosoja-alerta-para-risco-de-transtornos-e-multas-na-comercializacao-de-soja/"
             },
             {
               "label": "Cotação verificada: Soja CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
@@ -265,15 +265,15 @@
         },
         {
           "elo": "Elo: Indústrias Esmagadoras e Confinamentos (Farelo e Óleo)",
-          "direction": "Indústrias devem ajustar suas operações de acordo com a alta do farelo e a queda do óleo, buscando equilibrar custos e receitas.",
+          "direction": "As indústrias aproveitam o recorde histórico de esmagamento nos EUA e a firmeza nos preços do farelo, que subiu para US$ 352,99/t curta. Confinamentos encontram suporte no barateamento relativo do farelo de soja para compor rações, mesmo com pressões em outros insumos.",
           "reference_links": [
             {
               "label": "Óleo de soja sobe 35,37% com demanda por biocombustíveis — Agrolink",
               "url": "https://www.agrolink.com.br/noticias/oleo-de-soja-sobe-35-37--com-demanda-por-biocombustiveis_521444.html"
             },
             {
-              "label": "Preço da soja sobe em Chicago após valorização do farelo — Globo Rural",
-              "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml"
+              "label": "Suíno cai e milho pressiona produtores — Agrolink",
+              "url": "https://www.agrolink.com.br/noticias/preco-do-suino-vivo-cai-em-novembro-e-alta-do-milho-pressiona-produtores_521433.html"
             },
             {
               "label": "Cotação verificada: Soja CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
@@ -283,18 +283,18 @@
         },
         {
           "elo": "Elo: Tradings e Visão do Trader (Basis, Spreads & CBOT)",
-          "direction": "Tradings devem manter uma visão de mercado positiva, buscando oportunidades de spreads e basis, especialmente com a alta do farelo e a volatilidade do dólar.",
+          "direction": "Tradings operam o posicionamento em Chicago guiadas pela força do farelo e pela cobertura técnica dos fundos, de olho nos impactos da regulação europeia. As operações de câmbio exigem monitoramento estrito após o fechamento do dólar PTAX em R$ 5,8573.",
           "reference_links": [
             {
               "label": "Preço da soja sobe em Chicago após valorização do farelo — Globo Rural",
               "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/preco-da-soja-sobe-em-chicago-apos-valorizacao-do-farelo.ghtml"
             },
             {
-              "label": "Cotação verificada: Soja CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
-              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+              "label": "After the Bell | Winter wheat futures mixed in face of firming U.S. dollar — Pro Farmer",
+              "url": "https://www.profarmer.com/news/after-bell/after-bell-winter-wheat-futures-mixed-face-firming-u-s-dollar"
             },
             {
-              "label": "Cotação verificada: Farelo CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
+              "label": "Cotação verificada: Soja CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
               "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
             }
           ]
@@ -302,9 +302,9 @@
       ]
     },
     {
-      "title": "🌽🌾 Complexo Milho, Sorgo, Trigo e Coprodutos (Etanol e DDG/DDGS) — Milho em alta, trigo em baixa, dólar pressiona preços",
-      "market_bias": "Viés de alta para milho e baixa para trigo, com dólar como fator de pressão.",
-      "executive_summary": "O milho registra variações positivas em Campinas e na B3, com três altas seguidas, enquanto o trigo mantém queda. A pressão do dólar, que atingiu seu maior patamar em meses, pressiona os preços internos, especialmente do trigo. Notícias sobre a safrinha de milho e a importação de trigo refletem a dinâmica atual da cadeia agrícola. O farelo de soja mais barato melhora o poder de compra do insumo, pressionando os produtores de suínos.",
+      "title": "🌽🌾 Complexo Milho, Sorgo, Trigo e Coprodutos (Etanol e DDG/DDGS) — Milho e Trigo oscilam com dólar e estoques",
+      "market_bias": "Viés neutro no curto prazo, com atenção voltada à escassez de trigo de qualidade e à pressão de custos sobre pecuaristas.",
+      "executive_summary": "O mercado físico de milho em Campinas-SP registrou alta de +0,74%, cotado a R$ 68,50/sc no dia 24/11, enquanto a B3 (1º vencimento) recuou -0,85% para R$ 71,54/sc [milho_campinas, milho_b3]. No cenário internacional, o milho na CBOT fechou a US$ 4,3400/bu, com queda de -0,12% [milho_cbot]. Para o trigo, os preços no Paraná mantiveram-se estáveis em R$ 1.560,00/t, sustentados pela escassez de grãos tipo 1 e pela valorização do dólar frente ao real, que influenciou as cotações domésticas [trigo_parana, N3]. No setor de etanol de milho, destacou-se a aquisição de 42% da Neomille pela Petrobras por R$ 2,8 bilhões <a href=\"https://agfeed.com.br/negocios/petrobras-compra-participacao-da-neomille-por-r-28-bi-e-poe-os-pes-no-etanol-de-milho\" target=\"_blank\" rel=\"noopener noreferrer\">[AgFeed]</a>.",
       "news_sources": [
         {
           "headline": "Suíno cai e milho pressiona produtores — Agrolink (24/11 11:17)",
@@ -313,10 +313,6 @@
         {
           "headline": "Forseed amplia portfólio de milho safrinha e avança com superprecoces — Agrolink (24/11 16:37)",
           "url": "https://www.agrolink.com.br/noticias/forseed-amplia-portfolio-de-milho-safrinha-e-avanca-com-superprecoces_521449.html"
-        },
-        {
-          "headline": "Brasil pode importar até 10 milhões de toneladas de trigo em 2027 — Canal Rural (24/11 15:55)",
-          "url": "https://www.canalrural.com.br/agricultura/trigo/brasil-pode-importar-ate-10-milhoes-de-toneladas-de-trigo-em-2027/"
         },
         {
           "headline": "Como preservar a qualidade dos grãos de trigo — Agrolink (24/11 14:33)",
@@ -343,54 +339,76 @@
           "url": "https://agfeed.com.br/negocios/petrobras-compra-participacao-da-neomille-por-r-28-bi-e-poe-os-pes-no-etanol-de-milho"
         },
         {
-          "headline": "Preço do milho se recupera em novembro, mas segue próximo de 2025! — Farmnews (24/11 16:03)",
-          "url": "https://www.farmnews.com.br/mercado/preco-do-milho-segue-em-recuperacao-em-novembro/"
+          "headline": "Chuvas destroem 2,5 mil hectares de soja e milho em propriedade no RS — Globo Rural (24/11 20:36)",
+          "url": "https://globorural.globo.com/clima/noticia/2026/11/chuvas-destroem-25-mil-hectares-de-soja-e-milho-em-propriedade-no-rs.ghtml"
+        },
+        {
+          "headline": "‘Não dá para aceitar esse tratamento’, diz ministro sobre adiamento da UE ao retorno de frango e mel brasileiros — Money Times Agro (24/11 18:48)",
+          "url": "https://www.moneytimes.com.br/nao-da-para-aceitar-esse-tratamento-diz-ministro-sobre-adiamento-da-ue-ao-retorno-de-frango-e-mel-brasileiros/"
         }
       ],
       "strategic_directions_by_elo": [
         {
           "elo": "Elo: Produtores de Milho, Sorgo e Trigo",
-          "direction": "Pressão de custos de insumos e preços internos. Notícia sobre a queda do suíno e a pressão do milho pressiona produtores.",
+          "direction": "Os produtores enfrentam desafios climáticos e de custos, com pressões nas margens da safrinha e perdas pontuais em lavouras no Rio Grande do Sul devido a fortes chuvas [N18, N25]. A gestão de riscos de comercialização deve considerar a volatilidade cambial e a qualidade dos lotes colhidos.",
           "reference_links": [
             {
               "label": "Suíno cai e milho pressiona produtores — Agrolink",
               "url": "https://www.agrolink.com.br/noticias/preco-do-suino-vivo-cai-em-novembro-e-alta-do-milho-pressiona-produtores_521433.html"
             },
             {
-              "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
-              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+              "label": "Chuvas destroem 2,5 mil hectares de soja e milho em propriedade no RS — Globo Rural",
+              "url": "https://globorural.globo.com/clima/noticia/2026/11/chuvas-destroem-25-mil-hectares-de-soja-e-milho-em-propriedade-no-rs.ghtml"
             },
             {
-              "label": "Cotação verificada: Milho Campinas-SP — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/milho/"
+              "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
+              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
             }
           ]
         },
         {
           "elo": "Elo: Cooperativas e Sementeiras",
-          "direction": "Inovações em híbridos para a safrinha 2027. Notícia sobre a Forseed ampliando seu portfólio de híbridos.",
+          "direction": "O mercado de sementes avança com o lançamento de novos híbridos voltados para a safrinha, visando mitigar riscos como cigarrinha e estresse hídrico <a href=\"https://www.agrolink.com.br/noticias/forseed-amplia-portfolio-de-milho-safrinha-e-avanca-com-superprecoces_521449.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>. Cooperativas devem intensificar o suporte técnico na colheita e armazenamento de trigo para preservar a classificação comercial <a href=\"https://www.agrolink.com.br/noticias/como-preservar-a-qualidade-dos-graos-de-trigo_521441.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>.",
           "reference_links": [
             {
               "label": "Forseed amplia portfólio de milho safrinha e avança com superprecoces — Agrolink",
               "url": "https://www.agrolink.com.br/noticias/forseed-amplia-portfolio-de-milho-safrinha-e-avanca-com-superprecoces_521449.html"
             },
             {
-              "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
-              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+              "label": "Como preservar a qualidade dos grãos de trigo — Agrolink",
+              "url": "https://www.agrolink.com.br/noticias/como-preservar-a-qualidade-dos-graos-de-trigo_521441.html"
             },
             {
-              "label": "Cotação verificada: Milho Campinas-SP — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/milho/"
+              "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
+              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
             }
           ]
         },
         {
           "elo": "Elo: Moinhos, Granjas (Frango, Ovos, Suínos) e Confinamentos",
-          "direction": "Pressão de custos de insumos e preços internos. Notícia sobre a queda do suíno e a pressão do milho pressiona produtores.",
+          "direction": "A alta do milho somada à queda do preço do suíno vivo pressiona a margem dos suinocultores paulistas, embora o farelo de soja mais barato ajude a amenizar o custo da ração <a href=\"https://www.agrolink.com.br/noticias/preco-do-suino-vivo-cai-em-novembro-e-alta-do-milho-pressiona-produtores_521433.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>. Moinhos lidam com a restrição de oferta de trigo de melhor qualidade no mercado interno <a href=\"https://globorural.globo.com/agricultura/trigo/noticia/2026/11/dolar-e-oferta-limitada-de-graos-de-qualidade-sustentam-precos-do-trigo.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>.",
           "reference_links": [
             {
               "label": "Suíno cai e milho pressiona produtores — Agrolink",
               "url": "https://www.agrolink.com.br/noticias/preco-do-suino-vivo-cai-em-novembro-e-alta-do-milho-pressiona-produtores_521433.html"
+            },
+            {
+              "label": "Dólar e oferta limitada de grãos de qualidade sustentam preços do trigo — Globo Rural",
+              "url": "https://globorural.globo.com/agricultura/trigo/noticia/2026/11/dolar-e-oferta-limitada-de-graos-de-qualidade-sustentam-precos-do-trigo.ghtml"
+            },
+            {
+              "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
+              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings e Visão do Trader (B3 vs. CBOT)",
+          "direction": "As tradings monitoram o spread calendário do milho na B3, que fechou em R$ 5,67/sc, e os impactos da variação cambial sobre as exportações e paridades de importação. A entrada da Petrobras no etanol de milho altera o panorama de longo prazo para o consumo interno do grão <a href=\"https://agfeed.com.br/negocios/petrobras-compra-participacao-da-neomille-por-r-28-bi-e-poe-os-pes-no-etanol-de-milho\" target=\"_blank\" rel=\"noopener noreferrer\">[AgFeed]</a>.",
+          "reference_links": [
+            {
+              "label": "Petrobras compra participação da Neomille por R$ 2,8 bi e põe os pés no etanol de milho — AgFeed",
+              "url": "https://agfeed.com.br/negocios/petrobras-compra-participacao-da-neomille-por-r-28-bi-e-poe-os-pes-no-etanol-de-milho"
             },
             {
               "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
@@ -399,33 +417,15 @@
             {
               "label": "Cotação verificada: Milho Campinas-SP — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/milho/"
-            }
-          ]
-        },
-        {
-          "elo": "Elo: Tradings e Visão do Trader (B3 vs. CBOT)",
-          "direction": "Milho em alta no mercado físico e B3, enquanto trigo mantém queda. Viés de alta para milho e baixa para trigo, com dólar como fator de pressão.",
-          "reference_links": [
-            {
-              "label": "Suíno cai e milho pressiona produtores — Agrolink",
-              "url": "https://www.agrolink.com.br/noticias/preco-do-suino-vivo-cai-em-novembro-e-alta-do-milho-pressiona-produtores_521433.html"
-            },
-            {
-              "label": "Brasil pode importar até 10 milhões de toneladas de trigo em 2027 — Canal Rural",
-              "url": "https://www.canalrural.com.br/agricultura/trigo/brasil-pode-importar-ate-10-milhoes-de-toneladas-de-trigo-em-2027/"
-            },
-            {
-              "label": "Cotação verificada: Milho CBOT — BCR – Bolsa de Comercio de Rosario (24/11)",
-              "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
             }
           ]
         }
       ]
     },
     {
-      "title": "☁️ Complexo Algodão e Coprodutos (Pluma, Caroço e Farelo) — Algodão em alta, Dólar recua",
-      "market_bias": "A alta do algodão em pluma sugere pressão sobre o caroço e farelo, enquanto a queda do dólar pode beneficiar exportações.",
-      "executive_summary": "O algodão em pluma em Rondonópolis-MT registrou uma alta de 1,23% na sessão, refletindo a sequência de aumentos desde 19/11. A mancha angular, discutida em <a href=\"https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, pode afetar a produtividade e a qualidade da fibra, embora a notícia não tenha impacto direto nas cotações. O dólar, por sua vez, teve uma queda de 1,90% vs 23/11, o que pode beneficiar as exportações de algodão, conforme noticiado em <a href=\"https://globorural.globo.com/especiais/fazenda-sustentavel/noticia/2026/11/mycarbon-e-ldc-querem-dar-escala-a-credito-de-carbono.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>.",
+      "title": "☁️ Complexo Algodão e Coprodutos (Pluma, Caroço e Farelo) — Algodão em pluma avança em Rondonópolis e Dólar PTAX recua a R$ 5,8573",
+      "market_bias": "Viés neutro para o complexo algodão, com atenção ao manejo fitossanitário e à volatilidade cambial.",
+      "executive_summary": "No fechamento de 24/11, o algodão em pluma em Rondonópolis-MT atingiu 411,00 ¢R$/lb, registrando variação semanal de +1,23% e diária de +1,23% [algodao_cepea]. O Dólar PTAX encerrou cotado a R$ 5,8573, com retração de -1,90% no dia e alta de +8,04% no mês [dolar_ptax]. No âmbito produtivo e tecnológico, o mercado destaca o lançamento de novas soluções biológicas, como o fungicida Arizium para o controle de doenças nas lavouras <a href=\"https://www.agrolink.com.br/noticias/corteva-amplia-portfolio-de-biologicos-com-inovacoes-para-o-manejo-de-nematoides-e-doencas-fungicas_521438.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, além de recomendações técnicas para a prevenção da mancha angular na entressafra, causada pela bactéria Xanthomonas citri subsp. malvacearum <a href=\"https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>. Na frente de sustentabilidade, iniciativas como a parceria entre MyCarbon e Louis Dreyfus Company buscam dar escala ao crédito de carbono no Cerrado para produtores de algodão <a href=\"https://globorural.globo.com/especiais/fazenda-sustentavel/noticia/2026/11/mycarbon-e-ldc-querem-dar-escala-a-credito-de-carbono.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>.",
       "news_sources": [
         {
           "headline": "Mancha angular no algodão: prevenção começa na entressafra — Agrolink (24/11 14:22)",
@@ -443,21 +443,25 @@
       "strategic_directions_by_elo": [
         {
           "elo": "Elo: Produtores Rurais (Cotonicultores)",
-          "direction": "A alta do algodão em pluma pode incentivar a plantação, mas a mancha angular, discutida em <a href=\"https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, pode afetar a produtividade.",
+          "direction": "Os produtores devem intensificar o manejo preventivo contra a mancha angular, especialmente em ambientes com calor e alta umidade favoráveis à bactéria Xanthomonas citri subsp. malvacearum. A chegada de novas tecnologias biológicas, como fungicidas e nematicidas, amplia as ferramentas de controle integrado nas lavouras. Produtores no Cerrado também podem avaliar a participação em projetos de crédito de carbono para melhoria da saúde do solo.",
           "reference_links": [
             {
               "label": "Mancha angular no algodão: prevenção começa na entressafra — Agrolink",
               "url": "https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html"
             },
             {
-              "label": "Cotação verificada: Algodão pluma MT — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/algodao/"
+              "label": "Corteva amplia portfólio de biológicos com inovações para o manejo de nematoides e doenças fúngicas — Agrolink",
+              "url": "https://www.agrolink.com.br/noticias/corteva-amplia-portfolio-de-biologicos-com-inovacoes-para-o-manejo-de-nematoides-e-doencas-fungicas_521438.html"
+            },
+            {
+              "label": "MyCarbon e LDC querem dar escala a crédito de carbono — Globo Rural",
+              "url": "https://globorural.globo.com/especiais/fazenda-sustentavel/noticia/2026/11/mycarbon-e-ldc-querem-dar-escala-a-credito-de-carbono.ghtml"
             }
           ]
         },
         {
           "elo": "Elo: Algodoeiras e Cooperativas",
-          "direction": "A alta do algodão em pluma pode beneficiar as algodoeiras, mas a mancha angular, discutida em <a href=\"https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, pode afetar a produtividade.",
+          "direction": "As cooperativas e beneficiadoras acompanham a precificação da pluma, com o indicador de Rondonópolis-MT cotado a 411,00 ¢R$/lb e variação semanal de +1,23%. É fundamental manter a atenção aos custos operacionais e à qualidade da fibra diante dos desafios climáticos e fitossanitários que afetam a produtividade nas regiões produtoras.",
           "reference_links": [
             {
               "label": "Mancha angular no algodão: prevenção começa na entressafra — Agrolink",
@@ -471,12 +475,8 @@
         },
         {
           "elo": "Elo: Indústrias e Confinamentos (Caroço e Farelo de Algodão)",
-          "direction": "A alta do algodão em pluma pode pressionar os preços do caroço e farelo, mas a mancha angular, discutida em <a href=\"https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, pode afetar a produção.",
+          "direction": "As cotações para o caroço de algodão em Mato Grosso e no Oeste da Bahia encontram-se indisponíveis por falta de retorno de valores válidos nas fontes do sistema. As indústrias consumidoras de coprodutos devem monitorar a disponibilidade física regional para a formulação de rações na pecuária.",
           "reference_links": [
-            {
-              "label": "Mancha angular no algodão: prevenção começa na entressafra — Agrolink",
-              "url": "https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html"
-            },
             {
               "label": "Cotação verificada: Algodão pluma MT — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/algodao/"
@@ -485,16 +485,8 @@
         },
         {
           "elo": "Elo: Tradings e Visão do Trader (ICE NY & Câmbio)",
-          "direction": "A alta do algodão em pluma e a queda do dólar podem influenciar as operações de traders, mas a mancha angular, discutida em <a href=\"https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html\" target=\"_blank\" rel=\"noopener noreferrer\">[Agrolink]</a>, pode afetar a produção.",
+          "direction": "As cotações do contrato de 1º vencimento do algodão na ICE de Nova York encontram-se indisponíveis. No mercado de câmbio, o Dólar PTAX encerrou cotado a R$ 5,8573, com variação diária de -1,90%, recuo semanal de -0,54% e alta acumulada no mês de +8,04%, exigindo cautela na gestão de posições direcionais e de hedge cambial.",
           "reference_links": [
-            {
-              "label": "Mancha angular no algodão: prevenção começa na entressafra — Agrolink",
-              "url": "https://www.agrolink.com.br/noticias/mancha-angular-no-algodao--prevencao-comeca-na-entressafra_521440.html"
-            },
-            {
-              "label": "MyCarbon e LDC querem dar escala a crédito de carbono — Globo Rural",
-              "url": "https://globorural.globo.com/especiais/fazenda-sustentavel/noticia/2026/11/mycarbon-e-ldc-querem-dar-escala-a-credito-de-carbono.ghtml"
-            },
             {
               "label": "Cotação verificada: Algodão pluma MT — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/algodao/"
@@ -504,13 +496,21 @@
       ]
     },
     {
-      "title": "☕🐂 Complexo Café (Arábica &amp; Robusta) e Pecuária — Café em queda, boi gordo em máximas",
-      "market_bias": "Viés baixo para café, viés neutro para boi gordo.",
-      "executive_summary": "Os preços do café arábica estão em queda, com a cotação do café arábica do Sul de Minas caindo 0,54% na semana, refletindo a boa perspectiva de safras no Brasil e Vietnã, conforme noticiado em <a href=\"https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>. O boi gordo, por outro lado, manteve-se estável no mercado físico, com a cotação do boi gordo do São Paulo-SP mantendo-se estável na semana, conforme <a href=\"https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Farmnews]</a>. O dólar, em queda, pressiona os preços do café, enquanto o mercado futuro do boi gordo atinge máximas históricas.",
+      "title": "☕🐂 Complexo Café (Arábica &amp; Robusta) e Pecuária — Café recua e boi gordo mantém estabilidade no físico",
+      "market_bias": "Viés de cautela frente à pressão de safra no café e acomodação nas escalas de abate do boi gordo.",
+      "executive_summary": "O mercado físico de café arábica no Sul de Minas fechou a R$ 1.840,00/sc em 24/11, registrando queda de -0,54% no dia e na semana [cafe_arabica_cepea]. Os preços futuros internacionais seguem pressionados por perspectivas de boas safras no Brasil e no Vietnã <a href=\"https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a>. Paralelamente, o mercado do boi gordo apresentou estabilidade, cotado a R$ 395,00/@ em São Paulo, amparado por escalas de abate mais confortáveis entre os frigoríficos de maior porte [N30, boi_gordo_cepea]. No entanto, o mercado futuro na B3 registrou ajuste para R$ 397,50/@, acumulando três quedas seguidas [boi_b3], enquanto analistas apontam contratos futuros firmes para os próximos meses <a href=\"https://www.farmnews.com.br/mercado/com-o-mercado-futuro-do-boi-gordo-na-maxima-o-que-esperar/\" target=\"_blank\" rel=\"noopener noreferrer\">[Farmnews]</a>.",
       "news_sources": [
         {
           "headline": "Expectativa de boas safras no Vietnã e Brasil pressiona preços do café — Globo Rural (24/11 16:42)",
           "url": "https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml"
+        },
+        {
+          "headline": "Boi gordo: altas perdem força com escalas de abate mais confortáveis — Canal Rural (24/11 19:26)",
+          "url": "https://www.canalrural.com.br/pecuaria/boi-gordo-altas-perdem-forca-com-escalas-de-abate-mais-confortaveis/"
+        },
+        {
+          "headline": "Preço do boi gordo: o que esperar no final de 2026? — Farmnews (24/11 21:18)",
+          "url": "https://www.farmnews.com.br/mercado/preco-do-boi-gordo-no-final-de-2026/"
         },
         {
           "headline": "Com o mercado futuro do boi gordo na máxima, o que esperar? — Farmnews (24/11 09:03)",
@@ -521,14 +521,6 @@
           "url": "https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/"
         },
         {
-          "headline": "Produtor de café vê safra e renda menores em 2027 — Globo Rural (24/11 08:00)",
-          "url": "https://globorural.globo.com/agricultura/cafe/noticia/2026/11/produtor-de-cafe-ve-safra-e-renda-menores-em-2027.ghtml"
-        },
-        {
-          "headline": "Preço do bezerro e do boi gordo: descolamento permanece em novembro — Farmnews (23/11 11:15)",
-          "url": "https://www.farmnews.com.br/mercado/preco-do-bezerro-e-do-boi-gordo-descolamento-permanece-em-novembro/"
-        },
-        {
           "headline": "Clima irregular ameaça próxima safra de café no Brasil; ouça o comentário — Globo Rural (24/11 19:17)",
           "url": "https://globorural.globo.com/podcasts/cbn-agro/noticia/2026/11/clima-irregular-ameaca-proxima-safra-de-cafe-no-brasil-ouca-o-comentario.ghtml"
         },
@@ -537,88 +529,88 @@
           "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/cafe-cai-em-nova-york-com-vendas-brasileiras-em-alta.ghtml"
         },
         {
+          "headline": "Escándalo en Caballito: la Policía desalojó a los clientes de un café para desarmar un deck por las obras del Trambus — Clarín Rural (24/11 20:13)",
+          "url": "https://www.clarin.com/ciudades/escandalo-caballito-policia-desalojo-clientes-cafe-desarmar-deck-obras-trambus_0_QIfVXaVsVo.html"
+        },
+        {
+          "headline": "Mercado do boi gordo abre a semana com poucos negócios e preços estáveis — Globo Rural (24/11 09:50)",
+          "url": "https://globorural.globo.com/pecuaria/boi/noticia/2026/11/mercado-do-boi-gordo-abre-a-semana-com-poucos-negocios-e-precos-estaveis.ghtml"
+        },
+        {
           "headline": "Beef's unbreakable demand streak faces a 2027 reality check — Pro Farmer (24/11 12:41)",
           "url": "https://www.profarmer.com/news/agriculture-news/beefs-unbreakable-demand-streak-faces-2027-reality-check"
-        },
-        {
-          "headline": "Corteva amplia portfólio de biológicos com inovações para o manejo de nematoides e doenças fúngicas — Agrolink (24/11 13:38)",
-          "url": "https://www.agrolink.com.br/noticias/corteva-amplia-portfolio-de-biologicos-com-inovacoes-para-o-manejo-de-nematoides-e-doencas-fungicas_521438.html"
-        },
-        {
-          "headline": "Cecafé destaca RASOE em debate sobre sustentabilidade — Agrolink (24/11 11:13)",
-          "url": "https://www.agrolink.com.br/noticias/cecafe-debate-implementacao-da-plataforma-agro-brasil---sustentavel-e-demandas-de-mercado_521431.html"
         }
       ],
       "strategic_directions_by_elo": [
         {
           "elo": "Elo: Cafeicultores (Matas de Minas, Cerrado e Sul de Minas)",
-          "direction": "Café arábica em queda, pressionando a rentabilidade. Nota <a href=\"https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a> destaca a boa perspectiva de safras, mas preços baixos podem reduzir a renda.",
+          "direction": "Produtores monitoram o impacto das condições climáticas e floradas nas lavouras para a próxima safra. A desvalorização cambial e as perspectivas de oferta internacional mantêm os preços sob pressão nas praças físicas.",
           "reference_links": [
             {
               "label": "Expectativa de boas safras no Vietnã e Brasil pressiona preços do café — Globo Rural",
               "url": "https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml"
             },
             {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+              "label": "Clima irregular ameaça próxima safra de café no Brasil; ouça o comentário — Globo Rural",
+              "url": "https://globorural.globo.com/podcasts/cbn-agro/noticia/2026/11/clima-irregular-ameaca-proxima-safra-de-cafe-no-brasil-ouca-o-comentario.ghtml"
             },
             {
-              "label": "Cotação verificada: Café Manhuaçu-MG (Matas de Minas) — Agrolink (24/11)",
-              "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
+              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
+              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
             }
           ]
         },
         {
           "elo": "Elo: Cooperativas de Café e Exportadores",
-          "direction": "Café arábica em queda, pressionando a rentabilidade. Nota <a href=\"https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">[Globo Rural]</a> destaca a boa perspectiva de safras, mas preços baixos podem reduzir a renda.",
+          "direction": "O avanço das vendas externas e a flutuação do câmbio influenciam o ritmo de comercialização e originação. Cooperativas avaliam os riscos produtivos e qualitativos decorrentes do clima irregular nas regiões produtoras.",
+          "reference_links": [
+            {
+              "label": "Café cai em Nova York com vendas brasileiras em alta — Globo Rural",
+              "url": "https://globorural.globo.com/cotacoes/noticia/2026/11/cafe-cai-em-nova-york-com-vendas-brasileiras-em-alta.ghtml"
+            },
+            {
+              "label": "Clima irregular ameaça próxima safra de café no Brasil; ouça o comentário — Globo Rural",
+              "url": "https://globorural.globo.com/podcasts/cbn-agro/noticia/2026/11/clima-irregular-ameaca-proxima-safra-de-cafe-no-brasil-ouca-o-comentario.ghtml"
+            },
+            {
+              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
+              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Pecuaristas e Confinamentos",
+          "direction": "Com as escalas de abate dos frigoríficos mais confortáveis, os pecuaristas enfrentam um cenário de acomodação nos preços do boi gordo no mercado físico. A gestão de custos e o planejamento de saída dos animais terminados ganham foco.",
+          "reference_links": [
+            {
+              "label": "Boi gordo: altas perdem força com escalas de abate mais confortáveis — Canal Rural",
+              "url": "https://www.canalrural.com.br/pecuaria/boi-gordo-altas-perdem-forca-com-escalas-de-abate-mais-confortaveis/"
+            },
+            {
+              "label": "Mercado do boi gordo abre a semana com poucos negócios e preços estáveis — Globo Rural",
+              "url": "https://globorural.globo.com/pecuaria/boi/noticia/2026/11/mercado-do-boi-gordo-abre-a-semana-com-poucos-negocios-e-precos-estaveis.ghtml"
+            },
+            {
+              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
+              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
+            }
+          ]
+        },
+        {
+          "elo": "Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café)",
+          "direction": "Traders operam de forma cautelosa com a volatilidade nas bolsas internacionais e na B3, onde o contrato de boi gordo fechou a R$ 397,50/@. Monitoramento rigoroso dos prêmios de basis e do posicionamento cambial.",
           "reference_links": [
             {
               "label": "Expectativa de boas safras no Vietnã e Brasil pressiona preços do café — Globo Rural",
               "url": "https://globorural.globo.com/agricultura/cafe/noticia/2026/11/expectativa-de-boas-safras-no-vietna-e-brasil-pressiona-precos-do-cafe.ghtml"
             },
             {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
-            },
-            {
-              "label": "Cotação verificada: Café Manhuaçu-MG (Matas de Minas) — Agrolink (24/11)",
-              "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
-            }
-          ]
-        },
-        {
-          "elo": "Elo: Pecuaristas e Confinamentos",
-          "direction": "Boi gordo em máximas históricas, pressionando a rentabilidade. Nota <a href=\"https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Farmnews]</a> destaca a renovação de máximas no mercado futuro.",
-          "reference_links": [
-            {
-              "label": "Preço futuro do boi gordo na máxima entre dezembro e março de 2027 — Farmnews",
-              "url": "https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/"
+              "label": "Com o mercado futuro do boi gordo na máxima, o que esperar? — Farmnews",
+              "url": "https://www.farmnews.com.br/mercado/com-o-mercado-futuro-do-boi-gordo-na-maxima-o-que-esperar/"
             },
             {
               "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
               "url": "https://www.canalrural.com.br/cotacoes/cafe/"
-            },
-            {
-              "label": "Cotação verificada: Café Manhuaçu-MG (Matas de Minas) — Agrolink (24/11)",
-              "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
-            }
-          ]
-        },
-        {
-          "elo": "Elo: Tradings, Frigoríficos e Trader (B3 Boi & ICE Café)",
-          "direction": "Boi gordo em máximas históricas, pressionando a rentabilidade. Nota <a href=\"https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/\" target=\"_blank\" rel=\"noopener noreferrer\">[Farmnews]</a> destaca a renovação de máximas no mercado futuro.",
-          "reference_links": [
-            {
-              "label": "Preço futuro do boi gordo na máxima entre dezembro e março de 2027 — Farmnews",
-              "url": "https://www.farmnews.com.br/mercado/preco-futuro-do-boi-gordo-na-maxima-entre-dezembro-e-marco-de-2027/"
-            },
-            {
-              "label": "Cotação verificada: Café Sul de Minas — Canal Rural (24/11)",
-              "url": "https://www.canalrural.com.br/cotacoes/cafe/"
-            },
-            {
-              "label": "Cotação verificada: Café Manhuaçu-MG (Matas de Minas) — Agrolink (24/11)",
-              "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg"
             }
           ]
         }
@@ -636,7 +628,7 @@
         "sunday_open_ref": 5.8889,
         "current_value": 5.8573,
         "weekly_change_pct": -0.54,
-        "weekly_driver": "O Dólar PTAX registrou variação de -0,54% (−R$ 0,0316) desde 19/11, refletindo ajustes no mercado de câmbio."
+        "weekly_driver": "O Dólar PTAX registrou variação semanal de -0,54% desde 19/11, refletindo ajustes pontuais e intervenções do Banco Central."
       },
       {
         "asset": "Soja Paranaguá-PR",
@@ -644,7 +636,7 @@
         "sunday_open_ref": 170.0,
         "current_value": 172.0,
         "weekly_change_pct": 1.18,
-        "weekly_driver": "Soja subiu 2,00/sc na semana, impulsionada pela demanda das usinas de biocombustíveis."
+        "weekly_driver": "A soja em Paranaguá registrou alta de 1,18% desde 19/11, acompanhando a firmeza dos preços externos e a demanda nos portos."
       },
       {
         "asset": "Soja CBOT",
@@ -652,7 +644,7 @@
         "sunday_open_ref": 12.2078,
         "current_value": 12.3403,
         "weekly_change_pct": 1.09,
-        "weekly_driver": "Soja CBOT subiu 0,1325/bu na semana, refletindo a demanda robusta das usinas de biocombustíveis."
+        "weekly_driver": "A soja CBOT acumulou alta de 1,09% desde 20/11, impulsionada pela valorização dos contratos de farelo e compras técnicas."
       },
       {
         "asset": "Milho Campinas-SP",
@@ -660,7 +652,7 @@
         "sunday_open_ref": 68.0,
         "current_value": 68.5,
         "weekly_change_pct": 0.74,
-        "weekly_driver": "Variação de +0,74% na semana, com três altas seguidas."
+        "weekly_driver": "O mercado físico em Campinas acumulou alta de +0,74% desde 19/11, refletindo a firmeza pontual da demanda."
       },
       {
         "asset": "Trigo Ponta Grossa-PR",
@@ -668,7 +660,7 @@
         "sunday_open_ref": 1560.0,
         "current_value": 1560.0,
         "weekly_change_pct": 0.0,
-        "weekly_driver": "Variação de 0,00% na semana, mantendo queda."
+        "weekly_driver": "O trigo em Ponta Grossa manteve variação de 0,00% desde 19/11, sustentado por contratos firmes e oferta restrita."
       },
       {
         "asset": "Algodão pluma MT",
@@ -676,7 +668,7 @@
         "sunday_open_ref": 406.0,
         "current_value": 411.0,
         "weekly_change_pct": 1.23,
-        "weekly_driver": "A sequência de altas desde 19/11 indica pressão sobre o algodão em pluma."
+        "weekly_driver": "O algodão em pluma em Rondonópolis-MT registrou variação de +1,23% (+5,00 ¢R$/lb) desde 19/11, refletindo o movimento de alta na semana."
       },
       {
         "asset": "Café Sul de Minas",
@@ -684,7 +676,7 @@
         "sunday_open_ref": 1850.0,
         "current_value": 1840.0,
         "weekly_change_pct": -0.54,
-        "weekly_driver": "Café arábica do Sul de Minas caiu 0,54% na semana, refletindo a boa perspectiva de safras no Brasil e Vietnã."
+        "weekly_driver": "O café arábica em São Paulo registrou variação semanal de -0,54% (−R$ 10,00/sc) desde 19/11, refletindo o cenário de pressão internacional."
       },
       {
         "asset": "Boi gordo SP",
@@ -692,7 +684,7 @@
         "sunday_open_ref": 395.0,
         "current_value": 395.0,
         "weekly_change_pct": 0.0,
-        "weekly_driver": "Boi gordo do São Paulo-SP manteve-se estável na semana, com o mercado futuro atingindo máximas."
+        "weekly_driver": "O boi gordo em São Paulo apresentou variação semanal de 0,00% (R$ 0,00/@) desde 19/11, mantendo estabilidade frente à acomodação das escalas."
       }
     ]
   },
@@ -731,7 +723,7 @@
         "mid_month_10_oct": 5.5146,
         "current_value": 5.8573,
         "mtd_change_pct": 8.04,
-        "monthly_narrative": "O Dólar PTAX acumula alta de +8,04% (+R$ 0,4361) desde 30/10, impulsionado por dúvidas sobre as contas públicas e o cenário externo.",
+        "monthly_narrative": "O Dólar PTAX acumula alta de +8,04% desde 30/10, impulsionado por dúvidas fiscais e pelo cenário de dólar forte.",
         "daily_history": [
           5.0377,
           5.5007,
@@ -954,13 +946,13 @@
     {
       "commodity": "Dólar PTAX (USD/BRL)",
       "current_base": "R$ 5,8573 (Banco Central do Brasil, 24/11) · Track record em formação (1ª aferição em 26/11)",
-      "short_term_target_23_oct": "R$ 5,5815 – R$ 6,1468 até 01/12 (banda ±1,0σ)",
+      "short_term_target_23_oct": "R$ 5,7177 – R$ 6,2968 até 01/12 (banda ±1,0σ, viés de alta)",
       "end_of_month_30_oct": {
-        "base_case": "R$ 5,8573 (30/11)",
-        "bull_case": "R$ 6,1155 (+1,0σ)",
-        "bear_case": "R$ 5,6100 (−1,0σ)"
+        "base_case": "R$ 5,9850 (30/11)",
+        "bull_case": "R$ 6,2489 (+1,0σ)",
+        "bear_case": "R$ 5,7323 (−1,0σ)"
       },
-      "audit_trigger": "Mudanças substanciais na política fiscal do governo ou alterações expressivas na atuação do Banco Central no mercado de câmbio. | Método: banda de volatilidade (σ diário 2,16%, 44 pregões no histórico)."
+      "audit_trigger": "Mudanças substanciais na política fiscal ou intervenções cambiais mais agressivas pelo Banco Central. | Método: banda de volatilidade (σ diário 2,16%, 44 pregões no histórico)."
     },
     {
       "commodity": "Petróleo WTI",
@@ -982,7 +974,7 @@
         "bull_case": "—",
         "bear_case": "—"
       },
-      "audit_trigger": "Se a demanda das usinas de biocombustíveis diminuir, pode haver uma reversão do movimento de alta."
+      "audit_trigger": "Mudanças abruptas no câmbio PTAX ou reversão na tendência de alta dos prêmios de exportação nos portos."
     },
     {
       "commodity": "Milho Campinas-SP",
@@ -993,7 +985,7 @@
         "bull_case": "—",
         "bear_case": "—"
       },
-      "audit_trigger": "Se o dólar continuar em alta, pressionará os preços internos."
+      "audit_trigger": "Mudanças abruptas no fluxo de escoamento da safra e revisões na demanda das indústrias de proteína animal."
     },
     {
       "commodity": "Trigo Ponta Grossa-PR",
@@ -1004,7 +996,7 @@
         "bull_case": "—",
         "bear_case": "—"
       },
-      "audit_trigger": "Se a produção nacional de trigo se recuperar, pressionará as cotações."
+      "audit_trigger": "Aumento repentino na disponibilidade de trigo importado ou oscilações severas na taxa de câmbio."
     },
     {
       "commodity": "Algodão pluma MT",
@@ -1015,7 +1007,7 @@
         "bull_case": "—",
         "bear_case": "—"
       },
-      "audit_trigger": "A mancha angular, discutida em, pode invalidar a alta do algodão em pluma."
+      "audit_trigger": "Mudanças abruptas na demanda externa por pluma ou oscilações expressivas na paridade cambial que alterem a competitividade das exportações brasileiras."
     },
     {
       "commodity": "Café Sul de Minas",
@@ -1026,7 +1018,7 @@
         "bull_case": "—",
         "bear_case": "—"
       },
-      "audit_trigger": "Café arábica do Sul de Minas pode reagir se a boa perspectiva de safras não se concretizar."
+      "audit_trigger": "Reviravolta climática severa que comprometa de forma definitiva o potencial produtivo da safra brasileira."
     },
     {
       "commodity": "Boi gordo SP",
@@ -1037,16 +1029,16 @@
         "bull_case": "—",
         "bear_case": "—"
       },
-      "audit_trigger": "Boi gordo do São Paulo-SP pode reagir se o mercado futuro não manter as máximas."
+      "audit_trigger": "Aumento repentino na restrição de oferta de animais terminados que force os frigoríficos a alongarem as escalas de forma abrupta."
     }
   ],
   "market_intelligence_pill": {
-    "title": "NDF e pressão cambial",
+    "title": "Análise de Paridade e NDF no Câmbio",
     "formula": "NDF (160 dias) = 5,8573 × (1 + 0,1375)^(106/252) ÷ [1 + 0,0480 × (160/360)] = R$ 6,0543",
-    "analysis": "O NDF (160 dias) calculado com a taxa atual do dólar é R$ 6,0543, refletindo a volatilidade cambial. A pressão do dólar sobre commodities agrícolas é evidente, com soja e milho em alta, enquanto café e boi gordo movimentam mercados.",
-    "strategic_takeaway": "Monitorar câmbio e volatilidade para estratégias eficazes."
+    "analysis": "O conceito de NDF (Non-Deliverable Forward) reflete a taxa futura de câmbio ajustada pelo diferencial de juros entre o Brasil e o exterior. Com o Dólar PTAX cotado a R$ 5,8573 e a taxa Selic meta em 13,75% a.a., o cálculo do NDF para 160 dias corridos resultou em R$ 6,0543. Esse spread cambial indica a precificação do risco macroeconômico e a repactuação de contratos futuros por tradings e indústrias, servindo como importante instrumento de hedge para operações de importação e exportação na cadeia agroindustrial.",
+    "strategic_takeaway": "O monitoramento do NDF e da PTAX é essencial para o gerenciamento de risco cambial na fixação de preços das commodities."
   },
-  "audio_script": "Bom dia, senhores operadores. Hoje, 24/11/2026, às 18:31 BRT, o cenário econômico continua instável, com o dólar PTAX cotado a R$ 5,8573, registrando uma queda de 1,90% na sessão. A volatilidade cambial pressiona os preços das commodities agrícolas, com destaque para a soja, que subiu 2 dias seguidos, e o milho, que também registra alta no mercado físico e na B3. O café, por outro lado, está em queda, enquanto o boi gordo atinge máximas históricas. O NDF (160 dias) calculado com a taxa atual do dólar é R$ 6,0543, refletindo a pressão cambial. Acompanhe as tabelas e o painel para estratégias eficazes. Vamos às tabelas e ao painel.",
+  "audio_script": "Olá, sejam bem-vindos ao fechamento de mercado da Germinare Agro nesta segunda-feira, 24/11/2026, às 21:52. Vamos passar pelas principais movimentações do dia nas mesas de operações e no agronegócio. No cenário macroeconômico e cambial, o Dólar PTAX (venda) fechou em R$ 5,8573, registrando variação diária de -1,90% e alta acumulada no mês de +8,04%. A taxa Selic meta permaneceu inalterada em 13,75% a.a., enquanto o NDF teórico para 160 dias ficou calculado em R$ 6,0543. No Complexo Soja, a soja na CBOT para o 1º vencimento encerrou o dia cotada a US$ 12,3403/bu, com alta diária de +1,09% e completando 2 altas seguidas. No mercado físico brasileiro, a soja no Porto de Paranaguá-PR atingiu R$ 172,00/sc, avançando +1,18% e registrando 1 alta seguida. No Complexo Milho e Trigo, o milho em Campinas-SP registrou R$ 68,50/sc, com variação de +0,74%. O trigo em Ponta Grossa-PR manteve-se estável em R$ 1.560,00/t. No Complexo Algodão, a pluma em Rondonópolis-MT ficou cotada a 411,00 ¢R$/lb, apresentando alta semanal de +1,23%. No setor de Café e Pecuária, o café arábica no Sul de Minas-MG recuou -0,54%, cotado a R$ 1.840,00/sc. Na pecuária, o boi gordo em São Paulo-SP registrou estabilidade, cotado a R$ 395,00/@ com variação de 0,00%. Vamos às tabelas e ao painel.",
   "ndf_parameters": {
     "spot": 5.8573,
     "di_aa": 13.75,
@@ -1057,17 +1049,17 @@
     "saca_usd": 27.2
   },
   "data_quality": {
-    "gerado_em": "2026-11-24T19:19-03:00",
+    "gerado_em": "2026-11-24T21:52-03:00",
     "turno": "fechamento",
     "versao_agente": "1.0.0",
-    "modo_atualizacao": "cotacoes",
-    "analise_gerada_em": "2026-11-24T18:31-03:00",
-    "cotacoes_atualizadas_em": "2026-11-24T19:19-03:00",
+    "modo_atualizacao": "completo",
+    "analise_gerada_em": "2026-11-24T21:52-03:00",
+    "cotacoes_atualizadas_em": "2026-11-24T21:52-03:00",
     "indicadores": {
       "total": 30,
-      "ok": 16,
+      "ok": 20,
       "alerta": 1,
-      "desatualizado": 6,
+      "desatualizado": 2,
       "indisponivel": 7
     },
     "lista_indicadores": [
@@ -1180,19 +1172,17 @@
         "nome": "Soja CBOT — 1º vencimento",
         "nome_curto": "Soja CBOT",
         "bloco": "complexo_soja",
-        "status": "desatualizado",
+        "status": "ok",
         "valor": "US$ 12,3403/bu",
         "data": "2026-11-24",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
-        "mensagens": [
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
-        ],
+        "mensagens": [],
         "fontes": [
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
-            "status": "erro",
-            "mensagem": "HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            "status": "ok",
+            "mensagem": "1 valor(es); último 12.340324 em 24/11/2026 · tabela 'Precios Chicago/Kansas | Cotizaciones Internacionales | Home' · linha 'Ene-27' · coluna 'nº 8, pela posiçã"
           }
         ]
       },
@@ -1201,19 +1191,17 @@
         "nome": "Farelo de Soja CBOT — 1º vencimento",
         "nome_curto": "Farelo CBOT",
         "bloco": "complexo_soja",
-        "status": "desatualizado",
+        "status": "ok",
         "valor": "US$ 352,99/t curta",
         "data": "2026-11-24",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
-        "mensagens": [
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
-        ],
+        "mensagens": [],
         "fontes": [
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
-            "status": "erro",
-            "mensagem": "HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            "status": "ok",
+            "mensagem": "1 valor(es); último 352.994654 em 24/11/2026 · tabela 'Precios Chicago/Kansas | Cotizaciones Internacionales | Home' · linha 'Dic-26' · coluna 'nº 12, pela posi"
           }
         ]
       },
@@ -1222,19 +1210,17 @@
         "nome": "Óleo de Soja CBOT — 1º vencimento",
         "nome_curto": "Óleo de Soja CBOT",
         "bloco": "complexo_soja",
-        "status": "desatualizado",
+        "status": "ok",
         "valor": "58,11 ¢/lb",
         "data": "2026-11-24",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
-        "mensagens": [
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
-        ],
+        "mensagens": [],
         "fontes": [
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
-            "status": "erro",
-            "mensagem": "HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            "status": "ok",
+            "mensagem": "1 valor(es); último 58.108764 em 24/11/2026 · tabela 'Precios Chicago/Kansas | Cotizaciones Internacionales | Home' · linha 'Dic-26' · coluna 'nº 10, pela posiç"
           }
         ]
       },
@@ -1281,17 +1267,20 @@
         "nome": "Soja — Uberlândia-MG (mercado físico)",
         "nome_curto": "Soja Uberlândia-MG",
         "bloco": "complexo_soja",
-        "status": "ok",
+        "status": "desatualizado",
         "valor": "R$ 159,00/sc",
         "data": "2026-11-24",
         "fonte": "Agrolink",
         "url": "https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes",
-        "mensagens": [],
+        "mensagens": [
+          "Agrolink: data no futuro (25/11/2026) — descartado",
+          "sem cotação nova válida; último valor confiável é de 24/11/2026"
+        ],
         "fontes": [
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 159.0 em 24/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)' · data não informada na página"
+            "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)'"
           }
         ]
       },
@@ -1319,19 +1308,19 @@
         "nome": "Soja — Pizarra Rosario (BCR, Argentina)",
         "nome_curto": "Soja Rosario (BCR)",
         "bloco": "complexo_soja",
-        "status": "desatualizado",
+        "status": "alerta",
         "valor": "ARS 560.000/t",
         "data": "2026-11-20",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0",
         "mensagens": [
-          "sem cotação nova válida; último valor confiável é de 20/11/2026"
+          "leitura incerta (coluna por posição)"
         ],
         "fontes": [
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
-            "status": "erro",
-            "mensagem": "HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0"
+            "status": "ok",
+            "mensagem": "1 valor(es); último 560000.0 em 20/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '1ª coluna numérica'"
           }
         ]
       },
@@ -1340,19 +1329,17 @@
         "nome": "Milho CBOT — 1º vencimento",
         "nome_curto": "Milho CBOT",
         "bloco": "complexo_milho_e_ddgs",
-        "status": "desatualizado",
+        "status": "ok",
         "valor": "US$ 4,3400/bu",
         "data": "2026-11-24",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
-        "mensagens": [
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
-        ],
+        "mensagens": [],
         "fontes": [
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
-            "status": "erro",
-            "mensagem": "HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            "status": "ok",
+            "mensagem": "1 valor(es); último 4.340049 em 24/11/2026 · tabela 'Precios Chicago/Kansas | Cotizaciones Internacionales | Home' · linha 'Dic-26' · coluna 'nº 6, pela posição"
           }
         ]
       },
@@ -1418,19 +1405,17 @@
         "nome": "Trigo CBOT — 1º vencimento",
         "nome_curto": "Trigo CBOT",
         "bloco": "complexo_milho_e_ddgs",
-        "status": "desatualizado",
+        "status": "ok",
         "valor": "US$ 5,6976/bu",
         "data": "2026-11-24",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1",
-        "mensagens": [
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
-        ],
+        "mensagens": [],
         "fontes": [
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
-            "status": "erro",
-            "mensagem": "HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            "status": "ok",
+            "mensagem": "1 valor(es); último 5.697565 em 24/11/2026 · tabela 'Precios Chicago/Kansas | Cotizaciones Internacionales | Home' · linha 'Dic-26' · coluna 'nº 2, pela posição"
           }
         ]
       },
@@ -1590,19 +1575,20 @@
         "nome": "Café Arábica tipo 6 bebida dura — Manhuaçu-MG",
         "nome_curto": "Café Manhuaçu-MG (Matas de Minas)",
         "bloco": "complexo_cafe",
-        "status": "alerta",
+        "status": "desatualizado",
         "valor": "R$ 1.694,00/sc",
         "data": "2026-11-24",
         "fonte": "Agrolink",
         "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
         "mensagens": [
-          "leitura incerta (data presumida)"
+          "Agrolink: data no futuro (25/11/2026) — descartado",
+          "sem cotação nova válida; último valor confiável é de 24/11/2026"
         ],
         "fontes": [
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 1694.0 em 24/11/2026 · tabela '' · linha '' · coluna '1ª coluna numérica' · data não informada na página"
+            "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha '' · coluna '1ª coluna numérica'"
           }
         ]
       },
@@ -1647,21 +1633,19 @@
     ],
     "texto": {
       "modo": "ia_verificada",
-      "modelo": "gemini-flash-lite-latest @ Google Gemini ×1 → qwen2.5:7b @ IA local ×5",
-      "chamadas": 6,
-      "respostas_reprovadas": 0,
-      "corrigidos_pela_ia": 0,
-      "campos_verificados": 127,
+      "modelo": "gemini-flash-lite-latest @ Google Gemini ×8",
+      "chamadas": 8,
+      "respostas_reprovadas": 2,
+      "corrigidos_pela_ia": 2,
+      "campos_verificados": 137,
       "campos_substituidos": 0,
       "blocos_com_ia": 6,
-      "erros_llm": [
-        "gemini-flash-lite-latest @ Google Gemini: instabilidade no servidor (HTTP 503) — fora da fila nesta execução"
-      ],
+      "erros_llm": [],
       "detalhes": []
     },
     "noticias": {
-      "coletadas": 148,
-      "usadas": 38,
+      "coletadas": 151,
+      "usadas": 37,
       "fontes_ok": 10,
       "fontes_com_falha": 12
     },
@@ -1713,7 +1697,7 @@
   "trusted_sources": {
     "repo": "luan238/painel-inteligencia-agro",
     "arquivo": "config/fontes.yaml",
-    "gerado_em": "2026-11-24T19:19-03:00",
+    "gerado_em": "2026-11-24T21:52-03:00",
     "regioes": [
       {
         "regiao": "Brasil",
@@ -1771,7 +1755,7 @@
             "ativa": true,
             "observacao": "",
             "status": "ok",
-            "detalhe": "26 notícia(s) na janela via rss (https://globorural.globo.com/rss/globorural)"
+            "detalhe": "30 notícia(s) na janela via rss (https://globorural.globo.com/rss/globorural)"
           },
           {
             "nome": "Agrolink",
@@ -1863,8 +1847,8 @@
             "prioridade": 1,
             "ativa": true,
             "observacao": "Pizarra de Rosario e fechamento de Chicago (soja, farelo, óleo, milho, trigo) em US$/t.",
-            "status": "falha",
-            "detalhe": "0 notícia(s) na janela via pagina · cotações: 0/6 leituras ok · ex.: HTTP 502 em https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1"
+            "status": "parcial",
+            "detalhe": "0 notícia(s) na janela via pagina · cotações: 6/6 leituras ok"
           },
           {
             "nome": "Infobae Campo",
@@ -2001,7 +1985,7 @@
             "ativa": true,
             "observacao": "",
             "status": "ok",
-            "detalhe": "8 notícia(s) na janela via pagina"
+            "detalhe": "7 notícia(s) na janela via pagina"
           },
           {
             "nome": "Feed Navigator",
