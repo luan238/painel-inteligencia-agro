@@ -1,11 +1,12 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
-**Fechamento de Terça-Feira — 24/11/2026**
+**Fechamento de Quarta-Feira — 25/11/2026**
 
-- **Data e hora da varredura:** 24/11/2026 21:52 BRT
+- **Data e hora da varredura:** 25/11/2026 01:58 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Fechamento de mercado em 24/11/2026: Dólar PTAX a R$ 5,8573, soja em alta em Chicago e cautela nos demais complexos.
-- **Qualidade dos dados:** 20 ok · 1 com alerta · 2 desatualizados · 7 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×8)
+- **Atualização do monitor:** cotações conferidas às 01:58; o texto da análise foi escrito às 21:52 (turno Fechamento).
+- **Qualidade dos dados:** 21 ok · 2 com alerta · 0 desatualizados · 7 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×8)
 
 ---
 
@@ -21,7 +22,7 @@ Olá, sejam bem-vindos ao fechamento de mercado da Germinare Agro nesta segunda-
 |---|---|---|---|---|---|---|
 | Dólar PTAX (USD/BRL) | R$ 5,8573 | -1,90% | -0,54% | +8,04% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (24/11) | ok |
 | Dólar Futuro B3 | 5.905,21 pts | -0,52% | -0,32% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
-| Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (24/11) | ok |
+| Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (25/11) | ok |
 | Petróleo WTI | — | — | — | — | — | ⛔ indisponivel |
 | Petróleo Brent | — | — | — | — | — | ⛔ indisponivel |
 | Soja CBOT | US$ 12,3403/bu | +1,09% | +1,09% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
@@ -29,7 +30,7 @@ Olá, sejam bem-vindos ao fechamento de mercado da Germinare Agro nesta segunda-
 | Óleo de Soja CBOT | 58,11 ¢/lb | -2,84% | -2,84% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
 | Soja Paranaguá-PR | R$ 172,00/sc | +1,18% | +1,18% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (24/11) | ok |
 | Soja Cascavel-PR | R$ 161,00/sc | +1,26% | +1,26% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (24/11) | ok |
-| Soja Uberlândia-MG | R$ 159,00/sc | +1,60% | +1,60% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (24/11) | 🕒 desatualizado |
+| Soja Uberlândia-MG | R$ 159,00/sc | 0,00% | +1,60% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (25/11) | ok |
 | Soja B3 | US$ 27,20/sc | +0,43% | +2,19% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
 | Soja Rosario (BCR) | ARS 560.000/t | +1,82% | 0,00% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (20/11) | ⚠️ alerta |
 | Milho CBOT | US$ 4,3400/bu | -0,12% | -0,12% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (24/11) | ok |
@@ -46,15 +47,15 @@ Olá, sejam bem-vindos ao fechamento de mercado da Germinare Agro nesta segunda-
 | Café Arábica NY (ICE) | — | — | — | — | — | ⛔ indisponivel |
 | Café Robusta Londres | — | — | — | — | — | ⛔ indisponivel |
 | Café Sul de Minas | R$ 1.840,00/sc | -0,54% | -0,54% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/) (24/11) | ok |
-| Café Manhuaçu-MG (Matas de Minas) | R$ 1.694,00/sc | -0,59% | +0,95% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (24/11) | 🕒 desatualizado |
+| Café Manhuaçu-MG (Matas de Minas) | R$ 1.694,00/sc | 0,00% | +0,95% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (25/11) | ⚠️ alerta |
 | Boi gordo SP | R$ 395,00/@ | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/) (24/11) | ok |
 | Boi Gordo B3 | R$ 397,50/@ | -0,38% | -0,39% | — | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (24/11) | ok |
 
 **Spreads calculados:**
 
-- Diferencial Soja Paranaguá − Uberlândia: **R$ 13,00/sc** — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11)
+- Diferencial Soja Paranaguá − Uberlândia: **R$ 13,00/sc** — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11 vs 25/11)
 - Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,67/sc** — Milho B3 (2º venc.) 77,21 − Milho B3 71,54 (24/11)
-- Diferencial Café Sul de Minas − Manhuaçu: **R$ 146,00/sc** — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11)
+- Diferencial Café Sul de Minas − Manhuaçu: **R$ 146,00/sc** — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11 vs 25/11)
 
 ---
 
@@ -69,7 +70,7 @@ Olá, sejam bem-vindos ao fechamento de mercado da Germinare Agro nesta segunda-
 **B. Detalhamento com dados e links**
 - **Dólar PTAX (venda) — Banco Central:** R$ 5,8573 em 24/11 (-1,90% no dia; -0,54% na semana; +8,04% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
 - **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.905,21 pts em 24/11 (-0,52% no dia; -0,32% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Taxa Selic meta — Banco Central:** 13,75% a.a. em 24/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
+- **Taxa Selic meta — Banco Central:** 13,75% a.a. em 25/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
 - ⛔ **Petróleo WTI — NYMEX (1º vencimento):** indisponível _(nenhuma fonte retornou valor válido)_
 - ⛔ **Petróleo Brent — ICE Londres (1º vencimento):** indisponível _(nenhuma fonte retornou valor válido)_
 
@@ -103,7 +104,7 @@ Notícias que embasam a análise:
 - **Óleo de Soja CBOT — 1º vencimento:** 58,11 ¢/lb em 24/11 (-2,84% no dia; -2,84% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Soja — Porto de Paranaguá-PR (mercado físico):** R$ 172,00/sc em 24/11 (+1,18% no dia; +1,18% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Cascavel-PR (mercado físico):** R$ 161,00/sc em 24/11 (+1,26% no dia; +1,26% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
-- 🕒 **Soja — Uberlândia-MG (mercado físico):** R$ 159,00/sc em 24/11 (+1,60% no dia; +1,60% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) _(Agrolink: data no futuro (25/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 24/11/2026)_
+- **Soja — Uberlândia-MG (mercado físico):** R$ 159,00/sc em 25/11 (0,00% no dia; +1,60% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
 - **Soja B3 (SJC) — 1º vencimento:** US$ 27,20/sc em 24/11 (+0,43% no dia; +2,19% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - ⚠️ **Soja — Pizarra Rosario (BCR, Argentina):** ARS 560.000/t em 20/11 (+1,82% no dia; 0,00% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) _(leitura incerta (coluna por posição))_
 
@@ -191,7 +192,7 @@ Notícias que embasam a análise:
 - ⛔ **Café Arábica ICE Nova York — 1º vencimento:** indisponível _(nenhuma fonte retornou valor válido)_
 - ⛔ **Café Robusta ICE Londres — 1º vencimento:** indisponível _(nenhuma fonte retornou valor válido)_
 - **Café arábica — Sul de Minas-MG:** R$ 1.840,00/sc em 24/11 (-0,54% no dia; -0,54% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/)
-- 🕒 **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.694,00/sc em 24/11 (-0,59% no dia; +0,95% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) _(Agrolink: data no futuro (25/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 24/11/2026)_
+- ⚠️ **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.694,00/sc em 25/11 (0,00% no dia; +0,95% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) _(leitura incerta (data presumida))_
 - **Boi gordo — São Paulo-SP:** R$ 395,00/@ em 24/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/)
 - **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 397,50/@ em 24/11 (-0,38% no dia; -0,39% na semana; — no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 
@@ -215,7 +216,7 @@ Notícias que embasam a análise:
 
 ---
 
-## 📅 4. Evolução Semanal — Semana corrente (WTD — domingo 22/11 a terça-feira 24/11)
+## 📅 4. Evolução Semanal — Semana corrente (WTD — domingo 22/11 a quarta-feira 25/11)
 
 | Ativo | Ref. abertura da semana | Atual | Variação (WTD) | Destaque |
 |---|---|---|---|---|
@@ -230,7 +231,7 @@ Notícias que embasam a análise:
 
 ---
 
-## 🗓️ 5. Evolução Mensal Acumulada (MTD) — 01/11/2026 até 24/11/2026
+## 🗓️ 5. Evolução Mensal Acumulada (MTD) — 01/11/2026 até 25/11/2026
 
 | Ativo | Ref. início do mês | Atual | Variação (MTD) | Leitura |
 |---|---|---|---|---|
@@ -284,21 +285,20 @@ O JSON completo deste boletim (7 séries diárias, 5 blocos, 8 projeções) est�
 
 ## 🛡️ Qualidade dos dados e auditoria
 
-- **Indicadores:** 20 ok, 1 com alerta, 2 desatualizados, 7 indisponíveis (de 30).
+- **Indicadores:** 21 ok, 2 com alerta, 0 desatualizados, 7 indisponíveis (de 30).
 - **Texto:** gerado por IA (gemini-flash-lite-latest @ Google Gemini ×8) e conferido pelo verificador — campos verificados: 137; respostas reprovadas e devolvidas à IA: 2; campos trocados por texto automático: 0.
 - **Notícias:** 37 usadas de 151 coletadas; 10 fontes responderam, 12 falharam.
 
 **Indicadores com ressalva:**
 - ⛔ Petróleo WTI — NYMEX (1º vencimento) — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Petróleo Brent — ICE Londres (1º vencimento) — indisponivel: nenhuma fonte retornou valor válido
-- 🕒 Soja — Uberlândia-MG (mercado físico) — desatualizado: Agrolink: data no futuro (25/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 24/11/2026
 - ⚠️ Soja — Pizarra Rosario (BCR, Argentina) — alerta: leitura incerta (coluna por posição)
 - ⛔ Algodão ICE Nova York — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Caroço de Algodão — Mato Grosso — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Caroço de Algodão — Oeste da Bahia — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Café Arábica ICE Nova York — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
 - ⛔ Café Robusta ICE Londres — 1º vencimento — indisponivel: nenhuma fonte retornou valor válido
-- 🕒 Café Arábica tipo 6 bebida dura — Manhuaçu-MG — desatualizado: Agrolink: data no futuro (25/11/2026) — descartado; sem cotação nova válida; último valor confiável é de 24/11/2026
+- ⚠️ Café Arábica tipo 6 bebida dura — Manhuaçu-MG — alerta: leitura incerta (data presumida)
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 24/11/2026 21:52 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 25/11/2026 01:58 BRT._

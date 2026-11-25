@@ -2,7 +2,7 @@
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
     "scope": "Fechamento de mercado em 24/11/2026: Dólar PTAX a R$ 5,8573, soja em alta em Chicago e cautela nos demais complexos.",
-    "timestamp": "24/11/2026 21:52 BRT — Fechamento de Terça-Feira",
+    "timestamp": "25/11/2026 01:58 BRT — cotações atualizadas pelo monitor · análise do Fechamento das 21:52",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
@@ -16,7 +16,7 @@
     "cambio_e_energia": {
       "dolar_ptax": "R$ 5,8573 (-1,90% no dia · -0,54% na semana) — Banco Central do Brasil, 24/11",
       "dolar_futuro_b3": "5.905,21 pts (-0,52% no dia · -0,32% na semana) — B3 Agro, 24/11",
-      "selic_meta": "13,75% a.a. (0,00% no dia · 0,00% na semana) — Banco Central do Brasil, 24/11",
+      "selic_meta": "13,75% a.a. (0,00% no dia · 0,00% na semana) — Banco Central do Brasil, 25/11",
       "petroleo_wti": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "petroleo_brent": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "ndf_teorico_160d": "R$ 6,0543 (spot R$ 5,8573 · juros R$ 13,75% a.a. · cupom 4,80% a.a. · 106 d.u.)"
@@ -27,10 +27,10 @@
       "oleo_soja_cbot": "58,11 ¢/lb [Dic-26] (-2,84% no dia · -2,84% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
       "soja_paranagua": "R$ 172,00/sc (+1,18% no dia · +1,18% na semana) — Canal Rural, 24/11",
       "soja_parana": "R$ 161,00/sc (+1,26% no dia · +1,26% na semana) — Canal Rural, 24/11",
-      "soja_uberlandia": "🕒 R$ 159,00/sc (+1,60% no dia · +1,60% na semana) — Agrolink, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
+      "soja_uberlandia": "R$ 159,00/sc (0,00% no dia · +1,60% na semana) — Agrolink, 25/11",
       "soja_b3": "US$ 27,20/sc (+0,43% no dia · +2,19% na semana) — B3 Agro, 24/11",
       "soja_rosario": "⚠️ ARS 560.000/t [Soja] (+1,82% no dia · 0,00% na semana) — BCR – Bolsa de Comercio de Rosario, 20/11 · leitura incerta (coluna por posição)",
-      "spread_soja_porto_uberlandia": "⚠️ R$ 13,00/sc — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11)"
+      "spread_soja_porto_uberlandia": "R$ 13,00/sc — Soja Paranaguá-PR 172,00 − Soja Uberlândia-MG 159,00 (24/11 vs 25/11)"
     },
     "complexo_milho_e_ddgs": {
       "milho_cbot": "US$ 4,3400/bu [Dic-26] (-0,12% no dia · -0,12% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
@@ -52,10 +52,10 @@
       "cafe_arabica_ice": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "cafe_robusta_londres": "⛔ Indisponível — nenhuma fonte retornou cotação válida",
       "cafe_arabica_cepea": "R$ 1.840,00/sc (-0,54% no dia · -0,54% na semana) — Canal Rural, 24/11",
-      "cafe_manhuacu": "🕒 R$ 1.694,00/sc (-0,59% no dia · +0,95% na semana) — Agrolink, 24/11 · sem cotação nova válida; último valor confiável é de 24/11/2026",
+      "cafe_manhuacu": "⚠️ R$ 1.694,00/sc (0,00% no dia · +0,95% na semana) — Agrolink, 25/11 · leitura incerta (data presumida)",
       "boi_gordo_cepea": "R$ 395,00/@ (0,00% no dia · 0,00% na semana) — Canal Rural, 24/11",
       "boi_b3": "R$ 397,50/@ (-0,38% no dia · -0,39% na semana) — B3 Agro, 24/11",
-      "spread_cafe_cepea_manhuacu": "⚠️ R$ 146,00/sc — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11)"
+      "spread_cafe_cepea_manhuacu": "⚠️ R$ 146,00/sc — Café Sul de Minas 1.840,00 − Café Manhuaçu-MG (Matas de Minas) 1.694,00 (24/11 vs 25/11)"
     }
   },
   "detailed_blocks_and_news": [
@@ -619,8 +619,8 @@
   ],
   "weekly_evolution_wtd": {
     "period_start": "22/11/2026",
-    "period_end": "24/11/2026",
-    "period_current": "Semana corrente (WTD — domingo 22/11 a terça-feira 24/11)",
+    "period_end": "25/11/2026",
+    "period_current": "Semana corrente (WTD — domingo 22/11 a quarta-feira 25/11)",
     "assets": [
       {
         "asset": "Dólar PTAX (USD/BRL)",
@@ -690,10 +690,9 @@
   },
   "monthly_evolution_mtd": {
     "month_start": "2026-11-01",
-    "current_date": "2026-11-24",
+    "current_date": "2026-11-25",
     "days_elapsed": 21,
     "daily_dates": [
-      "23/10",
       "26/10",
       "27/10",
       "28/10",
@@ -713,19 +712,19 @@
       "18/11",
       "19/11",
       "23/11",
-      "24/11"
+      "24/11",
+      "25/11"
     ],
     "assets": [
       {
         "asset": "Dólar PTAX (USD/BRL)",
         "unit": "R$",
         "month_open_value": 5.4212,
-        "mid_month_10_oct": 5.5146,
+        "mid_month_10_oct": 5.584,
         "current_value": 5.8573,
         "mtd_change_pct": 8.04,
         "monthly_narrative": "O Dólar PTAX acumula alta de +8,04% desde 30/10, impulsionado por dúvidas fiscais e pelo cenário de dólar forte.",
         "daily_history": [
-          5.0377,
           5.5007,
           5.3346,
           5.342,
@@ -745,6 +744,7 @@
           5.8102,
           5.8889,
           5.9708,
+          5.8573,
           5.8573
         ]
       },
@@ -772,11 +772,11 @@
           null,
           null,
           null,
-          null,
           169.0,
           169.0,
           170.0,
           170.0,
+          172.0,
           172.0
         ]
       },
@@ -805,10 +805,10 @@
           null,
           null,
           null,
-          null,
           156.0,
           156.5,
           156.5,
+          159.0,
           159.0
         ]
       },
@@ -836,11 +836,11 @@
           null,
           null,
           null,
-          null,
           67.5,
           67.5,
           68.0,
           68.0,
+          68.5,
           68.5
         ]
       },
@@ -868,9 +868,9 @@
           null,
           null,
           null,
-          null,
           1550.0,
           1550.0,
+          1560.0,
           1560.0,
           1560.0,
           1560.0
@@ -901,10 +901,10 @@
           null,
           null,
           null,
-          null,
           1688.0,
           1678.0,
           1704.0,
+          1694.0,
           1694.0
         ]
       },
@@ -932,7 +932,7 @@
           null,
           null,
           null,
-          null,
+          395.0,
           395.0,
           395.0,
           395.0,
@@ -1049,17 +1049,17 @@
     "saca_usd": 27.2
   },
   "data_quality": {
-    "gerado_em": "2026-11-24T21:52-03:00",
+    "gerado_em": "2026-11-25T01:58-03:00",
     "turno": "fechamento",
     "versao_agente": "1.0.0",
-    "modo_atualizacao": "completo",
+    "modo_atualizacao": "cotacoes",
     "analise_gerada_em": "2026-11-24T21:52-03:00",
-    "cotacoes_atualizadas_em": "2026-11-24T21:52-03:00",
+    "cotacoes_atualizadas_em": "2026-11-25T01:58-03:00",
     "indicadores": {
       "total": 30,
-      "ok": 20,
-      "alerta": 1,
-      "desatualizado": 2,
+      "ok": 21,
+      "alerta": 2,
+      "desatualizado": 0,
       "indisponivel": 7
     },
     "lista_indicadores": [
@@ -1078,7 +1078,7 @@
           {
             "fonte": "Banco Central do Brasil",
             "status": "ok",
-            "mensagem": "40 valor(es); último 5.8573 em 24/11/2026 · PTAX venda — boletim de fechamento 24/11/2026 13:07 (API olinda.bcb.gov.br)"
+            "mensagem": "39 valor(es); último 5.8573 em 24/11/2026 · PTAX venda — boletim de fechamento 24/11/2026 13:07 (API olinda.bcb.gov.br)"
           },
           {
             "fonte": "Yahoo Finance (checagem)",
@@ -1113,7 +1113,7 @@
         "bloco": "cambio_e_energia",
         "status": "ok",
         "valor": "13,75% a.a.",
-        "data": "2026-11-24",
+        "data": "2026-11-25",
         "fonte": "Banco Central do Brasil",
         "url": "https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries",
         "mensagens": [],
@@ -1121,7 +1121,7 @@
           {
             "fonte": "Banco Central do Brasil",
             "status": "ok",
-            "mensagem": "61 valor(es); último 13.75 em 24/11/2026 · SGS série 432 (API api.bcb.gov.br)"
+            "mensagem": "61 valor(es); último 13.75 em 25/11/2026 · SGS série 432 (API api.bcb.gov.br)"
           }
         ]
       },
@@ -1267,20 +1267,17 @@
         "nome": "Soja — Uberlândia-MG (mercado físico)",
         "nome_curto": "Soja Uberlândia-MG",
         "bloco": "complexo_soja",
-        "status": "desatualizado",
+        "status": "ok",
         "valor": "R$ 159,00/sc",
-        "data": "2026-11-24",
+        "data": "2026-11-25",
         "fonte": "Agrolink",
         "url": "https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes",
-        "mensagens": [
-          "Agrolink: data no futuro (25/11/2026) — descartado",
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
-        ],
+        "mensagens": [],
         "fontes": [
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)'"
+            "mensagem": "1 valor(es); último 159.0 em 25/11/2026 · tabela '' · linha '' · coluna 'Preço (R$)' · data não informada na página"
           }
         ]
       },
@@ -1575,20 +1572,19 @@
         "nome": "Café Arábica tipo 6 bebida dura — Manhuaçu-MG",
         "nome_curto": "Café Manhuaçu-MG (Matas de Minas)",
         "bloco": "complexo_cafe",
-        "status": "desatualizado",
+        "status": "alerta",
         "valor": "R$ 1.694,00/sc",
-        "data": "2026-11-24",
+        "data": "2026-11-25",
         "fonte": "Agrolink",
         "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
         "mensagens": [
-          "Agrolink: data no futuro (25/11/2026) — descartado",
-          "sem cotação nova válida; último valor confiável é de 24/11/2026"
+          "leitura incerta (data presumida)"
         ],
         "fontes": [
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha '' · coluna '1ª coluna numérica'"
+            "mensagem": "1 valor(es); último 1694.0 em 25/11/2026 · tabela '' · linha '' · coluna '1ª coluna numérica' · data não informada na página"
           }
         ]
       },
@@ -1697,7 +1693,7 @@
   "trusted_sources": {
     "repo": "luan238/painel-inteligencia-agro",
     "arquivo": "config/fontes.yaml",
-    "gerado_em": "2026-11-24T21:52-03:00",
+    "gerado_em": "2026-11-25T01:58-03:00",
     "regioes": [
       {
         "regiao": "Brasil",
