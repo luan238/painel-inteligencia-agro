@@ -2,7 +2,7 @@
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
     "scope": "Abertura com liquidez reduzida pelo feriado nos EUA, foco em indicadores locais e volatilidade cambial. Soja avança em Chicago, enquanto boi segue estável.",
-    "timestamp": "26/11/2026 08:41 BRT — Abertura de Quinta-Feira",
+    "timestamp": "26/11/2026 10:27 BRT — cotações atualizadas pelo monitor · análise do Abertura das 08:41",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
@@ -29,7 +29,7 @@
       "soja_parana": "R$ 162,00/sc (+0,62% no dia · +1,89% na semana) — Canal Rural, 25/11",
       "soja_uberlandia": "R$ 160,00/sc [Soja em Grão Sc 60Kg] (0,00% no dia · +2,24% na semana) — Agrolink, 26/11",
       "soja_b3": "US$ 27,43/sc (+0,81% no dia · +3,02% na semana) — B3 Agro, 25/11",
-      "soja_rosario": "ARS 570.000/t [Soja] (+1,79% no dia · +1,79% na semana) — BCR – Bolsa de Comercio de Rosario, 24/11",
+      "soja_rosario": "ARS 574.700/t [Soja] (+0,82% no dia · +2,63% na semana) — BCR – Bolsa de Comercio de Rosario, 25/11",
       "spread_soja_porto_uberlandia": "R$ 13,00/sc — Soja Paranaguá-PR 173,00 − Soja Uberlândia-MG 160,00 (25/11 vs 26/11)"
     },
     "complexo_milho_e_ddgs": {
@@ -1076,12 +1076,12 @@
     "saca_usd": 27.43
   },
   "data_quality": {
-    "gerado_em": "2026-11-26T08:41-03:00",
+    "gerado_em": "2026-11-26T10:27-03:00",
     "turno": "abertura",
     "versao_agente": "1.0.0",
-    "modo_atualizacao": "completo",
+    "modo_atualizacao": "cotacoes",
     "analise_gerada_em": "2026-11-26T08:41-03:00",
-    "cotacoes_atualizadas_em": "2026-11-26T08:41-03:00",
+    "cotacoes_atualizadas_em": "2026-11-26T10:27-03:00",
     "indicadores": {
       "total": 29,
       "ok": 29,
@@ -1339,8 +1339,8 @@
         "nome_curto": "Soja Rosario (BCR)",
         "bloco": "complexo_soja",
         "status": "ok",
-        "valor": "ARS 570.000/t",
-        "data": "2026-11-24",
+        "valor": "ARS 574.700/t",
+        "data": "2026-11-25",
         "fonte": "BCR – Bolsa de Comercio de Rosario",
         "url": "https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0",
         "mensagens": [],
@@ -1348,7 +1348,7 @@
           {
             "fonte": "BCR – Bolsa de Comercio de Rosario",
             "status": "ok",
-            "mensagem": "1 valor(es); último 570000.0 em 24/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '24/11/2026'"
+            "mensagem": "1 valor(es); último 574700.0 em 25/11/2026 · tabela 'Precios Cámara Arbitral de Cereales de Rosario* | Cotizacion' · linha 'Soja' · coluna '25/11/2026'"
           }
         ]
       },
@@ -1722,7 +1722,7 @@
   "trusted_sources": {
     "repo": "luan238/painel-inteligencia-agro",
     "arquivo": "config/fontes.yaml",
-    "gerado_em": "2026-11-26T08:41-03:00",
+    "gerado_em": "2026-11-26T10:27-03:00",
     "regioes": [
       {
         "regiao": "Brasil",

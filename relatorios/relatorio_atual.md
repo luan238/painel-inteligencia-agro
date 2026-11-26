@@ -1,10 +1,11 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Abertura de Quinta-Feira — 26/11/2026**
 
-- **Data e hora da varredura:** 26/11/2026 08:41 BRT
+- **Data e hora da varredura:** 26/11/2026 10:27 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Abertura com liquidez reduzida pelo feriado nos EUA, foco em indicadores locais e volatilidade cambial. Soja avança em Chicago, enquanto boi segue estável.
+- **Atualização do monitor:** cotações conferidas às 10:27; o texto da análise foi escrito às 08:41 (turno Abertura).
 - **Qualidade dos dados:** 29 ok · 0 com alerta · 0 desatualizados · 0 indisponíveis — texto: IA verificada (gemini-3.1-flash-lite @ Google Gemini ×6 → gemini-flash-lite-latest @ Google Gemini ×1)
 
 ---
@@ -31,7 +32,7 @@ Bom dia. É 26/11, 08:41. Iniciamos o giro de mercado com liquidez reduzida devi
 | Soja Cascavel-PR | R$ 162,00/sc | +0,62% | +1,89% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (25/11) | ok |
 | Soja Uberlândia-MG | R$ 160,00/sc | 0,00% | +2,24% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (26/11) | ok |
 | Soja B3 | US$ 27,43/sc | +0,81% | +3,02% | +0,79% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
-| Soja Rosario (BCR) | ARS 570.000/t | +1,79% | +1,79% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (24/11) | ok |
+| Soja Rosario (BCR) | ARS 574.700/t | +0,82% | +2,63% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (25/11) | ok |
 | Milho CBOT | US$ 4,3975/bu | +1,32% | +1,20% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (25/11) | ok |
 | Milho Campinas-SP | R$ 68,50/sc | 0,00% | +0,74% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/) (25/11) | ok |
 | Milho B3 | R$ 71,47/sc | -0,10% | -0,01% | +6,18% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
@@ -105,7 +106,7 @@ Notícias que embasam a análise:
 - **Soja — Cascavel-PR (mercado físico):** R$ 162,00/sc em 25/11 (+0,62% no dia; +1,89% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Uberlândia-MG (mercado físico):** R$ 160,00/sc em 26/11 (0,00% no dia; +2,24% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
 - **Soja B3 (SJC) — 1º vencimento:** US$ 27,43/sc em 25/11 (+0,81% no dia; +3,02% na semana; +0,79% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- **Soja — Pizarra Rosario (BCR, Argentina):** ARS 570.000/t em 24/11 (+1,79% no dia; +1,79% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0)
+- **Soja — Pizarra Rosario (BCR, Argentina):** ARS 574.700/t em 25/11 (+0,82% no dia; +2,63% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0)
 
 Notícias que embasam a análise:
 - [Enhorabuena: Gracias a la harina de soja, los precios del poroto en el mercado argentino no cayeron “como un piano”](https://bichosdecampo.com/enhorabuena-gracias-a-la-harina-de-soja-los-precios-del-poroto-en-el-mercado-argentino-no-cayeron-como-un-piano/) — Bichos de Campo (25/11 18:30)
@@ -286,4 +287,4 @@ O JSON completo deste boletim (8 séries diárias, 5 blocos, 8 projeções) est�
 - **Notícias:** 38 usadas de 158 coletadas; 12 fontes responderam, 0 falharam.
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 26/11/2026 08:41 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 26/11/2026 10:27 BRT._
