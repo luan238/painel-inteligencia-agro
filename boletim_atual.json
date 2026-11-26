@@ -2,7 +2,7 @@
   "metadata": {
     "target_regions": "Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3",
     "scope": "Abertura com liquidez reduzida pelo feriado nos EUA, foco em indicadores locais e volatilidade cambial. Soja avança em Chicago, enquanto boi segue estável.",
-    "timestamp": "26/11/2026 10:27 BRT — cotações atualizadas pelo monitor · análise do Abertura das 08:41",
+    "timestamp": "26/11/2026 10:47 BRT — cotações atualizadas pelo monitor · análise do Abertura das 08:41",
     "analyst": "Analista Sênior e Estrategista de Derivativos - Germinare Agro"
   },
   "executive_summary": {
@@ -52,10 +52,10 @@
       "cafe_arabica_b3": "US$ 329,65/sc (+2,01% no dia · -1,58% na semana) — B3 Agro, 25/11",
       "cafe_conilon_b3": "R$ 910,13/sc (-3,22% no dia · -1,19% na semana) — B3 Agro, 25/11",
       "cafe_arabica_cepea": "R$ 1.810,00/sc (-1,63% no dia · -2,16% na semana) — Canal Rural, 25/11",
-      "cafe_manhuacu": "R$ 1.643,00/sc [Manhuaçu (MG)] (0,00% no dia · -2,09% na semana) — Agrolink, 26/11",
+      "cafe_manhuacu": "R$ 1.662,00/sc [Manhuaçu (MG)] (+1,16% no dia · -0,95% na semana) — Agrolink, 26/11",
       "boi_gordo_cepea": "R$ 395,00/@ (0,00% no dia · 0,00% na semana) — Canal Rural, 25/11",
       "boi_b3": "R$ 396,75/@ (-0,19% no dia · -0,58% na semana) — B3 Agro, 25/11",
-      "spread_cafe_cepea_manhuacu": "R$ 167,00/sc — Café Sul de Minas 1.810,00 − Café Manhuaçu-MG (Matas de Minas) 1.643,00 (25/11 vs 26/11)"
+      "spread_cafe_cepea_manhuacu": "R$ 148,00/sc — Café Sul de Minas 1.810,00 − Café Manhuaçu-MG (Matas de Minas) 1.662,00 (25/11 vs 26/11)"
     }
   },
   "detailed_blocks_and_news": [
@@ -908,7 +908,7 @@
         "unit": "R$/sc",
         "month_open_value": null,
         "mid_month_10_oct": null,
-        "current_value": 1643.0,
+        "current_value": 1662.0,
         "mtd_change_pct": null,
         "monthly_narrative": "Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado.",
         "daily_history": [
@@ -932,7 +932,7 @@
           1704.0,
           1694.0,
           1643.0,
-          1643.0
+          1662.0
         ]
       },
       {
@@ -1076,12 +1076,12 @@
     "saca_usd": 27.43
   },
   "data_quality": {
-    "gerado_em": "2026-11-26T10:27-03:00",
+    "gerado_em": "2026-11-26T10:47-03:00",
     "turno": "abertura",
     "versao_agente": "1.0.0",
     "modo_atualizacao": "cotacoes",
     "analise_gerada_em": "2026-11-26T08:41-03:00",
-    "cotacoes_atualizadas_em": "2026-11-26T10:27-03:00",
+    "cotacoes_atualizadas_em": "2026-11-26T10:47-03:00",
     "indicadores": {
       "total": 29,
       "ok": 29,
@@ -1605,7 +1605,7 @@
         "nome_curto": "Café Manhuaçu-MG (Matas de Minas)",
         "bloco": "complexo_cafe",
         "status": "ok",
-        "valor": "R$ 1.643,00/sc",
+        "valor": "R$ 1.662,00/sc",
         "data": "2026-11-26",
         "fonte": "Agrolink",
         "url": "https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg",
@@ -1614,7 +1614,7 @@
           {
             "fonte": "Agrolink",
             "status": "ok",
-            "mensagem": "1 valor(es); último 1643.0 em 26/11/2026 · tabela '' · linha 'Manhuaçu (MG)' · coluna 'Preço (R$)'"
+            "mensagem": "1 valor(es); último 1662.0 em 26/11/2026 · tabela '' · linha 'Manhuaçu (MG)' · coluna 'Preço (R$)'"
           }
         ]
       },
@@ -1722,7 +1722,7 @@
   "trusted_sources": {
     "repo": "luan238/painel-inteligencia-agro",
     "arquivo": "config/fontes.yaml",
-    "gerado_em": "2026-11-26T10:27-03:00",
+    "gerado_em": "2026-11-26T10:47-03:00",
     "regioes": [
       {
         "regiao": "Brasil",

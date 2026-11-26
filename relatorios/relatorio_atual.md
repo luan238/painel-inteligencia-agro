@@ -1,11 +1,11 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Abertura de Quinta-Feira — 26/11/2026**
 
-- **Data e hora da varredura:** 26/11/2026 10:27 BRT
+- **Data e hora da varredura:** 26/11/2026 10:47 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Abertura com liquidez reduzida pelo feriado nos EUA, foco em indicadores locais e volatilidade cambial. Soja avança em Chicago, enquanto boi segue estável.
-- **Atualização do monitor:** cotações conferidas às 10:27; o texto da análise foi escrito às 08:41 (turno Abertura).
+- **Atualização do monitor:** cotações conferidas às 10:47; o texto da análise foi escrito às 08:41 (turno Abertura).
 - **Qualidade dos dados:** 29 ok · 0 com alerta · 0 desatualizados · 0 indisponíveis — texto: IA verificada (gemini-3.1-flash-lite @ Google Gemini ×6 → gemini-flash-lite-latest @ Google Gemini ×1)
 
 ---
@@ -46,7 +46,7 @@ Bom dia. É 26/11, 08:41. Iniciamos o giro de mercado com liquidez reduzida devi
 | Café Arábica B3 | US$ 329,65/sc | +2,01% | -1,58% | -8,76% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Café Conilon B3 | R$ 910,13/sc | -3,22% | -1,19% | -4,86% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Café Sul de Minas | R$ 1.810,00/sc | -1,63% | -2,16% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/) (25/11) | ok |
-| Café Manhuaçu-MG (Matas de Minas) | R$ 1.643,00/sc | 0,00% | -2,09% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (26/11) | ok |
+| Café Manhuaçu-MG (Matas de Minas) | R$ 1.662,00/sc | +1,16% | -0,95% | — | [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg) (26/11) | ok |
 | Boi gordo SP | R$ 395,00/@ | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/) (25/11) | ok |
 | Boi Gordo B3 | R$ 396,75/@ | -0,19% | -0,58% | +2,48% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 
@@ -55,7 +55,7 @@ Bom dia. É 26/11, 08:41. Iniciamos o giro de mercado com liquidez reduzida devi
 - Spread Caroço de Algodão BA − MT: **R$ 226,21/t** — Caroço de Algodão BA 940,00 − Caroço de Algodão MT 713,79 (26/11 vs 23/11)
 - Diferencial Soja Paranaguá − Uberlândia: **R$ 13,00/sc** — Soja Paranaguá-PR 173,00 − Soja Uberlândia-MG 160,00 (25/11 vs 26/11)
 - Spread Calendário Milho B3 (2º − 1º venc.): **R$ 5,21/sc** — Milho B3 (2º venc.) 76,68 − Milho B3 71,47 (25/11)
-- Diferencial Café Sul de Minas − Manhuaçu: **R$ 167,00/sc** — Café Sul de Minas 1.810,00 − Café Manhuaçu-MG (Matas de Minas) 1.643,00 (25/11 vs 26/11)
+- Diferencial Café Sul de Minas − Manhuaçu: **R$ 148,00/sc** — Café Sul de Minas 1.810,00 − Café Manhuaçu-MG (Matas de Minas) 1.662,00 (25/11 vs 26/11)
 
 ---
 
@@ -187,7 +187,7 @@ _Nenhuma notícia verificada para este complexo na janela do turno._
 - **Café Arábica B3 (ICF) — 1º vencimento:** US$ 329,65/sc em 25/11 (+2,01% no dia; -1,58% na semana; -8,76% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Café Conilon B3 (CNL) — 1º vencimento:** R$ 910,13/sc em 25/11 (-3,22% no dia; -1,19% na semana; -4,86% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Café arábica — Sul de Minas-MG:** R$ 1.810,00/sc em 25/11 (-1,63% no dia; -2,16% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/cafe/)
-- **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.643,00/sc em 26/11 (0,00% no dia; -2,09% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg)
+- **Café Arábica tipo 6 bebida dura — Manhuaçu-MG:** R$ 1.662,00/sc em 26/11 (+1,16% no dia; -0,95% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/cotacoes/cafe-arabica-bebida-dura-tipo-6-safra-nova-sc-60kg)
 - **Boi gordo — São Paulo-SP:** R$ 395,00/@ em 25/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/boi/)
 - **Boi Gordo B3 (BGI) — 1º vencimento:** R$ 396,75/@ em 25/11 (-0,19% no dia; -0,58% na semana; +2,48% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 
@@ -237,7 +237,7 @@ Notícias que embasam a análise:
 | Soja Uberlândia-MG | — | R$ 160,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Milho Campinas-SP | — | R$ 68,50/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Trigo Ponta Grossa-PR | — | R$ 1.560,00/t | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
-| Café Manhuaçu-MG (Matas de Minas) | — | R$ 1.643,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
+| Café Manhuaçu-MG (Matas de Minas) | — | R$ 1.662,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Boi gordo SP | — | R$ 395,00/@ | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 
 _Série diária dos últimos 21 pregões no painel (gráfico mensal). Pregões sem cotação ficam em branco — nada é interpolado._
@@ -287,4 +287,4 @@ O JSON completo deste boletim (8 séries diárias, 5 blocos, 8 projeções) est�
 - **Notícias:** 38 usadas de 158 coletadas; 12 fontes responderam, 0 falharam.
 
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 26/11/2026 10:27 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 26/11/2026 10:47 BRT._
