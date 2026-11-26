@@ -1,11 +1,12 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Meio do Dia de Quinta-Feira — 26/11/2026**
 
-- **Data e hora da varredura:** 26/11/2026 13:17 BRT
+- **Data e hora da varredura:** 26/11/2026 13:27 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Mercado de meio-dia em 26/11: Soja avança na CBOT, câmbio sob cautela fiscal e estabilidade no boi gordo. Atenção aos ajustes de NDF e spreads.
-- **Qualidade dos dados:** 28 ok · 0 com alerta · 1 desatualizados · 0 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×1 → gemini-3.1-flash-lite @ Google Gemini ×8)
+- **Atualização do monitor:** cotações conferidas às 13:27; o texto da análise foi escrito às 13:17 (turno Meio do Dia).
+- **Qualidade dos dados:** 29 ok · 0 com alerta · 0 desatualizados · 0 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×1 → gemini-3.1-flash-lite @ Google Gemini ×8)
 
 ---
 
@@ -19,7 +20,7 @@ Olá, aqui é a mesa de Inteligência de Mercado da Germinare Agro. Hoje é 26/1
 
 | Ativo / Indicador | Cotação | Dia | Semana | Mês | Fonte (data) | Status |
 |---|---|---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8825 | +0,43% | -0,11% | +8,51% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (25/11) | 🕒 desatualizado |
+| Dólar PTAX (USD/BRL) | R$ 5,7446 | -2,34% | -2,45% | +5,97% | [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) (26/11) | ok |
 | Dólar Futuro B3 | 5.820,48 pts | -1,43% | -1,75% | +7,37% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (25/11) | ok |
 | Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (26/11) | ok |
 | Petróleo WTI | US$ 82,24/bbl | +1,01% | -6,11% | -23,54% | [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO) (24/11) | ok |
@@ -67,7 +68,7 @@ Olá, aqui é a mesa de Inteligência de Mercado da Germinare Agro. Hoje é 26/1
 **A. Resumo executivo.** O mercado macroeconômico e cambial destaca o Dólar PTAX cotado a R$ 5,8825 em 25/11, apresentando variação mensal de +8,51% [dolar_ptax]. As operações de swap cambial acumularam perdas significativas em meio à volatilidade da moeda [[Agrolink]](https://www.agrolink.com.br/noticias/alta-do-dolar-eleva-perda-com-swaps-a-r--38-96-bilhoes_521513.html). Na frente doméstica, o IPCA-15 de novembro veio abaixo das expectativas, impulsionando a bolsa e gerando otimismo com discussões sobre a equipe econômica [N6, N7, N8]. No setor energético, o petróleo WTI registra US$ 82,24/bbl [petroleo_wti], com recuo acumulado no mês de -23,54%, o que impacta a economia dos bicombustíveis [N1, N10].
 
 **B. Detalhamento com dados e links**
-- 🕒 **Dólar PTAX (venda) — Banco Central:** R$ 5,8825 em 25/11 (+0,43% no dia; -0,11% na semana; +8,51% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes) _(sem cotação nova válida; último valor confiável é de 25/11/2026)_
+- **Dólar PTAX (venda) — Banco Central:** R$ 5,7446 em 26/11 (-2,34% no dia; -2,45% na semana; +5,97% no mês) — [Banco Central do Brasil](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)
 - **Dólar Futuro B3 (DOL) — 1º vencimento:** 5.820,48 pts em 25/11 (-1,43% no dia; -1,75% na semana; +7,37% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Taxa Selic meta — Banco Central:** 13,75% a.a. em 26/11 (0,00% no dia; 0,00% na semana; 0,00% no mês) — [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
 - **Petróleo WTI — spot Cushing (EIA):** US$ 82,24/bbl em 24/11 (+1,01% no dia; -6,11% na semana; -23,54% no mês) — [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO)
@@ -214,7 +215,7 @@ Notícias que embasam a análise:
 
 | Ativo | Ref. abertura da semana | Atual | Variação (WTD) | Destaque |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,8825 | -0,11% | O Dólar PTAX registrou variação semanal de -0,11% desde 19/11, fechando a R$ 5,8825 em 25/11 [dolar_ptax]. |
+| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,7446 | -2,45% | De R$ 5,8889 (19/11) para R$ 5,7446 (-2,45% na semana). |
 | Petróleo WTI | US$ 87,59/bbl | US$ 82,24/bbl | -6,11% | O petróleo WTI apresentou variação semanal de -6,11% desde 20/11, cotado a US$ 82,24/bbl [petroleo_wti]. |
 | Soja Paranaguá-PR | R$ 170,00/sc | R$ 173,00/sc | +1,76% | A soja em Paranaguá acumulou alta de +1,76% desde 19/11, alcançando R$ 173,00/sc. |
 | Soja CBOT | US$ 12,2078/bu | US$ 12,4402/bu | +1,90% | A Soja CBOT acumulou alta de +1,90% desde 20/11, fechando a US$ 12,4402/bu. |
@@ -230,7 +231,7 @@ Notícias que embasam a análise:
 
 | Ativo | Ref. início do mês | Atual | Variação (MTD) | Leitura |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,8825 | +8,51% | No acumulado do mês desde 30/10, o Dólar PTAX apresenta alta de +8,51% (+R$ 0,4613) [dolar_ptax]. |
+| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,7446 | +5,97% | No mês: de R$ 5,4212 (30/10) para R$ 5,7446 (+5,97%). |
 | Petróleo WTI | US$ 107,56/bbl | US$ 82,24/bbl | -23,54% | O petróleo WTI registra recuo de -23,54% (−US$ 25,32/bbl) desde 30/10 [petroleo_wti]. |
 | Soja Paranaguá-PR | — | R$ 173,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Soja Uberlândia-MG | — | R$ 160,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
@@ -249,7 +250,7 @@ As faixas são calculadas pelo sistema a partir da volatilidade recente (bandas 
 
 | Ativo | Base atual | Alvo curto prazo / auditoria | Cenário base (mês) | Altista / Baixista | Gatilho |
 |---|---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8825 (Banco Central do Brasil, 25/11) · Track record em formação (1ª aferição em 26/11) | R$ 5,5805 – R$ 6,2009 até 03/12 (banda ±1,0σ) | R$ 5,8825 (30/11) | 📈 R$ 6,1059 (+1,0σ) / 📉 R$ 5,6673 (−1,0σ) | Mudanças abruptas no cenário fiscal ou reviravoltas na condução da política monetária e cambial pelo Banco Central. · Método: banda de volatilidade (σ diário 2,15%, 45 pregões no histórico). |
+| Dólar PTAX (USD/BRL) | R$ 5,7446 (Banco Central do Brasil, 26/11) · Track record: 1/1 bandas acertadas (100,0%) | R$ 5,5857 – R$ 5,9080 até 03/12 (banda ±1,0σ) · Última aferição (26/11): 5,7446 ✅ dentro da banda 5,6754–6,2340 | R$ 5,7446 (30/12) | 📈 R$ 6,0928 (+1,0σ) / 📉 R$ 5,4163 (−1,0σ) | Mudanças abruptas no cenário fiscal ou reviravoltas na condução da política monetária e cambial pelo Banco Central. · Método: banda de volatilidade (σ diário 1,25%, 46 pregões no histórico). |
 | Petróleo WTI | US$ 82,24/bbl (FRED (Fed de St. Louis), 24/11) · Track record em formação (1ª aferição em 02/12) | US$ 72,20/bbl – US$ 85,89/bbl até 03/12 (banda ±1,0σ, viés de baixa) | US$ 79,59/bbl (30/11) | 📈 US$ 84,98/bbl (+1,0σ) / 📉 US$ 74,53/bbl (−1,0σ) | Choques geopolíticos severos no Oriente Médio ou alterações drásticas nos estoques globais divulgados pela EIA. · Método: banda de volatilidade (σ diário 3,28%, 64 pregões no histórico). |
 | Soja Paranaguá-PR | R$ 173,00/sc (Canal Rural, 25/11) · Track record em formação (1ª aferição em 02/12) | R$ 167,96/sc – R$ 189,03/sc até 03/12 (banda ±1,0σ, viés de alta) | R$ 176,65/sc (30/11) | 📈 R$ 184,19/sc (+1,0σ) / 📉 R$ 169,42/sc (−1,0σ) | Reversão das cotações em Chicago ou forte volatilidade no câmbio que alterem a paridade de exportação. · Método: banda de volatilidade (σ diário 2,41% de Soja B3 × Dólar PTAX (USD/BRL), 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
 | Milho Campinas-SP | R$ 68,50/sc (Canal Rural, 25/11) · Track record em formação (1ª aferição em 02/12) | R$ 67,36/sc – R$ 69,66/sc até 03/12 (banda ±1,0σ) | R$ 68,50/sc (30/11) | 📈 R$ 69,32/sc (+1,0σ) / 📉 R$ 67,69/sc (−1,0σ) | Mudanças abruptas na demanda do mercado físico regional ou volatilidade cambial na PTAX [dolar_ptax]. · Método: banda de volatilidade (σ diário 0,68% de Milho B3, 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
@@ -258,14 +259,14 @@ As faixas são calculadas pelo sistema a partir da volatilidade recente (bandas 
 | Café Sul de Minas | R$ 1.810,00/sc (Canal Rural, 25/11) · Track record em formação (1ª aferição em 02/12) | R$ 1.715,52/sc – R$ 1.909,68/sc até 03/12 (banda ±1,0σ) | R$ 1.810,00/sc (30/11) | 📈 R$ 1.879,93/sc (+1,0σ) / 📉 R$ 1.742,67/sc (−1,0σ) | Mudança climática severa nas regiões produtoras ou alteração brusca no câmbio. · Método: banda de volatilidade (σ diário 2,19% de Café Arábica B3 × Dólar PTAX (USD/BRL), 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
 | Boi gordo SP | R$ 395,00/@ (Canal Rural, 25/11) · Track record em formação (1ª aferição em 02/12) | R$ 391,60/@ – R$ 398,43/@ até 03/12 (banda ±1,0σ) | R$ 395,00/@ (30/11) | 📈 R$ 397,42/@ (+1,0σ) / 📉 R$ 392,59/@ (−1,0σ) | Retomada forte da demanda interna ou novas restrições sanitárias severas. · Método: banda de volatilidade (σ diário 0,35% de Boi Gordo B3, 22 pregões; o histórico próprio ainda tem 5 pregão(ões)). |
 
-**Track record geral:** em formação — as primeiras aferições acontecem 5 pregões após o primeiro registro.
+**Track record geral:** 1/1 bandas de curto prazo acertadas (100,0%); viés direcional certo em 0/1.
 
 
 ---
 
 ## 💡 7. Pílula de Inteligência de Mercado — Entendendo o NDF no gerenciamento de risco cambial
 
-**Fórmula:** `NDF (160 dias) = 5,8825 × (1 + 0,1375)^(106/252) ÷ [1 + 0,0480 × (160/360)] = R$ 6,0804`
+**Fórmula:** `NDF (160 dias) = 5,7446 × (1 + 0,1375)^(106/252) ÷ [1 + 0,0480 × (160/360)] = R$ 5,9378`
 
 O NDF (Non-Deliverable Forward) de 160 dias, calculado em R$ 6,0804, reflete a precificação do mercado para o risco cambial futuro, incorporando o diferencial de juros entre o Brasil, com a Selic em 13,75% a.a., e a taxa externa. Este derivativo é fundamental para o hedge de tradings e indústrias, pois permite travar o custo de importação ou a receita de exportação sem a necessidade de entrega física da moeda, apenas o ajuste financeiro pela diferença entre a taxa contratada e a PTAX de vencimento. Com a PTAX em R$ 5,8825, o prêmio embutido no NDF sinaliza a expectativa de depreciação cambial, impactando diretamente o custo de oportunidade de insumos importados e a competitividade das exportações.
 
@@ -281,12 +282,9 @@ O JSON completo deste boletim (8 séries diárias, 5 blocos, 8 projeções) est�
 
 ## 🛡️ Qualidade dos dados e auditoria
 
-- **Indicadores:** 28 ok, 0 com alerta, 1 desatualizados, 0 indisponíveis (de 29).
+- **Indicadores:** 29 ok, 0 com alerta, 0 desatualizados, 0 indisponíveis (de 29).
 - **Texto:** gerado por IA (gemini-flash-lite-latest @ Google Gemini ×1 → gemini-3.1-flash-lite @ Google Gemini ×8) e conferido pelo verificador — campos verificados: 131; respostas reprovadas e devolvidas à IA: 2; campos trocados por texto automático: 0.
 - **Notícias:** 37 usadas de 163 coletadas; 12 fontes responderam, 0 falharam.
 
-**Indicadores com ressalva:**
-- 🕒 Dólar PTAX (venda) — Banco Central — desatualizado: sem cotação nova válida; último valor confiável é de 25/11/2026
-
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 26/11/2026 13:17 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 26/11/2026 13:27 BRT._
