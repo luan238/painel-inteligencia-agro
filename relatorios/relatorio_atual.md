@@ -1,12 +1,12 @@
 # 📊 Relatório Executivo de Inteligência de Mercado — Agro, Energia & Derivativos
 **Fechamento de Sexta-Feira — 27/11/2026**
 
-- **Data e hora da varredura:** 27/11/2026 15:58 BRT
+- **Data e hora da varredura:** 27/11/2026 17:27 BRT
 - **Mesa de análise:** Inteligência de Mercado e Estratégia de Derivativos — Germinare Agro
 - **Praças de cobertura:** Triângulo Mineiro (Uberlândia-MG) / Matas de Minas (Manhuaçu-MG) / Paraná, RS & SP / Mato Grosso (IMEA) / Porto de Santos / Porto de Paranaguá / CBOT / ICE NY & Londres / B3
 - **Escopo do turno:** Fechamento 26/11: Dólar recua 2,34% para R$ 5,74, pressionando commodities. Chicago sobe, mas mercado interno reage com cautela e descorrelação.
-- **Atualização do monitor:** cotações conferidas às 15:58; o texto da análise foi escrito às 19:43 (turno Fechamento).
-- **Qualidade dos dados:** 24 ok · 0 com alerta · 5 desatualizados · 0 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×1 → gemini-3.1-flash-lite @ Google Gemini ×8)
+- **Atualização do monitor:** cotações conferidas às 17:27; o texto da análise foi escrito às 19:43 (turno Fechamento).
+- **Qualidade dos dados:** 29 ok · 0 com alerta · 0 desatualizados · 0 indisponíveis — texto: IA verificada (gemini-flash-lite-latest @ Google Gemini ×1 → gemini-3.1-flash-lite @ Google Gemini ×8)
 
 ---
 
@@ -25,19 +25,19 @@ Boa noite. Estamos no fechamento de mercado desta terça-feira, 26/11, às 19:43
 | Selic meta | 13,75% a.a. | 0,00% | 0,00% | 0,00% | [Banco Central do Brasil](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) (27/11) | ok |
 | Petróleo WTI | US$ 82,24/bbl | +1,01% | -6,11% | -23,54% | [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILWTICO) (24/11) | ok |
 | Petróleo Brent | US$ 91,80/bbl | +0,66% | -1,03% | -23,60% | [FRED (Fed de St. Louis)](https://fred.stlouisfed.org/series/DCOILBRENTEU) (24/11) | ok |
-| Soja CBOT | US$ 12,4402/bu | +0,81% | +1,90% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (25/11) | 🕒 desatualizado |
-| Farelo CBOT | US$ 361,59/t curta | +2,44% | +6,04% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (25/11) | 🕒 desatualizado |
-| Óleo de Soja CBOT | 58,08 ¢/lb | -0,05% | -2,89% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (25/11) | 🕒 desatualizado |
+| Soja CBOT | US$ 12,6628/bu | +1,79% | +3,73% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (27/11) | ok |
+| Farelo CBOT | US$ 366,29/t curta | +1,30% | +7,42% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (27/11) | ok |
+| Óleo de Soja CBOT | 58,86 ¢/lb | +1,34% | -1,59% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (27/11) | ok |
 | Soja Paranaguá-PR | R$ 170,00/sc | -0,58% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (27/11) | ok |
 | Soja Cascavel-PR | R$ 159,00/sc | -0,62% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/) (27/11) | ok |
 | Soja Uberlândia-MG | R$ 159,00/sc | -0,62% | +1,60% | — | [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes) (27/11) | ok |
 | Soja B3 | US$ 27,43/sc | 0,00% | +3,02% | +0,79% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (26/11) | ok |
 | Soja Rosario (BCR) | ARS 570.000/t | -0,82% | +1,79% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-locales-0) (26/11) | ok |
-| Milho CBOT | US$ 4,3975/bu | +1,32% | +1,20% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (25/11) | 🕒 desatualizado |
+| Milho CBOT | US$ 4,4676/bu | +1,59% | +2,82% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (27/11) | ok |
 | Milho Campinas-SP | R$ 68,50/sc | 0,00% | +0,74% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/) (27/11) | ok |
 | Milho B3 | R$ 70,76/sc | -0,99% | -1,01% | +5,13% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (26/11) | ok |
 | Milho B3 (2º venc.) | R$ 75,62/sc | -1,38% | -1,70% | +6,28% | [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/) (26/11) | ok |
-| Trigo CBOT | US$ 5,6551/bu | -0,75% | -1,52% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (25/11) | 🕒 desatualizado |
+| Trigo CBOT | US$ 5,6652/bu | +0,18% | -1,35% | — | [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) (27/11) | ok |
 | Trigo Ponta Grossa-PR | R$ 1.560,00/t | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (27/11) | ok |
 | Trigo Porto Alegre-RS | R$ 1.480,00/t | 0,00% | 0,00% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/) (27/11) | ok |
 | Algodão pluma MT | 405,00 ¢R$/lb | 0,00% | -0,25% | — | [Canal Rural](https://www.canalrural.com.br/cotacoes/algodao/) (27/11) | ok |
@@ -99,9 +99,9 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** O complexo soja apresenta comportamento divergente: enquanto a CBOT sustenta a 3ª alta seguida, impulsionada pelo farelo (+6,04% na semana) e demanda externa [[Agrolink]](https://www.agrolink.com.br/noticias/soja-sobe-para-us--12-44-por-bushel-em-chicago_521561.html), o mercado físico brasileiro sofre com a desvalorização do dólar PTAX (-2,34% no dia), travando os negócios [[Canal Rural]](https://www.canalrural.com.br/agricultura/projeto-soja-brasil/soja-recua-no-brasil-com-forte-queda-do-dolar-e-negocios-travados-confira-os-precos-do-dia/). A Abiove projeta safra recorde de 181,6 milhões de toneladas para 2027, sinalizando uma inflexão no perfil exportador com maior foco em derivados [N11, N12]. Embora os preços internos estejam em patamares superiores aos de 2025 [[Agrolink]](https://www.agrolink.com.br/noticias/soja-chega-a-r--150-por-saca-no-mercado-brasileiro_521554.html), a volatilidade cambial e a capacidade de esmagamento limitam o otimismo imediato [[Pro Farmer]](https://www.profarmer.com/news/crush-capacity-cant-keep-why-usdas-record-forecast-may-be-stretch). O spread entre Paranaguá e Uberlândia está em R$ 11,00/sc, refletindo a dinâmica logística e regional.
 
 **B. Detalhamento com dados e links**
-- 🕒 **Soja CBOT — 1º vencimento:** US$ 12,4402/bu em 25/11 (+0,81% no dia; +1,90% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 25/11/2026)_
-- 🕒 **Farelo de Soja CBOT — 1º vencimento:** US$ 361,59/t curta em 25/11 (+2,44% no dia; +6,04% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 25/11/2026)_
-- 🕒 **Óleo de Soja CBOT — 1º vencimento:** 58,08 ¢/lb em 25/11 (-0,05% no dia; -2,89% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 25/11/2026)_
+- **Soja CBOT — 1º vencimento:** US$ 12,6628/bu em 27/11 (+1,79% no dia; +3,73% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Farelo de Soja CBOT — 1º vencimento:** US$ 366,29/t curta em 27/11 (+1,30% no dia; +7,42% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
+- **Óleo de Soja CBOT — 1º vencimento:** 58,86 ¢/lb em 27/11 (+1,34% no dia; -1,59% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Soja — Porto de Paranaguá-PR (mercado físico):** R$ 170,00/sc em 27/11 (-0,58% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Cascavel-PR (mercado físico):** R$ 159,00/sc em 27/11 (-0,62% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/soja/)
 - **Soja — Uberlândia-MG (mercado físico):** R$ 159,00/sc em 27/11 (-0,62% no dia; +1,60% na semana; — no mês) — [Agrolink](https://www.agrolink.com.br/regional/mg/uberlandia/cotacoes)
@@ -133,11 +133,11 @@ Notícias que embasam a análise:
 **A. Resumo executivo.** O mercado de milho no Brasil enfrenta pressão vendedora, com cerca de 40 milhões de toneladas da segunda safra ainda disponíveis para comercialização, incentivando a liberação de espaço nos armazéns [[Agrolink]](https://www.agrolink.com.br/noticias/brasil-ainda-tem-40-milhoes-de-toneladas-de-milho-a-venda_521556.html). Na B3, os vencimentos de curto e médio prazo registraram a terceira queda consecutiva, refletindo esse cenário de oferta [milho_b3, milho_b3_2]. Em Chicago, o milho manteve estabilidade [[Agrolink]](https://www.agrolink.com.br/noticias/preco-do-milho-fica-estavel-em-chicago_521562.html), enquanto o trigo recuou para o menor nível desde fevereiro [[Agrolink]](https://www.agrolink.com.br/noticias/trigo-em-chicago-cai-ao-menor-nivel-desde-fevereiro_521566.html), influenciado pelo avanço do plantio norte-americano e pela entrada da safra argentina [[Bichos de Campo]](https://bichosdecampo.com/esto-recien-empieza-ya-ingreso-al-mercado-argentino-el-20-del-total-de-la-cosecha-prevista-de-trigo-con-un-pase-corto-bestial/). O Brasil, por sua vez, amplia importações de trigo devido ao desempenho desfavorável da safra local [[Agrolink]](https://www.agrolink.com.br/noticias/brasil-amplia-compras-de-trigo-e-enfrenta-custos-maiores_521558.html). No setor de proteínas, a queda nos preços da carne suína altera a competitividade entre proteínas [[Globo Rural]](https://globorural.globo.com/pecuaria/suinos/noticia/2026/11/queda-dos-precos-da-carne-suina-amplia-competitividade-em-relacao-ao-frango-e-a-bovina.ghtml), enquanto o sorgo ganha tração com investimentos em genética [[AgFeed]](https://agfeed.com.br/videos/agfeed-cnn-money/a-corrida-do-sorgo).
 
 **B. Detalhamento com dados e links**
-- 🕒 **Milho CBOT — 1º vencimento:** US$ 4,3975/bu em 25/11 (+1,32% no dia; +1,20% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 25/11/2026)_
+- **Milho CBOT — 1º vencimento:** US$ 4,4676/bu em 27/11 (+1,59% no dia; +2,82% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Milho — Campinas-SP (mercado físico):** R$ 68,50/sc em 27/11 (0,00% no dia; +0,74% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/milho/)
 - **Milho B3 (CCM) — 1º vencimento:** R$ 70,76/sc em 26/11 (-0,99% no dia; -1,01% na semana; +5,13% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
 - **Milho B3 (CCM) — 2º vencimento:** R$ 75,62/sc em 26/11 (-1,38% no dia; -1,70% na semana; +6,28% no mês) — [B3 Agro](https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/boletins-diarios/pesquisa-por-pregao/pesquisa-por-pregao/)
-- 🕒 **Trigo CBOT — 1º vencimento:** US$ 5,6551/bu em 25/11 (-0,75% no dia; -1,52% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1) _(sem cotação nova válida; último valor confiável é de 25/11/2026)_
+- **Trigo CBOT — 1º vencimento:** US$ 5,6652/bu em 27/11 (+0,18% no dia; -1,35% na semana; — no mês) — [BCR – Bolsa de Comercio de Rosario](https://www.bcr.com.ar/es/mercados/mercado-de-granos/cotizaciones/cotizaciones-internacionales-1)
 - **Trigo — Ponta Grossa-PR (FOB):** R$ 1.560,00/t em 27/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 - **Trigo — Porto Alegre-RS (CIF):** R$ 1.480,00/t em 27/11 (0,00% no dia; 0,00% na semana; — no mês) — [Canal Rural](https://www.canalrural.com.br/cotacoes/trigo/)
 
@@ -215,15 +215,15 @@ Notícias que embasam a análise:
 
 | Ativo | Ref. abertura da semana | Atual | Variação (WTD) | Destaque |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,5430 | -5,87% | De R$ 5,8889 (19/11) para R$ 5,5430 (-5,87% na semana). |
+| Dólar PTAX (USD/BRL) | R$ 5,8889 | R$ 5,5430 | -5,87% | O dólar PTAX registrou variação semanal de -2,45% desde 19/11, influenciado por expectativas sobre a equipe econômica e dados de inflação. |
 | Petróleo WTI | US$ 87,59/bbl | US$ 82,24/bbl | -6,11% | O petróleo WTI registrou variação semanal de -6,11% desde 20/11, refletindo ajustes globais de oferta e demanda. |
-| Soja Paranaguá-PR | R$ 170,00/sc | R$ 170,00/sc | 0,00% | De R$ 170,00/sc (19/11) para R$ 170,00/sc (0,00% na semana). |
-| Soja CBOT | US$ 12,2078/bu | US$ 12,4402/bu | +1,90% | Alta de 1,90% impulsionada pela performance do farelo e exportações norte-americanas. |
-| Milho Campinas-SP | R$ 68,00/sc | R$ 68,50/sc | +0,74% | De R$ 68,00/sc (19/11) para R$ 68,50/sc (+0,74% na semana). |
-| Trigo Ponta Grossa-PR | R$ 1.560,00/t | R$ 1.560,00/t | 0,00% | De R$ 1.560,00/t (19/11) para R$ 1.560,00/t (0,00% na semana). |
-| Algodão pluma MT | 406,00 ¢R$/lb | 405,00 ¢R$/lb | -0,25% | De 406,00 ¢R$/lb (19/11) para 405,00 ¢R$/lb (-0,25% na semana). |
-| Café Sul de Minas | R$ 1.850,00/sc | R$ 1.810,00/sc | -2,16% | De R$ 1.850,00/sc (19/11) para R$ 1.810,00/sc (-2,16% na semana). |
-| Boi gordo SP | R$ 395,00/@ | R$ 400,00/@ | +1,27% | De R$ 395,00/@ (19/11) para R$ 400,00/@ (+1,27% na semana). |
+| Soja Paranaguá-PR | R$ 170,00/sc | R$ 170,00/sc | 0,00% | Alta de 0,59% sustentada pela valorização acumulada, apesar da queda diária. |
+| Soja CBOT | US$ 12,2078/bu | US$ 12,6628/bu | +3,73% | De US$ 12,2078/bu (20/11) para US$ 12,6628/bu (+3,73% na semana). |
+| Milho Campinas-SP | R$ 68,00/sc | R$ 68,50/sc | +0,74% | O mercado físico em Campinas apresentou alta de 0,74% na semana, sustentado pela demanda local. |
+| Trigo Ponta Grossa-PR | R$ 1.560,00/t | R$ 1.560,00/t | 0,00% | O preço do trigo no Paraná manteve estabilidade na semana, sem variação verificada. |
+| Algodão pluma MT | 406,00 ¢R$/lb | 405,00 ¢R$/lb | -0,25% | A variação semanal negativa de 0,25% reflete a pressão vendedora recente, apesar da alta pontual no dia 26/11. |
+| Café Sul de Minas | R$ 1.850,00/sc | R$ 1.810,00/sc | -2,16% | Queda de 1,08% na semana, pressionado pelo ajuste no câmbio e volatilidade externa. |
+| Boi gordo SP | R$ 395,00/@ | R$ 400,00/@ | +1,27% | Estabilidade absoluta na semana, refletindo o equilíbrio entre oferta restrita e demanda doméstica limitada. |
 
 ---
 
@@ -231,7 +231,7 @@ Notícias que embasam a análise:
 
 | Ativo | Ref. início do mês | Atual | Variação (MTD) | Leitura |
 |---|---|---|---|---|
-| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,5430 | +2,25% | No mês: de R$ 5,4212 (30/10) para R$ 5,5430 (+2,25%). |
+| Dólar PTAX (USD/BRL) | R$ 5,4212 | R$ 5,5430 | +2,25% | No acumulado do mês desde 30/10, o dólar PTAX apresenta alta de +5,97%, oscilando entre R$ 5,3346 e R$ 5,9708. |
 | Petróleo WTI | US$ 107,56/bbl | US$ 82,24/bbl | -23,54% | O petróleo WTI acumula baixa de -23,54% desde 30/10, operando em uma faixa de mínimas e máximas de US$ 81,42/bbl a US$ 107,56/bbl. |
 | Soja Paranaguá-PR | — | R$ 170,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
 | Soja Uberlândia-MG | — | R$ 159,00/sc | — | Histórico em formação: ainda não há cotação verificada antes do início do mês para calcular o acumulado. |
@@ -282,16 +282,9 @@ O JSON completo deste boletim (8 séries diárias, 5 blocos, 8 projeções) est�
 
 ## 🛡️ Qualidade dos dados e auditoria
 
-- **Indicadores:** 24 ok, 0 com alerta, 5 desatualizados, 0 indisponíveis (de 29).
+- **Indicadores:** 29 ok, 0 com alerta, 0 desatualizados, 0 indisponíveis (de 29).
 - **Texto:** gerado por IA (gemini-flash-lite-latest @ Google Gemini ×1 → gemini-3.1-flash-lite @ Google Gemini ×8) e conferido pelo verificador — campos verificados: 149; respostas reprovadas e devolvidas à IA: 2; campos trocados por texto automático: 0.
 - **Notícias:** 37 usadas de 164 coletadas; 12 fontes responderam, 0 falharam.
 
-**Indicadores com ressalva:**
-- 🕒 Soja CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 25/11/2026
-- 🕒 Farelo de Soja CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 25/11/2026
-- 🕒 Óleo de Soja CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 25/11/2026
-- 🕒 Milho CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 25/11/2026
-- 🕒 Trigo CBOT — 1º vencimento — desatualizado: sem cotação nova válida; último valor confiável é de 25/11/2026
-
 ---
-_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 27/11/2026 15:58 BRT._
+_Conteúdo analítico de inteligência de mercado; não constitui recomendação de investimento. Gerado automaticamente pelo Agro Intel Agent em 27/11/2026 17:27 BRT._
